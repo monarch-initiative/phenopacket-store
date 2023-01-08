@@ -5,6 +5,14 @@ Let's use this site to collect the Python scripts we will uses to create phenopa
 
 This repository contains notebooks and original data used to generate the GA4GH phenopackets used in the [C2C2](https://github.com/monarch-initiative/C2S2) project, in which we analyze cohorts of individuals with variants in genes for the presence of subgroups (for instance, germline mutations in SMARCB1 are associarteds with the diseases Coffin-Siris syndrome 3, Rhabdoid tumor predisposition syndrome 1, and Schwannomatosis-1, susceptibility to).
 
+## Setup
+(For now, internal use only)
+Go to the pyphetools directory, and enter
+```
+ pip install -e .
+ ```
+ This will make a local install of the pyphetools package
+
 ## Genes
 
 1. [SMARCB1](notebooks/SMARCB1/)
