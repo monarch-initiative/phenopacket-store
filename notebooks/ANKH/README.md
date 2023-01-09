@@ -4,16 +4,16 @@ Variants in the ANKH gene have been etc
 
 
 ## Publications
-To generate the phenopackets for ANKH analyss, we curated the following publications.  &#x2713;: finished; &empty;: skipped because of insufficient clinical annotations.
+To generate the phenopackets for ANKH analyss, we curated the following publications.  &#x2713;: finished; &empty;: skipped because of insufficient clinical annotations or because ANKH variant not specified.
 
 
 * [Wu JL, et al., A three-year clinical investigation of a Chinese child with craniometaphyseal dysplasia caused by a mutated ANKH gene. World J Clin Cases. 2021 Mar 16;9(8):1853-1862. ](https://pubmed.ncbi.nlm.nih.gov/33748234/): &#x2713;
 * [Chen J, et al., An additional whole-exome sequencing study in 102 panel-undiagnosed patients: A retrospective study in a Chinese craniosynostosis cohort. Front Genet. 2022 Sep 2;13:967688. ](https://pubmed.ncbi.nlm.nih.gov/36118902/) &empty;
 * [Gruber BL,et al., Novel ANKH amino terminus mutation (Pro5Ser) associated with early-onset calcium pyrophosphate disease with associated phosphaturia. J Clin Rheumatol. 2012 Jun;18(4):192-5. ](https://pubmed.ncbi.nlm.nih.gov/22647861/): &#x2713;
-* [Dutra EH, et al., Two novel large ANKH deletion mutations in sporadic cases with craniometaphyseal dysplasia. Clin Genet. 2012 Jan;81(1):93-5.](https://pubmed.ncbi.nlm.nih.gov/22150416/)
+* [Dutra EH, et al., Two novel large ANKH deletion mutations in sporadic cases with craniometaphyseal dysplasia. Clin Genet. 2012 Jan;81(1):93-5.](https://pubmed.ncbi.nlm.nih.gov/22150416/): &#x2713;
 * [Couto AR, Zhang Y, Timms A, Bruges-Armas J, Sequeiros J, Brown MA. Investigating ANKH and ENPP1 in Slovakian families with chondrocalcinosis. Rheumatol Int. 2012 Sep;32(9):2745-51. ](https://pubmed.ncbi.nlm.nih.gov/21811784/)
 * [Thomeer HG, et al., Otological aspects and surgical outcome in a consanguineous family with a novel ANKH gene mutation. Int J Pediatr Otorhinolaryngol. 2013 Jul;77(7):1152-7.](https://pubmed.ncbi.nlm.nih.gov/23726953/)
-* [Singh S, et al., Craniometaphyseal dysplasia in a 14-month old: a case report and review of imaging differential diagnosis. Radiol Case Rep. 2016 May 20;11(3):260-5..](https://pubmed.ncbi.nlm.nih.gov/27594963/)
+* [Singh S, et al., Craniometaphyseal dysplasia in a 14-month old: a case report and review of imaging differential diagnosis. Radiol Case Rep. 2016 May 20;11(3):260-5..](https://pubmed.ncbi.nlm.nih.gov/27594963/): &empty;
 * [Kornak U, et al., Three novel mutations in the ANK membrane protein cause craniometaphyseal dysplasia with variable conductive hearing loss. Am J Med Genet A. 2010 Apr;152A(4):870-4. ](https://pubmed.ncbi.nlm.nih.gov/20358596/)
 * [Zajac A, et al., Novel ANKH mutation in a patient with sporadic craniometaphyseal dysplasia. Am J Med Genet A. 2010 Mar;152A(3):770-6. ](https://pubmed.ncbi.nlm.nih.gov/20186813/)
 * [Baynam G, et al., Craniometaphyseal dysplasia and chondrocalcinosis cosegregating in a family with an ANKH mutation. Am J Med Genet A. 2009 Jun;149A(6):1331-3.](https://pubmed.ncbi.nlm.nih.gov/19449425/)
