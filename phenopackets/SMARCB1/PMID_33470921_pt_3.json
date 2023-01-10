@@ -14,18 +14,33 @@
       "type": {
         "id": "HP:0002664",
         "label": "Neoplasm"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0001909",
         "label": "Leukemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0100279",
         "label": "Ulcerative colitis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
       }
     },
     {
@@ -33,12 +48,22 @@
         "id": "HP:0001328",
         "label": "Specific learning disability"
       },
-      "excluded": true
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0002888",
         "label": "Ependymoma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
       }
     }
   ],
@@ -51,5 +76,44 @@
         }
       }
     }
-  ]
+  ],
+  "metaData": {
+    "created": "2023-01-10T14:09:16.242677688Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2022-12-15",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0"
+  }
 }
