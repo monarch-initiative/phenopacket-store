@@ -22,3 +22,4 @@ Add data for phenopackets for each of the genes to the following subdirectories:
 1. [SMARCB1](notebooks/SMARCB1/)
 2. [ANKH](notebooks/ANKH/)
 3. [WFS1](notebooks/WFS1)
+4. [SON](notebooks/SON)
