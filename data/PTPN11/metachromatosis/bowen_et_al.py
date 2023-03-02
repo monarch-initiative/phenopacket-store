@@ -39,6 +39,7 @@ varValidator = VariantValidator(genome_build=genome, transcript=transcript)
 
 pmid = "PMID:21533187"
 for pat_id, variant in ptpn11_variants.items():
+    print(f"Creating phenopacket for {pat_id} and variant {variant}")
     encoder = CaseEncoder(concept_recognizer=hpo_cr, pmid=pmid)
     hpo_term = "Multiple exostoses" # HP:0002762
     encoder.add_term(label=hpo_term)
@@ -51,7 +52,3 @@ for pat_id, variant in ptpn11_variants.items():
 
 
 
-
-
-
-age = "P1Y5M"
