@@ -1,0 +1,180 @@
+{
+  "id": "Lanktree_2007_17250669-Patient B_50y",
+  "subject": {
+    "id": "Patient B",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P50Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE",
+    "karyotypicSex": "UNKNOWN_KARYOTYPE",
+    "taxonomy": {
+      "id": "NCBITaxon:9606",
+      "label": "Homo sapiens"
+    }
+  },
+  "phenotypicFeatures": [{
+    "type": {
+      "id": "HP:0000287",
+      "label": "Increased facial adipose tissue"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0003635",
+      "label": "Loss of subcutaneous adipose tissue in limbs"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0000819",
+      "label": "Diabetes mellitus"
+    },
+    "excluded": false,
+    "onset": {
+      "age": {
+        "iso8601duration": "P48Y"
+      }
+    }
+  }, {
+    "type": {
+      "id": "HP:0000822",
+      "label": "Hypertension"
+    },
+    "excluded": true
+  }, {
+    "type": {
+      "id": "HP:0000956",
+      "label": "Acanthosis nigricans"
+    },
+    "excluded": true
+  }, {
+    "type": {
+      "id": "HP:0003233",
+      "label": "Decreased HDL cholesterol concentration"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0002155",
+      "label": "Hypertriglyceridemia"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0025691",
+      "label": "Impaired fasting glucose"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0040217",
+      "label": "Elevated hemoglobin A1c"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001397",
+      "label": "Hepatic steatosis"
+    },
+    "excluded": false
+  }],
+  "interpretations": [{
+    "id": "658aacb5-81b0-4dc3-976f-1101a69a9bcd",
+    "progressStatus": "SOLVED",
+    "diagnosis": {
+      "disease": {
+        "id": "OMIM:151660",
+        "label": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 2; FPLD2"
+      },
+      "genomicInterpretations": [{
+        "subjectOrBiosampleId": "Patient B",
+        "interpretationStatus": "UNKNOWN_STATUS",
+        "variantInterpretation": {
+          "acmgPathogenicityClassification": "NOT_PROVIDED",
+          "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+          "variationDescriptor": {
+            "id": "variant-id",
+            "vcfRecord": {
+              "genomeAssembly": "GRCh38.p13",
+              "chrom": "1",
+              "pos": "156136251",
+              "id": "variant-id",
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "unspecified_molecule_context",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          }
+        }
+      }]
+    }
+  }],
+  "diseases": [{
+    "term": {
+      "id": "OMIM:151660",
+      "label": "LIPODYSTROPHY, FAMILIAL PARTIAL, TYPE 2; FPLD2"
+    },
+    "excluded": false
+  }],
+  "metaData": {
+    "created": "2023-03-23T20:55:47Z",
+    "createdBy": "2.0.0-RC3-SNAPSHOT",
+    "submittedBy": "UNKNOWN",
+    "resources": [{
+      "id": "hp",
+      "name": "human phenotype ontology",
+      "url": "http://purl.obolibrary.org/obo/hp.owl",
+      "version": "2018-03-08",
+      "namespacePrefix": "HP",
+      "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+    }, {
+      "id": "pato",
+      "name": "PhenotypicFeature And Trait Ontology",
+      "url": "http://purl.obolibrary.org/obo/pato.owl",
+      "version": "2018-03-28",
+      "namespacePrefix": "PATO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/PATO_"
+    }, {
+      "id": "geno",
+      "name": "Genotype Ontology",
+      "url": "http://purl.obolibrary.org/obo/geno.owl",
+      "version": "19-03-2018",
+      "namespacePrefix": "GENO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+    }, {
+      "id": "ncbitaxon",
+      "name": "NCBI organismal classification",
+      "url": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "version": "2018-03-02",
+      "namespacePrefix": "NCBITaxon",
+      "iriPrefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    }, {
+      "id": "eco",
+      "name": "Evidence \u0026 Conclusion Ontology (ECO)",
+      "url": "http://purl.obolibrary.org/obo/eco.owl",
+      "version": "2018-11-10",
+      "namespacePrefix": "ECO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/ECO_"
+    }, {
+      "id": "omim",
+      "name": "An Online Catalog of Human Genes and Genetic Disorders",
+      "url": "https://www.omim.org",
+      "version": "2023-01-27",
+      "namespacePrefix": "OMIM",
+      "iriPrefix": "https://www.omim.org/entry/"
+    }],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [{
+      "id": "PMID:17250669",
+      "description": "Novel LMNA mutations seen in patients with familial partial lipodystrophy subtype 2 (FPLD2; MIM 151660)."
+    }]
+  }
+}
