@@ -24,4 +24,4 @@ Add data for phenopackets for each of the genes to the following subdirectories:
 3. [WFS1](notebooks/WFS1)
 4. [SON](notebooks/SON)
 5. [COL3A1](notebooks/COL3A1)
-6. [OPD1](notebooks/OPD1)
+6. [OFD1](notebooks/OFD1)
