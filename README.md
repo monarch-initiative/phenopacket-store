@@ -19,10 +19,12 @@ Alternatively, to co-develop features in pyphetools and this project, one can do
 ## Genes
 Add data for phenopackets for each of the genes to the following subdirectories:
 
-1. [SMARCB1](notebooks/SMARCB1/)
-2. [ANKH](notebooks/ANKH/)
-3. [WFS1](notebooks/WFS1)
-4. [SON](notebooks/SON)
-5. [COL3A1](notebooks/COL3A1)
-6. [OFD1](notebooks/OFD1)
-7. [WWOX](notebooks/WWOX)
+1. [ANKH](notebooks/ANKH/)
+2. [COL3A1](notebooks/COL3A1)
+3. [OFD1](notebooks/OFD1)
+4. [SETD2](notebooks/SETD2)
+5. [SMARCB1](notebooks/SMARCB1/)
+6. [SON](notebooks/SON)
+7. [WFS1](notebooks/WFS1)
+8. [WWOX](notebooks/WWOX)
+
