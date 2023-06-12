@@ -1,0 +1,202 @@
+{
+  "id": "Ribeiro_2000_10942416-patient_1d",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1D"
+      }
+    },
+    "sex": "FEMALE",
+    "karyotypicSex": "UNKNOWN_KARYOTYPE",
+    "taxonomy": {
+      "id": "NCBITaxon:9606",
+      "label": "Homo sapiens"
+    }
+  },
+  "phenotypicFeatures": [{
+    "type": {
+      "id": "HP:0001017",
+      "label": "Anemic pallor"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0004444",
+      "label": "Spherocytosis"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0007430",
+      "label": "Generalized edema"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001878",
+      "label": "Hemolytic anemia"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0000121",
+      "label": "Nephrocalcinosis"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001541",
+      "label": "Ascites"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001433",
+      "label": "Hepatosplenomegaly"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0005518",
+      "label": "Increased mean corpuscular volume"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0025548",
+      "label": "Increased mean corpuscular hemoglobin concentration"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001923",
+      "label": "Reticulocytosis"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0003265",
+      "label": "Neonatal hyperbilirubinemia"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0004918",
+      "label": "Hyperchloremic metabolic acidosis"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0011342",
+      "label": "Mild global developmental delay"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0031704",
+      "label": "Abnormal ear physiology"
+    },
+    "excluded": true
+  }, {
+    "type": {
+      "id": "HP:0001977",
+      "label": "Abnormal thrombosis"
+    },
+    "excluded": true
+  }],
+  "interpretations": [{
+    "id": "c11df29d-776e-4625-8662-a3ec7750b3d3",
+    "progressStatus": "SOLVED",
+    "diagnosis": {
+      "disease": {
+        "id": "OMIM:611590",
+        "label": "Renal tubular acidosis, distal, with hemolytic anemia"
+      },
+      "genomicInterpretations": [{
+        "subjectOrBiosampleId": "patient",
+        "interpretationStatus": "UNKNOWN_STATUS",
+        "variantInterpretation": {
+          "acmgPathogenicityClassification": "NOT_PROVIDED",
+          "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+          "variationDescriptor": {
+            "id": "VCV000017773.8",
+            "vcfRecord": {
+              "genomeAssembly": "GRCh38.p13",
+              "chrom": "17",
+              "pos": "44257514",
+              "id": "VCV000017773.8",
+              "ref": "C",
+              "alt": "T"
+            },
+            "moleculeContext": "unspecified_molecule_context",
+            "allelicState": {
+              "id": "GENO:0000136",
+              "label": "homozygous"
+            }
+          }
+        }
+      }]
+    }
+  }],
+  "diseases": [{
+    "term": {
+      "id": "OMIM:611590",
+      "label": "Renal tubular acidosis, distal, with hemolytic anemia"
+    },
+    "excluded": false
+  }],
+  "metaData": {
+    "created": "2023-06-12T18:57:46Z",
+    "createdBy": "2.0.0-RC3-SNAPSHOT",
+    "submittedBy": "HPO:ielis",
+    "resources": [{
+      "id": "hp",
+      "name": "human phenotype ontology",
+      "url": "http://purl.obolibrary.org/obo/hp.owl",
+      "version": "2018-03-08",
+      "namespacePrefix": "HP",
+      "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+    }, {
+      "id": "pato",
+      "name": "PhenotypicFeature And Trait Ontology",
+      "url": "http://purl.obolibrary.org/obo/pato.owl",
+      "version": "2018-03-28",
+      "namespacePrefix": "PATO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/PATO_"
+    }, {
+      "id": "geno",
+      "name": "Genotype Ontology",
+      "url": "http://purl.obolibrary.org/obo/geno.owl",
+      "version": "19-03-2018",
+      "namespacePrefix": "GENO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+    }, {
+      "id": "ncbitaxon",
+      "name": "NCBI organismal classification",
+      "url": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "version": "2018-03-02",
+      "namespacePrefix": "NCBITaxon",
+      "iriPrefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    }, {
+      "id": "eco",
+      "name": "Evidence \u0026 Conclusion Ontology (ECO)",
+      "url": "http://purl.obolibrary.org/obo/eco.owl",
+      "version": "2018-11-10",
+      "namespacePrefix": "ECO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/ECO_"
+    }, {
+      "id": "omim",
+      "name": "An Online Catalog of Human Genes and Genetic Disorders",
+      "url": "https://www.omim.org",
+      "version": "2023-01-27",
+      "namespacePrefix": "OMIM",
+      "iriPrefix": "https://www.omim.org/entry/"
+    }],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [{
+      "id": "PMID:10942416",
+      "description": "Severe hereditary spherocytosis and distal renal tubular acidosis associated with the total absence of band 3."
+    }]
+  }
+}
