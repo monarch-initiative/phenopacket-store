@@ -1,0 +1,130 @@
+{
+  "id": "Fatkin_1999_10580070-FamilyC:III-2_40y",
+  "subject": {
+    "id": "FamilyC:III-2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P40Y"
+      }
+    },
+    "sex": "MALE",
+    "karyotypicSex": "UNKNOWN_KARYOTYPE",
+    "taxonomy": {
+      "id": "NCBITaxon:9606",
+      "label": "Homo sapiens"
+    }
+  },
+  "phenotypicFeatures": [{
+    "type": {
+      "id": "HP:0005110",
+      "label": "Atrial fibrillation"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0001644",
+      "label": "Dilated cardiomyopathy"
+    },
+    "excluded": false
+  }, {
+    "type": {
+      "id": "HP:0003236",
+      "label": "Elevated circulating creatine kinase concentration"
+    },
+    "excluded": true
+  }],
+  "interpretations": [{
+    "id": "36a47bc0-cc2c-4c3d-96a2-6e3daaefac78",
+    "progressStatus": "SOLVED",
+    "diagnosis": {
+      "disease": {
+        "id": "OMIM:115200",
+        "label": "CARDIOMYOPATHY, DILATED, 1A; CMD1A"
+      },
+      "genomicInterpretations": [{
+        "subjectOrBiosampleId": "FamilyC:III-2",
+        "interpretationStatus": "UNKNOWN_STATUS",
+        "variantInterpretation": {
+          "acmgPathogenicityClassification": "NOT_PROVIDED",
+          "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+          "variationDescriptor": {
+            "id": "variant-id",
+            "vcfRecord": {
+              "genomeAssembly": "GRCh38.p13",
+              "chrom": "1",
+              "pos": "156115172",
+              "id": "variant-id",
+              "ref": "T",
+              "alt": "G"
+            },
+            "moleculeContext": "unspecified_molecule_context",
+            "allelicState": {
+              "id": "GENO:0000135",
+              "label": "heterozygous"
+            }
+          }
+        }
+      }]
+    }
+  }],
+  "diseases": [{
+    "term": {
+      "id": "OMIM:115200",
+      "label": "CARDIOMYOPATHY, DILATED, 1A; CMD1A"
+    },
+    "excluded": false
+  }],
+  "metaData": {
+    "created": "2023-03-23T20:55:47Z",
+    "createdBy": "2.0.0-RC3-SNAPSHOT",
+    "submittedBy": "UNKNOWN",
+    "resources": [{
+      "id": "hp",
+      "name": "human phenotype ontology",
+      "url": "http://purl.obolibrary.org/obo/hp.owl",
+      "version": "2018-03-08",
+      "namespacePrefix": "HP",
+      "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+    }, {
+      "id": "pato",
+      "name": "PhenotypicFeature And Trait Ontology",
+      "url": "http://purl.obolibrary.org/obo/pato.owl",
+      "version": "2018-03-28",
+      "namespacePrefix": "PATO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/PATO_"
+    }, {
+      "id": "geno",
+      "name": "Genotype Ontology",
+      "url": "http://purl.obolibrary.org/obo/geno.owl",
+      "version": "19-03-2018",
+      "namespacePrefix": "GENO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+    }, {
+      "id": "ncbitaxon",
+      "name": "NCBI organismal classification",
+      "url": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
+      "version": "2018-03-02",
+      "namespacePrefix": "NCBITaxon",
+      "iriPrefix": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    }, {
+      "id": "eco",
+      "name": "Evidence \u0026 Conclusion Ontology (ECO)",
+      "url": "http://purl.obolibrary.org/obo/eco.owl",
+      "version": "2018-11-10",
+      "namespacePrefix": "ECO",
+      "iriPrefix": "http://purl.obolibrary.org/obo/ECO_"
+    }, {
+      "id": "omim",
+      "name": "An Online Catalog of Human Genes and Genetic Disorders",
+      "url": "https://www.omim.org",
+      "version": "2023-01-27",
+      "namespacePrefix": "OMIM",
+      "iriPrefix": "https://www.omim.org/entry/"
+    }],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [{
+      "id": "PMID:10580070",
+      "description": "Missense mutations in the rod domain of the lamin A/C gene as causes of dilated cardiomyopathy and conduction-system disease."
+    }]
+  }
+}

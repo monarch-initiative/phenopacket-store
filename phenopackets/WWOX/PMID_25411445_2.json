@@ -1,0 +1,249 @@
+{
+  "id": "2",
+  "subject": {
+    "id": "2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P0Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002375",
+        "label": "Hypokinesia"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012448",
+        "label": "Delayed myelination"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001699",
+        "label": "Sudden death"
+      },
+      "excluded": true,
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "616211",
+          "label": "DEE28"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "geneContext": {
+                  "valueId": "HGNC:12799",
+                  "symbol": "WWOX"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016373.2:c.46_49del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.9:g.78133721_78133724del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg19",
+                  "chrom": "chr16",
+                  "pos": "78133719",
+                  "ref": "AGGAC",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-05-08T08:54:35.703154087Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-01-27",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0"
+  }
+}
