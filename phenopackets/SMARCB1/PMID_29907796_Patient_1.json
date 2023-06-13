@@ -249,17 +249,6 @@
           "iso8601duration": "P10Y"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000478",
-        "label": "Abnormality of the eye"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
-      }
     }
   ],
   "interpretations": [
@@ -268,8 +257,8 @@
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "NA",
-          "label": "Diets_SMARCB1"
+          "id": "ADHOCOMIM:123000",
+          "label": "Diets SMARCB1"
         },
         "genomicInterpretations": [
           {
@@ -277,6 +266,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
+                "id": "variant-id",
                 "geneContext": {
                   "valueId": "HGNC:11103",
                   "symbol": "SMARCB1"
@@ -345,6 +335,14 @@
         "version": "2022-12-15",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "adhocomim",
+        "name": "Ad-hoc OMIM-like random data source",
+        "url": "http://does-not-exist.org",
+        "version": "2023-06-12",
+        "namespacePrefix": "ADHOCOMIM",
+        "iriPrefix": "http://does-not-exist.org/ADHOCOMIM_"
       }
     ],
     "phenopacketSchemaVersion": "2.0"
