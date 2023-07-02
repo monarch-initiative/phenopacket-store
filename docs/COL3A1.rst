@@ -46,5 +46,3 @@ Polymicrogyria with or without vascular-type EDS
      - 4
      - Yes
 
-Vandervore L, Stouffs K, Tanyalçin I, Vanderhasselt T, Roelens F, Holder-Espinasse M, Jørgensen A, Pepin MG, Petit F, Khau Van Kien P, Bahi-Buisson N, Lissens W, Gheldof A, Byers PH, Jansen AC. Bi-allelic variants in COL3A1 encoding the ligand to GPR56 are associated with cobblestone-like cortical malformation, white matter changes and cerebellar cysts. 
-J Med Genet. 2017 Jun;54(6):432-440. doi: 10.1136/jmedgenet-2016-104421. Epub 2017 Mar 3. PMID: .

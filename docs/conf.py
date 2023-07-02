@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'c2cs-clin'
+project = u'phenopacket store'
 copyright = u'2023'
 author = u'Peter Robinson'
 

@@ -22,10 +22,11 @@ There is one short documentation page for each gene that summarizes the availabl
 
 
 .. toctree::
-    :caption: genes
+    :caption: contents
     :name: phenopacket store
     :maxdepth: 1
 
+    setup
     COL3A1
 
  
