@@ -16,16 +16,15 @@ Spinocerebellar ataxia, autosomal recessive 12
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table:: Spinocerebellar ataxia, autosomal recessive 12
-   :widths: 25 25 50
+   :widths: 40 40 40 40
    :header-rows: 1
 
    * - Author
      - PMID
      - Individuals
-   * - Genetic data
-     -
-     - Gribaa (2007)
-   * - `PMID:17470496 <https://pubmed.ncbi.nlm.nih.gov/17470496/>`_
+     - Genetic data
+   * - Gribaa (2007)
+     - `PMID:17470496 <https://pubmed.ncbi.nlm.nih.gov/17470496/>`_
      - 4
      - Yes
 

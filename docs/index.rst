@@ -29,6 +29,7 @@ There is one short documentation page for each gene that summarizes the availabl
     setup
     COL3A1
     OFD1
+    SMARCB1
     WWOX
 
  

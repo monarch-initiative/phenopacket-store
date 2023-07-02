@@ -14,16 +14,15 @@ Ehlers-Danlos syndrome, vascular type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table:: EDS, Vascular type
-   :widths: 25 25 50
+   :widths: 40 40 40 40
    :header-rows: 1
 
    * - Author
      - PMID
      - Individuals
-   * - Genetic data
-     -
-     - Boutouyrie P (2004)
-   * - `PMID:15007000 <https://pubmed.ncbi.nlm.nih.gov/15007000/>`_
+     - Genetic data
+   * - Boutouyrie P (2004)
+     - `PMID:15007000 <https://pubmed.ncbi.nlm.nih.gov/15007000/>`_
      - 16
      - N/A
 
@@ -33,16 +32,15 @@ Polymicrogyria with or without vascular-type EDS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table:: Polymicrogyria with or without vascular-type EDS
-   :widths: 25 25 50
+   :widths: 40 40 40 40
    :header-rows: 1
 
    * - Author
      - PMID
      - Individuals
-   * - Genetic data
-     -
-     - Vandervore (2017)
-   * - `PMID:15007000 <https://pubmed.ncbi.nlm.nih.gov/28258187/>`_
+     - Genetic data
+   * - Vandervore (2017)
+     - `PMID:28258187 <https://pubmed.ncbi.nlm.nih.gov/28258187/>`_
      - 4
      - Yes
 
