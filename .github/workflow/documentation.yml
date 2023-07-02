@@ -1,0 +1,35 @@
+name: Sphinx Documentation
+on:
+  push:
+    branches: [ develop, main ]
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        ref: ${{ github.ref }}
+
+    - name: Set up Python 3.
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+
+    - name: install
+      run: pip3 install sphinx sphinx-rtd-theme click ddt pandas setuptools
+
+    - name: Build documentation.
+      run: |
+        cd docs/
+        sphinx-build -b html . _build
+        touch _build/.nojekyll
+
+    - name: Deploy documentation.
+      if: ${{ github.event_name == 'push' }}
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+        branch: gh-pages
+        clean: true
+        folder: docs/_build
