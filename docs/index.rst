@@ -28,6 +28,7 @@ There is one short documentation page for each gene that summarizes the availabl
 
     setup
     COL3A1
+    ERI1
     OFD1
     SON
     SMARCB1
