@@ -2,7 +2,7 @@
 SMARCB1
 =======
 
-Variants in the `SMARCB1 gene <https://omim.org/entry/ 601607>`_
+Variants in the `SMARCB1 gene <https://omim.org/entry/601607>`_
 are associated with
 
 

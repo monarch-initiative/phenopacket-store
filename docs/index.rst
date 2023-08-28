@@ -33,6 +33,7 @@ There is one short documentation page for each gene that summarizes the availabl
     OFD1
     SON
     SMARCB1
+    SMARCC2
     WWOX
 
  
