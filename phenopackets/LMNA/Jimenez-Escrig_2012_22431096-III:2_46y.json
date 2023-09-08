@@ -1,16 +1,16 @@
 {
-  "id": "Fatkin_1999_10580070-FamilyA:III-8_42y",
+  "id": "Jimenez-Escrig_2012_22431096-III:2_46y",
   "subject": {
-    "id": "FamilyA:III-8",
+    "id": "III:2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P42Y"
+        "iso8601duration": "P46Y"
       }
     },
     "vitalStatus": {
       "status": "ALIVE"
     },
-    "sex": "FEMALE",
+    "sex": "MALE",
     "karyotypicSex": "UNKNOWN_KARYOTYPE",
     "taxonomy": {
       "id": "NCBITaxon:9606",
@@ -19,45 +19,84 @@
   },
   "phenotypicFeatures": [{
     "type": {
-      "id": "HP:0005110",
-      "label": "Atrial fibrillation"
+      "id": "HP:0001288",
+      "label": "Gait disturbance"
+    },
+    "excluded": false,
+    "onset": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    }
+  }, {
+    "type": {
+      "id": "HP:0001377",
+      "label": "Limited elbow extension"
+    },
+    "excluded": false,
+    "onset": {
+      "age": {
+        "iso8601duration": "P18Y"
+      }
+    }
+  }, {
+    "type": {
+      "id": "HP:0004755",
+      "label": "Supraventricular tachycardia"
+    },
+    "excluded": false,
+    "onset": {
+      "age": {
+        "iso8601duration": "P40Y"
+      }
+    }
+  }, {
+    "type": {
+      "id": "HP:0003724",
+      "label": "Shoulder girdle muscle atrophy"
     },
     "excluded": false
   }, {
     "type": {
-      "id": "HP:0001644",
-      "label": "Dilated cardiomyopathy"
+      "id": "HP:0008946",
+      "label": "Pelvic girdle amyotrophy"
     },
     "excluded": false
   }, {
     "type": {
-      "id": "HP:0001688",
-      "label": "Sinus bradycardia"
+      "id": "HP:0000277",
+      "label": "Abnormal mandible morphology"
     },
-    "excluded": false
+    "excluded": true
   }, {
     "type": {
-      "id": "HP:0001907",
-      "label": "Thromboembolism"
+      "id": "HP:0009125",
+      "label": "Lipodystrophy"
     },
-    "excluded": false
+    "excluded": true
   }, {
     "type": {
-      "id": "HP:0008180",
-      "label": "Mildly elevated creatine kinase"
+      "id": "HP:0004322",
+      "label": "Short stature"
     },
-    "excluded": false
+    "excluded": true
+  }, {
+    "type": {
+      "id": "HP:0007495",
+      "label": "Prematurely aged appearance"
+    },
+    "excluded": true
   }],
   "interpretations": [{
-    "id": "a9b41bf4-5b33-468f-aa27-a78358a81590",
+    "id": "e8f5802b-a354-4387-a776-d6038c523e71",
     "progressStatus": "SOLVED",
     "diagnosis": {
       "disease": {
-        "id": "OMIM:115200",
-        "label": "CARDIOMYOPATHY, DILATED, 1A; CMD1A"
+        "id": "OMIM:616516",
+        "label": "EMERY-DREIFUSS MUSCULAR DYSTROPHY 3, AUTOSOMAL RECESSIVE; EDMD3"
       },
       "genomicInterpretations": [{
-        "subjectOrBiosampleId": "FamilyA:III-8",
+        "subjectOrBiosampleId": "III:2",
         "interpretationStatus": "UNKNOWN_STATUS",
         "variantInterpretation": {
           "acmgPathogenicityClassification": "NOT_PROVIDED",
@@ -67,15 +106,15 @@
             "vcfRecord": {
               "genomeAssembly": "GRCh38.p13",
               "chrom": "1",
-              "pos": "156137756",
+              "pos": "156134839",
               "id": "variant-id",
-              "ref": "C",
+              "ref": "G",
               "alt": "A"
             },
             "moleculeContext": "unspecified_molecule_context",
             "allelicState": {
-              "id": "GENO:0000135",
-              "label": "heterozygous"
+              "id": "GENO:0000136",
+              "label": "homozygous"
             }
           }
         }
@@ -84,15 +123,15 @@
   }],
   "diseases": [{
     "term": {
-      "id": "OMIM:115200",
-      "label": "CARDIOMYOPATHY, DILATED, 1A; CMD1A"
+      "id": "OMIM:616516",
+      "label": "EMERY-DREIFUSS MUSCULAR DYSTROPHY 3, AUTOSOMAL RECESSIVE; EDMD3"
     },
     "excluded": false
   }],
   "metaData": {
-    "created": "2023-03-23T20:55:47Z",
+    "created": "2023-06-28T15:49:48Z",
     "createdBy": "2.0.0-RC3-SNAPSHOT",
-    "submittedBy": "UNKNOWN",
+    "submittedBy": "HPO:ielis",
     "resources": [{
       "id": "hp",
       "name": "human phenotype ontology",
@@ -138,8 +177,8 @@
     }],
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [{
-      "id": "PMID:10580070",
-      "description": "Missense mutations in the rod domain of the lamin A/C gene as causes of dilated cardiomyopathy and conduction-system disease."
+      "id": "PMID:22431096",
+      "description": "Autosomal recessive Emery-Dreifuss muscular dystrophy caused by a novel mutation (R225Q) in the lamin A/C gene identified by exome sequencing."
     }]
   }
 }
