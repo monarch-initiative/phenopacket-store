@@ -1,0 +1,193 @@
+{
+  "id": "PMID_33731876_fam88",
+  "subject": {
+    "id": "fam88"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002793",
+        "label": "Abnormal pattern of respiration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012443",
+        "label": "Abnormality of brain morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002500",
+        "label": "Abnormality of the cerebral white matter"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0200134",
+        "label": "Epileptic encephalopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007183",
+        "label": "Focal T2 hyperintense basal ganglia lesion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012748",
+        "label": "Focal T2 hyperintense brainstem lesion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008936",
+        "label": "Muscular hypotonia of the trunk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000717",
+        "label": "No Autism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012759",
+        "label": "No Neurodevelopmental abnormality"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003623",
+        "label": "Neonatal onset"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "fam88",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "MONDO:0013388",
+          "label": "developmental and epileptic encephalopathy 11"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "fam88",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_srxfcrdiAkgKAzOOcZLBRgzMU",
+                "geneContext": {
+                  "valueId": "HGNC:10588",
+                  "symbol": "SCN2A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001040142.2:c.718G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.165310343G>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": "165310343",
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-10-01T18:46:41.423687934Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "mondo",
+        "name": "Mondo Disease Ontology",
+        "url": "http://purl.obolibrary.org/obo/mondo.obo",
+        "version": "v2023-01-04",
+        "namespacePrefix": "MONDO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:33731876",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33731876",
+        "description": "Computational analysis of 10,860 phenotypic annotations in individuals with SCN2A-related disorders"
+      }
+    ]
+  }
+}
