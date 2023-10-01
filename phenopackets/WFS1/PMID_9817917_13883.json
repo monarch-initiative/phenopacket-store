@@ -1,5 +1,5 @@
 {
-  "id": "13883",
+  "id": "PMID_9817917_13883",
   "subject": {
     "id": "13883",
     "timeAtLastEncounter": {
@@ -14,23 +14,6 @@
       "type": {
         "id": "HP:0000819",
         "label": "Diabetes mellitus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P11Y0M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000648",
-        "label": "Optic atrophy"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P11Y0M"
-        }
       }
     },
     {
@@ -38,50 +21,73 @@
         "id": "HP:0000365",
         "label": "Hearing impairment"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P11Y0M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000873",
         "label": "Diabetes insipidus"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P11Y0M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000077",
         "label": "Abnormality of the kidney"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P11Y0M"
-        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "cb6eaf73-752f-46ff-8f45-e2cbbb10fe83",
+      "id": "13883",
+      "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:222300",
-          "label": "WOLFRAM SYNDROME 1"
-        }
+          "label": "Wolfram syndrome 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "13883",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_jwaHEGdoWvlEDXdsMppqUxOmx",
+                "geneContext": {
+                  "valueId": "HGNC:12762",
+                  "symbol": "WFS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006005.3:c.1385_1393del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.6301180_6301188del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": "6301174",
+                  "ref": "CCACCGAGGT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
   "metaData": {
-    "created": "2023-01-20T08:14:57.279343128Z",
+    "created": "2023-10-01T22:25:52.170150518Z",
     "createdBy": "ORCID:0000-0002-5648-2155",
     "resources": [
       {
@@ -109,10 +115,18 @@
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2022-12-15",
+        "version": "2023-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

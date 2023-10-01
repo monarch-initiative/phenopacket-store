@@ -1,5 +1,5 @@
 {
-  "id": "II:2",
+  "id": "PMID_18688868_II:2",
   "subject": {
     "id": "II:2",
     "timeAtLastEncounter": {
@@ -14,22 +14,12 @@
       "type": {
         "id": "HP:0008573",
         "label": "Low-frequency sensorineural hearing impairment"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P97Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0000408",
         "label": "Progressive sensorineural hearing impairment"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P97Y"
-        }
       }
     },
     {
@@ -37,24 +27,14 @@
         "id": "HP:0100647",
         "label": "Graves disease"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P97Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0100280",
         "label": "Crohn's disease"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P97Y"
-        }
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
@@ -64,7 +44,7 @@
       "diagnosis": {
         "disease": {
           "id": "OMIM:600965",
-          "label": "DEAFNESS, AUTOSOMAL DOMINANT 6"
+          "label": "Deafness, autosomal dominant 6"
         },
         "genomicInterpretations": [
           {
@@ -72,7 +52,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "variant-id",
+                "id": "var_PNsKpeMqhrxNiEynslnlZAGMN",
                 "geneContext": {
                   "valueId": "HGNC:12762",
                   "symbol": "WFS1"
@@ -107,7 +87,7 @@
     }
   ],
   "metaData": {
-    "created": "2023-01-20T12:22:14.164694786Z",
+    "created": "2023-10-01T22:13:26.464493036Z",
     "createdBy": "ORCID:0000-0002-5648-2155",
     "resources": [
       {
@@ -135,14 +115,29 @@
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2022-12-15",
+        "version": "2023-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
     ],
-    "phenopacketSchemaVersion": "2.0"
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:18688868",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18688868",
+        "description": "Autoimmune disease in a DFNA6/14/38 family carrying a novel missense mutation in WFS1"
+      }
+    ]
   }
 }
