@@ -1,7 +1,7 @@
 {
-  "id": "17470496-3",
+  "id": "PMID_17470496_3",
   "subject": {
-    "id": "17470496-3",
+    "id": "3",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P10Y"
@@ -14,99 +14,54 @@
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0001251",
         "label": "Ataxia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
+        "id": "HP:0002066",
+        "label": "Gait ataxia"
       }
     },
     {
       "type": {
         "id": "HP:0001260",
         "label": "Dysarthria"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0001265",
         "label": "Hyporeflexia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0031064",
         "label": "Impaired continence"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
       }
     }
   ],
@@ -117,7 +72,7 @@
       "diagnosis": {
         "disease": {
           "id": "OMIM:614322",
-          "label": "SCAR12"
+          "label": "Spinocerebellar ataxia, autosomal recessive 12"
         },
         "genomicInterpretations": [
           {
@@ -125,7 +80,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "variant-id",
+                "id": "var_FKoDkhmdDEQDaFvNMFBHZTjvC",
                 "geneContext": {
                   "valueId": "HGNC:12799",
                   "symbol": "WWOX"
@@ -137,17 +92,21 @@
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.9:g.78142351C>A"
+                    "value": "NC_000016.10:g.78108454C>A"
                   }
                 ],
                 "vcfRecord": {
-                  "genomeAssembly": "hg19",
+                  "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "78142351",
+                  "pos": "78108454",
                   "ref": "C",
                   "alt": "A"
                 },
-                "moleculeContext": "genomic"
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
               }
             }
           }
@@ -156,7 +115,7 @@
     }
   ],
   "metaData": {
-    "created": "2023-05-08T08:39:42.271057128Z",
+    "created": "2023-10-02T21:50:19.280750989Z",
     "createdBy": "ORCID:0000-0002-5648-2155",
     "resources": [
       {
@@ -184,14 +143,29 @@
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-01-27",
+        "version": "2023-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
     ],
-    "phenopacketSchemaVersion": "2.0"
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:17470496",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/17470496",
+        "description": "A new form of childhood onset, autosomal recessive spinocerebellar ataxia and epilepsy is localized at 16q21-q23"
+      }
+    ]
   }
 }

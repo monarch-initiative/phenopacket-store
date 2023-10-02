@@ -1,47 +1,31 @@
 {
-  "id": "25411445-2",
+  "id": "PMID_25411445_2",
   "subject": {
-    "id": "25411445-2",
+    "id": "2",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P0Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
+        "id": "HP:0012736",
+        "label": "Profound global developmental delay"
       }
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
       }
     },
     {
@@ -49,47 +33,24 @@
         "id": "HP:0001251",
         "label": "Ataxia"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001257",
         "label": "Spasticity"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0002375",
         "label": "Hypokinesia"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0002063",
         "label": "Rigidity"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
@@ -97,23 +58,12 @@
         "id": "HP:0033725",
         "label": "Thin corpus callosum"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0012448",
         "label": "Delayed myelination"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
@@ -121,45 +71,30 @@
         "id": "HP:0002059",
         "label": "Cerebral atrophy"
       },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0002353",
         "label": "EEG abnormality"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000817",
+        "label": "Reduced eye contact"
       }
     },
     {
       "type": {
         "id": "HP:0001699",
         "label": "Sudden death"
-      },
-      "excluded": true,
-      "onset": {
-        "age": {
-          "iso8601duration": "P0Y"
-        }
       }
     }
   ],
@@ -170,7 +105,7 @@
       "diagnosis": {
         "disease": {
           "id": "OMIM:616211",
-          "label": "DEE28"
+          "label": "Developmental and epileptic encephalopathy 28"
         },
         "genomicInterpretations": [
           {
@@ -178,7 +113,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "variant-id",
+                "id": "var_NhieJddbImugcdrweaQyHrXqD",
                 "geneContext": {
                   "valueId": "HGNC:12799",
                   "symbol": "WWOX"
@@ -186,21 +121,48 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_016373.2:c.46_49del"
+                    "value": "NM_016373.4:c.1005G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.9:g.78133721_78133724del"
+                    "value": "NC_000016.10:g.78432701G>A"
                   }
                 ],
                 "vcfRecord": {
-                  "genomeAssembly": "hg19",
+                  "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "78133719",
-                  "ref": "AGGAC",
+                  "pos": "78432701",
+                  "ref": "G",
                   "alt": "A"
                 },
-                "moleculeContext": "genomic"
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_QTYqPHmiaXuGppURIHRadivYP",
+                "label": "c.517-?_605+?del",
+                "geneContext": {
+                  "valueId": "HGNC:12799",
+                  "symbol": "WWOX"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
               }
             }
           }
@@ -209,7 +171,7 @@
     }
   ],
   "metaData": {
-    "created": "2023-05-08T08:54:35.703154087Z",
+    "created": "2023-10-02T21:47:06.632989645Z",
     "createdBy": "ORCID:0000-0002-5648-2155",
     "resources": [
       {
@@ -237,14 +199,29 @@
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-01-27",
+        "version": "2023-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
     ],
-    "phenopacketSchemaVersion": "2.0"
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:25411445",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25411445",
+        "description": "WWOX-related encephalopathies: delineation of the phenotypical spectrum and emerging genotype-phenotype correlation"
+      }
+    ]
   }
 }
