@@ -8,7 +8,7 @@ individuals with Mendelian diseases.
 
 The notebooks are contained in the [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} folder organized according to gene.
 
-The corresponding phenopackets are stored in the [phenpackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/phenopackets){:target="_blank"} f subfolder, also organized according to
+The corresponding phenopackets are stored in the [phenpackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/phenopackets){:target="_blank"} subfolder, also organized according to
 gene.
 
 See [Collections](collections.md) for a short documentation page for each collection included in this repository.
