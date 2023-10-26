@@ -1,35 +1,26 @@
-name: Sphinx Documentation
+name: mkdocs-generation
 on:
   push:
-    branches: [ develop, main ]
-
+    branches:
+      - master
+      - main
+permissions:
+  contents: write
 jobs:
-  build-docs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        ref: ${{ github.ref }}
-
-    - name: Set up Python 3.
-      uses: actions/setup-python@v3
-      with:
-        python-version: 3.9
-
-    - name: install
-      run: pip3 install sphinx sphinx-rtd-theme 
-
-    - name: Build documentation.
-      run: |
-        cd docs/
-        sphinx-build -b html . _build
-        touch _build/.nojekyll
-
-    - name: Deploy documentation.
-      if: ${{ github.event_name == 'push' }}
-      uses: JamesIves/github-pages-deploy-action@v4.3.0
-      with:
-        branch: gh-pages
-        clean: true
-        folder: docs/_build
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-material[imaging]
+      - run: pip install pillow cairosvg
+      - run: pip install mkdocs-material-extensions
+      - run: pip install mkdocstrings[python]
+      - run: mkdocs gh-deploy --force

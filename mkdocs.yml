@@ -1,0 +1,53 @@
+site_name: phenopacket-store
+
+theme:
+  name: "material"
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: indigo
+      accent: white
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+
+nav:
+  - Home: 'index.md'
+  - Collections:
+    - "Overview": "collections.md"
+    - "COL3A1": "collections/COL3A1.md"
+    - "ERI1": "collections/ERI1.md"
+
+
+
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - tables
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/pnrobinson"  target="_blank" rel="noopener">Peter N Robinson</a>
