@@ -29,10 +29,13 @@ keywords = [
     "HPO"]
 dependencies = [
     "pandas>=2.0.0,<3.0.0",
-   # "pyphetools>=0.8.15",
+    "phenopackets>=2.0.2",
+    "protobuf<4.0.0"
 ]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+test = ["pytest>=7.0.0, <=8.0.0"]
 
 
 [project.urls]
