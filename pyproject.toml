@@ -1,0 +1,54 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=65.6.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ppktstore"
+# version in __init__
+requires-python = ">=3.8"
+description = "Collection of GA4GH Phenopackets"
+readme = "README.md"
+authors = [
+    {name = "Peter Robinson", email="peter.robinson@jax.org"},
+     ]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = [
+    "Global Alliance for Genomics and Health",
+    "GA4GH Phenopacket Schema",
+    "Human Phenotype Ontology",
+    "GA4GH",
+    "HPO"]
+dependencies = [
+    "pandas>=2.0.0,<3.0.0",
+    "phenopackets>=2.0.2",
+    "protobuf<4.0.0"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0.0, <=8.0.0"]
+
+
+[project.urls]
+homepage = "https://github.com/monarch-initiative/phenopacket-store"
+repository = "https://github.com/monarch-initiative/phenopacket-store.git"
+documentation = "https://github.com/monarch-initiative/phenopacket-store"
+bugtracker = "https://github.com/monarch-initiative/phenopacket-store/issues"
+
+
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.dynamic]
+version = { attr = "ppktstore.__version__" }
+
