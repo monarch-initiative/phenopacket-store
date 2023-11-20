@@ -1,4 +1,3 @@
-from os import walk
 import os
 import tempfile
 import shutil
@@ -10,17 +9,17 @@ from .cohort import Cohort
 class PPKtStore:
 
     def __init__(self, notebook_dir) -> None:
-        self._cohorts = []
         if not os.path.isdir(notebook_dir):
             raise ValueError(f"Could not find phenopacket notebook directory at {notebook_dir}")
-        for (dirpath, dirnames, filenames) in walk(notebook_dir):
+        self._cohorts = []
+        for (dirpath, dirnames, filenames) in os.walk(notebook_dir):
             if dirpath.endswith("phenopackets") and not dirpath.endswith("v1phenopackets"):
                 lpath_components = dirpath.split(os.sep)
                 if len(lpath_components) != 3:
                     raise ValueError(f"Unexpected path with {len(lpath_components)} components: {dirpath}")
                 cohort_name = lpath_components[1]
-                pp_files = [f for f in filenames if f.endswith(".json")]
-                c = Cohort(name=cohort_name, dirpath=dirpath, files=pp_files)
+                json_files = filter(lambda f: f.endswith('.json'), filenames)
+                c = Cohort(name=cohort_name, dirpath=dirpath, files=json_files)
                 self._cohorts.append(c)
 
     def get_phenopacket_dataframe(self) -> pd.DataFrame:

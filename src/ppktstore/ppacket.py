@@ -1,20 +1,15 @@
-import os
-from collections import defaultdict
-import json
 from google.protobuf.json_format import Parse
-import phenopackets as PPKt
-from pyphetools.validation import ContentValidator
+from phenopackets import Phenopacket
 
 
 class PPacket:
 
     def __init__(self, fname:str) -> None:
-        f = open(fname)
-        data = f.read()
-        f.close()
         self._fname = fname
-        jsondata = json.loads(data)
-        ppack = Parse(json.dumps(jsondata), PPKt.Phenopacket())
+
+        with open(fname) as f:
+            ppack = Parse(f.read(), Phenopacket())
+
         self._id = ppack.id
         self._n_hpo = len(ppack.phenotypic_features)
         n_var = 0

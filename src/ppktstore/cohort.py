@@ -1,15 +1,18 @@
-from typing import List
+import typing
 from .ppacket import PPacket
 import os
 
 class Cohort:
 
-    def __init__(self, name:str, dirpath:str, files:List[str]) -> None:
+    def __init__(self, name:str, dirpath:str, files:typing.Iterable[str]) -> None:
         self._name = name
         self._dirpath = dirpath
-        self._ppacket = [PPacket(os.path.join(dirpath, f)) for f in files]
-        self._files = [os.path.join(dirpath, f) for f in files]
-        self._fnames = files
+        self._fnames = tuple(files)
+        self._ppacket = []
+        self._files = []
+        for file in self._fnames:
+            self._ppacket.append(PPacket(os.path.join(dirpath, file)))
+            self._files.append(os.path.join(dirpath, file))
 
 
     def get_detailed_dict(self):
@@ -22,27 +25,27 @@ class Cohort:
         return items
 
     @property
-    def name(self):
+    def name(self) -> str:
         return self._name
 
     @property
-    def directory(self):
+    def directory(self) -> str:
         return self._dirpath
 
     @property
-    def count(self):
+    def count(self) -> int:
         return len(self._ppacket)
 
     @property
-    def phenopacket_files(self):
+    def phenopacket_files(self) -> typing.Sequence[str]:
         return self._files
 
     @property
-    def fnames(self):
+    def fnames(self) -> typing.Sequence[str]:
         return self._fnames
 
     @staticmethod
-    def get_detailed_header():
+    def get_detailed_header() -> typing.Sequence[str]:
         return ["cohort", "directory","filename", "phenopacket.id", "disease", "n_hpo" , "n_var","n_alleles"]
 
 
