@@ -12,6 +12,7 @@ class PPacket:
 
         self._id = ppack.id
         self._n_hpo = len(ppack.phenotypic_features)
+        self._n_encounters = self._get_encounter_count(ppack)
         n_var = 0
         n_alleles = 0
         dx_set = set()
@@ -50,6 +51,16 @@ class PPacket:
             "n_hpo": self._n_hpo,
             "n_var": self._n_var,
             "n_alleles": self._n_alleles,
+            "n_encounters": self._n_encounters,
             "filename": self._fname
         }
         return d
+
+    def _get_encounter_count(self, ppack):
+        encounters = set()
+        for pf in ppack.phenotypic_features:
+            if pf.onset.age.iso8601duration is not None:
+                encounters.add(pf.onset.age.iso8601duration)
+            else:
+                encounters.add("n/a")
+        return len(encounters)

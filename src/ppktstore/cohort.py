@@ -46,7 +46,7 @@ class Cohort:
 
     @staticmethod
     def get_detailed_header() -> typing.Sequence[str]:
-        return ["cohort", "directory","filename", "phenopacket.id", "disease", "n_hpo" , "n_var","n_alleles"]
+        return ["cohort", "directory","filename", "phenopacket.id", "disease", "n_hpo" , "n_var","n_alleles", "n_encounters"]
 
 
 
