@@ -8,3 +8,6 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | Cohort | Comments
 |:----------- |:-------------------- |
 | [ANKH](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/ANKH/ANKH_Summary.ipynb){:target="_blank"} | 7 Phenopackets; [Craniometaphyseal dysplasia](https://omim.org/entry/123000){:target="_blank"}; [Chondrocalcinosis 2](https://omim.org/entry/118600){:target="_blank"} |
+| [COL3A1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/COL3A1/COL3A1_Summary.ipynb){:target="_blank"} | 39 Phenopackets; [Polymicrogyria with or without vascular-type EDS](https://omim.org/entry/618343){:target="_blank"}; [Ehlers-Danlos syndrome, vascular type](https://omim.org/entry/130050){:target="_blank"}
+
+
