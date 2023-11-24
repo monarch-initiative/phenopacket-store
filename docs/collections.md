@@ -9,6 +9,7 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 |:----------- |:-------------------- |
 | [ANKH](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/ANKH/ANKH_Summary.ipynb){:target="_blank"} | 7 Phenopackets; [Craniometaphyseal dysplasia](https://omim.org/entry/123000){:target="_blank"}; [Chondrocalcinosis 2](https://omim.org/entry/118600){:target="_blank"} |
 | [COL3A1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/COL3A1/COL3A1_Summary.ipynb){:target="_blank"} | 39 Phenopackets; [Polymicrogyria with or without vascular-type EDS](https://omim.org/entry/618343){:target="_blank"}; [Ehlers-Danlos syndrome, vascular type](https://omim.org/entry/130050){:target="_blank"} |
-| [ERI1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/ERI1/ERI1_Guo_2013_PMID_37352860.ipynb){:target="_blank"} | 10 Phenopackets; [ERI1](https://omim.org/entry/608739){:target="_blank"}
+| [ERI1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/ERI1/ERI1_Guo_2013_PMID_37352860.ipynb){:target="_blank"} | 10 Phenopackets; [ERI1](https://omim.org/entry/608739){:target="_blank"} |
+| [EZH1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/EZH1/GraciaDiaz_EZH1_PMID_37433783.ipynb){:target="_blank"} | 19 Phenopackets; [EZH1](https://omim.org/entry/601674) |
 
 
