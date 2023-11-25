@@ -16,6 +16,7 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [FLXB4](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/FBXL4){:target="_blank"|todo |
 | [GLI3](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/GLI3){:target="_blank"} | 77 phenopackets; [Greig cephalopolysyndactyly syndrome](https://omim.org/entry/175700){:target="_blank"}, [Pallister-Hall syndrome](https://omim.org/entry/146510){:target="_blank"}, [Polydactyly, postaxial, types A1 and B](https://omim.org/entry/174200){:target="_blank"} |
 | [KDM6B](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/KDM6B/KDM6B_PMID_37196654.ipynb){:target="_blank"} |73 phenopackets; [Neurodevelopmental disorder with coarse facies and mild distal skeletal abnormalities](https://omim.org/entry/ 618505){:target="_blank"} |
+| [LIRICAL](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"} | 384 phenopackets, various diseases |
 
 
 
