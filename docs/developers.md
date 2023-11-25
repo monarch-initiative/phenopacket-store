@@ -15,5 +15,5 @@ other software, and then we present a notebook that summarizes the phenopackets.
 All phenopackets are stored in subfolders of the notebooks folder, which is organized according to cohort.
 
 phenopacket-store has a small python package that facilitates exporting all available phenopackets. See
-[](https://github.com/monarch-initiative/phenopacket-store/blob/main/GetPhenopackets.ipynb){:target="_blank"} for details.
+[GetPhenopackets](https://github.com/monarch-initiative/phenopacket-store/blob/main/GetPhenopackets.ipynb){:target="_blank"} for details.
 
