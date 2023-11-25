@@ -1,0 +1,209 @@
+{
+  "id": "PMID:1680289-Hirschhorn-1991-ADA-Patient",
+  "subject": {
+    "id": "Patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0030273",
+        "label": "Reduced red cell adenosine deaminase level"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0031381",
+        "label": "Decreased lymphocyte proliferation in response to mitogen"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA level"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0032218",
+        "label": "Decreased proportion of CD4-positive T cells"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:1680289",
+            "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+          }
+        }
+      ]
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "interpretation-id",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:102700",
+          "label": "SEVERE COMBINED IMMUNODEFICIENCY, AUTOSOMAL RECESSIVE, T CELL-NEGATIVE,B CELL-NEGATIVE, NK CELL-NEGATIVE, DUE TO ADENOSINE DEAMINASE DEFICIENCY"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "variant-1",
+                "geneContext": {
+                  "valueId": "NCBIGene:100",
+                  "symbol": "ADA"
+                },
+                "vcfRecord": {
+                  "genomeAssembly": "GRCh37",
+                  "chrom": "20",
+                  "pos": "43251680",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-11-25T17:41:43.201056957Z",
+    "createdBy": "n/a",
+    "submittedBy": "HPO:probinson",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2018-03-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "pato",
+        "name": "Phenotype And Trait Ontology",
+        "url": "http://purl.obolibrary.org/obo/pato.owl",
+        "version": "2018-03-28",
+        "namespacePrefix": "PATO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/PATO_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "19-03-2018",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "eco",
+        "name": "Evidence and Conclusion Ontology",
+        "url": "http://purl.obolibrary.org/obo/eco.owl",
+        "version": "2018-11-10",
+        "namespacePrefix": "ECO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/ECO_"
+      },
+      {
+        "id": "omim",
+        "name": "Online Mendelian Inheritance in Man",
+        "url": "https://www.omim.org",
+        "version": "n/a",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "n/a"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0"
+  }
+}

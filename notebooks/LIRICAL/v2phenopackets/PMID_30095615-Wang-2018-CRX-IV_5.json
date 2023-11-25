@@ -1,0 +1,155 @@
+{
+  "id": "PMID:30095615-Wang-2018-CRX-IV:5",
+  "subject": {
+    "id": "IV:5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:30095615",
+            "description": "A novel CRX frameshift mutation causing cone-rod dystrophy in a Chinese family: A case report"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:30095615",
+            "description": "A novel CRX frameshift mutation causing cone-rod dystrophy in a Chinese family: A case report"
+          }
+        }
+      ]
+    },
+    {
+      "type": {
+        "id": "HP:0001123",
+        "label": "Visual field defect"
+      },
+      "evidence": [
+        {
+          "evidenceCode": {
+            "id": "ECO:0000033",
+            "label": "author statement supported by traceable reference"
+          },
+          "reference": {
+            "id": "PMID:30095615",
+            "description": "A novel CRX frameshift mutation causing cone-rod dystrophy in a Chinese family: A case report"
+          }
+        }
+      ]
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "interpretation-id",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:120970",
+          "label": "CONE-ROD DYSTROPHY 2; CORD2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV:5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "variant-1",
+                "geneContext": {
+                  "valueId": "NCBIGene:1406",
+                  "symbol": "CRX"
+                },
+                "vcfRecord": {
+                  "genomeAssembly": "GRCh37",
+                  "chrom": "19",
+                  "pos": "48342860",
+                  "ref": "T",
+                  "alt": "TG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-11-25T17:41:40.541867017Z",
+    "createdBy": "n/a",
+    "submittedBy": "HPO:probinson",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2018-03-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "pato",
+        "name": "Phenotype And Trait Ontology",
+        "url": "http://purl.obolibrary.org/obo/pato.owl",
+        "version": "2018-03-28",
+        "namespacePrefix": "PATO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/PATO_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "19-03-2018",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "eco",
+        "name": "Evidence and Conclusion Ontology",
+        "url": "http://purl.obolibrary.org/obo/eco.owl",
+        "version": "2018-11-10",
+        "namespacePrefix": "ECO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/ECO_"
+      },
+      {
+        "id": "omim",
+        "name": "Online Mendelian Inheritance in Man",
+        "url": "https://www.omim.org",
+        "version": "n/a",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "n/a"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0"
+  }
+}
