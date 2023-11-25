@@ -19,6 +19,7 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [LIRICAL](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"} | 384 phenopackets, various diseases |
 |[MAKP8IP3](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/MAPK8IP3/MAPK8IP3_summary.ipynb){:target="_blank"} | 20 phenopackets,[Neurodevelopmental disorder with or without variable brain abnormalities](https://omim.org/entry/618443){:target="_blank"}|
 | [OFD1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/OFD1/OFD1_Summary.ipynb){:target="_blank"} | 25 phenopackets; [Simpson-Golabi-Behmel syndrome, type 2](https://omim.org/entry/300209){:target="_blank"}, [Joubert syndrome 10](https://omim.org/entry/300804){:target="_blank"}, [Orofaciodigital syndrome I](https://omim.org/entry/311200){:target="_blank"} |
+| [PPP2R1A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"} | 60 phenopackets' [Houge-Janssens syndrome 2](https://omim.org/entry/616362){:target="_blank"} |
 
 
 
