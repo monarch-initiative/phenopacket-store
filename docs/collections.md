@@ -27,6 +27,8 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [SMARCC2](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SMARCC2/SMARCC2_Bosch_2023_PMID_37551667.ipynb){:target="_blank"}| 60 phenopackets;  [Coffin-Siris syndrome 8](https://omim.org/entry/618362){:target="_blank"}  |
 | [SON](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SON/Dingemans_2022_SON_PMID_34521999.ipynb){:target="_blank"}  | 52 phenopackets;   [ZTTK syndrome](https://omim.org/entry/617140){:target="_blank"}  |
 | [STXBP1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/STXBP1/Xian_2022_STXBP1.ipynb){:target="_blank"}  | 463 phenopackets; [Developmental and epileptic encephalopathy 4](https://omim.org/entry/612164){:target="_blank"}  |
+| [SUOX](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SUOX/SUOX_Li_PMID_36303223_CreatePhenopackets.ipynb){:target="_blank"}  | 35 phenopackets; [Sulfite oxidase deficiency](https://omim.org/entry/272300){:target="_blank"}  |
+
 
 
 
