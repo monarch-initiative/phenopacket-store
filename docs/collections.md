@@ -30,6 +30,9 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [SUOX](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SUOX/SUOX_Li_PMID_36303223_CreatePhenopackets.ipynb){:target="_blank"}  | 35 phenopackets; [Sulfite oxidase deficiency](https://omim.org/entry/272300){:target="_blank"}  |
 | [TRAF7](){:target="_blank"} | 45 phenopackets; [Cardiac, facial, and digital anomalies with developmental delay](https://omim.org/entry/618164){:target="_blank"}	|
 | [WFS1](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/WFS1){:target="_blank"} | 16 phenopackets; [Wolfram syndrome 1](https://omim.org/entry/222300){:target="_blank"}, [Deafness, autosomal dominant 6](https://omim.org/entry/600965){:target="_blank"} |
+| [WWOX](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/WWOX){:target="_blank"}  | 9 phenopackets; [Developmental and epileptic encephalopathy 28](https://omim.org/entry/616211){:target="_blank"}, [Spinocerebellar ataxia, autosomal recessive 12](https://omim.org/entry/614322){:target="_blank"},] |
+
+
 
 
 
