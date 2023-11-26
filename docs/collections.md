@@ -24,6 +24,10 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [SETD2](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/SETD2){:target="_blank"} | 29 phenopackets; [Rabin-Pappas syndrome](https://omim.org/entry/620155){:target="_blank"}, [Rabin-Pappas syndrome](https://omim.org/entry/620155){:target="_blank"}, [Intellectual developmental disorder, autosomal dominant 70](https://omim.org/entry/620157){:target="_blank"}, [Luscan-Lumish syndrome](https://omim.org/entry/616831){:target="_blank"} |
 | [SLC45A2](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SLC45A2/SLC45A2_Moreno2022PMID_36553465.ipynb){:target="_blank"}  | 30 phenopackets; [Albinism, oculocutaneous, type IV](https://omim.org/entry/606574){:target="_blank"}   |
 | [SMARCB1](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/SMARCB1){:target="_blank"}   | 17 phenopackets; [Coffin-Siris syndrome 3](https://omim.org/entry/614608){:target="_blank"},  [Rhabdoid tumor predisposition syndrome-1](https://omim.org/entry/609322){:target="_blank"}  |
+| [SMARCC2](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SMARCC2/SMARCC2_Bosch_2023_PMID_37551667.ipynb){:target="_blank"}| 60 phenopackets;  [Coffin-Siris syndrome 8](https://omim.org/entry/618362){:target="_blank"}  |
+
+
+
 
 
 
