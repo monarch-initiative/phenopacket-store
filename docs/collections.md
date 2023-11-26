@@ -17,9 +17,12 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [GLI3](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/GLI3){:target="_blank"} | 77 phenopackets; [Greig cephalopolysyndactyly syndrome](https://omim.org/entry/175700){:target="_blank"}, [Pallister-Hall syndrome](https://omim.org/entry/146510){:target="_blank"}, [Polydactyly, postaxial, types A1 and B](https://omim.org/entry/174200){:target="_blank"} |
 | [KDM6B](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/KDM6B/KDM6B_PMID_37196654.ipynb){:target="_blank"} |73 phenopackets; [Neurodevelopmental disorder with coarse facies and mild distal skeletal abnormalities](https://omim.org/entry/ 618505){:target="_blank"} |
 | [LIRICAL](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"} | 384 phenopackets, various diseases |
-|[MAKP8IP3](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/MAPK8IP3/MAPK8IP3_summary.ipynb){:target="_blank"} | 20 phenopackets,[Neurodevelopmental disorder with or without variable brain abnormalities](https://omim.org/entry/618443){:target="_blank"}|
+|[MAKP8IP3](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/MAPK8IP3/MAPK8IP3_summary.ipynb){:target="_blank"} | 20 phenopackets, [Neurodevelopmental disorder with or without variable brain abnormalities](https://omim.org/entry/618443){:target="_blank"}|
 | [OFD1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/OFD1/OFD1_Summary.ipynb){:target="_blank"} | 25 phenopackets; [Simpson-Golabi-Behmel syndrome, type 2](https://omim.org/entry/300209){:target="_blank"}, [Joubert syndrome 10](https://omim.org/entry/300804){:target="_blank"}, [Orofaciodigital syndrome I](https://omim.org/entry/311200){:target="_blank"} |
-| [PPP2R1A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"} | 60 phenopackets' [Houge-Janssens syndrome 2](https://omim.org/entry/616362){:target="_blank"} |
+| [PPP2R1A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"} | 60 phenopackets; [Houge-Janssens syndrome 2](https://omim.org/entry/616362){:target="_blank"} |
+| [SCN2A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SCN2A/Crawford_SCN2A.ipynb){:target="_blank"} | 396 phenopackets; [Developmental and epileptic encephalopathy 11](https://omim.org/entry/613721){:target="_blank"}, [Seizures, benign familial infantile, 3](https://omim.org/entry/607745){:target="_blank"} |
+
+
 
 
 
