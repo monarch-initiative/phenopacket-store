@@ -26,6 +26,8 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [SMARCB1](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/SMARCB1){:target="_blank"}   | 17 phenopackets; [Coffin-Siris syndrome 3](https://omim.org/entry/614608){:target="_blank"},  [Rhabdoid tumor predisposition syndrome-1](https://omim.org/entry/609322){:target="_blank"}  |
 | [SMARCC2](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SMARCC2/SMARCC2_Bosch_2023_PMID_37551667.ipynb){:target="_blank"}| 60 phenopackets;  [Coffin-Siris syndrome 8](https://omim.org/entry/618362){:target="_blank"}  |
 | [SON](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SON/Dingemans_2022_SON_PMID_34521999.ipynb){:target="_blank"}  | 52 phenopackets;   [ZTTK syndrome](https://omim.org/entry/617140){:target="_blank"}  |
+| [STXBP1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/STXBP1/Xian_2022_STXBP1.ipynb){:target="_blank"}  | 463 phenopackets; [Developmental and epileptic encephalopathy 4](https://omim.org/entry/612164){:target="_blank"}  |
+
 
 
 
