@@ -21,6 +21,7 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [OFD1](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/OFD1/OFD1_Summary.ipynb){:target="_blank"} | 25 phenopackets; [Simpson-Golabi-Behmel syndrome, type 2](https://omim.org/entry/300209){:target="_blank"}, [Joubert syndrome 10](https://omim.org/entry/300804){:target="_blank"}, [Orofaciodigital syndrome I](https://omim.org/entry/311200){:target="_blank"} |
 | [PPP2R1A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"} | 60 phenopackets; [Houge-Janssens syndrome 2](https://omim.org/entry/616362){:target="_blank"} |
 | [SCN2A](https://github.com/monarch-initiative/phenopacket-store/blob/main/notebooks/SCN2A/Crawford_SCN2A.ipynb){:target="_blank"} | 396 phenopackets; [Developmental and epileptic encephalopathy 11](https://omim.org/entry/613721){:target="_blank"}, [Seizures, benign familial infantile, 3](https://omim.org/entry/607745){:target="_blank"} |
+| [SETD2](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/SETD2){:target="_blank"} | 29 phenopackets; [Rabin-Pappas syndrome](https://omim.org/entry/620155){:target="_blank"}, [Rabin-Pappas syndrome](https://omim.org/entry/620155){:target="_blank"}, [Intellectual developmental disorder, autosomal dominant 70](https://omim.org/entry/620157){:target="_blank"}, [Luscan-Lumish syndrome](https://omim.org/entry/616831){:target="_blank"} |
 
 
 
