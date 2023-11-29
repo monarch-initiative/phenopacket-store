@@ -32,14 +32,7 @@ were mainly created using the Python library [pyphetools](https://github.com/mon
 | [TRAF7](){:target="_blank"} | 45 phenopackets; [Cardiac, facial, and digital anomalies with developmental delay](https://omim.org/entry/618164){:target="_blank"}	|
 | [WFS1](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/WFS1){:target="_blank"} | 16 phenopackets; [Wolfram syndrome 1](https://omim.org/entry/222300){:target="_blank"}, [Deafness, autosomal dominant 6](https://omim.org/entry/600965){:target="_blank"} |
 | [WWOX](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/WWOX){:target="_blank"}  | 9 phenopackets; [Developmental and epileptic encephalopathy 28](https://omim.org/entry/616211){:target="_blank"}, [Spinocerebellar ataxia, autosomal recessive 12](https://omim.org/entry/614322){:target="_blank"} |
-| [ZSWIN6](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/ZSWIM6){:target="_blank"} |?? phenopackets; [Acromelic frontonasal dysostosis](https://omim.org/entry/603671){:target="_blank"}, [Neurodevelopmental disorder with movement abnormalities, abnormal gait, and autistic features](https://omim.org/entry/617865){:target="_blank"}
-
-
-
-
-
-
-
+| [ZSWIN6](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks/ZSWIM6){:target="_blank"} | 16 phenopackets; [Acromelic frontonasal dysostosis](https://omim.org/entry/603671){:target="_blank"}, [Neurodevelopmental disorder with movement abnormalities, abnormal gait, and autistic features](https://omim.org/entry/617865){:target="_blank"}
 
 
 
