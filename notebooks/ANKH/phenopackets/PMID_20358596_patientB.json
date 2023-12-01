@@ -1,0 +1,244 @@
+{
+  "id": "Patient_B",
+  "subject": {
+    "id": "Patient B",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000678",
+        "label": "Dental crowding"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y2M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y2M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012799",
+        "label": "Unilateral facial palsy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0Y2M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000405",
+        "label": "Conductive hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004437",
+        "label": "Cranial hyperostosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005906",
+        "label": "Delayed pneumatization of the mastoid process"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003016",
+        "label": "Metaphyseal widening"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002694",
+        "label": "Sclerosis of skull base"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y0M0D"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient B",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:123000",
+          "label": "Craniometaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient B",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_jenJYMlTFVNjAxuNeJIoYBzQT",
+                "geneContext": {
+                  "valueId": "HGNC:15492",
+                  "symbol": "ANKH"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_054027.6:c.1172T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.14713637A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": "14713637",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-12-01T20:37:37.353114128Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:20358596",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/20358596",
+        "description": "Three novel mutations in the ANK membrane protein cause craniometaphyseal dysplasia with variable conductive hearing loss"
+      }
+    ]
+  }
+}
