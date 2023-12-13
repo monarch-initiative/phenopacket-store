@@ -1,0 +1,225 @@
+{
+  "id": "PMID_29297947_29297947_P1",
+  "subject": {
+    "id": "29297947_P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012512",
+        "label": "Diffuse optic disc pallor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000505",
+        "label": "Visual impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040288",
+        "label": "Nasogastric tube feeding"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001290",
+        "label": "Generalized hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500230",
+        "label": "Increased CSF glycine concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500200",
+        "label": "Increased CSF glutamate concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002490",
+        "label": "Increased CSF lactate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003108",
+        "label": "Hyperglycinuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002415",
+        "label": "Leukodystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030890",
+        "label": "Hyperintensity of cerebral white matter on MRI"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040272",
+        "label": "Hyperintensity of MRI T2 signal of the spinal cord"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "29297947_P1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616370",
+          "label": "Mitochondrial DNA depletion syndrome 4"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "29297947_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_CgQIAivjKRWiKwmryZffUSPcW",
+                "geneContext": {
+                  "valueId": "HGNC:19857",
+                  "symbol": "ISCA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_194279.3:c.229G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.74494329G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": "74494329",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-12-13T07:28:47.324177980Z",
+    "createdBy": "pyphetools",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:29297947",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29297947",
+        "description": "Loss-of-function mutations in ISCA2 disrupt 4Fe-4S cluster machinery and cause a fatal leukodystrophy with hyperglycinemia and mtDNA depletion"
+      }
+    ]
+  }
+}

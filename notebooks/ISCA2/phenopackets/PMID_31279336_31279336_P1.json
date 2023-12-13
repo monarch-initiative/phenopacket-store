@@ -1,0 +1,159 @@
+{
+  "id": "PMID_31279336_31279336_P1",
+  "subject": {
+    "id": "31279336_P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033834",
+        "label": "Malaise"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100785",
+        "label": "Insomnia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000737",
+        "label": "Irritability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002518",
+        "label": "Abnormal periventricular white matter morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001317",
+        "label": "Abnormal cerebellum morphology"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "31279336_P1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616370",
+          "label": "Mitochondrial DNA depletion syndrome 4"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "31279336_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_BrZiHqtcayQCQvfBcofRlFwtz",
+                "geneContext": {
+                  "valueId": "HGNC:19857",
+                  "symbol": "ISCA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_194279.3:c.355G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.74494890G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": "74494890",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2023-12-13T07:28:47.342976093Z",
+    "createdBy": "pyphetools",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:31279336",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31279336",
+        "description": "A novel ISCA2 variant responsible for an early-onset neurodegenerative mitochondrial disorder: a case report of multiple mitochondrial dysfunctions syndrome 4"
+      }
+    ]
+  }
+}
