@@ -1,0 +1,166 @@
+{
+  "id": "PMID_23364397_23364397_P1",
+  "subject": {
+    "id": "23364397_P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002047",
+        "label": "Malignant hyperthermia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "23364397_P1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "23364397_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ieVdFuYyDFRoQxhmHVlfHGcWi",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.479T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50523933A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50523933",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "23364397_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_BzhggyZsYjHkaJnuSEiRIjSNY",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.697C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50523715G>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50523715",
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-01-06T14:28:11.325736045Z",
+    "createdBy": "pyphetools",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:23364397",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23364397",
+        "description": "Exome sequencing reveals SCO2 mutations in a family presented with fatal infantile hyperthermia"
+      }
+    ]
+  }
+}

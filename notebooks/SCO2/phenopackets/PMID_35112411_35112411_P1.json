@@ -1,0 +1,153 @@
+{
+  "id": "PMID_35112411_35112411_P1",
+  "subject": {
+    "id": "35112411_P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002359",
+        "label": "Frequent falls"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033526",
+        "label": "Limited ankle dorsiflexion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008944",
+        "label": "Distal lower limb amyotrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009130",
+        "label": "Hand muscle atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001337",
+        "label": "Tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007204",
+        "label": "Diffuse white matter abnormalities"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "35112411_P1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "35112411_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_hUOALfyayqHGBNGmufQCcqmvZ",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.361G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50524051C>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50524051",
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-01-06T14:28:11.291338920Z",
+    "createdBy": "pyphetools",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:35112411",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35112411",
+        "description": "Identification of a novel homozygous synthesis of cytochrome c oxidase 2 variant in siblings with early-onset axonal Charcot-Marie-Tooth disease"
+      }
+    ]
+  }
+}

@@ -17,3 +17,18 @@ All phenopackets are stored in subfolders of the notebooks folder, which is orga
 phenopacket-store has a small python package that facilitates exporting all available phenopackets. See
 [GetPhenopackets](https://github.com/monarch-initiative/phenopacket-store/blob/main/GetPhenopackets.ipynb){:target="_blank"} for details.
 
+## Running the notebooks locally
+
+There are several ways of doing this. We prefer the following method. First, create a virtual environment (shown here as my_venv, but choose any name you like) and activiate it. Then, install pyphetools and some packages required to run Jupyter notebooks. Use the ipykernel package to enable the use of the virtual environment in a notebook. Finally, open or create a notebook and choose the kernel
+
+```
+python3 -m venv my_venv
+source my_venv/bin/activate
+pip install --upgrade pip
+pip install pyphetools jupyter ipykernel
+python -m ipykernel install --name my_venv --user
+jupyter-notebook
+```
+
+Make sure to choose the kernel called 'my_venv' in the notebook.
+
