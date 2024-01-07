@@ -1,0 +1,118 @@
+{
+  "id": "PMID_36996813_Individual_KCHYD24-1",
+  "subject": {
+    "id": "Individual KCHYD24-1",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Individual KCHYD24-1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620371",
+          "label": "Neurodevelopmental disorder with intracranial hemorrhage, seizures, and spasticity"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual KCHYD24-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_lBtGTqfzTTLdkUXqMnDbhocAO",
+                "geneContext": {
+                  "valueId": "HGNC:17474",
+                  "symbol": "ESAM"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_138961.3:c.605T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.124756209A>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": "124756209",
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-01-07T19:17:21.196075916Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2023-10-09",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36996813",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36996813",
+        "description": "TBi-allelic variants in the ESAM tight-junction gene cause a neurodevelopmental disorder associated with fetal intracranial hemorrhage"
+      }
+    ]
+  }
+}
