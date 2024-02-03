@@ -1,31 +1,40 @@
 {
-  "id": "PMID_9312167_A:II:8",
+  "id": "PMID_10942416_Patient",
   "subject": {
-    "id": "A:II:8",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P34Y"
-      }
-    },
-    "sex": "MALE"
+    "id": "Patient"
   },
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0002900",
+        "label": "Hypokalemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004918",
+        "label": "Hyperchloremic metabolic acidosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000121",
         "label": "Nephrocalcinosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000787",
-        "label": "Nephrolithiasis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003259",
-        "label": "Elevated circulating creatinine concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
       }
     },
     {
@@ -36,47 +45,66 @@
     },
     {
       "type": {
-        "id": "HP:0004727",
-        "label": "Impaired renal concentrating ability"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0008341",
         "label": "Distal renal tubular acidosis"
       }
     },
     {
       "type": {
-        "id": "HP:0032066",
-        "label": "Decreased serum bicarbonate concentration"
-      },
-      "excluded": true
+        "id": "HP:0031033",
+        "label": "Impaired urinary acidification"
+      }
     },
     {
       "type": {
-        "id": "HP:0011042",
-        "label": "Abnormal blood potassium concentration"
+        "id": "HP:0007430",
+        "label": "Generalized edema"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001541",
+        "label": "Ascites"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003265",
+        "label": "Neonatal hyperbilirubinemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "A:II:8",
+      "id": "Patient",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:179800",
-          "label": "Distal renal tubular acidosis 1"
+          "id": "OMIM:611590",
+          "label": "Renal tubular acidosis, distal, with hemolytic anemia"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "A:II:8",
+            "subjectOrBiosampleId": "Patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_NGkjwYDPVopquNvnXdHhpQztS",
+                "id": "var_PPKHcjeECXxGkaHlUDfznWYog",
                 "geneContext": {
                   "valueId": "HGNC:11027",
                   "symbol": "SLC4A1"
@@ -84,24 +112,24 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000342.4:c.1766G>A"
+                    "value": "NM_000342.4:c.1462G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.44255707C>T"
+                    "value": "NC_000017.11:g.44257514C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "44255707",
+                  "pos": "44257514",
                   "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -111,7 +139,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-02-03T11:53:23.807129144Z",
+    "created": "2024-02-03T12:42:01.640719175Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -158,9 +186,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:9312167",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/9312167",
-        "description": "Familial distal renal tubular acidosis is associated with mutations in the red cell anion exchanger (Band 3, AE1) gene"
+        "id": "PMID:10942416",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10942416",
+        "description": "Severe hereditary spherocytosis and distal renal tubular acidosis associated with the total absence of band 3."
       }
     ]
   }
