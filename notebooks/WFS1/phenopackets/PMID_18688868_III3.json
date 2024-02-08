@@ -1,0 +1,143 @@
+{
+  "id": "PMID_18688868_III:3",
+  "subject": {
+    "id": "III:3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P69Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008573",
+        "label": "Low-frequency sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000408",
+        "label": "Progressive sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100647",
+        "label": "Graves disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100280",
+        "label": "Crohn's disease"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "III:3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:600965",
+          "label": "Deafness, autosomal dominant 6"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "III:3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_wZYCiINDcMfVZKUgdtdEgRWXJ",
+                "geneContext": {
+                  "valueId": "HGNC:12762",
+                  "symbol": "WFS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006005.3:c.2576G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.6302371G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": "6302371",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-02-08T09:26:56.435563087Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-01-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:18688868",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18688868",
+        "description": "Autoimmune disease in a DFNA6/14/38 family carrying a novel missense mutation in WFS1"
+      }
+    ]
+  }
+}
