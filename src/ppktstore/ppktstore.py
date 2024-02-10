@@ -103,29 +103,53 @@ class PPKtStore:
                             continue
                         dx = interpretation.diagnosis
                         gene = cohort
-                        if genomic_interpretation.variant_interpretation:
-                            if genomic_interpretation.variant_interpretation.variation_descriptor:
-                                if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context:
-                                    if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol:
-                                        gene = genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol
                         pmid = ''
                         if ppack.meta_data.external_references:
                             pmid = ppack.meta_data.external_references[0].id
                         else:
                             print('Warning: Cannot extract PMID from [{}] in cohort: {}'.format(entry['filename'],
                                                                                                 cohort))
-
+                        alleles = []
                         for genomic_interpretation in dx.genomic_interpretations:
-                            newRow = {
-                                column_names[0]: dx.disease.label,
-                                column_names[1]: dx.disease.id,
-                                column_names[2]: ppack.subject.id,
-                                column_names[3]: gene,
-                                column_names[4]: '',
-                                column_names[5]: '',
-                                column_names[6]: pmid
-                            }
-                            rows.append(newRow)
+                            if genomic_interpretation.variant_interpretation:
+                                if genomic_interpretation.variant_interpretation.variation_descriptor:
+
+                                    if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context:
+                                        if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol:
+                                            gene = genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol
+                                    if genomic_interpretation.variant_interpretation.variation_descriptor.expressions:
+                                        hgvsC = ''
+                                        hgvsG = ''
+
+                                        for expr in genomic_interpretation.variant_interpretation.variation_descriptor.expressions:
+                                            if expr['syntax'] == 'hgvs.c':
+                                                hgvsC = expr['value']
+                                            if expr['syntax'] == 'hgvs.g':
+                                                hgvsG = expr['value']
+                                        if hgvsC:
+                                            alleles.append(hgvsC)
+                                        else:
+                                            if hgvsG:
+                                                alleles.append(hgvsG)
+
+                        allele1 = ''
+                        allele2 = ''
+                        if len(alleles) == 2:
+                            allele1 = alleles[0]
+                            allele2 = alleles[1]
+                        else:
+                            if len(alleles) == 1:
+                                allele1 = alleles[0]
+
+                        rows.append({
+                            column_names[0]: dx.disease.label,
+                            column_names[1]: dx.disease.id,
+                            column_names[2]: ppack.subject.id,
+                            column_names[3]: gene,
+                            column_names[4]: allele1,
+                            column_names[5]: allele2,
+                            column_names[6]: pmid
+                        })
         df = pd.DataFrame.from_records(rows, columns=column_names)
         with open(tsvFileName, 'w') as write_tsv:
             write_tsv.write(df.to_csv(sep='\t', index=False))
