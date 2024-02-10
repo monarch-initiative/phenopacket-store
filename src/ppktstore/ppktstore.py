@@ -1,11 +1,13 @@
 import os
-import tempfile
 import shutil
 import tarfile
+import tempfile
+
 import pandas as pd
-from .cohort import Cohort
 from google.protobuf.json_format import Parse
 from phenopackets import Phenopacket
+
+from .cohort import Cohort
 
 
 class PPKtStore:
@@ -27,7 +29,6 @@ class PPKtStore:
             raise ValueError(f"Unexpected path with {len(lpath_components)} components: {dirpath}")
         return lpath_components[-2]
 
-
     def get_phenopacket_dataframe(self) -> pd.DataFrame:
         column_names = Cohort.get_detailed_header()
         rows = []
@@ -48,7 +49,7 @@ class PPKtStore:
             rows.append(d)
         return pd.DataFrame.from_records(rows, columns=column_names)
 
-    def get_store_gzip(self, outfilename: str, flat = False):
+    def get_store_gzip(self, outfilename: str, flat=False):
         tsvFileName = outfilename + '.tsv'
         if not outfilename.endswith(".tgz"):
             print("Adding archive suffix to outfilename")
@@ -61,25 +62,24 @@ class PPKtStore:
                 tar.add(tmpdirname, arcname='.')
         print(f"Added {n_copied_files} files to tar archive {outfilename}")
 
-    def get_store_zip(self, outfilename: str, flat = False):
+    def get_store_zip(self, outfilename: str, flat=False):
         tsvFileName = outfilename + '.tsv'
         if outfilename.endswith(".zip"):
             raise ValueError("Do not add .zip to file name; this is done automatically")
         with tempfile.TemporaryDirectory() as tmpdirname:
-            n_copied_files =  self._copy_files_to_temporary_directory(tmpdirname, flat)
+            n_copied_files = self._copy_files_to_temporary_directory(tmpdirname, flat)
             self._create_tsv_file(os.path.join(tmpdirname, tsvFileName))
 
             shutil.make_archive(outfilename, 'zip', tmpdirname)
         f = os.path.abspath(os.getcwd())
         print(f"Added {n_copied_files} files to zip archive at {f}/{outfilename}")
 
-
-    def _copy_files_to_temporary_directory(self, tmpdirname: str, flat = False) -> int:
+    def _copy_files_to_temporary_directory(self, tmpdirname: str, flat=False) -> int:
         n_copied_files = 0
         for cohort in self._cohorts:
             temp_cohort_dir = tmpdirname
             if not flat:
-                temp_cohort_dir = os.path.join(tmpdirname,cohort.name)
+                temp_cohort_dir = os.path.join(tmpdirname, cohort.name)
                 os.makedirs(temp_cohort_dir)
             # original files
             files = cohort.phenopacket_files
@@ -102,21 +102,30 @@ class PPKtStore:
                         if not interpretation.diagnosis:
                             continue
                         dx = interpretation.diagnosis
+                        gene = cohort
+                        if genomic_interpretation.variant_interpretation:
+                            if genomic_interpretation.variant_interpretation.variation_descriptor:
+                                if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context:
+                                    if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol:
+                                        gene = genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol
+                        pmid = ''
+                        if ppack.meta_data.external_references:
+                            pmid = ppack.meta_data.external_references[0].id
+                        else:
+                            print('Warning: Cannot extract PMID from [{}] in cohort: {}'.format(entry['filename'],
+                                                                                                cohort))
+
                         for genomic_interpretation in dx.genomic_interpretations:
                             newRow = {
                                 column_names[0]: dx.disease.label,
                                 column_names[1]: dx.disease.id,
                                 column_names[2]: ppack.subject.id,
-                                column_names[3]: genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol,
+                                column_names[3]: gene,
                                 column_names[4]: '',
                                 column_names[5]: '',
-                                column_names[6]: ''
+                                column_names[6]: pmid
                             }
-                            if ppack.meta_data.external_references:
-                                newRow[column_names[6]] = ppack.meta_data.external_references[0].id
                             rows.append(newRow)
         df = pd.DataFrame.from_records(rows, columns=column_names)
-        with open(tsvFileName,'w') as write_tsv:
+        with open(tsvFileName, 'w') as write_tsv:
             write_tsv.write(df.to_csv(sep='\t', index=False))
-
-
