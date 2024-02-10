@@ -12,10 +12,9 @@ class PPKtListing:
     mdFile = None
     _cohorts = {}
 
-    def __init__(self, notebook_dir, outFile) -> None:
+    def __init__(self, notebook_dir) -> None:
         self._cohorts = {}
         self._readPPKts(notebook_dir)
-        self._createMDFile(outFile)
 
     def _readPPKts(self, notebook_dir):
         if not os.path.isdir(notebook_dir):
@@ -60,7 +59,7 @@ class PPKtListing:
                         chosenFile = notebookFile
             if chosenFile:
                 self._cohorts[cohort_name]['nb'] = join(path, chosenFile)
-        print(self._cohorts)
+        print(f"We found {len(self._cohorts)} cohorts")
 
     def _readPPKTdata(self, ppack):
         if not ppack.interpretations:
@@ -79,7 +78,7 @@ class PPKtListing:
             raise ValueError(f"Unexpected path with {len(lpath_components)} components: {dirpath}")
         return lpath_components[-2]
 
-    def _createMDFile(self, outFile):
+    def createMDFile(self, outFile):
         self.mdFile = MdUtils(file_name=outFile)
         self.mdFile.new_header(level=1, title='Collections')
         self.mdFile.new_paragraph(
@@ -97,17 +96,21 @@ class PPKtListing:
             if 'nb' in cohortData:
                 cohortLink = '[' + cohort + '](' + cohortData['nb'] + '){:target="_blank"}'
             commentsText = str(cohortData['count']) + ' Phenopackets;'
-            for entry in cohortData['dx']:
-                label = cohortData['dx'][entry]
-                dxLink = self._getDXLink(entry)
-                if not dxLink:
-                    dxLink = ''
-                commentsText += '[' + label + '](' + dxLink + '){:target="_blank"}'
+            # Show details on diseases in a cohort except for very large cohorts (up to 20 distinct diseases)
+            if len(cohortData['dx']) < 21:
+                for entry in cohortData['dx']:
+                    label = cohortData['dx'][entry]
+                    dxLink = self._getDXLink(entry)
+                    if not dxLink:
+                        dxLink = ''
+                    commentsText += '[' + label + '](' + dxLink + '){:target="_blank"}'
 
             tableData.extend([cohortLink, commentsText])
             rowCount += 1
         self.mdFile.new_line()
         self.mdFile.new_table(columns=2, rows=rowCount, text=tableData, text_align='left')
+        self.mdFile.create_md_file()
+        print(f"Wrote phenopacket collection MarkDown file to {outFile}")
 
     def _getDXLink(self, dxId):
         parts = dxId.split(':')
