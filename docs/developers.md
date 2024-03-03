@@ -6,7 +6,7 @@ Each collection features phenopackets representing clinical infomration about in
 
 ## pyphetools
 
-Most of the phenopackets were developed using the [pyphetools](https://github.com/monarch-initiative/pyphetools) library. Details about how
+Most of the phenopackets were developed using the [pyphetools](https://github.com/monarch-initiative/pyphetools){:target="_blank"} library. Details about how
 the phenopackets were generated can be found in the corresponding [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} folder organized according to gene or collection. In some cases, the phenopackets were generated with
 other software, and then we present a notebook that summarizes the phenopackets.
 

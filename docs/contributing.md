@@ -2,7 +2,7 @@
 
 Contributions to phenopacket-store are welcome. The scope of phenopacket-store comprises cohorts of indiduals with rare disease with deep phenotype as well as genotypic data.
 
-There are many ways of contributing. For most users we recommend using the Excel template. Optionally, the correspodning python code can be used to generate phenopackets, or we can perform the conversion.
+There are many ways of contributing. For most users we recommend using the Excel template. Optionally, the corresponding python code can be used to generate phenopackets, or the HPO team can perform the conversion.
 
 - [variant notation](variant_notation.md)
 - [Excel template](excel.md)
