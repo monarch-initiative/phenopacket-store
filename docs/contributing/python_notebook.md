@@ -1,11 +1,11 @@
-# Python (Jupyter) notebook for the templat
+# Python (Jupyter) notebook for the Excel template
 
 The following sections explain how to use Python code to create phenopackets from data stored using the [Excel template](excel.md).
 
 
 ## Preparing the notebook.
 
-We first import the necessarz libraries. Note that for concisenss, we import all classes from the pyphetools modules below. It is often better
+We first import the necessary libraries. Note that for conciseness, we import all classes from the pyphetools modules below. It is often better
 to import only the specifically needed classes.
 
 ```python
