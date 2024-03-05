@@ -20,15 +20,20 @@ import pyphetools
 print(f"Using pyphetools version {pyphetools.__version__}")
 ```
 
-Import the [Human Phenotype Ontology (HPO)](https://hpo.jax.org/app/) hp.json file. Note that here we show code that assumes that the file is available in the encloding directory. Update the ORCID identifier to your own [ORCID](https://orcid.org/){:target="_blank"}  id.
+Load the [Human Phenotype Ontology (HPO)](https://hpo.jax.org/app/) (`v2024-01-16` in this example). 
+Note that here we show code that downloads the HPO file from a remote URL. 
+However, path to a local `hp.json` file will work too, while saving the remote bandwidth. 
+
+Last, update the ORCID identifier to your own [ORCID](https://orcid.org/){:target="_blank"}  id.
 
 ```python
-parser = HpoParser(hpo_json_file="../hp.json")
+hpo_version = '2024-01-16'
+hpo_url = f'https://github.com/obophenotype/human-phenotype-ontology/releases/download/v{hpo_version}/hp.json'
+parser = HpoParser(hpo_json_file=hpo_url)
 hpo_cr = parser.get_hpo_concept_recognizer()
-hpo_version = parser.get_version()
 hpo_ontology = parser.get_ontology()
 created_by="ORCID:0000-0002-0736-9199"
-print(f"HPO version {hpo_version}")
+print(f"HPO version {parser.get_version()}")
 ```
 
 import the template file and show the contents (Adjust the head command to show as many lines as needed to check the data).
