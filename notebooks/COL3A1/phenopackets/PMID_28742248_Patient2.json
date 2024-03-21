@@ -1,10 +1,10 @@
 {
-  "id": "PMID_28258187_Patient_3",
+  "id": "PMID_28742248_Patient_2",
   "subject": {
-    "id": "Patient 3",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P10Y"
+        "iso8601duration": "P5Y10M"
       }
     },
     "sex": "FEMALE"
@@ -12,20 +12,37 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001075",
-        "label": "Atrophic scars"
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0010648",
-        "label": "Dermal translucency"
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000978",
-        "label": "Bruising susceptibility"
+        "id": "HP:0002350",
+        "label": "Cerebellar cyst"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
@@ -42,38 +59,14 @@
     },
     {
       "type": {
-        "id": "HP:0034295",
-        "label": "Reduced cerebral white matter volume"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
       }
     },
     {
       "type": {
-        "id": "HP:0002119",
-        "label": "Ventriculomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002619",
-        "label": "Varicose veins"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0430046",
-        "label": "Small joint hypermobilty"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001642",
-        "label": "Pulmonic stenosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030816",
-        "label": "Gingival recession"
+        "id": "HP:0012246",
+        "label": "Oculomotor nerve palsy"
       }
     },
     {
@@ -148,85 +141,22 @@
     },
     {
       "type": {
-        "id": "HP:0002350",
-        "label": "Cerebellar cyst"
+        "id": "HP:0010648",
+        "label": "Dermal translucency"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002365",
-        "label": "Hypoplasia of the brainstem"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002280",
-        "label": "Enlarged cisterna magna"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001320",
-        "label": "Cerebellar vermis hypoplasia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100807",
-        "label": "Long fingers"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001238",
-        "label": "Slender finger"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001762",
-        "label": "Talipes equinovarus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100550",
-        "label": "Tendon rupture"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005294",
-        "label": "Arterial dissection"
+        "id": "HP:0430046",
+        "label": "Small joint hypermobilty"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "Patient 2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -235,11 +165,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_CEdvsNCqUkoLPhEULdFPugrjB",
+                "id": "var_xGTwlMUcKcVbYceJXYRLxuiJA",
                 "geneContext": {
                   "valueId": "HGNC:2201",
                   "symbol": "COL3A1"
@@ -247,19 +177,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000090.3:c.479dup"
+                    "value": "NM_000090.3:c.145C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.188987090dup"
+                    "value": "NC_000002.12:g.188984825C>G"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "188987089",
-                  "ref": "G",
-                  "alt": "GT"
+                  "pos": "188984825",
+                  "ref": "C",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -280,15 +210,14 @@
         "label": "Polymicrogyria with or without vascular-type EDS"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-21T16:04:33.678225994Z",
+    "created": "2024-03-21T16:04:33.698503017Z",
     "createdBy": "ORCID:0000-0002-5648-2155",
     "resources": [
       {
@@ -335,9 +264,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:28258187",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28258187",
-        "description": "Bi-allelic variants in COL3A1 encoding the ligand to GPR56 are associated with cobblestone-like cortical malformation, white matter changes and cerebellar cysts"
+        "id": "PMID:28742248",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28742248",
+        "description": "Biallelic COL3A1 mutations result in a clinical spectrum of specific structural brain anomalies and connective tissue abnormalities"
       }
     ]
   }
