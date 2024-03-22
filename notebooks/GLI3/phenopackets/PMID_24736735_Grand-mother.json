@@ -6,35 +6,34 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002164",
         "label": "Nail dysplasia"
       }
     },
     {
       "type": {
+        "id": "HP:0001177",
+        "label": "Preaxial hand polydactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001841",
+        "label": "Preaxial foot polydactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002023",
         "label": "Anal atresia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001627",
-        "label": "Abnormal heart morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000078",
-        "label": "Abnormality of the genital system"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000271",
-        "label": "Abnormality of the face"
       },
       "excluded": true
     },
@@ -52,7 +51,7 @@
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:146510",
+          "id": "OMIM: 146510",
           "label": "Pallister-Hall syndrome"
         },
         "genomicInterpretations": [
@@ -61,7 +60,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_KoILMXdugEqjuPtOQIIGEDoKH",
+                "id": "var_QSFHMKQbcbnxdzAkyZObPJyMm",
                 "geneContext": {
                   "valueId": "HGNC:4319",
                   "symbol": "GLI3"
@@ -69,19 +68,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000168.6:c.2121del"
+                    "value": "NM_000168.6:c.2123_2126del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000007.14:g.41967906del"
+                    "value": "NC_000007.14:g.41967902_41967905del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "41967905",
-                  "ref": "CA",
-                  "alt": "C"
+                  "pos": "41967900",
+                  "ref": "ACCAC",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -95,8 +94,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM: 146510",
+        "label": "Pallister-Hall syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-04T14:09:46.111996889Z",
+    "created": "2024-03-22T17:06:54.054739952Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -135,7 +148,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

@@ -1,7 +1,8 @@
 {
   "id": "PMID_22428873_P4",
   "subject": {
-    "id": "P4"
+    "id": "P4",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -36,6 +37,13 @@
     },
     {
       "type": {
+        "id": "HP:0100258",
+        "label": "Preaxial polydactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000256",
         "label": "Macrocephaly"
       },
@@ -64,8 +72,8 @@
     },
     {
       "type": {
-        "id": "HP:0001510",
-        "label": "Growth delay"
+        "id": "HP:0002164",
+        "label": "Nail dysplasia"
       },
       "excluded": true
     },
@@ -78,15 +86,15 @@
     },
     {
       "type": {
-        "id": "HP:0002023",
-        "label": "Anal atresia"
+        "id": "HP:0001510",
+        "label": "Growth delay"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002164",
-        "label": "Nail dysplasia"
+        "id": "HP:0002023",
+        "label": "Anal atresia"
       },
       "excluded": true
     }
@@ -106,7 +114,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_pCUrAFcyYqJbcUbYIkqWxvKBZ",
+                "id": "var_ZamNdHNtdmOrlFZJfThJgqsOE",
                 "geneContext": {
                   "valueId": "HGNC:4319",
                   "symbol": "GLI3"
@@ -140,8 +148,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:174200",
+        "label": "Polydactyly, postaxial, types A1 and B"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2023-12-03T10:23:13.449673891Z",
+    "created": "2024-03-22T18:36:23.964248180Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -180,7 +202,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-10-09",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
