@@ -2,9 +2,36 @@
   "id": "PMID_18551513_4",
   "subject": {
     "id": "4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001883",
+        "label": "Talipes"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002747",
+        "label": "Respiratory insufficiency due to muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0003701",
@@ -86,28 +113,6 @@
         "label": "Tube feeding"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001883",
-        "label": "Talipes"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002747",
-        "label": "Respiratory insufficiency due to muscle weakness"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7Y"
-        }
-      }
     }
   ],
   "interpretations": [
@@ -159,8 +164,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613205",
+        "label": "LMNA-related congenital muscular dystrophy"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-11T17:08:26.560544967Z",
+    "created": "2024-03-23T17:30:43.336086988Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -199,7 +218,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
