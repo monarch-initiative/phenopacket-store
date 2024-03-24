@@ -1,51 +1,34 @@
 {
-  "id": "PMID_35420632_patient_3",
+  "id": "PMID_35420632_Patient_3_III-3",
   "subject": {
-    "id": "patient 3",
+    "id": "Patient 3 III-3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P72Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002216",
-        "label": "Premature graying of hair"
+        "id": "HP:0031413",
+        "label": "Short telomere length"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P27Y0M0D"
+          "iso8601duration": "P72Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001082",
-        "label": "Cholecystitis"
+        "id": "HP:0045051",
+        "label": "Decreased DLCO"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P72Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005518",
-        "label": "Increased mean corpuscular volume"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P72Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001873",
-        "label": "Thrombocytopenia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P72Y0M0D"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -56,47 +39,80 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P72Y0M0D"
+          "iso8601duration": "P72Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0031413",
-        "label": "Short telomere length"
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P72Y0M0D"
+          "iso8601duration": "P72Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P72Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005518",
+        "label": "Increased mean corpuscular volume"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P72Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002875",
+        "label": "Exertional dyspnea"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003584",
+          "label": "Late onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0031996",
         "label": "Inspiratory crackles"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P72Y0M0D"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001217",
         "label": "Clubbing"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P72Y0M0D"
-        }
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "patient 3",
+      "id": "Patient 3 III-3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,11 +121,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient 3",
+            "subjectOrBiosampleId": "Patient 3 III-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_lHgMPpoMWmwPOdvfcwTvmcKsn",
+                "id": "var_SaUyZnVAWGxuZQxLtAmrsHveq",
                 "geneContext": {
                   "valueId": "HGNC:17284",
                   "symbol": "POT1"
@@ -143,9 +159,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620367",
+        "label": "Pulmonary fibrosis and/or bone marrow failure syndrome, telomere-related, 8"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P72Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T04:33:03.820971965Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-24T10:01:22.684401988Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -183,7 +212,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
