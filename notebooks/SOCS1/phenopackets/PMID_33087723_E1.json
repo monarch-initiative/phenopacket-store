@@ -1,0 +1,227 @@
+{
+  "id": "PMID_33087723_E1",
+  "subject": {
+    "id": "E1",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002725",
+        "label": "Systemic lupus erythematosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020151",
+        "label": "Anti-dsDNA antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033726",
+        "label": "Lupus nephritis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001973",
+        "label": "Autoimmune thrombocytopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100646",
+        "label": "Thyroiditis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002608",
+        "label": "Celiac disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003765",
+        "label": "Psoriasiform dermatitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001733",
+        "label": "Pancreatitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012189",
+        "label": "Hodgkin lymphoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004313",
+        "label": "Decreased circulating antibody level"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "E1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:619375",
+          "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "E1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_zfNzibVbQALYOGwDCkKFOYAYJ",
+                "geneContext": {
+                  "valueId": "HGNC:19383",
+                  "symbol": "SOCS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003745.2:c.460T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.11255019A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": "11255019",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:619375",
+        "label": "Autoinflammatory syndrome, familial, with or without immunodeficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-25T07:46:46.685930013Z",
+    "createdBy": "ORCID:0000-0001-9969-9517",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:33087723",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33087723",
+        "description": "Early-onset autoimmunity associated with SOCS1 haploinsufficiency"
+      }
+    ]
+  }
+}
