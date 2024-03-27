@@ -1,19 +1,63 @@
 {
-  "id": "PMID_9817917_13076",
+  "id": "PMID_9817917_Family_6_individual_13062",
   "subject": {
-    "id": "13076",
+    "id": "Family 6 individual 13062",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P26Y0M"
+        "iso8601duration": "P25Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0000873",
+        "label": "Diabetes insipidus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000819",
         "label": "Diabetes mellitus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P24Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
       }
     },
     {
@@ -24,33 +68,36 @@
     },
     {
       "type": {
-        "id": "HP:0000873",
-        "label": "Diabetes insipidus"
-      }
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0008373",
-        "label": "Puberty and gonadal disorders"
-      }
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000077",
-        "label": "Abnormality of the kidney"
+        "id": "HP:0001337",
+        "label": "Tremor"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "13076",
+      "id": "Family 6 individual 13062",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -59,11 +106,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "13076",
+            "subjectOrBiosampleId": "Family 6 individual 13062",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_dzeoOwpotsWejbGOkvrbREaGQ",
+                "id": "var_rkdlQygRVOWGgAFPEoetsYInz",
                 "geneContext": {
                   "valueId": "HGNC:12762",
                   "symbol": "WFS1"
@@ -71,19 +118,54 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006005.3:c.599del"
+                    "value": "NM_006005.3:c.676C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000004.12:g.6291335del"
+                    "value": "NC_000004.12:g.6291961C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr4",
-                  "pos": "6291334",
-                  "ref": "CT",
-                  "alt": "C"
+                  "pos": "6291961",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family 6 individual 13062",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_tQwVbhOoSykgdrPNeDBDQSUvc",
+                "geneContext": {
+                  "valueId": "HGNC:12762",
+                  "symbol": "WFS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006005.3:c.2455C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.6302250C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": "6302250",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -97,9 +179,17 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:222300",
+        "label": "Wolfram syndrome 1"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-08T09:30:26.291615009Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-27T11:21:56.618180036Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -137,7 +227,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

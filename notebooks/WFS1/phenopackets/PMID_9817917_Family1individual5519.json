@@ -1,10 +1,10 @@
 {
-  "id": "PMID_9817917_5519",
+  "id": "PMID_9817917_Family_1_individual_5519",
   "subject": {
-    "id": "5519",
+    "id": "Family 1 individual 5519",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P22Y0M"
+        "iso8601duration": "P22Y"
       }
     },
     "sex": "FEMALE"
@@ -12,32 +12,30 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000819",
-        "label": "Diabetes mellitus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000873",
         "label": "Diabetes insipidus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000077",
-        "label": "Abnormality of the kidney"
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
       }
     },
     {
@@ -48,20 +46,47 @@
     },
     {
       "type": {
-        "id": "HP:0008373",
-        "label": "Puberty and gonadal disorders"
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
       }
     },
     {
       "type": {
-        "id": "HP:0000716",
-        "label": "Depression"
+        "id": "HP:0001251",
+        "label": "Ataxia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001337",
+        "label": "Tremor"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "5519",
+      "id": "Family 1 individual 5519",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -70,11 +95,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "5519",
+            "subjectOrBiosampleId": "Family 1 individual 5519",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_STbLWlDbXIBNmUVgDGTbaWjcR",
+                "id": "var_hRgMgOVjHZTLpbkudxABKKreW",
                 "geneContext": {
                   "valueId": "HGNC:12762",
                   "symbol": "WFS1"
@@ -98,8 +123,8 @@
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -108,9 +133,17 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:222300",
+        "label": "Wolfram syndrome 1"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-08T09:30:26.270515918Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-27T11:21:56.594393014Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -148,7 +181,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
