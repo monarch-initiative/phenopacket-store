@@ -2,14 +2,20 @@
   "id": "PMID_28434921_a_6-month-old_female",
   "subject": {
     "id": "a 6-month-old female",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P0D"
-      }
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002092",
+        "label": "Pulmonary arterial hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0011682",
@@ -78,17 +84,6 @@
         "label": "Upper limb phocomelia"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002092",
-        "label": "Pulmonary arterial hypertension"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
-        }
-      }
     }
   ],
   "interpretations": [
@@ -140,8 +135,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:142900",
+        "label": "Holt-Oram syndrome"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P0D"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-13T18:12:11.016181945Z",
+    "created": "2024-03-27T07:21:37.699770927Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -180,7 +188,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
