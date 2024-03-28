@@ -1,107 +1,73 @@
 {
-  "id": "PMID_36528028_3",
+  "id": "PMID_36440963_III-3",
   "subject": {
-    "id": "3",
-    "sex": "FEMALE"
+    "id": "III-3",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002194",
-        "label": "Delayed gross motor development"
+        "id": "HP:0001012",
+        "label": "Multiple lipomas"
       }
     },
     {
       "type": {
-        "id": "HP:0010862",
-        "label": "Delayed fine motor development"
+        "id": "HP:0006770",
+        "label": "Clear cell renal cell carcinoma"
       }
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
+        "id": "HP:0030436",
+        "label": "Fibrofolliculoma"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100710",
-        "label": "Impulsivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007018",
-        "label": "Attention deficit hyperactivity disorder"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000664",
-        "label": "Synophrys"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001007",
-        "label": "Hirsutism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040019",
-        "label": "Finger clinodactyly"
-      }
+        "id": "HP:0032225",
+        "label": "Perifollicular fibroma"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "3",
+      "id": "III-3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620455",
-          "label": "Neurodevelopmental disorder with hypotonia and speech delay, with or without seizures"
+          "id": "OMIM:620459",
+          "label": "Birt-Hogg-Dube syndrome 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "3",
+            "subjectOrBiosampleId": "III-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_kPhUDOrZCvntfhBfIBMFtGuek",
+                "id": "var_AvBnHetUuvmcemeBPyUisIlgo",
                 "geneContext": {
-                  "valueId": "HGNC:3284",
-                  "symbol": "EIF4A2"
+                  "valueId": "HGNC:13995",
+                  "symbol": "PRDM10"
                 },
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001967.3:c.131_132del"
+                    "value": "NM_020228.3:c.2030G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.186784619_186784620del"
+                    "value": "NC_000011.10:g.129923264C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
-                  "chrom": "chr3",
-                  "pos": "186784614",
-                  "ref": "GTC",
-                  "alt": "G"
+                  "chrom": "chr11",
+                  "pos": "129923264",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -115,8 +81,16 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620459",
+        "label": "Birt-Hogg-Dube syndrome 2"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-03T08:42:46.679451942Z",
+    "created": "2024-03-28T16:06:27.415920019Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -155,7 +129,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -163,9 +137,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:36528028",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36528028",
-        "description": "Rare EIF4A2 variants are associated with a neurodevelopmental disorder characterized by intellectual disability, hypotonia, and epilepsy"
+        "id": "PMID:36440963",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36440963",
+        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dub\u00e9 syndrome and familial lipomatosis"
       }
     ]
   }

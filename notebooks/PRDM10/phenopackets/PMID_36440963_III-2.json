@@ -1,113 +1,72 @@
 {
-  "id": "PMID_35904126_Proband_8",
+  "id": "PMID_36440963_III-2",
   "subject": {
-    "id": "Proband 8",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P12Y"
-      }
-    },
-    "sex": "FEMALE"
+    "id": "III-2",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
+        "id": "HP:0001012",
+        "label": "Multiple lipomas"
       }
     },
     {
       "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
+        "id": "HP:0030436",
+        "label": "Fibrofolliculoma"
       }
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
+        "id": "HP:0032225",
+        "label": "Perifollicular fibroma"
       }
     },
     {
       "type": {
-        "id": "HP:0000494",
-        "label": "Downslanted palpebral fissures"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008551",
-        "label": "Microtia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000358",
-        "label": "Posteriorly rotated ears"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002750",
-        "label": "Delayed skeletal maturation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006610",
-        "label": "Wide intermamillary distance"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
+        "id": "HP:0006770",
+        "label": "Clear cell renal cell carcinoma"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Proband 8",
+      "id": "III-2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620450",
-          "label": "Intellectual developmental disorder, autosomal dominant 73"
+          "id": "OMIM:620459",
+          "label": "Birt-Hogg-Dube syndrome 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Proband 8",
+            "subjectOrBiosampleId": "III-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_HVOdwJylcPLhoBJKKlchAznYC",
+                "id": "var_AvBnHetUuvmcemeBPyUisIlgo",
                 "geneContext": {
-                  "valueId": "HGNC:11537",
-                  "symbol": "TAF4"
+                  "valueId": "HGNC:13995",
+                  "symbol": "PRDM10"
                 },
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003185.4:c.3101_3102del"
+                    "value": "NM_020228.3:c.2030G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000020.11:g.61976326_61976327del"
+                    "value": "NC_000011.10:g.129923264C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
-                  "chrom": "chr20",
-                  "pos": "61976323",
-                  "ref": "CGG",
-                  "alt": "C"
+                  "chrom": "chr11",
+                  "pos": "129923264",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -121,9 +80,17 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620459",
+        "label": "Birt-Hogg-Dube syndrome 2"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-03T09:25:17.642277956Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-28T16:06:27.414954900Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -161,7 +128,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -169,9 +136,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:35904126",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35904126",
-        "description": "De novo putative loss-of-function variants in TAF4 are associated with a neuro-developmental disorder"
+        "id": "PMID:36440963",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36440963",
+        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dub\u00e9 syndrome and familial lipomatosis"
       }
     ]
   }
