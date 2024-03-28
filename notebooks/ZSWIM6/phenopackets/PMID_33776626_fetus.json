@@ -3,20 +3,35 @@
   "subject": {
     "id": "fetus",
     "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P0D"
+      "ontologyClass": {
+        "id": "HP:0034198",
+        "label": "Second trimester onset"
       }
-    }
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011803",
+        "label": "Bifid nose"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P0D"
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
         }
       }
     },
@@ -26,63 +41,21 @@
         "label": "Encephalocele"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P0D"
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0100258",
-        "label": "Preaxial polydactyly"
+        "id": "HP:0001841",
+        "label": "Preaxial foot polydactyly"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025706",
-        "label": "Absent fetal nasal bone"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009927",
-        "label": "Aplasia of the nose"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011803",
-        "label": "Bifid nose"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003027",
-        "label": "Mesomelia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P0D"
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
         }
       }
     },
@@ -92,10 +65,49 @@
         "label": "Hypertelorism"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P0D"
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0025706",
+        "label": "Absent fetal nasal bone"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004987",
+        "label": "Mesomelic leg shortening"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001177",
+        "label": "Preaxial hand polydactyly"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
@@ -113,7 +125,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_UevavPjcGPqcxaFqSLQTgkQQE",
+                "id": "var_jkDyOUuVfWExVABYyfuHhoqdj",
                 "geneContext": {
                   "valueId": "HGNC:29316",
                   "symbol": "ZSWIM6"
@@ -147,8 +159,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:603671",
+        "label": "Acromelic frontonasal dysostosis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034199",
+          "label": "Late first trimester onset"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-08T09:54:29.436275005Z",
+    "created": "2024-03-28T06:52:02.418725013Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -187,7 +213,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
