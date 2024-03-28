@@ -1,10 +1,10 @@
 {
-  "id": "PMID_34101994__II.2",
+  "id": "PMID_34101994_II.1",
   "subject": {
-    "id": " II.2",
+    "id": "II.1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P57Y"
+        "iso8601duration": "P15Y"
       }
     },
     "sex": "MALE"
@@ -12,46 +12,46 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001909",
-        "label": "Leukemia"
+        "id": "HP:0034401",
+        "label": "Atypical teratoid/rhabdoid tumor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0100279",
-        "label": "Ulcerative colitis"
-      }
+        "id": "HP:0001909",
+        "label": "Leukemia"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002888",
         "label": "Ependymoma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001328",
-        "label": "Specific learning disability"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": " II.2",
+      "id": "II.1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:609322",
-          "label": "Rhabdoid tumor predisposition syndrome-1"
+          "label": "Rhabdoid tumor predisposition syndrome 1"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": " II.2",
+            "subjectOrBiosampleId": "II.1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_qokOfdYsSZpNBCJjxpFmCjPYQ",
+                "id": "var_yWzAipUhATfkSsmyxtOPIpmGt",
                 "label": "gain of SMARCB1 exon 6",
                 "geneContext": {
                   "valueId": "HGNC:11103",
@@ -73,9 +73,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:609322",
+        "label": "Rhabdoid tumor predisposition syndrome 1"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-06T11:29:34.817615985Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-28T17:10:03.236306905Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -113,7 +126,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
