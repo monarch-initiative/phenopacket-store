@@ -122,10 +122,10 @@ class PPKtStore:
                                         hgvsG = ''
 
                                         for expr in genomic_interpretation.variant_interpretation.variation_descriptor.expressions:
-                                            if expr['syntax'] == 'hgvs.c':
-                                                hgvsC = expr['value']
-                                            if expr['syntax'] == 'hgvs.g':
-                                                hgvsG = expr['value']
+                                            if expr.syntax == 'hgvs.c':
+                                                hgvsC = expr.value
+                                            if expr.syntax == 'hgvs.g':
+                                                hgvsG = expr.value
                                         if hgvsC:
                                             alleles.append(hgvsC)
                                         else:

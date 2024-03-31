@@ -4,7 +4,7 @@ from .ppacket import PPacket
 from .ppktstore import PPKtStore
 from .ppktlisting import PPKtListing
 
-__version__ = "0.0.6"
+__version__ = "0.1.1"
 
 __all__ = [
     "Cohort",
