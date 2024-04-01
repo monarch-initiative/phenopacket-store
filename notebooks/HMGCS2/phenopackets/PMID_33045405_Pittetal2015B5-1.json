@@ -1,0 +1,149 @@
+{
+  "id": "PMID_33045405_Pitt_et_al.,_2015_B5-1",
+  "subject": {
+    "id": "Pitt et al., 2015 B5-1"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Pitt et al., 2015 B5-1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:605911",
+          "label": "HMG-CoA synthase-2 deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Pitt et al., 2015 B5-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ZEMrYlQRjxiTBicJZPybXkovu",
+                "geneContext": {
+                  "valueId": "HGNC:5008",
+                  "symbol": "HMGCS2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005518.4:c.1078T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.119755536A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "119755536",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:605911",
+        "label": "HMG-CoA synthase-2 deficiency"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-01T07:13:16.476665019Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:33045405",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33045405",
+        "description": "Expanding phenotypic and mutational spectra of mitochondrial HMG-CoA synthase deficiency"
+      }
+    ]
+  }
+}
