@@ -3,9 +3,7 @@ from os.path import join
 
 from google.protobuf.json_format import Parse
 from mdutils.mdutils import MdUtils
-from mdutils import Html
 from phenopackets import Phenopacket
-from src.ppktstore import Cohort, PPacket
 
 
 class PPKtListing:
