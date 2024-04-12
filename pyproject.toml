@@ -29,15 +29,23 @@ keywords = [
     "HPO"]
 dependencies = [
     "mdutils>=1.6.0",
-    "pandas>=2.0.0,<3.0.0",
+    "numpy>=1.24.2,<2.0.0", # 1.24.2 was released on Feb 5, 2023
+    "pandas>=2.0.0,<3.0.0", # 2.0.0 was released on Apr 3, 2023
     "phenopackets>=2.0.2",
     "protobuf<4.0.0",
-    "pyphetools"
+    "pyphetools",
 ]
 dynamic = ["version"]
 
 [project.optional-dependencies]
-test = ["pytest>=7.0.0, <=8.0.0"]
+test = [
+    "pytest>=7.0.0, <8.0.0",
+]
+
+notebooks = [
+    "matplotlib>=3.7.2, <4.0.0", # 3.7.2 was released on Jul 5, 2023
+    "seaborn>=0.12.2, <1.0.0",   # 0.12.2 was released on Dec 30, 2022
+]
 
 
 [project.urls]
