@@ -208,7 +208,7 @@ class PPKtStoreStats:
                                     var_list.append(vdesc.label)
                                     stillLookingForVar = False
                     if stillLookingForVar:
-                        var_list.append("could not find variant")
+                        print(f"[WARNING] could not find variant for phenopacket {ppkt.id}")
         return var_list
 
 
