@@ -1,6 +1,6 @@
 
 
-from .ppkt_store_stats import PPKtStoreStats
+from ._ppkt_store_stats import PPKtStoreStats
 
 
 __all__ = [
