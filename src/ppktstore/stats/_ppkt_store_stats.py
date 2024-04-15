@@ -164,10 +164,12 @@ class PPKtStoreStats:
         for _, row in self._df.iterrows():
             disease_id = row["disease_id"]
             disease_label = row["disease"]
+            individual_id = row["patient_id"]
+            PMID = row[" PMID"]
             omim_match = re.search(OMIM_REGEX, disease_id)
             mondo_match = re.search(MONDO_REGEX, disease_id)
             if not omim_match and not mondo_match:
-                invalid_list.append({"disease_id": disease_id, "label": disease_label})
+                invalid_list.append({"disease_id": disease_id, "label": disease_label, "individual_id": individual_id, 'PMID': PMID})
         if len(invalid_list) == 0:
             print ("No problems found.")
             return  pd.DataFrame(["disease_id", "label"])
@@ -204,9 +206,12 @@ class PPKtStoreStats:
                                     var_list.append(e.value)
                                     stillLookingForVar = False
                             if stillLookingForVar:
-                                if vdesc.HasField("label"):
-                                    var_list.append(vdesc.label)
-                                    stillLookingForVar = False
+                                try:
+                                    if len(vdesc.label) > 0:
+                                        var_list.append(vdesc.label)
+                                        stillLookingForVar = False
+                                except:
+                                    pass
                     if stillLookingForVar:
                         print(f"[WARNING] could not find variant for phenopacket {ppkt.id}")
         return var_list
@@ -234,7 +239,7 @@ class PPKtStoreStats:
         df.set_index("disease_id", inplace=True)
         return df
 
-    def show_phenopacket_ids_by_variant_in_cohort(self, input_zipfile, cohort) -> pd.DataFrame:
+    def show_possible_duplicates_by_variant(self, input_zipfile, cohort) -> pd.DataFrame:
         if not os.path.isfile(input_zipfile):
             raise FileNotFoundError(f"Not a file: {input_zipfile}")
         if not input_zipfile.endswith(".zip"):
@@ -247,6 +252,8 @@ class PPKtStoreStats:
                 variant_to_ppkt_id_d[v].append(ppkt.id)
         item_list = list()
         for variant, patient_id_list in variant_to_ppkt_id_d.items():
+            if len(patient_id_list) == 1:
+                continue ## cannot be duplicate
             for pat_id in patient_id_list:
                 item_list.append({"variant": variant, "individual_id": pat_id})
         return pd.DataFrame(item_list)
