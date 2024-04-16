@@ -84,6 +84,8 @@ class PPKtStoreStats:
         if all_ppkt is None:
             raise FileNotFoundError("Could not find \"all_phenopackets.tsv\" in zip archive")
         list_of_phenopackets = list()
+        if cohort.endswith("/"):
+            cohort = cohort[:-1]
         regex = f"{cohort}/.*\.json"
         with archive.open(all_ppkt) as f:
             for info in archive.infolist():
@@ -190,6 +192,19 @@ class PPKtStoreStats:
 
 
     @staticmethod
+    def _get_gene(ppkt:PPKt.Phenopacket) -> str:
+        for interpretation in ppkt.interpretations:
+            if interpretation.HasField("diagnosis"):
+                dx = interpretation.diagnosis
+                for gi in dx.genomic_interpretations:
+                    if gi.HasField("variant_interpretation"):
+                        vi = gi.variant_interpretation
+                        if vi.HasField("variation_descriptor"):
+                            vdesc = vi.variation_descriptor
+                            return vdesc.gene_context.symbol
+        return "na"
+
+    @staticmethod
     def _get_variant_list(ppkt:PPKt.Phenopacket) -> typing.List[str]:
         var_list = list()
         for interpretation in ppkt.interpretations:
@@ -245,6 +260,24 @@ class PPKtStoreStats:
         if not input_zipfile.endswith(".zip"):
             raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
         ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+        item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
+        return pd.DataFrame(item_list)
+
+    def show_phenopackets_with_gene(self, input_zipfile, cohort, gene_symbol) -> pd.DataFrame:
+        ppkt_with_gene_lst = list()
+        if not os.path.isfile(input_zipfile):
+            raise FileNotFoundError(f"Not a file: {input_zipfile}")
+        if not input_zipfile.endswith(".zip"):
+            raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
+        ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+        for ppkt in ppkt_list:
+            symbol = PPKtStoreStats._get_gene(ppkt=ppkt)
+            if symbol == gene_symbol:
+                ppkt_with_gene_lst.append({"gene": gene_symbol, "phenopacket": ppkt.id})
+        return pd.DataFrame(ppkt_with_gene_lst)
+
+
+    def _get_possible_duplicates_by_variant(self, ppkt_list) -> typing.List[typing.Dict[str,str]]:
         variant_to_ppkt_id_d = defaultdict(list)
         for ppkt in ppkt_list:
             varlist = PPKtStoreStats._get_variant_list(ppkt=ppkt)
@@ -256,7 +289,24 @@ class PPKtStoreStats:
                 continue ## cannot be duplicate
             for pat_id in patient_id_list:
                 item_list.append({"variant": variant, "individual_id": pat_id})
-        return pd.DataFrame(item_list)
+        return item_list
+
+    def show_cohorts_with_possible_duplicates(self, input_zipfile) -> pd.DataFrame:
+        cohorts = PPKtStoreStats._get_list_of_cohorts(zipfile.ZipFile(input_zipfile, 'r'))
+        cohort_list = list()
+        for cohort in cohorts:
+            print(cohort)
+            ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+            item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
+            if len(item_list) == 0:
+                continue
+            else:
+                for i in item_list:
+                    i["cohort"] = cohort
+                    cohort_list.append(i)
+        return pd.DataFrame(cohort_list)
+
+
 
     def find_phenopackets_with_no_variants(self, input_zipfile) -> typing.List[str]:
         if not os.path.isfile(input_zipfile):
