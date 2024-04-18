@@ -5,7 +5,7 @@ import sys
 import ppktstore
 
 
-def main(argv):
+def main(argv) -> int:
     """
     Phenopacket-store CLI
     """
@@ -81,4 +81,4 @@ def setup_logging():
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    sys.exit(main(sys.argv[1:]))
