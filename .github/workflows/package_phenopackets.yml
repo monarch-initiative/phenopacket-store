@@ -50,7 +50,7 @@ jobs:
 
       - name: Package the phenopackets
         run: |
-          python3 -m pip ppktstore package --notebooks "${NOTEBOOK_DIR}" --output "${PHENOPACKET_ARCHIVE_NAME}"
+          python3 -m ppktstore package --notebooks "${NOTEBOOK_DIR}" --output "${PHENOPACKET_ARCHIVE_NAME}"
 
       - name: Upload the phenopacket archive
         uses: actions/upload-artifact@v4
