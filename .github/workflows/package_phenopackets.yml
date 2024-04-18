@@ -9,24 +9,20 @@ on:
 env:
   # Path to directory that contains the cohorts, one cohort per folder.
   NOTEBOOK_DIR: notebooks
-  # How shall we name the archive with all phenopackets?
-  PHENOPACKET_ARCHIVE_NAME: phenopackets.${{ github.ref_name }}
 
   # Run n jobs at the same time
   N_JOBS: 2
   KERNEL_NAME: pp_venv
 
-permissions:
-  contents: write
 jobs:
   generate-phenopackets:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4.3.1
         with:
-          python-version: "3.10"
+          python-version: '3.10'
 
       - name: Install the phenopacket-store package
         run: |
@@ -50,11 +46,11 @@ jobs:
 
       - name: Package the phenopackets
         run: |
-          python3 -m ppktstore package --notebooks "${NOTEBOOK_DIR}" --output "${PHENOPACKET_ARCHIVE_NAME}"
+          python3 -m ppktstore package --notebook-dir "${NOTEBOOK_DIR}" --output phenopackets
 
       - name: Upload the phenopacket archive
         uses: actions/upload-artifact@v4
         with:
-          name: ${PHENOPACKET_ARCHIVE_NAME}
-          path: ${PHENOPACKET_ARCHIVE_NAME}.zip
+          name: phenopacket-store
+          path: phenopackets.zip
           retention-days: 7
