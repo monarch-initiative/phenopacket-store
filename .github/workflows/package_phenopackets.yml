@@ -48,11 +48,11 @@ jobs:
 
       - name: Package the phenopackets
         run: |
-          python3 -m ppktstore package --notebook-dir "${NOTEBOOK_DIR}" --output "${PHENOPACKET_ARCHIVE_NAME}"
+          python3 -m ppktstore package --notebook-dir "${NOTEBOOK_DIR}" --output phenopackets
 
       - name: Upload the phenopacket archive
         uses: actions/upload-artifact@v4
         with:
-          name: ${PHENOPACKET_ARCHIVE_NAME}
-          path: ${PHENOPACKET_ARCHIVE_NAME}.zip
+          name: phenopackets
+          path: phenopackets.zip
           retention-days: 7
