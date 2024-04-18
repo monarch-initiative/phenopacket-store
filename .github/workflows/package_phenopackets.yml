@@ -1,0 +1,60 @@
+name: Package phenopackets
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  # Path to directory that contains the cohorts, one cohort per folder.
+  NOTEBOOK_DIR: notebooks
+  # How shall we name the archive with all phenopackets?
+  PHENOPACKET_ARCHIVE_NAME: phenopackets.${{ github.ref_name }}
+
+  # Run n jobs at the same time
+  N_JOBS: 2
+  KERNEL_NAME: pp_venv
+
+permissions:
+  contents: write
+jobs:
+  generate-phenopackets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install the phenopacket-store package
+        run: |
+          python3 -m pip install .[notebooks]
+
+#      Uncomment the code below if we wish to generate the phenopackets as well
+#      - name: Install shell dependencies
+#        run: |
+#          apt install parallel
+#
+#      - name: Setup Jupyter kernel
+#        run: |
+#          python3 -m pip install ipykernel notebook
+#          python3 -m ipykernel install --user --name ${KERNEL_NAME}
+#
+#      - name: Run all notebooks
+#        run: |
+#          NOTEBOOKS=$(find "${NOTEBOOK_DIR}" -name "*.ipynb")
+#          N_JOBS=$(grep -c ^processor /proc/cpuinfo)
+#          parallel --jobs ${N_JOBS} --eta jupyter execute --kernel_name=${KERNEL_NAME} {} ::: "${NOTEBOOKS}"
+
+      - name: Package the phenopackets
+        run: |
+          python3 -m pip ppktstore package --notebooks "${NOTEBOOK_DIR}" --output "${PHENOPACKET_ARCHIVE_NAME}"
+
+      - name: Upload the phenopacket archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${PHENOPACKET_ARCHIVE_NAME}
+          path: ${PHENOPACKET_ARCHIVE_NAME}.zip
+          retention-days: 7
