@@ -1,0 +1,145 @@
+{
+  "id": "PMID_36440963_III-2",
+  "subject": {
+    "id": "III-2",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001012",
+        "label": "Multiple lipomas"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030436",
+        "label": "Fibrofolliculoma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032225",
+        "label": "Perifollicular fibroma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006770",
+        "label": "Clear cell renal cell carcinoma"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "III-2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620459",
+          "label": "Birt-Hogg-Dube syndrome 2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "III-2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_AvBnHetUuvmcemeBPyUisIlgo",
+                "geneContext": {
+                  "valueId": "HGNC:13995",
+                  "symbol": "PRDM10"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020228.3:c.2030G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.129923264C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": "129923264",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620459",
+        "label": "Birt-Hogg-Dube syndrome 2"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-28T16:06:27.414954900Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36440963",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36440963",
+        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dub\u00e9 syndrome and familial lipomatosis"
+      }
+    ]
+  }
+}

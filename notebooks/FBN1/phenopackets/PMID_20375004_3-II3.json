@@ -2,6 +2,11 @@
   "id": "PMID_20375004_3-II:3",
   "subject": {
     "id": "3-II:3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P21Y"
+      }
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -9,6 +14,18 @@
       "type": {
         "id": "HP:0030053",
         "label": "Stiff skin"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034671",
+        "label": "Knee contracture"
       }
     },
     {
@@ -34,6 +51,62 @@
         "id": "HP:0033482",
         "label": "Limited shoulder flexion"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012727",
+        "label": "Thoracic aortic aneurysm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012181",
+        "label": "Entrapment neuropathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001083",
+        "label": "Ectopia lentis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
@@ -51,7 +124,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_icZYKbARpowWkvEXvqkMOFUoM",
+                "id": "var_lvFBPckPtVZitvPaurJSUxDYx",
                 "geneContext": {
                   "valueId": "HGNC:3603",
                   "symbol": "FBN1"
@@ -92,14 +165,15 @@
         "label": "Stiff skin syndrome"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P21Y"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-13T19:50:10.446842193Z",
+    "created": "2024-03-22T10:35:11.107611894Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -138,7 +212,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

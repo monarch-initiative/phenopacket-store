@@ -4,9 +4,11 @@ Contributions to phenopacket-store are welcome. The scope of phenopacket-store c
 
 There are many ways of contributing. For most users we recommend using the Excel template. Optionally, the corresponding python code can be used to generate phenopackets, or the HPO team can perform the conversion.
 
-- [variant notation](variant_notation.md)
-- [Excel template](excel.md)
-- [Python (Jupyter) notebook for the template](python_notebook.md)
+- [pyphetools documentation](https://monarch-initiative.github.io/pyphetools/user-guide/template/) about using the Excel template.
+
+- [variant notation](https://monarch-initiative.github.io/pyphetools/user-guide/variant_notation/){:target="_blank"}
+- [Excel template](https://monarch-initiative.github.io/pyphetools/user-guide/excel/){:target="_blank"}
+- [Python (Jupyter) notebook for the template](https://monarch-initiative.github.io/pyphetools/user-guide/python_notebook/){:target="_blank"}
 
 
 ### Developers

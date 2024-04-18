@@ -4,12 +4,45 @@
     "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P1Y"
+        "iso8601duration": "P16Y"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001045",
+        "label": "Vitiligo"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0004315",
@@ -111,39 +144,6 @@
         "label": "Recurrent fever"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000821",
-        "label": "Hypothyroidism"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100651",
-        "label": "Type I diabetes mellitus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001045",
-        "label": "Vitiligo"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
     }
   ],
   "interpretations": [
@@ -161,7 +161,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_jFyjFUqEMmlnxneSfeimRBtls",
+                "id": "var_HOqgLLNlazVuzUEmOLezbTXnR",
                 "geneContext": {
                   "valueId": "HGNC:1542",
                   "symbol": "CBLB"
@@ -195,8 +195,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620430",
+        "label": "Autoimmune disease, multisystem, infantile-onset, 3"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-17T06:21:08.537551879Z",
+    "created": "2024-03-21T14:55:33.908031940Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -235,7 +248,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

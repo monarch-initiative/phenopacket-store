@@ -1,0 +1,204 @@
+{
+  "id": "PMID_4045952_IV.5",
+  "subject": {
+    "id": "IV.5",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002470",
+        "label": "Nonprogressive cerebellar ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002080",
+        "label": "Intention tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004840",
+        "label": "Hypochromic microcytic anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001924",
+        "label": "Sideroblastic anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011273",
+        "label": "Anisocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004447",
+        "label": "Poikilocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031020",
+        "label": "Bone marrow hypercellularity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002169",
+        "label": "Clonus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012187",
+        "label": "Increased erythrocyte protoporphyrin concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "IV.5",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301310",
+          "label": "Anemia, sideroblastic, and spinocerebellar ataxia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV.5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_WXpqMLvhIdWpjEbIzXzwlYppI",
+                "geneContext": {
+                  "valueId": "HGNC:48",
+                  "symbol": "ABCB7"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001271696.3:c.1200T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.75071516A>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": "75071516",
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301310",
+        "label": "Anemia, sideroblastic, and spinocerebellar ataxia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-21T13:55:00.732832908Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-02-27",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:4045952",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/4045952",
+        "description": "Hereditary sideroblastic anaemia and ataxia: an X linked recessive disorder"
+      }
+    ]
+  }
+}

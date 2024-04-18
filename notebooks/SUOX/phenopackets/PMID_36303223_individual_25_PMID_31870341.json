@@ -2,11 +2,6 @@
   "id": "PMID_36303223_individual_25_PMID_31870341",
   "subject": {
     "id": "individual_25_PMID_31870341",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P1Y"
-      }
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -36,6 +31,12 @@
     },
     {
       "type": {
+        "id": "HP:0020222",
+        "label": "Hypohomocysteinemia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012758",
         "label": "Neurodevelopmental delay"
       },
@@ -61,20 +62,6 @@
         "label": "Ectopia lentis"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002160",
-        "label": "Hyperhomocystinemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003537",
-        "label": "Hypouricemia"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
@@ -92,7 +79,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_qRzqMscFwVxggOHIfriZgSxDJ",
+                "id": "var_flTQFFUyFhkvdsfDxKfotkeXu",
                 "geneContext": {
                   "valueId": "HGNC:11460",
                   "symbol": "SUOX"
@@ -127,7 +114,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_FplYECMIKSEhUZlDeorEyOddK",
+                "id": "var_KaUWjsLTgoLmDeRYodzlHVqdM",
                 "geneContext": {
                   "valueId": "HGNC:11460",
                   "symbol": "SUOX"
@@ -161,8 +148,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:272300",
+        "label": "Sulfite oxidase deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2023-12-05T14:58:09.588178873Z",
+    "created": "2024-03-27T06:40:29.748061895Z",
     "createdBy": "ORCID:0000-0003-2598-6622",
     "resources": [
       {
@@ -201,7 +201,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-10-09",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

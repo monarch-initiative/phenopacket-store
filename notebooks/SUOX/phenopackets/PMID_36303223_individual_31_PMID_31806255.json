@@ -2,11 +2,6 @@
   "id": "PMID_36303223_individual_31_PMID_31806255",
   "subject": {
     "id": "individual_31_PMID_31806255",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P1Y11M"
-      }
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -26,6 +21,12 @@
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020222",
+        "label": "Hypohomocysteinemia"
       }
     },
     {
@@ -77,13 +78,6 @@
     },
     {
       "type": {
-        "id": "HP:0002160",
-        "label": "Hyperhomocystinemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0010934",
         "label": "Xanthinuria"
       },
@@ -119,7 +113,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RrgsfUohBAZffwlnPTmieGtRD",
+                "id": "var_mpxoeWjdjyWhlPHdNtVehKpyV",
                 "geneContext": {
                   "valueId": "HGNC:11460",
                   "symbol": "SUOX"
@@ -153,8 +147,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:272300",
+        "label": "Sulfite oxidase deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y11M"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2023-12-05T14:58:09.605233907Z",
+    "created": "2024-03-27T06:40:29.786936044Z",
     "createdBy": "ORCID:0000-0003-2598-6622",
     "resources": [
       {
@@ -193,7 +200,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-10-09",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

@@ -4,26 +4,12 @@
     "id": "15499950_P4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6M"
-      }
-    },
-    "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
+        "iso8601duration": "P8M"
       }
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0005348",
-        "label": "Inspiratory stridor"
-      }
-    },
     {
       "type": {
         "id": "HP:0001252",
@@ -32,14 +18,20 @@
     },
     {
       "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
+        "id": "HP:0005348",
+        "label": "Inspiratory stridor"
       }
     },
     {
       "type": {
         "id": "HP:0012444",
         "label": "Brain atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
       }
     }
   ],
@@ -92,9 +84,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T07:18:55.447739839Z",
-    "createdBy": "pyphetools",
+    "created": "2024-03-24T17:39:43.412631988Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -132,7 +137,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

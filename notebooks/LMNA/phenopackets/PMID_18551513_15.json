@@ -2,9 +2,25 @@
   "id": "PMID_18551513_15",
   "subject": {
     "id": "15",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P20Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002747",
+        "label": "Respiratory insufficiency due to muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0003701",
@@ -86,17 +102,6 @@
         "label": "Tube feeding"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002747",
-        "label": "Respiratory insufficiency due to muscle weakness"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
     }
   ],
   "interpretations": [
@@ -148,8 +153,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613205",
+        "label": "LMNA-related congenital muscular dystrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11M"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-11T17:08:26.570730924Z",
+    "created": "2024-03-23T17:30:43.552626848Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -188,7 +206,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-02-27",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

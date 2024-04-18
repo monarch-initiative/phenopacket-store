@@ -2,24 +2,19 @@
   "id": "PMID_25525168_25525168_P1",
   "subject": {
     "id": "25525168_P1",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P32Y"
-      }
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001098",
-        "label": "Abnormal fundus morphology"
+        "id": "HP:0011003",
+        "label": "High myopia"
       }
     },
     {
       "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
+        "id": "HP:0001098",
+        "label": "Abnormal fundus morphology"
       }
     }
   ],
@@ -62,8 +57,8 @@
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -72,9 +67,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:608908",
+        "label": "Myopia 6"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T07:18:55.343950986Z",
-    "createdBy": "pyphetools",
+    "created": "2024-03-24T17:36:45.025454044Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -112,7 +120,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

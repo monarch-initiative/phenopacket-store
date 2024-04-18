@@ -12,6 +12,18 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001636",
         "label": "Tetralogy of Fallot"
       }
@@ -24,20 +36,28 @@
     },
     {
       "type": {
-        "id": "HP:0000778",
-        "label": "Hypoplasia of the thymus"
+        "id": "HP:0010515",
+        "label": "Aplasia/Hypoplasia of the thymus"
       }
     },
     {
       "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
+        "id": "HP:0000581",
+        "label": "Blepharophimosis"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
       },
       "excluded": true
     },
@@ -50,8 +70,57 @@
     },
     {
       "type": {
-        "id": "HP:0011767",
-        "label": "Abnormality of the parathyroid physiology"
+        "id": "HP:0010882",
+        "label": "Pulmonary valve atresia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031834",
+        "label": "Aortopulmonary collateral arteries"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011613",
+        "label": "Interrupted aortic arch type B"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010442",
+        "label": "Polydactyly"
       },
       "excluded": true
     }
@@ -62,8 +131,8 @@
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:217095",
-          "label": "Conotruncal anomaly face syndrome"
+          "id": "OMIM:188400",
+          "label": "DiGeorge syndrome"
         },
         "genomicInterpretations": [
           {
@@ -71,7 +140,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_WBBZfhAKZhZJSWFqAkDtXAmAs",
+                "id": "var_ofAqxZsJnRtBoeLKkaLjzlGuK",
                 "geneContext": {
                   "valueId": "HGNC:11592",
                   "symbol": "TBX1"
@@ -79,7 +148,7 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001379200.1:c.1250del"
+                    "value": "NM_080647.1:c.1223del"
                   },
                   {
                     "syntax": "hgvs.g",
@@ -105,9 +174,17 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:188400",
+        "label": "DiGeorge syndrome"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-08T07:53:22.212903976Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-03-27T07:24:56.009219169Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -145,7 +222,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

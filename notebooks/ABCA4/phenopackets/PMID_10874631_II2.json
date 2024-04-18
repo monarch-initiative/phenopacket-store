@@ -1,0 +1,214 @@
+{
+  "id": "PMID_10874631_II.2",
+  "subject": {
+    "id": "II.2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P34Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001133",
+        "label": "Constriction of peripheral visual field"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000550",
+        "label": "Undetectable electroretinogram"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000543",
+        "label": "Optic disc pallor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032286",
+        "label": "Ultra-low vision with retained light perception"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030491",
+        "label": "Choriocapillaris atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000580",
+        "label": "Pigmentary retinopathy"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "II.2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:601718",
+          "label": "Retinitis pigmentosa 19"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "II.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_kYtbznuTTVBNxTMhGuRhcSCqc",
+                "geneContext": {
+                  "valueId": "HGNC:34",
+                  "symbol": "ABCA4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000350.3:c.1938-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.94060760C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "94060760",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "II.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_cgNBsGcwFBQkmaDOKRBRoCofK",
+                "label": "large deletion of unknown size",
+                "geneContext": {
+                  "valueId": "HGNC:34",
+                  "symbol": "ABCA4"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:601718",
+        "label": "Retinitis pigmentosa 19"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-14T13:19:21.344089031Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-03",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:10874631",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10874631",
+        "description": "Mutations of the retinal specific ATP binding transporter gene (ABCR) in a single family segregating both autosomal recessive retinitis pigmentosa RP19 and Stargardt disease: evidence of clinical heterogeneity at this locus"
+      }
+    ]
+  }
+}

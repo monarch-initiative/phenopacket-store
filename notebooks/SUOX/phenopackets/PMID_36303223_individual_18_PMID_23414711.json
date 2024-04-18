@@ -2,11 +2,6 @@
   "id": "PMID_36303223_individual_18_PMID_23414711",
   "subject": {
     "id": "individual_18_PMID_23414711",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P1Y"
-      }
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -26,6 +21,12 @@
       "type": {
         "id": "HP:0034745",
         "label": "Elevated circulating S-sulfocysteine concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020222",
+        "label": "Hypohomocysteinemia"
       }
     },
     {
@@ -80,20 +81,6 @@
         "label": "Ectopia lentis"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0500181",
-        "label": "Hypertaurinemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002160",
-        "label": "Hyperhomocystinemia"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
@@ -111,7 +98,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_xXWsmTbWKxTvpscYSLTYXxaUw",
+                "id": "var_OsJVzopppBDwGtGbHszLbdEHy",
                 "geneContext": {
                   "valueId": "HGNC:11460",
                   "symbol": "SUOX"
@@ -145,8 +132,21 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:272300",
+        "label": "Sulfite oxidase deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2023-12-05T14:58:09.569991827Z",
+    "created": "2024-03-27T06:40:29.705503940Z",
     "createdBy": "ORCID:0000-0003-2598-6622",
     "resources": [
       {
@@ -185,7 +185,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2023-10-09",
+        "version": "2024-03-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

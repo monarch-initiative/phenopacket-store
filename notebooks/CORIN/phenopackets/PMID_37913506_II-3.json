@@ -1,0 +1,168 @@
+{
+  "id": "PMID_37913506_II-3",
+  "subject": {
+    "id": "II-3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P53Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004749",
+        "label": "Atrial flutter"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031295",
+        "label": "Left atrial enlargement"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000691",
+        "label": "Left atrial fibrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005110",
+        "label": "Atrial fibrillation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012664",
+        "label": "Reduced left ventricular ejection fraction"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "II-3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620734",
+          "label": "Cardiomyopathy, familial hypertrophic, 30, atrial"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "II-3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_KLqkqLVVhtokhNJVSFnQCYCpt",
+                "geneContext": {
+                  "valueId": "HGNC:19012",
+                  "symbol": "CORIN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006587.4:c.684dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.47744520dup"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": "47744516",
+                  "ref": "T",
+                  "alt": "TC"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620734",
+        "label": "Cardiomyopathy, familial hypertrophic, 30, atrial"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P52Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-04T06:06:15.061499834Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-03",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:37913506",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37913506",
+        "description": "Corin and Left Atrial Cardiomyopathy, Hypertension, Arrhythmia, and Fibrosis"
+      }
+    ]
+  }
+}

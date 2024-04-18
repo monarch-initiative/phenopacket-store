@@ -1,0 +1,160 @@
+{
+  "id": "PMID_21358634_Family_16",
+  "subject": {
+    "id": "Family 16"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0034720",
+        "label": "Self-healing squamous epithelioma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005116",
+        "label": "Arterial tortuosity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004970",
+        "label": "Ascending tubular aorta aneurysm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000193",
+        "label": "Bifid uvula"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Family 16",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:132800",
+          "label": "Multiple self-healing squamous epithelioma, susceptibility to"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 16",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_tQtvWMazbVkwVDhDngAfBhRNN",
+                "geneContext": {
+                  "valueId": "HGNC:11772",
+                  "symbol": "TGFBR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004612.4:c.980del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.99144738del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "99144736",
+                  "ref": "GC",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:132800",
+        "label": "Multiple self-healing squamous epithelioma, susceptibility to"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-03-29T04:56:00.232181072Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-03-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:21358634",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/21358634",
+        "description": "Multiple self-healing squamous epithelioma is caused by a disease-specific spectrum of mutations in TGFBR1"
+      }
+    ]
+  }
+}
