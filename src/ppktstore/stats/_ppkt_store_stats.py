@@ -308,7 +308,7 @@ class PPKtStoreStats:
 
 
 
-    def find_phenopackets_with_no_variants(self, input_zipfile) -> typing.List[str]:
+    def find_phenopackets_with_no_variants(self, input_zipfile) -> pd.DataFrame:
         if not os.path.isfile(input_zipfile):
             raise FileNotFoundError(f"Not a file: {input_zipfile}")
         if not input_zipfile.endswith(".zip"):
@@ -322,5 +322,19 @@ class PPKtStoreStats:
                 if len(var_list) == 0:
                     ppkt_with_no_var_list.append({"cohort": cohort, "phenopacket": ppkt.id})
         return pd.DataFrame(ppkt_with_no_var_list)
+    
+    def find_phenopackets_with_no_disease(self, input_zipfile) -> pd.DataFrame:
+        if not os.path.isfile(input_zipfile):
+            raise FileNotFoundError(f"Not a file: {input_zipfile}")
+        if not input_zipfile.endswith(".zip"):
+            raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
+        ppkt_with_disease_list = list()
+        all_cohort_names = PPKtStoreStats._get_list_of_cohorts(zipfile.ZipFile(input_zipfile, 'r'))
+        for cohort in all_cohort_names:
+            ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+            for ppkt in ppkt_list:
+                if len(ppkt.diseases) == 0:
+                    ppkt_with_disease_list.append({"cohort": cohort, "phenopacket": ppkt.id})
+        return pd.DataFrame(ppkt_with_disease_list)
 
 
