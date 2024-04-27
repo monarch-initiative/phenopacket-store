@@ -1,14 +1,19 @@
 {
-  "id": "PMID_32765928_37-year-old_male",
+  "id": "PMID_19864201_Case_1_(Twin_A)",
   "subject": {
-    "id": "37-year-old male",
+    "id": "Case 1 (Twin A)",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001003",
-        "label": "Multiple lentigines"
+        "id": "HP:0004322",
+        "label": "Short stature"
       }
     },
     {
@@ -19,26 +24,54 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
       }
     },
     {
       "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
+        "id": "HP:0001003",
+        "label": "Multiple lentigines"
       }
     },
     {
       "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
       }
     },
     {
       "type": {
-        "id": "HP:0000768",
-        "label": "Pectus carinatum"
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011713",
+        "label": "Left bundle branch block"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006699",
+        "label": "Premature atrial contractions"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006682",
+        "label": "Premature ventricular contraction"
       },
       "excluded": true
     },
@@ -51,15 +84,15 @@
     },
     {
       "type": {
-        "id": "HP:0001642",
-        "label": "Pulmonic stenosis"
+        "id": "HP:0001709",
+        "label": "Third degree atrioventricular block"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "37-year-old male",
+      "id": "Case 1 (Twin A)",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -68,11 +101,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "37-year-old male",
+            "subjectOrBiosampleId": "Case 1 (Twin A)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_EfdBDETfFuoGblMnIKHajPetz",
+                "id": "var_KKNXjIWoSuoBPLRLPqRHjzzzp",
                 "geneContext": {
                   "valueId": "HGNC:9644",
                   "symbol": "PTPN11"
@@ -80,19 +113,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_002834.5:c.836A>G"
+                    "value": "NM_002834.5:c.1403C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000012.12:g.112473023A>G"
+                    "value": "NC_000012.12:g.112488466C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "112473023",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": "112488466",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -106,8 +139,16 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:151100",
+        "label": "LEOPARD syndrome 1"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T06:41:14.885494947Z",
+    "created": "2024-04-27T15:02:20.934682846Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -146,7 +187,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-04-04",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -154,9 +195,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:32765928",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32765928",
-        "description": "LEOPARD Syndrome with PTPN11 Gene Mutation in Three Family Members Presenting with Different Phenotypes"
+        "id": "PMID:19864201",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19864201",
+        "description": "PTPN11 mutations in LEOPARD syndrome: report of four cases in Taiwan"
       }
     ]
   }

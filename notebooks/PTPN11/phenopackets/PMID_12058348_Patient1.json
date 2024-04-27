@@ -1,10 +1,21 @@
 {
-  "id": "PMID_33776629_2-year-old_girl",
+  "id": "PMID_12058348_Patient_1",
   "subject": {
-    "id": "2-year-old girl",
-    "sex": "FEMALE"
+    "id": "Patient 1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y9M"
+      }
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
     {
       "type": {
         "id": "HP:0001003",
@@ -13,99 +24,68 @@
     },
     {
       "type": {
-        "id": "HP:0000325",
-        "label": "Triangular face"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000957",
-        "label": "Cafe-au-lait spot"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000508",
         "label": "Ptosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002162",
-        "label": "Low posterior hairline"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000768",
-        "label": "Pectus carinatum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003691",
-        "label": "Scapular winging"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001510",
-        "label": "Growth delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000358",
         "label": "Posteriorly rotated ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001342",
-        "label": "Cerebral hemorrhage"
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P12Y"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006695",
+        "label": "Atrioventricular canal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006699",
+        "label": "Premature atrial contractions"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006682",
+        "label": "Premature ventricular contraction"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "2-year-old girl",
+      "id": "Patient 1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,11 +94,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "2-year-old girl",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_WeNksRZLriDZPgoYplWtxyoxW",
+                "id": "var_JbZSBYxgwYocZVzWGsVnSvoeO",
                 "geneContext": {
                   "valueId": "HGNC:9644",
                   "symbol": "PTPN11"
@@ -126,19 +106,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_002834.5:c.1493G>T"
+                    "value": "NM_002834.5:c.836A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000012.12:g.112489069G>T"
+                    "value": "NC_000012.12:g.112473023A>G"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "112489069",
-                  "ref": "G",
-                  "alt": "T"
+                  "pos": "112473023",
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -152,8 +132,16 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:151100",
+        "label": "LEOPARD syndrome 1"
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T06:41:14.884102821Z",
+    "created": "2024-04-27T15:02:20.922534942Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -192,7 +180,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-04-04",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -200,9 +188,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:33776629",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/33776629",
-        "description": "Noonan Syndrome with Multiple Lentigines and PTPN11 Mutation: A Case with Intracerebral Hemorrhage"
+        "id": "PMID:12058348",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/12058348",
+        "description": "Grouping of multiple-lentigines/LEOPARD and Noonan syndromes on the PTPN11 gene"
       }
     ]
   }
