@@ -52,7 +52,7 @@ class PPKtStoreStats:
                 L = line.decode("utf-8")
                 fields = L.strip().split("\t")
                 list_of_lists.append(fields)
-        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', ' PMID']
+        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
         return pd.DataFrame(data=list_of_lists, columns=columns)
 
     @staticmethod
@@ -113,6 +113,9 @@ class PPKtStoreStats:
 
     def get_descriptive_stats(self) -> typing.Mapping[str, typing.Any]:
         df = self._df
+        df["unique_id"] = df["patient_id"] + df["PMID"]
+        grouped_by_disease = df.groupby("disease_id").count()
+        grouped_by_gene = df.groupby("gene").count()
         stats_d = dict()
         stats_d["phenopackets"] = len(df)
         stats_d["diseases"] = len(df["disease_id"].unique())
@@ -123,8 +126,8 @@ class PPKtStoreStats:
         unique_alleles = set(unique_a1)
         unique_alleles.update(unique_a2)
         stats_d["alleles"] = len(unique_alleles)
-        stats_d["PMIDs"] = len(df[" PMID"].unique())
-        individuals_per_disease = self.get_counts_per_disease()
+        stats_d["PMIDs"] = len(df["PMID"].unique())
+        individuals_per_disease = grouped_by_disease["unique_id"]
         stats_d["individuals per disease (max)"] = np.max(individuals_per_disease)
         stats_d["individuals per disease (min)"] = np.min(individuals_per_disease)
         stats_d["individuals per disease (mean)"] = np.mean(individuals_per_disease)
@@ -135,7 +138,7 @@ class PPKtStoreStats:
         stats_d["individuals per disease (n>=100)"] = len([x for x in individuals_per_disease if x >= 100])
         # Some genes are associated with multiple diseases
         gene_by_disease_df = df[['gene', 'disease_id']].drop_duplicates()
-        gbd_counts_df = gene_by_disease_df['gene'].value_counts(ascending=False).reset_index(name='count')
+        gbd_counts_df = gene_by_disease_df.groupby('disease_id').count().value_counts(ascending=False).reset_index(name='count')
         stats_d["genes associated with a single disease"] = len([x for x in gbd_counts_df["count"] if x == 1])
         stats_d["genes associated with two diseases"] = len([x for x in gbd_counts_df["count"] if x == 2])
         stats_d["genes associated with multiple diseases"] = len([x for x in gbd_counts_df["count"] if x > 1])
@@ -143,8 +146,9 @@ class PPKtStoreStats:
         max_count = gbd_counts_df.iloc[0]["count"]
         max_msg = f"{max_gene} with {max_count} associated diseases"
         stats_d["gene with maximum number of diseases"] = max_msg
-        ipg_df = df['gene'].value_counts(ascending=False).reset_index(name='count')
-        individuals_per_gene = np.array(ipg_df["count"].to_list())
+        #ipg_df = df['gene'].value_counts(ascending=False).reset_index(name='count')
+        #ipg_df = gene_by_disease_df.groupby('gene').count() 
+        individuals_per_gene = grouped_by_gene["unique_id"]
         stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
         stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
         stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
@@ -156,9 +160,6 @@ class PPKtStoreStats:
 
         return stats_d
 
-    def get_counts_per_disease(self) -> pd.Series:
-        return self._df['disease_id'].value_counts(ascending=False)
-
     def check_disease_id(self):
         invalid_list = list()
         OMIM_REGEX = r"^OMIM:\d{6}$"
@@ -167,7 +168,7 @@ class PPKtStoreStats:
             disease_id = row["disease_id"]
             disease_label = row["disease"]
             individual_id = row["patient_id"]
-            PMID = row[" PMID"]
+            PMID = row["PMID"]
             omim_match = re.search(OMIM_REGEX, disease_id)
             mondo_match = re.search(MONDO_REGEX, disease_id)
             if not omim_match and not mondo_match:
@@ -216,6 +217,13 @@ class PPKtStoreStats:
                         vi = gi.variant_interpretation
                         if vi.HasField("variation_descriptor"):
                             vdesc = vi.variation_descriptor
+                            if vdesc.HasField("structural_type"):
+                                stillLookingForVar = False
+                                continue
+                            elif vdesc.HasField("vcf_record"):
+                                # This is the case with the LIRICAL variants
+                                stillLookingForVar = False
+                                continue
                             for e in vdesc.expressions:
                                 if e.syntax == "hgvs.c":
                                     var_list.append(e.value)
@@ -261,6 +269,8 @@ class PPKtStoreStats:
             raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
         ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
         item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
+        if len(item_list) == 0:
+            print(f"No candidate duplicates found for {cohort}")
         return pd.DataFrame(item_list)
 
     def show_phenopackets_with_gene(self, input_zipfile, cohort, gene_symbol) -> pd.DataFrame:
@@ -278,6 +288,11 @@ class PPKtStoreStats:
 
 
     def _get_possible_duplicates_by_variant(self, ppkt_list) -> typing.List[typing.Dict[str,str]]:
+        """
+        This function identifies cohorts in which some variant is present more than once. Usually, this just means
+        that the same variant was found in different individuals. We have used this function to identify cohorts
+        for focussed checks to identify potential duplicates, which were removed.
+        """
         variant_to_ppkt_id_d = defaultdict(list)
         for ppkt in ppkt_list:
             varlist = PPKtStoreStats._get_variant_list(ppkt=ppkt)
@@ -318,9 +333,11 @@ class PPKtStoreStats:
         for cohort in all_cohort_names:
             ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
             for ppkt in ppkt_list:
-                var_list = PPKtStoreStats._get_variant_list(ppkt=ppkt)
-                if len(var_list) == 0:
+                #var_list = PPKtStoreStats._get_variant_list(ppkt=ppkt)
+                if len(ppkt.interpretations) == 0:
                     ppkt_with_no_var_list.append({"cohort": cohort, "phenopacket": ppkt.id})
+        if len(ppkt_with_no_var_list) == 0:
+            print("All phenopackets had at least one variant")
         return pd.DataFrame(ppkt_with_no_var_list)
     
     def find_phenopackets_with_no_disease(self, input_zipfile) -> pd.DataFrame:
@@ -335,6 +352,8 @@ class PPKtStoreStats:
             for ppkt in ppkt_list:
                 if len(ppkt.diseases) == 0:
                     ppkt_with_disease_list.append({"cohort": cohort, "phenopacket": ppkt.id})
+        if len(ppkt_with_disease_list) == 0:
+            print("All phenopackets had a disease diagnosis")
         return pd.DataFrame(ppkt_with_disease_list)
 
 
