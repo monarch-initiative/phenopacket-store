@@ -35,7 +35,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[CAPRIN1](notebooks/CAPRIN1/CAPRIN1_CONDCAC_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Neurodegeneration, childhood-onset, with cerebellar ataxia and cognitive decline](https://omim.org/entry/620636){:target="_blank"}|
 |[TGFB3](notebooks/TGFB3/TGFB3_LDS5_individuals.ipynb){:target="_blank"}|43 Phenopackets;[Loeys-Dietz syndrome 5](https://omim.org/entry/615582){:target="_blank"}|
 |[FANCI](notebooks/FANCI/FANCI_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Fanconi anemia, complementation group I](https://omim.org/entry/609053){:target="_blank"}|
-|[ANKRD11](notebooks/ANKRD11/Martinez-Cayuelas-KBG-2022.ipynb){:target="_blank"}|328 Phenopackets;[KBG syndrome](https://omim.org/entry/148050){:target="_blank"}|
+|[ANKRD11](notebooks/ANKRD11/ANKRD11_KBGS_individuals.ipynb){:target="_blank"}|337 Phenopackets;[KBG syndrome](https://omim.org/entry/148050){:target="_blank"}|
 |[POLR1A](notebooks/POLR1A/POLR1A_Smallwood_2023.ipynb){:target="_blank"}|18 Phenopackets;[Acrofacial dysostosis, Cincinnati type](https://omim.org/entry/616462){:target="_blank"}|
 |[OFD1](notebooks/OFD1/OFD1_Summary.ipynb){:target="_blank"}|16 Phenopackets;[Joubert syndrome 10](https://omim.org/entry/300804){:target="_blank"}[Orofaciodigital syndrome I](https://omim.org/entry/311200){:target="_blank"}|
 |[PPP2R1A](notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"}|60 Phenopackets;[Houge-Janssen syndrome 2](https://omim.org/entry/616362){:target="_blank"}|
@@ -83,6 +83,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[ATP13A2](notebooks/ATP13A2/ATP13A2_Summary.ipynb){:target="_blank"}|44 Phenopackets;[Kufor-Rakeb syndrome](https://omim.org/entry/606693){:target="_blank"}[Spastic paraplegia 78, autosomal recessive](https://omim.org/entry/617225){:target="_blank"}|
 |[SLC19A1](notebooks/SLC19A1/SLC19A1_IMD114_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Immunodeficiency 114, folate-responsive](https://omim.org/entry/620603){:target="_blank"}|
 |[MAPK8IP3](notebooks/MAPK8IP3/MAPK8IP3_summary.ipynb){:target="_blank"}|20 Phenopackets;[Neurodevelopmental disorder with or without variable brain abnormalities](https://omim.org/entry/618443){:target="_blank"}|
+|[KCNJ2](notebooks/KCNJ2/KCNJ2_SQT3_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Short QT syndrome 3](https://omim.org/entry/609622){:target="_blank"}|
 |[SMAD3](notebooks/SMAD3/SMAD3_LDS3_individuals.ipynb){:target="_blank"}|49 Phenopackets;[Loeys-Dietz syndrome 3](https://omim.org/entry/613795){:target="_blank"}|
 |[HNRNPC](notebooks/HNRNPC/HNRNPC_MRD74_individuals.ipynb){:target="_blank"}|13 Phenopackets;[Intellectual developmental disorder, autosomal dominant 74](https://omim.org/entry/620688){:target="_blank"}|
 |[SMAD2](notebooks/SMAD2/SMAD2_LDS6_individuals.ipynb){:target="_blank"}|16 Phenopackets;[Loeys-Dietz syndrome 6](https://omim.org/entry/619656){:target="_blank"}|
