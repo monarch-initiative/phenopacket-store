@@ -1,20 +1,27 @@
 {
-  "id": "PMID_36446582_VanDongen2019_P10",
+  "id": "PMID_36446582_VanDongen2019_P9",
   "subject": {
-    "id": "VanDongen2019_P10",
-    "sex": "MALE"
+    "id": "VanDongen2019_P9",
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "VanDongen2019_P10",
+      "id": "VanDongen2019_P9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -23,11 +30,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "VanDongen2019_P10",
+            "subjectOrBiosampleId": "VanDongen2019_P9",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_kTIfBOruarPYWlJXGhkHHFcgP",
+                "id": "var_gERcgItUhBoXaDGqiDPHIDlgM",
                 "geneContext": {
                   "valueId": "HGNC:21316",
                   "symbol": "ANKRD11"
@@ -35,19 +42,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_013275.6:c.3460G>T"
+                    "value": "NM_013275.6:c.1903_1907del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.89283082C>A"
+                    "value": "NC_000016.10:g.89284641_89284645del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "89283082",
-                  "ref": "C",
-                  "alt": "A"
+                  "pos": "89284634",
+                  "ref": "GTGTTT",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -70,7 +77,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:16:59.337765216Z",
+    "created": "2024-04-29T06:49:57.842099905Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -109,7 +116,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
+        "version": "2024-04-26",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
