@@ -1,10 +1,10 @@
 {
-  "id": "PMID_36659944_Patient",
+  "id": "PMID_9101303_patient",
   "subject": {
-    "id": "Patient",
+    "id": "patient",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P2Y"
       }
     },
     "sex": "MALE"
@@ -12,8 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0009732",
-        "label": "Plexiform neurofibroma"
+        "id": "HP:0100697",
+        "label": "Neurofibrosarcoma"
       }
     },
     {
@@ -36,35 +36,33 @@
     },
     {
       "type": {
-        "id": "HP:0009737",
-        "label": "Lisch nodules"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000767",
         "label": "Pectus excavatum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002808",
         "label": "Kyphosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009732",
+        "label": "Plexiform neurofibroma"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient",
+      "id": "patient",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -73,11 +71,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_KwTfOOKbOqrHRXezMoiFLySyi",
+                "id": "var_LvekQcTleLbkzRlPEAxLpHoga",
                 "geneContext": {
                   "valueId": "HGNC:7765",
                   "symbol": "NF1"
@@ -85,19 +83,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001042492.3:c.4552dup"
+                    "value": "NM_001042492.3:c.6852_6853dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.31260490dup"
+                    "value": "NC_000017.11:g.31338736_31338737dup"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "31260486",
-                  "ref": "G",
-                  "alt": "GA"
+                  "pos": "31338735",
+                  "ref": "C",
+                  "alt": "CTT"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -120,7 +118,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-29T18:57:14.727699041Z",
+    "created": "2024-04-29T18:57:14.725670814Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -167,9 +165,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:36659944",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36659944",
-        "description": "Identifying a novel frameshift pathogenic variant in a Chinese family with neurofibromatosis type 1 and review of literature"
+        "id": "PMID:9101303",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/9101303",
+        "description": "New evidence for a mutation hotspot in exon 37 of the NF1 gene"
       }
     ]
   }
