@@ -30,7 +30,7 @@ class PPKtStoreStats:
         archive = zipfile.ZipFile(input_zipfile, 'r')
         self._df = PPKtStoreStats._extract_all_phenopackets_df(archive)
         self._cohort_to_phenopacket_d = PPKtStoreStats._extract_all_cohort_phenopackets(archive)
-
+      
     def get_cohort_to_phenopacket_d(self):
         return self._cohort_to_phenopacket_d
 
@@ -154,7 +154,8 @@ class PPKtStoreStats:
         unique_alleles.update(unique_a2)
         stats_d["alleles"] = len(unique_alleles)
         stats_d["PMIDs"] = len(df["PMID"].unique())
-        individuals_per_disease = grouped_by_disease["unique_id"]
+        individuals_per_disease_d = self.get_disease_to_phenopacket_count_d()
+        individuals_per_disease = list(individuals_per_disease_d.values())
         stats_d["individuals per disease (max)"] = np.max(individuals_per_disease)
         stats_d["individuals per disease (min)"] = np.min(individuals_per_disease)
         stats_d["individuals per disease (mean)"] = np.mean(individuals_per_disease)
@@ -173,9 +174,8 @@ class PPKtStoreStats:
         max_count = gbd_counts_df.iloc[0]["count"]
         max_msg = f"{max_gene} with {max_count} associated diseases"
         stats_d["gene with maximum number of diseases"] = max_msg
-        #ipg_df = df['gene'].value_counts(ascending=False).reset_index(name='count')
-        #ipg_df = gene_by_disease_df.groupby('gene').count() 
-        individuals_per_gene = grouped_by_gene["unique_id"]
+        individuals_per_gene_d = self.get_gene_to_phenopacket_count_d()
+        individuals_per_gene = list(individuals_per_gene_d.values())
         stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
         stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
         stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
@@ -326,6 +326,44 @@ class PPKtStoreStats:
                     if stillLookingForVar:
                         print(f"[WARNING] could not find variant for phenopacket {ppkt.id}")
         return var_list
+    
+
+    def get_disease_to_phenopacket_count_d(self) -> typing.Dict[str, int]:
+        disease_to_ppkt_count_d = defaultdict(int)
+        for ppkt_list in self._cohort_to_phenopacket_d.values():
+            for ppkt in ppkt_list:
+                if len(ppkt.diseases) != 1:
+                    print(f"Warning: Got {len(ppkt.diseases)} for {ppkt.id}. Skipping")
+                    continue
+                disease_id = ppkt.diseases[0].term.id
+                disease_to_ppkt_count_d[disease_id] += 1
+        return disease_to_ppkt_count_d
+    
+    def _get_gene_symbol(self, ppkt) -> str:
+        if len(ppkt.interpretations) == 0:
+            print(f"Warning: Got no interpretations for {ppkt.id}. Skipping")
+            return None
+        try:
+            interpretation = ppkt.interpretations[0]
+            dx = interpretation.diagnosis
+            g_interpretation = dx.genomic_interpretations[0]
+            vi = g_interpretation.variant_interpretation
+            vdesc = vi.variation_descriptor
+            gene_symbol = vdesc.gene_context.symbol
+            return gene_symbol
+        except Exception (ee):
+            print(f"Warning: Got no gene symbbol for {ppkt.id} because of {str(ee)}. Skipping")
+        return None
+    
+    def get_gene_to_phenopacket_count_d(self) -> typing.Dict[str, int]:
+        gene_to_ppkt_count_d = defaultdict(int)
+        for ppkt_list in self._cohort_to_phenopacket_d.values():
+            for ppkt in ppkt_list:
+                gene_symbol = self._get_gene_symbol(ppkt=ppkt)
+                if gene_symbol is not None:
+                    gene_to_ppkt_count_d[gene_symbol] += 1
+        return gene_to_ppkt_count_d
+
 
 
     def count_diseases_in_cohort(self, input_zipfile, cohort) -> pd.DataFrame:
