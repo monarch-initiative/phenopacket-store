@@ -1,0 +1,207 @@
+{
+  "id": "PMID_29801479_proband",
+  "subject": {
+    "id": "proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002757",
+        "label": "Recurrent fractures"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0041219",
+        "label": "Fractured elbow"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004349",
+        "label": "Reduced bone mineral density"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000592",
+        "label": "Blue sclerae"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034392",
+        "label": "Joint contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "proband",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610968",
+          "label": "Osteogenesis imperfecta, type XI"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_QzvXcyysmiFWieSeRGkUvaBDC",
+                "geneContext": {
+                  "valueId": "HGNC:18169",
+                  "symbol": "FKBP10"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021939.4:c.1257-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.41820945A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": "41820945",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610968",
+        "label": "Osteogenesis imperfecta, type XI"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-05T08:43:21.830206871Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:29801479",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29801479",
+        "description": "Splicing defect in FKBP10 gene causes autosomal recessive osteogenesis imperfecta disease: a case report"
+      }
+    ]
+  }
+}
