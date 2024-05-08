@@ -25,6 +25,48 @@
     },
     {
       "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002360",
+        "label": "Sleep abnormality"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
       },
@@ -34,6 +76,76 @@
       "type": {
         "id": "HP:0000343",
         "label": "Long philtrum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006695",
+        "label": "Atrioventricular canal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000410",
+        "label": "Mixed hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
       },
       "excluded": true
     }
@@ -53,17 +165,29 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_rUQjxPDYywJKLEnqOXihQvBWI",
-                "label": "16q24.3(89256478_89506223)x1 (hg19)",
+                "id": "var_CVjBuEMsOMyGHBlLIBvZPMVeB",
                 "geneContext": {
                   "valueId": "HGNC:21316",
                   "symbol": "ANKRD11"
                 },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_013275.6:c.3590_3594del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.89282949_89282953del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": "89282947",
+                  "ref": "CTTTTT",
+                  "alt": "C"
                 },
+                "moleculeContext": "genomic",
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -84,7 +208,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:16:56.003736972Z",
+    "created": "2024-04-29T06:49:57.636765003Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -123,7 +247,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
+        "version": "2024-04-26",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

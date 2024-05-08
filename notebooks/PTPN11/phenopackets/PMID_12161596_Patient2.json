@@ -7,67 +7,25 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000635",
-        "label": "Blue irides"
+        "id": "HP:0004322",
+        "label": "Short stature"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001638",
-        "label": "Cardiomyopathy"
+        "id": "HP:0012450",
+        "label": "Chronic constipation"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002019",
-        "label": "Constipation"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002808",
-        "label": "Kyphosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009737",
-        "label": "Lisch nodules"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     },
@@ -75,44 +33,24 @@
       "type": {
         "id": "HP:0001003",
         "label": "Multiple lentigines"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
       }
     },
     {
       "type": {
         "id": "HP:0000768",
         "label": "Pectus carinatum"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000635",
+        "label": "Blue irides"
       }
     },
     {
       "type": {
         "id": "HP:0006532",
         "label": "Recurrent pneumonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
       }
     },
     {
@@ -120,11 +58,63 @@
         "id": "HP:0000465",
         "label": "Webbed neck"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P43Y0M0D"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004482",
+        "label": "Relative macrocephaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009737",
+        "label": "Lisch nodules"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011713",
+        "label": "Left bundle branch block"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007429",
+        "label": "Few cafe-au-lait spots"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
@@ -142,7 +132,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_jcVixNhBkQjrUyyBaZxJJQUDH",
+                "id": "var_JbZSBYxgwYocZVzWGsVnSvoeO",
                 "geneContext": {
                   "valueId": "HGNC:9644",
                   "symbol": "PTPN11"
@@ -176,8 +166,22 @@
       }
     }
   ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:151100",
+        "label": "LEOPARD syndrome 1"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
   "metaData": {
-    "created": "2024-02-05T05:05:19.306571960Z",
+    "created": "2024-04-27T15:02:20.921260118Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -216,7 +220,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-01-16",
+        "version": "2024-04-04",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

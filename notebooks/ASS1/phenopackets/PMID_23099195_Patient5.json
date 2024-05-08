@@ -1,0 +1,199 @@
+{
+  "id": "PMID_23099195_Patient_5",
+  "subject": {
+    "id": "Patient 5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003217",
+        "label": "Hyperglutaminemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005961",
+        "label": "Hypoargininemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011966",
+        "label": "Elevated plasma citrulline"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002181",
+        "label": "Cerebral edema"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003218",
+        "label": "Oroticaciduria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient 5",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:215700",
+          "label": "Citrullinemia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_aZotWRaWwFUjcNRFqdZJVbVXK",
+                "geneContext": {
+                  "valueId": "HGNC:758",
+                  "symbol": "ASS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_054012.4:c.421-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.130466723A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "130466723",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:215700",
+        "label": "Citrullinemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-04-21T07:56:05.368722915Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-04",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:23099195",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23099195",
+        "description": "Mutation spectrum of the ASS1 gene in Korean patients with citrullinemia type I"
+      }
+    ]
+  }
+}

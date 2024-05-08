@@ -17,7 +17,9 @@ class PPKtStore:
             raise ValueError(f"Could not find phenopacket notebook directory at {notebook_dir}")
         self._cohorts = []
         for (dirpath, dirnames, filenames) in os.walk(notebook_dir):
-            if dirpath.endswith("phenopackets") and not dirpath.endswith("v1phenopackets"):
+            # the following excluded the LIRICAL directories because they are coded twith hg37
+            # we are in the process of updating these data.
+            if dirpath.endswith("phenopackets") and not dirpath.endswith("v1phenopackets") and not dirpath.endswith("v2phenopackets"):
                 lpath_components = dirpath.split(os.sep)
                 cohort_name = self._get_cohort_name(lpath_components)
                 json_files = filter(lambda f: f.endswith('.json'), filenames)
