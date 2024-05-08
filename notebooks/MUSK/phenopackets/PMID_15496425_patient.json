@@ -1,0 +1,282 @@
+{
+  "id": "PMID_15496425_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P27Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008997",
+        "label": "Proximal muscle weakness in upper limbs"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001611",
+        "label": "Hypernasal speech"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003403",
+        "label": "EMG: decremental response of compound muscle action potential to repetitive nerve stimulation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000467",
+        "label": "Neck muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P27Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000602",
+        "label": "Ophthalmoplegia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P27Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003388",
+        "label": "Easy fatigability"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030208",
+        "label": "Anti-acetylcholine receptor antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030210",
+        "label": "Anti-muscle-specific tyrosine kinase antibody"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "patient",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616325",
+          "label": "Myasthenic syndrome, congenital, 9, associated with acetylcholine receptor deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_QtzSFBGmpkaTzbcRtQCEThmJC",
+                "geneContext": {
+                  "valueId": "HGNC:7525",
+                  "symbol": "MUSK"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005592.4:c.2368G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.110800746G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "110800746",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_wbvZvQUpnriIFNUvMDSLYArmC",
+                "geneContext": {
+                  "valueId": "HGNC:7525",
+                  "symbol": "MUSK"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005592.4:c.220dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.110687130dup"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "110687127",
+                  "ref": "A",
+                  "alt": "AC"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616325",
+        "label": "Myasthenic syndrome, congenital, 9, associated with acetylcholine receptor deficiency"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-08T06:03:56.846500158Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:15496425",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15496425",
+        "description": "MUSK, a new target for mutations causing congenital myasthenic syndrome"
+      }
+    ]
+  }
+}
