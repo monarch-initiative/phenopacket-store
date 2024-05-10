@@ -40,14 +40,16 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[FOXG1](notebooks/FOXG1/FOXG1_Rett_variant_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Rett syndrome, congenital variant](https://omim.org/entry/613454){:target="_blank"}|
 |[TGFB3](notebooks/TGFB3/TGFB3_LDS5_individuals.ipynb){:target="_blank"}|43 Phenopackets;[Loeys-Dietz syndrome 5](https://omim.org/entry/615582){:target="_blank"}|
 |[FANCI](notebooks/FANCI/FANCI_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Fanconi anemia, complementation group I](https://omim.org/entry/609053){:target="_blank"}|
+|[MUSK](notebooks/MUSK/MUSK_CMS9_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Myasthenic syndrome, congenital, 9, associated with acetylcholine receptor deficiency](https://omim.org/entry/616325){:target="_blank"}|
 |[ANKRD11](notebooks/ANKRD11/ANKRD11_KBGS_individuals.ipynb){:target="_blank"}|337 Phenopackets;[KBG syndrome](https://omim.org/entry/148050){:target="_blank"}|
-|[POLR1A](notebooks/POLR1A/POLR1A_Smallwood_2023.ipynb){:target="_blank"}|18 Phenopackets;[Acrofacial dysostosis, Cincinnati type](https://omim.org/entry/616462){:target="_blank"}|
+|[POLR1A](notebooks/POLR1A/POLR1A_Smallwood_2023.ipynb){:target="_blank"}|22 Phenopackets;[Acrofacial dysostosis, Cincinnati type](https://omim.org/entry/616462){:target="_blank"}[Leukodystrophy, hypomyelinating, 27](https://omim.org/entry/620675){:target="_blank"}|
 |[FKBP10](notebooks/FKBP10/FKBP10_OI11_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Osteogenesis imperfecta, type XI](https://omim.org/entry/610968){:target="_blank"}|
 |[OFD1](notebooks/OFD1/OFD1_Summary.ipynb){:target="_blank"}|16 Phenopackets;[Joubert syndrome 10](https://omim.org/entry/300804){:target="_blank"}[Orofaciodigital syndrome I](https://omim.org/entry/311200){:target="_blank"}|
 |[PPP2R1A](notebooks/PPP2R1A/Qian_PPP2R1A.ipynb){:target="_blank"}|60 Phenopackets;[Houge-Janssen syndrome 2](https://omim.org/entry/616362){:target="_blank"}|
 |[TGFB2](notebooks/TGFB2/TGFB2_LDS4_individuals.ipynb){:target="_blank"}|34 Phenopackets;[Loeys-Dietz syndrome 4](https://omim.org/entry/614816){:target="_blank"}|
 |[NF1](notebooks/NF1/NF1_NF1_individuals.ipynb){:target="_blank"}|7 Phenopackets;[Neurofibromatosis, type 1](https://omim.org/entry/162200){:target="_blank"}|
 |[TRAF7](notebooks/TRAF7/TRAF7_Castilla-Vallmanya_2020.ipynb){:target="_blank"}|45 Phenopackets;[Cardiac, facial, and digital anomalies with developmental delay](https://omim.org/entry/618164){:target="_blank"}|
+|[FTH1](notebooks/FTH1/FTH1_NBIA9_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Neurodegeneration with brain iron accumulation 9](https://omim.org/entry/620669){:target="_blank"}|
 |[BBS1](notebooks/BBS1/BBS1_individuals.ipynb){:target="_blank"}|13 Phenopackets;[Bardet-Biedl syndrome 1](https://omim.org/entry/209900){:target="_blank"}|
 |[SCAF4](notebooks/SCAF4/SCAF4_individuals.ipynb){:target="_blank"}|11 Phenopackets;[Fliedner-Zweier syndrome](https://omim.org/entry/620511){:target="_blank"}|
 |[SPTSSA](notebooks/SPTSSA/SPTSSA_AISIMD_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Spastic paraplegia 90B, autosomal recessive](https://omim.org/entry/620417){:target="_blank"}[Spastic paraplegia 90A, autosomal dominant](https://omim.org/entry/620416){:target="_blank"}|
@@ -66,6 +68,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[TSC2](notebooks/TSC2/TSC2_TSC2_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Tuberous sclerosis-2](https://omim.org/entry/613254){:target="_blank"}|
 |[AEBP1](notebooks/AEBP1/AEBP1_EDSCLL2_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Ehlers-Danlos syndrome, classic-like, 2](https://omim.org/entry/618000){:target="_blank"}|
 |[RPS19](notebooks/RPS19/RPS19_DBA1_individuals.ipynb){:target="_blank"}|11 Phenopackets;[Diamond-Blackfan anemia 1](https://omim.org/entry/105650){:target="_blank"}|
+|[ADRA2A](notebooks/ADRA2A/ADRA2A_FPLD8_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Lipodystrophy, familial partial, type 8](https://omim.org/entry/620679){:target="_blank"}|
 |[SC5D](notebooks/SC5D/SC5D_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Lathosterolosis](https://omim.org/entry/607330){:target="_blank"}|
 |[DEPDC5](notebooks/DEPDC5/DEPDC5_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Developmental and epileptic encephalopathy 111](https://omim.org/entry/620504){:target="_blank"}|
 |[PANK2](notebooks/PANK2/PANK2_NBIA1_individuals.ipynb){:target="_blank"}|15 Phenopackets;[Neurodegeneration with brain iron accumulation 1](https://omim.org/entry/234200){:target="_blank"}|
@@ -76,6 +79,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[FYB1](notebooks/FYB1/FYB1_THC3_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Thrombocytopenia 3](https://omim.org/entry/273900){:target="_blank"}|
 |[ATP6V1A](notebooks/ATP6V1A/ATP6V1A_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Cutis laxa, autosomal recessive, type IID](https://omim.org/entry/617403){:target="_blank"}|
 |[COG3](notebooks/COG3/COG3_CDG2BB_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Congenital disorder of glycosylation, type IIbb](https://omim.org/entry/620546){:target="_blank"}|
+|[FBXO7](notebooks/FBXO7/FBXO7_PARK15_individuals.ipynb){:target="_blank"}|12 Phenopackets;[Parkinson disease 15, autosomal recessive](https://omim.org/entry/260300){:target="_blank"}|
 |[RGS9](notebooks/RGS9/RGS9_PERRS1_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Prolonged electroretinal response suppression 1](https://omim.org/entry/608415){:target="_blank"}|
 |[KCNH5](notebooks/KCNH5/KCNH5_individuals.ipynb){:target="_blank"}|22 Phenopackets;[Developmental and epileptic encephalopathy 112](https://omim.org/entry/620537){:target="_blank"}|
 |[GCDH](notebooks/GCDH/GCDH_GA1.ipynb){:target="_blank"}|7 Phenopackets;[Glutaricaciduria, type I](https://omim.org/entry/231670){:target="_blank"}|
@@ -103,9 +107,12 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[PRF1](notebooks/PRF1/PRF1_FHL2_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Hemophagocytic lymphohistiocytosis, familial, 2](https://omim.org/entry/603553){:target="_blank"}|
 |[KCNJ2](notebooks/KCNJ2/KCNJ2_SQT3_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Short QT syndrome 3](https://omim.org/entry/609622){:target="_blank"}|
 |[SMAD3](notebooks/SMAD3/SMAD3_LDS3_individuals.ipynb){:target="_blank"}|49 Phenopackets;[Loeys-Dietz syndrome 3](https://omim.org/entry/613795){:target="_blank"}|
+|[TCOF1](notebooks/TCOF1/TCOF1_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Treacher Collins syndrome 1](https://omim.org/entry/154500){:target="_blank"}|
+|[HCN4](notebooks/HCN4/HCN4_SSS2_individuals.ipynb){:target="_blank"}|6 Phenopackets;[Sick sinus syndrome 2](https://omim.org/entry/163800){:target="_blank"}|
 |[KIF5A](notebooks/KIF5A/KIF5A_SPG10_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Spastic paraplegia 10, autosomal dominant](https://omim.org/entry/604187){:target="_blank"}|
 |[HNRNPC](notebooks/HNRNPC/HNRNPC_MRD74_individuals.ipynb){:target="_blank"}|13 Phenopackets;[Intellectual developmental disorder, autosomal dominant 74](https://omim.org/entry/620688){:target="_blank"}|
 |[SMAD2](notebooks/SMAD2/SMAD2_LDS6_individuals.ipynb){:target="_blank"}|16 Phenopackets;[Loeys-Dietz syndrome 6](https://omim.org/entry/619656){:target="_blank"}|
+|[SLC32A1](notebooks/SLC32A1/SLC32A1_DEE114_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Developmental and epileptic encephalopathy 114](https://omim.org/entry/620774){:target="_blank"}|
 |[FBN1](notebooks/FBN1/LeGoff_FBN1_acromicric_and_geleophysic_dysplasia.ipynb){:target="_blank"}|151 Phenopackets;[Marfan syndrome](https://omim.org/entry/154700){:target="_blank"}[Acromicric dysplasia](https://omim.org/entry/102370){:target="_blank"}[Ectopia lentis, familial](https://omim.org/entry/129600){:target="_blank"}[Marfan lipodystrophy syndrome](https://omim.org/entry/616914){:target="_blank"}[Geleophysic dysplasia 2](https://omim.org/entry/614185){:target="_blank"}[Stiff skin syndrome](https://omim.org/entry/184900){:target="_blank"}|
 |[SCO2](notebooks/SCO2/SCO2_Myopia_6_individuals.ipynb){:target="_blank"}|36 Phenopackets;[Mitochondrial complex IV deficiency, nuclear type 2](https://omim.org/entry/604377){:target="_blank"}[Myopia 6](https://omim.org/entry/608910){:target="_blank"}[Myopia 6](https://omim.org/entry/608909){:target="_blank"}[Myopia 6](https://omim.org/entry/608913){:target="_blank"}[Myopia 6](https://omim.org/entry/608912){:target="_blank"}[Myopia 6](https://omim.org/entry/608908){:target="_blank"}[Myopia 6](https://omim.org/entry/608911){:target="_blank"}|
 |[WFS1](notebooks/WFS1/WFS1_Wolfram_syndrome_1_individuals.ipynb){:target="_blank"}|10 Phenopackets;[Wolfram syndrome 1](https://omim.org/entry/222300){:target="_blank"}|
@@ -120,10 +127,12 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[SPTAN1](notebooks/SPTAN1/SPTAN1_Summary.ipynb){:target="_blank"}|85 Phenopackets;[Spastic paraplegia 91, autosomal dominant, with or without cerebellar ataxia](https://omim.org/entry/620538){:target="_blank"}[Neuronopathy, distal hereditary motor, autosomal dominant 11](https://omim.org/entry/620528){:target="_blank"}[Developmental delay with or without epilepsy](https://omim.org/entry/620540){:target="_blank"}[Developmental and epileptic encephalopathy 5](https://omim.org/entry/613477){:target="_blank"}|
 |[BBS2](notebooks/BBS2/BBS2_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Bardet-Biedl syndrome 2](https://omim.org/entry/615981){:target="_blank"}|
 |[MEIOB](notebooks/MEIOB/MEIOB_POF23_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Premature ovarian failure 23](https://omim.org/entry/620686){:target="_blank"}|
+|[POLR1D](notebooks/POLR1D/POLR1D_TCS2_individuals.ipynb){:target="_blank"}|10 Phenopackets;[Treacher Collins syndrome 2](https://omim.org/entry/613717){:target="_blank"}|
 |[CASP2](notebooks/CASP2/CASP2_MRT80_individuals.ipynb){:target="_blank"}|7 Phenopackets;[Intellectual developmental disorder, autosomal recessive 80, with variant lissencephaly](https://omim.org/entry/620653){:target="_blank"}|
 |[PLCB4](notebooks/PLCB4/PLCB4_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Auriculocondylar syndrome 2B](https://omim.org/entry/620458){:target="_blank"}|
 |[PRPF31](notebooks/PRPF31/PRPF31_RP11_individuals.ipynb){:target="_blank"}|9 Phenopackets;[Retinitis pigmentosa 11](https://omim.org/entry/600138){:target="_blank"}|
 |[SLC45A2](notebooks/SLC45A2/SLC45A2_Moreno2022PMID_36553465.ipynb){:target="_blank"}|30 Phenopackets;[Albinism, oculocutaneous, type IV](https://omim.org/entry/606574){:target="_blank"}|
+|[ARMC12](notebooks/ARMC12/ARMC12_SPG90_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Spermatogenic failure 90](https://omim.org/entry/620744){:target="_blank"}|
 |[TMTC4](notebooks/TMTC4/TMTC4_DFNB122_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Deafness, autosomal recessive 122](https://omim.org/entry/620714){:target="_blank"}|
 |[ERI1](notebooks/ERI1/ERI1_SEMDGC_individuals.ipynb){:target="_blank"}|10 Phenopackets;[Hoxha-Aliu syndrome](https://omim.org/entry/620662){:target="_blank"}[Spondyloepimetaphyseal dysplasia, Guo-Campeau type](https://omim.org/entry/620663){:target="_blank"}|
 |[SCN5A](notebooks/SCN5A/SCN5A_BRGDA1_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Brugada syndrome 1](https://omim.org/entry/601144){:target="_blank"}|
@@ -136,6 +145,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[BRD4](notebooks/BRD4/BRD4_individuals.ipynb){:target="_blank"}|18 Phenopackets;[Cornelia de Lange syndrome 6](https://omim.org/entry/620568){:target="_blank"}|
 |[DOCK8](notebooks/DOCK8/DOCK8_Alroqi_2017.ipynb){:target="_blank"}|13 Phenopackets;[Hyper-IgE syndrome 2, autosomal recessive, with recurrent infections](https://omim.org/entry/243700){:target="_blank"}|
 |[SON](notebooks/SON/Dingemans_2022_SON_PMID_34521999.ipynb){:target="_blank"}|52 Phenopackets;[ZTTK SYNDROME](https://omim.org/entry/617140){:target="_blank"}|
+|[EFEMP1](notebooks/EFEMP1/EFEMP1_ARCL1D_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Cutis laxa, autosomal recessive, type ID](https://omim.org/entry/620780){:target="_blank"}|
 |[EZH1](notebooks/EZH1/GraciaDiaz_EZH1_PMID_37433783.ipynb){:target="_blank"}|19 Phenopackets;[EZH1-related neurodevelopmental disorder](https://omim.org/entry/601674){:target="_blank"}|
 |[U2AF2](notebooks/U2AF2/U2AF2_individuals.ipynb){:target="_blank"}|49 Phenopackets;[Developmental delay, dysmorphic facies, and brain anomalies](https://omim.org/entry/620535){:target="_blank"}|
 |[MRAS](notebooks/MRAS/MRAS_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Noonan syndrome-11](https://omim.org/entry/618499){:target="_blank"}|
@@ -149,16 +159,18 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[UBAP2L](notebooks/UBAP2L/UBAP2L_NEDLBF_Jia_2022.ipynb){:target="_blank"}|12 Phenopackets;[Neurodevelopmental disorder with impaired language, behavioral abnormalities, and dysmorphic facies](https://omim.org/entry/620494){:target="_blank"}|
 |[ABCA4](notebooks/ABCA4/ABCA4_RP19_individuals.ipynb){:target="_blank"}|1 Phenopackets;[Retinitis pigmentosa 19](https://omim.org/entry/601718){:target="_blank"}|
 |[LAMB2](notebooks/LAMB2/LAMB2_NPHS5_individuals.ipynb){:target="_blank"}|13 Phenopackets;[Nephrotic syndrome, type 5, with or without ocular abnormalities](https://omim.org/entry/614199){:target="_blank"}|
+|[SV2A](notebooks/SV2A/SV2A_DEE113_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Developmental and epileptic encephalopathy 113](https://omim.org/entry/620772){:target="_blank"}|
 |[GCSH](notebooks/GCSH/GCSH_Summary.ipynb){:target="_blank"}|9 Phenopackets;[Multiple mitochondrial dysfunctions syndrome 7](https://omim.org/entry/620423){:target="_blank"}|
 |[POMGNT1](notebooks/POMGNT1/POMGNT1_RP76_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Retinitis pigmentosa 76](https://omim.org/entry/617123){:target="_blank"}|
 |[MAP3K14](notebooks/MAP3K14/MAP3K14_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Immunodeficiency 112](https://omim.org/entry/620449){:target="_blank"}|
+|[CAPN1](notebooks/CAPN1/CAPN1_SPG76_individuals.ipynb){:target="_blank"}|14 Phenopackets;[Spastic paraplegia 76, autosomal recessive](https://omim.org/entry/616907){:target="_blank"}|
 |[ST14](notebooks/ST14/ST14_ARCI11_individuals.ipynb){:target="_blank"}|4 Phenopackets;[Ichthyosis, congenital, autosomal recessive 11](https://omim.org/entry/602400){:target="_blank"}|
 |[TMEM38B](notebooks/TMEM38B/TMEM38B_OI14_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Osteogenesis imperfecta, type XIV](https://omim.org/entry/615066){:target="_blank"}|
 |[SNX14](notebooks/SNX14/SNX14_SCAR20_individuals.ipynb){:target="_blank"}|9 Phenopackets;[Spinocerebellar ataxia, autosomal recessive 20](https://omim.org/entry/616354){:target="_blank"}|
 |[FGFR2](notebooks/FGFR2/FGFR2_Apert_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Apert syndrome](https://omim.org/entry/101200){:target="_blank"}|
 |[CBLB](notebooks/CBLB/CBLB_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Autoimmune disease, multisystem, infantile-onset, 3](https://omim.org/entry/620430){:target="_blank"}|
 |[SCN2A](notebooks/SCN2A/generate_hgvs.ipynb){:target="_blank"}|394 Phenopackets;[Developmental and epileptic encephalopathy 11](https://omim.org/entry/613721){:target="_blank"}[Seizures, benign familial infantile, 3](https://omim.org/entry/607745){:target="_blank"}|
-|[LIRICAL](notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"}|253 Phenopackets;|
+|[LIRICAL](notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"}|236 Phenopackets;|
 |[BCKDK](notebooks/BCKDK/BCKDK_individuals.ipynb){:target="_blank"}|6 Phenopackets;[Branched-chain keto acid dehydrogenase kinase deficiency](https://omim.org/entry/614923){:target="_blank"}|
 |[CSTF2](notebooks/CSTF2/CSTF2_XLID113_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Intellectual developmental disorder, X-linked 113](https://omim.org/entry/301116){:target="_blank"}|
 |[TAF4](notebooks/TAF4/TAF4.ipynb){:target="_blank"}|10 Phenopackets;[Intellectual developmental disorder, autosomal dominant 73](https://omim.org/entry/620450){:target="_blank"}|
@@ -181,4 +193,5 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[ACTB](notebooks/ACTB/ACTB_AST_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Thrombocytopenia 8, with dysmorphic features and developmental delay](https://omim.org/entry/620475){:target="_blank"}|
 |[COL3A1](notebooks/COL3A1/COL3A1_Summary.ipynb){:target="_blank"}|41 Phenopackets;[Ehlers-Danlos syndrome, vascular type](https://omim.org/entry/130050){:target="_blank"}[Polymicrogyria with or without vascular-type EDS](https://omim.org/entry/618343){:target="_blank"}|
 |[STXBP1](notebooks/STXBP1/Xian_2022_STXBP1.ipynb){:target="_blank"}|463 Phenopackets;[Developmental and epileptic encephalopathy 4](https://omim.org/entry/612164){:target="_blank"}|
+|[ITPR1](notebooks/ITPR1/ITPR1_SCA29_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Spinocerebellar ataxia 29, congenital nonprogressive](https://omim.org/entry/117360){:target="_blank"}|
 |[PTPN11](notebooks/PTPN11/PTPN11_Summary.ipynb){:target="_blank"}|70 Phenopackets;[LEOPARD syndrome 1](https://omim.org/entry/151100){:target="_blank"}[Noonan syndrome 1](https://omim.org/entry/163950){:target="_blank"}[Metachondromatosis](https://omim.org/entry/156250){:target="_blank"}|

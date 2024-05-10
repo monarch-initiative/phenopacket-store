@@ -1,0 +1,243 @@
+{
+  "id": "PMID_36074124_2_IV_1",
+  "subject": {
+    "id": "2-IV-1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011560",
+        "label": "Mitral atresia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005160",
+        "label": "Total anomalous pulmonary venous return"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031565",
+        "label": "Abdominal situs ambiguus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001719",
+        "label": "Double outlet right ventricle"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001669",
+        "label": "Transposition of the great arteries"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004383",
+        "label": "Hypoplastic left heart"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011553",
+        "label": "Discordant atrioventricular connection"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001696",
+        "label": "Situs inversus totalis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003363",
+        "label": "Abdominal situs inversus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011567",
+        "label": "Sinus venosus atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034315",
+        "label": "Chronic cough"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "2-IV-1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620570",
+          "label": "Ciliary dyskinesia, primary, 52"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "2-IV-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_jgsphvnJAqZRVuJvrmEFSHpzx",
+                "geneContext": {
+                  "valueId": "HGNC:26383",
+                  "symbol": "DAW1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_178821.3:c.357G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.227893834G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": "227893834",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620570",
+        "label": "Ciliary dyskinesia, primary, 52"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-10T03:35:20.123755931Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36074124",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36074124",
+        "description": "Biallelic DAW1 variants cause a motile ciliopathy characterized by laterality defects and subtle ciliary beating abnormalities"
+      }
+    ]
+  }
+}
