@@ -1,0 +1,234 @@
+{
+  "id": "PMID_32325141_index_patient",
+  "subject": {
+    "id": "index patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011108",
+        "label": "Recurrent sinusitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011110",
+        "label": "Recurrent tonsillitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011107",
+        "label": "Recurrent aphthous stomatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000089",
+        "label": "Renal hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001058",
+        "label": "Poor wound healing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0200043",
+        "label": "Verrucae"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000230",
+        "label": "Gingivitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032299",
+        "label": "Increased circulating IgG2 level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003261",
+        "label": "Increased circulating IgA level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033606",
+        "label": "Bone marrow maturation arrest"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012311",
+        "label": "Monocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal B cell count"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "index patient",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620674",
+          "label": "Neutropenia, severe congenital, 11, autosomal dominant"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "index patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_IynQVQdakLJgaOWLqagASQCkh",
+                "geneContext": {
+                  "valueId": "HGNC:18276",
+                  "symbol": "SEC61A1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_013336.4:c.275A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.128056763A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "128056763",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620674",
+        "label": "Neutropenia, severe congenital, 11, autosomal dominant"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-11T09:29:09.490228891Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:32325141",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/32325141",
+        "description": "Defective Sec61\u03b11 underlies a novel cause of autosomal dominant severe congenital neutropenia"
+      }
+    ]
+  }
+}
