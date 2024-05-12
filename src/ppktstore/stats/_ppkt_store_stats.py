@@ -79,7 +79,7 @@ class PPKtStoreStats:
                         total += 1
                     else:
                         print("[ERROR] Could not parse path: ", info.filename)
-        print(f"Extracted {total} phenoapckets in {len(cohort_to_ppkt_d)} cohorts.")
+        print(f"Extracted {total} phenopackets in {len(cohort_to_ppkt_d)} cohorts.")
         return cohort_to_ppkt_d
 
     @staticmethod
