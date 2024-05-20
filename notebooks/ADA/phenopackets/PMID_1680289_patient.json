@@ -1,0 +1,191 @@
+{
+  "id": "PMID_1680289_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0031381",
+        "label": "Decreased lymphocyte proliferation in response to mitogen"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA level"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "patient",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:102700",
+          "label": "Severe combined immunodeficiency due to ADA deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_MQQUlarLLCluCQPvzlSvWfFWv",
+                "geneContext": {
+                  "valueId": "HGNC:186",
+                  "symbol": "ADA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000022.4:c.646G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.44623039C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": "44623039",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:102700",
+        "label": "Severe combined immunodeficiency due to ADA deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-20T21:30:00.874895811Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:1680289",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/1680289",
+        "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
+      }
+    ]
+  }
+}

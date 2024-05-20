@@ -1,0 +1,197 @@
+{
+  "id": "PMID_28823388_3_month_old_girl",
+  "subject": {
+    "id": "3-month-old girl",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005359",
+        "label": "Aplasia of the thymus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030273",
+        "label": "Reduced red cell adenosine deaminase level"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "3-month-old girl",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:102700",
+          "label": "Severe combined immunodeficiency due to ADA deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "3-month-old girl",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_RWztYXDsKSMdJqJdICddoBquJ",
+                "geneContext": {
+                  "valueId": "HGNC:186",
+                  "symbol": "ADA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000022.4:c.478+3G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.44625566C>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": "44625566",
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:102700",
+        "label": "Severe combined immunodeficiency due to ADA deficiency"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-20T21:30:00.876706123Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:28823388",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28823388",
+        "description": "A case of severe combined immunodeficiency caused by adenosine deaminase deficiency with a new mutation"
+      }
+    ]
+  }
+}
