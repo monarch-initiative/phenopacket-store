@@ -225,30 +225,10 @@ class PPKtStoreStats:
         return all_hpo_d
     
 
-    def get_total_unique_hpo_terms(self, input_zipfile: zipfile.ZipFile) -> pd.DataFrame:
-        all_ppkt = list()
-        for info in input_zipfile.infolist():
-            if info.is_dir():
-                continue
-            if info.filename == "all_phenopackets.tsv":
-                all_ppkt = info
-                break
-        if all_ppkt is None:
-            raise FileNotFoundError("Could not find \"all_phenopackets.tsv\" in zip archive")
-        with archive.open(all_ppkt) as f:
-            list_of_lists = list()
-            firstLine = True
-            for line in f:
-                if firstLine:
-                    firstLine = False
-                    continue
-                L = line.decode("utf-8")
-                fields = L.strip().split("\t")
-                list_of_lists.append(fields)
-        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
-        return pd.DataFrame(data=list_of_lists, columns=columns)
-
     def check_disease_id(self):
+        """
+        Check the entire dataset for erroneous disease identifiers (i.e., not conforming to OMIM or MONDO ids)
+        """
         invalid_list = list()
         OMIM_REGEX = r"^OMIM:\d{6}$"
         MONDO_REGEX = r"^MONOD:\d+$"
@@ -337,6 +317,7 @@ class PPKtStoreStats:
                     continue
                 disease_id = ppkt.diseases[0].term.id
                 disease_to_ppkt_count_d[disease_id] += 1
+        print(f"Extracted a total of {len(disease_to_ppkt_count_d)} diseases")
         return disease_to_ppkt_count_d
     
     def _get_gene_symbol(self, ppkt) -> str:
@@ -351,7 +332,7 @@ class PPKtStoreStats:
             vdesc = vi.variation_descriptor
             gene_symbol = vdesc.gene_context.symbol
             return gene_symbol
-        except Exception (ee):
+        except Exception as ee:
             print(f"Warning: Got no gene symbbol for {ppkt.id} because of {str(ee)}. Skipping")
         return None
     
@@ -362,6 +343,9 @@ class PPKtStoreStats:
                 gene_symbol = self._get_gene_symbol(ppkt=ppkt)
                 if gene_symbol is not None:
                     gene_to_ppkt_count_d[gene_symbol] += 1
+                else:
+                    print(f"[ERROR] Count not identify gene for phenopacket {ppkt.id}")
+        print(f"Extracted a total of {len(gene_to_ppkt_count_d)} genes")
         return gene_to_ppkt_count_d
 
 
