@@ -34,6 +34,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[GNAO1](notebooks/GNAO1/GNAO1_DEE17_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Developmental and epileptic encephalopathy 17 ](https://omim.org/entry/615473){:target="_blank"}|
 |[MRPL39](notebooks/MRPL39/MRPL39_COXPD59_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Combined oxidative phosphorylation deficiency 59](https://omim.org/entry/620646){:target="_blank"}|
 |[WWOX](notebooks/WWOX/WWOX_DEE28_individuals.ipynb){:target="_blank"}|34 Phenopackets;[Developmental and epileptic encephalopathy 28](https://omim.org/entry/616211){:target="_blank"}[Spinocerebellar ataxia, autosomal recessive 12](https://omim.org/entry/614322){:target="_blank"}|
+|[CDH3](notebooks/CDH3/CDH3_HJMD_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Hypotrichosis, congenital, with juvenile macular dystrophy](https://omim.org/entry/601553){:target="_blank"}|
 |[VRK1](notebooks/VRK1/VRK1_HMNR10_cohort.ipynb){:target="_blank"}|8 Phenopackets;[Neuronopathy, distal hereditary motor, autosomal recessive 10](https://omim.org/entry/620542){:target="_blank"}|
 |[RAP1B](notebooks/RAP1B/RAP1B_THC11_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Thrombocytopenia 11 with multiple congenital anomalies and dysmorphic facies](https://omim.org/entry/620654){:target="_blank"}|
 |[SPIN4](notebooks/SPIN4/SPIN4_LJBS_individuals.ipynb){:target="_blank"}|1 Phenopackets;[Lui-Jee-Baron syndrome](https://omim.org/entry/301114){:target="_blank"}|
@@ -164,7 +165,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[TMTC4](notebooks/TMTC4/TMTC4_DFNB122_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Deafness, autosomal recessive 122](https://omim.org/entry/620714){:target="_blank"}|
 |[ERI1](notebooks/ERI1/ERI1_SEMDGC_individuals.ipynb){:target="_blank"}|10 Phenopackets;[Hoxha-Aliu syndrome](https://omim.org/entry/620662){:target="_blank"}[Spondyloepimetaphyseal dysplasia, Guo-Campeau type](https://omim.org/entry/620663){:target="_blank"}|
 |[SCN5A](notebooks/SCN5A/SCN5A_BRGDA1_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Brugada syndrome 1](https://omim.org/entry/601144){:target="_blank"}|
-|[COL6A3](notebooks/COL6A3/COL6A3_BTHLM1C_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Bethlem myopathy 1C](https://omim.org/entry/620726){:target="_blank"}|
+|[COL6A3](notebooks/COL6A3/COL6A3_UCMD1C_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Ullrich congenital muscular dystrophy 1C](https://omim.org/entry/620728){:target="_blank"}[Bethlem myopathy 1C](https://omim.org/entry/620726){:target="_blank"}|
 |[MEN1](notebooks/MEN1/MEN1_MEN_individuals.ipynb){:target="_blank"}|1 Phenopackets;[Multiple endocrine neoplasia 1](https://omim.org/entry/131100){:target="_blank"}|
 |[ASS1](notebooks/ASS1/ASS1_citrullinemia_individuals.ipynb){:target="_blank"}|5 Phenopackets;[Citrullinemia](https://omim.org/entry/215700){:target="_blank"}|
 |[SUOX](notebooks/SUOX/SUOX_Li_PMID_36303223_CreatePhenopackets.ipynb){:target="_blank"}|35 Phenopackets;[Sulfite oxidase deficiency](https://omim.org/entry/272300){:target="_blank"}|
@@ -203,7 +204,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[CBLB](notebooks/CBLB/CBLB_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Autoimmune disease, multisystem, infantile-onset, 3](https://omim.org/entry/620430){:target="_blank"}|
 |[SCN2A](notebooks/SCN2A/generate_hgvs.ipynb){:target="_blank"}|393 Phenopackets;[Developmental and epileptic encephalopathy 11](https://omim.org/entry/613721){:target="_blank"}[Seizures, benign familial infantile, 3](https://omim.org/entry/607745){:target="_blank"}|
 |[VPS13C](notebooks/VPS13C/VPS13C_PARK23_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Parkinson disease 23, autosomal recessive, early onset](https://omim.org/entry/616840){:target="_blank"}|
-|[LIRICAL](notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"}|205 Phenopackets;|
+|[LIRICAL](notebooks/LIRICAL/LIRICAL.ipynb){:target="_blank"}|204 Phenopackets;|
 |[BCKDK](notebooks/BCKDK/BCKDK_individuals.ipynb){:target="_blank"}|6 Phenopackets;[Branched-chain keto acid dehydrogenase kinase deficiency](https://omim.org/entry/614923){:target="_blank"}|
 |[CSTF2](notebooks/CSTF2/CSTF2_XLID113_individuals.ipynb){:target="_blank"}|3 Phenopackets;[Intellectual developmental disorder, X-linked 113](https://omim.org/entry/301116){:target="_blank"}|
 |[TAF4](notebooks/TAF4/TAF4.ipynb){:target="_blank"}|10 Phenopackets;[Intellectual developmental disorder, autosomal dominant 73](https://omim.org/entry/620450){:target="_blank"}|

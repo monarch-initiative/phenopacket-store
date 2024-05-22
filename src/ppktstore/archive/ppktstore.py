@@ -1,4 +1,5 @@
 import os
+import typing
 import shutil
 import tarfile
 import tempfile
@@ -89,6 +90,70 @@ class PPKtStore:
                 shutil.copy(f, temp_cohort_dir)
                 n_copied_files += 1
         return n_copied_files
+    
+
+    @staticmethod
+    def get_pmid(meta_data) -> str:
+        if meta_data.external_references:
+           return meta_data.external_references[0].id
+        else:
+            # should never happen
+            raise ValueError('Cannot extract PMID')
+        
+    @staticmethod
+    def get_structural_var(variation_descriptor) -> typing.List[str]:
+        alleles = list()
+        if variation_descriptor.HasField("structural_type"):
+            stype = variation_descriptor.structural_type
+            alleles.append(stype.label)
+        else:
+            raise ValueError(f"Could not find structural_type field")
+        return  alleles
+        
+    @staticmethod
+    def get_gene_and_alleles(diagnosis) -> typing.Tuple[str, typing.List[str]]:
+        """
+        Extract the gene symbol, failing that the label, for a variant from the Interpretation object.
+        Also get the alleles.
+        """
+        gene = None
+        alleles = []
+        for genomic_interpretation in diagnosis.genomic_interpretations:
+            if genomic_interpretation.variant_interpretation:
+                if genomic_interpretation.variant_interpretation.variation_descriptor:
+                    var_desc = genomic_interpretation.variant_interpretation.variation_descriptor
+                    gene = PPKtStore.get_gene_symbol(variant_descriptor=var_desc)
+                    if var_desc.expressions:
+                        hgvsC = ''
+                        hgvsG = ''
+                        for expr in var_desc.expressions:
+                            if expr.syntax == 'hgvs.c':
+                                hgvsC = expr.value
+                            if expr.syntax == 'hgvs.g':
+                                hgvsG = expr.value
+                        if hgvsC:
+                            alleles.append(hgvsC)
+                        elif hgvsG:
+                            alleles.append(hgvsG)
+                    # get structural variant, if needed
+                    if len(alleles) == 0:
+                        alleles = PPKtStore.get_structural_var(var_desc)
+                    # get genotype
+                    genotype = var_desc.allelic_state
+                    if genotype.label == "homozygous" and len(alleles) > 0:
+                        alleles.append(alleles[0])
+        return gene, alleles
+    
+
+    @staticmethod
+    def get_gene_symbol(variant_descriptor) -> str:
+        gene = None
+        if variant_descriptor.HasField("gene_context"):
+            gene = variant_descriptor.gene_context.symbol
+        if gene is None:
+            gene = variant_descriptor.label
+        return gene
+                          
 
     def _create_tsv_file(self, tsvFileName: str):
         column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
@@ -96,6 +161,11 @@ class PPKtStore:
 
         for cohort in self._cohorts:
             for entry in cohort.get_detailed_dict():
+                entry_filename = entry["filename"]
+                if "notebooks/11q_terminal_deletion/phenopackets/PMID_15266616_35.json" == entry_filename:
+                    x = 42
+                    y = 43
+                    z = x + y
                 with open(entry['filename']) as f:
                     ppack = Parse(f.read(), Phenopacket())
                     if not ppack.interpretations:
@@ -104,44 +174,18 @@ class PPKtStore:
                         if not interpretation.diagnosis:
                             continue
                         dx = interpretation.diagnosis
-                        gene = cohort
-                        pmid = ''
-                        if ppack.meta_data.external_references:
-                            pmid = ppack.meta_data.external_references[0].id
-                        else:
-                            print('Warning: Cannot extract PMID from [{}] in cohort: {}'.format(entry['filename'],
-                                                                                                cohort))
-                        alleles = []
-                        for genomic_interpretation in dx.genomic_interpretations:
-                            if genomic_interpretation.variant_interpretation:
-                                if genomic_interpretation.variant_interpretation.variation_descriptor:
-
-                                    if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context:
-                                        if genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol:
-                                            gene = genomic_interpretation.variant_interpretation.variation_descriptor.gene_context.symbol
-                                    if genomic_interpretation.variant_interpretation.variation_descriptor.expressions:
-                                        hgvsC = ''
-                                        hgvsG = ''
-
-                                        for expr in genomic_interpretation.variant_interpretation.variation_descriptor.expressions:
-                                            if expr.syntax == 'hgvs.c':
-                                                hgvsC = expr.value
-                                            if expr.syntax == 'hgvs.g':
-                                                hgvsG = expr.value
-                                        if hgvsC:
-                                            alleles.append(hgvsC)
-                                        else:
-                                            if hgvsG:
-                                                alleles.append(hgvsG)
-
-                        allele1 = ''
-                        allele2 = ''
+                        pmid = PPKtStore.get_pmid(meta_data=ppack.meta_data)
+                        gene, alleles = self.get_gene_and_alleles(diagnosis=dx)
+                        if gene is None:
+                            raise ValueError(f"Could not get gene string for {entry['filename']}")
                         if len(alleles) == 2:
                             allele1 = alleles[0]
                             allele2 = alleles[1]
-                        else:
-                            if len(alleles) == 1:
+                        elif len(alleles) == 1:
                                 allele1 = alleles[0]
+                                allele2 = ""
+                        else:
+                            raise ValueError(f"Length of alleles was {len(alleles)} for {entry['filename']}")
 
                         rows.append({
                             column_names[0]: dx.disease.label,

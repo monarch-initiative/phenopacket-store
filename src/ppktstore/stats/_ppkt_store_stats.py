@@ -140,50 +140,61 @@ class PPKtStoreStats:
 
     def get_descriptive_stats(self) -> typing.Mapping[str, typing.Any]:
         df = self._df
-        df["unique_id"] = df["patient_id"] + df["PMID"]
-        grouped_by_disease = df.groupby("disease_id").count()
-        grouped_by_gene = df.groupby("gene").count()
+        genes_to_ppkt_d = defaultdict(int)
+        diseases_to_ppkt_id = defaultdict(int)
+        genes_to_disease_d = defaultdict(set)
+        unique_alleles = set()
+        for _, row in df.iterrows():
+            gene = row["gene"]
+            disease_id = row["disease_id"]
+            allele_1 = row["allele_1"]
+            allele_2 = row["allele_2"]
+            genes_to_ppkt_d[gene] += 1
+            diseases_to_ppkt_id[disease_id] += 1
+            genes_to_disease_d[gene].add(disease_id)
+            unique_alleles.add(allele_1)
+            if allele_2 is not None and allele_2.startswith("NM_"):
+                unique_alleles.add(allele_2)
         stats_d = dict()
         stats_d["phenopackets"] = len(df)
         stats_d["diseases"] = len(df["disease_id"].unique())
         stats_d["genes"] = len(df["gene"].unique())
-        # filter for len greater than 2 to avoid empties or na in allele_2 column
-        unique_a1 = [a for a in df["allele_1"].unique() if a is not None and len(a) > 2]
-        unique_a2 = [a for a in df["allele_2"].unique() if a is not None and len(a) > 2]
-        unique_alleles = set(unique_a1)
-        unique_alleles.update(unique_a2)
+
         stats_d["alleles"] = len(unique_alleles)
         stats_d["PMIDs"] = len(df["PMID"].unique())
-        individuals_per_disease_d = self.get_disease_to_phenopacket_count_d()
-        individuals_per_disease = list(individuals_per_disease_d.values())
+        individuals_per_disease = list(diseases_to_ppkt_id.values())
         stats_d["individuals per disease (max)"] = np.max(individuals_per_disease)
         stats_d["individuals per disease (min)"] = np.min(individuals_per_disease)
         stats_d["individuals per disease (mean)"] = np.mean(individuals_per_disease)
         stats_d["individuals per disease (median)"] = np.median(individuals_per_disease)
-        stats_d["individuals per disease (n>=10)"] = len([x for x in individuals_per_disease if x >= 10])
-        stats_d["individuals per disease (n>=20)"] = len([x for x in individuals_per_disease if x >= 20])
-        stats_d["individuals per disease (n>=50)"] = len([x for x in individuals_per_disease if x >= 50])
-        stats_d["individuals per disease (n>=100)"] = len([x for x in individuals_per_disease if x >= 100])
+        #stats_d["individuals per disease (n>=10)"] = len([x for x in individuals_per_disease if x >= 10])
+        #stats_d["individuals per disease (n>=20)"] = len([x for x in individuals_per_disease if x >= 20])
+        #stats_d["individuals per disease (n>=50)"] = len([x for x in individuals_per_disease if x >= 50])
+       # stats_d["individuals per disease (n>=100)"] = len([x for x in individuals_per_disease if x >= 100])
         # Some genes are associated with multiple diseases
         gene_by_disease_df = df[['gene', 'disease_id']].drop_duplicates()
         gbd_counts_df = gene_by_disease_df.groupby('disease_id').count().value_counts(ascending=False).reset_index(name='count')
-        stats_d["genes associated with a single disease"] = len([x for x in gbd_counts_df["count"] if x == 1])
-        stats_d["genes associated with two diseases"] = len([x for x in gbd_counts_df["count"] if x == 2])
-        stats_d["genes associated with multiple diseases"] = len([x for x in gbd_counts_df["count"] if x > 1])
-        max_gene = gbd_counts_df.iloc[0]["gene"]
-        max_count = gbd_counts_df.iloc[0]["count"]
+        stats_d["genes associated with a single disease"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) == 1])
+        stats_d["genes associated with two diseases"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) == 2])
+        stats_d["genes associated with multiple diseases"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) > 2])
+        max_gene = None
+        max_count = 0
+        for k,v in genes_to_disease_d.items():
+            n_diseases = len(v)
+            if n_diseases > max_count:
+                max_count = n_diseases
+                max_gene = k
         max_msg = f"{max_gene} with {max_count} associated diseases"
         stats_d["gene with maximum number of diseases"] = max_msg
-        individuals_per_gene_d = self.get_gene_to_phenopacket_count_d()
-        individuals_per_gene = list(individuals_per_gene_d.values())
-        stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
-        stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
-        stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
-        stats_d["individuals per gene (median)"] = np.median(individuals_per_gene)
-        stats_d["individuals per gene (n>=10)"] = len([x for x in individuals_per_gene if x >= 10])
-        stats_d["individuals per gene (n>=20)"] = len([x for x in individuals_per_gene if x >= 20])
-        stats_d["individuals per gene (n>=50)"] = len([x for x in individuals_per_gene if x >= 50])
-        stats_d["individuals per gene (n>=100)"] = len([x for x in individuals_per_gene if x >= 100])
+        individuals_per_gene = list(genes_to_ppkt_d.values())
+        #stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
+       # stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
+        #stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
+        #stats_d["individuals per gene (median)"] = np.median(individuals_per_gene)
+       # stats_d["individuals per gene (n>=10)"] = len([x for x in individuals_per_gene if x >= 10])
+        #stats_d["individuals per gene (n>=20)"] = len([x for x in individuals_per_gene if x >= 20])
+        #stats_d["individuals per gene (n>=50)"] = len([x for x in individuals_per_gene if x >= 50])
+       # stats_d["individuals per gene (n>=100)"] = len([x for x in individuals_per_gene if x >= 100])
         all_hpo_d = self.get_all_unique_hpo_d()
         total_hpo = len(all_hpo_d)
         stats_d["total HPO terms used"] = total_hpo
