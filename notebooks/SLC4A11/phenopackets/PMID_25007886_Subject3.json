@@ -1,0 +1,142 @@
+{
+  "id": "PMID_25007886_Subject_3",
+  "subject": {
+    "id": "Subject 3"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012038",
+        "label": "Corneal guttata"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001131",
+        "label": "Corneal dystrophy"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Subject 3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613268",
+          "label": "Corneal dystrophy, Fuchs endothelial, 4"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Subject 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_higQPSHkCOjszEDhXJhgbnnQG",
+                "geneContext": {
+                  "valueId": "HGNC:16438",
+                  "symbol": "SLC4A11"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001174089.2:c.1256C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.3230758G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": "3230758",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613268",
+        "label": "Corneal dystrophy, Fuchs endothelial, 4"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P61Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-05-25T07:22:55.831073999Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:25007886",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25007886",
+        "description": "Biosynthetic and functional defects in newly identified SLC4A11 mutants and absence of COL8A2 mutations in Fuchs endothelial corneal dystrophy"
+      }
+    ]
+  }
+}
