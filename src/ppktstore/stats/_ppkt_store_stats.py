@@ -7,6 +7,10 @@ import pandas as pd
 from collections import defaultdict
 import phenopackets as PPKt
 from google.protobuf.json_format import Parse
+from ..__init__ import __version__ as ppkt_version
+
+    
+
 
 class PPKtStoreStats:
     """Calculate descriptive statistics about the phenopackets in the repository and generate figures to illustrate distributions.
@@ -156,6 +160,7 @@ class PPKtStoreStats:
             if allele_2 is not None and allele_2.startswith("NM_"):
                 unique_alleles.add(allele_2)
         stats_d = dict()
+        stats_d["version"] = ppkt_version
         stats_d["phenopackets"] = len(df)
         stats_d["diseases"] = len(df["disease_id"].unique())
         stats_d["genes"] = len(df["gene"].unique())
