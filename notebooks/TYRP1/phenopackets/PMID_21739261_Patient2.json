@@ -1,0 +1,205 @@
+{
+  "id": "PMID_21739261_Patient_2",
+  "subject": {
+    "id": "Patient 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y9M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001010",
+        "label": "Hypopigmentation of the skin"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002297",
+        "label": "Red hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient 2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:203290",
+          "label": "Albinism, oculocutaneous, type III"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_oOCbNQOGbCxUgSOcLiRkEUDwO",
+                "geneContext": {
+                  "valueId": "HGNC:12450",
+                  "symbol": "TYRP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000550.3:c.625delinsTT"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.12695754delinsTT"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "12695754",
+                  "ref": "G",
+                  "alt": "TT"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_goJClbVHcrBojHNGPrWUoNXuW",
+                "geneContext": {
+                  "valueId": "HGNC:12450",
+                  "symbol": "TYRP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000550.3:c.643C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.12695772C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "12695772",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:203290",
+        "label": "Albinism, oculocutaneous, type III"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-01T10:40:22.358767032Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:21739261",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/21739261",
+        "description": "Oculocutaneous albinism type 3 (OCA3): analysis of two novel mutations in TYRP1 gene in two Chinese patients"
+      }
+    ]
+  }
+}
