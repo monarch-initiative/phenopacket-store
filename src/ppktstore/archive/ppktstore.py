@@ -12,8 +12,15 @@ from .cohort import Cohort
 
 
 class PPKtStore:
+    """
+    This class helps organize the task of extracting all phenopackets from the notebooks of
+    phenopacket-store and of archiving them with zip and tar/gz.
+    """
 
-    def __init__(self, notebook_dir) -> None:
+    def __init__(self, notebook_dir:str) -> None:
+        """
+        :param notebook_dir: path to the directory that contains all of the subdirectories for cohorts
+        """
         if not os.path.isdir(notebook_dir):
             raise ValueError(f"Could not find phenopacket notebook directory at {notebook_dir}")
         self._cohorts = []

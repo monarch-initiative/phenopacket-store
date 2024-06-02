@@ -7,6 +7,9 @@ from phenopackets import Phenopacket
 
 
 class PPKtListing:
+    """
+    This class helps coordinate the creation of the MarkDown file with the summary of the available cohorts
+    """
     mdFile = None
     _cohorts = {}
 
