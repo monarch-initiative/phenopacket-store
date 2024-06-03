@@ -1,0 +1,208 @@
+{
+  "id": "PMID_19864672_Patient_2M",
+  "subject": {
+    "id": "Patient 2M",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P50Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012204",
+        "label": "Recurrent vulvovaginal candidiasis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P42Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032515",
+        "label": "Deep dermatophytosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032159",
+        "label": "Fungal meningitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001880",
+        "label": "Eosinophilia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003237",
+        "label": "Increased circulating IgG level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Lymphopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031393",
+        "label": "Abnormal proportion of CD8-positive T cells"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031392",
+        "label": "Abnormal proportion of CD4-positive T cells"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient 2M",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:212050",
+          "label": "Immunodeficiency 103, susceptibility to fungal infection"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2M",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_pGdMEPusncguBzpAfxnldONbb",
+                "geneContext": {
+                  "valueId": "HGNC:16391",
+                  "symbol": "CARD9"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_052813.5:c.883C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.136370362G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "136370362",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:212050",
+        "label": "Immunodeficiency 103, susceptibility to fungal infection"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P42Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-03T05:55:55.201982975Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:19864672",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19864672",
+        "description": "A homozygous CARD9 mutation in a family with susceptibility to fungal infections"
+      }
+    ]
+  }
+}
