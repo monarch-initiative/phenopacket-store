@@ -1,0 +1,199 @@
+{
+  "id": "PMID_18930476_individual_II2",
+  "subject": {
+    "id": "individual II2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P51Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009005",
+        "label": "Weakness of the intrinsic hand muscles"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P41Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008981",
+        "label": "Calf muscle hypertrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003760",
+        "label": "Percussion-induced rapid rolling muscle contractions"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003326",
+        "label": "Myalgia"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "individual II2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:614321",
+          "label": "Myopathy, distal, Tateyama type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual II2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ZNLVkamAKQbdjuWcvbAJmoara",
+                "geneContext": {
+                  "valueId": "HGNC:1529",
+                  "symbol": "CAV3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_033337.3:c.80G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.8733956G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "8733956",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:614321",
+        "label": "Myopathy, distal, Tateyama type"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-06T07:02:20.730248928Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:18930476",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18930476",
+        "description": "Phenotypic variability in a Spanish family with a Caveolin-3 mutation"
+      }
+    ]
+  }
+}
