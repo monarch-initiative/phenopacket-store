@@ -1,0 +1,192 @@
+{
+  "id": "PMID_29196670_Patient_10",
+  "subject": {
+    "id": "Patient 10",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009716",
+        "label": "Subependymal nodules"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010615",
+        "label": "Angiofibromas"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009717",
+        "label": "Cortical tubers"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009594",
+        "label": "Retinal hamartoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012798",
+        "label": "Pulmonary lymphangiomyomatosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006772",
+        "label": "Renal angiomyolipoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009719",
+        "label": "Hypomelanotic macule"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009721",
+        "label": "Shagreen patch"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient 10",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:191100",
+          "label": "Tuberous sclerosis-1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 10",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_WUpNtwKeeCWpavtLClFlxUrQn",
+                "geneContext": {
+                  "valueId": "HGNC:12362",
+                  "symbol": "TSC1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000368.5:c.1681_1700del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.132905880_132905899del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": "132905877",
+                  "ref": "CGCAGGGCTTTCATCAGCACT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:191100",
+        "label": "Tuberous sclerosis-1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-06T05:16:42.469466924Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:29196670",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29196670",
+        "description": "Mutational analysis of TSC1 and TSC2 genes in Tuberous Sclerosis Complex patients from Greece"
+      }
+    ]
+  }
+}
