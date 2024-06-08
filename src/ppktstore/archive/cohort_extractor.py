@@ -3,7 +3,7 @@ import typing
 import shutil
 import tarfile
 import tempfile
-
+from collections import defaultdict
 import pandas as pd
 from google.protobuf.json_format import Parse
 from phenopackets import Phenopacket
@@ -56,14 +56,15 @@ class CohortExtractor:
     This class helps organize the task of extracting all phenopackets from the notebooks of
     phenopacket-store and of archiving them with zip and tar/gz.
     """
-    def __init__(self, notebook_dir:str) -> None:
+    def __init__(self, notebook_dir:str, one_ppkt_per_disease:bool=False) -> None:
         """
         :param notebook_dir: path to the directory that contains all of the subdirectories for cohorts
         """
         if not os.path.isdir(notebook_dir):
             raise ValueError(f"Could not find phenopacket notebook directory at {notebook_dir}")
         self._entries = []
-        self._dx_to_file_d = dict()
+        n_total_diseases = 0
+        self._dx_to_file_d = defaultdict(list)
         for (dirpath, dirnames, filenames) in os.walk(notebook_dir):
             if dirpath.endswith("phenopackets") and not dirpath.endswith("v1phenopackets"):
                 lpath_components = dirpath.split(os.sep)
@@ -74,7 +75,7 @@ class CohortExtractor:
                         if len(ppack.diseases) != 1:
                             raise ValueError(f"Invalid number of diseases for phenopacket {ppack.id}: {len(ppack.diseases)}")
                         dx = ppack.diseases[0].term.id
-                        if dx in self._dx_to_file_d:
+                        if one_ppkt_per_disease and dx in self._dx_to_file_d:
                             continue # only take one example per disease
                         else:
                             disease_label = ppack.diseases[0].term.label
@@ -82,18 +83,20 @@ class CohortExtractor:
                             gene = CohortExtractor.get_gene(ppack.interpretations[0].diagnosis)
                             entry = CohortEntry(disease_id=dx, disease_label=disease_label, gene_symbol=gene, pmid=pmid, phenopacket_id=ppack.id, file_name=jsonFile)
                             self._entries.append(entry)
-                            self._dx_to_file_d[dx] = os.path.join(dirpath, jsonFile)
-            print(f"We found {len(self._dx_to_file_d)} diseases (one phenopacket per disease).")
+                            self._dx_to_file_d[dx].append(os.path.join(dirpath, jsonFile))
+                            n_total_diseases += 1
+            print(f"We found {n_total_diseases} diseases (one phenopacket per disease).")
 
         
         
     def _copy_files_to_temporary_directory(self, tmpdirname: str, flat=False) -> int:
         n_copied_files = 0
-        for omim_id, file_path in self._dx_to_file_d.items():
-            temp_cohort_dir = tmpdirname
-            # original files
-            shutil.copy(file_path, temp_cohort_dir)
-            n_copied_files += 1
+        for omim_id, file_list in self._dx_to_file_d.items():
+            for file_path in file_list:
+                temp_cohort_dir = tmpdirname
+                # original files
+                shutil.copy(file_path, temp_cohort_dir)
+                n_copied_files += 1
         return n_copied_files
     
     def get_zip(self, outfilename: str):
