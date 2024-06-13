@@ -1,0 +1,265 @@
+{
+  "id": "PMID_31213928_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P15Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003391",
+        "label": "Gowers sign"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002515",
+        "label": "Waddling gait"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000467",
+        "label": "Neck muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001308",
+        "label": "Tongue fasciculations"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012473",
+        "label": "Tongue atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030319",
+        "label": "Weakness of facial musculature"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002322",
+        "label": "Resting tremor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025190",
+        "label": "Bilateral tonic-clonic seizure with generalized onset"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003551",
+        "label": "Difficulty climbing stairs"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0045040",
+        "label": "Abnormal circulating lactate dehydrogenase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040081",
+        "label": "Abnormal circulating creatine kinase concentration"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "patient",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:159950",
+          "label": "Spinal muscular atrophy with progressive myoclonic epilepsy"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_EPZCPexBOsmvmYuzutuUnLZBe",
+                "geneContext": {
+                  "valueId": "HGNC:735",
+                  "symbol": "ASAH1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_177924.5:c.125C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.18075541G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": "18075541",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:159950",
+        "label": "Spinal muscular atrophy with progressive myoclonic epilepsy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-13T05:55:04.312659978Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:31213928",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31213928",
+        "description": "A novel case report of spinal muscular atrophy with progressive myoclonic epilepsy from Iran"
+      }
+    ]
+  }
+}
