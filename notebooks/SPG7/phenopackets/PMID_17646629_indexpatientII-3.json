@@ -1,0 +1,246 @@
+{
+  "id": "PMID_17646629_index_patient_II_3",
+  "subject": {
+    "id": "index patient (II-3)",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P38Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002355",
+        "label": "Difficulty walking"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002061",
+        "label": "Lower limb spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002395",
+        "label": "Lower limb hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000605",
+        "label": "Supranuclear gaze palsy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033051",
+        "label": "Impaired executive functioning"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006986",
+        "label": "Upper limb spasticity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003484",
+        "label": "Upper limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007350",
+        "label": "Hyperreflexia in upper limbs"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002070",
+        "label": "Limb ataxia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007377",
+        "label": "Abnormality of somatosensory evoked potentials"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "index patient (II-3)",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:607259",
+          "label": "Spastic paraplegia 7, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "index patient (II-3)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_IrBjcWQjSZFsnyUAwbWifwpRS",
+                "geneContext": {
+                  "valueId": "HGNC:11237",
+                  "symbol": "SPG7"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003119.4:c.2075G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.89553932G>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": "89553932",
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:607259",
+        "label": "Spastic paraplegia 7, autosomal recessive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-18T06:27:38.592395067Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:17646629",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/17646629",
+        "description": "A novel form of autosomal recessive hereditary spastic paraplegia caused by a new SPG7 mutation"
+      }
+    ]
+  }
+}
