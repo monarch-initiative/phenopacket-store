@@ -60,6 +60,8 @@ class PPKtStoreStats:
                     continue
                 L = line.decode("utf-8")
                 fields = L.strip().split("\t")
+                if len(fields) != 7:
+                    raise ValueError(f"Malformed line with {len(fields)} fields: {L}")
                 list_of_lists.append(fields)
         columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
         return pd.DataFrame(data=list_of_lists, columns=columns)
