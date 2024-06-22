@@ -1,0 +1,170 @@
+{
+  "id": "PMID_24069336_proband_V_02",
+  "subject": {
+    "id": "proband V-02",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P44Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011877",
+        "label": "Increased mean platelet volume"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032438",
+        "label": "Platelet anisocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030402",
+        "label": "Abnormal platelet aggregation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012143",
+        "label": "Abnormal megakaryocyte morphology"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "proband V-02",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615193",
+          "label": "Bleeding disorder, platelet-type, 15"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband V-02",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_IpfrWjEalwKYHsPHajAffgXRG",
+                "geneContext": {
+                  "valueId": "HGNC:163",
+                  "symbol": "ACTN1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001130004.2:c.137G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.68925641C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": "68925641",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615193",
+        "label": "Bleeding disorder, platelet-type, 15"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-22T14:02:43.980846166Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-04-26",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:24069336",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24069336",
+        "description": "A missense mutation in the alpha-actinin 1 gene (ACTN1) is the cause of autosomal dominant macrothrombocytopenia in a large French family"
+      }
+    ]
+  }
+}
