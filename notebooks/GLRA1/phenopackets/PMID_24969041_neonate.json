@@ -1,0 +1,181 @@
+{
+  "id": "PMID_24969041_neonate",
+  "subject": {
+    "id": "neonate",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11D"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002267",
+        "label": "Exaggerated startle response"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002108",
+        "label": "Spontaneous pneumothorax"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100660",
+        "label": "Dyskinesia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002011",
+        "label": "Morphological central nervous system abnormality"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "neonate",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:149400",
+          "label": "Hyperekplexia 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "neonate",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_AweaTugBcBCzIpaTDWXohPZUb",
+                "geneContext": {
+                  "valueId": "HGNC:4326",
+                  "symbol": "GLRA1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000171.4:c.211A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.151886762T>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": "151886762",
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:149400",
+        "label": "Hyperekplexia 1"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-27T06:55:48.768207073Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:24969041",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/24969041",
+        "description": "Identification of a novel missense GLRA1 gene mutation in hyperekplexia: a case report"
+      }
+    ]
+  }
+}
