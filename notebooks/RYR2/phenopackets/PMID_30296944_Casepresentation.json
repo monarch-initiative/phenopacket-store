@@ -1,0 +1,201 @@
+{
+  "id": "PMID_30296944_Case_presentation",
+  "subject": {
+    "id": "Case presentation",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P17Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001663",
+        "label": "Ventricular fibrillation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031628",
+        "label": "Aborted sudden cardiac death"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034306",
+        "label": "Ventricular bigeminy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011712",
+        "label": "Right bundle branch block"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001279",
+        "label": "Syncope"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012819",
+        "label": "Myocarditis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001638",
+        "label": "Cardiomyopathy"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case presentation",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:604772",
+          "label": "Ventricular tachycardia, catecholaminergic polymorphic, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case presentation",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_VcOYDaTmANbZwCvVCocNpBKNR",
+                "geneContext": {
+                  "valueId": "HGNC:10484",
+                  "symbol": "RYR2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001035.3:c.12520T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.237784232T>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "237784232",
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:604772",
+        "label": "Ventricular tachycardia, catecholaminergic polymorphic, 1"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-28T07:34:10.056721925Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:30296944",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30296944",
+        "description": "Description of a novel RyR2 mutation in a juvenile patient with symptomatic catecholaminergic polymorphic ventricular tachycardia in sleep and during exercise: a case report"
+      }
+    ]
+  }
+}
