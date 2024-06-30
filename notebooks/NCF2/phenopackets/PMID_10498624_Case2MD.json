@@ -1,0 +1,223 @@
+{
+  "id": "PMID_10498624_Case_2_MD",
+  "subject": {
+    "id": "Case 2 MD",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002037",
+        "label": "Inflammation of the large intestine"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002722",
+        "label": "Recurrent abscess formation"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003203",
+        "label": "Impaired oxidative burst"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009789",
+        "label": "Perianal abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100523",
+        "label": "Liver abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025044",
+        "label": "Lung abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002754",
+        "label": "Osteomyelitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002586",
+        "label": "Peritonitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005406",
+        "label": "Recurrent bacterial skin infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case 2 MD",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:233710",
+          "label": "Chronic granulomatous disease 2, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 2 MD",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ltNRgKpmGvUraRMFCghdiKPjm",
+                "geneContext": {
+                  "valueId": "HGNC:7661",
+                  "symbol": "NCF2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000433.4:c.1171_1175del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.183563439_183563443del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "183563436",
+                  "ref": "CAGCTT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:233710",
+        "label": "Chronic granulomatous disease 2, autosomal recessive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-30T07:53:43.957813978Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:10498624",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10498624",
+        "description": "Molecular characterization of autosomal recessive chronic granulomatous disease caused by a defect of the nicotinamide adenine dinucleotide phosphate (reduced form) oxidase component p67-phox"
+      }
+    ]
+  }
+}

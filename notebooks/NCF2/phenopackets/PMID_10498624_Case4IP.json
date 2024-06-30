@@ -1,0 +1,197 @@
+{
+  "id": "PMID_10498624_Case_4_IP",
+  "subject": {
+    "id": "Case 4 IP",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003203",
+        "label": "Impaired oxidative burst"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025289",
+        "label": "Cervical lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034752",
+        "label": "Axillary lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005406",
+        "label": "Recurrent bacterial skin infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009789",
+        "label": "Perianal abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100523",
+        "label": "Liver abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025044",
+        "label": "Lung abscess"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002754",
+        "label": "Osteomyelitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case 4 IP",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:233710",
+          "label": "Chronic granulomatous disease 2, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 4 IP",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_CGgmEQVDmegGvBxQAKESVObKq",
+                "geneContext": {
+                  "valueId": "HGNC:7661",
+                  "symbol": "NCF2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000433.4:c.366+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.183577598C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "183577598",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:233710",
+        "label": "Chronic granulomatous disease 2, autosomal recessive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-06-30T07:53:43.959899902Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-06-25",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:10498624",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10498624",
+        "description": "Molecular characterization of autosomal recessive chronic granulomatous disease caused by a defect of the nicotinamide adenine dinucleotide phosphate (reduced form) oxidase component p67-phox"
+      }
+    ]
+  }
+}
