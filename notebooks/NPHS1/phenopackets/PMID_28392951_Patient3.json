@@ -1,0 +1,226 @@
+{
+  "id": "PMID_28392951_Patient_3",
+  "subject": {
+    "id": "Patient 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2M14D"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003124",
+        "label": "Hypercholesterolemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003075",
+        "label": "Hypoproteinemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003073",
+        "label": "Hypoalbuminemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000100",
+        "label": "Nephrotic syndrome"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Patient 3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:256300",
+          "label": "Nephrotic syndrome, type 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_IImAXyvnmkVVZodflkYTpXZhv",
+                "geneContext": {
+                  "valueId": "HGNC:7908",
+                  "symbol": "NPHS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004646.4:c.2374A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.35842511T>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": "35842511",
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_JoGNpgGqlVpTEPldnXwXxLOfB",
+                "geneContext": {
+                  "valueId": "HGNC:7908",
+                  "symbol": "NPHS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004646.4:c.2405G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.35842480C>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": "35842480",
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:256300",
+        "label": "Nephrotic syndrome, type 1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-02T08:34:09.424324035Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:28392951",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28392951",
+        "description": "Three Novel Mutations in the NPHS1 Gene in Vietnamese Patients with Congenital Nephrotic Syndrome"
+      }
+    ]
+  }
+}
