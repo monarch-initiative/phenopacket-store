@@ -226,16 +226,30 @@ class PPKtStore:
             gene = variant_descriptor.label
         return gene
 
+
+    @staticmethod
+    def get_filename(pathname):
+        os.path.sep
+        fields = pathname.split(os.path.sep)
+        fname = fields[-1]
+        if not fname.endswith(".json"):
+            raise ValueError(f"Malformed path {pathname}")
+        else:
+            return fname
+
+
+
     def _create_summary_tsv(
             self,
             tsv_file_name: str,
     ):
-        column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
+        column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID','filename']
         rows = []
 
         for cohort in self._cohorts:
             for entry in cohort.get_detailed_dict():
                 with open(entry['filename']) as f:
+                    filename = os.path.basename(entry['filename'])
                     ppack = Parse(f.read(), Phenopacket())
                     if not ppack.interpretations:
                         continue
@@ -264,7 +278,8 @@ class PPKtStore:
                                 column_names[3]: gene,
                                 column_names[4]: allele1,
                                 column_names[5]: allele2,
-                                column_names[6]: pmid
+                                column_names[6]: pmid,
+                                column_names[7]: filename,
                             }
                         )
         df = pd.DataFrame.from_records(rows, columns=column_names)

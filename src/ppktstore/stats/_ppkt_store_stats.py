@@ -31,27 +31,25 @@ class PPKtStoreStats:
             raise FileNotFoundError(f"Not a file: {input_zipfile}")
         if not input_zipfile.endswith(".zip"):
             raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
-        archive = zipfile.ZipFile(input_zipfile, 'r')
-        self._df = PPKtStoreStats._extract_all_phenopackets_df(archive)
-        self._cohort_to_phenopacket_d = PPKtStoreStats._extract_all_cohort_phenopackets(archive)
+        self._archive = zipfile.ZipFile(input_zipfile, 'r')
+        self._df = self._extract_all_phenopackets_df()
+        self._cohort_to_phenopacket_d = self._extract_all_cohort_phenopackets()
       
     def get_cohort_to_phenopacket_d(self):
         return self._cohort_to_phenopacket_d
 
-    @staticmethod
-    def _extract_all_phenopackets_df(
-            archive: zipfile.ZipFile,
-    ) -> pd.DataFrame:
+  
+    def _extract_all_phenopackets_df(self) -> pd.DataFrame:
         all_ppkt = None
-        for info in archive.infolist():
+        for info in self._archive.infolist():
             if info.is_dir():
                 continue
-            if info.filename == "all_phenopackets.tsv":
+            if info.filename == "all_phenopackets/all_phenopackets.tsv":
                 all_ppkt = info
                 break
         if all_ppkt is None:
-            raise FileNotFoundError("Could not find \"all_phenopackets.tsv\" in zip archive")
-        with archive.open(all_ppkt) as f:
+            raise FileNotFoundError("Could not find \"all_phenopackets.zip\" in zip archive")
+        with self._archive.open(all_ppkt) as f:
             list_of_lists = list()
             firstLine = True
             for line in f:
@@ -60,27 +58,26 @@ class PPKtStoreStats:
                     continue
                 L = line.decode("utf-8")
                 fields = L.strip().split("\t")
-                if len(fields) != 7:
+                if len(fields) != 8:
                     raise ValueError(f"Malformed line with {len(fields)} fields: {L}")
                 list_of_lists.append(fields)
-        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID']
+        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID','filename']
         return pd.DataFrame(data=list_of_lists, columns=columns)
     
-    @staticmethod
-    def _extract_all_cohort_phenopackets(archive: zipfile.ZipFile) -> typing.Dict:
+    def _extract_all_cohort_phenopackets(self) -> typing.Dict:
         cohort_to_ppkt_d = defaultdict(list)
         total = 0
-        for info in archive.infolist():
+        for info in self._archive.infolist():
             if info.is_dir():
                 continue
             if info.filename.endswith(".json"):
-                with archive.open(info.filename) as f:
+                with self._archive.open(info.filename) as f:
                     byte_version_of_file = f.read()
                     text_version_of_file = byte_version_of_file.decode("utf-8")
                     ppack = Parse(text_version_of_file, PPKt.Phenopacket())
                     fields = info.filename.split("/")
-                    if len(fields) == 2:
-                        cohort = fields[0]
+                    if len(fields) == 3 and fields[0] == "all_phenopackets":
+                        cohort = fields[1]
                         cohort_to_ppkt_d[cohort].append(ppack)
                         total += 1
                     else:
@@ -88,9 +85,9 @@ class PPKtStoreStats:
         print(f"Extracted {total} phenopackets in {len(cohort_to_ppkt_d)} cohorts.")
         return cohort_to_ppkt_d
 
-    @staticmethod
+
     def _extract_specific_cohort_phenopackets_df(
-            archive: zipfile.ZipFile,
+            self,
             cohort:str
     ) -> typing.List[PPKt.Phenopacket]:
         """Files that belong to a specific cohort, e.g., LIRICAL, will be identifiable as
@@ -98,7 +95,6 @@ class PPKtStoreStats:
 
 
         Args:
-            archive (zipfile.ZipFile): archive with all zipped files
             cohort (str): name of cohort (should be equal to one of the folders of phenopacket-store)
 
         Raises:
@@ -108,10 +104,10 @@ class PPKtStoreStats:
             pd.DataFrame: _description_
         """
         all_ppkt = None
-        for info in archive.infolist():
+        for info in self._archive.infolist():
             if info.is_dir():
                 continue
-            if info.filename == "all_phenopackets.tsv":
+            if info.filename == "all_phenopackets/all_phenopackets.tsv":
                 all_ppkt = info
                 break
         if all_ppkt is None:
@@ -120,23 +116,20 @@ class PPKtStoreStats:
         if cohort.endswith("/"):
             cohort = cohort[:-1]
         regex = f"{cohort}/.*\.json"
-        with archive.open(all_ppkt) as f:
-            for info in archive.infolist():
+        with self._archive.open(all_ppkt) as f:
+            for info in self._archive.infolist():
                 match = re.search(regex, info.filename)
                 if match:
-                    with archive.open(info.filename) as f:
+                    with self._archive.open(info.filename) as f:
                         byte_version_of_file = f.read()
                         text_version_of_file = byte_version_of_file.decode("utf-8")
                         ppack = Parse(text_version_of_file, PPKt.Phenopacket())
                         list_of_phenopackets.append(ppack)
         return list_of_phenopackets
 
-    @staticmethod
-    def _get_list_of_cohorts(
-            archive: zipfile.ZipFile,
-    ) -> pd.DataFrame:
+    def _get_list_of_cohorts(self) -> pd.DataFrame:
         all_cohort_names = list()
-        for info in archive.infolist():
+        for info in self._archive.infolist():
             if info.is_dir():
                 all_cohort_names.append(info.filename)
         return all_cohort_names
@@ -373,7 +366,7 @@ class PPKtStoreStats:
             raise FileNotFoundError(f"Not a file: {input_zipfile}")
         if not input_zipfile.endswith(".zip"):
             raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
-        ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+        ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
         disease_id_to_label_d = dict()
         disease_counter_d = defaultdict(int)
         for ppkt in ppkt_list:
@@ -390,12 +383,8 @@ class PPKtStoreStats:
         df.set_index("disease_id", inplace=True)
         return df
 
-    def show_possible_duplicates_by_variant(self, input_zipfile, cohort) -> pd.DataFrame:
-        if not os.path.isfile(input_zipfile):
-            raise FileNotFoundError(f"Not a file: {input_zipfile}")
-        if not input_zipfile.endswith(".zip"):
-            raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
-        ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+    def show_possible_duplicates_by_variant(self, cohort) -> pd.DataFrame:
+        ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
         item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
         if len(item_list) == 0:
             print(f"No candidate duplicates found for {cohort}")
@@ -407,7 +396,7 @@ class PPKtStoreStats:
             raise FileNotFoundError(f"Not a file: {input_zipfile}")
         if not input_zipfile.endswith(".zip"):
             raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
-        ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+        ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
         for ppkt in ppkt_list:
             symbol = PPKtStoreStats._get_gene(ppkt=ppkt)
             if symbol == gene_symbol:
@@ -439,7 +428,7 @@ class PPKtStoreStats:
         cohort_list = list()
         for cohort in cohorts:
             print(cohort)
-            ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+            ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
             item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
             if len(item_list) == 0:
                 continue
@@ -451,15 +440,11 @@ class PPKtStoreStats:
 
 
 
-    def find_phenopackets_with_no_variants(self, input_zipfile) -> pd.DataFrame:
-        if not os.path.isfile(input_zipfile):
-            raise FileNotFoundError(f"Not a file: {input_zipfile}")
-        if not input_zipfile.endswith(".zip"):
-            raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
+    def find_phenopackets_with_no_variants(self) -> pd.DataFrame:
         ppkt_with_no_var_list = list()
-        all_cohort_names = PPKtStoreStats._get_list_of_cohorts(zipfile.ZipFile(input_zipfile, 'r'))
+        all_cohort_names = self._get_list_of_cohorts()
         for cohort in all_cohort_names:
-            ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+            ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
             for ppkt in ppkt_list:
                 if len(ppkt.interpretations) == 0:
                     ppkt_with_no_var_list.append({"cohort": cohort, "phenopacket": ppkt.id})
@@ -467,15 +452,11 @@ class PPKtStoreStats:
             print("All phenopackets had at least one variant")
         return pd.DataFrame(ppkt_with_no_var_list)
     
-    def find_phenopackets_with_no_disease(self, input_zipfile) -> pd.DataFrame:
-        if not os.path.isfile(input_zipfile):
-            raise FileNotFoundError(f"Not a file: {input_zipfile}")
-        if not input_zipfile.endswith(".zip"):
-            raise ValueError(f"`input_zipfile` must point to a ZIP archive with suffix .zip, but was \"{input_zipfile}\"")
+    def find_phenopackets_with_no_disease(self) -> pd.DataFrame:
         ppkt_with_disease_list = list()
-        all_cohort_names = PPKtStoreStats._get_list_of_cohorts(zipfile.ZipFile(input_zipfile, 'r'))
+        all_cohort_names = self._get_list_of_cohorts()
         for cohort in all_cohort_names:
-            ppkt_list =  PPKtStoreStats._extract_specific_cohort_phenopackets_df(zipfile.ZipFile(input_zipfile, 'r'), cohort=cohort)
+            ppkt_list =  self._extract_specific_cohort_phenopackets_df(cohort=cohort)
             for ppkt in ppkt_list:
                 if len(ppkt.diseases) == 0:
                     ppkt_with_disease_list.append({"cohort": cohort, "phenopacket": ppkt.id})
