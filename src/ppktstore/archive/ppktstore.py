@@ -37,11 +37,7 @@ class PPKtStore:
         self._logger = logging.getLogger(__name__)
         self._cohorts = []
         for dirpath, dirnames, filenames in os.walk(notebook_dir):
-            # the following excluded the LIRICAL directories because they are coded twith hg37
-            # we are in the process of updating these data.
-            if dirpath.endswith("phenopackets") and not dirpath.endswith("v1phenopackets") and not dirpath.endswith(
-                    "v2phenopackets"
-            ):
+            if dirpath.endswith("phenopackets"):
                 lpath_components = dirpath.split(os.sep)
                 cohort_name = PPKtStore._get_cohort_name(lpath_components)
                 json_files = filter(lambda f: f.endswith('.json'), filenames)
@@ -243,10 +239,11 @@ class PPKtStore:
             self,
             tsv_file_name: str,
     ):
-        column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID','filename']
+        column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID', 'cohort', 'filename']
         rows = []
 
         for cohort in self._cohorts:
+            cohort_name = cohort.name
             for entry in cohort.get_detailed_dict():
                 with open(entry['filename']) as f:
                     filename = os.path.basename(entry['filename'])
@@ -269,6 +266,7 @@ class PPKtStore:
                             allele2 = ""
                         else:
                             raise ValueError(f"Length of alleles was {len(alleles)} for {entry['filename']}")
+                        
 
                         rows.append(
                             {
@@ -279,7 +277,8 @@ class PPKtStore:
                                 column_names[4]: allele1,
                                 column_names[5]: allele2,
                                 column_names[6]: pmid,
-                                column_names[7]: filename,
+                                column_names[7]: cohort_name,
+                                column_names[8]: filename,
                             }
                         )
         df = pd.DataFrame.from_records(rows, columns=column_names)
