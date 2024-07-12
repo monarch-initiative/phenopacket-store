@@ -41,6 +41,7 @@ class PPKtStoreStats:
   
     def _extract_all_phenopackets_df(self) -> pd.DataFrame:
         all_ppkt = None
+        column_names = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID', 'cohort', 'filename']
         for info in self._archive.infolist():
             if info.is_dir():
                 continue
@@ -58,11 +59,11 @@ class PPKtStoreStats:
                     continue
                 L = line.decode("utf-8")
                 fields = L.strip().split("\t")
-                if len(fields) != 8:
+                if len(fields) != len(column_names):
                     raise ValueError(f"Malformed line with {len(fields)} fields: {L}")
                 list_of_lists.append(fields)
-        columns = ['disease', 'disease_id', 'patient_id', 'gene', 'allele_1', 'allele_2', 'PMID','filename']
-        return pd.DataFrame(data=list_of_lists, columns=columns)
+        
+        return pd.DataFrame(data=list_of_lists, columns=column_names)
     
     def _extract_all_cohort_phenopackets(self) -> typing.Dict:
         cohort_to_ppkt_d = defaultdict(list)

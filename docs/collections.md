@@ -251,6 +251,7 @@ Phenopacket store is a repository of [GA4GH phenopackets](https://pubmed.ncbi.nl
 |[WFS1](notebooks/WFS1/WFS1_Wolfram_syndrome_1_individuals.ipynb){:target="_blank"}|10 Phenopackets;[Wolfram syndrome 1](https://omim.org/entry/222300){:target="_blank"}|
 |[COL11A1](notebooks/COL11A1/COL11A1_STL2_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Stickler syndrome, type II](https://omim.org/entry/604841){:target="_blank"}|
 |[SP7](notebooks/SP7/SP7_OI12_individuals.ipynb){:target="_blank"}|1 Phenopackets;[Osteogenesis imperfecta, type XII](https://omim.org/entry/613849){:target="_blank"}|
+|[DOCK11](notebooks/DOCK11/DOCK11_ADMIDX_individuals.ipynb){:target="_blank"}|12 Phenopackets;[Autoinflammatory disease, multisystem, with immune dysregulation, X-linked](https://omim.org/entry/301109){:target="_blank"}|
 |[TBX1](notebooks/TBX1/TBX1_Yagi_2003.ipynb){:target="_blank"}|5 Phenopackets;[DiGeorge syndrome](https://omim.org/entry/188400){:target="_blank"}|
 |[KCNT1](notebooks/KCNT1/KCNT1_DEE14_individuals.ipynb){:target="_blank"}|8 Phenopackets;[Developmental and epileptic encephalopathy 14](https://omim.org/entry/614959){:target="_blank"}|
 |[SKIC3](notebooks/SKIC3/SKIC3_THES1_individuals.ipynb){:target="_blank"}|2 Phenopackets;[Trichohepatoenteric syndrome 1](https://omim.org/entry/222470){:target="_blank"}|
