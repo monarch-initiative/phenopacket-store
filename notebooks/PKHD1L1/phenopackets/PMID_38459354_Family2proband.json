@@ -1,0 +1,150 @@
+{
+  "id": "PMID_38459354_Family_2_proband",
+  "subject": {
+    "id": "Family 2 proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001751",
+        "label": "Abnormal vestibular function"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Family 2 proband",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620794",
+          "label": "Deafness, autosomal recessive 124"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 2 proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_LjuYYTnmaiKeqVlAbhTbIMGLB",
+                "geneContext": {
+                  "valueId": "HGNC:20313",
+                  "symbol": "PKHD1L1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_177531.6:c.10141C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.109491899C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": "109491899",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620794",
+        "label": "Deafness, autosomal recessive 124"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-07-22T04:53:20.986887931Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:38459354",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/38459354",
+        "description": "PKHD1L1, a gene involved in the stereocilia coat, causes autosomal recessive nonsyndromic hearing loss"
+      }
+    ]
+  }
+}
