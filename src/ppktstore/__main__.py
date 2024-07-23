@@ -97,7 +97,7 @@ def qc_phenopackets(
         logger.info('Found no issues')
         return 0
     else:
-        logger.info('Phenopackets failed Q/C')
+        logger.info('Phenopacket store Q/C failed')
         for checker_name, errors in outcome.items():
             logger.info('\'%s\' found %d error(s):', checker_name, len(errors))
             for error in errors:
