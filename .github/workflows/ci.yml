@@ -19,7 +19,7 @@ jobs:
         - name: Initialize Python
           uses: actions/setup-python@v4.3.1
           with:
-            python-version: '3.11'  # TODO: bump to 3.12 once phenopackets `2.0.2-post3` is deployed
+            python-version: '3.12'
         - name: Install Phenopacket store package
           run: |
             python3 -m pip install .[test]
