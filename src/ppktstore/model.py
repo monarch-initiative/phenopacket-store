@@ -52,8 +52,14 @@ class PhenopacketStore:
     def cohort_for_name(
         self,
         name: str,
-    ) -> typing.Optional[typing.Sequence[Phenopacket]]:
-        try:
-            return self._cohorts[name]
-        except KeyError:
-            return None
+    ) -> typing.Sequence[Phenopacket]:
+        return self._cohorts[name]
+
+    def cohort_count(self) -> int:
+        return len(self.cohort_names())
+    
+    def phenopacket_count(self) -> int:
+        pp_count = 0
+        for cohort in self._cohorts.values():
+            pp_count += len(cohort)
+        return pp_count

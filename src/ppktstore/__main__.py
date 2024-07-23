@@ -29,6 +29,12 @@ def main(argv) -> int:
         '--output', required=False, default='phenopackets.zip',
         help='where to write the release archive')
 
+    # #################### ------------- `check` --------------- ####################
+    parser_check = subparsers.add_parser('qc', help='Q/C phenopackets')
+    parser_check.add_argument(
+        '--notebook-dir', default='notebooks',
+        help='path to cohorts directory')
+
     if len(argv) == 0:
         parser.print_help()
         return 1
@@ -36,8 +42,18 @@ def main(argv) -> int:
     args = parser.parse_args(argv)
     setup_logging()
 
+    logger = logging.getLogger(__name__)
     if args.command == 'package':
-        return package_phenopackets(notebook_dir=args.notebook_dir, output=args.output)
+        return package_phenopackets(
+            notebook_dir=args.notebook_dir,
+            output=args.output,
+            logger=logger,
+        )
+    elif args.command == 'qc':
+        return qc_phenopackets(
+            notebook_dir=args.notebook_dir,
+            logger=logger,
+        )
     else:
         parser_package.print_help()
         return 1
@@ -46,9 +62,8 @@ def main(argv) -> int:
 def package_phenopackets(
         notebook_dir: str,
         output: str,
+        logger: logging.Logger,
 ) -> int:
-    logger = logging.getLogger(__name__)
-
     logger.info('Searching for phenopackets at %s', notebook_dir)
     store = ppktstore.archive.PPKtStore(notebook_dir=notebook_dir)
     # TODO: print some statistics?
@@ -64,6 +79,30 @@ def package_phenopackets(
     logger.info('Done!')
     return 0
 
+def qc_phenopackets(
+    notebook_dir: str,
+    logger: logging.Logger,
+) -> int:
+    logger.info('Reading phenopackets at `%s`', notebook_dir)
+    phenopacket_store = ppktstore.model.PhenopacketStore.from_notebook_dir(notebook_dir)
+    logger.info(
+        'Read %d cohorts with %d phenopackets', 
+        phenopacket_store.cohort_count(), 
+        phenopacket_store.phenopacket_count(),
+    )
+    logger.info('Checking phenopackets')
+    checker = ppktstore.qc.configure_qc_checker()
+    outcome = checker.check(phenopacket_store=phenopacket_store)
+    if len(outcome) == 0:
+        logger.info('Found no issues')
+        return 0
+    else:
+        logger.info('Phenopackets failed Q/C')
+        for checker_name, errors in outcome.items():
+            logger.info('\'%s\' found %d error(s):', checker_name, len(errors))
+            for error in errors:
+                logger.info(' - %s', error)
+        return 1
 
 def setup_logging():
     level = logging.INFO
