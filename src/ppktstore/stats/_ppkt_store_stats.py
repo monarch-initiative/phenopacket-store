@@ -6,7 +6,8 @@ from collections import defaultdict
 
 import numpy as np
 import pandas as pd
-import phenopackets as PPKt
+
+from phenopackets.schema.v2.phenopackets_pb2 import Phenopacket
 
 from ppktstore.model import PhenopacketStore
 
@@ -96,8 +97,9 @@ class PPKtStoreStats:
 
     def get_counts_per_disease(self) -> typing.Dict[str,int]:
         disease_to_count_d = defaultdict(int)
-        for ppkt_list in self._cohort_to_phenopacket_d.values():
-            for ppkt in ppkt_list:
+        for cohort_info in self._store.cohorts():
+            for pp_info in cohort_info.phenopackets:
+                ppkt = pp_info.phenopacket
                 if len(ppkt.diseases) == 0:
                     raise ValueError(f"Empty disease list")
                 if len(ppkt.diseases) != 1:
@@ -135,7 +137,7 @@ class PPKtStoreStats:
         """
         invalid_list = list()
         OMIM_REGEX = r"^OMIM:\d{6}$"
-        MONDO_REGEX = r"^MONOD:\d+$"
+        MONDO_REGEX = r"^MONDO:\d+$"
         for _, row in self._df.iterrows():
             disease_id = row["disease_id"]
             disease_label = row["disease"]
@@ -154,7 +156,7 @@ class PPKtStoreStats:
 
 
     @staticmethod
-    def _get_disease_name(ppkt:PPKt.Phenopacket) -> typing.Tuple[str,str]:
+    def _get_disease_name(ppkt: Phenopacket) -> typing.Tuple[str,str]:
         if len(ppkt.diseases) == 1:
             disease = ppkt.diseases[0]
             label = disease.term.label
@@ -165,7 +167,7 @@ class PPKtStoreStats:
 
 
     @staticmethod
-    def _get_gene(ppkt:PPKt.Phenopacket) -> str:
+    def _get_gene(ppkt: Phenopacket) -> str:
         for interpretation in ppkt.interpretations:
             if interpretation.HasField("diagnosis"):
                 dx = interpretation.diagnosis
@@ -178,7 +180,7 @@ class PPKtStoreStats:
         return "na"
 
     @staticmethod
-    def _get_variant_list(ppkt:PPKt.Phenopacket) -> typing.List[str]:
+    def _get_variant_list(ppkt: Phenopacket) -> typing.List[str]:
         var_list = list()
         for interpretation in ppkt.interpretations:
             if interpretation.HasField("diagnosis"):
@@ -214,8 +216,9 @@ class PPKtStoreStats:
 
     def get_disease_to_phenopacket_count_d(self) -> typing.Dict[str, int]:
         disease_to_ppkt_count_d = defaultdict(int)
-        for ppkt_list in self._cohort_to_phenopacket_d.values():
-            for ppkt in ppkt_list:
+        for cohort_info in self._store.cohorts():
+            for pp_info in cohort_info.phenopackets:
+                ppkt = pp_info.phenopacket
                 if len(ppkt.diseases) != 1:
                     print(f"Warning: Got {len(ppkt.diseases)} for {ppkt.id}. Skipping")
                     continue
@@ -224,7 +227,7 @@ class PPKtStoreStats:
         print(f"Extracted a total of {len(disease_to_ppkt_count_d)} diseases")
         return disease_to_ppkt_count_d
     
-    def _get_gene_symbol(self, ppkt) -> str:
+    def _get_gene_symbol(self, ppkt: Phenopacket) -> str:
         if len(ppkt.interpretations) == 0:
             print(f"Warning: Got no interpretations for {ppkt.id}. Skipping")
             return None
@@ -279,7 +282,7 @@ class PPKtStoreStats:
     def _extract_specific_cohort_phenopackets_df(
         self,
         cohort_name: str
-    ) -> typing.Sequence[PPKt.Phenopacket]:
+    ) -> typing.Sequence[Phenopacket]:
         """
         Get phenopackets that belong to a specific cohort.
 
@@ -289,7 +292,10 @@ class PPKtStoreStats:
         cohort_info = self._store.cohort_for_name(cohort_name)
         return [pp_info.phenopacket for pp_info in cohort_info.phenopackets]
 
-    def show_possible_duplicates_by_variant(self, cohort) -> pd.DataFrame:
+    def show_possible_duplicates_by_variant(
+        self, 
+        cohort: str,
+    ) -> pd.DataFrame:
         ppkt_list = self._extract_specific_cohort_phenopackets_df(cohort_name=cohort)
         item_list = self._get_possible_duplicates_by_variant(ppkt_list=ppkt_list)
         if len(item_list) == 0:
@@ -310,7 +316,10 @@ class PPKtStoreStats:
         return pd.DataFrame(ppkt_with_gene_lst)
 
 
-    def _get_possible_duplicates_by_variant(self, ppkt_list) -> typing.List[typing.Dict[str,str]]:
+    def _get_possible_duplicates_by_variant(
+        self, 
+        ppkt_list: typing.Sequence[Phenopacket],
+    ) -> typing.List[typing.Dict[str,str]]:
         """
         This function identifies cohorts in which some variant is present more than once. Usually, this just means
         that the same variant was found in different individuals. We have used this function to identify cohorts
@@ -318,8 +327,7 @@ class PPKtStoreStats:
         """
         variant_to_ppkt_id_d = defaultdict(list)
         for ppkt in ppkt_list:
-            varlist = PPKtStoreStats._get_variant_list(ppkt=ppkt)
-            for v in varlist:
+            for v in PPKtStoreStats._get_variant_list(ppkt=ppkt):
                 variant_to_ppkt_id_d[v].append(ppkt.id)
         item_list = list()
         for variant, patient_id_list in variant_to_ppkt_id_d.items():
