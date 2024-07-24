@@ -37,7 +37,7 @@ class QcResults:
 
     def iter_results(
         self,
-    ) -> typing.Iterator[typing.Tuple[str, typing.Sequence[str]]]:
+    ) -> typing.Iterable[typing.Tuple[str, typing.Sequence[str]]]:
         return self._results.items()
 
     def is_ok(self) -> bool:

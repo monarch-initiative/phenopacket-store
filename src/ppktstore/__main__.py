@@ -64,9 +64,8 @@ def package_phenopackets(
         output: str,
         logger: logging.Logger,
 ) -> int:
-    logger.info('Searching for phenopackets at %s', notebook_dir)
-    store = ppktstore.archive.PPKtStore(notebook_dir=notebook_dir)
-    # TODO: print some statistics?
+    phenopacket_store = read_phenopacket_store(notebook_dir, logger)
+    archiver = ppktstore.archive.PhenopacketStoreArchiver(phenopacket_store=phenopacket_store)
 
     logger.info('Storing the phenopacket archive at %s', output)
     # Strip the `.zip` suffix if present
@@ -74,22 +73,17 @@ def package_phenopackets(
     suffix = '.zip'
     if outfilename.endswith(suffix):
         outfilename = outfilename[:-len(suffix)]
-    store.get_store_zip(outfilename=outfilename)
+    archiver.get_store_zip(outfilename=outfilename)
 
     logger.info('Done!')
     return 0
+
 
 def qc_phenopackets(
     notebook_dir: str,
     logger: logging.Logger,
 ) -> int:
-    logger.info('Reading phenopackets at `%s`', notebook_dir)
-    phenopacket_store = ppktstore.model.PhenopacketStore.from_notebook_dir(notebook_dir)
-    logger.info(
-        'Read %d cohorts with %d phenopackets', 
-        phenopacket_store.cohort_count(), 
-        phenopacket_store.phenopacket_count(),
-    )
+    phenopacket_store = read_phenopacket_store(notebook_dir, logger)
     logger.info('Checking phenopackets')
     checker = ppktstore.qc.configure_qc_checker()
     results = checker.check(phenopacket_store=phenopacket_store)
@@ -104,6 +98,21 @@ def qc_phenopackets(
             for error in issues:
                 logger.info(' - %s', error)
         return 1
+
+
+def read_phenopacket_store(
+    notebook_dir: str, 
+    logger: logging.Logger,
+) -> ppktstore.model.PhenopacketStore:
+    logger.info('Reading phenopackets at `%s`', notebook_dir)
+    phenopacket_store = ppktstore.model.PhenopacketStore.from_notebook_dir(notebook_dir)
+    logger.info(
+        'Read %d cohorts with %d phenopackets', 
+        phenopacket_store.cohort_count(), 
+        phenopacket_store.phenopacket_count(),
+    )
+    return phenopacket_store
+
 
 def setup_logging():
     level = logging.INFO

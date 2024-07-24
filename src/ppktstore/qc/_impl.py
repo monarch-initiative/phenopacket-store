@@ -19,13 +19,10 @@ class UniqueIdsCheck(QcCheck):
         id_counter = Counter()
         pp_id2cohort = defaultdict(set)
 
-        for cohort_name in phenopacket_store.cohort_names():
-            if cohort_name == 'ANKH':
-                x = 123
-            cohort = phenopacket_store.cohort_for_name(cohort_name)
-            for phenopacket in cohort:
+        for cohort in phenopacket_store.cohorts():
+            for phenopacket in cohort.phenopackets:
                 pp_id = phenopacket.id
-                pp_id2cohort[pp_id].add(cohort_name)
+                pp_id2cohort[pp_id].add(cohort.name)
                 id_counter[pp_id] += 1
 
         repeated = {pp_id: count for pp_id, count in id_counter.items() if count > 1}

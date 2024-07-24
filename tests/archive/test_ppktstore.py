@@ -6,28 +6,29 @@ from pathlib import Path
 
 import pytest
 
-from ppktstore.archive import PPKtStore
+from ppktstore.archive import PhenopacketStoreArchiver
+from ppktstore.model import PhenopacketStore
 
 
 class TestPPKtStore:
 
-    @pytest.fixture
-    def fpath_notebook_dir(
-            self,
-            fpath_test_data: str,
-    ) -> str:
-        return os.path.join(fpath_test_data, 'notebooks')
+    @pytest.fixture(scope='class')
+    def phenopacket_store(
+        self,
+        fpath_nb_dir: str,
+    ) -> PhenopacketStore:
+        return PhenopacketStore.from_notebook_dir(fpath_nb_dir)
 
     @pytest.fixture
     def ppkt_store(
             self,
-            fpath_notebook_dir: str,
-    ) -> PPKtStore:
-        return PPKtStore(fpath_notebook_dir)
+            phenopacket_store: PhenopacketStore,
+    ) -> PhenopacketStoreArchiver:
+        return PhenopacketStoreArchiver(phenopacket_store)
 
     def test_get_store_zip(
             self,
-            ppkt_store: PPKtStore,
+            ppkt_store: PhenopacketStoreArchiver,
             tmp_path: Path,
     ):
         outfilename = str(tmp_path)
@@ -46,7 +47,7 @@ class TestPPKtStore:
 
     def test_get_store_gzip(
             self,
-            ppkt_store: PPKtStore,
+            ppkt_store: PhenopacketStoreArchiver,
             tmp_path: Path,
     ):
         outfilename = str(tmp_path)
@@ -75,7 +76,7 @@ class TestPPKtStore:
     )
     def test_suffix_in_outfilename_explodes(
             self,
-            ppkt_store: PPKtStore,
+            ppkt_store: PhenopacketStoreArchiver,
             suffix: str,
     ):
         outname = f'whatever{suffix}'
