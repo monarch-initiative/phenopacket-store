@@ -4,7 +4,7 @@ from collections import Counter, defaultdict
 
 from ppktstore.model import PhenopacketStore
 
-from ._api import QcCheck, QcChecker
+from ._api import QcCheck, QcChecker, QcResults
 
 
 class UniqueIdsCheck(QcCheck):
@@ -48,11 +48,11 @@ class DefaultQcChecker(QcChecker):
     def check(
         self,
         phenopacket_store: PhenopacketStore,
-    ) -> typing.Mapping[str, typing.Sequence[str]]:
+    ) -> QcResults:
         results = {}
 
         for check in self._checks:
             check_id = check.make_id()
             results[check_id] = check.apply(phenopacket_store)
 
-        return results
+        return QcResults(results=results)

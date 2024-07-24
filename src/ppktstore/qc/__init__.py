@@ -1,7 +1,7 @@
-from ._api import QcChecker
+from ._api import QcChecker, QcResults
 from ._config import configure_qc_checker
 
 __all__ = [
-    'QcChecker', 
+    'QcChecker', 'QcResults',
     'configure_qc_checker',
 ]

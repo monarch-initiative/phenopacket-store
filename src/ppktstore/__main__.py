@@ -92,15 +92,16 @@ def qc_phenopackets(
     )
     logger.info('Checking phenopackets')
     checker = ppktstore.qc.configure_qc_checker()
-    outcome = checker.check(phenopacket_store=phenopacket_store)
-    if len(outcome) == 0:
+    results = checker.check(phenopacket_store=phenopacket_store)
+    if results.is_ok():
         logger.info('Found no issues')
         return 0
     else:
         logger.info('Phenopacket store Q/C failed')
-        for checker_name, errors in outcome.items():
-            logger.info('\'%s\' found %d error(s):', checker_name, len(errors))
-            for error in errors:
+        
+        for checker_name, issues in results.iter_results():
+            logger.info('\'%s\' found %d error(s):', checker_name, len(issues))
+            for error in issues:
                 logger.info(' - %s', error)
         return 1
 
