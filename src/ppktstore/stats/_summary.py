@@ -1,3 +1,4 @@
+import os
 import typing
 
 import pandas as pd
@@ -27,9 +28,10 @@ def create_summary_df(
                     dx = interpretation.diagnosis
                     pmid = _get_pmid(meta_data=pp.meta_data)
                     gene, alleles = _get_gene_and_alleles(diagnosis=dx)
+                    pp_path = os.path.join(cohort.path, pp_info.path)
                     if gene is None:
                         raise ValueError(
-                            f"Could not get gene string for {pp_info.path}"
+                            f"Could not get gene string for {pp_path}"
                         )
                     if len(alleles) == 2:
                         allele1, allele2 = alleles
@@ -37,7 +39,7 @@ def create_summary_df(
                         allele1, allele2 = alleles[0], ""
                     else:
                         raise ValueError(
-                            f"Length of alleles {len(alleles)} was not `1` or `2` for {pp_info.path}"
+                            f"Length of alleles {len(alleles)} was not `1` or `2` for {pp_path}"
                         )
 
                     data["disease"].append(dx.disease.label)
@@ -48,7 +50,7 @@ def create_summary_df(
                     data["allele_2"].append(allele2)
                     data["PMID"].append(pmid)
                     data["cohort"].append(cohort.name)
-                    data["filename"].append(pp_info.path)
+                    data["filename"].append(pp_path)
 
     return pd.DataFrame(data)
 

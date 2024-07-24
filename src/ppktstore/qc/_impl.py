@@ -20,8 +20,8 @@ class UniqueIdsCheck(QcCheck):
         pp_id2cohort = defaultdict(set)
 
         for cohort in phenopacket_store.cohorts():
-            for phenopacket in cohort.phenopackets:
-                pp_id = phenopacket.id
+            for pp_info in cohort.phenopackets:
+                pp_id = pp_info.phenopacket.id
                 pp_id2cohort[pp_id].add(cohort.name)
                 id_counter[pp_id] += 1
 

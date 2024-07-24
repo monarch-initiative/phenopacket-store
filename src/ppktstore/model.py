@@ -113,7 +113,7 @@ class PhenopacketStore:
                     
                     ci = CohortInfo(
                         name=cohort,
-                        path=rel_cohort_path,
+                        path=str(rel_cohort_path),
                         phenopackets=tuple(pp_infos),
                     )
                     cohorts.append(ci)
