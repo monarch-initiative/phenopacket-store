@@ -1,0 +1,31 @@
+name: CI and Q/C
+
+on:
+    push:
+      branches: [ main ]
+    pull_request:
+      branches: [ main ]
+
+env:
+  # Path to directory that contains the cohorts, one cohort per folder.
+  NOTEBOOK_DIR: notebooks
+
+jobs:
+    run-ci-qc:
+      runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v4
+        - name: Initialize Python
+          uses: actions/setup-python@v4.3.1
+          with:
+            python-version: '3.12'
+        - name: Install Phenopacket store package
+          run: |
+            python3 -m pip install .[test]
+        - name: Run pytest tests
+          run: |
+            pytest
+        - name: Run Q/C
+          run: |
+            python3 -m ppktstore qc --notebook-dir "${NOTEBOOK_DIR}"
