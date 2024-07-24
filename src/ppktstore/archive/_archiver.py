@@ -133,9 +133,12 @@ class PhenopacketStoreArchiver:
             if not flat:
                 temp_cohort_dir = os.path.join(tmpdirname, cohort_info.name)
                 os.makedirs(temp_cohort_dir)
+            
             # original files
-            for pp_info in cohort_info.phenopackets:
-                shutil.copy(pp_info.path, temp_cohort_dir)
+            cohort_path = self._phenopacket_store.path.joinpath(cohort_info.path)
+            for pp_info in cohort_info.phenopackets:    
+                pp_path = cohort_path.joinpath(pp_info.path)
+                shutil.copy(pp_path, temp_cohort_dir)
                 n_copied_files += 1
         return n_copied_files
 
