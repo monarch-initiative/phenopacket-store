@@ -55,6 +55,7 @@ class PhenopacketStoreArchiver:
         store: PhenopacketStore,
         format: ArchiveFormat,
         filename: str,
+        top_level_folder: str = 'phenopacket_store',
         flat: bool = False,
     ):
         """
@@ -63,19 +64,22 @@ class PhenopacketStoreArchiver:
         :param store: phenopacket store with the phenopacket cohorts.
         :param filename: path for storing the archive file with *NO* file suffix.
           The archive suffix will be added to the file name (e.g. `.tgz` or `.zip`).
+        :param top_level_folder: the name of the top-level folder where all cohorts/phenopackets will be placed into.
         :param flat: `True` if the phenopackets from all cohorts should be copied into one directory,
           or `False` if the phenopackets should be copied into subdirectories corresponding to cohorts
         """
         if format == ArchiveFormat.TGZ:
             self._make_gzip(
                 store=store, 
-                outfilename=filename,
+                filename=filename,
+                top_level_folder=top_level_folder,
                 flat=flat,
             )
         elif format == ArchiveFormat.ZIP:
             self._make_zip(
                 store=store, 
-                outfilename=filename,
+                filename=filename,
+                top_level_folder=top_level_folder,
                 flat=flat,
             )
         else:
@@ -85,50 +89,51 @@ class PhenopacketStoreArchiver:
     def _make_gzip(
         self,
         store: PhenopacketStore,
-        outfilename: str,
+        filename: str,
+        top_level_folder: str,
         flat: bool,
     ):
         """
         Pack all phenopackets into a TAR GZ archive and store the archive at `outfilename`.
 
         :param store: phenopacket store with the phenopacket cohorts.
-        :param outfilename: path for storing the archive file with *NO* file suffix.
+        :param filename: path for storing the archive file with *NO* file suffix.
           The `.tgz` suffix will be added to the archive name by this function
+        :param top_level_folder: the name of the top-level folder.
         :param flat: `True` if the phenopackets from all cohorts should be copied into one directory,
           or `False` if the phenopackets should be copied into subdirectories corresponding to cohorts
         """
-        self._check_no_suffix_in_filename(outfilename)
-
-        basename = os.path.basename(outfilename)
+        self._check_no_suffix_in_filename(filename)
 
         with tempfile.TemporaryDirectory() as tmpdirname:
-            self._pack_content_into_temp_directory(store, tmpdirname, flat, basename)
+            self._pack_content_into_temp_directory(store, tmpdirname, flat, top_level_folder)
 
-            with tarfile.open(f'{outfilename}.tgz', "w:gz") as tar:
+            with tarfile.open(f'{filename}.tgz', "w:gz") as tar:
                 tar.add(tmpdirname, arcname='')
 
     def _make_zip(
         self,
         store: PhenopacketStore,
-        outfilename: str,
+        filename: str,
+        top_level_folder: str,
         flat: bool = False,
     ):
         """
         Pack all phenopackets into a ZIP archive and store the archive at `outfilename`.
 
         :param store: phenopacket store with the phenopacket cohorts.
-        :param outfilename: path for storing the ZIP file with NO file suffix.
+        :param filename: path for storing the ZIP file with NO file suffix.
           The `.zip` suffix will be added to the archive name by this function
+        :param top_level_folder: the name of the top-level folder.
         :param flat: `True` if the phenopackets from all cohorts should be copied into one directory, 
           or `False` if the phenopackets should be copied into subdirectories corresponding to cohorts
         """
-        self._check_no_suffix_in_filename(outfilename)
+        self._check_no_suffix_in_filename(filename)
 
-        basename = os.path.basename(outfilename)
         with tempfile.TemporaryDirectory() as tmpdirname:
-            self._pack_content_into_temp_directory(store, tmpdirname, flat, basename)
+            self._pack_content_into_temp_directory(store, tmpdirname, flat, top_level_folder)
 
-            shutil.make_archive(outfilename, 'zip', tmpdirname)
+            shutil.make_archive(filename, 'zip', tmpdirname)
 
     def _check_no_suffix_in_filename(
             self,
@@ -144,17 +149,17 @@ class PhenopacketStoreArchiver:
         store: PhenopacketStore,
         tmpdirname: str,
         flat: bool,
-        basename: str
+        top_level_folder: str
     ):
         # Insert a top-level directory
-        top_level = os.path.join(tmpdirname, basename)
+        top_level = os.path.join(tmpdirname, top_level_folder)
         os.makedirs(top_level, exist_ok=True)
 
         # Create the summary TSV
-        tsv_file_name = os.path.join(top_level, f'{basename}.tsv')
+        summary_filename = os.path.join(top_level, 'phenopacket_store.summary.tsv')
         summary_df = summarize_diseases_and_genotype(store)
         summary_df.to_csv(
-            tsv_file_name,
+            summary_filename,
             sep='\t', index=False,
         )
 

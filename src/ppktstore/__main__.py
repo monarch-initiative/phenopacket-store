@@ -33,6 +33,10 @@ def main(argv) -> int:
         type=str, default=('zip',),
         choices=('zip', 'tgz'))
     parser_package.add_argument(
+        '--top-level-dir', type=str,
+        default=ppktstore.__version__,
+        help='name of the top-level folder where all cohorts will be placed')
+    parser_package.add_argument(
         '--output', required=False, default='all_phenopackets',
         help='where to write the release archive')
 
@@ -69,7 +73,8 @@ def main(argv) -> int:
         return package_phenopackets(
             notebook_dir=args.notebook_dir,
             formats=args.format,
-            output=args.output,
+            filename=args.output,
+            top_level_folder=args.top_level_dir,
             logger=logger,
         )
     elif args.command == 'qc':
@@ -96,10 +101,12 @@ def main(argv) -> int:
 def package_phenopackets(
         notebook_dir: str,
         formats: typing.Iterable[str],
-        output: str,
+        filename: str,
+        top_level_folder: str,
         logger: logging.Logger,
 ) -> int:
-    logger.info('Using archive base name `%s`', output)
+    logger.info('Using archive base name `%s`', filename)
+    logger.info('Putting cohorts to top-level directory `%s`', top_level_folder)
     logger.info('Using %s archive format(s) ', ', '.join(formats))
     
     archiver = ppktstore.archive.PhenopacketStoreArchiver()
@@ -111,7 +118,8 @@ def package_phenopackets(
         archiver.prepare_archive(
             store=store,
             format=format,
-            filename=output,
+            filename=filename,
+            top_level_folder=top_level_folder,
             flat=False,
         )
 

@@ -25,11 +25,14 @@ class TestPPKtStore:
             tmp_path: Path,
     ):
         filename = str(tmp_path)
+        basename = os.path.basename(tmp_path)
+        
         archiver = PhenopacketStoreArchiver()
         archiver.prepare_archive(
             store=phenopacket_store,
             format=ArchiveFormat.ZIP,
             filename=filename,
+            top_level_folder=basename,
         )
 
         expected_archive_filename = f'{filename}.zip'
@@ -48,18 +51,19 @@ class TestPPKtStore:
             tmp_path: Path,
     ):
         filename = str(tmp_path)
+        basename = os.path.basename(tmp_path)
 
         archiver = PhenopacketStoreArchiver()
         archiver.prepare_archive(
             store=phenopacket_store,
             format=ArchiveFormat.TGZ,
             filename=filename,
+            top_level_folder=basename,
         )
 
         expected_archive_filename = f'{filename}.tgz'
         assert os.path.isfile(expected_archive_filename)
 
-        basename = os.path.basename(tmp_path)
         with tarfile.open(expected_archive_filename) as fh:
             names = fh.getnames()
             filenames = tuple(name for name in names if name != '')
@@ -98,7 +102,7 @@ class TestPPKtStore:
             filenames: typing.Iterable[str],
     ):
         assert any(
-            file == f'{basename}/{basename}.tsv' for file in filenames
+            file == f'{basename}/phenopacket_store.summary.tsv' for file in filenames
         ), 'The archive should include the summary TSV file'
 
         json_files = tuple(file for file in filenames if file.endswith('.json'))
