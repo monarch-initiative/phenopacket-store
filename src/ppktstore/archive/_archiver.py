@@ -11,7 +11,7 @@ from collections import defaultdict
 import pandas as pd
 
 from ppktstore.model import PhenopacketStore
-from ppktstore.stats import create_summary_df
+from ppktstore.stats import summarize_diseases_and_genotype
 
 from .cohort import Cohort
 
@@ -112,7 +112,7 @@ class PhenopacketStoreArchiver:
 
         # Create the summary TSV
         tsv_file_name = os.path.join(top_level, f'{basename}.tsv')
-        summary_df = create_summary_df(self._phenopacket_store)
+        summary_df = summarize_diseases_and_genotype(self._phenopacket_store)
         summary_df.to_csv(
             tsv_file_name,
             sep='\t', index=False,

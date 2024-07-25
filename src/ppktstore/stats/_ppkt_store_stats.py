@@ -11,7 +11,7 @@ from phenopackets.schema.v2.phenopackets_pb2 import Phenopacket
 
 from ppktstore.model import PhenopacketStore
 
-from ._summary import create_summary_df
+from ._summary import summarize_diseases_and_genotype
 
 
 class PPKtStoreStats:
@@ -24,7 +24,7 @@ class PPKtStoreStats:
         phenopacket_store: PhenopacketStore,
     ):
         self._store = phenopacket_store
-        self._df = create_summary_df(self._store)
+        self._df = summarize_diseases_and_genotype(self._store)
 
     def get_summary_df(self) -> pd.DataFrame:
         return self._df

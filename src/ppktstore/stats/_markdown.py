@@ -46,11 +46,16 @@ def generate_phenopacket_store_report(
         
         
         # Show details on diseases in a cohort except for very large cohorts (up to 20 distinct diseases)
-        comments_text = "1 Phenopacket;" if cohort_count == 1 else f"{cohort_count} Phenopackets;"
+        phenopacket_count_text = "1 Phenopacket" if cohort_count == 1 else f"{cohort_count} Phenopackets"
         if len(dx_data) < 21:
+            disease_texts = []
             for dx_id, dx_label in dx_data.items():
                 dx_link = _prepare_dx_link(dx_id)
-                comments_text += "[" + dx_label + "](" + dx_link + '){:target="_blank"}'
+                disease_texts.append(
+                    f'[{dx_label}]({dx_link}){{:target=_blank}}'
+                )
+            diseases_text = ', '.join(disease_texts)
+            comments_text = f'{phenopacket_count_text}: {diseases_text}'
         table_data.append(comments_text)
 
         row_count += 1

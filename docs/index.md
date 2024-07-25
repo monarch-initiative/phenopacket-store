@@ -1,27 +1,26 @@
 # phenopacket store
 
 
-This repository contains a collection of notebooks that generate
+This repository contains a collection of Jupyter notebooks that generate
 [GA4GH phenopackets](https://pubmed.ncbi.nlm.nih.gov/35705716){:target="_blank"}.
-for analysis projects. The phenopackets represent case reports about
-individuals with Mendelian diseases.
+for analysis projects. 
+The phenopackets represent case reports about individuals with Mendelian diseases.
 
-The notebooks are contained in the [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} folder organized according to gene.
+The notebooks are contained in the 
+[notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} 
+folder organized according to an affected gene.
 
-The corresponding phenopackets are stored in the [phenpackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/phenopackets){:target="_blank"} subfolder, also organized according to
-gene.
+All phenopackets are released in TAR GZ and ZIP archives, which are
+available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+See the [ReleasePhenopackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/ReleasePhenopackets.ipynb) 
+notebook for information how to generate the release archives.
 
 See [Collections](collections.md) for a short documentation page for each collection included in this repository.
+The summary statistics for the entire phenopacket store as well as with Q/C checks can be seen in 
+[PhenopacketStoreStats](https://github.com/monarch-initiative/phenopacket-store/tree/main/PhenopacketStoreStats.ipynb){:target="_blank"} 
+notebook.
 
 
-
-
-
-
-
-
-
-
-### Feedback
+## Feedback
 
 The best place to leave feedback, ask questions, and report bugs is the GitHub [Issue Tracker](https://github.com/monarch-initiative/phenopacket-store/issues){:target="_blank"}.
