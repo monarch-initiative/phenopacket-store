@@ -10,10 +10,6 @@ env:
   # Path to directory that contains the cohorts, one cohort per folder.
   NOTEBOOK_DIR: notebooks
 
-  # Run n jobs at the same time
-  N_JOBS: 2
-  KERNEL_NAME: pp_venv
-
 jobs:
   generate-phenopackets:
     runs-on: ubuntu-22.04
@@ -26,31 +22,15 @@ jobs:
 
       - name: Install the phenopacket-store package
         run: |
-          python3 -m pip install .[notebooks]
-
-#      Uncomment the code below if we wish to generate the phenopackets as well
-#      - name: Install shell dependencies
-#        run: |
-#          apt install parallel
-#
-#      - name: Setup Jupyter kernel
-#        run: |
-#          python3 -m pip install ipykernel notebook
-#          python3 -m ipykernel install --user --name ${KERNEL_NAME}
-#
-#      - name: Run all notebooks
-#        run: |
-#          NOTEBOOKS=$(find "${NOTEBOOK_DIR}" -name "*.ipynb")
-#          N_JOBS=$(grep -c ^processor /proc/cpuinfo)
-#          parallel --jobs ${N_JOBS} --eta jupyter execute --kernel_name=${KERNEL_NAME} {} ::: "${NOTEBOOKS}"
+          python3 -m pip install .
 
       - name: Package the phenopackets
         run: |
-          python3 -m ppktstore package --notebook-dir "${NOTEBOOK_DIR}" --output phenopackets
+          python3 -m ppktstore package --notebook-dir "${NOTEBOOK_DIR}" --format zip tgz --output all_phenopackets
 
-      - name: Upload the phenopacket archive
+      - name: Upload the phenopacket archives
         uses: actions/upload-artifact@v4
         with:
           name: phenopacket-store
-          path: phenopackets.zip
+          path: all_phenopackets.(zip|tgz)
           retention-days: 7
