@@ -22,6 +22,8 @@ notebook.
 All case report collections are periodically released in TAR GZ and ZIP archives, 
 which are available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
 
+### Latest release
+
 The *latest* release is also available for download programmatically:
 
 **ZIP**
@@ -46,6 +48,21 @@ or with `curl`:
 ```shell
 curl -Lo all_phenopackets.tgz https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
 ```
+
+### Versioned release
+
+A specific Phenopacket store version can also be accessed programmatically. Just replace the `{phenopacket-store.version}` placeholder 
+with a release tag from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section:
+
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/{phenopacket-store.version}/all_phenopackets.tgz
+```
+
+for instance,
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.15/all_phenopackets.tgz
+```
+for the `0.1.15` version.
 
 ## Feedback
 
