@@ -75,8 +75,6 @@ class PhenopacketStore:
         if not zipfile.is_zipfile(zip_path):
             raise ValueError(f'Does not seem to be a ZIP file: {zip_path}')
         
-        name = None
-        root_path = None
         cohorts = []
         with zipfile.ZipFile(zip_path, mode='r') as zf:           
             root_path = zipfile.Path(zf)
@@ -95,7 +93,7 @@ class PhenopacketStore:
                         cohort2path[cohort_name] = entry_path
                 elif entry_path.is_file() and entry_path.suffix == '.json':
                     # This SHOULD be a phenopacket!
-                    cohort = entry_path.parent.name
+                    cohort = entry_path.parent.name  # type: ignore
                     cohort2pp_paths[cohort].append(entry_path)
                     
             for cohort, cohort_path in cohort2path.items():
@@ -117,6 +115,8 @@ class PhenopacketStore:
                         phenopackets=tuple(pp_infos),
                     )
                     cohorts.append(ci)
+
+        root_path = pathlib.Path(str(root_path))
 
         return PhenopacketStore(
             name=name,
