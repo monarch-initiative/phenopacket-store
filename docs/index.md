@@ -1,17 +1,19 @@
 # phenopacket store
 
 
-This repository contains a collection of notebooks that generate
+This repository contains a collection of Jupyter notebooks that generate
 [GA4GH phenopackets](https://pubmed.ncbi.nlm.nih.gov/35705716){:target="_blank"}.
 for analysis projects. 
 The phenopackets represent case reports about individuals with Mendelian diseases.
 
 The notebooks are contained in the 
 [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} 
-folder organized according to gene.
+folder organized according to an affected gene.
 
-The corresponding phenopackets are released in TAR GZ and ZIP archives 
-and available for download in the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+All phenopackets are released in TAR GZ and ZIP archives, which are
+available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+See the [ReleasePhenopackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/ReleasePhenopackets.ipynb) 
+notebook for information how to generate the release archives.
 
 See [Collections](collections.md) for a short documentation page for each collection included in this repository.
 The summary statistics for the entire phenopacket store as well as with Q/C checks can be seen in 
