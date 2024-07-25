@@ -88,7 +88,7 @@ def qc_phenopackets(
     checker = ppktstore.qc.configure_qc_checker()
     results = checker.check(phenopacket_store=phenopacket_store)
     if results.is_ok():
-        logger.info('Found no issues')
+        logger.info('No Q/C issues were found')
         return 0
     else:
         logger.info('Phenopacket store Q/C failed')

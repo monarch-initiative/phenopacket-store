@@ -1,9 +1,8 @@
 import os
-from os.path import join
 
 from google.protobuf.json_format import Parse
 from mdutils.mdutils import MdUtils
-from phenopackets import Phenopacket
+from phenopackets.schema.v2.phenopackets_pb2 import Phenopacket
 
 
 class PPKtListing:
@@ -59,7 +58,7 @@ class PPKtListing:
                     if notebookFile.lower() == cohort_name.lower() + '_summary.ipynb':
                         chosenFile = notebookFile
             if chosenFile:
-                self._cohorts[cohort_name]['nb'] = join(path, chosenFile)
+                self._cohorts[cohort_name]['nb'] = os.path.join(path, chosenFile)
         print(f"We found {len(self._cohorts)} cohorts")
 
     def _readPPKTdata(self, ppack):
