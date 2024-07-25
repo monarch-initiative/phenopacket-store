@@ -1,6 +1,7 @@
 import argparse
 import logging
 import sys
+import typing
 
 import ppktstore
 
@@ -9,6 +10,8 @@ def main(argv) -> int:
     """
     Phenopacket-store CLI
     """
+    setup_logging()
+
     parser = argparse.ArgumentParser(
         prog='ppktstore',
         formatter_class=argparse.RawTextHelpFormatter,
@@ -26,7 +29,11 @@ def main(argv) -> int:
         '--notebook-dir', default='notebooks',
         help='path to cohorts directory')
     parser_package.add_argument(
-        '--output', required=False, default='phenopackets.zip',
+        '--format', nargs='*', 
+        type=str, default='zip',
+        choices=('zip', 'tgz'))
+    parser_package.add_argument(
+        '--output', required=False, default='all_phenopackets',
         help='where to write the release archive')
 
     # #################### ------------- `qc` ------------------ ####################
@@ -56,12 +63,12 @@ def main(argv) -> int:
         return 1
 
     args = parser.parse_args(argv)
-    setup_logging()
 
     logger = logging.getLogger(__name__)
     if args.command == 'package':
         return package_phenopackets(
             notebook_dir=args.notebook_dir,
+            formats=args.format,
             output=args.output,
             logger=logger,
         )
@@ -88,19 +95,25 @@ def main(argv) -> int:
 
 def package_phenopackets(
         notebook_dir: str,
+        formats: typing.Iterable[str],
         output: str,
         logger: logging.Logger,
 ) -> int:
-    phenopacket_store = read_phenopacket_store(notebook_dir, logger)
-    archiver = ppktstore.archive.PhenopacketStoreArchiver(phenopacket_store=phenopacket_store)
-
-    logger.info('Storing the phenopacket archive at %s', output)
-    # Strip the `.zip` suffix if present
-    outfilename = output
-    suffix = '.zip'
-    if outfilename.endswith(suffix):
-        outfilename = outfilename[:-len(suffix)]
-    archiver.get_store_zip(outfilename=outfilename)
+    logger.info('Using archive base name `%s`', output)
+    logger.info('Using %s archive format(s) ', ', '.join(formats))
+    
+    archiver = ppktstore.archive.PhenopacketStoreArchiver()
+    
+    afs = [ppktstore.archive.ArchiveFormat[fmt.upper()] for fmt in formats]
+    store = read_phenopacket_store(notebook_dir, logger)
+    for format in afs:
+        logger.info('Preparing %s archive', format.name)
+        archiver.prepare_archive(
+            store=store,
+            format=format,
+            filename=output,
+            flat=False,
+        )
 
     logger.info('Done!')
     return 0

@@ -10,6 +10,9 @@ class TestReport:
         self,
         fpath_nb_dir: str,
     ):
-        report = generate_phenopacket_store_report(fpath_nb_dir)
+        report = generate_phenopacket_store_report(
+            fpath_nb_dir, 
+            notebook_dir_url='https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks',
+        )
         with open("report.md", "w") as fh:
             fh.write(report)
