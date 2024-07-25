@@ -14,8 +14,9 @@ The corresponding phenopackets are released in TAR GZ and ZIP archives
 and available for download in the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
 
 See [Collections](collections.md) for a short documentation page for each collection included in this repository.
-A notebook with summary statistics for the entire phenopacket store as well as with Q/C checks 
-can be seen in [ppktstore_stats](https://github.com/monarch-initiative/phenopacket-store/tree/main/ppktstore_stats.ipynb){:target="_blank"}.
+The summary statistics for the entire phenopacket store as well as with Q/C checks can be seen in 
+[PhenopacketStoreStats](https://github.com/monarch-initiative/phenopacket-store/tree/main/PhenopacketStoreStats.ipynb){:target="_blank"} 
+notebook.
 
 
 ## Feedback

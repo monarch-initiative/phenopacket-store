@@ -1,5 +1,6 @@
 import os
 import typing
+import warnings
 
 import pandas as pd
 
@@ -14,7 +15,7 @@ from phenopackets.vrsatile.v1.vrsatile_pb2 import VariationDescriptor
 from ppktstore.model import PhenopacketStore
 
 
-def create_summary_df(
+def summarize_diseases_and_genotype(
     phenopacket_store: PhenopacketStore,
 ) -> pd.DataFrame:
     """
@@ -54,7 +55,7 @@ def create_summary_df(
     return pd.DataFrame(data)
 
 
-def summarize_cohorts(
+def summarize_genotype_phenotype(
     phenopacket_store: PhenopacketStore,
 ) -> pd.DataFrame:
     columns = pd.Index(
@@ -113,6 +114,8 @@ def summarize_cohorts(
 def summarize_cohort_sizes(
     phenopacket_store: PhenopacketStore,
 ) -> pd.DataFrame:
+    # TODO: remove
+    warnings.warn("The function will be removed", DeprecationWarning, stacklevel=2)
     rows = defaultdict(list)
 
     for cohort_info in phenopacket_store.cohorts():
