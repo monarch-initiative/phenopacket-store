@@ -142,26 +142,6 @@ class PhenopacketStoreArchiver:
                 n_copied_files += 1
         return n_copied_files
 
-    def get_phenopacket_dataframe(self) -> pd.DataFrame:
-        # TODO: seems to be unused. Consider removing.
-        column_names = Cohort.get_detailed_header()
-        rows = []
-        for cohort in self._cohorts:
-            items = cohort.get_detailed_dict()
-            rows.extend(items)
-        return pd.DataFrame.from_records(rows, columns=column_names)
-
-    def get_summary_dir(self) -> pd.DataFrame:
-        # TODO: seems to be unused. Consider removing.
-        rows = defaultdict(list)
-        
-        for cohort in self._phenopacket_store.cohorts():
-            rows['Cohort'].append(cohort.name)
-            rows['Directory'].append(cohort.path)
-            rows['Count'].append(len(cohort))
-        
-        return pd.DataFrame(rows)
-
     @staticmethod
     def get_filename(pathname):
         # TODO: seems to be unused. Consider removing.
