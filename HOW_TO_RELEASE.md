@@ -22,6 +22,6 @@ Follow this document to make new Phenopacket store release.
 9. Click on *Generate release notes* button to add what's changed into the release notes
 10. Attach the release archives generated in the 6th step by dragging them into area located below the release notes
 11. Click *Publish release* to make the release
-12. **IMPORTANT** update `src/ppktstore/__init__.py` to bump the release to the next development version (e.g. `0.1.17-dev0`), commit the change and push the commit to GitHub
+12. **IMPORTANT!** bump `ppktstore.__version__` (e.g. `0.1.17-dev0`), commit the change, and push the commit to GitHub to start the next development iteration
 
 Done!
