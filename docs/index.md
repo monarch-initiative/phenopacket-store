@@ -27,6 +27,7 @@ which are available for download from the [Releases](https://github.com/monarch-
 The *latest* release is also available for download programmatically:
 
 **ZIP**
+
 Download the latest ZIP archive with `wget`:
 ```shell
 wget https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
@@ -51,16 +52,22 @@ curl -Lo all_phenopackets.tgz https://github.com/monarch-initiative/phenopacket-
 
 ### Versioned release
 
-A specific Phenopacket store version can also be accessed programmatically. Just replace the `{phenopacket-store.version}` placeholder 
+A specific Phenopacket store version can also be accessed programmatically. Just replace the `VERSION` placeholder 
 with a release tag from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section:
 
+**ZIP**
 ```
-https://github.com/monarch-initiative/phenopacket-store/releases/download/{phenopacket-store.version}/all_phenopackets.tgz
+https://github.com/monarch-initiative/phenopacket-store/releases/download/VERSION/all_phenopackets.zip
 ```
 
-for instance,
+**TAR GZ**
 ```
-https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.15/all_phenopackets.tgz
+https://github.com/monarch-initiative/phenopacket-store/releases/download/VERSION/all_phenopackets.tgz
+```
+
+For instance:
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.15/all_phenopackets.zip
 ```
 for the `0.1.15` version.
 
