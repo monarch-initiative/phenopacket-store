@@ -30,7 +30,7 @@ def main(argv) -> int:
         help='path to cohorts directory')
     parser_package.add_argument(
         '--format', nargs='*', 
-        type=str, default='zip',
+        type=str, default=('zip',),
         choices=('zip', 'tgz'))
     parser_package.add_argument(
         '--output', required=False, default='all_phenopackets',
