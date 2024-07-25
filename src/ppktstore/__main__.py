@@ -29,11 +29,27 @@ def main(argv) -> int:
         '--output', required=False, default='phenopackets.zip',
         help='where to write the release archive')
 
-    # #################### ------------- `check` --------------- ####################
+    # #################### ------------- `qc` ------------------ ####################
     parser_check = subparsers.add_parser('qc', help='Q/C phenopackets')
     parser_check.add_argument(
         '--notebook-dir', default='notebooks',
         help='path to cohorts directory')
+    
+    # #################### ------------- `report` -------------- ####################
+    report = subparsers.add_parser('report', help='Generate reports')
+    subparsers_report = report.add_subparsers(dest='report_command')
+    
+    parser_collections = subparsers_report.add_parser('collections', help='Generate collections report')
+    parser_collections.add_argument(
+        '--notebook-dir', default='notebooks',
+        help='path to cohorts directory')
+    parser_collections.add_argument(
+        '--notebook-dir-url', default='https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks',
+        help='URL pointing to notebooks folder on GitHub')
+    parser_collections.add_argument(
+        '--output',
+        help='where to generate the collections report')
+
 
     if len(argv) == 0:
         parser.print_help()
@@ -54,8 +70,19 @@ def main(argv) -> int:
             notebook_dir=args.notebook_dir,
             logger=logger,
         )
+    elif args.command == 'report':
+        if args.report_command == 'collections':
+            return generate_collections_report(
+                notebook_dir=args.notebook_dir,
+                notebook_dir_url=args.notebook_dir_url,
+                output=args.output,
+                logger=logger,
+            )
+        else:
+            report.print_help()
+            return 1
     else:
-        parser_package.print_help()
+        parser.print_help()
         return 1
 
 
@@ -112,6 +139,27 @@ def read_phenopacket_store(
         phenopacket_store.phenopacket_count(),
     )
     return phenopacket_store
+
+
+def generate_collections_report(
+        notebook_dir: str,
+        notebook_dir_url: str,
+        output: str,
+        logger: logging.Logger,
+) -> int:
+    logger.info('Generating report for phenopackets at %s', notebook_dir)
+    logger.info('Using notebook URL `%s`', notebook_dir_url)
+    report = ppktstore.stats.generate_phenopacket_store_report(
+        notebook_dir=notebook_dir,
+        notebook_dir_url=notebook_dir_url,
+    )
+
+    logger.info('Writing report to %s', output)
+    with open(output, 'w') as fh:
+        fh.write(report)
+
+    logger.info('Done!')
+    return 0
 
 
 def setup_logging():

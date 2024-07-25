@@ -8,6 +8,7 @@ from ppktstore.model import PhenopacketStore, CohortInfo
 
 def generate_phenopacket_store_report(
     notebook_dir: str,
+    notebook_dir_url: str,
 ) -> str:
     """
     Generate report in Markdown format.
@@ -39,7 +40,7 @@ def generate_phenopacket_store_report(
 
         cohort_count = len(cohort.phenopackets)
 
-        notebook_link = _choose_cohort_notebook(notebook_dir, cohort.name)
+        notebook_link = _prepare_cohort_link(notebook_dir_url, notebook_dir, cohort.name)
         cohort_text = "[" + cohort.name + "](" + notebook_link + '){:target="_blank"}'
         table_data.append(cohort_text)
         
@@ -96,25 +97,28 @@ def _prepare_dx_link(
         return "http://purl.obolibrary.org/obo/" + dx_id.replace(":", "_")
 
 
-def _choose_cohort_notebook(
+def _prepare_cohort_link(
+    notebook_dir_url: str, 
     notebook_dir: str,
     cohort_name: str,
 ) -> str:
     cohort_dir = os.path.join(notebook_dir, cohort_name)
+    cohort_url = os.path.join(notebook_dir_url, cohort_name)
     notebook_links = [
-        os.path.join(cohort_dir, fname)
+        os.path.join(cohort_url, fname)
         for fname in os.listdir(cohort_dir)
         if fname.endswith(".ipynb")
     ]
+
     if len(notebook_dir) == 0:
-        return cohort_dir
+        return cohort_url
     if len(notebook_links) == 1:
         # just take the notebook
         return notebook_links[0]
     else:
         # try to find the summary notebook
-        for link in notebook_links:
-            if "summary" in link.lower():
-                return link
-        # or return link to the folder itself in the absence of the summary notebook
-        return cohort_dir
+        for nb_link in notebook_links:
+            if "summary" in nb_link.lower():
+                return nb_link
+        # or use link to the folder itself in the absence of the summary notebook
+        return cohort_url
