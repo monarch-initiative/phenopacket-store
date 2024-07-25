@@ -1,6 +1,7 @@
 import argparse
 import logging
 import sys
+import typing
 
 import ppktstore
 
@@ -9,6 +10,8 @@ def main(argv) -> int:
     """
     Phenopacket-store CLI
     """
+    setup_logging()
+
     parser = argparse.ArgumentParser(
         prog='ppktstore',
         formatter_class=argparse.RawTextHelpFormatter,
@@ -26,7 +29,15 @@ def main(argv) -> int:
         '--notebook-dir', default='notebooks',
         help='path to cohorts directory')
     parser_package.add_argument(
-        '--output', required=False, default='phenopackets.zip',
+        '--format', nargs='*', 
+        type=str, default=('zip',),
+        choices=('zip', 'tgz'))
+    parser_package.add_argument(
+        '--top-level-dir', type=str,
+        default=ppktstore.__version__,
+        help='name of the top-level folder where all cohorts will be placed')
+    parser_package.add_argument(
+        '--output', required=False, default='all_phenopackets',
         help='where to write the release archive')
 
     # #################### ------------- `qc` ------------------ ####################
@@ -56,13 +67,14 @@ def main(argv) -> int:
         return 1
 
     args = parser.parse_args(argv)
-    setup_logging()
 
     logger = logging.getLogger(__name__)
     if args.command == 'package':
         return package_phenopackets(
             notebook_dir=args.notebook_dir,
-            output=args.output,
+            formats=args.format,
+            filename=args.output,
+            top_level_folder=args.top_level_dir,
             logger=logger,
         )
     elif args.command == 'qc':
@@ -88,19 +100,28 @@ def main(argv) -> int:
 
 def package_phenopackets(
         notebook_dir: str,
-        output: str,
+        formats: typing.Iterable[str],
+        filename: str,
+        top_level_folder: str,
         logger: logging.Logger,
 ) -> int:
-    phenopacket_store = read_phenopacket_store(notebook_dir, logger)
-    archiver = ppktstore.archive.PhenopacketStoreArchiver(phenopacket_store=phenopacket_store)
-
-    logger.info('Storing the phenopacket archive at %s', output)
-    # Strip the `.zip` suffix if present
-    outfilename = output
-    suffix = '.zip'
-    if outfilename.endswith(suffix):
-        outfilename = outfilename[:-len(suffix)]
-    archiver.get_store_zip(outfilename=outfilename)
+    logger.info('Using archive base name `%s`', filename)
+    logger.info('Putting cohorts to top-level directory `%s`', top_level_folder)
+    logger.info('Using %s archive format(s) ', ', '.join(formats))
+    
+    archiver = ppktstore.archive.PhenopacketStoreArchiver()
+    
+    afs = [ppktstore.archive.ArchiveFormat[fmt.upper()] for fmt in formats]
+    store = read_phenopacket_store(notebook_dir, logger)
+    for format in afs:
+        logger.info('Preparing %s archive', format.name)
+        archiver.prepare_archive(
+            store=store,
+            format=format,
+            filename=filename,
+            top_level_folder=top_level_folder,
+            flat=False,
+        )
 
     logger.info('Done!')
     return 0

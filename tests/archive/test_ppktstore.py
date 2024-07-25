@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from ppktstore.archive import PhenopacketStoreArchiver
+from ppktstore.archive import PhenopacketStoreArchiver, ArchiveFormat
 from ppktstore.model import PhenopacketStore
 
 
@@ -19,23 +19,23 @@ class TestPPKtStore:
     ) -> PhenopacketStore:
         return PhenopacketStore.from_notebook_dir(fpath_nb_dir)
 
-    @pytest.fixture
-    def ppkt_store(
-            self,
-            phenopacket_store: PhenopacketStore,
-    ) -> PhenopacketStoreArchiver:
-        return PhenopacketStoreArchiver(phenopacket_store)
-
     def test_get_store_zip(
             self,
-            ppkt_store: PhenopacketStoreArchiver,
+            phenopacket_store: PhenopacketStore,            
             tmp_path: Path,
     ):
-        outfilename = str(tmp_path)
+        filename = str(tmp_path)
+        basename = os.path.basename(tmp_path)
+        
+        archiver = PhenopacketStoreArchiver()
+        archiver.prepare_archive(
+            store=phenopacket_store,
+            format=ArchiveFormat.ZIP,
+            filename=filename,
+            top_level_folder=basename,
+        )
 
-        ppkt_store.get_store_zip(outfilename=outfilename)
-
-        expected_archive_filename = f'{outfilename}.zip'
+        expected_archive_filename = f'{filename}.zip'
         assert os.path.isfile(expected_archive_filename)
 
         basename = os.path.basename(tmp_path)
@@ -47,17 +47,23 @@ class TestPPKtStore:
 
     def test_get_store_gzip(
             self,
-            ppkt_store: PhenopacketStoreArchiver,
+            phenopacket_store: PhenopacketStore,
             tmp_path: Path,
     ):
-        outfilename = str(tmp_path)
+        filename = str(tmp_path)
+        basename = os.path.basename(tmp_path)
 
-        ppkt_store.get_store_gzip(outfilename)
+        archiver = PhenopacketStoreArchiver()
+        archiver.prepare_archive(
+            store=phenopacket_store,
+            format=ArchiveFormat.TGZ,
+            filename=filename,
+            top_level_folder=basename,
+        )
 
-        expected_archive_filename = f'{outfilename}.tgz'
+        expected_archive_filename = f'{filename}.tgz'
         assert os.path.isfile(expected_archive_filename)
 
-        basename = os.path.basename(tmp_path)
         with tarfile.open(expected_archive_filename) as fh:
             names = fh.getnames()
             filenames = tuple(name for name in names if name != '')
@@ -76,14 +82,19 @@ class TestPPKtStore:
     )
     def test_suffix_in_outfilename_explodes(
             self,
-            ppkt_store: PhenopacketStoreArchiver,
+            phenopacket_store: PhenopacketStore,
             suffix: str,
     ):
-        outname = f'whatever{suffix}'
+        filename = f'whatever{suffix}'
+        archiver = PhenopacketStoreArchiver()
         with pytest.raises(ValueError) as ctx:
-            ppkt_store.get_store_gzip(outname)
+            archiver.prepare_archive(
+                phenopacket_store,
+                format=ArchiveFormat.ZIP,
+                filename=filename,
+            )
 
-        assert ctx.value.args[0] == f'The path must not include suffix but found {suffix} in {outname}'
+        assert ctx.value.args[0] == f'The path must not include suffix but found {suffix} in {filename}'
 
     @staticmethod
     def check_archive_spec(
@@ -91,7 +102,7 @@ class TestPPKtStore:
             filenames: typing.Iterable[str],
     ):
         assert any(
-            file == f'{basename}/{basename}.tsv' for file in filenames
+            file == f'{basename}/phenopacket_store.summary.tsv' for file in filenames
         ), 'The archive should include the summary TSV file'
 
         json_files = tuple(file for file in filenames if file.endswith('.json'))

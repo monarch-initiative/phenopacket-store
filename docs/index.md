@@ -10,16 +10,59 @@ The notebooks are contained in the
 [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} 
 folder organized according to an affected gene.
 
-All phenopackets are released in TAR GZ and ZIP archives, which are
-available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
-See the [ReleasePhenopackets](https://github.com/monarch-initiative/phenopacket-store/tree/main/ReleasePhenopackets.ipynb) 
-notebook for information how to generate the release archives.
+## Summary statistics
 
-See [Collections](collections.md) for a short documentation page for each collection included in this repository.
+See [Collections](collections.md) for a short documentation page for each case report collection included in this repository.
 The summary statistics for the entire phenopacket store as well as with Q/C checks can be seen in 
 [PhenopacketStoreStats](https://github.com/monarch-initiative/phenopacket-store/tree/main/PhenopacketStoreStats.ipynb){:target="_blank"} 
 notebook.
 
+## Availability
+
+All case report collections are periodically released in TAR GZ and ZIP archives, 
+which are available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+
+### Latest release
+
+The *latest* release is also available for download programmatically:
+
+**ZIP**
+Download the latest ZIP archive with `wget`:
+```shell
+wget https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
+```
+
+or with `curl`:
+```shell
+curl -Lo all_phenopackets.zip https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
+```
+
+**TAR GZ**
+
+Download the latest TAR GZ archive with `wget`:
+```shell
+wget https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
+```
+
+or with `curl`:
+```shell
+curl -Lo all_phenopackets.tgz https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
+```
+
+### Versioned release
+
+A specific Phenopacket store version can also be accessed programmatically. Just replace the `{phenopacket-store.version}` placeholder 
+with a release tag from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section:
+
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/{phenopacket-store.version}/all_phenopackets.tgz
+```
+
+for instance,
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.15/all_phenopackets.tgz
+```
+for the `0.1.15` version.
 
 ## Feedback
 

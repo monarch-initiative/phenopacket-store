@@ -1,5 +1,5 @@
 
-from ._archiver import PhenopacketStoreArchiver
+from ._archiver import PhenopacketStoreArchiver, ArchiveFormat
 
 # TODO: these should be removed at some point.
 # from .cohort import Cohort
@@ -13,6 +13,6 @@ __all__ = [
     # "Cohort",
     # "CohortExtractor",
     # "PPacket",
-    "PhenopacketStoreArchiver",
+    "PhenopacketStoreArchiver", "ArchiveFormat",
     # "PPKtListing"
 ]
