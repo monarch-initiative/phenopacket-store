@@ -1,10 +1,17 @@
-name: mkdocs-generation
+name: Deploy documentation
+
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
+env:
+  # Path to directory that contains the cohorts, one cohort per folder.
+  NOTEBOOK_DIR: notebooks
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,9 +24,16 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-material[imaging]
-      - run: pip install pillow cairosvg
-      - run: pip install mkdocs-material-extensions
-      - run: pip install mkdocstrings[python]
-      - run: mkdocs gh-deploy --force
+
+      - name: Install docs dependencies
+        run: |
+          python3 -m pip install .[docs]
+
+      - name: Generate reports
+        run: |
+          python3 -m ppktstore report collections --notebook-dir ${NOTEBOOK_DIR} --output docs/collections.md
+
+      - name: Deploy docs
+        run: |
+          mkdocs gh-deploy --force
+  
