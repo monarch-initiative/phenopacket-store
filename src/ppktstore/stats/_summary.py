@@ -1,4 +1,5 @@
 import os
+import re
 import typing
 import warnings
 
@@ -7,12 +8,27 @@ import pandas as pd
 from collections import defaultdict
 
 from phenopackets.schema.v2.phenopackets_pb2 import Phenopacket
-from phenopackets.schema.v2.core.meta_data_pb2 import MetaData
+from phenopackets.schema.v2.core.base_pb2 import TimeElement, Age
 from phenopackets.schema.v2.core.interpretation_pb2 import Diagnosis
+from phenopackets.schema.v2.core.individual_pb2 import Sex, Individual, VitalStatus
+from phenopackets.schema.v2.core.meta_data_pb2 import MetaData
 
 from phenopackets.vrsatile.v1.vrsatile_pb2 import VariationDescriptor
 
 from ppktstore.model import PhenopacketStore
+
+
+iso_duration_pt = re.compile(
+    r"^P((?P<years>\d+)Y)?((?P<months>\d+)M)?((?P<days>\d+)D)?(T((?P<hours>\d+)H)?((?P<minutes>\d+)M)?((?P<seconds>\d+)S)?)?$"
+)
+unit_to_days = {
+    "years": 365.25,
+    "months": 30,
+    "days": 1,
+    "hours": 1 / 24,
+    "minutes": 1 / (24 * 60),
+    "seconds": 1 / (24 * 60 * 60),
+}
 
 
 def summarize_diseases_and_genotype(
@@ -52,7 +68,21 @@ def summarize_diseases_and_genotype(
                     data["cohort"].append(cohort.name)
                     data["filename"].append(pp_path)
 
-    return pd.DataFrame(data)
+    columns = pd.Index(
+        [
+            "patient_id",
+            "cohort",
+            "disease_id",
+            "disease",
+            "gene",
+            "allele_1",
+            "allele_2",
+            "PMID",
+            "filename",
+        ]
+    )
+
+    return pd.DataFrame(data, columns=columns)
 
 
 def summarize_genotype_phenotype(
@@ -126,6 +156,32 @@ def summarize_cohort_sizes(
     return pd.DataFrame(rows)
 
 
+def summarize_individuals(
+    store: PhenopacketStore,
+) -> pd.DataFrame:
+    data = defaultdict(list)
+    for cohort_info in store.cohorts():
+        for pp_info in cohort_info.phenopackets:
+            pp = pp_info.phenopacket
+            subject = pp.subject
+
+            data["id"].append(f"{pp.id}-{subject.id}")
+            data["sex"].append(Sex.Name(subject.sex))
+            n_days = _extract_age(subject)
+            data["age_in_days"].append(n_days)
+            data["age_in_years"].append(n_days / unit_to_days["years"])
+
+            vs = None
+            if subject.HasField("vital_status"):
+                vs = VitalStatus.Status.Name(subject.vital_status.status)
+            else:
+                vs = None
+            data["vital_status"].append(vs)
+
+    columns = pd.Index(["id", "sex", "age_in_days", "age_in_years", "vital_status"])
+    return pd.DataFrame(data=data, columns=columns)
+
+
 def _get_encounter_count(
     pp: Phenopacket,
 ) -> int:
@@ -149,7 +205,7 @@ def _get_pmid(
 
 
 def _get_gene_and_alleles(
-    diagnosis: Diagnosis
+    diagnosis: Diagnosis,
 ) -> typing.Tuple[typing.Optional[str], typing.Sequence[str]]:
     """
     Extract the gene symbol, failing that the label, for a variant from the Interpretation object.
@@ -185,7 +241,7 @@ def _get_gene_and_alleles(
                 genotype = var_desc.allelic_state
                 if genotype.label == "homozygous" and len(alleles) > 0:
                     alleles.append(alleles[0])
-    
+
     return gene, alleles
 
 
@@ -210,3 +266,34 @@ def _get_structural_var(
     else:
         raise ValueError(f"Could not find structural_type field")
     return alleles
+
+
+def _extract_age(
+    subject: Individual,
+) -> float:
+    if subject.HasField("time_at_last_encounter"):
+        tale = subject.time_at_last_encounter
+        if tale.HasField("age"):
+            age = tale.age
+            ageperiod = age.iso8601duration
+            if ageperiod is not None or ageperiod != "":
+                return _parse_to_days(ageperiod)
+
+    return float("nan")
+
+
+def _parse_to_days(
+    age_period: str,
+) -> float:
+    match = iso_duration_pt.match(age_period)
+    if match is None:
+        return float("nan")
+    else:
+        n_days = 0.0
+
+        for unit, multiplier in unit_to_days.items():
+            val = match.group(unit)
+            if val is not None:
+                n_days += float(val) * multiplier
+
+        return n_days
