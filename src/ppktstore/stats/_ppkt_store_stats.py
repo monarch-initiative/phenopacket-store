@@ -2,7 +2,7 @@ import os
 import re
 import typing
 
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 import numpy as np
 import pandas as pd
@@ -56,6 +56,18 @@ class PPKtStoreStats:
 
         stats_d["alleles"] = len(unique_alleles)
         stats_d["PMIDs"] = len(df["PMID"].unique())
+        df.groupby(['cohort', 'PMID']).size()
+        
+        individuals_per_gene = list(genes_to_ppkt_d.values())
+        stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
+        stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
+        stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
+        stats_d["individuals per gene (median)"] = np.median(individuals_per_gene)
+       # stats_d["individuals per gene (n>=10)"] = len([x for x in individuals_per_gene if x >= 10])
+        #stats_d["individuals per gene (n>=20)"] = len([x for x in individuals_per_gene if x >= 20])
+        #stats_d["individuals per gene (n>=50)"] = len([x for x in individuals_per_gene if x >= 50])
+       # stats_d["individuals per gene (n>=100)"] = len([x for x in individuals_per_gene if x >= 100])
+        
         individuals_per_disease = list(diseases_to_ppkt_id.values())
         stats_d["individuals per disease (max)"] = np.max(individuals_per_disease)
         stats_d["individuals per disease (min)"] = np.min(individuals_per_disease)
@@ -71,27 +83,23 @@ class PPKtStoreStats:
         stats_d["genes associated with a single disease"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) == 1])
         stats_d["genes associated with two diseases"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) == 2])
         stats_d["genes associated with multiple diseases"] = len([x for x in genes_to_disease_d.keys() if len(genes_to_disease_d[x]) > 2])
-        max_gene = None
+        max_genes = set()
         max_count = 0
-        for k,v in genes_to_disease_d.items():
-            n_diseases = len(v)
-            if n_diseases > max_count:
-                max_count = n_diseases
-                max_gene = k
-        max_msg = f"{max_gene} with {max_count} associated diseases"
-        stats_d["gene with maximum number of diseases"] = max_msg
-        individuals_per_gene = list(genes_to_ppkt_d.values())
-        #stats_d["individuals per gene (max)"] = np.max(individuals_per_gene)
-       # stats_d["individuals per gene (min)"] = np.min(individuals_per_gene)
-        #stats_d["individuals per gene (mean)"] = np.mean(individuals_per_gene)
-        #stats_d["individuals per gene (median)"] = np.median(individuals_per_gene)
-       # stats_d["individuals per gene (n>=10)"] = len([x for x in individuals_per_gene if x >= 10])
-        #stats_d["individuals per gene (n>=20)"] = len([x for x in individuals_per_gene if x >= 20])
-        #stats_d["individuals per gene (n>=50)"] = len([x for x in individuals_per_gene if x >= 50])
-       # stats_d["individuals per gene (n>=100)"] = len([x for x in individuals_per_gene if x >= 100])
-        all_hpo_d = PPKtStoreStats._get_all_unique_hpo_d(self._store)      
-        stats_d["total HPO terms used"] = len(all_hpo_d)
+        for gene, diseases in genes_to_disease_d.items():
+            n_diseases = len(diseases)
+            if n_diseases >= max_count:
+                if n_diseases > max_count:
+                    max_count = n_diseases
+                    max_genes.clear()
+                max_genes.add(gene)
+        genes_text = ', '.join(sorted(max_genes))
+        max_msg = f"{genes_text} with {max_count} associated diseases"
+        stats_d["gene(s) with maximum number of diseases"] = max_msg
+        total_hpo_stats = PPKtStoreStats._get_total_and_unique_hpo_counts(self._store)      
+        stats_d.update(total_hpo_stats)
 
+        pf_summary = PPKtStoreStats._summarize_phenotypic_features(self._store)
+        stats_d.update(pf_summary)
         return stats_d
     
 
@@ -116,20 +124,74 @@ class PPKtStoreStats:
         return pd.DataFrame(items, index=None)
             
     @staticmethod
-    def _get_all_unique_hpo_d(
+    def _get_total_and_unique_hpo_counts(
         phenopacket_store: PhenopacketStore,
-    ) -> typing.Mapping[str, str]:
-        """return a dictionary with key=HPO id, value=label of all HPOs used in phenopacket-store
+    ) -> typing.Mapping[str, float]:
         """
-        all_hpo_d = dict()
+        Return a tuple with the counts of all and distinct HPOs used in Phenopacket store.
+        """
+        n_total = 0
+        n_present = 0
+        n_excluded = 0
+        unique = set()
+        
         for cohort_info in phenopacket_store.cohorts():
             for pp_info in cohort_info.phenopackets:
                 pp = pp_info.phenopacket
                 for pf in pp.phenotypic_features:
-                    all_hpo_d[pf.type.id] = pf.type.label
-        print(f"Got {len(all_hpo_d)} unique HPOs")
-        return all_hpo_d
+                    if pf.excluded:
+                        n_excluded += 1
+                    else:
+                        n_present += 1
+                    
+                    unique.add(pf.type.id)
+                    n_total += 1
+        
+        return {
+            "total HPO terms used": n_total,
+            "present HPO terms used": n_present,
+            "excluded HPO terms used": n_excluded,
+            "unique HPO terms used": len(unique),
+        }
     
+    @staticmethod
+    def _summarize_phenotypic_features(
+        store: PhenopacketStore,
+    ) -> typing.Mapping[str, float]:
+        cohort2present = Counter()
+        cohort2excluded = Counter()
+        cohort2total = Counter()
+        for cohort_info in store.cohorts():
+            cohort_name = cohort_info.name
+            for pp_info in cohort_info.phenopackets:
+                pp = pp_info.phenopacket
+                cohort2present[cohort_name] += sum(1 for pf in pp.phenotypic_features if not pf.excluded)
+                cohort2excluded[cohort_name] += sum(1 for pf in pp.phenotypic_features if pf.excluded)
+                cohort2total[cohort_name] += len(pp.phenotypic_features)
+        
+        c2p = list(cohort2present.values())
+        c2e = list(cohort2excluded.values())
+        c2t = list(cohort2total.values())
+        
+        # TODO: this should be per sample
+
+        return {
+            'present HPO terms per cohort (mean)': float(np.mean(c2p)),
+            'present HPO terms per cohort (median)': float(np.median(c2p)),
+            'present HPO terms per cohort (min)': float(np.min(c2p)),
+            'present HPO terms per cohort (max)': float(np.max(c2p)),
+            
+            'excluded HPO terms per cohort (mean)': float(np.mean(c2e)),
+            'excluded HPO terms per cohort (median)': float(np.median(c2e)),
+            'excluded HPO terms per cohort (min)': float(np.min(c2e)),
+            'excluded HPO terms per cohort (max)': float(np.max(c2e)),
+
+            'total HPO terms per cohort (mean)': float(np.mean(c2t)),
+            'total HPO terms per cohort (median)': float(np.median(c2t)),
+            'total HPO terms per cohort (min)': float(np.min(c2t)),
+            'total HPO terms per cohort (max)': float(np.max(c2t)),
+        }
+
 
     def check_disease_id(self):
         """
@@ -227,7 +289,7 @@ class PPKtStoreStats:
         print(f"Extracted a total of {len(disease_to_ppkt_count_d)} diseases")
         return disease_to_ppkt_count_d
     
-    def _get_gene_symbol(self, ppkt: Phenopacket) -> str:
+    def _get_gene_symbol(self, ppkt: Phenopacket) -> typing.Optional[str]:
         if len(ppkt.interpretations) == 0:
             print(f"Warning: Got no interpretations for {ppkt.id}. Skipping")
             return None
