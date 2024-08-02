@@ -1,5 +1,8 @@
 # phenopacket store
 
+[![DOI](https://zenodo.org/badge/580002593.svg)](https://zenodo.org/doi/10.5281/zenodo.13168726)
+
+
 This repository offers cohorts of [GA4GH Phenopackets](https://phenopacket-schema.readthedocs.io/en/latest/) that
 represent individuals with Mendelian diseases.
 
