@@ -19,8 +19,23 @@ notebook.
 
 ## Availability
 
-All case report collections are periodically released in TAR GZ and ZIP archives, 
-which are available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+All case report collections are periodically released in a ZIP archive,
+which is available for download from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases){:target="_blank"} section.
+
+### Versioned release
+
+A specific Phenopacket store version can also be accessed programmatically. Just replace the `VERSION` placeholder 
+with a release tag from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section:
+
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/VERSION/all_phenopackets.zip
+```
+
+For instance:
+```
+https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.16/all_phenopackets.zip
+```
+for the `0.1.16` version.
 
 ### Latest release
 
@@ -38,38 +53,6 @@ or with `curl`:
 curl -Lo all_phenopackets.zip https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
 ```
 
-**TAR GZ**
-
-Download the latest TAR GZ archive with `wget`:
-```shell
-wget https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
-```
-
-or with `curl`:
-```shell
-curl -Lo all_phenopackets.tgz https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
-```
-
-### Versioned release
-
-A specific Phenopacket store version can also be accessed programmatically. Just replace the `VERSION` placeholder 
-with a release tag from the [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section:
-
-**ZIP**
-```
-https://github.com/monarch-initiative/phenopacket-store/releases/download/VERSION/all_phenopackets.zip
-```
-
-**TAR GZ**
-```
-https://github.com/monarch-initiative/phenopacket-store/releases/download/VERSION/all_phenopackets.tgz
-```
-
-For instance:
-```
-https://github.com/monarch-initiative/phenopacket-store/releases/download/0.1.15/all_phenopackets.zip
-```
-for the `0.1.15` version.
 
 ## Feedback
 

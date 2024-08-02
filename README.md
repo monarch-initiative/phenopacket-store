@@ -13,16 +13,11 @@ Please see the [online documentation](https://monarch-initiative.github.io/pheno
 Phenopacket store releases are available for download from the 
 [Releases](https://github.com/monarch-initiative/phenopacket-store/releases) section.
 
-The *latest* release is available at a stable download URL, depending on the archive format:
+The *latest* release ZIP archive is available for download from a stable URL:
 
 **ZIP**
 ```
 https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
-```
-
-**TAR GZ**
-```
-https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.tgz
 ```
 
 ## Contributing
