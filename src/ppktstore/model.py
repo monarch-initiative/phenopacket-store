@@ -98,6 +98,9 @@ class PhenopacketStore:
                     
             for cohort, cohort_path in cohort2path.items():
                 if cohort in cohort2pp_paths:
+                    print(f'Cohort path{cohort_path}')
+                    print(f'Cohort path{type(cohort_path)}')
+                    assert isinstance(cohort_path, zipfile.Path)
                     rel_cohort_path = zipfile.Path(zf, at=cohort_path.relative_to(root_path))
                     pp_infos = []
                     for pp_path in cohort2pp_paths[cohort]:
