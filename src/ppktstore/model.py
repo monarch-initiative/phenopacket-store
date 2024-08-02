@@ -91,7 +91,7 @@ class PhenopacketStore:
                     else:
                         cohort_name = entry_path.name
                         cohort2path[cohort_name] = entry_path
-                elif entry_path.is_file() and entry_path.suffix == '.json':
+                elif entry_path.is_file() and str(entry_path).endswith('.json'):
                     # This SHOULD be a phenopacket!
                     cohort = entry_path.parent.name  # type: ignore
                     cohort2pp_paths[cohort].append(entry_path)
