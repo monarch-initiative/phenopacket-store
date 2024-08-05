@@ -3,7 +3,7 @@ from . import model
 from . import qc
 from . import stats
 
-__version__ = "0.1.17.dev0"
+__version__ = "0.1.17"
 
 __all__ = [
     "archive",
