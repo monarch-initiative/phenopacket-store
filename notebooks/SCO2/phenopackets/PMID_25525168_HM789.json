@@ -1,7 +1,12 @@
 {
-  "id": "PMID_25525168_25525168_P1",
+  "id": "PMID_25525168_HM789",
   "subject": {
-    "id": "25525168_P1",
+    "id": "HM789",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -13,14 +18,61 @@
     },
     {
       "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007800",
+        "label": "Increased axial length of the globe"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001098",
         "label": "Abnormal fundus morphology"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "25525168_P1",
+      "id": "HM789",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -29,11 +81,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "25525168_P1",
+            "subjectOrBiosampleId": "HM789",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_pDUwwkwoqKSUIaiaRuUCYSgEk",
+                "id": "var_gaImVbZrrgmXIakDFaGDUxyIP",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -41,17 +93,17 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.334C>T"
+                    "value": "NM_005138.3:c.358C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50524078G>A"
+                    "value": "NC_000022.11:g.50524054G>A"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "50524078",
+                  "pos": "50524054",
                   "ref": "G",
                   "alt": "A"
                 },
@@ -72,16 +124,11 @@
       "term": {
         "id": "OMIM:608908",
         "label": "Myopia 6"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P32Y"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-24T17:36:45.025454044Z",
+    "created": "2024-08-05T05:47:17.055834770Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -120,7 +167,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
+        "version": "2024-07-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

@@ -1,39 +1,38 @@
 {
-  "id": "PMID_25525168_25525168_P2",
+  "id": "PMID_23838601_23838601_P1",
   "subject": {
-    "id": "25525168_P2",
-    "sex": "FEMALE"
+    "id": "23838601_P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y8M"
+      }
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001098",
-        "label": "Abnormal fundus morphology"
+        "id": "HP:0002376",
+        "label": "Developmental regression"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "25525168_P2",
+      "id": "23838601_P1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:608909",
-          "label": "Myopia 6"
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "25525168_P2",
+            "subjectOrBiosampleId": "23838601_P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_hzKcpAwEIaxMWsVqOvQWKZfOF",
+                "id": "var_XfcbOMSjvqEShRSMjqkkrOtcx",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -41,21 +40,44 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.358C>T"
+                    "value": "NM_005138.3:c.667G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50524054G>A"
+                    "value": "NC_000022.11:g.50523745C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "50524054",
-                  "ref": "G",
-                  "alt": "A"
+                  "pos": "50523745",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "23838601_P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_BbSxptyonvUJtgnVGoPktNpEr",
+                "label": "chr22:g.49275958_49362964del(NCBI Build 36.1)",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -70,18 +92,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:608909",
-        "label": "Myopia 6"
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6Y"
+          "iso8601duration": "P7M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-24T17:36:45.076785802Z",
+    "created": "2024-08-05T05:48:25.120401859Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -120,7 +142,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
+        "version": "2024-07-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -128,9 +150,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:25525168",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25525168",
-        "description": "Detection of mutations in LRPAP1, CTSH, LEPREL1, ZNF644, SLC39A5, and SCO2 in 298 families with early-onset high myopia by exome sequencing"
+        "id": "PMID:23838601",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/23838601",
+        "description": "Large copy number variations in combination with point mutations in the TYMP and SCO2 genes found in two patients with mitochondrial disorders"
       }
     ]
   }
