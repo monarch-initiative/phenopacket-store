@@ -1,53 +1,71 @@
 {
-  "id": "PMID_19800048_III_10",
+  "id": "PMID_16783569_IV_11",
   "subject": {
-    "id": "III-10",
+    "id": "IV: 11",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000510",
-        "label": "Rod-cone dystrophy"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
       }
     },
     {
       "type": {
-        "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
       "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections"
+        "id": "HP:0009381",
+        "label": "Short finger"
       }
     },
     {
       "type": {
-        "id": "HP:0001162",
-        "label": "Postaxial hand polydactyly"
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001830",
-        "label": "Postaxial foot polydactyly"
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
+        "id": "HP:0000218",
+        "label": "High palate"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011304",
+        "label": "Broad thumb"
       },
       "excluded": true
     },
@@ -60,28 +78,28 @@
     },
     {
       "type": {
-        "id": "HP:0001561",
-        "label": "Polyhydramnios"
+        "id": "HP:0001162",
+        "label": "Postaxial hand polydactyly"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "III-10",
+      "id": "IV: 11",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:300804",
-          "label": "Joubert syndrome 10"
+          "id": "OMIM:300209",
+          "label": "Simpson-Golabi-Behmel syndrome, type 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "III-10",
+            "subjectOrBiosampleId": "IV: 11",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_yWMPoNgzEAsYXurhsVVppOhcU",
+                "id": "var_nzAELOTPzGmPmxFzvQQDOqUQV",
                 "geneContext": {
                   "valueId": "HGNC:2567",
                   "symbol": "OFD1"
@@ -89,24 +107,24 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003611.3:c.2844_2850del"
+                    "value": "NM_003611.3:c.2122_2125dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.13768140_13768146del"
+                    "value": "NC_000023.11:g.13760582_13760585dup"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "13768136",
-                  "ref": "TAAAAGAC",
-                  "alt": "T"
+                  "pos": "13760581",
+                  "ref": "T",
+                  "alt": "TGAAG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -118,13 +136,19 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:300804",
-        "label": "Joubert syndrome 10"
+        "id": "OMIM:300209",
+        "label": "Simpson-Golabi-Behmel syndrome, type 2"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-05T13:21:23.880396127Z",
+    "created": "2024-08-05T13:21:59.960539817Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -171,9 +195,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:19800048",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/19800048",
-        "description": "OFD1 is mutated in X-linked Joubert syndrome and interacts with LCA5-encoded lebercilin"
+        "id": "PMID:16783569",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/16783569",
+        "description": "A novel X-linked recessive mental retardation syndrome comprising macrocephaly and ciliary dysfunction is allelic to oral-facial-digital type I syndrome"
       }
     ]
   }
