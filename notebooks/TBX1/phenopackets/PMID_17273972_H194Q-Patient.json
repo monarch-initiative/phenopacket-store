@@ -1,21 +1,15 @@
 {
-  "id": "PMID_14585638_F1",
+  "id": "PMID_17273972_H194Q_Patient",
   "subject": {
-    "id": "F1",
+    "id": "H194Q-Patient",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P7Y"
+        "iso8601duration": "P4Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
     {
       "type": {
         "id": "HP:0000581",
@@ -42,38 +36,55 @@
     },
     {
       "type": {
-        "id": "HP:0000220",
-        "label": "Velopharyngeal insufficiency"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
       "type": {
-        "id": "HP:0001636",
-        "label": "Tetralogy of Fallot"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010882",
-        "label": "Pulmonary valve atresia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031834",
-        "label": "Aortopulmonary collateral arteries"
+        "id": "HP:0004322",
+        "label": "Short stature"
       }
     },
     {
       "type": {
         "id": "HP:0000175",
         "label": "Cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000220",
+        "label": "Velopharyngeal insufficiency"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010882",
+        "label": "Pulmonary valve atresia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031834",
+        "label": "Aortopulmonary collateral arteries"
       },
       "excluded": true
     },
@@ -104,32 +115,11 @@
         "label": "Hypoparathyroidism"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010515",
-        "label": "Aplasia/Hypoplasia of the thymus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "F1",
+      "id": "H194Q-Patient",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -138,11 +128,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F1",
+            "subjectOrBiosampleId": "H194Q-Patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_rOCjUJLJGAFQmdivMSglQojqL",
+                "id": "var_QBuMsrDyhQGUncwuQzsXOszPo",
                 "geneContext": {
                   "valueId": "HGNC:11592",
                   "symbol": "TBX1"
@@ -150,19 +140,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_080647.1:c.443T>A"
+                    "value": "NM_080647.1:c.582C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.19763273T>A"
+                    "value": "NC_000022.11:g.19764224C>G"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "19763273",
-                  "ref": "T",
-                  "alt": "A"
+                  "pos": "19764224",
+                  "ref": "C",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -181,11 +171,17 @@
       "term": {
         "id": "OMIM:188400",
         "label": "DiGeorge syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-05T13:48:33.000709056Z",
+    "created": "2024-08-05T13:48:33.002992868Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -232,9 +228,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:14585638",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/14585638",
-        "description": "Role of TBX1 in human del22q11.2 syndrome"
+        "id": "PMID:17273972",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/17273972",
+        "description": "Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions"
       }
     ]
   }
