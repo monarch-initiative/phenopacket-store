@@ -1,10 +1,10 @@
 {
-  "id": "PMID_15673476_proband",
+  "id": "PMID_28509303_index",
   "subject": {
-    "id": "proband",
+    "id": "index",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P49Y"
+        "iso8601duration": "P59Y"
       }
     },
     "sex": "FEMALE"
@@ -12,56 +12,56 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000108",
-        "label": "Renal corticomedullary cysts"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003259",
         "label": "Elevated circulating creatinine concentration"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P27Y"
+          "iso8601duration": "P55Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0012623",
-        "label": "Stage 1 chronic kidney disease"
+        "id": "HP:0012624",
+        "label": "Stage 2 chronic kidney disease"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P27Y"
+          "iso8601duration": "P55Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
+        "id": "HP:0000096",
+        "label": "Glomerular sclerosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P49Y"
+          "iso8601duration": "P55Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001997",
-        "label": "Gout"
+        "id": "HP:0000092",
+        "label": "Renal tubular atrophy"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P55Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032948",
+        "label": "Renal interstitial fibrosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P55Y"
         }
       }
     },
@@ -72,14 +72,50 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P55Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P51Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P51Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001997",
+        "label": "Gout"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "index",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,11 +124,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "index",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RshQsRSLCTFAfaUYKJTcbKgsi",
+                "id": "var_PZTdVWIRqQIxkURciZOxfrFpo",
                 "geneContext": {
                   "valueId": "HGNC:12559",
                   "symbol": "UMOD"
@@ -100,19 +136,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003361.4:c.920A>C"
+                    "value": "NM_003361.4:c.518C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.20348276T>G"
+                    "value": "NC_000016.10:g.20348783G>C"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "20348276",
-                  "ref": "T",
-                  "alt": "G"
+                  "pos": "20348783",
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -134,13 +170,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P51Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-08T05:49:17.076527118Z",
+    "created": "2024-08-08T05:49:17.139495849Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -187,9 +223,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:15673476",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15673476",
-        "description": "A novel heterozygous missense mutation in the UMOD gene responsible for Familial Juvenile Hyperuricemic Nephropathy"
+        "id": "PMID:28509303",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28509303",
+        "description": "A novel mutation in the uromodulin gene in a Japanese family with a mild phenotype of familial juvenile hyperuricemic nephropathy"
       }
     ]
   }

@@ -1,23 +1,23 @@
 {
-  "id": "PMID_15673476_proband",
+  "id": "PMID_28509303_father",
   "subject": {
-    "id": "proband",
+    "id": "father",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P49Y"
+        "iso8601duration": "P84Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000108",
-        "label": "Renal corticomedullary cysts"
+        "id": "HP:0012626",
+        "label": "Stage 4 chronic kidney disease"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P84Y"
         }
       }
     },
@@ -25,22 +25,18 @@
       "type": {
         "id": "HP:0003259",
         "label": "Elevated circulating creatinine concentration"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P27Y"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0012623",
-        "label": "Stage 1 chronic kidney disease"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P27Y"
-        }
+        "id": "HP:0001997",
+        "label": "Gout"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
       }
     },
     {
@@ -48,38 +44,12 @@
         "id": "HP:0003774",
         "label": "Stage 5 chronic kidney disease"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P49Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001997",
-        "label": "Gout"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P24Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002149",
-        "label": "Hyperuricemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P24Y"
-        }
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "father",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,11 +58,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "father",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RshQsRSLCTFAfaUYKJTcbKgsi",
+                "id": "var_PZTdVWIRqQIxkURciZOxfrFpo",
                 "geneContext": {
                   "valueId": "HGNC:12559",
                   "symbol": "UMOD"
@@ -100,19 +70,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003361.4:c.920A>C"
+                    "value": "NM_003361.4:c.518C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.20348276T>G"
+                    "value": "NC_000016.10:g.20348783G>C"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "20348276",
-                  "ref": "T",
-                  "alt": "G"
+                  "pos": "20348783",
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -131,16 +101,11 @@
       "term": {
         "id": "OMIM:162000",
         "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P24Y"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-08T05:49:17.076527118Z",
+    "created": "2024-08-08T05:49:17.140386104Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -187,9 +152,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:15673476",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15673476",
-        "description": "A novel heterozygous missense mutation in the UMOD gene responsible for Familial Juvenile Hyperuricemic Nephropathy"
+        "id": "PMID:28509303",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28509303",
+        "description": "A novel mutation in the uromodulin gene in a Japanese family with a mild phenotype of familial juvenile hyperuricemic nephropathy"
       }
     ]
   }

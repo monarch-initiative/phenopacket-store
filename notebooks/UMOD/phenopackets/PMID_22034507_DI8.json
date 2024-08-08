@@ -1,7 +1,7 @@
 {
-  "id": "PMID_15673476_proband",
+  "id": "PMID_22034507_DI_8",
   "subject": {
-    "id": "proband",
+    "id": "DI.8",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P49Y"
@@ -12,35 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000108",
-        "label": "Renal corticomedullary cysts"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003259",
-        "label": "Elevated circulating creatinine concentration"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P27Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012623",
-        "label": "Stage 1 chronic kidney disease"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P27Y"
-        }
+        "id": "HP:0000822",
+        "label": "Hypertension"
       }
     },
     {
@@ -48,38 +21,12 @@
         "id": "HP:0003774",
         "label": "Stage 5 chronic kidney disease"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P49Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001997",
-        "label": "Gout"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P24Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002149",
-        "label": "Hyperuricemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P24Y"
-        }
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "DI.8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,11 +35,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "DI.8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RshQsRSLCTFAfaUYKJTcbKgsi",
+                "id": "var_UeYoPFrktBVTXUQjNTLTKESsm",
                 "geneContext": {
                   "valueId": "HGNC:12559",
                   "symbol": "UMOD"
@@ -100,19 +47,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003361.4:c.920A>C"
+                    "value": "NM_003361.4:c.278_289delinsCCGCCTCCT"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.20348276T>G"
+                    "value": "NC_000016.10:g.20349012_20349023delinsAGGAGGCGG"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "20348276",
-                  "ref": "T",
-                  "alt": "G"
+                  "pos": "20349012",
+                  "ref": "CTTCGGGGCAGA",
+                  "alt": "AGGAGGCGG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -134,13 +81,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P49Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-08T05:49:17.076527118Z",
+    "created": "2024-08-08T05:49:17.150042057Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -187,9 +134,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:15673476",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15673476",
-        "description": "A novel heterozygous missense mutation in the UMOD gene responsible for Familial Juvenile Hyperuricemic Nephropathy"
+        "id": "PMID:22034507",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22034507",
+        "description": "Characterization of a recurrent in-frame UMOD indel mutation causing late-onset autosomal dominant end-stage renal failure"
       }
     ]
   }
