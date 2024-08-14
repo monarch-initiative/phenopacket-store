@@ -1,0 +1,145 @@
+{
+  "id": "PMID_29290338_Family_UAB_R0892__individual_RS",
+  "subject": {
+    "id": "Family UAB-R0892 ** individual RS",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P26Y"
+      }
+    },
+    "vitalStatus": {},
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000997",
+        "label": "Axillary freckling"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007565",
+        "label": "Multiple cafe-au-lait spots"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030052",
+        "label": "Inguinal freckling"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Family UAB-R0892 ** individual RS",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162200",
+          "label": "Neurofibromatosis, type 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family UAB-R0892 ** individual RS",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_YtdehwviVAkcuMCSpYGIMSYtx",
+                "geneContext": {
+                  "valueId": "HGNC:7765",
+                  "symbol": "NF1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042492.3:c.2540T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.31229155T>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": "31229155",
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:162200",
+        "label": "Neurofibromatosis, type 1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-14T11:32:48.469644069Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:29290338",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29290338",
+        "description": "Genotype-Phenotype Correlation in NF1: Evidence for a More Severe Phenotype Associated with Missense Mutations Affecting NF1 Codons 844-848"
+      }
+    ]
+  }
+}
