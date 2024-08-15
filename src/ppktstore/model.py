@@ -37,6 +37,11 @@ class EagerPhenopacketInfo(PhenopacketInfo):
     Phenopacket info with eagerly loaded phenopacket.
     """
 
+    @staticmethod
+    def from_path(path: str, pp_path: pathlib.Path):
+        pp = Parse(pp_path.read_text(), Phenopacket())
+        return EagerPhenopacketInfo(path, pp)
+
     def __init__(
         self,
         path: str,
@@ -102,6 +107,7 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
     @staticmethod
     def from_release_zip(
         zip_file: zipfile.ZipFile,
+        strategy: typing.Literal["eager", "lazy"] = "eager",
     ):
         """
         Read `PhenopacketStore` from a release ZIP archive.
@@ -110,7 +116,13 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
         created by :class:`ppktstore.archive.PhenopacketStoreArchiver`.
         Only JSON phenopacket format is supported at the moment.
 
-        The phenopackets are loaded on demand (in lazy fashion).
+        The phenopackets can be loaded eagerly or in a lazy fashion.
+        The `'eager'` strategy will load all phenopackets during the load
+        at the expense of the loading time and higher RAM usage.
+        The `'lazy'` strategy only scans the ZIP for phenopackets
+        and the phenopacket parsing is done on demand, only when accessing
+        the :attr:`PhenopacketInfo.phenopacket` property. 
+        In result, the lazy loading will only succeed if the ZIP handle is opened.
 
         .. note::
 
@@ -122,8 +134,11 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
           ...   # Do things here...
 
         :param zip_file: a ZIP archive handle.
+        :param strategy: a `str` with strategy for loading phenopackets, one of `{'eager', 'lazy'}`.
         :returns: :class:`PhenopacketStore` with data read from the archive.
         """
+        assert strategy in ('eager', 'lazy'), f'Strategy must be either `eager` or `lazy`: {strategy}'
+
         root = zipfile.Path(zip_file)
 
         # Prepare paths to cohort folders
@@ -153,10 +168,15 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
                 pp_infos = []
                 for pp_path in cohort2pp_paths[cohort]:
                     path = pp_path.relative_to(cohort_path)
-                    pi = ZipPhenopacketInfo(
-                        path=path,
-                        pp_path=pp_path,
-                    )
+                    if strategy == "eager":
+                        pi = EagerPhenopacketInfo.from_path(path, pp_path)
+                    elif strategy == "lazy":
+                        pi = ZipPhenopacketInfo(
+                            path=path,
+                            pp_path=pp_path,
+                        )
+                    else:
+                        raise ValueError('Should not happen!')
                     pp_infos.append(pi)
 
                 ci = CohortInfo(
@@ -284,6 +304,7 @@ class ZipPhenopacketInfo(PhenopacketInfo):
     """
     Loads phenopacket from a Zip file on demand.
     """
+
     # NOT PART OF THE PUBLIC API
 
     def __init__(
@@ -303,7 +324,7 @@ class ZipPhenopacketInfo(PhenopacketInfo):
         return Parse(self._pp_path.read_text(), Phenopacket())
 
     def __str__(self) -> str:
-        return f'ZipPhenopacketInfo(path={self._pp_path})'
+        return f"ZipPhenopacketInfo(path={self._pp_path})"
 
     def __repr__(self) -> str:
-        return f'ZipPhenopacketInfo(path={self._path}, pp_path={self._pp_path})'
+        return f"ZipPhenopacketInfo(path={self._path}, pp_path={self._pp_path})"
