@@ -98,6 +98,12 @@ class CohortInfo:
     The cohort phenopacket infos.
     """
 
+    def iter_phenopackets(self) -> typing.Iterator[Phenopacket]:
+        """
+        Get an iterator with all phenopackets of the cohort.
+        """
+        return map(lambda pi: pi.phenopacket, self.phenopackets)
+
     def __len__(self) -> int:
         return len(self.phenopackets)
 
@@ -121,7 +127,7 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
         at the expense of the loading time and higher RAM usage.
         The `'lazy'` strategy only scans the ZIP for phenopackets
         and the phenopacket parsing is done on demand, only when accessing
-        the :attr:`PhenopacketInfo.phenopacket` property. 
+        the :attr:`PhenopacketInfo.phenopacket` property.
         In result, the lazy loading will only succeed if the ZIP handle is opened.
 
         .. note::
@@ -137,7 +143,10 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
         :param strategy: a `str` with strategy for loading phenopackets, one of `{'eager', 'lazy'}`.
         :returns: :class:`PhenopacketStore` with data read from the archive.
         """
-        assert strategy in ('eager', 'lazy'), f'Strategy must be either `eager` or `lazy`: {strategy}'
+        assert strategy in (
+            "eager",
+            "lazy",
+        ), f"Strategy must be either `eager` or `lazy`: {strategy}"
 
         root = zipfile.Path(zip_file)
 
@@ -175,8 +184,6 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
                             path=path,
                             pp_path=pp_path,
                         )
-                    else:
-                        raise ValueError('Should not happen!')
                     pp_infos.append(pi)
 
                 ci = CohortInfo(
@@ -259,6 +266,17 @@ class PhenopacketStore(metaclass=abc.ABCMeta):
         name: str,
     ) -> CohortInfo:
         pass
+
+    def iter_cohort_phenopackets(
+        self,
+        name: str,
+    ) -> typing.Iterator[Phenopacket]:
+        """
+        Get an iterator with all phenopackets of a cohort.
+
+        :param name: a `str` with the cohort name.
+        """
+        return self.cohort_for_name(name).iter_phenopackets()
 
     def cohort_names(self) -> typing.Iterator[str]:
         return map(lambda ci: ci.name, self.cohorts())
