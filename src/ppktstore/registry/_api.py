@@ -3,6 +3,7 @@ import io
 import logging
 import os
 import pathlib
+import shutil
 import typing
 import zipfile
 
@@ -47,8 +48,9 @@ class RemotePhenopacketStoreService(metaclass=abc.ABCMeta):
 
 class ZipPhenopacketStoreAdaptor:
     """
-    A context manager for handling opening and closing
-    of the Phenopacket Store release ZIP handle.
+    A context manager for handling opening and closing of the Phenopacket Store release ZIP handle.
+
+    Phenopackets are loaded in a lazy fashion - no phenopackets are loaded upon store opening.
     """
 
     def __init__(
@@ -61,7 +63,7 @@ class ZipPhenopacketStoreAdaptor:
 
     def __enter__(self) -> PhenopacketStore:
         assert self._zip_file is None
-        
+
         self._zip_file = zipfile.ZipFile(self._path)
         return PhenopacketStore.from_release_zip(
             zip_file=self._zip_file,
@@ -106,6 +108,25 @@ class PhenopacketStoreRegistry:
         self,
         release: typing.Optional[str] = None,
     ) -> ZipPhenopacketStoreAdaptor:
+        """
+        Open Phenopacket Store.
+
+        Provides an adaptor object that should be used as a context manager to ensure proper resource cleanup.
+
+        **Example**
+
+        Let's load all phenopackets of the *SUOX* cohort from the `0.1.18` release of Phenopacket Store:
+
+        >>> from ppktstore.registry import configure_phenopacket_registry
+        >>> registry = configure_phenopacket_registry()
+        >>> with registry.open_phenopacket_store(release="0.1.18") as ps:  # doctest: +SKIP
+        ...   phenopackets = list(ps.iter_cohort_phenopackets("SUOX"))
+        >>> len(phenopackets)  # doctest: +SKIP
+        35
+
+        :param release: a `str` with Phenopacket Store release tag (e.g. `0.1.18`) or `None`
+          if the *latest* release should be loaded.
+        """
         if release is None:
             release = self._fetch_latest_release_if_missing()
 
@@ -126,21 +147,20 @@ class PhenopacketStoreRegistry:
         # Provide PS adaptor
         return ZipPhenopacketStoreAdaptor(fpath_ps_release_zip)
 
-    def _fetch_latest_release_if_missing(
+    def clear(
         self,
-    ) -> str:
+    ):
         """
-        Retrieve the latest Phenopacket Store release tag.
-
-        :return: a `str` with the latest release tag
-        :raises ValueError` if unable to retrieve the latest release tag from the release service
+        Clear all Phenopacket Store releases.
         """
+        to_delete = os.listdir(self._data_dir)
 
-        # Fetch the latest release tag, assuming the lexicographic tag sort order.
-        latest_tag = max(self._release_service.fetch_tags(), default=None)
-        if latest_tag is None:
-            raise ValueError("Unable to retrieve the latest tag")
-        return latest_tag
+        for item in to_delete:
+            full_path = os.path.join(self._data_dir, item)
+            if os.path.isdir(full_path):
+                shutil.rmtree(full_path)
+            else:
+                os.remove(full_path)
 
     def resolve_registry_path(
         self,
@@ -168,3 +188,19 @@ class PhenopacketStoreRegistry:
             release = self._fetch_latest_release_if_missing()
 
         return pathlib.Path(os.path.join(self._data_dir, f"{release}.zip"))
+
+    def _fetch_latest_release_if_missing(
+        self,
+    ) -> str:
+        """
+        Retrieve the latest Phenopacket Store release tag.
+
+        :return: a `str` with the latest release tag
+        :raises ValueError` if unable to retrieve the latest release tag from the release service
+        """
+
+        # Fetch the latest release tag, assuming the lexicographic tag sort order.
+        latest_tag = max(self._release_service.fetch_tags(), default=None)
+        if latest_tag is None:
+            raise ValueError("Unable to retrieve the latest tag")
+        return latest_tag
