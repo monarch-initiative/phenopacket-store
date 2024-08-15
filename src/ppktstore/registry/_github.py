@@ -63,7 +63,8 @@ class GitHubRemotePhenopacketStoreService(RemotePhenopacketStoreService):
         self._logger = logging.getLogger(__name__)
         self._timeout = timeout
         self._ctx = ssl.create_default_context(cafile=certifi.where())
-        self._release_url = "https://github.com/monarch-initiative/phenopacket-store/releases/download/{release}/all_phenopackets.zip"
+        self._release_url = \
+            "https://github.com/monarch-initiative/phenopacket-store/releases/download/{release}/all_phenopackets.zip"
 
     def fetch_resource(
         self,
