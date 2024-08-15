@@ -1,0 +1,201 @@
+{
+  "id": "PMID_15575003_index_patient_III_2",
+  "subject": {
+    "id": "index patient III.2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P57Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003259",
+        "label": "Elevated circulating creatinine concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012622",
+        "label": "Chronic kidney disease"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P57Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0025710",
+          "label": "Late young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000089",
+        "label": "Renal hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001997",
+        "label": "Gout"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "index patient III.2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:162000",
+          "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "index patient III.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_dwbJrfYLgwcaPkwsLRgAlALrG",
+                "geneContext": {
+                  "valueId": "HGNC:12559",
+                  "symbol": "UMOD"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003361.4:c.1039T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.20346269A>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": "20346269",
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:162000",
+        "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-08-08T05:49:17.096614837Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-07-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:15575003",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15575003",
+        "description": "Functional consequences of a novel uromodulin mutation in a family with familial juvenile hyperuricaemic nephropathy"
+      }
+    ]
+  }
+}
