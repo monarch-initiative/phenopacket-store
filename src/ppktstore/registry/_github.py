@@ -18,17 +18,6 @@ class GitHubPhenopacketStoreReleaseService(PhenopacketStoreReleaseService):
     def __init__(
         self,
         timeout: float = 10.0,
-        yanked_versions: typing.Sequence[str] = (
-            "0.1.1",
-            "0.1.2",
-            "0.1.3",
-            "0.1.5",
-            "0.1.7",
-            "0.1.8",
-            "0.1.9",
-            "0.1.10",
-            "0.1.11",
-        ),
     ):
         self._logger = logging.getLogger(__name__)
         self._timeout = timeout
@@ -36,7 +25,6 @@ class GitHubPhenopacketStoreReleaseService(PhenopacketStoreReleaseService):
             "https://api.github.com/repos/monarch-initiative/phenopacket-store/tags"
         )
         self._ctx = ssl.create_default_context(cafile=certifi.where())
-        self._yanked = tuple(yanked_versions)
 
     def fetch_tags(self) -> typing.Iterable[str]:
         return self._get_tag_names()
@@ -58,7 +46,7 @@ class GitHubPhenopacketStoreReleaseService(PhenopacketStoreReleaseService):
         else:
             self._logger.debug("Fetched %d tags", len(tags))
 
-        return tuple(tag["name"] for tag in tags if tag["name"] not in self._yanked)
+        return tuple(tag["name"] for tag in tags)
 
 
 class GitHubRemotePhenopacketStoreService(RemotePhenopacketStoreService):
