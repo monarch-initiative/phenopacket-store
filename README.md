@@ -22,33 +22,36 @@ https://github.com/monarch-initiative/phenopacket-store/releases/latest/download
 
 ## Python support
 
-We provide special support for Python in terms of `ppktstore` library to simplify using Phenopacket Store data 
-in phenopacket-driven applications.
+We provide special support for Python with [Phenopacket Store Toolkit](https://github.com/monarch-initiative/phenopacket-store-toolkit)
+to simplify using the Phenopacket Store data in the downstream applications.
 
-The `ppktstore` library is available to install from PyPi:
+The toolkit is available for installation from PyPi:
 
 ```shell
-python3 -m pip install ppktstore
+python3 -m pip install phenopacket-store-toolkit
 ```
 
-After installation, the library can be used to quickly load phenopackets.
+The toolkit makes loading phenopackets super easy.
 First, we create Phenopacket Store registry, an object for managing local data files
 of Phenopacket Store releases:
 
->>> from ppktstore.registry import configure_phenopacket_registry
->>> registry = configure_phenopacket_registry()
+```python
+from ppktstore.registry import configure_phenopacket_registry
+registry = configure_phenopacket_registry()
+```
 
-We can use `registry` to load phenopackets of a cohort, e.g. *SUOX* of release `0.1.18`:
+By default, the `registry` keeps the files in data directory at `$HOME/.phenopacket-store` (or similar on Windows), but this can be configured if desired.
 
->>> with registry.open_phenopacket_store(release="0.1.18") as ps:
-...   phenopackets = list(ps.iter_cohort_phenopackets("SUOX"))
->>> len(phenopackets)
-35
+Then, we can use `registry` to load phenopackets of a cohort, e.g. *SUOX* of release `0.1.18`:
 
-The registry peeks into the local data folder to check the existence of the ZIP file for release `0.1.18`.
-If the file is missing, the registry will download the file from Github. Then, Phenopacket Store `ps` is opened 
-and handed over as a context manager. The context manager ensures a proper closing of the ZIP file.
-Last, we load 35 *SUOX* phenopackets.
+```python
+with registry.open_phenopacket_store(release="0.1.18") as ps:
+  phenopackets = list(ps.iter_cohort_phenopackets("SUOX"))
+assert len(phenopackets) == 35
+```
+
+The registry peeks into the data directory to check if the `0.1.18` release ZIP file has already been downloaded.
+If absent, the registry will download the ZIP file from Github. Then, we open Phenopacket Store as `ps` and we load 35 phenopackets of *SUOX* cohort.
 
 
 ## Contributing
