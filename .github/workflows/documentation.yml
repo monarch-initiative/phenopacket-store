@@ -27,7 +27,7 @@ jobs:
 
       - name: Install docs dependencies
         run: |
-          python3 -m pip install phenopacket-store-toolkit[release]
+          python3 -m pip install phenopacket-store-toolkit[release] mkdocstrings[python] mkdocs-material[imaging] mkdocs-material-extensions pillow cairosvg
 
       - name: Generate reports
         run: |
