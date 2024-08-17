@@ -22,7 +22,7 @@ jobs:
             python-version: '3.12'
         - name: Install Phenopacket store package
           run: |
-            python3 -m pip install .
+            python3 -m pip install phenopacket-store-toolkit[release]
         - name: Run phenopacket Q/C
           run: |
             python3 -m ppktstore qc --notebook-dir "${NOTEBOOK_DIR}"
