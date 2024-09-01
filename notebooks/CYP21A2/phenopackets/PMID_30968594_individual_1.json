@@ -1,0 +1,333 @@
+{
+  "id": "PMID_30968594_individual_1",
+  "subject": {
+    "id": "individual 1",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000953",
+        "label": "Hyperpigmentation of the skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030088",
+        "label": "Increased serum testosterone level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003154",
+        "label": "Increased circulating ACTH level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008163",
+        "label": "Decreased circulating cortisol level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000870",
+        "label": "Increased circulating prolactin concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025133",
+        "label": "Abnormal serum estradiol"
+      },
+      "excluded": true
+    }
+  ],
+  "measurements": [
+    {
+      "assay": {
+        "id": "LOINC:1668-3",
+        "label": "17-Hydroxyprogesterone[Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 800.0
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2986-8",
+        "label": "Testosterone[Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 127.0,
+          "referenceRange": {
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            },
+            "low": 3.0,
+            "high": 10.0
+          }
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2141-0",
+        "label": "Corticotropin (P) [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 180.2,
+          "referenceRange": {
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            },
+            "low": 10.0,
+            "high": 60.0
+          }
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2143-6",
+        "label": "Cortisol [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 116.6,
+          "referenceRange": {
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            },
+            "low": 140.0,
+            "high": 690.0
+          }
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2842-3",
+        "label": "Prolactin [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 52.93,
+          "referenceRange": {
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            },
+            "low": 2.0,
+            "high": 15.0
+          }
+        }
+      }
+    },
+    {
+      "assay": {
+        "id": "LOINC:2243-4",
+        "label": "Estradiol (E2) [Mass/Vol]"
+      },
+      "value": {
+        "quantity": {
+          "unit": {
+            "id": "UCUM:ng/dL",
+            "label": "nanogram per deciliter"
+          },
+          "value": 23.71,
+          "referenceRange": {
+            "unit": {
+              "id": "UCUM:ng/dL",
+              "label": "nanogram per deciliter"
+            },
+            "low": 10.0,
+            "high": 50.0
+          }
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "individual 1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:201910",
+          "label": "Adrenal hyperplasia, congenital, due to 21-hydroxylase deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_MXqLtUjBkKNafWWADHeILYipZ",
+                "geneContext": {
+                  "valueId": "HGNC:2600",
+                  "symbol": "CYP21A2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000500.9:c.955C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.32040421C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": "32040421",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "individual 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_EUdUDugGOeBAYjOgRoedvYUbB",
+                "label": "DEL exon1-7",
+                "geneContext": {
+                  "valueId": "HGNC:2600",
+                  "symbol": "CYP21A2"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:201910",
+        "label": "Adrenal hyperplasia, congenital, due to 21-hydroxylase deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P20D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-01T06:51:28.000153013Z",
+    "createdBy": "ORCID:0000-0002-5648-2155",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "August 1, 2024",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "loinc",
+        "name": "Logical Observation Identifier Names and Codes",
+        "url": "https://loinc.org/",
+        "version": "2.78",
+        "namespacePrefix": "LOINC",
+        "iriPrefix": "http://purl.bioontology.org/ontology/LOINC_"
+      },
+      {
+        "id": "ucum",
+        "name": "Unified Code for Units of Measure",
+        "url": "https://ucum.org/",
+        "version": "1.7",
+        "namespacePrefix": "UCUM",
+        "iriPrefix": "https://ucum.org/UCUM_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:30968594",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/30968594",
+        "description": "Genotype-phenotype correlation study and mutational and hormonal analysis in a Chinese cohort with 21-hydroxylase deficiency"
+      }
+    ]
+  }
+}
