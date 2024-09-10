@@ -1,0 +1,250 @@
+{
+  "id": "PMID_28698159_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001290",
+        "label": "Generalized hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006855",
+        "label": "Cerebellar vermis atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007676",
+        "label": "Hypoplasia of the iris"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001510",
+        "label": "Growth delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Intellectual disability, moderate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010864",
+        "label": "Intellectual disability, severe"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000657",
+        "label": "Oculomotor apraxia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007256",
+        "label": "Abnormal pyramidal sign"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007928",
+        "label": "Abnormal flash visual evoked potentials"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "P2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:206700",
+          "label": "Gillespie syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_vBAFUvJuzhAGbwPpgdRjgbFag",
+                "geneContext": {
+                  "valueId": "HGNC:6180",
+                  "symbol": "ITPR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378452.1:c.7831_7833del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.4815182_4815184del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "4815176",
+                  "ref": "CAGA",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:206700",
+        "label": "Gillespie syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T10:08:40.619760036Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:28698159",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28698159",
+        "description": "Identification of novel and hotspot mutations in the channel domain of ITPR1 in two patients with Gillespie syndrome"
+      }
+    ]
+  }
+}

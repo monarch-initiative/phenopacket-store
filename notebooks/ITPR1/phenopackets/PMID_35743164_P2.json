@@ -1,0 +1,170 @@
+{
+  "id": "PMID_35743164_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "vitalStatus": {},
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100275",
+        "label": "Diffuse cerebellar atrophy"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "P2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:117360",
+          "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_TfmtKpyQuowKAFDLXAFefjyWo",
+                "geneContext": {
+                  "valueId": "HGNC:6180",
+                  "symbol": "ITPR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378452.1:c.2129G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.4670851G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "4670851",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:117360",
+        "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T08:21:08.596210956Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:35743164",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35743164",
+        "description": "Superior Cerebellar Atrophy: An Imaging Clue to Diagnose ITPR1-Related Disorders"
+      }
+    ]
+  }
+}

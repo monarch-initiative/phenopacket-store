@@ -1,0 +1,270 @@
+{
+  "id": "PMID_27062503_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y10M"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025336",
+        "label": "Delayed ability to sit"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001350",
+        "label": "Slurred speech"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000657",
+        "label": "Oculomotor apraxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007256",
+        "label": "Abnormal pyramidal sign"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002071",
+        "label": "Abnormality of extrapyramidal motor function"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009830",
+        "label": "Peripheral neuropathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007366",
+        "label": "Atrophy/Degeneration affecting the brainstem"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007369",
+        "label": "Atrophy/Degeneration affecting the cerebrum"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "P2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:117360",
+          "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_fdrfrxzuNEaMwwZlwXeMFbIKV",
+                "geneContext": {
+                  "valueId": "HGNC:6180",
+                  "symbol": "ITPR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378452.1:c.722G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.4645595G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "4645595",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:117360",
+        "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T08:21:08.584613800Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:27062503",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/27062503",
+        "description": "Mutations in the IRBIT domain of ITPR1 are a frequent cause of autosomal dominant nonprogressive congenital ataxia"
+      }
+    ]
+  }
+}

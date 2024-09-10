@@ -1,0 +1,216 @@
+{
+  "id": "PMID_25981959_Case_3",
+  "subject": {
+    "id": "Case 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025336",
+        "label": "Delayed ability to sit"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033257",
+        "label": "Delayed ability to walk with support"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033128",
+        "label": "Delayed ability to crawl"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Intellectual disability, moderate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000474",
+        "label": "Thickened nuchal skin fold"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002421",
+        "label": "Poor head control"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001622",
+        "label": "Premature birth"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case 3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:117360",
+          "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_yIcHnMLoggTPUtLJpWUFYHPxb",
+                "geneContext": {
+                  "valueId": "HGNC:6180",
+                  "symbol": "ITPR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378452.1:c.4459T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.4699864T>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "4699864",
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:117360",
+        "label": "Spinocerebellar ataxia 29, congenital nonprogressive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-10T08:21:08.581092119Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:25981959",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25981959",
+        "description": "De novo point mutations in patients diagnosed with ataxic cerebral palsy"
+      }
+    ]
+  }
+}
