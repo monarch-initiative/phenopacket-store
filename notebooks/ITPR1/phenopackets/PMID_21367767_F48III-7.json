@@ -6,6 +6,9 @@
       "age": {
         "iso8601duration": "P41Y"
       }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
     }
   },
   "phenotypicFeatures": [
@@ -28,8 +31,20 @@
     },
     {
       "type": {
+        "id": "HP:0002080",
+        "label": "Intention tremor"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001260",
         "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002406",
+        "label": "Limb dysmetria"
       }
     },
     {
@@ -52,12 +67,6 @@
     },
     {
       "type": {
-        "id": "HP:0002406",
-        "label": "Limb dysmetria"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0006855",
         "label": "Cerebellar vermis atrophy"
       }
@@ -72,12 +81,6 @@
       "type": {
         "id": "HP:0002015",
         "label": "Dysphagia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002080",
-        "label": "Intention tremor"
       }
     },
     {
@@ -107,6 +110,13 @@
         "label": "Spasticity"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
@@ -124,7 +134,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_WHYbWQTSHqexZkrexgsNkLjJo",
+                "id": "var_RMLVuAaOyJyAyqUTLKbDvfCfO",
                 "label": "DEL219kb",
                 "geneContext": {
                   "valueId": "HGNC:6180",
@@ -160,7 +170,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-17T12:43:12.100178003Z",
+    "created": "2024-09-10T08:21:00.852867126Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -199,7 +209,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
