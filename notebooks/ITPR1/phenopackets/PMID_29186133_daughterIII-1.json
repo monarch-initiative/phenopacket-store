@@ -1,0 +1,188 @@
+{
+  "id": "PMID_29186133_daughter_III_1",
+  "subject": {
+    "id": "daughter III-1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P13Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031629",
+        "label": "Impaired tandem gait"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006855",
+        "label": "Cerebellar vermis atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008278",
+        "label": "Cerebellar cortical atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "daughter III-1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:606658",
+          "label": "Spinocerebellar ataxia 15"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "daughter III-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_DRVrsmYYPCEDNjpLqQQzrCjMK",
+                "geneContext": {
+                  "valueId": "HGNC:6180",
+                  "symbol": "ITPR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378452.1:c.7766T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.4815117T>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": "4815117",
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:606658",
+        "label": "Spinocerebellar ataxia 15"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-17T08:25:58.791359901Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:29186133",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29186133",
+        "description": "Mutational analysis of ITPR1 in a Taiwanese cohort with cerebellar ataxias"
+      }
+    ]
+  }
+}
