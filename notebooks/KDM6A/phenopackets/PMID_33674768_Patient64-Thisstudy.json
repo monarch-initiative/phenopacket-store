@@ -1,40 +1,32 @@
 {
-  "id": "PMID_30509212_male",
+  "id": "PMID_33674768_Patient_64_This_study",
   "subject": {
-    "id": "male",
+    "id": "Patient 64-This study",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3M"
+        "iso8601duration": "P6Y6M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "MALE"
+    "vitalStatus": {},
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0006956",
-        "label": "Lateral ventricle dilatation"
+        "id": "HP:0001998",
+        "label": "Neonatal hypoglycemia"
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0030674",
-          "label": "Antenatal onset"
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0000238",
-        "label": "Hydrocephalus"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0030674",
-          "label": "Antenatal onset"
-        }
+        "id": "HP:0001250",
+        "label": "Seizure"
       }
     },
     {
@@ -45,62 +37,76 @@
     },
     {
       "type": {
-        "id": "HP:0000437",
-        "label": "Depressed nasal tip"
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
       }
     },
     {
       "type": {
-        "id": "HP:0000637",
-        "label": "Long palpebral fissure"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
       }
     },
     {
       "type": {
-        "id": "HP:0007655",
-        "label": "Eversion of lateral third of lower eyelids"
+        "id": "HP:0001212",
+        "label": "Prominent fingertip pads"
       }
     },
     {
       "type": {
-        "id": "HP:0005338",
-        "label": "Sparse lateral eyebrow"
+        "id": "HP:0000998",
+        "label": "Hypertrichosis"
       }
     },
     {
       "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
       }
     },
     {
       "type": {
-        "id": "HP:0000411",
-        "label": "Protruding ear"
+        "id": "HP:0002719",
+        "label": "Recurrent infections"
       }
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
+        "id": "HP:0030084",
+        "label": "Clinodactyly"
       }
     },
     {
       "type": {
-        "id": "HP:0000347",
-        "label": "Micrognathia"
+        "id": "HP:0000189",
+        "label": "Narrow palate"
       }
     },
     {
       "type": {
-        "id": "HP:0008897",
-        "label": "Postnatal growth retardation"
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "male",
+      "id": "Patient 64-This study",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -109,11 +115,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "male",
+            "subjectOrBiosampleId": "Patient 64-This study",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RUbCwnNqfHtMFRoZLjeXOCPJk",
+                "id": "var_cvLdHJdtxZKtRqRLMpiFsrsST",
                 "geneContext": {
                   "valueId": "HGNC:12637",
                   "symbol": "KDM6A"
@@ -121,18 +127,18 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001291415.2:c.335-1G>T"
+                    "value": "NM_001291415.2:c.3661_3663del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.44974665G>T"
+                    "value": "NC_000023.11:g.45085936_45085938del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "44974665",
-                  "ref": "G",
+                  "pos": "45085930",
+                  "ref": "TTTG",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -155,14 +161,14 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0030674",
-          "label": "Antenatal onset"
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-09-20T20:23:59.349138975Z",
+    "created": "2024-09-20T20:23:59.388639926Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -209,9 +215,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:30509212",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30509212",
-        "description": "Novel KDM6A splice-site mutation in kabuki syndrome with congenital hydrocephalus: a case report"
+        "id": "PMID:33674768",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/33674768",
+        "description": "Clinical delineation, sex differences, and genotype-phenotype correlation in pathogenic KDM6A variants causing X-linked Kabuki syndrome type 2"
       }
     ]
   }
