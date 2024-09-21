@@ -1,0 +1,245 @@
+{
+  "id": "PMID_36395340_Pedigree_A_II_1",
+  "subject": {
+    "id": "Pedigree A. II.1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P45Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040185",
+        "label": "Macrothrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001902",
+        "label": "Giant platelets"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031689",
+        "label": "Megakaryocyte dysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001704",
+        "label": "Tricuspid valve prolapse"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001882",
+        "label": "Leukopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001875",
+        "label": "Neutropenia"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Pedigree A. II.1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620776",
+          "label": "Thrombocytopenia 13, syndromic"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Pedigree A. II.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_bSHkQnLFPkfpwsqovfEObrexG",
+                "geneContext": {
+                  "valueId": "HGNC:4116",
+                  "symbol": "GALE"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001008216.2:c.449C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.23797774G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "23797774",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Pedigree A. II.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_TdsjuZwFSjUAXtUwKWLXAGNAk",
+                "geneContext": {
+                  "valueId": "HGNC:4116",
+                  "symbol": "GALE"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001008216.2:c.230_231insTGTT"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.23798623_23798624insCAAA"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": "23798621",
+                  "ref": "G",
+                  "alt": "GAACA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620776",
+        "label": "Thrombocytopenia 13, syndromic"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-09-21T13:35:10.092592954Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36395340",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36395340",
+        "description": "Novel variants in GALE cause syndromic macrothrombocytopenia by disrupting glycosylation and thrombopoiesis"
+      }
+    ]
+  }
+}
