@@ -1,59 +1,70 @@
 {
-  "id": "PMID_15731757_Family_1_I_2",
+  "id": "PMID_19883511_Patient_2",
   "subject": {
-    "id": "Family 1 I-2",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P29Y"
+        "iso8601duration": "P48Y"
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P29Y"
-        }
-      }
+      "status": "ALIVE"
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002616",
         "label": "Aortic root aneurysm"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0002857",
-        "label": "Genu valgum"
+        "id": "HP:0031869",
+        "label": "Recurrent joint dislocation"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
-      },
-      "excluded": true
+        "id": "HP:0000977",
+        "label": "Soft skin"
+      }
     },
     {
       "type": {
-        "id": "HP:0001083",
-        "label": "Ectopia lentis"
-      },
-      "excluded": true
+        "id": "HP:0010648",
+        "label": "Dermal translucency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002619",
+        "label": "Varicose veins"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 1 I-2",
+      "id": "Patient 2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,11 +73,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 1 I-2",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_DhNmBJLifXgUpeYgZDIaQkPFh",
+                "id": "var_csBefuACYxFLHhGBCVSxYkClY",
                 "geneContext": {
                   "valueId": "HGNC:11773",
                   "symbol": "TGFBR2"
@@ -74,19 +85,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003242.6:c.1063G>C"
+                    "value": "NM_003242.6:c.1529T>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.30672246G>C"
+                    "value": "NC_000003.12:g.30691424T>G"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "30672246",
-                  "ref": "G",
-                  "alt": "C"
+                  "pos": "30691424",
+                  "ref": "T",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -105,11 +116,17 @@
       "term": {
         "id": "OMIM:610168",
         "label": "Loeys-Dietz syndrome 2"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-09-23T05:18:08.634800195Z",
+    "created": "2024-09-23T05:18:08.663124084Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -156,9 +173,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:15731757",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15731757",
-        "description": "A syndrome of altered cardiovascular, craniofacial, neurocognitive and skeletal development caused by mutations in TGFBR1 or TGFBR2"
+        "id": "PMID:19883511",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/19883511",
+        "description": "Loeys-Dietz syndrome type I and type II: clinical findings and novel mutations in two Italian patients"
       }
     ]
   }
