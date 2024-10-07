@@ -4,7 +4,15 @@
     "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P5Y8M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P5Y8M"
+        }
       }
     },
     "sex": "FEMALE"
@@ -12,20 +20,37 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000077",
-        "label": "Abnormality of the kidney"
+        "id": "HP:0000518",
+        "label": "Cataract"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000496",
-        "label": "Abnormality of eye movement"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     },
     {
@@ -36,14 +61,14 @@
     },
     {
       "type": {
-        "id": "HP:0001627",
-        "label": "Abnormal heart morphology"
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
       }
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
+        "id": "HP:0004976",
+        "label": "Knee dislocation"
       }
     },
     {
@@ -54,21 +79,127 @@
     },
     {
       "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
+        "id": "HP:0010864",
+        "label": "Intellectual disability, severe"
       }
     },
     {
       "type": {
-        "id": "HP:0001371",
-        "label": "Flexion contracture"
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000826",
+        "label": "Precocious puberty"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002870",
+        "label": "Obstructive sleep apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012422",
+        "label": "Villous hypertrophy of choroid plexus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410170",
+        "label": "Hippocampal atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004942",
+        "label": "Aortic aneurysm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000076",
+        "label": "Vesicoureteral reflux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000078",
-        "label": "Abnormality of the genital system"
+        "id": "HP:0000248",
+        "label": "Brachycephaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001601",
+        "label": "Laryngomalacia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001385",
+        "label": "Hip dysplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
       },
       "excluded": true
     }
@@ -88,7 +219,7 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_loyyYSxNkLUAkPYjVDVnNzYeg",
+                "id": "var_KECwsdiHWnTjoFEJpyvROqUAR",
                 "geneContext": {
                   "valueId": "HGNC:11103",
                   "symbol": "SMARCB1"
@@ -96,7 +227,7 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003073.3:c.110G>A"
+                    "value": "NM_003073.5:c.110G>A"
                   },
                   {
                     "syntax": "hgvs.g",
@@ -127,12 +258,18 @@
       "term": {
         "id": "OMIM:614608",
         "label": "Coffin-Siris syndrome 3"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-28T17:15:16.099287033Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2024-10-07T06:03:20.910430908Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -170,7 +307,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
