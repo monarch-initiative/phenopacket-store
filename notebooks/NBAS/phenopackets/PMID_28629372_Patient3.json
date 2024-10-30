@@ -1,39 +1,34 @@
 {
-  "id": "PMID_26578240_individual_II_2",
+  "id": "PMID_28629372_Patient_3",
   "subject": {
-    "id": "individual II.2",
+    "id": "Patient 3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y8M"
+        "iso8601duration": "P2Y4M"
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P3Y8M"
-        }
-      }
+      "status": "ALIVE"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002756",
-        "label": "Pathologic fracture"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
-        }
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
       }
     },
     {
       "type": {
-        "id": "HP:0002910",
-        "label": "Elevated circulating hepatic transaminase concentration"
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
       }
     },
     {
@@ -56,93 +51,21 @@
     },
     {
       "type": {
-        "id": "HP:0000270",
-        "label": "Delayed cranial suture closure"
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis"
       }
     },
     {
       "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000307",
-        "label": "Pointed chin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000494",
-        "label": "Downslanted palpebral fissures"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000506",
-        "label": "Telecanthus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000527",
-        "label": "Long eyelashes"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000212",
-        "label": "Gingival overgrowth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000470",
-        "label": "Short neck"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000938",
-        "label": "Osteopenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011447",
-        "label": "Hyposegmentation of neutrophil nuclei"
+        "id": "HP:0004322",
+        "label": "Short stature"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "individual II.2",
+      "id": "Patient 3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -151,11 +74,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual II.2",
+            "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_ZoPPozrfDpEcKMLaxmYqvIzNj",
+                "id": "var_KhUQGIRRUgnoQzFzmRZRKILzZ",
                 "geneContext": {
                   "valueId": "HGNC:15625",
                   "symbol": "NBAS"
@@ -163,24 +86,59 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_015909.4:c.409C>T"
+                    "value": "NM_015909.4:c.2407G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.15539327G>A"
+                    "value": "NC_000002.12:g.15427727C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "15539327",
-                  "ref": "G",
+                  "pos": "15427727",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_FJQasIiHHNpzcXrrmpQNNKGMj",
+                "geneContext": {
+                  "valueId": "HGNC:15625",
+                  "symbol": "NBAS"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015909.4:c.5389+1G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.15276850C>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": "15276850",
+                  "ref": "C",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -196,15 +154,14 @@
         "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
+        "age": {
+          "iso8601duration": "P6M1D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-30T05:16:55.101251125Z",
+    "created": "2024-10-30T05:16:55.139720916Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -251,9 +208,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:26578240",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26578240",
-        "description": "Neuroblastoma Amplified Sequence (NBAS) mutation in recurrent acute liver failure: Confirmatory report in a sibship with very early onset, osteoporosis and developmental delay"
+        "id": "PMID:28629372",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/28629372",
+        "description": "Novel NBAS mutations and fever-related recurrent acute liver failure in Chinese children: a retrospective study"
       }
     ]
   }
