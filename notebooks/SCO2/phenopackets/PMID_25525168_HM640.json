@@ -7,6 +7,7 @@
         "iso8601duration": "P32Y"
       }
     },
+    "vitalStatus": {},
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -43,6 +44,13 @@
     },
     {
       "type": {
+        "id": "HP:0002878",
+        "label": "Respiratory failure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001508",
         "label": "Failure to thrive"
       },
@@ -66,6 +74,20 @@
       "type": {
         "id": "HP:0001324",
         "label": "Muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy"
       },
       "excluded": true
     },
@@ -131,11 +153,17 @@
       "term": {
         "id": "OMIM:608908",
         "label": "Myopia 6"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-05T05:47:17.054888010Z",
+    "created": "2024-10-31T15:49:27.412314891Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -174,7 +202,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }

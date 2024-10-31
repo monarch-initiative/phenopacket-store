@@ -1,120 +1,98 @@
 {
-  "id": "PMID_25525168_HM789",
+  "id": "PMID_29351582_Patient_2",
   "subject": {
-    "id": "HM789",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P26Y"
       }
     },
-    "vitalStatus": {},
-    "sex": "FEMALE"
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
       }
     },
     {
       "type": {
-        "id": "HP:0007663",
-        "label": "Reduced visual acuity"
+        "id": "HP:0007327",
+        "label": "Mixed demyelinating and axonal polyneuropathy"
       }
     },
     {
       "type": {
-        "id": "HP:0007800",
-        "label": "Increased axial length of the globe"
+        "id": "HP:0003376",
+        "label": "Steppage gait"
       }
     },
     {
       "type": {
-        "id": "HP:0001098",
-        "label": "Abnormal fundus morphology"
+        "id": "HP:0003438",
+        "label": "Absent Achilles reflex"
       }
     },
     {
       "type": {
-        "id": "HP:0001635",
-        "label": "Congestive heart failure"
+        "id": "HP:0008944",
+        "label": "Distal lower limb amyotrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002495",
+        "label": "Impaired vibratory sensation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002878",
-        "label": "Respiratory failure"
+        "id": "HP:0000508",
+        "label": "Ptosis"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
+        "id": "HP:0007089",
+        "label": "Facial-lingual fasciculations"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "HM789",
+      "id": "Patient 2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:608908",
-          "label": "Myopia 6"
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "HM789",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_gaImVbZrrgmXIakDFaGDUxyIP",
+                "id": "var_DgLSLbyfggeleTOZNOeVGFRGJ",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -122,19 +100,54 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.358C>T"
+                    "value": "NM_005138.3:c.404A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50524054G>A"
+                    "value": "NC_000022.11:g.50524008T>C"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "50524054",
-                  "ref": "G",
-                  "alt": "A"
+                  "pos": "50524008",
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_PWruVDoKWObqsfraIuDRhVnmW",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.512G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50523900C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50523900",
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -151,19 +164,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:608908",
-        "label": "Myopia 6"
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
+        "age": {
+          "iso8601duration": "P12Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-31T15:49:27.413075923Z",
+    "created": "2024-10-31T15:53:51.126712083Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -210,9 +222,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:25525168",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25525168",
-        "description": "Detection of mutations in LRPAP1, CTSH, LEPREL1, ZNF644, SLC39A5, and SCO2 in 298 families with early-onset high myopia by exome sequencing"
+        "id": "PMID:29351582",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29351582",
+        "description": "SCO2 mutations cause early-onset axonal Charcot-Marie-Tooth disease associated with cellular copper deficiency"
       }
     ]
   }

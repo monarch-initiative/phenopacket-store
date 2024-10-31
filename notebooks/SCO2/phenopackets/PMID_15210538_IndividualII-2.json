@@ -1,106 +1,129 @@
 {
-  "id": "PMID_23643385_family_CHP_6_IV_3",
+  "id": "PMID_15210538_Individual_II_2",
   "subject": {
-    "id": "family CHP-6 IV:3",
-    "vitalStatus": {}
+    "id": "Individual II-2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1M23D"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P1M23D"
+        }
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
+        "id": "HP:0002747",
+        "label": "Respiratory insufficiency due to muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001635",
-        "label": "Congestive heart failure"
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002878",
-        "label": "Respiratory failure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
+        "id": "HP:0004887",
+        "label": "Respiratory failure requiring assisted ventilation"
+      }
     },
     {
       "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
+        "id": "HP:0002098",
+        "label": "Respiratory distress"
+      }
     },
     {
       "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness"
-      },
-      "excluded": true
+        "id": "HP:0030148",
+        "label": "Heart murmur"
+      }
     },
     {
       "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "family CHP-6 IV:3",
+      "id": "Individual II-2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:608908",
-          "label": "Myopia 6"
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "family CHP-6 IV:3",
+            "subjectOrBiosampleId": "Individual II-2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_jjtQvsYwVsohqBqryACcUOBlD",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.418G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50523994C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50523994",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Individual II-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
@@ -141,13 +164,19 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:608908",
-        "label": "Myopia 6"
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-31T15:49:27.413614034Z",
+    "created": "2024-10-31T15:53:51.134791851Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -194,9 +223,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:23643385",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23643385",
-        "description": "Mutations in SCO2 Are Associated with Autosomal-Dominant High-Grade Myopia"
+        "id": "PMID:15210538",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15210538",
+        "description": "Association of mutations in SCO2, a cytochrome c oxidase assembly gene, with early fetal lethality"
       }
     ]
   }

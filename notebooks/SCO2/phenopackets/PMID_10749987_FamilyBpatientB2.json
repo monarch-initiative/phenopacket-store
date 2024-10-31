@@ -1,110 +1,82 @@
 {
-  "id": "PMID_23643385_family_CHP_6_IV_3",
+  "id": "PMID_10749987_Family_B_patient_B2",
   "subject": {
-    "id": "family CHP-6 IV:3",
-    "vitalStatus": {}
-  },
-  "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
+    "id": "Family B patient B2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1M"
       }
     },
-    {
-      "type": {
-        "id": "HP:0001635",
-        "label": "Congestive heart failure"
-      },
-      "excluded": true
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
     },
-    {
-      "type": {
-        "id": "HP:0002878",
-        "label": "Respiratory failure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "excluded": true
-    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002878",
+        "label": "Respiratory failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
     },
     {
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      }
     },
     {
       "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "family CHP-6 IV:3",
+      "id": "Family B patient B2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:608908",
-          "label": "Myopia 6"
+          "id": "OMIM:604377",
+          "label": "Mitochondrial complex IV deficiency, nuclear type 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "family CHP-6 IV:3",
+            "subjectOrBiosampleId": "Family B patient B2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_kiFrHwKLVVjayMvBTrrVNbbmb",
+                "id": "var_jjtQvsYwVsohqBqryACcUOBlD",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -112,17 +84,52 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.157C>T"
+                    "value": "NM_005138.3:c.418G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50524255G>A"
+                    "value": "NC_000022.11:g.50523994C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "50524255",
+                  "pos": "50523994",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family B patient B2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_sZMrCmrtnUcfdrqhsgvVeqDZX",
+                "geneContext": {
+                  "valueId": "HGNC:10604",
+                  "symbol": "SCO2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005138.3:c.268C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.50524144G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": "50524144",
                   "ref": "G",
                   "alt": "A"
                 },
@@ -141,13 +148,19 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:608908",
-        "label": "Myopia 6"
+        "id": "OMIM:604377",
+        "label": "Mitochondrial complex IV deficiency, nuclear type 2"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-31T15:49:27.413614034Z",
+    "created": "2024-10-31T15:53:51.141171932Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -194,9 +207,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:23643385",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23643385",
-        "description": "Mutations in SCO2 Are Associated with Autosomal-Dominant High-Grade Myopia"
+        "id": "PMID:10749987",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/10749987",
+        "description": "Mutations in SCO2 are associated with a distinct form of hypertrophic cardiomyopathy and cytochrome c oxidase deficiency"
       }
     ]
   }
