@@ -1,0 +1,155 @@
+{
+  "id": "PMID_25096270_Case_2",
+  "subject": {
+    "id": "Case 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case 2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613826",
+          "label": "Leber congenital amaurosis 6"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_RjHQxrceggWLyrIEYzcHiUSPk",
+                "geneContext": {
+                  "valueId": "HGNC:13436",
+                  "symbol": "RPGRIP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020366.4:c.2710+374_2895+78del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.21326547_21327885del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": "21326544",
+                  "ref": "ATTTTTAGTAGAGATGGGATTTCTCCATGTTGGTCAGGCTGGTCTTCAACTCCCGACCTCAGGTGAACCTCCCACCTGAGCCTCCCAAAGTGCTGGGATTACAGACGTGAGCCACCGCGCCTGGCTGAACAAACTTTTTCAAGCTCTGTAATGCTGTCTAGTATCTGTCTTTACTAAAGGCCTGTTGTTTCTTAGTGCATGACTACATAGATATCTGATTATAAACTGAGACCTTAACACTCCCCCATCATTCTCTCACTTCTTTTAAACACTGGACACAAGTTAGAGAGATTTCCACACCAGATCATGACAAACACAAATTTCTTGGATTTTTTTTTTCCTCCCAATGTGGAGCTGAGCTCCATACTGTCTTTCCTAACTTTTATACCTAGGATTGTGGGGGTGTACCAAGAGGGGTCAACTCTTTGACTACAGTCCTGGGAGGGTGAGGTGGGGGTATCCATGTTTTCCTTAGGAAGTGGGGATAGCTGCAGTCAGAAACAACCATATTTAACAAGATTCTGGATGCTCCAGGACATGTATGCAGCTCTCTCCTCAATACAACTGCTTAAAAAAAGGCTGACACTTCTGGACACAACTCCTTTGCCAAACAGGGGAGGCAGTATAAGCCACCTGTTAATCAGTGTTACAAATCAGACATCTGGCATTTCGAAAGAGCCATTTTGCTTAAGTTTTCTTGGGACCACTTGAGGGTAGAGGTAACAGTTTTCTTGGTACAACTAAGGCACAGTAAGCATTTGATAATAGTAATAATAATGCAGCCTTGTTCATTGGCTGGATGACTGATGACAAGCAAGCTGTACTCCTTTTCATACACCCTTCACTATCTCTTCCTGAATCCTAGAGATAACCCATCTTCCCTGATTAATATTCTAACTGCACTGCTGTTTGATTTTACTTCTGAGTGTATCATCATCGTAATTATTTAATGGATGTTAATTAATTGCTGATAAAATATGTTGAAATTAAAAATGGGAAGGAAGTAGATAAGGTGCTGACAAATGCTCACTTGCTTATTTCATGTGATCAGGTCTTATTAATATCTGTTTGTTTCTCAGGTGATTTTAACCTCACTGACCCTGCAGAGAAACCCAACGGATCTATTCAAGTGCAACTGGATTGGAAGTTTCCCTACATACCCCCTGAGAGCTTCCTGAAACCAGAAGCTCAGACTAAGGGGAAGGATACCAAGGACAGTTCAAAGATCTCATCTGAAGAGGAAAAGGCTTCATTTCCTTCCCAGGTAACTCTCCAGGACTCCACAGGTAGCAGATCTCTGCCAATCCTATGGAGCAGATTTGAAGGAGACAGTATTATAG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613826",
+        "label": "Leber congenital amaurosis 6"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-02T18:46:58.135374069Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:25096270",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/25096270",
+        "description": "A novel exon 17 deletion mutation of RPGRIP1 gene in two siblings with Leber congenital amaurosis"
+      }
+    ]
+  }
+}
