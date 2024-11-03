@@ -1,10 +1,10 @@
 {
-  "id": "PMID_24932600_Patient_2",
+  "id": "PMID_15952209_Patient_1",
   "subject": {
-    "id": "Patient 2",
+    "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y"
+        "iso8601duration": "P28Y"
       }
     },
     "vitalStatus": {
@@ -15,20 +15,32 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001792",
+        "label": "Small nail"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003027",
         "label": "Mesomelia"
       }
     },
     {
       "type": {
-        "id": "HP:0002937",
-        "label": "Hemivertebrae"
+        "id": "HP:0011304",
+        "label": "Broad thumb"
       }
     },
     {
       "type": {
-        "id": "HP:0003042",
-        "label": "Elbow dislocation"
+        "id": "HP:0009232",
+        "label": "Symphalangism affecting the proximal phalanx of the 5th finger"
       }
     },
     {
@@ -39,26 +51,14 @@
     },
     {
       "type": {
-        "id": "HP:0000212",
-        "label": "Gingival overgrowth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005280",
-        "label": "Depressed nasal bridge"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000347",
-        "label": "Micrognathia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000343",
         "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003196",
+        "label": "Short nose"
       }
     },
     {
@@ -69,8 +69,14 @@
     },
     {
       "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
+        "id": "HP:0000207",
+        "label": "Triangular mouth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
       }
     },
     {
@@ -87,21 +93,63 @@
     },
     {
       "type": {
-        "id": "HP:0001647",
-        "label": "Bicuspid aortic valve"
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
       }
     },
     {
       "type": {
-        "id": "HP:0000322",
-        "label": "Short philtrum"
+        "id": "HP:0003083",
+        "label": "Dislocated radial head"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002937",
+        "label": "Hemivertebrae"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000902",
+        "label": "Rib fusion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006394",
+        "label": "Limited pronation/supination of forearm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "Patient 1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -110,11 +158,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 2",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_RbAgQgFaqFvVDeLtwOBHYlJrx",
+                "id": "var_lSFhELjvyRQXemQqtatzuQHLu",
                 "geneContext": {
                   "valueId": "HGNC:10257",
                   "symbol": "ROR2"
@@ -122,19 +170,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004560.4:c.227G>A"
+                    "value": "NM_004560.4:c.1937_1943del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.91757508C>T"
+                    "value": "NC_000009.12:g.91724553_91724559del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "91757508",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": "91724550",
+                  "ref": "CAGCTTGT",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -156,14 +204,14 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0030674",
-          "label": "Antenatal onset"
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-11-03T18:37:28.224534988Z",
+    "created": "2024-11-03T18:37:28.252275943Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -210,9 +258,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:24932600",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24932600",
-        "description": "Identification of novel ROR2 gene mutations in Indian children with Robinow syndrome"
+        "id": "PMID:15952209",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15952209",
+        "description": "Clinical and molecular characterization of two adults with autosomal recessive Robinow syndrome"
       }
     ]
   }
