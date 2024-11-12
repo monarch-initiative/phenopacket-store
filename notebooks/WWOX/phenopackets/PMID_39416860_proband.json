@@ -1,75 +1,85 @@
 {
-  "id": "PMID_24369382_Family_2_II_1",
+  "id": "PMID_39416860_proband",
   "subject": {
-    "id": "Family 2 II.1",
+    "id": "proband",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P10Y"
+        "iso8601duration": "P4M"
       }
     },
-    "vitalStatus": {},
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002069",
-        "label": "Bilateral tonic-clonic seizure"
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
+        "id": "HP:0200134",
+        "label": "Epileptic encephalopathy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001257",
-        "label": "Spasticity"
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
       }
     },
     {
       "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000640",
-        "label": "Gaze-evoked nystagmus"
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 2 II.1",
+      "id": "proband",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:614322",
-          "label": "Spinocerebellar ataxia, autosomal recessive 12"
+          "id": "OMIM:616211",
+          "label": "Developmental and epileptic encephalopathy 28"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 2 II.1",
+            "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_DZiNCKadKPUJpFaRcpPsyQUEV",
+                "id": "var_WFOnejgicaAMJzufRURFasTCp",
                 "geneContext": {
                   "valueId": "HGNC:12799",
                   "symbol": "WWOX"
@@ -77,19 +87,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_016373.2:c.1114G>C"
+                    "value": "NM_016373.4:c.911C>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.79211665G>C"
+                    "value": "NC_000016.10:g.78432607C>A"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "79211665",
-                  "ref": "G",
-                  "alt": "C"
+                  "pos": "78432607",
+                  "ref": "C",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -106,19 +116,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:614322",
-        "label": "Spinocerebellar ataxia, autosomal recessive 12"
+        "id": "OMIM:616211",
+        "label": "Developmental and epileptic encephalopathy 28"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
+        "age": {
+          "iso8601duration": "P1M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-11-12T08:04:44.276021003Z",
+    "created": "2024-11-12T08:05:52.225222826Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -165,9 +174,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:24369382",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24369382",
-        "description": "The tumour suppressor gene WWOX is mutated in autosomal recessive cerebellar ataxia with epilepsy and mental retardation"
+        "id": "PMID:39416860",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/39416860",
+        "description": "WWOX-related epileptic encephalopathy caused by a novel mutation in the WWOX gene: a case report"
       }
     ]
   }
