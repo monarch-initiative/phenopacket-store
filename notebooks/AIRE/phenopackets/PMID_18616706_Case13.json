@@ -1,0 +1,242 @@
+{
+  "id": "PMID_18616706_Case_13",
+  "subject": {
+    "id": "Case 13",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P13Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002728",
+        "label": "Chronic mucocutaneous candidiasis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008207",
+        "label": "Primary adrenal insufficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002582",
+        "label": "Atrophic gastritis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001045",
+        "label": "Vitiligo"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001081",
+        "label": "Cholelithiasis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002024",
+        "label": "Malabsorption"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001746",
+        "label": "Asplenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100647",
+        "label": "Graves disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008209",
+        "label": "Premature ovarian insufficiency"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Case 13",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:240300",
+          "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 13",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_AjzuYBBzVKINCRLFoERdVeLKN",
+                "geneContext": {
+                  "valueId": "HGNC:360",
+                  "symbol": "AIRE"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000383.4:c.769C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.44289773C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr21",
+                  "pos": "44289773",
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:240300",
+        "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-11-20T10:32:50.497876882Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-08-13",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:18616706",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/18616706",
+        "description": "Evaluation of the autoimmune regulator (AIRE) gene mutations in a cohort of Italian patients with autoimmune-polyendocrinopathy-candidiasis-ectodermal-dystrophy (APECED) and in their relatives"
+      }
+    ]
+  }
+}
