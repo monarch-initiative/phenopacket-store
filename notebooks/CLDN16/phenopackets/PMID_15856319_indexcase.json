@@ -1,10 +1,10 @@
 {
-  "id": "PMID_36182950_Patient_100",
+  "id": "PMID_15856319_index_case",
   "subject": {
-    "id": "Patient 100",
+    "id": "index case",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P7M"
       }
     },
     "vitalStatus": {
@@ -15,121 +15,82 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000729",
-        "label": "Autistic behavior"
+        "id": "HP:0000121",
+        "label": "Nephrocalcinosis"
       }
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0000083",
+        "label": "Renal insufficiency"
       }
     },
     {
       "type": {
-        "id": "HP:0000817",
-        "label": "Reduced eye contact"
-      },
-      "excluded": true
+        "id": "HP:0003149",
+        "label": "Hyperuricosuria"
+      }
     },
     {
       "type": {
-        "id": "HP:0012760",
-        "label": "Reduced social responsiveness"
-      },
-      "excluded": true
+        "id": "HP:0002917",
+        "label": "Hypomagnesemia"
+      }
     },
     {
       "type": {
-        "id": "HP:0031466",
-        "label": "Impairment in personality functioning"
-      },
-      "excluded": true
+        "id": "HP:0003165",
+        "label": "Elevated circulating parathyroid hormone level"
+      }
     },
     {
       "type": {
-        "id": "HP:0008762",
-        "label": "Repetitive compulsive behavior"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100785",
-        "label": "Insomnia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000736",
-        "label": "Short attention span"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:5200018",
-        "label": "Steroetypic upper-extremity movements"
-      },
-      "excluded": true
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 100",
+      "id": "index case",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:615032",
-          "label": "Intellectual developmental disorder with autism and macrocephaly"
+          "id": "OMIM:248250",
+          "label": "Hypomagnesemia 3, renal"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 100",
+            "subjectOrBiosampleId": "index case",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_xggZNOHAChQgDuoJBYgCDJXez",
+                "id": "var_rfwvFbOxZApfEjhbcebojgUYm",
                 "geneContext": {
-                  "valueId": "HGNC:20153",
-                  "symbol": "CHD8"
+                  "valueId": "HGNC:2037",
+                  "symbol": "CLDN16"
                 },
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001170629.2:c.751C>T"
+                    "value": "NM_006580.4:c.453G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.21430893G>A"
+                    "value": "NC_000003.12:g.190408384G>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": "21430893",
+                  "chrom": "chr3",
+                  "pos": "190408384",
                   "ref": "G",
-                  "alt": "A"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -141,13 +102,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:615032",
-        "label": "Intellectual developmental disorder with autism and macrocephaly"
+        "id": "OMIM:248250",
+        "label": "Hypomagnesemia 3, renal"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-09-19T13:13:05.305050134Z",
+    "created": "2024-11-23T14:23:04.760273933Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -194,9 +160,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:36182950",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36182950",
-        "description": "The phenotypic spectrum and genotype-phenotype correlations in 106 patients with variants in major autism gene CHD8"
+        "id": "PMID:15856319",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/15856319",
+        "description": "Hypomagnesemia with hypercalciuria and nephrocalcinosis: case report and a family study"
       }
     ]
   }
