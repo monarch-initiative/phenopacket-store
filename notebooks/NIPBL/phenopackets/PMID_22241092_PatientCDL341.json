@@ -1,12 +1,7 @@
 {
-  "id": "PMID_25447906_Patient_1",
+  "id": "PMID_22241092_Patient_CDL341",
   "subject": {
-    "id": "Patient 1",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P7Y"
-      }
-    },
+    "id": "Patient CDL341",
     "vitalStatus": {
       "status": "ALIVE"
     },
@@ -15,14 +10,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0008897",
-        "label": "Postnatal growth retardation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
@@ -39,26 +28,44 @@
     },
     {
       "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000219",
         "label": "Thin upper lip vermilion"
       }
     },
     {
       "type": {
-        "id": "HP:0007665",
-        "label": "Curly eyelashes"
+        "id": "HP:0000527",
+        "label": "Long eyelashes"
       }
     },
     {
       "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
+        "id": "HP:0000508",
+        "label": "Ptosis"
       }
     },
     {
       "type": {
-        "id": "HP:0002162",
-        "label": "Low posterior hairline"
+        "id": "HP:0009829",
+        "label": "Phocomelia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000965",
+        "label": "Cutis marmorata"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000294",
+        "label": "Low anterior hairline"
       }
     },
     {
@@ -69,14 +76,26 @@
     },
     {
       "type": {
+        "id": "HP:0002714",
+        "label": "Downturned corners of mouth"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000343",
         "label": "Long philtrum"
       }
     },
     {
       "type": {
-        "id": "HP:0000954",
-        "label": "Single transverse palmar crease"
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
       }
     },
     {
@@ -93,14 +112,52 @@
     },
     {
       "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001377",
+        "label": "Limited elbow extension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001773",
+        "label": "Short foot"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012165",
+        "label": "Oligodactyly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
-      }
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "Patient CDL341",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -109,33 +166,21 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 1",
+            "subjectOrBiosampleId": "Patient CDL341",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_zVFTmYoBSzjcGaWIMUrvOkdKK",
+                "id": "var_SxRTVpEwyVDqSeNPgufAaDoSs",
+                "label": "DEL ex1-45",
                 "geneContext": {
                   "valueId": "HGNC:28862",
                   "symbol": "NIPBL"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_133433.4:c.2479del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.36985659del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr5",
-                  "pos": "36985658",
-                  "ref": "CA",
-                  "alt": "C"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -156,7 +201,7 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-23T09:08:43.634778022Z",
+    "created": "2024-11-23T09:08:43.654191017Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -203,9 +248,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:25447906",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25447906",
-        "description": "Two novel NIPBL gene mutations in Chinese patients with Cornelia de Lange syndrome"
+        "id": "PMID:22241092",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/22241092",
+        "description": "NIPBL rearrangements in Cornelia de Lange syndrome: evidence for replicative mechanism and genotype-phenotype correlation"
       }
     ]
   }
