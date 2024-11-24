@@ -1,91 +1,146 @@
 {
-  "id": "PMID_38014483_Family_c_individual_c_3",
+  "id": "PMID_31325447_Case_1",
   "subject": {
-    "id": "Family c individual c.3",
+    "id": "Case 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P20Y"
+        "iso8601duration": "P6Y"
       }
     },
     "vitalStatus": {
-      "status": "ALIVE"
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002061",
-        "label": "Lower limb spasticity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002395",
-        "label": "Lower limb hyperreflexia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002070",
-        "label": "Limb ataxia"
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002066",
-        "label": "Gait ataxia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100543",
-        "label": "Cognitive impairment"
-      },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0001272",
         "label": "Cerebellar atrophy"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0001320",
-        "label": "Cerebellar vermis hypoplasia"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002133",
+        "label": "Status epilepticus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012707",
+        "label": "Elevated brain lactate level by MRS"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007325",
+        "label": "Generalized dystonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002104",
+        "label": "Apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001357",
+        "label": "Plagiocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family c individual c.3",
+      "id": "Case 1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620666",
-          "label": "Spastic ataxia 10, autosomal recessive"
+          "id": "OMIM:616276",
+          "label": "Coenzyme Q10 deficiency, primary, 7"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family c individual c.3",
+            "subjectOrBiosampleId": "Case 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
@@ -113,43 +168,8 @@
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Family c individual c.3",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_fXkFMomJFrtmLysFSQAScMFLX",
-                "geneContext": {
-                  "valueId": "HGNC:19693",
-                  "symbol": "COQ4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_016035.5:c.745C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128333592C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": "128333592",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -161,18 +181,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620666",
-        "label": "Spastic ataxia 10, autosomal recessive"
+        "id": "OMIM:616276",
+        "label": "Coenzyme Q10 deficiency, primary, 7"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P8Y"
+          "iso8601duration": "P1M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-11-24T09:12:43.471866846Z",
+    "created": "2024-11-24T09:16:40.372080802Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -219,9 +239,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:38014483",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38014483",
-        "description": "Biallelic COQ4 Variants in Hereditary Spastic Paraplegia: Clinical and Molecular Characterization"
+        "id": "PMID:31325447",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/31325447",
+        "description": "Clinical whole-exome sequencing reveals a common pathogenic variant in patients with CoQ10 deficiency: An underdiagnosed cause of mitochondriopathy"
       }
     ]
   }
