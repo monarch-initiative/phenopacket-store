@@ -7,6 +7,9 @@
         "iso8601duration": "P5Y"
       }
     },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -18,20 +21,34 @@
     },
     {
       "type": {
+        "id": "HP:0000204",
+        "label": "Cleft upper lip"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0011330",
         "label": "Metopic synostosis"
       }
     },
     {
       "type": {
-        "id": "HP:0410030",
-        "label": "Cleft lip"
-      }
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0040064",
-        "label": "Abnormality of limbs"
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000637",
+        "label": "Long palpebral fissure"
       },
       "excluded": true
     },
@@ -44,22 +61,15 @@
     },
     {
       "type": {
-        "id": "HP:0008551",
-        "label": "Microtia"
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       },
       "excluded": true
     },
@@ -72,43 +82,50 @@
     },
     {
       "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
+        "id": "HP:0000324",
+        "label": "Facial asymmetry"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
+        "id": "HP:0000430",
+        "label": "Underdeveloped nasal alae"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0410263",
-        "label": "Brain imaging abnormality"
+        "id": "HP:0000453",
+        "label": "Choanal atresia"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000347",
-        "label": "Micrognathia"
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0034392",
-        "label": "Joint contracture"
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0200134",
+        "label": "Epileptic encephalopathy"
       },
       "excluded": true
     },
@@ -128,22 +145,134 @@
     },
     {
       "type": {
-        "id": "HP:0000324",
-        "label": "Facial asymmetry"
+        "id": "HP:0000218",
+        "label": "High palate"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0011443",
-        "label": "Abnormality of coordination"
+        "id": "HP:0000369",
+        "label": "Low-set ears"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0012469",
-        "label": "Infantile spasms"
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009921",
+        "label": "Duane anomaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001605",
+        "label": "Vocal cord paralysis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000625",
+        "label": "Eyelid coloboma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008551",
+        "label": "Microtia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000954",
+        "label": "Single transverse palmar crease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
       },
       "excluded": true
     }
@@ -163,27 +292,27 @@
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_wJAPvgrqsDDfSTtQcRXfFkabN",
+                "id": "var_GaofATkBLBliwWsfcGMnAKchx",
                 "geneContext": {
-                  "valueId": "HGNC:20194",
-                  "symbol": "POLR1C"
+                  "valueId": "HGNC:17264",
+                  "symbol": "POLR1A"
                 },
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_203290.4:c.176A>T"
+                    "value": "NM_015425.6:c.176A>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.43519367A>T"
+                    "value": "NC_000002.12:g.86100074T>A"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
-                  "chrom": "chr6",
-                  "pos": "43519367",
-                  "ref": "A",
-                  "alt": "T"
+                  "chrom": "chr2",
+                  "pos": "86100074",
+                  "ref": "T",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -212,8 +341,8 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-24T09:33:00.870954990Z",
-    "createdBy": "ORCID:0000-0001-7941-2961",
+    "created": "2024-11-30T09:39:18.467180967Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -251,7 +380,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
