@@ -1,4 +1,4 @@
-# phenopacket store
+# Phenopacket Store
 
 
 This repository contains a collection of Jupyter notebooks that generate
@@ -6,9 +6,14 @@ This repository contains a collection of Jupyter notebooks that generate
 for analysis projects. 
 The phenopackets represent case reports about individuals with Mendelian diseases.
 
+A publication describing the case report curation methodology
+as well as the best practices for future curation is available
+at [Danis *et al.*, HGG Advances 2025](https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00111-8)
+
 The notebooks are contained in the 
 [notebooks](https://github.com/monarch-initiative/phenopacket-store/tree/main/notebooks){:target="_blank"} 
 folder organized according to an affected gene.
+
 
 ## Summary statistics
 
@@ -52,6 +57,13 @@ or with `curl`:
 ```shell
 curl -Lo all_phenopackets.zip https://github.com/monarch-initiative/phenopacket-store/releases/latest/download/all_phenopackets.zip
 ```
+
+
+## Citing Phenopacket Store
+
+If you use Phenopacket Store in a scientific publication, we would appreciate citations to the following paper:
+
+[A corpus of GA4GH phenopackets: Case-level phenotyping for genomic diagnostics and discovery](https://www.cell.com/hgg-advances/fulltext/S2666-2477(24)00111-8), Danis et al., Human Genetics and Genomics Advances, Volume 6, Issue 1, 100371
 
 
 ## Feedback
