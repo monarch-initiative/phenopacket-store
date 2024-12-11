@@ -1,21 +1,13 @@
 {
-  "id": "PMID_23211637_e_index_case",
+  "id": "PMID_14560308_Patient_65",
   "subject": {
-    "id": "e index case",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P16Y"
-      }
+    "id": "Patient 65",
+    "vitalStatus": {
+      "status": "ALIVE"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
     {
       "type": {
         "id": "HP:0000508",
@@ -24,14 +16,26 @@
     },
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
       }
     },
     {
       "type": {
-        "id": "HP:0000347",
-        "label": "Micrognathia"
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012385",
+        "label": "Camptodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001159",
+        "label": "Syndactyly"
       }
     },
     {
@@ -42,14 +46,26 @@
     },
     {
       "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000289",
+        "label": "Broad philtrum"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003196",
         "label": "Short nose"
       }
     },
     {
       "type": {
-        "id": "HP:0000218",
-        "label": "High palate"
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
       }
     },
     {
@@ -60,9 +76,24 @@
     },
     {
       "type": {
-        "id": "HP:0001840",
-        "label": "Metatarsus adductus"
-      }
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -80,15 +111,50 @@
     },
     {
       "type": {
-        "id": "HP:0000028",
-        "label": "Cryptorchidism"
+        "id": "HP:0000322",
+        "label": "Short philtrum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001544",
+        "label": "Prominent umbilicus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "e index case",
+      "id": "Patient 65",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -97,11 +163,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "e index case",
+            "subjectOrBiosampleId": "Patient 65",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_GCcoOiWWztLAbRoEiYGmLjxaL",
+                "id": "var_BfATJGuHzYBsOEGnvRTRyyeIj",
                 "geneContext": {
                   "valueId": "HGNC:3663",
                   "symbol": "FGD1"
@@ -109,19 +175,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004463.3:c.1341G>A"
+                    "value": "NM_004463.3:c.2530del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.54465852C>T"
+                    "value": "NC_000023.11:g.54447361del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "54465852",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": "54447360",
+                  "ref": "AC",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,11 +206,17 @@
       "term": {
         "id": "OMIM:305400",
         "label": "Aarskog-Scott syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-27T19:38:57.640314817Z",
+    "created": "2024-12-11T11:08:02.375033140Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -183,7 +255,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -191,9 +263,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:23211637",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23211637",
-        "description": "Novel FGD1 mutation underlying Aarskog-Scott syndrome with myopathy and distal arthropathy"
+        "id": "PMID:14560308",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/14560308",
+        "description": "Phenotypic and molecular characterisation of the Aarskog-Scott syndrome: a survey of the clinical variability in light of FGD1 mutation analysis in 46 patients"
       }
     ]
   }
