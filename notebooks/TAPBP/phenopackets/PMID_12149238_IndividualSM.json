@@ -1,0 +1,145 @@
+{
+  "id": "PMID_12149238_Individual_SM",
+  "subject": {
+    "id": "Individual SM",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P54Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000099",
+        "label": "Glomerulonephritis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P44Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032275",
+        "label": "Recurrent shingles"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002205",
+        "label": "Recurrent respiratory infections"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Individual SM",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620814",
+          "label": "MHC class I deficiency 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual SM",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ATFndHRWRdetepqllsPVFAMgv",
+                "label": "Alu-mediated 7.4-kb deletion encompassing exons 4 through 7 of the TAPBP gene",
+                "geneContext": {
+                  "valueId": "HGNC:11566",
+                  "symbol": "TAPBP"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620814",
+        "label": "MHC class I deficiency 3"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P44Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-14T11:26:16.369364976Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:12149238",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/12149238",
+        "description": "A subject with a novel type I bare lymphocyte syndrome has tapasin deficiency due to deletion of 4 exons by Alu-mediated recombination"
+      }
+    ]
+  }
+}
