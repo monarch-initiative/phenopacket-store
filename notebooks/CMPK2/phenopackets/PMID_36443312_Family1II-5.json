@@ -1,0 +1,230 @@
+{
+  "id": "PMID_36443312_Family_1_II_5",
+  "subject": {
+    "id": "Family 1 II-5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P42Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100543",
+        "label": "Cognitive impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031627",
+        "label": "Globus pallidus calcification"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025041",
+        "label": "Thalamic calcification"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007352",
+        "label": "Cerebellar calcifications"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007229",
+        "label": "Intracerebral periventricular calcifications"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012229",
+        "label": "CSF pleocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002315",
+        "label": "Headache"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002401",
+        "label": "Stroke-like episode"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004363",
+        "label": "Abnormal circulating calcium concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100529",
+        "label": "Abnormal blood phosphate concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003165",
+        "label": "Elevated circulating parathyroid hormone level"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Family 1 II-5",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621018",
+          "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1 II-5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_RPQzArmzQzmMDeQBeajQzAcHS",
+                "geneContext": {
+                  "valueId": "HGNC:27015",
+                  "symbol": "CMPK2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_207315.4:c.2T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.6865695A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": "6865695",
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621018",
+        "label": "Basal ganglia calcification, idiopathic, 10, autosomal recessive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P40Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-23T12:51:29.647426128Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36443312",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36443312",
+        "description": "Loss of function of CMPK2 causes mitochondria deficiency and brain calcification"
+      }
+    ]
+  }
+}
