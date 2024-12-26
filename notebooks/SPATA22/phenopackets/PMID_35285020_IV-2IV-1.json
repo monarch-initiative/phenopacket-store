@@ -1,0 +1,171 @@
+{
+  "id": "PMID_35285020_IV_2_IV_1",
+  "subject": {
+    "id": "IV-2 IV-1",
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000858",
+        "label": "Irregular menstruation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008209",
+        "label": "Premature ovarian insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008232",
+        "label": "Elevated circulating follicle stimulating hormone level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031103",
+        "label": "Decreased circulating antimullerian hormone circulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002960",
+        "label": "Autoimmunity"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "IV-2 IV-1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621002",
+          "label": "Premature ovarian failure 25"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV-2 IV-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_hNMlDzxxGVdPAjMNRZWVvBkNx",
+                "geneContext": {
+                  "valueId": "HGNC:30705",
+                  "symbol": "SPATA22"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001170698.2:c.400C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.3449079G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": "3449079",
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621002",
+        "label": "Premature ovarian failure 25"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-26T08:44:55.618757963Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:35285020",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35285020",
+        "description": "Bi-allelic SPATA22 variants cause premature ovarian insufficiency and nonobstructive azoospermia due to meiotic arrest"
+      }
+    ]
+  }
+}
