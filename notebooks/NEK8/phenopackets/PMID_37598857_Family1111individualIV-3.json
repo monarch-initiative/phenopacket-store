@@ -1,0 +1,162 @@
+{
+  "id": "PMID_37598857_Family_11_11_individual_IV_3",
+  "subject": {
+    "id": "Family 11 11 individual IV-3",
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000097",
+        "label": "Focal segmental glomerulosclerosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000105",
+        "label": "Enlarged kidney"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001407",
+        "label": "Hepatic cysts"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Family 11 11 individual IV-3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620903",
+          "label": "Polycystic kidney disease 8"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 11 11 individual IV-3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "variationDescriptor": {
+                "id": "var_ALPjtghStpTsTnKpLCzXiwIzU",
+                "geneContext": {
+                  "valueId": "HGNC:13387",
+                  "symbol": "NEK8"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_178170.3:c.450C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.28734968C>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": "28734968",
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620903",
+        "label": "Polycystic kidney disease 8"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2024-12-27T09:44:46.087039947Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2022-03-05",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/23",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "January 4, 2023",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.obo",
+        "version": "2021-11-22",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2024-12-12",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:37598857",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/37598857",
+        "description": "Certain heterozygous variants in the kinase domain of the serine/threonine kinase NEK8 can cause an autosomal dominant form of polycystic kidney disease"
+      }
+    ]
+  }
+}
