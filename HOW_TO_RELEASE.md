@@ -13,7 +13,7 @@ Follow this document to make new Phenopacket store release.
 4. Generate release archives with `ppktstore` CLI. 
    For instance, run following to generate a release `0.1.23`:
     ```shell
-    python3 -m ppktstore package --notebook-dir notebooks --release-tag 0.1.16 --output all_phenopackets
+    python3 -m ppktstore package --notebook-dir notebooks --release-tag 0.1.23 --output all_phenopackets
     ```
   
     This will pack all phenopackets found in `notebooks` folder into `all_phenopackets.zip` ZIP file. 
