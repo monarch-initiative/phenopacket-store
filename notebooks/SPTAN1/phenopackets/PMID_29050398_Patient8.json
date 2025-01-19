@@ -1,93 +1,128 @@
 {
-  "id": "PMID_31332438_C:III:3",
+  "id": "PMID_29050398_Patient_8",
   "subject": {
-    "id": "C:III:3",
-    "sex": "MALE"
+    "id": "Patient 8",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002355",
-        "label": "Difficulty walking"
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
       }
     },
     {
       "type": {
-        "id": "HP:0003376",
-        "label": "Steppage gait"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
       "type": {
-        "id": "HP:0009129",
-        "label": "Upper limb amyotrophy"
+        "id": "HP:0007366",
+        "label": "Atrophy/Degeneration affecting the brainstem"
       }
     },
     {
       "type": {
-        "id": "HP:0003484",
-        "label": "Upper limb muscle weakness"
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
       }
     },
     {
       "type": {
-        "id": "HP:0012391",
-        "label": "Hyporeflexia of upper limbs"
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
       }
     },
     {
       "type": {
-        "id": "HP:0008944",
-        "label": "Distal lower limb amyotrophy"
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
     },
     {
       "type": {
-        "id": "HP:0009053",
-        "label": "Distal lower limb muscle weakness"
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
       }
     },
     {
       "type": {
-        "id": "HP:0002522",
-        "label": "Areflexia of lower limbs"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
       }
     },
     {
       "type": {
-        "id": "HP:0001761",
-        "label": "Pes cavus"
+        "id": "HP:0000252",
+        "label": "Microcephaly"
       }
     },
     {
       "type": {
-        "id": "HP:0001765",
-        "label": "Hammertoe"
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
       }
     },
     {
       "type": {
-        "id": "HP:0007002",
-        "label": "Motor axonal neuropathy"
-      }
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002121",
+        "label": "Generalized non-motor (absence) seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002384",
+        "label": "Focal impaired awareness seizure"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "C:III:3",
+      "id": "Patient 8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620528",
-          "label": "Neuronopathy, distal hereditary motor, autosomal dominant 11"
+          "id": "OMIM:613477",
+          "label": "Developmental and epileptic encephalopathy 5"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "C:III:3",
+            "subjectOrBiosampleId": "Patient 8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_yrLkTWQHeEEFtKZOQjoOlpPZa",
+                "id": "var_NofviOvQKPxZFlrPfkNzhrzoz",
                 "geneContext": {
                   "valueId": "HGNC:11273",
                   "symbol": "SPTAN1"
@@ -95,19 +130,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001130438.3:c.6460C>T"
+                    "value": "NM_001130438.3:c.6622_6624del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128626571C>T"
+                    "value": "NC_000009.12:g.128627431_128627433del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "128626571",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": "128627430",
+                  "ref": "GAAC",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -124,19 +159,20 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620528",
-        "label": "Neuronopathy, distal hereditary motor, autosomal dominant 11"
+        "id": "OMIM:613477",
+        "label": "Developmental and epileptic encephalopathy 5"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P12Y"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-27T16:06:15.995188951Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-01-19T11:42:38.264503002Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -174,7 +210,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -182,9 +218,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:31332438",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31332438",
-        "description": "Nonsense mutations in alpha-II spectrin in three families with juvenile onset hereditary motor neuropathy"
+        "id": "PMID:29050398",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050398",
+        "description": "Delineating SPTAN1 associated phenotypes: from isolated epilepsy to encephalopathy with progressive brain atrophy"
       }
     ]
   }

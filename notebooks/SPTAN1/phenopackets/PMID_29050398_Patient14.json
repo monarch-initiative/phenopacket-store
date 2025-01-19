@@ -1,15 +1,29 @@
 {
-  "id": "PMID_22258530_Patient_20",
+  "id": "PMID_29050398_Patient_14",
   "subject": {
-    "id": "Patient 20",
+    "id": "Patient 14",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P4Y3M"
       }
     },
-    "sex": "MALE"
+    "vitalStatus": {
+      "status": "DECEASED",
+      "timeOfDeath": {
+        "age": {
+          "iso8601duration": "P4Y3M"
+        }
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      }
+    },
     {
       "type": {
         "id": "HP:0012469",
@@ -20,6 +34,24 @@
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007366",
+        "label": "Atrophy/Degeneration affecting the brainstem"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
       }
     },
     {
@@ -42,10 +74,15 @@
     },
     {
       "type": {
-        "id": "HP:0032792",
-        "label": "Tonic seizure"
-      },
-      "excluded": true
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      }
     },
     {
       "type": {
@@ -67,18 +104,11 @@
         "label": "Focal impaired awareness seizure"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002521",
-        "label": "Hypsarrhythmia"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 20",
+      "id": "Patient 14",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -87,11 +117,11 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 20",
+            "subjectOrBiosampleId": "Patient 14",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_EbTFxweLGULKfnuNggEZFTFAH",
+                "id": "var_iNEgJeYZcOfavxsPDJMxeUaEF",
                 "geneContext": {
                   "valueId": "HGNC:11273",
                   "symbol": "SPTAN1"
@@ -99,19 +129,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001130438.3:c.6850_6852del"
+                    "value": "NM_001130438.3:c.6908_6916dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128632214_128632216del"
+                    "value": "NC_000009.12:g.128632272_128632280dup"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "128632213",
-                  "ref": "GGAC",
-                  "alt": "G"
+                  "pos": "128632260",
+                  "ref": "G",
+                  "alt": "GGGACCAGCT"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -133,13 +163,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P8M"
+          "iso8601duration": "P4M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-29T09:15:41.638946056Z",
+    "created": "2025-01-19T11:42:38.267429828Z",
     "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
@@ -178,7 +208,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -186,9 +216,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:22258530",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22258530",
-        "description": "Identification of a novel in-frame de novo mutation in SPTAN1 in intellectual disability and pontocerebellar atrophy"
+        "id": "PMID:29050398",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050398",
+        "description": "Delineating SPTAN1 associated phenotypes: from isolated epilepsy to encephalopathy with progressive brain atrophy"
       }
     ]
   }

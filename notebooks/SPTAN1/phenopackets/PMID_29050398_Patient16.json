@@ -1,52 +1,111 @@
 {
-  "id": "PMID_31332438_A:II:4",
+  "id": "PMID_29050398_Patient_16",
   "subject": {
-    "id": "A:II:4",
-    "sex": "FEMALE"
+    "id": "Patient 16",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "ALIVE"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0025406",
-        "label": "Asthenia"
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
       }
     },
     {
       "type": {
-        "id": "HP:0002600",
-        "label": "Hyporeflexia of lower limbs"
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
       }
     },
     {
       "type": {
-        "id": "HP:0009053",
-        "label": "Distal lower limb muscle weakness"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
       "type": {
-        "id": "HP:0012391",
-        "label": "Hyporeflexia of upper limbs"
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002121",
+        "label": "Generalized non-motor (absence) seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002384",
+        "label": "Focal impaired awareness seizure"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "A:II:4",
+      "id": "Patient 16",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620528",
-          "label": "Neuronopathy, distal hereditary motor, autosomal dominant 11"
+          "id": "OMIM:613477",
+          "label": "Developmental and epileptic encephalopathy 5"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "A:II:4",
+            "subjectOrBiosampleId": "Patient 16",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "variationDescriptor": {
-                "id": "var_neiWlizVeryuzrIuTwxjIKpiG",
+                "id": "var_HLApogBhMmsttWMqVDtjEhvyN",
                 "geneContext": {
                   "valueId": "HGNC:11273",
                   "symbol": "SPTAN1"
@@ -54,19 +113,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001130438.3:c.415C>T"
+                    "value": "NM_001130438.3:c.6910_6918del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128574726C>T"
+                    "value": "NC_000009.12:g.128632274_128632282del"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "128574726",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": "128632272",
+                  "ref": "ACCAGCTGGG",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -83,19 +142,19 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620528",
-        "label": "Neuronopathy, distal hereditary motor, autosomal dominant 11"
+        "id": "OMIM:613477",
+        "label": "Developmental and epileptic encephalopathy 5"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P18Y"
+          "iso8601duration": "P4M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-27T16:06:15.990380048Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-01-19T11:42:38.267888069Z",
+    "createdBy": "ORCID:0000-0002-0736-9199",
     "resources": [
       {
         "id": "geno",
@@ -133,7 +192,7 @@
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
+        "version": "2024-08-13",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       }
@@ -141,9 +200,9 @@
     "phenopacketSchemaVersion": "2.0",
     "externalReferences": [
       {
-        "id": "PMID:31332438",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31332438",
-        "description": "Nonsense mutations in alpha-II spectrin in three families with juvenile onset hereditary motor neuropathy"
+        "id": "PMID:29050398",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050398",
+        "description": "Delineating SPTAN1 associated phenotypes: from isolated epilepsy to encephalopathy with progressive brain atrophy"
       }
     ]
   }
