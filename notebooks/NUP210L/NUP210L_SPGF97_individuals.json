@@ -1,89 +1,116 @@
 {
   "cohortType": "mendelian",
-  "diseaseGeneDto": {
-    "templateType": "mendelian",
-    "cohortAcronym": "SPGF97",
-    "diseaseDtoList": [
-      {
-        "diseaseId": "OMIM:621057",
-        "diseaseLabel": "Spermatogenic failure 97"
-      }
-    ],
-    "geneTranscriptDtoList": [
-      {
-        "hgncId": "HGNC:29915",
-        "geneSymbol": "NUP210L",
-        "transcript": "NM_207308.3"
-      }
-    ]
-  },
+  "diseaseList": [
+    {
+      "diseaseId": "OMIM:621057",
+      "diseaseLabel": "Spermatogenic failure 97",
+      "modeOfInheritanceList": [
+        {
+          "hpoId": "HP:0000007",
+          "hpoLabel": "Autosomal recessive",
+          "citation": "PMID:33332558"
+        }
+      ],
+      "geneTranscriptList": [
+        {
+          "hgncId": "HGNC:29915",
+          "geneSymbol": "NUP210L",
+          "transcript": "NM_207308.3"
+        }
+      ]
+    }
+  ],
   "hpoHeaders": [
     {
-      "h1": "Male infertility",
-      "h2": "HP:0003251"
+      "hpoLabel": "Male infertility",
+      "hpoId": "HP:0003251"
     },
     {
-      "h1": "Oligozoospermia",
-      "h2": "HP:0000798"
+      "hpoLabel": "Immotile sperm",
+      "hpoId": "HP:0012208"
     },
     {
-      "h1": "Spermatocyte maturation arrest",
-      "h2": "HP:0031039"
+      "hpoLabel": "Severe oligozoospermia",
+      "hpoId": "HP:0034818"
     },
     {
-      "h1": "Reduced progressive sperm motility",
-      "h2": "HP:0034011"
+      "hpoLabel": "Low semen volume",
+      "hpoId": "HP:6000135"
     },
     {
-      "h1": "Absent sperm flagella",
-      "h2": "HP:0032558"
+      "hpoLabel": "Abnormality of the testis size",
+      "hpoId": "HP:0045058"
+    },
+    {
+      "hpoLabel": "Macrozoospermia",
+      "hpoId": "HP:0025437"
+    },
+    {
+      "hpoLabel": "Absent sperm flagella",
+      "hpoId": "HP:0032558"
     }
   ],
   "rows": [
     {
-      "individualDto": {
+      "individualData": {
         "pmid": "PMID:33332558",
         "title": "Defect in the nuclear pore membrane glycoprotein 210-like gene is associated with extreme uncondensed sperm nuclear chromatin and male infertility: a case report.",
         "individualId": "P1",
-        "comment": "P1 and his wife, 32 and 30 years old, respectively, had a 5-year period of common primary infertility",
-        "ageOfOnset": "Early young adult onset",
+        "comment": "had a 5-year period of common primary infertility",
+        "ageOfOnset": "P27Y",
         "ageAtLastEncounter": "P32Y",
         "deceased": "no",
         "sex": "M"
       },
-      "diseaseDtoList": [
-        {
-          "diseaseId": "OMIM:621057",
-          "diseaseLabel": "Spermatogenic failure 97"
-        }
+      "diseaseIdList": [
+        "OMIM:621057"
       ],
-      "geneVarDtoList": [
-        {
-          "hgncId": "HGNC:29915",
-          "geneSymbol": "NUP210L",
-          "transcript": "NM_207308.3",
-          "allele1": "c.718-1G>A",
-          "allele2": "na",
-          "variantComment": ""
-        }
-      ],
+      "alleleCountMap": {
+        "c718_1GtoA_NUP210L_NM_207308v3": 1
+      },
       "hpoData": [
         {
-          "value": "observed"
+          "type": "OnsetAge",
+          "data": "P27Y"
         },
         {
-          "value": "observed"
+          "type": "Observed"
         },
         {
-          "value": "observed"
+          "type": "Observed"
         },
         {
-          "value": "observed"
+          "type": "Excluded"
         },
         {
-          "value": "observed"
+          "type": "Excluded"
+        },
+        {
+          "type": "Observed"
+        },
+        {
+          "type": "Observed"
         }
       ]
     }
-  ]
+  ],
+  "hgvsVariants": {
+    "c718_1GtoA_NUP210L_NM_207308v3": {
+      "assembly": "hg38",
+      "chr": "chr1",
+      "position": 154138239,
+      "refAllele": "C",
+      "altAllele": "T",
+      "symbol": "NUP210L",
+      "hgncId": "HGNC:29915",
+      "hgvs": "c.718-1G>A",
+      "transcript": "NM_207308.3",
+      "gHgvs": "NC_000001.11:g.154138239C>T",
+      "variantKey": "c718_1GtoA_NUP210L_NM_207308v3"
+    }
+  },
+  "structuralVariants": {},
+  "phetoolsSchemaVersion": "0.2",
+  "hpoVersion": "2025-08-11",
+  "cohortAcronym": "SPGF97"
 }
