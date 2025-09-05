@@ -1,0 +1,180 @@
+{
+  "id": "PMID_33332558_P1",
+  "subject": {
+    "id": "P1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P32Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P27Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012208",
+        "label": "Immotile sperm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034818",
+        "label": "Severe oligozoospermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000135",
+        "label": "Low semen volume"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0045058",
+        "label": "Abnormality of the testis size"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025437",
+        "label": "Macrozoospermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032558",
+        "label": "Absent sperm flagella"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "HXvIvytNIwrJ4tyRaMJmkXb6",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621057",
+          "label": "Spermatogenic failure 97"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c.718-1G>A_NUP210L_NM_207308.3",
+                "geneContext": {
+                  "valueId": "HGNC:29915",
+                  "symbol": "NUP210L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_207308.3:c.718-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.154138239C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 154138239,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621057",
+        "label": "Spermatogenic failure 97"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P27Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-09-01T12:30:02.241749Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:33332558",
+        "description": "Defect in the nuclear pore membrane glycoprotein 210-like gene is associated with extreme uncondensed sperm nuclear chromatin and male infertility: a case report."
+      }
+    ]
+  }
+}
