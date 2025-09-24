@@ -1,0 +1,206 @@
+{
+  "id": "PMID_38652464_Patient",
+  "subject": {
+    "id": "Patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032435",
+        "label": "Neonatal omphalitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001510",
+        "label": "Growth delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002098",
+        "label": "Respiratory distress"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010783",
+        "label": "Erythema"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033605",
+        "label": "Pustular rash"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012219",
+        "label": "Erythema nodosum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030783",
+        "label": "Increased circulating interleukin 6 concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000374",
+        "label": "Increased circulating interleukin 1beta concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002923",
+        "label": "Rheumatoid factor positive"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032252",
+        "label": "Granuloma"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "VlKCRcotx0yyDChU5zT552JR",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621030",
+          "label": "Autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c917GtoA_OTULIN_NM_138348v6",
+                "geneContext": {
+                  "valueId": "HGNC:25118",
+                  "symbol": "OTULIN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_138348.6:c.917G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.14692906G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 14692906,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621030",
+        "label": "Autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-09-23T19:49:01.711441Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38652464",
+        "description": "A de novo dominant-negative variant is associated with OTULIN-related autoinflammatory syndrome."
+      }
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "id": "PMID_39468830_IV_4",
+  "subject": {
+    "id": "IV-4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031993",
+        "label": "Hoffmann sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006886",
+        "label": "Impaired distal vibration sensation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003431",
+        "label": "Decreased motor nerve conduction velocity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003448",
+        "label": "Decreased sensory nerve conduction velocity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012078",
+        "label": "Motor conduction block"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011449",
+        "label": "Knee clonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033206",
+        "label": "Hyperactive Achilles reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007083",
+        "label": "Hyperactive patellar reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001258",
+        "label": "Spastic paraplegia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "ycVAd7iMrTDYLfzeXS5WzaUr",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:500018",
+          "label": "Mitochondrial spastic paraplegia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV-4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "m_1661AtoG_MT-TV_NC_012920v1",
+                "geneContext": {
+                  "valueId": "HGNC:7500",
+                  "symbol": "MT-TV"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NC_012920.1:m.1661A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_012920.1:m.1616A>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "MT",
+                  "pos": 1661,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:500018",
+        "label": "Mitochondrial spastic paraplegia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-09-24T19:59:30.522863Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39468830",
+        "description": "A Homoplasmic MT-TV Mutation Associated with Mitochondrial Inheritance of Hereditary Spastic Paraplegia."
+      }
+    ]
+  }
+}

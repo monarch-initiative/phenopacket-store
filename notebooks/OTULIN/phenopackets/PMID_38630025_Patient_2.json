@@ -1,0 +1,167 @@
+{
+  "id": "PMID_38630025_Patient_2",
+  "subject": {
+    "id": "Patient 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011897",
+        "label": "Increased total neutrophil count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Increased total leukocyte count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012490",
+        "label": "Panniculitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100537",
+        "label": "Fasciitis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "3nhuGKqbD3mGvziTARkFTIMk",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621030",
+          "label": "Autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c385TtoA_OTULIN_NM_138348v6",
+                "geneContext": {
+                  "valueId": "HGNC:25118",
+                  "symbol": "OTULIN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_138348.6:c.385T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.14681524T>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 14681524,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621030",
+        "label": "Autoinflammation, panniculitis, and dermatosis syndrome, autosomal dominant"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-09-23T19:49:01.711236Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38630025",
+        "description": "Dominant negative OTULIN-related autoinflammatory syndrome."
+      }
+    ]
+  }
+}
