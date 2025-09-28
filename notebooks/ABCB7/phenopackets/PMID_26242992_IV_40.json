@@ -1,7 +1,12 @@
 {
-  "id": "PMID_11118249_PATIENT_II.2",
+  "id": "PMID_26242992_IV_40",
   "subject": {
-    "id": "PATIENT II.2",
+    "id": "IV-40",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P16Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -13,8 +18,8 @@
     },
     {
       "type": {
-        "id": "HP:0001347",
-        "label": "Hyperreflexia"
+        "id": "HP:0002470",
+        "label": "Nonprogressive cerebellar ataxia"
       }
     },
     {
@@ -25,14 +30,8 @@
     },
     {
       "type": {
-        "id": "HP:0002075",
-        "label": "Dysdiadochokinesis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001288",
-        "label": "Gait disturbance"
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
       }
     },
     {
@@ -46,11 +45,17 @@
         "id": "HP:0002172",
         "label": "Postural instability"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "PATIENT II.2",
+      "id": "zyEtYxqGc7hhtJDsvimOHke5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -59,11 +64,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "PATIENT II.2",
+            "subjectOrBiosampleId": "IV-40",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QcIIfBXuWFFETDoPuphTErAdE",
+                "id": "c2044GtoA_ABCB7_NM_001271696v3",
                 "geneContext": {
                   "valueId": "HGNC:48",
                   "symbol": "ABCB7"
@@ -71,24 +78,24 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001271696.3:c.1231G>C"
+                    "value": "NM_001271696.3:c.2044G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.75070499C>G"
+                    "value": "NC_000023.11:g.75053585C>T"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "75070499",
+                  "pos": 75053585,
                   "ref": "C",
-                  "alt": "G"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -106,56 +113,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T13:55:00.740653991Z",
+    "created": "2025-09-28T09:15:01.992776Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11118249",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/11118249",
-        "description": "X-linked sideroblastic anaemia with ataxia: another mitochondrial disease?"
+        "id": "PMID:26242992",
+        "description": "Whole-genome sequencing identifies a novel ABCB7 gene mutation for X-linked congenital cerebellar ataxia in a large family of Mongolian ancestry"
       }
     ]
   }
