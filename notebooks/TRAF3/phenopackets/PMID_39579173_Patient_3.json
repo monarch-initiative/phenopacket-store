@@ -1,0 +1,192 @@
+{
+  "id": "PMID_39579173_Patient_3",
+  "subject": {
+    "id": "Patient 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011108",
+        "label": "Recurrent sinusitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410294",
+        "label": "Decreased specific antibody response to protein vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410299",
+        "label": "Decreased specific antibody response to polysaccharide vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100721",
+        "label": "Mediastinal lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033256",
+        "label": "Pancolitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002028",
+        "label": "Chronic diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032564",
+        "label": "Ileitis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "1jmNeSxBdGJMZFUVfb3juSbi",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621096",
+          "label": "Immunodeficiency 132B"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1219CtoT_TRAF3_NM_145725v3",
+                "geneContext": {
+                  "valueId": "HGNC:12033",
+                  "symbol": "TRAF3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_145725.3:c.1219C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.102905296C>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 102905296,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621096",
+        "label": "Immunodeficiency 132B"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-09-27T08:58:12.524040Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39579173",
+        "description": "Heterozygous Predicted Loss-of-function Variants of TRAF3 in Patients with Common Variable Immunodeficiency."
+      }
+    ]
+  }
+}
