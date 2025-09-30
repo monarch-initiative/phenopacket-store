@@ -1,19 +1,19 @@
 {
-  "id": "PMID_15654695_Patient_3",
+  "id": "PMID_15654695_Patient_2",
   "subject": {
-    "id": "Patient 3",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P27Y"
+        "iso8601duration": "P22Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001159",
-        "label": "Syndactyly"
+        "id": "HP:0010442",
+        "label": "Polydactyly"
       },
       "onset": {
         "ontologyClass": {
@@ -24,39 +24,45 @@
     },
     {
       "type": {
-        "id": "HP:0007663",
-        "label": "Reduced visual acuity"
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P19Y"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0000107",
-        "label": "Renal cyst"
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
       }
     },
     {
       "type": {
-        "id": "HP:0000028",
-        "label": "Cryptorchidism"
+        "id": "HP:0001513",
+        "label": "Obesity"
       }
     },
     {
       "type": {
-        "id": "HP:0004409",
-        "label": "Hyposmia"
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -64,11 +70,18 @@
         "label": "Anosmia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004409",
+        "label": "Hyposmia"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "CBSmPZcoAAGbQXj081GDu7Tw",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -77,11 +90,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ekPCOlJKrUczIxUGSYffvjljK",
+                "id": "c77_220del_BBS4_NM_033028v5",
                 "geneContext": {
                   "valueId": "HGNC:969",
                   "symbol": "BBS4"
@@ -89,7 +104,7 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_033028.5:c.77-216del"
+                    "value": "NM_033028.5:c.77-220del"
                   },
                   {
                     "syntax": "hgvs.g",
@@ -99,7 +114,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "72709479",
+                  "pos": 72709479,
                   "ref": "TA",
                   "alt": "T"
                 },
@@ -130,55 +145,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T22:05:48.816368103Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-09-30T09:45:27.227557Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15654695",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15654695",
         "description": "Clinical evidence of decreased olfaction in Bardet-Biedl syndrome caused by a deletion in the BBS4 gene"
       }
     ]

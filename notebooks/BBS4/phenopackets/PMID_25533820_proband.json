@@ -12,18 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000662",
-        "label": "Nyctalopia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0010442",
         "label": "Polydactyly"
       }
@@ -32,6 +20,18 @@
       "type": {
         "id": "HP:0001513",
         "label": "Obesity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     },
     {
@@ -85,7 +85,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "YNhbjM8kpD6dFJNaMqBJFAXm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -97,8 +97,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ehYwpqLyxYPeSDGSCMZFuXypc",
+                "id": "c70AtoT_BBS4_NM_033028v5",
                 "geneContext": {
                   "valueId": "HGNC:969",
                   "symbol": "BBS4"
@@ -116,7 +118,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "72695222",
+                  "pos": 72695222,
                   "ref": "A",
                   "alt": "T"
                 },
@@ -147,55 +149,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T22:05:48.817434072Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-09-30T09:45:27.227753Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25533820",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25533820",
         "description": "A novel nonsense mutation in BBS4 gene identified in a Chinese family with Bardet-Biedl syndrome"
       }
     ]
