@@ -1,10 +1,10 @@
 {
-  "id": "PMID_23099195_Patient_1",
+  "id": "PMID_23099195_Patient_4",
   "subject": {
-    "id": "Patient 1",
+    "id": "Patient 4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P8Y"
+        "iso8601duration": "P1Y2M"
       }
     },
     "sex": "FEMALE"
@@ -16,54 +16,23 @@
         "label": "Elevated plasma citrulline"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P12D"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001987",
-        "label": "Hyperammonemia"
+        "id": "HP:0003218",
+        "label": "Oroticaciduria"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P12D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001254",
-        "label": "Lethargy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002027",
-        "label": "Abdominal pain"
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "zWOMUyeslR7aKTzVvRIT4GnT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -72,11 +41,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 1",
+            "subjectOrBiosampleId": "Patient 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IJEnElXHxoNhxrKtAVYvAYEuR",
+                "id": "c380GtoA_ASS1_NM_054012v4",
                 "geneContext": {
                   "valueId": "HGNC:758",
                   "symbol": "ASS1"
@@ -84,17 +55,17 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_054012.4:c.836G>A"
+                    "value": "NM_054012.4:c.380G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.130480447G>A"
+                    "value": "NC_000009.12:g.130464127G>A"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "130480447",
+                  "pos": 130464127,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -107,11 +78,13 @@
             }
           },
           {
-            "subjectOrBiosampleId": "Patient 1",
+            "subjectOrBiosampleId": "Patient 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bzdtOugrvUkjxgmsdWWnUmVXz",
+                "id": "c970GtoA_ASS1_NM_054012v4",
                 "geneContext": {
                   "valueId": "HGNC:758",
                   "symbol": "ASS1"
@@ -129,7 +102,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "130489464",
+                  "pos": 130489464,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -152,62 +125,62 @@
         "label": "Citrullinemia"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P8D"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-21T07:56:05.365664958Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-09-30T13:48:52.401633Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23099195",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23099195",
         "description": "Mutation spectrum of the ASS1 gene in Korean patients with citrullinemia type I"
       }
     ]
