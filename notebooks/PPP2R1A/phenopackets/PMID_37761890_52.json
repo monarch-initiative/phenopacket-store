@@ -1,10 +1,16 @@
 {
-  "id": "PMID_37761890_52\u00a0",
+  "id": "PMID_37761890_52",
   "subject": {
-    "id": "52\u00a0",
+    "id": "52",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
     {
       "type": {
         "id": "HP:0001263",
@@ -22,30 +28,26 @@
         "id": "HP:0001252",
         "label": "Hypotonia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      }
     }
   ],
   "interpretations": [
     {
-      "id": "52\u00a0",
+      "id": "ijdEzbcBME24WHJypnkecHIM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:616362",
-          "label": "Houge-Janssen syndrome 2"
+          "label": "Houge-Janssens syndrome 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "52\u00a0",
+            "subjectOrBiosampleId": "52",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IiwhKjzHuqkePIbXzmeZYodeA",
+                "id": "c533CtoA_PPP2R1A_NM_014225v6",
                 "geneContext": {
                   "valueId": "HGNC:9302",
                   "symbol": "PPP2R1A"
@@ -63,7 +65,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "52212715",
+                  "pos": 52212715,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -83,61 +85,60 @@
     {
       "term": {
         "id": "OMIM:616362",
-        "label": "Houge-Janssen syndrome 2"
+        "label": "Houge-Janssens syndrome 2"
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-24T10:16:27.621422052Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-04T13:42:41.925249Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37761890",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37761890",
-        "description": "Novel Variants of PPP2R1A in Catalytic Subunit Binding Domain and Genotype-Phenotype Analysis in Neurodevelopmentally Delayed Patients"
+        "description": "Novel Variants of PPP2R1A in Catalytic Subunit Binding Domain and Genotype-Phenotype Analysis in Neurodevelopmentally Delayed Patients."
       }
     ]
   }
