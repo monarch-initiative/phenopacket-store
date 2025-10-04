@@ -7,15 +7,10 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001284",
-        "label": "Areflexia"
-      }
+        "id": "HP:0002307",
+        "label": "Drooling"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -31,26 +26,26 @@
     },
     {
       "type": {
-        "id": "HP:0003701",
-        "label": "Proximal muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0006466",
         "label": "Ankle flexion contracture"
       }
     },
     {
       "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001283",
+        "label": "Bulbar palsy"
       },
       "excluded": true
     },
@@ -70,22 +65,27 @@
     },
     {
       "type": {
-        "id": "HP:0002307",
-        "label": "Drooling"
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001283",
-        "label": "Bulbar palsy"
-      },
-      "excluded": true
+        "id": "HP:0001284",
+        "label": "Areflexia"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 5",
+      "id": "bTOgajPpH7AABPzurmNoQxMR",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -97,8 +97,10 @@
             "subjectOrBiosampleId": "Patient 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HZbttgniINLsZvTaUPetYMPjb",
+                "id": "c871AtoT_ACTA1_NM_001100v4",
                 "geneContext": {
                   "valueId": "HGNC:129",
                   "symbol": "ACTA1"
@@ -116,7 +118,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "229431840",
+                  "pos": 229431840,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -147,55 +149,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-22T14:21:25.466382026Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-04T09:42:34.822196Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30517146",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30517146",
         "description": "New mutations found by Next-Generation Sequencing screening of Spanish patients with Nemaline Myopathy"
       }
     ]
