@@ -1,15 +1,22 @@
 {
-  "id": "PMID_30315159_Patient_5",
+  "id": "PMID_30315159_Patient_6",
   "subject": {
-    "id": "Patient 5",
+    "id": "Patient 6",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4Y10M"
+        "iso8601duration": "P5Y7M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011229",
+        "label": "Broad eyebrow"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0011228",
@@ -21,49 +28,6 @@
         "id": "HP:0000286",
         "label": "Epicanthus"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000455",
-        "label": "Broad nasal tip"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000219",
-        "label": "Thin upper lip vermilion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001873",
-        "label": "Thrombocytopenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032438",
-        "label": "Platelet anisocytosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011877",
-        "label": "Increased mean platelet volume"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011342",
-        "label": "Mild global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011229",
-        "label": "Broad eyebrow"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -88,6 +52,12 @@
     },
     {
       "type": {
+        "id": "HP:0000455",
+        "label": "Broad nasal tip"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000218",
         "label": "High palate"
       },
@@ -104,15 +74,13 @@
       "type": {
         "id": "HP:0000664",
         "label": "Synophrys"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000506",
         "label": "Telecanthus"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -120,6 +88,12 @@
         "label": "Upslanted palpebral fissure"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      }
     },
     {
       "type": {
@@ -146,22 +120,19 @@
       "type": {
         "id": "HP:0000396",
         "label": "Overfolded helix"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0008551",
         "label": "Microtia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000365",
         "label": "Hearing impairment"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -172,10 +143,21 @@
     },
     {
       "type": {
-        "id": "HP:4000170",
-        "label": "Anti-platelet antigen antibody positivity"
-      },
-      "excluded": true
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011877",
+        "label": "Increased mean platelet volume"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011342",
+        "label": "Mild global developmental delay"
+      }
     },
     {
       "type": {
@@ -222,7 +204,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 5",
+      "id": "DReNN25L7GIeIqEh6EKduPmW",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -231,11 +213,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 5",
+            "subjectOrBiosampleId": "Patient 6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_retbyyfsXcbJIRIGeyoAYrqUn",
+                "id": "c1101dup_ACTB_NM_001101v5",
                 "geneContext": {
                   "valueId": "HGNC:132",
                   "symbol": "ACTB"
@@ -243,19 +227,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001101.5:c.1012_1023del"
+                    "value": "NM_001101.5:c.1101dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000007.14:g.5527854_5527865del"
+                    "value": "NC_000007.14:g.5527778dup"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "5527852",
-                  "ref": "CGATCCACACGGA",
-                  "alt": "C"
+                  "pos": 5527774,
+                  "ref": "A",
+                  "alt": "AG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -274,65 +258,58 @@
       "term": {
         "id": "OMIM:620475",
         "label": "Thrombocytopenia 8, with dysmorphic features and developmental delay"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-21T13:59:58.490633964Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-04T18:20:29.217372Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30315159",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30315159",
         "description": "Variants in exons 5 and 6 of ACTB cause syndromic thrombocytopenia"
       }
     ]
