@@ -1,0 +1,160 @@
+{
+  "id": "PMID_23434115_Sanger_2_proband",
+  "subject": {
+    "id": "Sanger-2 proband",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0031126",
+        "label": "Impaired clot retraction"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011877",
+        "label": "Increased mean platelet volume"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032438",
+        "label": "Platelet anisocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003010",
+        "label": "Prolonged bleeding time"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "JqvZx5FaOER7oaf6G3Yy9XAq",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615193",
+          "label": "Bleeding disorder, platelet-type, 15"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Sanger-2 proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2212CtoT_ACTN1_NM_001130004v2",
+                "geneContext": {
+                  "valueId": "HGNC:163",
+                  "symbol": "ACTN1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001130004.2:c.2212C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.68880030G>A"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 68880030,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615193",
+        "label": "Bleeding disorder, platelet-type, 15"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-05T05:10:37.539665Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:23434115",
+        "description": "ACTN1 mutations cause congenital macrothrombocytopenia."
+      }
+    ]
+  }
+}
