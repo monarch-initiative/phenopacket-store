@@ -34,6 +34,17 @@
     },
     {
       "type": {
+        "id": "HP:0025343",
+        "label": "Lupus anticoagulant"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002315",
         "label": "Headache"
       },
@@ -51,17 +62,6 @@
       "onset": {
         "age": {
           "iso8601duration": "P5Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025343",
-        "label": "Lupus anticoagulant"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
         }
       }
     },
@@ -111,6 +111,28 @@
     },
     {
       "type": {
+        "id": "HP:0011227",
+        "label": "Elevated circulating C-reactive protein concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y10M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y10M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002829",
         "label": "Arthralgia"
       },
@@ -155,28 +177,6 @@
     },
     {
       "type": {
-        "id": "HP:0011227",
-        "label": "Elevated circulating C-reactive protein concentration"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y10M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001954",
-        "label": "Recurrent fever"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y10M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0011107",
         "label": "Recurrent aphthous stomatitis"
       },
@@ -200,7 +200,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "1mBfQhqRp0v3xeifJIwNHqQJ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -212,43 +212,10 @@
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_eCGftdTXgdxeDmjWYGDdlNshr",
-                "geneContext": {
-                  "valueId": "HGNC:1839",
-                  "symbol": "ADA2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001282225.2:c.139G>C"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.17209539C>G"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr22",
-                  "pos": "17209539",
-                  "ref": "C",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_UYSEmakUKBePxmfKWZAFmGlnB",
+                "id": "c1223GtoA_ADA2_NM_001282225v2",
                 "geneContext": {
                   "valueId": "HGNC:1839",
                   "symbol": "ADA2"
@@ -266,9 +233,46 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "17182620",
+                  "pos": 17182620,
                   "ref": "C",
                   "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c139GtoC_ADA2_NM_001282225v2",
+                "geneContext": {
+                  "valueId": "HGNC:1839",
+                  "symbol": "ADA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001282225.2:c.139G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.17209539C>G"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 17209539,
+                  "ref": "C",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -296,55 +300,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-04T07:11:59.300464868Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-05T07:18:42.507641Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28830446",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28830446",
         "description": "Autoimmune phenotype with type I interferon signature in two brothers with ADA2 deficiency carrying a novel CECR1 mutation"
       }
     ]
