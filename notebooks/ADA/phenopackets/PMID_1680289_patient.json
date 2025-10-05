@@ -13,29 +13,7 @@
     {
       "type": {
         "id": "HP:0031381",
-        "label": "Decreased lymphocyte proliferation in response to mitogen"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002850",
-        "label": "Decreased circulating total IgM"
+        "label": "Decreased mitogen-induced T-cell proliferation"
       },
       "onset": {
         "age": {
@@ -46,12 +24,29 @@
     {
       "type": {
         "id": "HP:0001888",
-        "label": "Lymphopenia"
+        "label": "Decreased total lymphocyte count"
       },
       "onset": {
         "age": {
           "iso8601duration": "P3D"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency"
       }
     },
     {
@@ -67,14 +62,19 @@
     },
     {
       "type": {
-        "id": "HP:0004430",
-        "label": "Severe combined immunodeficiency"
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "huL3500JST0u5zi8BIDQUaae",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -86,8 +86,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_MQQUlarLLCluCQPvzlSvWfFWv",
+                "id": "c646GtoA_ADA_NM_000022v4",
                 "geneContext": {
                   "valueId": "HGNC:186",
                   "symbol": "ADA"
@@ -105,7 +107,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr20",
-                  "pos": "44623039",
+                  "pos": 44623039,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -135,55 +137,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T21:30:00.874895811Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-05T07:04:23.637418Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:1680289",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/1680289",
         "description": "Homozygosity for a newly identified missense mutation in a patient with very severe combined immunodeficiency due to adenosine deaminase deficiency (ADA-SCID)"
       }
     ]
