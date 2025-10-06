@@ -1,0 +1,241 @@
+{
+  "id": "PMID_35198730_proband",
+  "subject": {
+    "id": "proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P51Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000020",
+        "label": "Urinary incontinence"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000511",
+        "label": "Vertical supranuclear gaze palsy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032506",
+        "label": "Alien limb phenomenon"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002186",
+        "label": "Apraxia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000751",
+        "label": "Personality changes"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002172",
+        "label": "Postural instability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030904",
+        "label": "Glabellar reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002451",
+        "label": "Limb dystonia"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "P4FPSVNXFEjobgJKgxHmw2Uc",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301142",
+          "label": "Neurodegenerative disorder, X-linked, female-restricted, with parkinsonism and cognitive impairement"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c109TtoC_SLC9A6_NM_001379110v1",
+                "geneContext": {
+                  "valueId": "HGNC:11079",
+                  "symbol": "SLC9A6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001379110.1:c.109T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.135985767T>C"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 135985767,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301142",
+        "label": "Neurodegenerative disorder, X-linked, female-restricted, with parkinsonism and cognitive impairement"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-06T13:47:20.459747Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:35198730",
+        "description": "Novel SLC9A6 Variation in Female Carriers With Intellectual Disability and Atypical Parkinsonism."
+      }
+    ]
+  }
+}
