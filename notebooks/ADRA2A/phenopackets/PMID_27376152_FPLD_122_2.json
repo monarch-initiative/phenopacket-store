@@ -1,15 +1,21 @@
 {
-  "id": "PMID_27376152_FPLD_122_3",
+  "id": "PMID_27376152_FPLD_122_2",
   "subject": {
-    "id": "FPLD 122.3",
+    "id": "FPLD 122.2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P46Y"
+        "iso8601duration": "P62Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009125",
+        "label": "Lipodystrophy"
+      }
+    },
     {
       "type": {
         "id": "HP:0025383",
@@ -17,7 +23,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P33Y"
+          "iso8601duration": "P13Y"
         }
       }
     },
@@ -28,42 +34,8 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P41Y"
+          "iso8601duration": "P55Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000819",
-        "label": "Diabetes mellitus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P41Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000822",
-        "label": "Hypertension"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P36Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009125",
-        "label": "Lipodystrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000956",
-        "label": "Acanthosis nigricans"
       }
     },
     {
@@ -76,6 +48,29 @@
       "type": {
         "id": "HP:0002240",
         "label": "Hepatomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P49Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
       }
     },
     {
@@ -88,24 +83,27 @@
       "type": {
         "id": "HP:0002149",
         "label": "Hyperuricemia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001997",
         "label": "Gout"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002870",
         "label": "Obstructive sleep apnea"
-      }
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "FPLD 122.3",
+      "id": "J0v22Ajm7TwfyvAsOqRlQW8L",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,11 +112,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "FPLD 122.3",
+            "subjectOrBiosampleId": "FPLD 122.2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HVVDnkZysFzELRUqBsAJbirzu",
+                "id": "c202CtoT_ADRA2A_NM_000681v4",
                 "geneContext": {
                   "valueId": "HGNC:281",
                   "symbol": "ADRA2A"
@@ -136,7 +136,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "111078198",
+                  "pos": 111078198,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -166,55 +166,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-09T05:21:45.281672Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-06T04:58:18.992262Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27376152",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27376152",
         "description": "Whole-exome sequencing identifies ADRA2A mutation in atypical familial partial lipodystrophy"
       }
     ]
