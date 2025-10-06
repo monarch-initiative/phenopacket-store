@@ -1,0 +1,240 @@
+{
+  "id": "PMID_26423925_Patient_IV_1",
+  "subject": {
+    "id": "Patient IV-1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001999",
+        "label": "Abnormal facial shape"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000510",
+        "label": "Rod-cone dystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000618",
+        "label": "Blindness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000762",
+        "label": "Decreased nerve conduction velocity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010864",
+        "label": "Intellectual disability, severe"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001271",
+        "label": "Polyneuropathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100321",
+        "label": "Abnormal dentate nucleus morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003484",
+        "label": "Upper limb muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006466",
+        "label": "Ankle flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006380",
+        "label": "Knee flexion contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002987",
+        "label": "Elbow flexion contracture"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Nrk3EieyLxmTsS5xFTTxHxwX",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621129",
+          "label": "Neurodegeneration, early-childhood-onset, with retinitis pigmentosa, sensorineural hearing loss, and demyelinating peripheral neuropathy "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient IV-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c799_817del_KLC4_NM_201521v3",
+                "geneContext": {
+                  "valueId": "HGNC:21624",
+                  "symbol": "KLC4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_201521.3:c.799_817del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.43067003_43067021del"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 43067001,
+                  "ref": "AGAATAAGTATAAGGAAGCT",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621129",
+        "label": "Neurodegeneration, early-childhood-onset, with retinitis pigmentosa, sensorineural hearing loss, and demyelinating peripheral neuropathy "
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-06T04:22:20.649312Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:26423925",
+        "description": "Hereditary spastic paraplegia with recessive trait caused by mutation in KLC4 gene."
+      }
+    ]
+  }
+}
