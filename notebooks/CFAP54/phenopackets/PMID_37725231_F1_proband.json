@@ -1,0 +1,204 @@
+{
+  "id": "PMID_37725231_F1_proband",
+  "subject": {
+    "id": "F1 proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P32Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032558",
+        "label": "Absent sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032559",
+        "label": "Short sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033524",
+        "label": "Abnormal sperm axoneme morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100750",
+        "label": "Atelectasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031245",
+        "label": "Productive cough"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "AYrYyZFsTsDvtgsRZMwlXA6b",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621125",
+          "label": "Ciliary dyskinesia, primary, 54"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F1 proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c7312_7313insCGCAGGCTGAATTCTTGG_CFAP54_NM_001306084v2",
+                "geneContext": {
+                  "valueId": "HGNC:26456",
+                  "symbol": "CFAP54"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001306084.2:c.7312_7313insCGCAGGCTGAATTCTTGG"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.96743498_96743499insGGCTGAATTCTTGGCGCA"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 96743494,
+                  "ref": "A",
+                  "alt": "ACGCAGGCTGAATTCTTGG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "F1 proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2649_2657delinsC_CFAP54_NM_001306084v2",
+                "geneContext": {
+                  "valueId": "HGNC:26456",
+                  "symbol": "CFAP54"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001306084.2:c.2649_2657delinsC"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.96576614_96576622delinsC"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 96576614,
+                  "ref": "AGCTGAACA",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621125",
+        "label": "Ciliary dyskinesia, primary, 54"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-06T06:19:58.111600Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37725231",
+        "description": "Lack of CFAP54 causes primary ciliary dyskinesia in a mouse model and human patients."
+      }
+    ]
+  }
+}
