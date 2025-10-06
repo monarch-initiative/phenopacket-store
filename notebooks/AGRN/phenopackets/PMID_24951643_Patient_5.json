@@ -1,10 +1,10 @@
 {
-  "id": "PMID_24951643_Kinship_2_Patient_3",
+  "id": "PMID_24951643_Patient_5",
   "subject": {
-    "id": "Kinship 2 Patient 3",
+    "id": "Patient 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P36Y"
+        "iso8601duration": "P34Y"
       }
     },
     "sex": "MALE"
@@ -12,23 +12,12 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003693",
-        "label": "Distal amyotrophy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P36Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0009027",
         "label": "Foot dorsiflexor weakness"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7Y"
+          "iso8601duration": "P8Y"
         }
       }
     },
@@ -39,36 +28,50 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7Y"
+          "iso8601duration": "P5Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0030237",
-        "label": "Hand muscle weakness"
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001283",
+        "label": "Bulbar palsy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034052",
+        "label": "Impaired toe-walking ability"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P19Y"
+          "iso8601duration": "P34Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002093",
-        "label": "Respiratory insufficiency"
+        "id": "HP:6000490",
+        "label": "Impaired heel-walking ability"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P30Y"
+          "iso8601duration": "P34Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Kinship 2 Patient 3",
+      "id": "9vLIgptPXdh1kmn3JZB4HJPD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -77,11 +80,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Kinship 2 Patient 3",
+            "subjectOrBiosampleId": "Patient 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_GBoEkBLsQfVZnEmDvDECZDkWe",
+                "id": "c5611GtoA_AGRN_NM_198576v4",
                 "geneContext": {
                   "valueId": "HGNC:329",
                   "symbol": "AGRN"
@@ -89,19 +94,19 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_198576.4:c.314A>T"
+                    "value": "NM_198576.4:c.5611G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.1022313A>T"
+                    "value": "NC_000001.11:g.1051775G>A"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "1022313",
-                  "ref": "A",
-                  "alt": "T"
+                  "pos": 1051775,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -123,61 +128,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y"
+          "iso8601duration": "P5Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-10T11:44:13.111749172Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-06T14:00:12.360960Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24951643",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24951643",
         "description": "Agrin mutations lead to a congenital myasthenic syndrome with distal muscle weakness and atrophy"
       }
     ]
