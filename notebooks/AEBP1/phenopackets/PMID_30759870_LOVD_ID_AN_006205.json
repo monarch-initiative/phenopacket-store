@@ -12,6 +12,12 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001822",
+        "label": "Hallux valgus"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002643",
         "label": "Neonatal respiratory distress"
       },
@@ -20,6 +26,12 @@
           "id": "HP:0003623",
           "label": "Neonatal onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
       }
     },
     {
@@ -47,6 +59,18 @@
     },
     {
       "type": {
+        "id": "HP:0000938",
+        "label": "Osteopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001582",
+        "label": "Redundant skin"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000704",
         "label": "Periodontitis"
       },
@@ -59,6 +83,18 @@
     },
     {
       "type": {
+        "id": "HP:0000974",
+        "label": "Hyperextensible skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0005001",
         "label": "Recurrent patellar dislocation"
       },
@@ -67,6 +103,36 @@
           "id": "HP:0003621",
           "label": "Juvenile onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010810",
+        "label": "Long uvula"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001058",
+        "label": "Poor wound healing"
       }
     },
     {
@@ -104,72 +170,6 @@
     },
     {
       "type": {
-        "id": "HP:0001822",
-        "label": "Hallux valgus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000938",
-        "label": "Osteopenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001582",
-        "label": "Redundant skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000974",
-        "label": "Hyperextensible skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000978",
-        "label": "Bruising susceptibility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001537",
-        "label": "Umbilical hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000218",
-        "label": "High palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010810",
-        "label": "Long uvula"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001763",
-        "label": "Pes planus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001058",
-        "label": "Poor wound healing"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002619",
         "label": "Varicose veins"
       }
@@ -201,7 +201,7 @@
   ],
   "interpretations": [
     {
-      "id": "LOVD ID AN_006205",
+      "id": "KJtQCh9ttBW1MDNYru81ZDMt",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -213,8 +213,10 @@
             "subjectOrBiosampleId": "LOVD ID AN_006205",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lhjvOeZvgwObInEgsEWrkpVBq",
+                "id": "c1925TtoC_AEBP1_NM_001129v5",
                 "geneContext": {
                   "valueId": "HGNC:303",
                   "symbol": "AEBP1"
@@ -232,7 +234,7 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "44111938",
+                  "pos": 44111938,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -263,55 +265,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-04T16:04:32.385322093Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-06T06:01:58.804466Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30759870",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30759870",
         "description": "Expanding the Clinical and Mutational Spectrum of Recessive AEBP1-Related Classical-Like Ehlers-Danlos Syndrome"
       }
     ]
