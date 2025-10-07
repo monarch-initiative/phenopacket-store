@@ -1,7 +1,7 @@
 {
-  "id": "PMID_35638551_Patient_PM4",
+  "id": "PMID_35638551_Patient_PM6",
   "subject": {
-    "id": "Patient PM4",
+    "id": "Patient PM6",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P70Y"
@@ -14,7 +14,8 @@
       "type": {
         "id": "HP:0040184",
         "label": "Oral bleeding"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -26,21 +27,26 @@
       "type": {
         "id": "HP:0030880",
         "label": "Raynaud phenomenon"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002239",
         "label": "Gastrointestinal hemorrhage"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0006298",
         "label": "Prolonged bleeding after dental extraction"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -48,11 +54,25 @@
         "label": "Livedo reticularis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011873",
+        "label": "Abnormal platelet count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003010",
+        "label": "Prolonged bleeding time"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient PM4",
+      "id": "kqGklZ747PnaEqncjyYocc44",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -61,11 +81,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient PM4",
+            "subjectOrBiosampleId": "Patient PM6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_skLZZNjAWLsVfgDUOFaAdBgxe",
+                "id": "c145_146delinsTA_APOLD1_NM_030817v3",
                 "geneContext": {
                   "valueId": "HGNC:25268",
                   "symbol": "APOLD1"
@@ -78,12 +100,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.12787050_12787051delinsTA"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_110444.3:p.(Arg49Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "12787050",
+                  "pos": 12787050,
                   "ref": "CG",
                   "alt": "TA"
                 },
@@ -114,55 +140,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-24T06:37:05.796188831Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-07T14:59:04.883991Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35638551",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35638551",
         "description": "APOLD1 loss causes endothelial dysfunction involving cell junctions, cytoskeletal architecture, and Weibel-Palade bodies, while disrupting hemostasis"
       }
     ]
