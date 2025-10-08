@@ -12,6 +12,13 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0000543",
+        "label": "Optic disc pallor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001123",
         "label": "Visual field defect"
       },
@@ -23,6 +30,13 @@
     },
     {
       "type": {
+        "id": "HP:0011505",
+        "label": "Cystoid macular edema"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0030786",
         "label": "Photopsia"
       },
@@ -30,6 +44,12 @@
         "age": {
           "iso8601duration": "P30Y"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
       }
     },
     {
@@ -45,9 +65,10 @@
     },
     {
       "type": {
-        "id": "HP:0007663",
-        "label": "Reduced visual acuity"
-      }
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -66,32 +87,11 @@
         "id": "HP:0000580",
         "label": "Pigmentary retinopathy"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000543",
-        "label": "Optic disc pallor"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011505",
-        "label": "Cystoid macular edema"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0007843",
-        "label": "Attenuation of retinal blood vessels"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "individual 3 GC17880",
+      "id": "BCoQix2aNiHLPgWg7xprML5j",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -103,8 +103,10 @@
             "subjectOrBiosampleId": "individual 3 GC17880",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FPyYvzzsusbDgZvXgyIdQEhgu",
+                "id": "c2181_5GtoA_ARHGEF18_NM_001367823v1",
                 "geneContext": {
                   "valueId": "HGNC:17090",
                   "symbol": "ARHGEF18"
@@ -117,12 +119,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.7456408G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001354752.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7456408",
+                  "pos": 7456408,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -152,55 +158,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-25T12:52:28.752161979Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-08T12:13:29.812777Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28132693",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28132693",
         "description": "Biallelic Mutation of ARHGEF18, Involved in the Determination of Epithelial Apicobasal Polarity, Causes Adult-Onset Retinal Degeneration"
       }
     ]
