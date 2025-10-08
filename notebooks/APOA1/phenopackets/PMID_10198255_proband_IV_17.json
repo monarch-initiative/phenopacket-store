@@ -1,21 +1,13 @@
 {
-  "id": "PMID_9916936_brother_of_IV_3_IV_1",
+  "id": "PMID_10198255_proband_IV_17",
   "subject": {
-    "id": "brother of IV:3 IV:1",
+    "id": "proband IV:17",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P57Y"
+        "iso8601duration": "P33Y"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P57Y"
-        }
-      }
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -25,36 +17,25 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P51Y"
+          "iso8601duration": "P33Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0012309",
-        "label": "Cutaneous amyloidosis"
+        "id": "HP:0000956",
+        "label": "Acanthosis nigricans"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P51Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001635",
-        "label": "Congestive heart failure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P51Y"
+          "iso8601duration": "P33Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "brother of IV:3 IV:1",
+      "id": "Qfhar7o9AhehLs8kq4kkVAX8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -63,11 +44,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "brother of IV:3 IV:1",
+            "subjectOrBiosampleId": "proband IV:17",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_EgoTYCmFaZNUHaBcaKptAEfbs",
+                "id": "c518GtoC_APOA1_NM_000039v3",
                 "geneContext": {
                   "valueId": "HGNC:600",
                   "symbol": "APOA1"
@@ -75,18 +58,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000039.3:c.341T>C"
+                    "value": "NM_000039.3:c.518G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.116836271A>G"
+                    "value": "NC_000011.10:g.116836094C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000030.1:p.(Arg173Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "116836271",
-                  "ref": "A",
+                  "pos": 116836094,
+                  "ref": "C",
                   "alt": "G"
                 },
                 "moleculeContext": "genomic",
@@ -109,62 +96,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P51Y"
+          "iso8601duration": "P33Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-14T14:13:38.369219064Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-08T12:01:07.194653Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:9916936",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/9916936",
-        "description": "Hereditary amyloid cardiomyopathy caused by a variant apolipoprotein A1"
+        "id": "PMID:10198255",
+        "description": "A novel apolipoprotein A-1 variant, Arg173Pro, associated with cardiac and cutaneous amyloidosis"
       }
     ]
   }

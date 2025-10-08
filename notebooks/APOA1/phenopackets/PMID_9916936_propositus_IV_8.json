@@ -1,31 +1,37 @@
 {
-  "id": "PMID_10198255_proband_father",
+  "id": "PMID_9916936_propositus_IV_8",
   "subject": {
-    "id": "proband father",
+    "id": "propositus IV:8",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P63Y"
+        "iso8601duration": "P54Y"
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P63Y"
-        }
-      }
+      "status": "DECEASED"
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
+        "id": "HP:0030843",
+        "label": "Cardiac amyloidosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P63Y"
+          "iso8601duration": "P48Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012309",
+        "label": "Cutaneous amyloidosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P48Y"
         }
       }
     },
@@ -36,7 +42,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P63Y"
+          "iso8601duration": "P54Y"
         }
       }
     },
@@ -44,34 +50,18 @@
       "type": {
         "id": "HP:0001635",
         "label": "Congestive heart failure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P63Y"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0004944",
-        "label": "Dilatation of the cerebral artery"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P37Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003216",
-        "label": "Generalized amyloid deposition"
+        "id": "HP:0001640",
+        "label": "Cardiomegaly"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "proband father",
+      "id": "O8yWSsh2La456FtdSQIiuVYa",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,11 +70,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband father",
+            "subjectOrBiosampleId": "propositus IV:8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FKcyzsYFSZFGzJJHWrrSAnmoB",
+                "id": "c341TtoC_APOA1_NM_000039v3",
                 "geneContext": {
                   "valueId": "HGNC:600",
                   "symbol": "APOA1"
@@ -92,18 +84,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000039.3:c.518G>C"
+                    "value": "NM_000039.3:c.341T>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.116836094C>G"
+                    "value": "NC_000011.10:g.116836271A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000030.1:p.(Leu114Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "116836094",
-                  "ref": "C",
+                  "pos": 116836271,
+                  "ref": "A",
                   "alt": "G"
                 },
                 "moleculeContext": "genomic",
@@ -126,62 +122,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P37Y"
+          "iso8601duration": "P48Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-14T14:13:38.370702028Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-08T12:01:07.194220Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:10198255",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/10198255",
-        "description": "A novel apolipoprotein A-1 variant, Arg173Pro, associated with cardiac and cutaneous amyloidosis"
+        "id": "PMID:9916936",
+        "description": "Hereditary amyloid cardiomyopathy caused by a variant apolipoprotein A1"
       }
     ]
   }

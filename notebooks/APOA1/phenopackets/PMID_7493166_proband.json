@@ -8,12 +8,7 @@
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P45Y"
-        }
-      }
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
@@ -42,12 +37,29 @@
     },
     {
       "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000093",
         "label": "Proteinuria"
       },
       "onset": {
         "age": {
           "iso8601duration": "P34Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P44Y"
         }
       }
     },
@@ -61,6 +73,13 @@
           "iso8601duration": "P34Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001638",
+        "label": "Cardiomyopathy"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -83,35 +102,11 @@
           "iso8601duration": "P34Y"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002014",
-        "label": "Diarrhea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001638",
-        "label": "Cardiomyopathy"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "I7eSWa5eHgAcn88el6PdZ3oy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -123,8 +118,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XxfMbZdmrAtqeezcLTNhtOuXs",
+                "id": "c220TtoC_APOA1_NM_000039v3",
                 "geneContext": {
                   "valueId": "HGNC:600",
                   "symbol": "APOA1"
@@ -137,12 +134,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.116836392A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000030.1:p.(Trp74Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "116836392",
+                  "pos": 116836392,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -172,55 +173,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-14T14:13:38.364814043Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-08T12:01:07.193905Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:7493166",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/7493166",
         "description": "A new apolipoprotein Al variant, Trp50Arg, causes hereditary amyloidosis"
       }
     ]
