@@ -1,40 +1,22 @@
 {
-  "id": "PMID_28625504_UW335_4",
+  "id": "PMID_28625504_SA2_4",
   "subject": {
-    "id": "UW335-4",
+    "id": "SA2-4",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002419",
-        "label": "Molar tooth sign on MRI"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002282",
-        "label": "Gray matter heterotopia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000496",
-        "label": "Abnormality of eye movement"
-      }
-    },
     {
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002419",
+        "label": "Molar tooth sign on MRI"
+      }
     },
     {
       "type": {
@@ -45,10 +27,15 @@
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000508",
         "label": "Ptosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -66,22 +53,15 @@
     },
     {
       "type": {
+        "id": "HP:0000496",
+        "label": "Abnormality of eye movement"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0010442",
         "label": "Polydactyly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002789",
-        "label": "Tachypnea"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002104",
-        "label": "Apnea"
       },
       "excluded": true
     },
@@ -144,7 +124,7 @@
   ],
   "interpretations": [
     {
-      "id": "UW335-4",
+      "id": "S2rB5tXv07ioP0quidjD9eKQ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -153,11 +133,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "UW335-4",
+            "subjectOrBiosampleId": "SA2-4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_fevULNrBBNlvVDPAelWiqrabG",
+                "id": "c1559CtoT_ARMC9_NM_001352754v2",
                 "geneContext": {
                   "valueId": "HGNC:20730",
                   "symbol": "ARMC9"
@@ -165,59 +147,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001352754.2:c.259C>T"
+                    "value": "NM_001352754.2:c.1559C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.231214912C>T"
+                    "value": "NC_000002.12:g.231282066C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001339683.2:p.(Pro520Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "231214912",
+                  "pos": 231282066,
                   "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "UW335-4",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_BEPkitPerJOyYiXCOgvHNWoXZ",
-                "geneContext": {
-                  "valueId": "HGNC:20730",
-                  "symbol": "ARMC9"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001352754.2:c.1027C>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.231262306C>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": "231262306",
-                  "ref": "C",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -235,55 +186,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-24T21:19:46.430382013Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-08T15:48:52.724551Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28625504",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28625504",
         "description": "Mutations in ARMC9, which Encodes a Basal Body Protein, Cause Joubert Syndrome in Humans and Ciliopathy Phenotypes in Zebrafish"
       }
     ]
