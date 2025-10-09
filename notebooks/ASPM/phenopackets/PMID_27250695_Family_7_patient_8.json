@@ -18,12 +18,6 @@
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0004322",
         "label": "Short stature"
       },
@@ -63,11 +57,17 @@
         "label": "Hyperactivity"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 7 patient 8",
+      "id": "2y9IhA3dll5A8zg5GH6FWl9W",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -79,43 +79,10 @@
             "subjectOrBiosampleId": "Family 7 patient 8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_AKXakdIyGKAWUAiYYhwVleEGx",
-                "geneContext": {
-                  "valueId": "HGNC:19048",
-                  "symbol": "ASPM"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_018136.5:c.2936+1G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.197128489C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr1",
-                  "pos": "197128489",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Family 7 patient 8",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_ATbjTbklvproYhtRZSuOcuxKa",
+                "id": "c7491TtoG_ASPM_NM_018136v5",
                 "geneContext": {
                   "valueId": "HGNC:19048",
                   "symbol": "ASPM"
@@ -128,12 +95,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.197101760A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060606.3:p.(Tyr2497Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "197101760",
+                  "pos": 197101760,
                   "ref": "A",
                   "alt": "C"
                 },
@@ -158,55 +129,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-02T20:10:00.088095903Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-09T04:56:30.780476Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27250695",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27250695",
         "description": "Molecular and phenotypic spectrum of ASPM-related primary microcephaly: Identification of eight novel mutations"
       }
     ]
