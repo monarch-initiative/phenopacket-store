@@ -1,57 +1,15 @@
 {
-  "id": "PMID_35047834_Individual_7_4_Najmabadi_et_al_2011",
+  "id": "PMID_35047834_Individual_7_2_Najmabadi_et_al_2011",
   "subject": {
-    "id": "Individual 7-4 (Najmabadi et al, 2011)",
+    "id": "Individual 7-2 (Najmabadi et al, 2011)",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P33Y"
+        "iso8601duration": "P38Y"
       }
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008770",
-        "label": "Obsessive-compulsive trait"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000545",
-        "label": "Myopia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000303",
-        "label": "Mandibular prognathia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000574",
-        "label": "Thick eyebrow"
-      }
-    },
     {
       "type": {
         "id": "HP:0000252",
@@ -75,6 +33,12 @@
     },
     {
       "type": {
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007018",
         "label": "Attention deficit hyperactivity disorder"
       },
@@ -89,10 +53,22 @@
     },
     {
       "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012378",
         "label": "Fatigue"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008770",
+        "label": "Obsessive-compulsive trait"
+      }
     },
     {
       "type": {
@@ -107,6 +83,18 @@
         "label": "Constipation"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      }
     },
     {
       "type": {
@@ -198,6 +186,18 @@
         "label": "Posteriorly rotated ears"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000574",
+        "label": "Thick eyebrow"
+      }
     },
     {
       "type": {
@@ -349,7 +349,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual 7-4 (Najmabadi et al, 2011)",
+      "id": "cJXiTKnikj1AraQKBFeko7tR",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -358,11 +358,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 7-4 (Najmabadi et al, 2011)",
+            "subjectOrBiosampleId": "Individual 7-2 (Najmabadi et al, 2011)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_JlXlLalZlqpkCiafjVyXWkcWK",
+                "id": "c4690TtoC_ASCC3_NM_006828v4",
                 "geneContext": {
                   "valueId": "HGNC:18697",
                   "symbol": "ASCC3"
@@ -375,12 +377,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.100625287A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006819.2:p.(Ser1564Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "100625287",
+                  "pos": 100625287,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -405,55 +411,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-30T15:02:31.143610954Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-09T04:53:25.598765Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35047834",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35047834",
         "description": "Discovery of a neuromuscular syndrome caused by biallelic variants in ASCC3"
       }
     ]
