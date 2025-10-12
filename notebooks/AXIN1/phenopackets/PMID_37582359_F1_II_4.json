@@ -1,10 +1,10 @@
 {
-  "id": "PMID_37582359_F4-III-1",
+  "id": "PMID_37582359_F1_II_4",
   "subject": {
-    "id": "F4-III-1",
+    "id": "F1-II-4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P8Y3M"
       }
     },
     "sex": "FEMALE"
@@ -14,7 +14,8 @@
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -32,66 +33,6 @@
       "type": {
         "id": "HP:0001385",
         "label": "Hip dysplasia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002684",
-        "label": "Thickened calvaria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004618",
-        "label": "Sandwich appearance of vertebral bodies"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000935",
-        "label": "Thickened cortex of long bones"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100670",
-        "label": "Coarse metaphyseal trabecularization"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012444",
-        "label": "Brain atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011001",
-        "label": "Increased bone mineral density"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000341",
-        "label": "Narrow forehead"
       }
     },
     {
@@ -117,6 +58,36 @@
     },
     {
       "type": {
+        "id": "HP:0002684",
+        "label": "Thickened calvaria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004618",
+        "label": "Sandwich appearance of vertebral bodies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000935",
+        "label": "Thickened cortex of long bones"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003015",
+        "label": "Flared metaphysis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100670",
+        "label": "Coarse metaphyseal trabecularization"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001302",
         "label": "Pachygyria"
       },
@@ -126,8 +97,7 @@
       "type": {
         "id": "HP:0012541",
         "label": "Cephalohematoma"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -152,10 +122,28 @@
     },
     {
       "type": {
-        "id": "HP:5200001",
-        "label": "Selective mutism"
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:5200001",
+        "label": "Selective mutism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011001",
+        "label": "Increased bone mineral density"
+      }
     },
     {
       "type": {
@@ -167,7 +155,7 @@
   ],
   "interpretations": [
     {
-      "id": "F4-III-1",
+      "id": "4NkzWy3ulTStSHm3YAlT4XRY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -176,11 +164,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F4-III-1",
+            "subjectOrBiosampleId": "F1-II-4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DphJbnboWtuhplpqYLosNfhJi",
+                "id": "c2395dup_AXIN1_NM_003502v4",
                 "geneContext": {
                   "valueId": "HGNC:903",
                   "symbol": "AXIN1"
@@ -188,19 +178,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003502.4:c.2167C>T"
+                    "value": "NM_003502.4:c.2395dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.293507G>A"
+                    "value": "NC_000016.10:g.289509dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003493.1:p.(Leu799ProfsTer34)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "293507",
-                  "ref": "G",
-                  "alt": "A"
+                  "pos": 289506,
+                  "ref": "A",
+                  "alt": "AG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -222,62 +216,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:32:35.957754135Z",
+    "created": "2025-10-12T09:56:56.350590Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37582359",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37582359",
         "description": "AXIN1 bi-allelic variants disrupting the C-terminal DIX domain cause craniometadiaphyseal osteosclerosis with hip dysplasia"
       }
     ]

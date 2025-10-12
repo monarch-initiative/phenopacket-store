@@ -1,5 +1,5 @@
 {
-  "id": "PMID_37582359_F3-III-1",
+  "id": "PMID_37582359_F3_III_1",
   "subject": {
     "id": "F3-III-1",
     "timeAtLastEncounter": {
@@ -10,6 +10,20 @@
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0000316",
@@ -27,6 +41,27 @@
         "id": "HP:0001385",
         "label": "Hip dysplasia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -51,59 +86,6 @@
         "id": "HP:0100670",
         "label": "Coarse metaphyseal trabecularization"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0100702",
-        "label": "Arachnoid cyst"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011001",
-        "label": "Increased bone mineral density"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -135,6 +117,12 @@
     },
     {
       "type": {
+        "id": "HP:0100702",
+        "label": "Arachnoid cyst"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012444",
         "label": "Brain atrophy"
       },
@@ -142,10 +130,22 @@
     },
     {
       "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:5200001",
         "label": "Selective mutism"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011001",
+        "label": "Increased bone mineral density"
+      }
     },
     {
       "type": {
@@ -157,7 +157,7 @@
   ],
   "interpretations": [
     {
-      "id": "F3-III-1",
+      "id": "9q28zwWZIuxuC9eMQByCltyh",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -169,8 +169,10 @@
             "subjectOrBiosampleId": "F3-III-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_yvqNhzHqfvNjWUDyDKGVKJxPu",
+                "id": "c2521CtoT_AXIN1_NM_003502v4",
                 "geneContext": {
                   "valueId": "HGNC:903",
                   "symbol": "AXIN1"
@@ -183,12 +185,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.288190G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003493.1:p.(Arg841Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "288190",
+                  "pos": 288190,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -219,55 +225,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:32:35.954396009Z",
+    "created": "2025-10-12T09:56:56.350894Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37582359",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37582359",
         "description": "AXIN1 bi-allelic variants disrupting the C-terminal DIX domain cause craniometadiaphyseal osteosclerosis with hip dysplasia"
       }
     ]
