@@ -1,29 +1,15 @@
 {
-  "id": "PMID_38527963_F7_Case_14",
+  "id": "PMID_38527963_F3_Case_5",
   "subject": {
-    "id": "F7 Case 14",
+    "id": "F3 Case 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P50Y"
+        "iso8601duration": "P28Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0030051",
-        "label": "Tip-toe gait"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5Y"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0009053",
@@ -40,7 +26,8 @@
       "type": {
         "id": "HP:0008994",
         "label": "Proximal muscle weakness in lower limbs"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -58,6 +45,17 @@
       "type": {
         "id": "HP:0009027",
         "label": "Foot dorsiflexor weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007149",
+        "label": "Distal upper limb amyotrophy"
       }
     },
     {
@@ -70,7 +68,8 @@
       "type": {
         "id": "HP:0000012",
         "label": "Urinary urgency"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -100,26 +99,19 @@
       "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002064",
-        "label": "Spastic gait"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001761",
-        "label": "Pes cavus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007149",
-        "label": "Distal upper limb amyotrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002359",
+        "label": "Frequent falls"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
     },
     {
       "type": {
@@ -127,6 +119,12 @@
         "label": "Action tremor"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002064",
+        "label": "Spastic gait"
+      }
     },
     {
       "type": {
@@ -139,6 +137,12 @@
       "type": {
         "id": "HP:0001763",
         "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
       },
       "excluded": true
     },
@@ -166,7 +170,7 @@
   ],
   "interpretations": [
     {
-      "id": "F7 Case 14",
+      "id": "Ve4zjdGZajcD6HPsORnUPqdz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -175,11 +179,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F7 Case 14",
+            "subjectOrBiosampleId": "F3 Case 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_RQCystuifyITwgyeDPBsNWGzx",
+                "id": "c571CtoT_RTN2_NM_005619v5",
                 "geneContext": {
                   "valueId": "HGNC:10468",
                   "symbol": "RTN2"
@@ -187,19 +193,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005619.5:c.178dup"
+                    "value": "NM_005619.5:c.571C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.45494912dup"
+                    "value": "NC_000019.10:g.45494409G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005610.1:p.(Arg191Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "45494906",
-                  "ref": "C",
-                  "alt": "CG"
+                  "pos": 45494409,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -227,55 +237,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-02-17T07:36:39.016767978Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-15T15:32:49.905463Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-01-16",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38527963",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38527963",
         "description": "RTN2 deficiency results in an autosomal recessive distal motor neuropathy with lower limb spasticity"
       }
     ]
