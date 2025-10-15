@@ -24,6 +24,12 @@
     },
     {
       "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012725",
         "label": "Cutaneous syndactyly"
       },
@@ -32,12 +38,6 @@
           "id": "HP:0003577",
           "label": "Congenital onset"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004209",
-        "label": "Clinodactyly of the 5th finger"
       }
     },
     {
@@ -63,6 +63,13 @@
         "id": "HP:0000303",
         "label": "Mandibular prognathia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -93,18 +100,11 @@
         "id": "HP:0007236",
         "label": "Recurrent subcortical infarcts"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "32g6POmGMptbJS4reSU7W1t4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,8 +116,10 @@
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ymlnzKjULEtwMStYNBKLLBxUz",
+                "id": "c185del_DDX59_NM_001031725v6",
                 "geneContext": {
                   "valueId": "HGNC:25360",
                   "symbol": "DDX59"
@@ -130,12 +132,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.200666558del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001026895.2:p.(Phe62SerfsTer14)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "200666555",
+                  "pos": 200666555,
                   "ref": "GA",
                   "alt": "G"
                 },
@@ -166,55 +172,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-22T15:11:05.630208015Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-15T13:14:01.222424Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-08-11",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29127725",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29127725",
         "description": "A loss-of-function homozygous mutation in DDX59 implicates a conserved DEAD-box RNA helicase in nervous system development and function"
       }
     ]
