@@ -1,0 +1,186 @@
+{
+  "id": "PMID_33988247_Family_208_II_1",
+  "subject": {
+    "id": "Family 208 II:1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P32Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011961",
+        "label": "Non-obstructive azoospermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000135",
+        "label": "Low semen volume"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P28Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030345",
+        "label": "Abnormal circulating luteinizing hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030346",
+        "label": "Abnormal circulating follicle-stimulating hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025133",
+        "label": "Abnormal serum estradiol"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040171",
+        "label": "Decreased serum testosterone concentration"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "yDVa0Orpn2Qem9p7ZEBfE1nL",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621269",
+          "label": "Spermatogenic failure 101"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 208 II:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c817GtoA_ATG4D_NM_032885v6",
+                "geneContext": {
+                  "valueId": "HGNC:20789",
+                  "symbol": "ATG4D"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_032885.6:c.817G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.10547235G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_116274.3:p.(Val273Ile)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 10547235,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621269",
+        "label": "Spermatogenic failure 101"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P28Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-18T08:55:54.045519Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:33988247",
+        "description": "Pathogenic variants of ATG4D in infertile men with non-obstructive azoospermia identified using whole-exome sequencing."
+      }
+    ]
+  }
+}
