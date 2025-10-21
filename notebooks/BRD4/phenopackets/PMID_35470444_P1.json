@@ -12,20 +12,27 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002236",
-        "label": "Frontal upsweep of hair"
+        "id": "HP:0000486",
+        "label": "Strabismus"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000675",
         "label": "Macrodontia of permanent maxillary central incisor"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002553",
-        "label": "Highly arched eyebrow"
       }
     },
     {
@@ -36,8 +43,8 @@
     },
     {
       "type": {
-        "id": "HP:0045075",
-        "label": "Sparse eyebrow"
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
       }
     },
     {
@@ -48,14 +55,14 @@
     },
     {
       "type": {
-        "id": "HP:0003196",
-        "label": "Short nose"
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
       }
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
+        "id": "HP:0003196",
+        "label": "Short nose"
       }
     },
     {
@@ -66,26 +73,14 @@
     },
     {
       "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
+        "id": "HP:0000252",
+        "label": "Microcephaly"
       }
     },
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000400",
-        "label": "Macrotia"
       }
     },
     {
@@ -111,10 +106,9 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      }
     },
     {
       "type": {
@@ -122,11 +116,17 @@
         "label": "Ventricular septal defect"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002236",
+        "label": "Frontal upsweep of hair"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P1",
+      "id": "Etd3ImzZ44mAvkPdGdMw6I4P",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -138,17 +138,19 @@
             "subjectOrBiosampleId": "P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xSqmogVxrzbVfLXgdKAJnbglU",
-                "label": "del 1.3 Mb",
+                "id": "BRD4_SV_del_1_3_Mb",
+                "label": "del_1_3_Mb",
                 "geneContext": {
                   "valueId": "HGNC:13575",
                   "symbol": "BRD4"
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000135",
@@ -176,55 +178,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:48:10.926618814Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T09:50:18.982473Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35470444",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35470444",
         "description": "Understanding the new BRD4-related syndrome: Clinical and genomic delineation with an international cohort study"
       }
     ]

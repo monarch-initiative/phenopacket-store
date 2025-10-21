@@ -12,6 +12,12 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002553",
         "label": "Highly arched eyebrow"
       }
@@ -36,8 +42,8 @@
     },
     {
       "type": {
-        "id": "HP:0000343",
-        "label": "Long philtrum"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
       }
     },
     {
@@ -48,20 +54,8 @@
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
       }
     },
     {
@@ -82,11 +76,17 @@
         "label": "Intrauterine growth retardation"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "3049",
+      "id": "1I6H5KSwwX12cpGyL8woAIZ8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -98,8 +98,10 @@
             "subjectOrBiosampleId": "3049",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FazSBdmeHsklHUtWgkXbXFedy",
+                "id": "c1289AtoG_BRD4_NM_001379291v1",
                 "geneContext": {
                   "valueId": "HGNC:13575",
                   "symbol": "BRD4"
@@ -112,12 +114,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.15263472T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001366220.1:p.(Tyr430Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "15263472",
+                  "pos": 15263472,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -148,55 +154,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:48:10.922139883Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T09:50:18.981928Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29379197",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29379197",
         "description": "BRD4 interacts with NIPBL and BRD4 is mutated in a Cornelia de Lange-like syndrome"
       }
     ]

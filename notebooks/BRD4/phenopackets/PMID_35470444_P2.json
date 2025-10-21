@@ -12,20 +12,26 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000486",
         "label": "Strabismus"
       }
     },
     {
       "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
       }
     },
     {
@@ -42,14 +48,8 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000400",
-        "label": "Macrotia"
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
       }
     },
     {
@@ -62,7 +62,7 @@
   ],
   "interpretations": [
     {
-      "id": "P2",
+      "id": "MRQhELphj7Gr5Ni4GfL0RtsQ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -74,17 +74,19 @@
             "subjectOrBiosampleId": "P2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pLJlIcnlwFnGDvBHSlaPLJFZt",
-                "label": "del 2.2 Mb",
+                "id": "BRD4_SV_del_2_2_Mb",
+                "label": "del_2_2_Mb",
                 "geneContext": {
                   "valueId": "HGNC:13575",
                   "symbol": "BRD4"
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000135",
@@ -112,55 +114,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:48:10.927794933Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T09:50:18.982646Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35470444",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35470444",
         "description": "Understanding the new BRD4-related syndrome: Clinical and genomic delineation with an international cohort study"
       }
     ]
