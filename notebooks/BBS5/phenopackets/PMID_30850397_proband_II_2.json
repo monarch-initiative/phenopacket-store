@@ -1,20 +1,34 @@
 {
-  "id": "PMID_30850397_II_1",
+  "id": "PMID_30850397_proband_II_2",
   "subject": {
-    "id": "II:1",
+    "id": "proband II:2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P19Y"
+        "iso8601duration": "P11Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000135",
+        "label": "Hypogonadism"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007401",
         "label": "Macular atrophy"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -26,6 +40,11 @@
       "type": {
         "id": "HP:0007663",
         "label": "Reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
       }
     },
     {
@@ -38,7 +57,8 @@
       "type": {
         "id": "HP:0007737",
         "label": "Bone spicule pigmentation of the retina"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -50,6 +70,17 @@
       "type": {
         "id": "HP:0000662",
         "label": "Nyctalopia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Intellectual disability, mild"
       }
     },
     {
@@ -60,28 +91,27 @@
     },
     {
       "type": {
-        "id": "HP:0007787",
-        "label": "Posterior subcapsular cataract"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
       }
     },
     {
       "type": {
-        "id": "HP:0100259",
-        "label": "Postaxial polydactyly"
+        "id": "HP:0007787",
+        "label": "Posterior subcapsular cataract"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      },
-      "excluded": true
+        "id": "HP:0000668",
+        "label": "Hypodontia"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "II:1",
+      "id": "wCdpYu3PhnxIxA5NhhuP8cRx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -90,11 +120,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "II:1",
+            "subjectOrBiosampleId": "proband II:2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SzSemzqcITUVjslHCCiymPcXU",
+                "id": "c208_2TtoC_BBS5_NM_152384v3",
                 "geneContext": {
                   "valueId": "HGNC:970",
                   "symbol": "BBS5"
@@ -107,12 +139,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.169487136T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689597.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "169487136",
+                  "pos": 169487136,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -133,59 +169,63 @@
       "term": {
         "id": "OMIM:615983",
         "label": "Bardet-Biedl syndrome 5"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-11T07:51:09.727664947Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T20:22:15.043394Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30850397",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30850397",
         "description": "Novel splicing variant c. 208+2T>C in BBS5 segregates with Bardet-Biedl syndrome in an Iranian family by targeted exome sequencing"
       }
     ]
