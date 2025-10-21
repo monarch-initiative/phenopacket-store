@@ -1,18 +1,22 @@
 {
-  "id": "PMID_24573067_case_report",
+  "id": "PMID_24573067_CASE_REPORT",
   "subject": {
-    "id": "case report",
+    "id": "CASE REPORT",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P80Y"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006482",
+        "label": "Abnormal dental morphology"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0007530",
@@ -20,9 +24,41 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003621",
-          "label": "Juvenile onset"
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001595",
+        "label": "Abnormal hair morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001597",
+        "label": "Abnormal nail morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0045059",
+        "label": "Hyperkeratotic papule"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025114",
+        "label": "Hypergranulosis"
       }
     },
     {
@@ -31,17 +67,11 @@
         "label": "Parakeratosis"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0025114",
-        "label": "Hypergranulosis"
-      }
     }
   ],
   "interpretations": [
     {
-      "id": "En5CvVMRFuMREchJ7lch2NfG",
+      "id": "S3zPWIQofO3E2Q7bGCIblVUN",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -50,13 +80,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "case report",
+            "subjectOrBiosampleId": "CASE REPORT",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c174delC_AAGAB_NM_024666v5",
+                "id": "c174del_AAGAB_NM_024666v5",
                 "geneContext": {
                   "valueId": "HGNC:25662",
                   "symbol": "AAGAB"
@@ -64,11 +94,15 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_024666.5:c.174delC"
+                    "value": "NM_024666.5:c.174del"
                   },
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.67236720del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_078942.3:p.(Asn59IlefsTer51)"
                   }
                 ],
                 "vcfRecord": {
@@ -98,21 +132,21 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003621",
-          "label": "Juvenile onset"
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-09-25T06:05:47.671024Z",
+    "created": "2025-10-21T19:25:27.160248Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
