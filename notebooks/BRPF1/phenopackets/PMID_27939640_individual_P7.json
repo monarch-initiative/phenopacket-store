@@ -30,6 +30,13 @@
     },
     {
       "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000431",
         "label": "Wide nasal bridge"
       }
@@ -39,68 +46,6 @@
         "id": "HP:0001382",
         "label": "Joint hypermobility"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000311",
-        "label": "Round face"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000343",
-        "label": "Long philtrum"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -139,6 +84,12 @@
     },
     {
       "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000337",
         "label": "Broad forehead"
       },
@@ -146,10 +97,15 @@
     },
     {
       "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
-      },
-      "excluded": true
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
     },
     {
       "type": {
@@ -160,6 +116,12 @@
     },
     {
       "type": {
+        "id": "HP:0000311",
+        "label": "Round face"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002714",
         "label": "Downturned corners of mouth"
       },
@@ -167,15 +129,46 @@
     },
     {
       "type": {
+        "id": "HP:0001510",
+        "label": "Growth delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000322",
         "label": "Short philtrum"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "individual P7",
+      "id": "0kZWRegbXpUEd133MqHPEM5o",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -187,8 +180,10 @@
             "subjectOrBiosampleId": "individual P7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XnhVBUkpCSCbHVxTJlNxstNXv",
+                "id": "c1883_1886dup_BRPF1_NM_001003694v2",
                 "geneContext": {
                   "valueId": "HGNC:14255",
                   "symbol": "BRPF1"
@@ -201,12 +196,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.9742053_9742056dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001003694.1:p.(Gln629HisfsTer34)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "9742051",
+                  "pos": 9742051,
                   "ref": "G",
                   "alt": "GATGC"
                 },
@@ -237,55 +236,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-06T07:02:12.034001827Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T20:27:59.796128Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27939640",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27939640",
         "description": "Mutations in the Chromatin Regulator Gene BRPF1 Cause Syndromic Intellectual Disability and Deficient Histone Acetylation"
       }
     ]
