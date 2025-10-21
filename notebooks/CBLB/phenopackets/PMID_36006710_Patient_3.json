@@ -1,59 +1,34 @@
 {
-  "id": "PMID_36006710_Patient_1",
+  "id": "PMID_36006710_Patient_3",
   "subject": {
-    "id": "Patient 1",
+    "id": "Patient 3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P16Y"
+        "iso8601duration": "P4Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000821",
-        "label": "Hypothyroidism"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100651",
-        "label": "Type I diabetes mellitus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001045",
-        "label": "Vitiligo"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
       }
     },
     {
       "type": {
         "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      }
+        "label": "Decreased circulating IgG concentration"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
-      }
+        "label": "Decreased circulating IgA concentration"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -65,7 +40,8 @@
       "type": {
         "id": "HP:0410297",
         "label": "Partial absence of specific antibody response to tetanus vaccine"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -87,33 +63,50 @@
     },
     {
       "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001045",
+        "label": "Vitiligo"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001025",
         "label": "Urticaria"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000403",
         "label": "Recurrent otitis media"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001890",
-        "label": "Autoimmune hemolytic anemia"
       },
       "excluded": true
     },
     {
       "type": {
         "id": "HP:0011839",
-        "label": "Abnormal T cell count"
+        "label": "Abnormal total T cell count"
       },
       "excluded": true
     },
@@ -127,7 +120,7 @@
     {
       "type": {
         "id": "HP:0040089",
-        "label": "Abnormal natural killer cell count"
+        "label": "Abnormal total natural killer cell count"
       },
       "excluded": true
     },
@@ -148,7 +141,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "LqRBiq61A4dK010ysoSwVfpd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -157,11 +150,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 1",
+            "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HOqgLLNlazVuzUEmOLezbTXnR",
+                "id": "c770AtoT_CBLB_NM_170662v5",
                 "geneContext": {
                   "valueId": "HGNC:1542",
                   "symbol": "CBLB"
@@ -174,12 +169,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.105745992T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_733762.2:p.(His257Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "105745992",
+                  "pos": 105745992,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -203,61 +202,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y"
+          "iso8601duration": "P6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-21T14:55:33.908031940Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T04:48:03.382168Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36006710",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36006710",
         "description": "Immune dysregulation caused by homozygous mutations in CBLB"
       }
     ]
