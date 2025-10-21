@@ -1,5 +1,5 @@
 {
-  "id": "PMID_28065471_PII:1",
+  "id": "PMID_28065471_PII_1",
   "subject": {
     "id": "PII:1",
     "timeAtLastEncounter": {
@@ -66,6 +66,13 @@
     },
     {
       "type": {
+        "id": "HP:0034392",
+        "label": "Joint contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
       }
@@ -90,6 +97,13 @@
     },
     {
       "type": {
+        "id": "HP:0012727",
+        "label": "Thoracic aortic aneurysm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
       }
@@ -99,25 +113,11 @@
         "id": "HP:0012301",
         "label": "Type II transferrin isoform profile"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0034392",
-        "label": "Joint contracture"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012727",
-        "label": "Thoracic aortic aneurysm"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "PII:1",
+      "id": "IA032r3a6Y37HG972o06gT7Z",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -129,8 +129,10 @@
             "subjectOrBiosampleId": "PII:1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_yEYKgZJKQteerUEuRDldmALpO",
+                "id": "c634CtoT_ATP6V1E1_NM_001696v4",
                 "geneContext": {
                   "valueId": "HGNC:857",
                   "symbol": "ATP6V1E1"
@@ -143,12 +145,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.17592721G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001687.1:p.(Arg212Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "17592721",
+                  "pos": 17592721,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -179,55 +185,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-22T04:36:57.815809965Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-21T19:31:08.670795Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28065471",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28065471",
         "description": "Mutations in ATP6V1E1 or ATP6V1A Cause Autosomal-Recessive Cutis Laxa"
       }
     ]
