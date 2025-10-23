@@ -1,13 +1,13 @@
 {
-  "id": "PMID_27067446_IV3",
+  "id": "PMID_18816383_index_case",
   "subject": {
-    "id": "IV3",
+    "id": "index case",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P10Y"
+        "iso8601duration": "P33Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -18,16 +18,15 @@
     },
     {
       "type": {
-        "id": "HP:0000083",
-        "label": "Renal insufficiency"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003774",
         "label": "Stage 5 chronic kidney disease"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
     },
     {
       "type": {
@@ -49,13 +48,14 @@
     },
     {
       "type": {
-        "id": "HP:0012587",
-        "label": "Macroscopic hematuria"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
+        "id": "HP:0008341",
+        "label": "Distal renal tubular acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections"
       }
     },
     {
@@ -68,12 +68,6 @@
       "type": {
         "id": "HP:0001959",
         "label": "Polydipsia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003259",
-        "label": "Elevated circulating creatinine concentration"
       }
     },
     {
@@ -113,22 +107,9 @@
     },
     {
       "type": {
-        "id": "HP:0031425",
-        "label": "Increased circulating beta-C-terminal telopeptide concentration"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002917",
         "label": "Hypomagnesemia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002905",
-        "label": "Hyperphosphatemia"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -139,21 +120,26 @@
     },
     {
       "type": {
-        "id": "HP:0003165",
-        "label": "Elevated circulating parathyroid hormone level"
-      }
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0003155",
-        "label": "Elevated circulating alkaline phosphatase concentration"
+        "id": "HP:0000822",
+        "label": "Hypertension"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "zV2KakWZNv1llEyLFp4JHNgs",
+      "id": "0Sk02qIQjo7mcJsszMLIEk14",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -162,13 +148,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "IV3",
+            "subjectOrBiosampleId": "index case",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c364_379delinsTACCGGTCTGGCTGGACTAGCAA_CLDN16_NM_006580v4",
+                "id": "c574_1GtoT_CLDN16_NM_006580v4",
                 "geneContext": {
                   "valueId": "HGNC:2037",
                   "symbol": "CLDN16"
@@ -176,23 +162,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006580.4:c.364_379delinsTACCGGTCTGGCTGGACTAGCAA"
+                    "value": "NM_006580.4:c.574+1G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.190404908_190404923delinsTACCGGTCTGGCTGGACTAGCAA"
+                    "value": "NC_000003.12:g.190408506G>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006571.2:p.(Ala122TyrfsTer22)"
+                    "value": "NP_006571.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": 190404908,
-                  "ref": "GCCACGTTACTAATAG",
-                  "alt": "TACCGGTCTGGCTGGACTAGCAA"
+                  "pos": 190408506,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -214,13 +200,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P7Y10M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-23T13:58:23.599857Z",
+    "created": "2025-10-23T13:58:23.604150Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -267,8 +253,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:27067446",
-        "description": "A novel mutation in CLDN16 results in rare familial hypomagnesaemia with hypercalciuria and nephrocalcinosis in a Chinese family"
+        "id": "PMID:18816383",
+        "description": "Familial hypomagnesaemia with hypercalciuria and nephrocalcinosis (FHHNC): compound heterozygous mutation in the claudin 16 (CLDN16) gene"
       }
     ]
   }

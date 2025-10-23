@@ -1,19 +1,24 @@
 {
-  "id": "PMID_27067446_IV3",
+  "id": "PMID_16705067_Patient_2_brother",
   "subject": {
-    "id": "IV3",
+    "id": "Patient 2 (brother)",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P10Y"
+        "iso8601duration": "P15Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0000121",
         "label": "Nephrocalcinosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
       }
     },
     {
@@ -31,6 +36,17 @@
     },
     {
       "type": {
+        "id": "HP:0000787",
+        "label": "Nephrolithiasis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002150",
         "label": "Hypercalciuria"
       }
@@ -43,78 +59,24 @@
     },
     {
       "type": {
-        "id": "HP:0005567",
-        "label": "Renal magnesium wasting"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0012587",
         "label": "Macroscopic hematuria"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P12Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000103",
-        "label": "Polyuria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001959",
-        "label": "Polydipsia"
       }
     },
     {
       "type": {
         "id": "HP:0003259",
         "label": "Elevated circulating creatinine concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000483",
-        "label": "Astigmatism"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000639",
-        "label": "Nystagmus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000540",
-        "label": "Hypermetropia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000545",
-        "label": "Myopia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0031425",
-        "label": "Increased circulating beta-C-terminal telopeptide concentration"
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
       }
     },
     {
@@ -122,38 +84,11 @@
         "id": "HP:0002917",
         "label": "Hypomagnesemia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002905",
-        "label": "Hyperphosphatemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002901",
-        "label": "Hypocalcemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003165",
-        "label": "Elevated circulating parathyroid hormone level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003155",
-        "label": "Elevated circulating alkaline phosphatase concentration"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "zV2KakWZNv1llEyLFp4JHNgs",
+      "id": "XzuYnaL19q3z5NFS1Q1RxXcC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -162,13 +97,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "IV3",
+            "subjectOrBiosampleId": "Patient 2 (brother)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c364_379delinsTACCGGTCTGGCTGGACTAGCAA_CLDN16_NM_006580v4",
+                "id": "c621TtoG_CLDN16_NM_006580v4",
                 "geneContext": {
                   "valueId": "HGNC:2037",
                   "symbol": "CLDN16"
@@ -176,23 +111,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006580.4:c.364_379delinsTACCGGTCTGGCTGGACTAGCAA"
+                    "value": "NM_006580.4:c.621T>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.190404908_190404923delinsTACCGGTCTGGCTGGACTAGCAA"
+                    "value": "NC_000003.12:g.190409949T>G"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006571.2:p.(Ala122TyrfsTer22)"
+                    "value": "NP_006571.2:p.(Tyr207Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": 190404908,
-                  "ref": "GCCACGTTACTAATAG",
-                  "alt": "TACCGGTCTGGCTGGACTAGCAA"
+                  "pos": 190409949,
+                  "ref": "T",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -214,13 +149,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P12Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-23T13:58:23.599857Z",
+    "created": "2025-10-23T13:58:23.598299Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -267,8 +202,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:27067446",
-        "description": "A novel mutation in CLDN16 results in rare familial hypomagnesaemia with hypercalciuria and nephrocalcinosis in a Chinese family"
+        "id": "PMID:16705067",
+        "description": "Unusual clinical presentation and possible rescue of a novel claudin-16 mutation"
       }
     ]
   }

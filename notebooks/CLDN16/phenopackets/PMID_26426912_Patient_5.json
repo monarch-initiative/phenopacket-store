@@ -1,19 +1,24 @@
 {
-  "id": "PMID_25852890_patient",
+  "id": "PMID_26426912_Patient_5",
   "subject": {
-    "id": "patient",
+    "id": "Patient 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P23Y"
+        "iso8601duration": "P25Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0000121",
         "label": "Nephrocalcinosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P20Y"
+        }
       }
     },
     {
@@ -23,7 +28,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P23Y"
+          "iso8601duration": "P25Y"
         }
       }
     },
@@ -35,111 +40,38 @@
     },
     {
       "type": {
-        "id": "HP:0012608",
-        "label": "Hypermagnesiuria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000010",
-        "label": "Recurrent urinary tract infections"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000103",
-        "label": "Polyuria"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001959",
-        "label": "Polydipsia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000483",
-        "label": "Astigmatism"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000639",
-        "label": "Nystagmus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000540",
-        "label": "Hypermetropia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000545",
-        "label": "Myopia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002149",
-        "label": "Hyperuricemia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002917",
         "label": "Hypomagnesemia"
       }
     },
     {
       "type": {
-        "id": "HP:0002901",
-        "label": "Hypocalcemia"
+        "id": "HP:0000705",
+        "label": "Amelogenesis imperfecta"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P20Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006297",
+        "label": "Enamel hypoplasia"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0003165",
-        "label": "Elevated circulating parathyroid hormone level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000093",
-        "label": "Proteinuria"
+        "id": "HP:0033786",
+        "label": "Hypomature enamel"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "iXFz0jyzOe6Sc88ulysFmo57",
+      "id": "BHDOtvWIjz2eGs2u2V710Ys6",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -148,42 +80,26 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "Patient 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c130CtoT_CLDN16_NM_006580v4",
+                "id": "CLDN16_SV_E2_E5del",
+                "label": "E2_E5del",
                 "geneContext": {
                   "valueId": "HGNC:2037",
                   "symbol": "CLDN16"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_006580.4:c.130C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.190402352C>T"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_006571.2:p.(Arg44Ter)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr3",
-                  "pos": 190402352,
-                  "ref": "C",
-                  "alt": "T"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -199,15 +115,14 @@
         "label": "Hypomagnesemia 3, renal"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+        "age": {
+          "iso8601duration": "P20Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-23T13:58:23.604616Z",
+    "created": "2025-10-23T13:58:23.599329Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -254,8 +169,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:25852890",
-        "description": "Two novel mutations of the CLDN16 gene cause familial hypomagnesaemia with hypercalciuria and nephrocalcinosis"
+        "id": "PMID:26426912",
+        "description": "Claudin-16 Deficiency Impairs Tight Junction Function in Ameloblasts, Leading to Abnormal Enamel Formation"
       }
     ]
   }

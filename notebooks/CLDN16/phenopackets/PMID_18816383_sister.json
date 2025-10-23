@@ -7,9 +7,6 @@
         "iso8601duration": "P28Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -37,6 +34,12 @@
     },
     {
       "type": {
+        "id": "HP:0000010",
+        "label": "Recurrent urinary tract infections"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001508",
         "label": "Failure to thrive"
       },
@@ -48,12 +51,6 @@
     },
     {
       "type": {
-        "id": "HP:0000010",
-        "label": "Recurrent urinary tract infections"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000822",
         "label": "Hypertension"
       }
@@ -61,7 +58,7 @@
   ],
   "interpretations": [
     {
-      "id": "sister",
+      "id": "xlPXgXjnrgOvJN1AzAZwbk6A",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -73,8 +70,10 @@
             "subjectOrBiosampleId": "sister",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_JitHMDgozdQPbygjNmZhfQTLw",
+                "id": "c574_1GtoT_CLDN16_NM_006580v4",
                 "geneContext": {
                   "valueId": "HGNC:2037",
                   "symbol": "CLDN16"
@@ -87,12 +86,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.190408506G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006571.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "190408506",
+                  "pos": 190408506,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -122,55 +125,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-23T14:23:04.755038976Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T13:58:23.604304Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18816383",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18816383",
         "description": "Familial hypomagnesaemia with hypercalciuria and nephrocalcinosis (FHHNC): compound heterozygous mutation in the claudin 16 (CLDN16) gene"
       }
     ]
