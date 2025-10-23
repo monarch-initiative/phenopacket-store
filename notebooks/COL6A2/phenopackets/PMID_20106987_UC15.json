@@ -12,6 +12,33 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001181",
+        "label": "Adducted thumb"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100807",
+        "label": "Long fingers"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001558",
+        "label": "Decreased fetal movement"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006094",
+        "label": "Finger joint hypermobility"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002827",
         "label": "Hip dislocation"
       },
@@ -33,75 +60,6 @@
           "label": "Juvenile onset"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0006094",
-        "label": "Finger joint hypermobility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034671",
-        "label": "Knee contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034391",
-        "label": "Elbow contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034665",
-        "label": "Shoulder contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003273",
-        "label": "Hip contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001181",
-        "label": "Adducted thumb"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100807",
-        "label": "Long fingers"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001558",
-        "label": "Decreased fetal movement"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -133,6 +91,30 @@
     },
     {
       "type": {
+        "id": "HP:0034671",
+        "label": "Knee contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034391",
+        "label": "Elbow contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034665",
+        "label": "Shoulder contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003273",
+        "label": "Hip contracture"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0008081",
         "label": "Pes valgus"
       },
@@ -147,6 +129,24 @@
     },
     {
       "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
       },
@@ -155,7 +155,7 @@
   ],
   "interpretations": [
     {
-      "id": "UC15",
+      "id": "QLq4wbNQwhZyLO7MFowf0cAG",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -167,8 +167,10 @@
             "subjectOrBiosampleId": "UC15",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_YkkgdfBhdgHsCHhoOIIqnFuge",
+                "id": "c1870GtoA_COL6A2_NM_001849v4",
                 "geneContext": {
                   "valueId": "HGNC:2212",
                   "symbol": "COL6A2"
@@ -181,12 +183,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000021.9:g.46125518G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001840.3:p.(Glu624Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "46125518",
+                  "pos": 46125518,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -217,55 +223,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-30T10:12:42.722821950Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T15:41:57.128263Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:20106987",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/20106987",
         "description": "Recessive COL6A2 C-globular Missense Mutations in Ullrich Congenital Muscular Dystrophy"
       }
     ]

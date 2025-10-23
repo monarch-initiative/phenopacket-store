@@ -1,10 +1,10 @@
 {
-  "id": "PMID_16075202_propositus",
+  "id": "PMID_11381124_Family_B_proband",
   "subject": {
-    "id": "propositus",
+    "id": "Family B proband",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P5Y"
+        "iso8601duration": "P3Y"
       }
     },
     "sex": "MALE"
@@ -35,6 +35,11 @@
       "type": {
         "id": "HP:0006094",
         "label": "Finger joint hypermobility"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
@@ -42,11 +47,7 @@
         "id": "HP:0002827",
         "label": "Hip dislocation"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -59,6 +60,12 @@
       "type": {
         "id": "HP:0003306",
         "label": "Spinal rigidity"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
@@ -66,14 +73,24 @@
         "id": "HP:0000218",
         "label": "High palate"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0002808",
         "label": "Kyphosis"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
@@ -86,12 +103,22 @@
       "type": {
         "id": "HP:0034671",
         "label": "Knee contracture"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0034391",
         "label": "Elbow contracture"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
@@ -114,45 +141,86 @@
         "label": "Hypotonia"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P3M"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0003557",
         "label": "Increased variability in muscle fiber diameter"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0030095",
-        "label": "Reduced muscle collagen VI"
+        "id": "HP:0100297",
+        "label": "Increased endomysial connective tissue"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0003324",
         "label": "Generalized muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003722",
+        "label": "Neck flexor weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020045",
+        "label": "Esodeviation"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
-      }
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "XGeTqS2LYU6hVPNrHeYcbUpE",
+      "id": "SMqmbivsFQkMe3DoRv1j84VX",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -161,13 +229,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "propositus",
+            "subjectOrBiosampleId": "Family B proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1117_10AtoG_COL6A2_NM_001849v4",
+                "id": "c1771_1GtoA_COL6A2_NM_001849v4",
                 "geneContext": {
                   "valueId": "HGNC:2212",
                   "symbol": "COL6A2"
@@ -175,11 +243,11 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001849.4:c.1117-10A>G"
+                    "value": "NM_001849.4:c.1771-1G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.46118604A>G"
+                    "value": "NC_000021.9:g.46125265G>A"
                   },
                   {
                     "syntax": "hgvs.p",
@@ -189,14 +257,14 @@
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": 46118604,
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 46125265,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -212,14 +280,15 @@
         "label": "Ullrich congenital muscular dystrophy 1B"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P3M"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-23T15:41:57.128033Z",
+    "created": "2025-10-23T15:41:57.127772Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -266,8 +335,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:16075202",
-        "description": "A homozygous COL6A2 intron mutation causes in-frame triple-helical deletion and nonsense-mediated mRNA decay in a patient with Ullrich congenital muscular dystrophy"
+        "id": "PMID:11381124",
+        "description": "Ullrich scleroatonic muscular dystrophy is caused by recessive mutations in collagen type VI"
       }
     ]
   }

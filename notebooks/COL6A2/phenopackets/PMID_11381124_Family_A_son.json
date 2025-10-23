@@ -36,6 +36,18 @@
     },
     {
       "type": {
+        "id": "HP:0001558",
+        "label": "Decreased fetal movement"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0006094",
         "label": "Finger joint hypermobility"
       },
@@ -67,6 +79,30 @@
         "ontologyClass": {
           "id": "HP:0003577",
           "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003306",
+        "label": "Spinal rigidity"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     },
@@ -144,30 +180,6 @@
     },
     {
       "type": {
-        "id": "HP:0001558",
-        "label": "Decreased fetal movement"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0030674",
-          "label": "Antenatal onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002878",
         "label": "Respiratory failure"
       },
@@ -175,30 +187,6 @@
         "ontologyClass": {
           "id": "HP:0011463",
           "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003324",
-        "label": "Generalized muscle weakness"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003306",
-        "label": "Spinal rigidity"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
         }
       }
     },
@@ -237,6 +225,18 @@
     },
     {
       "type": {
+        "id": "HP:0003324",
+        "label": "Generalized muscle weakness"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       },
@@ -259,7 +259,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family A son",
+      "id": "0RTz6BmhVdqy8f2Myya3lzcg",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -271,8 +271,10 @@
             "subjectOrBiosampleId": "Family A son",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QImxPxJdggJxJKqYpsJUhozpC",
+                "id": "c1151dup_COL6A2_NM_001849v4",
                 "geneContext": {
                   "valueId": "HGNC:2212",
                   "symbol": "COL6A2"
@@ -285,12 +287,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000021.9:g.46118648dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001840.3:p.(Glu386ArgfsTer65)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "46118643",
+                  "pos": 46118643,
                   "ref": "G",
                   "alt": "GC"
                 },
@@ -321,55 +327,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-30T10:12:42.716313123Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T15:41:57.127579Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:11381124",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/11381124",
         "description": "Ullrich scleroatonic muscular dystrophy is caused by recessive mutations in collagen type VI"
       }
     ]
