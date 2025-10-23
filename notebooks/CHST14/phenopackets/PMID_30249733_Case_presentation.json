@@ -12,41 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001290",
-        "label": "Generalized hypotonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001762",
-        "label": "Talipes equinovarus"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0005272",
         "label": "Prominent nasolabial fold"
       }
@@ -89,6 +54,29 @@
     },
     {
       "type": {
+        "id": "HP:0001181",
+        "label": "Adducted thumb"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001290",
+        "label": "Generalized hypotonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001382",
         "label": "Joint hypermobility"
       }
@@ -97,6 +85,18 @@
       "type": {
         "id": "HP:0000974",
         "label": "Hyperextensible skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
       }
     },
     {
@@ -110,11 +110,23 @@
         "id": "HP:0000028",
         "label": "Cryptorchidism"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Case presentation",
+      "id": "fSvz4ttRd4I9UvdiIgANQr5n",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -126,8 +138,10 @@
             "subjectOrBiosampleId": "Case presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZNuYxHIUgjOobdAUHnqYEvTQj",
+                "id": "c797dup_CHST14_NM_130468v4",
                 "geneContext": {
                   "valueId": "HGNC:24464",
                   "symbol": "CHST14"
@@ -140,12 +154,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.40472010dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_569735.1:p.(Tyr266Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "40472009",
+                  "pos": 40472009,
                   "ref": "T",
                   "alt": "TA"
                 },
@@ -176,55 +194,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-23T11:55:02.673327207Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T13:47:08.002016Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30249733",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30249733",
         "description": "Novel mutation in the CHST14 gene causing musculocontractural type of Ehlers-Danlos syndrome"
       }
     ]
