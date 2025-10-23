@@ -1,70 +1,51 @@
 {
-  "id": "PMID_23726037_patient",
+  "id": "PMID_27761245_BRC081",
   "subject": {
-    "id": "patient",
+    "id": "BRC081",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P11Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
+        "id": "HP:0000708",
+        "label": "Atypical behavior"
       }
     },
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001273",
+        "label": "Abnormal corpus callosum morphology"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010862",
-        "label": "Delayed fine motor development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009879",
-        "label": "Simplified gyral pattern"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
+        "id": "HP:0007565",
+        "label": "Multiple cafe-au-lait spots"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "xcxKVbloZb4O7m1nIpOuTMft",
+      "id": "1asID7zsCi7gAP6P2Wm0DrMD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -73,13 +54,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "BRC081",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c4005_1GtoA_CDK5RAP2_NM_018249v6",
+                "id": "c3097del_CDK5RAP2_NM_018249v6",
                 "geneContext": {
                   "valueId": "HGNC:18672",
                   "symbol": "CDK5RAP2"
@@ -87,23 +68,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_018249.6:c.4005-1G>A"
+                    "value": "NM_018249.6:c.3097del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.120419961C>T"
+                    "value": "NC_000009.12:g.120443671del"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_060719.4:p.?"
+                    "value": "NP_060719.4:p.(Val1033SerfsTer41)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": 120419961,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 120443670,
+                  "ref": "AC",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -122,17 +103,11 @@
       "term": {
         "id": "OMIM:604804",
         "label": "Microcephaly 3, primary, autosomal recessive"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-23T08:16:06.659085Z",
+    "created": "2025-10-23T08:16:06.659273Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -179,8 +154,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:23726037",
-        "description": "The first case of CDK5RAP2-related primary microcephaly in a non-consanguineous patient identified by next generation sequencing"
+        "id": "PMID:27761245",
+        "description": "Activation of an exonic splice-donor site in exon 30 of CDK5RAP2 in a patient with severe microcephaly and pigmentary abnormalities."
       }
     ]
   }
