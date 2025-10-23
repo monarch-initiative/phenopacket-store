@@ -1,0 +1,253 @@
+{
+  "id": "PMID_27656288_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001073",
+        "label": "Cigarette-paper scars"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031158",
+        "label": "Widened atrophic scar"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000977",
+        "label": "Soft skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000974",
+        "label": "Hyperextensible skin"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001374",
+        "label": "Congenital hip dislocation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001788",
+        "label": "Premature rupture of membranes"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034197",
+          "label": "Third trimester onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031370",
+        "label": "Small intestinal perforation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002751",
+        "label": "Kyphoscoliosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "QPsLV92HgQRE4hVB2tv77ZQ1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:130010",
+          "label": "Ehlers-Danlos syndrome, classic type, 2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c682GtoA_COL5A2_NM_000393v5",
+                "geneContext": {
+                  "valueId": "HGNC:2210",
+                  "symbol": "COL5A2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000393.5:c.682G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.189086734C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000384.2:p.(Gly228Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 189086734,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:130010",
+        "label": "Ehlers-Danlos syndrome, classic type, 2"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-23T15:31:09.764342Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:27656288",
+        "description": "A novel missense mutation of COL5A2 in a patient with Ehlers-Danlos syndrome"
+      }
+    ]
+  }
+}
