@@ -1,38 +1,15 @@
 {
-  "id": "PMID_35979925_Case_1",
+  "id": "PMID_35979925_Case_12",
   "subject": {
-    "id": "Case 1",
+    "id": "Case 12",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P7Y"
+        "iso8601duration": "P10Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000729",
-        "label": "Autistic behavior"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007018",
-        "label": "Attention deficit hyperactivity disorder"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
     {
       "type": {
         "id": "HP:0000276",
@@ -52,7 +29,11 @@
         "id": "HP:0007359",
         "label": "Focal-onset seizure"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
     },
     {
       "type": {
@@ -79,8 +60,7 @@
       "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -189,6 +169,24 @@
     },
     {
       "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007018",
+        "label": "Attention deficit hyperactivity disorder"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004209",
         "label": "Clinodactyly of the 5th finger"
       },
@@ -224,6 +222,12 @@
     },
     {
       "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000365",
         "label": "Hearing impairment"
       },
@@ -253,7 +257,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case 1",
+      "id": "0kTLb4xxVQIANr1mCYpnCk2d",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -262,21 +266,39 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Case 1",
+            "subjectOrBiosampleId": "Case 12",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WQTTZiROgcHlmFfSmuFCxeimu",
-                "label": "1.14 Mb deletion",
+                "id": "c1744CtoT_CAPRIN1_NM_005898v5",
                 "geneContext": {
                   "valueId": "HGNC:6743",
                   "symbol": "CAPRIN1"
                 },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005898.5:c.1744C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.34096517C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005889.3:p.(Gln582Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 34096517,
+                  "ref": "C",
+                  "alt": "T"
                 },
+                "moleculeContext": "genomic",
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -295,62 +317,62 @@
         "label": "Neurodevelopmental disorder with language impairment, autism, and attention deficit-hyperactivity disorder"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-22T19:57:38.369143962Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:16:18.220199Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35979925",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35979925",
         "description": "CAPRIN1 haploinsufficiency causes a neurodevelopmental disorder with language impairment, ADHD and ASD"
       }
     ]

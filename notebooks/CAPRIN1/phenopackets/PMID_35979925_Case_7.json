@@ -1,10 +1,10 @@
 {
-  "id": "PMID_35979925_Case_10",
+  "id": "PMID_35979925_Case_7",
   "subject": {
-    "id": "Case 10",
+    "id": "Case 7",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P48Y"
+        "iso8601duration": "P7Y"
       }
     },
     "sex": "MALE"
@@ -14,43 +14,8 @@
       "type": {
         "id": "HP:0000276",
         "label": "Long face"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000601",
-        "label": "Hypotelorism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007018",
-        "label": "Attention deficit hyperactivity disorder"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000718",
-        "label": "Aggressive behavior"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -96,6 +61,13 @@
     },
     {
       "type": {
+        "id": "HP:0000601",
+        "label": "Hypotelorism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0011265",
         "label": "Cleft earlobe"
       },
@@ -119,6 +91,13 @@
       "type": {
         "id": "HP:0000347",
         "label": "Micrognathia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
       },
       "excluded": true
     },
@@ -189,13 +168,19 @@
       "type": {
         "id": "HP:0000729",
         "label": "Autistic behavior"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0004209",
         "label": "Clinodactyly of the 5th finger"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
       },
       "excluded": true
     },
@@ -217,6 +202,19 @@
       "type": {
         "id": "HP:0000739",
         "label": "Anxiety"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
       },
       "excluded": true
     },
@@ -244,7 +242,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case 10",
+      "id": "k81ksgHKPqGKxYAQ4WgGmHLr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -253,11 +251,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Case 10",
+            "subjectOrBiosampleId": "Case 7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jJTEJLowsYCqmYaLBKbyvBGYp",
+                "id": "c1103delinsTATGT_CAPRIN1_NM_005898v5",
                 "geneContext": {
                   "valueId": "HGNC:6743",
                   "symbol": "CAPRIN1"
@@ -265,19 +265,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005898.5:c.1372C>T"
+                    "value": "NM_005898.5:c.1103delinsTATGT"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.34090257C>T"
+                    "value": "NC_000011.10:g.34086200delinsTATGT"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005889.3:p.(Gly368ValfsTer5)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "34090257",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 34086200,
+                  "ref": "G",
+                  "alt": "TATGT"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -306,55 +310,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-22T19:57:38.380309104Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:16:18.219610Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35979925",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35979925",
         "description": "CAPRIN1 haploinsufficiency causes a neurodevelopmental disorder with language impairment, ADHD and ASD"
       }
     ]

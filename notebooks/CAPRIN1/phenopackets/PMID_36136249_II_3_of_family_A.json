@@ -23,28 +23,6 @@
     },
     {
       "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P16Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003391",
-        "label": "Gowers sign"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003477",
         "label": "Peripheral axonal neuropathy"
       }
@@ -69,6 +47,17 @@
     },
     {
       "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001337",
         "label": "Tremor"
       }
@@ -78,6 +67,13 @@
         "id": "HP:0002505",
         "label": "Loss of ambulation"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001284",
+        "label": "Areflexia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -99,21 +95,25 @@
     },
     {
       "type": {
-        "id": "HP:0034332",
-        "label": "Cognitive regression"
+        "id": "HP:0003391",
+        "label": "Gowers sign"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0001284",
-        "label": "Areflexia"
-      },
-      "excluded": true
+        "id": "HP:0034332",
+        "label": "Cognitive regression"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "II.3 of family A",
+      "id": "h6qur3933VthDmpwCw4X0WpG",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -125,8 +125,10 @@
             "subjectOrBiosampleId": "II.3 of family A",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_fxHGPjaDFdevAirfBWWkVmszE",
+                "id": "c1535CtoT_CAPRIN1_NM_005898v5",
                 "geneContext": {
                   "valueId": "HGNC:6743",
                   "symbol": "CAPRIN1"
@@ -139,12 +141,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.34090659C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005889.3:p.(Pro512Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "34090659",
+                  "pos": 34090659,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -174,55 +180,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-29T18:48:51.491382122Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:13:54.945209Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36136249",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36136249",
         "description": "CAPRIN1P512L causes aberrant protein aggregation and associates with early-onset ataxia"
       }
     ]
