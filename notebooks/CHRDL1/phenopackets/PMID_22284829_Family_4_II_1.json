@@ -1,0 +1,161 @@
+{
+  "id": "PMID_22284829_Family_4_II_1",
+  "subject": {
+    "id": "Family 4 II:1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P15Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000485",
+        "label": "Megalocornea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100690",
+        "label": "Mosaic central corneal dystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001084",
+        "label": "Corneal arcus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007765",
+        "label": "Deep anterior chamber"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "tdfURUoaBFScKE52qE3ZlTvK",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:309300",
+          "label": "Megalocornea 1, X-linked"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 4 II:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c301_2TtoG_CHRDL1_NM_001143981v2",
+                "geneContext": {
+                  "valueId": "HGNC:29861",
+                  "symbol": "CHRDL1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001143981.2:c.301+2T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.110759659A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001137453.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 110759659,
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:309300",
+        "label": "Megalocornea 1, X-linked"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-23T13:29:55.821617Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:22284829",
+        "description": "X-linked megalocornea caused by mutations in CHRDL1 identifies an essential role for ventroptin in anterior segment development."
+      }
+    ]
+  }
+}
