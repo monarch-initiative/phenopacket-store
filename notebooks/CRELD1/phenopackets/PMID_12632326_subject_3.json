@@ -1,7 +1,8 @@
 {
-  "id": "PMID_12632326_subject_1",
+  "id": "PMID_12632326_subject_3",
   "subject": {
-    "id": "subject 1"
+    "id": "subject 3",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -14,27 +15,24 @@
       "type": {
         "id": "HP:0001651",
         "label": "Dextrocardia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0010882",
         "label": "Pulmonary valve atresia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0012020",
         "label": "Right aortic arch"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "subject 1",
+      "id": "IrebfjAp62gmomLDCPlfQUaC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -43,11 +41,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "subject 1",
+            "subjectOrBiosampleId": "subject 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NvxfieiIPPnpYkQcXwDhBCjcA",
+                "id": "c320GtoA_CRELD1_NM_001077415v3",
                 "geneContext": {
                   "valueId": "HGNC:14630",
                   "symbol": "CRELD1"
@@ -55,19 +55,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001077415.3:c.985C>T"
+                    "value": "NM_001077415.3:c.320G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.9943452C>T"
+                    "value": "NC_000003.12:g.9937624G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001070883.2:p.(Arg107His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "9943452",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 9937624,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -90,55 +94,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-21T09:45:29.676922798Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T21:01:55.853194Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:12632326",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/12632326",
         "description": "Missense mutations in CRELD1 are associated with cardiac atrioventricular septal defects"
       }
     ]
