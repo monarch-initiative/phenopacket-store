@@ -1,5 +1,5 @@
 {
-  "id": "PMID_36727596_OP-1110_II1",
+  "id": "PMID_36727596_OP_1110_II1",
   "subject": {
     "id": "OP-1110 II1",
     "timeAtLastEncounter": {
@@ -12,6 +12,34 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0011682",
+        "label": "Perimembranous ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001640",
+        "label": "Cardiomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001651",
+        "label": "Dextrocardia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002092",
         "label": "Pulmonary arterial hypertension"
       }
@@ -21,6 +49,13 @@
         "id": "HP:0005301",
         "label": "Persistent left superior vena cava"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0034196",
+        "label": "Ductus venosus agenesis"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -42,6 +77,20 @@
     },
     {
       "type": {
+        "id": "HP:0002198",
+        "label": "Dilated fourth ventricle"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006270",
+        "label": "Hypoplastic spleen"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001748",
         "label": "Polysplenia"
       }
@@ -60,55 +109,6 @@
     },
     {
       "type": {
-        "id": "HP:0011682",
-        "label": "Perimembranous ventricular septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001640",
-        "label": "Cardiomegaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0034196",
-        "label": "Ductus venosus agenesis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001696",
-        "label": "Situs inversus totalis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002198",
-        "label": "Dilated fourth ventricle"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006270",
-        "label": "Hypoplastic spleen"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001320",
         "label": "Cerebellar vermis hypoplasia"
       },
@@ -124,7 +124,7 @@
   ],
   "interpretations": [
     {
-      "id": "OP-1110 II1",
+      "id": "dIscMgt1klNJJGgsptNImRIo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,8 +136,10 @@
             "subjectOrBiosampleId": "OP-1110 II1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DGTGmavDnppjIngsdUeLXvVBe",
+                "id": "c367GtoT_CLXN_NM_024593v4",
                 "geneContext": {
                   "valueId": "HGNC:25678",
                   "symbol": "CLXN"
@@ -150,12 +152,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.48729824C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_078869.1:p.(Glu123Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "48729824",
+                  "pos": 48729824,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -186,55 +192,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-29T15:52:13.349357128Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T14:50:00.453Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36727596",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36727596",
         "description": "Pathogenic variants in CLXN encoding the outer dynein arm docking-associated calcium-binding protein calaxin cause primary ciliary dyskinesia"
       }
     ]
