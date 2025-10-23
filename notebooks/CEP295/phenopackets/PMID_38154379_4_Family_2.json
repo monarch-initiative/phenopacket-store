@@ -12,21 +12,16 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0011451",
-        "label": "Primary microcephaly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+        "id": "HP:0004322",
+        "label": "Short stature"
       }
     },
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -90,49 +85,6 @@
     },
     {
       "type": {
-        "id": "HP:0000343",
-        "label": "Long philtrum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000319",
-        "label": "Smooth philtrum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030084",
-        "label": "Clinodactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000411",
-        "label": "Protruding ear"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002553",
-        "label": "Highly arched eyebrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000347",
-        "label": "Micrognathia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001684",
         "label": "Secundum atrial septal defect"
       },
@@ -154,10 +106,40 @@
     },
     {
       "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000678",
         "label": "Dental crowding"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030084",
+        "label": "Clinodactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000411",
+        "label": "Protruding ear"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      }
     },
     {
       "type": {
@@ -189,6 +171,12 @@
     },
     {
       "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001655",
         "label": "Patent foramen ovale"
       },
@@ -200,6 +188,18 @@
         "label": "Pulmonary artery stenosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011451",
+        "label": "Primary microcephaly"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
@@ -218,7 +218,7 @@
   ],
   "interpretations": [
     {
-      "id": "4 (Family 2)",
+      "id": "ezXV8JjujdU7w3cYGIJjwGCO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -230,8 +230,10 @@
             "subjectOrBiosampleId": "4 (Family 2)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vyqOgyYqbfBvyTDzJXAEgADsi",
+                "id": "c163_164del_CEP295_NM_033395v2",
                 "geneContext": {
                   "valueId": "HGNC:29366",
                   "symbol": "CEP295"
@@ -244,49 +246,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.93667661_93667662del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr11",
-                  "pos": "93667658",
-                  "ref": "CAG",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "4 (Family 2)",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_nukhsUhJHBYrEDgIpOyJAMTPm",
-                "geneContext": {
-                  "valueId": "HGNC:29366",
-                  "symbol": "CEP295"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_033395.2:c.1685C>T"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.93696333C>T"
+                    "syntax": "hgvs.p",
+                    "value": "NP_203753.1:p.(Arg55GlufsTer49)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "93696333",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 93667658,
+                  "ref": "CAG",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -315,55 +286,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-30T12:51:57.881551027Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T09:46:29.143466Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38154379",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38154379",
         "description": "Bi-allelic variants in CEP295 cause Seckel-like syndrome presenting with primary microcephaly, developmental delay, intellectual disability, short stature, craniofacial and digital abnormalities"
       }
     ]
