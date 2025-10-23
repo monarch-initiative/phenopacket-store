@@ -1,15 +1,25 @@
 {
-  "id": "PMID_38230350_Proband_P3_family_A_II_3",
+  "id": "PMID_38230350_Proband_P2_family_A_II_2",
   "subject": {
-    "id": "Proband P3 family A II-3",
+    "id": "Proband P2 family A II-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y6M"
+        "iso8601duration": "P2Y5M"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001667",
+        "label": "Right ventricular hypertrophy"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0005954",
@@ -17,7 +27,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P1Y3M"
         }
       }
     },
@@ -28,25 +38,8 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P1Y3M"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000961",
-        "label": "Cyanosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001667",
-        "label": "Right ventricular hypertrophy"
       }
     },
     {
@@ -63,28 +56,16 @@
     },
     {
       "type": {
-        "id": "HP:0001622",
-        "label": "Premature birth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002093",
-        "label": "Respiratory insufficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0004749",
         "label": "Atrial flutter"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000961",
+        "label": "Cyanosis"
+      }
     },
     {
       "type": {
@@ -112,19 +93,57 @@
         "id": "HP:0025179",
         "label": "Ground-glass opacification"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033376",
+        "label": "Alveolar septal thickening"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y3M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001622",
+        "label": "Premature birth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032979",
+        "label": "Hemosiderin-laden macrophages in bronchoalveolar fluid"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
     },
     {
       "type": {
         "id": "HP:0031185",
         "label": "Increased circulating NT-proBNP concentration"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Proband P3 family A II-3",
+      "id": "5LHsGYjuv5knti3Jn6FzDm1c",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -133,11 +152,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Proband P3 family A II-3",
+            "subjectOrBiosampleId": "Proband P2 family A II-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_hGAwZnkbTXClBqfHHjNXSYmFP",
+                "id": "c721_1GtoA_CAPNS1_NM_001749v4",
                 "geneContext": {
                   "valueId": "HGNC:1481",
                   "symbol": "CAPNS1"
@@ -150,12 +171,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.36146313G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001740.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "36146313",
+                  "pos": 36146313,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -179,61 +204,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P1Y3M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-29T18:42:43.689339876Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:09:52.127198Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38230350",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38230350",
         "description": "Biallelic variants in the calpain regulatory subunit CAPNS1 cause pulmonary arterial hypertension"
       }
     ]
