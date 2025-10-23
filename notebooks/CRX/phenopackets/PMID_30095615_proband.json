@@ -7,9 +7,6 @@
         "iso8601duration": "P19Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -48,28 +45,6 @@
     },
     {
       "type": {
-        "id": "HP:0030515",
-        "label": "Moderately reduced visual acuity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P19Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007843",
-        "label": "Attenuation of retinal blood vessels"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P19Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000613",
         "label": "Photophobia"
       },
@@ -92,6 +67,28 @@
     },
     {
       "type": {
+        "id": "HP:0030515",
+        "label": "Moderately reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000662",
         "label": "Nyctalopia"
       },
@@ -104,7 +101,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "lkpYEXNRh00XYJJ38JyR02Jt",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,8 +113,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_iebMHgKcdjfkfqlcCnWnujTIU",
+                "id": "c538dupG_CRX_NM_000554v6",
                 "geneContext": {
                   "valueId": "HGNC:2383",
                   "symbol": "CRX"
@@ -125,17 +124,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000554.6:c.538dup"
+                    "value": "NM_000554.6:c.538dupG"
                   },
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.47839605dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000545.1:p.(Val180GlyfsTer56)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "47839603",
+                  "pos": 47839603,
                   "ref": "T",
                   "alt": "TG"
                 },
@@ -165,55 +168,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-21T12:07:49.478520154Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T21:09:17.387093Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30095615",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30095615",
         "description": "A novel CRX frameshift mutation causing cone-rod dystrophy in a Chinese family: A case report"
       }
     ]
