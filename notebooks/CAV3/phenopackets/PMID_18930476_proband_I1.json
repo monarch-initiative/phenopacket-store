@@ -1,10 +1,10 @@
 {
-  "id": "PMID_18930476_individual_II3",
+  "id": "PMID_18930476_proband_I1",
   "subject": {
-    "id": "individual II3",
+    "id": "proband I1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P45Y"
+        "iso8601duration": "P77Y"
       }
     },
     "sex": "MALE"
@@ -17,18 +17,18 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P42Y"
+          "iso8601duration": "P45Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0003393",
-        "label": "Thenar muscle atrophy"
+        "id": "HP:0031177",
+        "label": "Finger flexor weakness"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P42Y"
+          "iso8601duration": "P45Y"
         }
       }
     },
@@ -39,7 +39,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P21Y"
+          "iso8601duration": "P45Y"
         }
       }
     },
@@ -50,7 +50,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P21Y"
+          "iso8601duration": "P45Y"
         }
       }
     },
@@ -61,9 +61,27 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P21Y"
+          "iso8601duration": "P45Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0003760",
+        "label": "Percussion-induced rapid rolling muscle contractions"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -78,11 +96,68 @@
         "label": "Myalgia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003394",
+        "label": "Muscle spasm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004305",
+        "label": "Involuntary movements"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003546",
+        "label": "Exercise intolerance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003393",
+        "label": "Thenar muscle atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001268",
+        "label": "Mental deterioration"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "individual II3",
+      "id": "UKD7m7zFHYJW8iKnecglCec1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -91,11 +166,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual II3",
+            "subjectOrBiosampleId": "proband I1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZNLVkamAKQbdjuWcvbAJmoara",
+                "id": "c80GtoA_CAV3_NM_033337v3",
                 "geneContext": {
                   "valueId": "HGNC:1529",
                   "symbol": "CAV3"
@@ -108,12 +185,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.8733956G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_203123.1:p.(Arg27Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "8733956",
+                  "pos": 8733956,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -137,61 +218,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P21Y"
+          "iso8601duration": "P45Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-06T07:02:20.731487989Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:35:25.294852Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18930476",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18930476",
         "description": "Phenotypic variability in a Spanish family with a Caveolin-3 mutation"
       }
     ]
