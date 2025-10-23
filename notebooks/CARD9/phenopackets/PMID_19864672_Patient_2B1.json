@@ -1,79 +1,73 @@
 {
-  "id": "PMID_19864672_Patient_2B2",
+  "id": "PMID_19864672_Patient_2B1",
   "subject": {
-    "id": "Patient 2B2",
+    "id": "Patient 2B1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P19Y"
+        "iso8601duration": "P18Y"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0009098",
-        "label": "Chronic oral candidiasis"
+        "id": "HP:0032159",
+        "label": "Fungal meningitis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3Y"
+          "iso8601duration": "P18Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0032159",
-        "label": "Fungal meningitis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003212",
-        "label": "Increased circulating IgE level"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001880",
-        "label": "Eosinophilia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003237",
-        "label": "Increased circulating IgG level"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001888",
-        "label": "Lymphopenia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0031393",
-        "label": "Abnormal proportion of CD8-positive T cells"
+        "id": "HP:0010701",
+        "label": "Abnormal circulating immunoglobulin concentration"
       },
       "excluded": true
     },
     {
       "type": {
         "id": "HP:0031392",
-        "label": "Abnormal proportion of CD4-positive T cells"
+        "label": "Abnormal CD4+ T cell subset proportion"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031393",
+        "label": "Abnormal CD8+ T cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011893",
+        "label": "Abnormal leukocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009098",
+        "label": "Chronic oral candidiasis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2B2",
+      "id": "l7Dh7ML1kh6gpX1lfsjkT9eu",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -82,11 +76,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 2B2",
+            "subjectOrBiosampleId": "Patient 2B1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pGdMEPusncguBzpAfxnldONbb",
+                "id": "c883CtoT_CARD9_NM_052813v5",
                 "geneContext": {
                   "valueId": "HGNC:16391",
                   "symbol": "CARD9"
@@ -99,12 +95,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.136370362G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_434700.2:p.(Gln295Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "136370362",
+                  "pos": 136370362,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -127,62 +127,62 @@
         "label": "Immunodeficiency 103, susceptibility to fungal infection"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-03T05:55:55.200612068Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:30:29.089068Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:19864672",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/19864672",
         "description": "A homozygous CARD9 mutation in a family with susceptibility to fungal infections"
       }
     ]
