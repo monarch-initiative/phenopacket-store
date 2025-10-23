@@ -1,7 +1,7 @@
 {
-  "id": "PMID_37077559_Sibling_1",
+  "id": "PMID_37077559_Sibling_3",
   "subject": {
-    "id": "Sibling 1",
+    "id": "Sibling 3",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -19,21 +19,15 @@
     },
     {
       "type": {
-        "id": "HP:0007210",
-        "label": "Lower limb amyotrophy"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0008997",
-        "label": "Proximal muscle weakness in upper limbs"
+        "label": "Proximal upper limb muscle weakness"
       },
       "excluded": true
     },
     {
       "type": {
         "id": "HP:0008994",
-        "label": "Proximal muscle weakness in lower limbs"
+        "label": "Proximal lower limb muscle weakness"
       },
       "excluded": true
     },
@@ -43,11 +37,17 @@
         "label": "Disturbed sensory perception"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007210",
+        "label": "Lower limb amyotrophy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Sibling 1",
+      "id": "xnVigeygz8CW7efQllEsJoEk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -56,11 +56,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Sibling 1",
+            "subjectOrBiosampleId": "Sibling 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_JmOjfhOQCjRCMTpHggXGzVoNy",
+                "id": "c1AtoG_COQ7_NM_016138v5",
                 "geneContext": {
                   "valueId": "HGNC:2244",
                   "symbol": "COQ7"
@@ -73,12 +75,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.19067665A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057222.2:p.(Met1?)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "19067665",
+                  "pos": 19067665,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -108,55 +114,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T16:21:31.365889072Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T20:57:26.101563Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37077559",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37077559",
         "description": "Novel Homozygous Variant in COQ7 in Siblings With Hereditary Motor Neuropathy"
       }
     ]
