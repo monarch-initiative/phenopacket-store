@@ -1,10 +1,10 @@
 {
-  "id": "PMID_17886299_patient_BM5",
+  "id": "PMID_17886299_patient_BM20",
   "subject": {
-    "id": "patient BM5",
+    "id": "patient BM20",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P30Y"
+        "iso8601duration": "P20Y"
       }
     },
     "sex": "MALE"
@@ -18,47 +18,22 @@
     },
     {
       "type": {
+        "id": "HP:0002460",
+        "label": "Distal muscle weakness"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0034677",
         "label": "Ankle contracture"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0034391",
         "label": "Elbow contracture"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0034681",
-        "label": "Finger joint contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008180",
-        "label": "Mildly elevated creatine kinase"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002460",
-        "label": "Distal muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0009046",
-        "label": "Difficulty running"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -69,29 +44,35 @@
     },
     {
       "type": {
+        "id": "HP:0034681",
+        "label": "Finger joint contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008180",
+        "label": "Mildly elevated creatine kinase"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002808",
         "label": "Kyphosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002804",
-        "label": "Arthrogryposis multiplex congenita"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001374",
-        "label": "Congenital hip dislocation"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient BM5",
+      "id": "4HSps89kQxaHGBEBg4cS8b3u",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -100,11 +81,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient BM5",
+            "subjectOrBiosampleId": "patient BM20",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pyDYYrKnONRIehJBWlrBwiEeE",
+                "id": "c928_930del_COL6A1_NM_001848v3",
                 "geneContext": {
                   "valueId": "HGNC:2211",
                   "symbol": "COL6A1"
@@ -112,19 +95,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001848.3:c.1056+1G>A"
+                    "value": "NM_001848.3:c.928_930del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.45990827G>A"
+                    "value": "NC_000021.9:g.45989776_45989778del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001839.2:p.(Lys310del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "45990827",
-                  "ref": "G",
-                  "alt": "A"
+                  "pos": 45989773,
+                  "ref": "GAGA",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -147,55 +134,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-24T06:16:45.060543060Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T15:34:02.101957Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17886299",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17886299",
         "description": "Molecular consequences of dominant Bethlem myopathy collagen VI mutations"
       }
     ]
