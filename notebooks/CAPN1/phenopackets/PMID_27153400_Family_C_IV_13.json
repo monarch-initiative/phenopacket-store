@@ -1,10 +1,10 @@
 {
-  "id": "PMID_27153400_Family_A_V_2",
+  "id": "PMID_27153400_Family_C_IV_13",
   "subject": {
-    "id": "Family A V-2",
+    "id": "Family C IV-13",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P31Y"
+        "iso8601duration": "P22Y"
       }
     },
     "sex": "FEMALE"
@@ -14,6 +14,12 @@
       "type": {
         "id": "HP:0002061",
         "label": "Lower limb spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
       }
     },
     {
@@ -38,24 +44,6 @@
       "type": {
         "id": "HP:0008081",
         "label": "Pes valgus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007350",
-        "label": "Hyperreflexia in upper limbs"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011448",
-        "label": "Ankle clonus"
       },
       "excluded": true
     },
@@ -63,15 +51,26 @@
       "type": {
         "id": "HP:0001761",
         "label": "Pes cavus"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002066",
         "label": "Gait ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007350",
+        "label": "Upper limb hyperreflexia"
+      }
     },
     {
       "type": {
@@ -83,7 +82,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family A V-2",
+      "id": "Njp9kiwRNTRJwdn70AJHZstn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -92,11 +91,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family A V-2",
+            "subjectOrBiosampleId": "Family C IV-13",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lVSzxHyhVMnJZbclUZHQExHwB",
+                "id": "c407del_CAPN1_NM_005186v4",
                 "geneContext": {
                   "valueId": "HGNC:1476",
                   "symbol": "CAPN1"
@@ -104,24 +105,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005186.4:c.884G>C"
+                    "value": "NM_005186.4:c.407del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.65187995G>C"
+                    "value": "NC_000011.10:g.65183543del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005177.2:p.(Pro136ArgfsTer40)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "65187995",
-                  "ref": "G",
-                  "alt": "C"
+                  "pos": 65183541,
+                  "ref": "TC",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -138,61 +143,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P20Y"
+          "iso8601duration": "P19Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-09T06:45:55.142602920Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T05:45:16.476960Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27153400",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27153400",
         "description": "Mutations in CAPN1 Cause Autosomal-Recessive Hereditary Spastic Paraplegia"
       }
     ]

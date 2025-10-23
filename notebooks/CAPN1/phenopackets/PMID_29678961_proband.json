@@ -67,17 +67,6 @@
     },
     {
       "type": {
-        "id": "HP:0034353",
-        "label": "Appendicular spasticity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P14Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001260",
         "label": "Dysarthria"
       },
@@ -100,6 +89,17 @@
     },
     {
       "type": {
+        "id": "HP:0034353",
+        "label": "Appendicular spasticity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001272",
         "label": "Cerebellar atrophy"
       },
@@ -112,7 +112,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "qFuXT73ANmHeoH1BsmlsueWP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -124,8 +124,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_JVKIThLqYlWQVtTsVlJkwEVsD",
+                "id": "c1534CtoT_CAPN1_NM_005186v4",
                 "geneContext": {
                   "valueId": "HGNC:1476",
                   "symbol": "CAPN1"
@@ -138,12 +140,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.65206643C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005177.2:p.(Arg512Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "65206643",
+                  "pos": 65206643,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -173,55 +179,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-09T06:45:55.149198055Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T05:45:16.477102Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29678961",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29678961",
         "description": "CAPN1 mutations broadening the hereditary spastic paraplegia/spinocerebellar ataxia phenotype"
       }
     ]

@@ -1,7 +1,7 @@
 {
-  "id": "PMID_29379883_Family_2_patient_1",
+  "id": "PMID_28321562_index_patient",
   "subject": {
-    "id": "Family 2 patient 1",
+    "id": "index patient",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P39Y"
@@ -17,18 +17,18 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P29Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002505",
-        "label": "Loss of ambulation"
+        "id": "HP:0002497",
+        "label": "Spastic ataxia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P31Y"
+          "iso8601duration": "P39Y"
         }
       }
     },
@@ -36,42 +36,72 @@
       "type": {
         "id": "HP:0006986",
         "label": "Upper limb spasticity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0002061",
         "label": "Lower limb spasticity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0001310",
         "label": "Dysmetria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0002066",
-        "label": "Gait ataxia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002070",
-        "label": "Limb ataxia"
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0001260",
         "label": "Dysarthria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006855",
+        "label": "Cerebellar vermis atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P39Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 2 patient 1",
+      "id": "DfIUYXl7Ah24Y490siJV3Ajd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,11 +110,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 2 patient 1",
+            "subjectOrBiosampleId": "index patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_yPNaEytbVdzJsZMZIsoRkEDlY",
+                "id": "c759_1GtoA_CAPN1_NM_005186v4",
                 "geneContext": {
                   "valueId": "HGNC:1476",
                   "symbol": "CAPN1"
@@ -92,17 +124,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005186.4:c.1176G>A"
+                    "value": "NM_005186.4:c.759+1G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.65204693G>A"
+                    "value": "NC_000011.10:g.65186339G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005177.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "65204693",
+                  "pos": 65186339,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -126,62 +162,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P24Y"
+          "iso8601duration": "P29Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-09T06:45:55.150496959Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T05:45:16.477720Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:29379883",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29379883",
-        "description": "Homozygous CAPN1 mutations causing a spastic-ataxia phenotype in 2 families"
+        "id": "PMID:28321562",
+        "description": "CAPN1 mutations are associated with a syndrome of combined spasticity and ataxia"
       }
     ]
   }

@@ -1,10 +1,10 @@
 {
-  "id": "PMID_27153400_Family_B_IV_1",
+  "id": "PMID_27153400_Family_B_IV_5",
   "subject": {
-    "id": "Family B IV-1",
+    "id": "Family B IV-5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P47Y"
+        "iso8601duration": "P40Y"
       }
     },
     "sex": "MALE"
@@ -18,9 +18,17 @@
     },
     {
       "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0007340",
         "label": "Lower limb muscle weakness"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -32,30 +40,6 @@
       "type": {
         "id": "HP:0003487",
         "label": "Babinski sign"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007350",
-        "label": "Hyperreflexia in upper limbs"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009830",
-        "label": "Peripheral neuropathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011448",
-        "label": "Ankle clonus"
       },
       "excluded": true
     },
@@ -77,13 +61,31 @@
       "type": {
         "id": "HP:0002066",
         "label": "Gait ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007350",
+        "label": "Upper limb hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009830",
+        "label": "Peripheral neuropathy"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family B IV-1",
+      "id": "5xSFx9lfDoRopbLsGKRU5XFV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -92,11 +94,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family B IV-1",
+            "subjectOrBiosampleId": "Family B IV-5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_BhlVUFgVlmELgRNLyUkObkDLC",
+                "id": "c1579CtoT_CAPN1_NM_005186v4",
                 "geneContext": {
                   "valueId": "HGNC:1476",
                   "symbol": "CAPN1"
@@ -109,12 +113,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.65206793C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005177.2:p.(Gln527Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "65206793",
+                  "pos": 65206793,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -138,61 +146,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P35Y"
+          "iso8601duration": "P39Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-09T06:45:55.143621206Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T05:45:16.476490Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27153400",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27153400",
         "description": "Mutations in CAPN1 Cause Autosomal-Recessive Hereditary Spastic Paraplegia"
       }
     ]
