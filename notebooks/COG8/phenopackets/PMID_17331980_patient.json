@@ -23,36 +23,10 @@
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
+        "id": "HP:0034360",
+        "label": "Action myoclonus"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002421",
-        "label": "Poor head control"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -68,25 +42,6 @@
     },
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012301",
-        "label": "Type II transferrin isoform profile"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034360",
-        "label": "Action myoclonus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0002133",
         "label": "Status epilepticus"
       },
@@ -98,6 +53,12 @@
         "label": "Acute encephalopathy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
     },
     {
       "type": {
@@ -199,6 +160,28 @@
     },
     {
       "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002421",
+        "label": "Poor head control"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012385",
         "label": "Camptodactyly"
       },
@@ -220,6 +203,17 @@
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002376",
         "label": "Developmental regression"
       },
@@ -238,6 +232,12 @@
         "label": "Failure to thrive"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012301",
+        "label": "Type II transferrin isoform profile"
+      }
     },
     {
       "type": {
@@ -305,7 +305,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "LvkNROz7KmY8JOA9Ltkv1ZTV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -317,8 +317,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_BqDDKUeUJpUNZYHxANgEETlGg",
+                "id": "c1413_1GtoA_COG8_NM_032382v5",
                 "geneContext": {
                   "valueId": "HGNC:18623",
                   "symbol": "COG8"
@@ -331,49 +333,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.69334520C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr16",
-                  "pos": "69334520",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "patient",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_iaFGmPvizJoaoXSiRbWbTeTFZ",
-                "geneContext": {
-                  "valueId": "HGNC:18623",
-                  "symbol": "COG8"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_032382.5:c.1687_1688del"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.69330992_69330993del"
+                    "syntax": "hgvs.p",
+                    "value": "NP_115758.3:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "69330989",
-                  "ref": "GAA",
-                  "alt": "G"
+                  "pos": 69334520,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -401,55 +372,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-01T05:00:34.556915998Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T15:12:18.022611Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17331980",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17331980",
         "description": "COG8 deficiency causes new congenital disorder of glycosylation type Iih"
       }
     ]
