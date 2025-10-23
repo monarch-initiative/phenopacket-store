@@ -1,22 +1,25 @@
 {
-  "id": "PMID_34214472_patient_P3",
+  "id": "PMID_34214472_patient_P2",
   "subject": {
-    "id": "patient P3",
+    "id": "patient P2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P12Y"
+        "iso8601duration": "P40Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0200043",
-        "label": "Verrucae"
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032247",
+        "label": "Persistent CMV viremia"
       }
     },
     {
@@ -27,6 +30,13 @@
     },
     {
       "type": {
+        "id": "HP:0032163",
+        "label": "Molluscum contagiosum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0033510",
         "label": "Cutaneous horn"
       },
@@ -34,24 +44,9 @@
     },
     {
       "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0032215",
         "label": "Disseminated cutaneous warts"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0032163",
-        "label": "Molluscum contagiosum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -70,7 +65,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient P3",
+      "id": "jxiMXbvpR3pb8A8FhmnorIwg",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -79,11 +74,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient P3",
+            "subjectOrBiosampleId": "patient P2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_uqWQTMLlqMKKOPpScxxyWFZlo",
+                "id": "c52GtoA_CD28_NM_006139v4",
                 "geneContext": {
                   "valueId": "HGNC:1653",
                   "symbol": "CD28"
@@ -96,12 +93,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.203706748G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006130.1:p.(Gly18Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "203706748",
+                  "pos": 203706748,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -125,61 +126,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P8Y"
+          "iso8601duration": "P10Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-28T12:01:21.404591083Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-23T07:56:57.155542Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34214472",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34214472",
         "description": "Humans with inherited T cell CD28 deficiency are susceptible to skin papillomaviruses but are otherwise healthy"
       }
     ]
