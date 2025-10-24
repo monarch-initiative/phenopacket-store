@@ -1,18 +1,42 @@
 {
-  "id": "PMID_37467750_Individual_5",
+  "id": "PMID_37467750_Individual_7",
   "subject": {
-    "id": "Individual 5",
+    "id": "Individual 7",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P19Y"
+        "iso8601duration": "P7Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010864",
+        "label": "Severe intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Moderate intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006889",
+        "label": "Borderline intellectual disability"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0001263",
@@ -21,50 +45,9 @@
     },
     {
       "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006889",
-        "label": "Intellectual disability, borderline"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001999",
         "label": "Abnormal facial shape"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -96,15 +79,29 @@
     },
     {
       "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012389",
         "label": "Appendicular hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 5",
+      "id": "SdHPjzmObLqRSaW2Iwaoz0gt",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,11 +110,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 5",
+            "subjectOrBiosampleId": "Individual 7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_EzQraiDBtbHvrRkSXUuSgNHUc",
+                "id": "c2786_1GtoT_DHX9_NM_001357v5",
                 "geneContext": {
                   "valueId": "HGNC:2750",
                   "symbol": "DHX9"
@@ -125,19 +124,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001357.5:c.1417G>A"
+                    "value": "NM_001357.5:c.2786+1G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.182866528G>A"
+                    "value": "NC_000001.11:g.182881426G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001348.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "182866528",
+                  "pos": 182881426,
                   "ref": "G",
-                  "alt": "A"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -160,55 +163,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-08T06:54:05.529547929Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:53:56.478303Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37467750",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37467750",
         "description": "Monoallelic variation in DHX9, the gene encoding the DExH-box helicase DHX9, underlies neurodevelopment disorders and Charcot-Marie-Tooth disease"
       }
     ]
