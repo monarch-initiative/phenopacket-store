@@ -1,27 +1,18 @@
 {
-  "id": "PMID_37656279_Pedigree_D_II:4",
+  "id": "PMID_37656279_Pedigree_C_II_4",
   "subject": {
-    "id": "Pedigree D II:4",
+    "id": "Pedigree C II:4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P1Y"
+        "iso8601duration": "P6M"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0007479",
-        "label": "Congenital nonbullous ichthyosiform erythroderma"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0025664",
@@ -42,47 +33,41 @@
     },
     {
       "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012472",
         "label": "Eclabion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000343",
-        "label": "Long philtrum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001134",
-        "label": "Anterior polar cataract"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007479",
+        "label": "Congenital nonbullous ichthyosiform erythroderma"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0001298",
         "label": "Encephalopathy"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -95,15 +80,13 @@
       "type": {
         "id": "HP:0002181",
         "label": "Cerebral edema"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001347",
         "label": "Hyperreflexia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -135,15 +118,27 @@
     },
     {
       "type": {
-        "id": "HP:0000586",
-        "label": "Shallow orbits"
+        "id": "HP:0000343",
+        "label": "Long philtrum"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0000586",
+        "label": "Shallow orbits"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0008551",
         "label": "Microtia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -158,8 +153,7 @@
       "type": {
         "id": "HP:0001712",
         "label": "Left ventricular hypertrophy"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -178,7 +172,7 @@
   ],
   "interpretations": [
     {
-      "id": "Pedigree D II:4",
+      "id": "2VX4DeovZrZuV4Rfol30Ef7f",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -187,11 +181,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Pedigree D II:4",
+            "subjectOrBiosampleId": "Pedigree C II:4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pETJsWXsYzvHTDcJYGOeTkFzu",
+                "id": "c200AtoG_DBR1_NM_016216v4",
                 "geneContext": {
                   "valueId": "HGNC:15594",
                   "symbol": "DBR1"
@@ -204,12 +200,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.138173624T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057300.2:p.(Tyr67Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "138173624",
+                  "pos": 138173624,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -240,55 +240,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T16:26:42.592532873Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:19:50.864241Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37656279",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37656279",
         "description": "A founder DBR1 variant causes a lethal form of congenital ichthyosis"
       }
     ]
