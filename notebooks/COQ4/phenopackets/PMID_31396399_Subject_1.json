@@ -1,33 +1,76 @@
 {
-  "id": "PMID_30847826_sister",
+  "id": "PMID_31396399_Subject_1",
   "subject": {
-    "id": "sister",
+    "id": "Subject 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P27Y"
+        "iso8601duration": "P8M"
       }
     },
-    "sex": "FEMALE"
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0002059",
         "label": "Cerebral atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025722",
+        "label": "Cerebral infarct"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012707",
+        "label": "Elevated brain lactate level by MRS"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0001272",
         "label": "Cerebellar atrophy"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -40,81 +83,19 @@
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001268",
-        "label": "Mental deterioration"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0002015",
-        "label": "Dysphagia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       }
     },
     {
       "type": {
-        "id": "HP:0007359",
-        "label": "Focal-onset seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P12Y"
-        }
+        "id": "HP:0001250",
+        "label": "Seizure"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001288",
-        "label": "Gait disturbance"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002313",
-        "label": "Spastic paraparesis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001310",
-        "label": "Dysmetria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002075",
-        "label": "Dysdiadochokinesis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -122,11 +103,35 @@
         "label": "Loss of ambulation"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001271",
+        "label": "Polyneuropathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003198",
+        "label": "Myopathy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "dX9Pyig75I8XFIF7iwSaFpZw",
+      "id": "si1qArjNIPN7NAX8idq9RJ55",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -135,13 +140,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "sister",
+            "subjectOrBiosampleId": "Subject 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c164GtoT_COQ4_NM_016035v5",
+                "id": "c402_1GtoC_COQ4_NM_016035v5",
                 "geneContext": {
                   "valueId": "HGNC:19693",
                   "symbol": "COQ4"
@@ -149,28 +154,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_016035.5:c.164G>T"
+                    "value": "NM_016035.5:c.402+1G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128323109G>T"
+                    "value": "NC_000009.12:g.128325882G>C"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_057119.3:p.(Gly55Val)"
+                    "value": "NP_057119.3:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": 128323109,
+                  "pos": 128325882,
                   "ref": "G",
-                  "alt": "T"
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -186,14 +191,15 @@
         "label": "Coenzyme Q10 deficiency, primary, 7"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P8Y"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-10-24T10:33:42.423827Z",
+    "created": "2025-10-24T10:33:42.421977Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -240,8 +246,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:30847826",
-        "description": "COQ4 mutation leads to childhood-onset ataxia improved by CoQ1O administration"
+        "id": "PMID:31396399",
+        "description": "Primary coenzyme Q10 deficiency-7: expanded phenotypic spectrum and a founder mutation in southern Chinese"
       }
     ]
   }
