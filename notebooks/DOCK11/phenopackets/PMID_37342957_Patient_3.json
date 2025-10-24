@@ -1,45 +1,18 @@
 {
-  "id": "PMID_37342957_Patient_4",
+  "id": "PMID_37342957_Patient_3",
   "subject": {
-    "id": "Patient 4",
+    "id": "Patient 3",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P6Y"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002014",
-        "label": "Diarrhea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100280",
-        "label": "Crohn's disease"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031123",
-        "label": "Recurrent gastroenteritis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011273",
-        "label": "Anisocytosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003212",
-        "label": "Increased circulating IgE level"
-      }
-    },
     {
       "type": {
         "id": "HP:0007417",
@@ -56,6 +29,20 @@
     },
     {
       "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100280",
+        "label": "Crohn's disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0100279",
         "label": "Ulcerative colitis"
       },
@@ -65,15 +52,13 @@
       "type": {
         "id": "HP:0001508",
         "label": "Failure to thrive"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001974",
-        "label": "Leukocytosis"
-      },
-      "excluded": true
+        "label": "Increased total leukocyte count"
+      }
     },
     {
       "type": {
@@ -112,31 +97,39 @@
     },
     {
       "type": {
+        "id": "HP:0031123",
+        "label": "Recurrent gastroenteritis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012490",
         "label": "Panniculitis"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011273",
+        "label": "Anisocytosis"
+      }
     },
     {
       "type": {
         "id": "HP:0001890",
         "label": "Autoimmune hemolytic anemia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001744",
         "label": "Splenomegaly"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002240",
         "label": "Hepatomegaly"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -162,21 +155,25 @@
     {
       "type": {
         "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
-      },
-      "excluded": true
+        "label": "Decreased circulating IgA concentration"
+      }
     },
     {
       "type": {
         "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      },
-      "excluded": true
+        "label": "Decreased circulating IgG concentration"
+      }
     },
     {
       "type": {
         "id": "HP:0002850",
         "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
       },
       "excluded": true
     },
@@ -192,12 +189,16 @@
         "id": "HP:0000100",
         "label": "Nephrotic syndrome"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 4",
+      "id": "FFMvkpReBL9wciiJmavrWoM4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -206,11 +207,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 4",
+            "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_uJZMsQRLQxRRGpVbstEhxjiwJ",
+                "id": "c5120GtoC_DOCK11_NM_144658v4",
                 "geneContext": {
                   "valueId": "HGNC:23483",
                   "symbol": "DOCK11"
@@ -218,24 +221,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_144658.4:c.323A>G"
+                    "value": "NM_144658.4:c.5120G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.118543524A>G"
+                    "value": "NC_000023.11:g.118671066G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653259.3:p.(Trp1707Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "118543524",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 118671066,
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -252,61 +259,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y"
+          "iso8601duration": "P4M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-12T06:11:43.056122779Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T18:22:43.034647Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37342957",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37342957",
         "description": "Systemic Inflammation and Normocytic Anemia in DOCK11 Deficiency"
       }
     ]

@@ -1,84 +1,15 @@
 {
-  "id": "PMID_36952639_Patient_A",
+  "id": "PMID_36952639_Patient_E",
   "subject": {
-    "id": "Patient A",
+    "id": "Patient E",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P14Y"
+        "iso8601duration": "P20Y"
       }
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0100279",
-        "label": "Ulcerative colitis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y4M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012490",
-        "label": "Panniculitis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P13Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001973",
-        "label": "Autoimmune thrombocytopenia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031234",
-        "label": "Neutrophilic infiltration of the skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032230",
-        "label": "Cytoplasmic antineutrophil antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:4000025",
-        "label": "Anti-integrin antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003493",
-        "label": "Antinuclear antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025379",
-        "label": "Anti-thyroid peroxidase antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032069",
-        "label": "Anti-thyroglobulin antibody positivity"
-      }
-    },
     {
       "type": {
         "id": "HP:0007417",
@@ -102,6 +33,13 @@
     },
     {
       "type": {
+        "id": "HP:0100279",
+        "label": "Ulcerative colitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000155",
         "label": "Oral ulcer"
       },
@@ -109,8 +47,36 @@
     },
     {
       "type": {
+        "id": "HP:0032564",
+        "label": "Ileitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012490",
+        "label": "Panniculitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001904",
-        "label": "Neutropenia in presence of anti-neutropil antibodies"
+        "label": "Autoimmune neutropenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001973",
+        "label": "Autoimmune thrombocytopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031234",
+        "label": "Neutrophilic infiltration of the skin"
       },
       "excluded": true
     },
@@ -137,17 +103,44 @@
     },
     {
       "type": {
-        "id": "HP:0004844",
-        "label": "Coombs-positive hemolytic anemia"
+        "id": "HP:0032230",
+        "label": "Cytoplasmic antineutrophil antibody positivity"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0033028",
-        "label": "Anti-U1 ribonucleoprotein antibody positivity"
+        "id": "HP:4000025",
+        "label": "Anti-integrin antibody positivity"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025379",
+        "label": "Anti-thyroid peroxidase antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032069",
+        "label": "Anti-thyroglobulin antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004844",
+        "label": "Coombs-positive hemolytic anemia"
+      }
     },
     {
       "type": {
@@ -180,7 +173,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient A",
+      "id": "8yT7ayor70iEOCgF6pyjOEg1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -189,11 +182,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient A",
+            "subjectOrBiosampleId": "Patient E",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bBNJqPEukToFBqFrtXPEIukUB",
+                "id": "c5117TtoC_DOCK11_NM_144658v4",
                 "geneContext": {
                   "valueId": "HGNC:23483",
                   "symbol": "DOCK11"
@@ -201,24 +196,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_144658.4:c.3893T>G"
+                    "value": "NM_144658.4:c.5117T>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.118636352T>G"
+                    "value": "NC_000023.11:g.118671063T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653259.3:p.(Leu1706Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "118636352",
+                  "pos": 118671063,
                   "ref": "T",
-                  "alt": "G"
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -235,61 +234,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y4M"
+          "iso8601duration": "P3Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-12T06:11:43.045974969Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T18:22:43.033747Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36952639",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36952639",
         "description": "DOCK11 deficiency in patients with X-linked actinopathy and autoimmunity"
       }
     ]

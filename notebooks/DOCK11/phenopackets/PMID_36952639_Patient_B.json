@@ -1,10 +1,10 @@
 {
-  "id": "PMID_36952639_Patient_D2",
+  "id": "PMID_36952639_Patient_B",
   "subject": {
-    "id": "Patient D2",
+    "id": "Patient B",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P20Y"
+        "iso8601duration": "P7Y"
       }
     },
     "sex": "MALE"
@@ -12,71 +12,22 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002014",
-        "label": "Diarrhea"
+        "id": "HP:0007417",
+        "label": "Discoid lupus rash"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001701",
-        "label": "Pericarditis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005764",
-        "label": "Polyarticular arthritis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002725",
         "label": "Systemic lupus erythematosus"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002923",
-        "label": "Rheumatoid factor positive"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033028",
-        "label": "Anti-U1 ribonucleoprotein antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003262",
-        "label": "Anti-smooth muscle antibody positivity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:4000031",
-        "label": "Anti-type VII collagen antibody"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007417",
-        "label": "Discoid lupus rash"
+        "id": "HP:0002014",
+        "label": "Diarrhea"
       },
       "excluded": true
     },
@@ -111,7 +62,7 @@
     {
       "type": {
         "id": "HP:0001904",
-        "label": "Neutropenia in presence of anti-neutropil antibodies"
+        "label": "Autoimmune neutropenia"
       },
       "excluded": true
     },
@@ -138,6 +89,18 @@
     },
     {
       "type": {
+        "id": "HP:0005764",
+        "label": "Polyarticular arthritis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002923",
+        "label": "Rheumatoid factor positive"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0032230",
         "label": "Cytoplasmic antineutrophil antibody positivity"
       },
@@ -147,6 +110,13 @@
       "type": {
         "id": "HP:4000025",
         "label": "Anti-integrin antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
       },
       "excluded": true
     },
@@ -169,6 +139,24 @@
         "id": "HP:0004844",
         "label": "Coombs-positive hemolytic anemia"
       },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003262",
+        "label": "Anti-smooth muscle antibody positivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:4000031",
+        "label": "Anti-type VII collagen antibody"
+      },
       "excluded": true
     },
     {
@@ -188,7 +176,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient D2",
+      "id": "TOiyGaRc7zFnXYvjfVoYuhHT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -197,11 +185,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient D2",
+            "subjectOrBiosampleId": "Patient B",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QoTcWprzORWqGzaLBPbSjrNjE",
+                "id": "c4007AtoG_DOCK11_NM_144658v4",
                 "geneContext": {
                   "valueId": "HGNC:23483",
                   "symbol": "DOCK11"
@@ -209,24 +199,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_144658.4:c.1240G>T"
+                    "value": "NM_144658.4:c.4007A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.118573869G>T"
+                    "value": "NC_000023.11:g.118639440A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653259.3:p.(His1336Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "118573869",
-                  "ref": "G",
-                  "alt": "T"
+                  "pos": 118639440,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -243,61 +237,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P9Y"
+          "iso8601duration": "P5Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-12T06:11:43.049812078Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T18:22:43.033023Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36952639",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36952639",
         "description": "DOCK11 deficiency in patients with X-linked actinopathy and autoimmunity"
       }
     ]
