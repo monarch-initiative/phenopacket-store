@@ -1,39 +1,10 @@
 {
   "id": "PMID_36074124_1_06817",
   "subject": {
-    "id": "1-06817"
+    "id": "1-06817",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011567",
-        "label": "Sinus venosus atrial septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004383",
-        "label": "Hypoplastic left heart"
-      }
-    },
     {
       "type": {
         "id": "HP:0001642",
@@ -64,6 +35,30 @@
     },
     {
       "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011567",
+        "label": "Sinus venosus atrial septal defect"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001719",
         "label": "Double outlet right ventricle"
       },
@@ -75,11 +70,17 @@
         "label": "Transposition of the great arteries"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004383",
+        "label": "Hypoplastic left heart"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "1-06817",
+      "id": "FTCnFNthAVNTp8rqR8Tpi6iN",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -91,43 +92,10 @@
             "subjectOrBiosampleId": "1-06817",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_RLqOkijEgSyRvgWeOnRDudpYl",
-                "geneContext": {
-                  "valueId": "HGNC:26383",
-                  "symbol": "DAW1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_178821.3:c.197T>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.227889939T>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": "227889939",
-                  "ref": "T",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "1-06817",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_iaftNCuArWLRMYzmOGxWYNtYT",
+                "id": "c1116GtoT_DAW1_NM_178821v3",
                 "geneContext": {
                   "valueId": "HGNC:26383",
                   "symbol": "DAW1"
@@ -140,12 +108,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.227921464G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_849143.1:p.(Trp372Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "227921464",
+                  "pos": 227921464,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -170,55 +142,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-10T03:35:20.124977827Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:14:41.455602Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36074124",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36074124",
         "description": "Biallelic DAW1 variants cause a motile ciliopathy characterized by laterality defects and subtle ciliary beating abnormalities"
       }
     ]

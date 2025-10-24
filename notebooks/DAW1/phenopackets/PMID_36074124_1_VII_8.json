@@ -1,33 +1,15 @@
 {
-  "id": "PMID_36074124_1_VII_1",
+  "id": "PMID_36074124_1_VII_8",
   "subject": {
-    "id": "1-VII-1",
+    "id": "1-VII-8",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P76Y"
+        "iso8601duration": "P63Y"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001696",
-        "label": "Situs inversus totalis"
-      }
-    },
     {
       "type": {
         "id": "HP:0001642",
@@ -65,17 +47,16 @@
     },
     {
       "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      },
-      "excluded": true
+        "id": "HP:0001696",
+        "label": "Situs inversus totalis"
+      }
     },
     {
       "type": {
@@ -93,8 +74,8 @@
     },
     {
       "type": {
-        "id": "HP:0011567",
-        "label": "Sinus venosus atrial septal defect"
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -132,11 +113,23 @@
         "label": "Chronic cough"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "1-VII-1",
+      "id": "VB4ViWbhMYZV4ZG8p2ldrWqP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -145,11 +138,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "1-VII-1",
+            "subjectOrBiosampleId": "1-VII-8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bmijEpPrqCtEWpFHbLECWtvFl",
+                "id": "c427AtoG_DAW1_NM_178821v3",
                 "geneContext": {
                   "valueId": "HGNC:26383",
                   "symbol": "DAW1"
@@ -162,12 +157,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.227893904A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_849143.1:p.(Asn143Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "227893904",
+                  "pos": 227893904,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -198,55 +197,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-10T03:35:20.119951009Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:14:41.455409Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36074124",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36074124",
         "description": "Biallelic DAW1 variants cause a motile ciliopathy characterized by laterality defects and subtle ciliary beating abnormalities"
       }
     ]
