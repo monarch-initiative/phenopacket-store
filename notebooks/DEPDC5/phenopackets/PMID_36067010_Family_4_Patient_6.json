@@ -1,38 +1,20 @@
 {
-  "id": "PMID_36067010_Family_4_Patient_7",
+  "id": "PMID_36067010_Family_4_Patient_6",
   "subject": {
-    "id": "Family 4 Patient 7",
-    "sex": "FEMALE"
+    "id": "Family 4 Patient 6",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011344",
-        "label": "Severe global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000574",
-        "label": "Thick eyebrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000527",
-        "label": "Long eyelashes"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002007",
         "label": "Frontal bossing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
       },
       "excluded": true
     },
@@ -42,6 +24,12 @@
         "label": "Wide anterior fontanel"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
     },
     {
       "type": {
@@ -59,10 +47,15 @@
     },
     {
       "type": {
-        "id": "HP:0011800",
-        "label": "Midface retrusion"
-      },
-      "excluded": true
+        "id": "HP:0000666",
+        "label": "Horizontal nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000646",
+        "label": "Amblyopia"
+      }
     },
     {
       "type": {
@@ -73,10 +66,9 @@
     },
     {
       "type": {
-        "id": "HP:0031165",
-        "label": "Multifocal seizures"
-      },
-      "excluded": true
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      }
     },
     {
       "type": {
@@ -87,6 +79,12 @@
     },
     {
       "type": {
+        "id": "HP:0031165",
+        "label": "Multifocal seizures"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012469",
         "label": "Infantile spasms"
       },
@@ -94,8 +92,14 @@
     },
     {
       "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
+        "id": "HP:0011344",
+        "label": "Severe global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012110",
+        "label": "Hypoplasia of the pons"
       },
       "excluded": true
     },
@@ -115,15 +119,28 @@
     },
     {
       "type": {
-        "id": "HP:0012110",
-        "label": "Hypoplasia of the pons"
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family 4 Patient 7",
+      "id": "F0UvL4z4ZpeLN3L4iyD2tMil",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -132,11 +149,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 4 Patient 7",
+            "subjectOrBiosampleId": "Family 4 Patient 6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_RnyezIBgvaXuPUbKpOOyVNTas",
+                "id": "c2416CtoT_DEPDC5_NM_001242896v3",
                 "geneContext": {
                   "valueId": "HGNC:18423",
                   "symbol": "DEPDC5"
@@ -149,12 +168,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.31838746C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001229825.1:p.(Arg806Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "31838746",
+                  "pos": 31838746,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -185,55 +208,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T16:31:23.288886070Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:35:00.511150Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36067010",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36067010",
         "description": "Germline homozygous missense DEPDC5 variants cause severe refractory early-onset epilepsy, macrocephaly and bilateral polymicrogyria"
       }
     ]
