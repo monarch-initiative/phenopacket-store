@@ -166,6 +166,20 @@
     },
     {
       "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000574",
+        "label": "Thick eyebrow"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002213",
         "label": "Fine hair"
       },
@@ -243,20 +257,6 @@
     },
     {
       "type": {
-        "id": "HP:0000664",
-        "label": "Synophrys"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000574",
-        "label": "Thick eyebrow"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0003270",
         "label": "Abdominal distention"
       },
@@ -279,7 +279,7 @@
   ],
   "interpretations": [
     {
-      "id": "first patient",
+      "id": "bK9WeZh1tLZB3Z9IzR6ctSel",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -291,8 +291,10 @@
             "subjectOrBiosampleId": "first patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bZZKjuURPdlBZfDkyxwYwSCDH",
+                "id": "c1028_1056del_DYM_NM_001353214v3",
                 "geneContext": {
                   "valueId": "HGNC:21317",
                   "symbol": "DYM"
@@ -305,12 +307,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000018.10:g.49282066_49282094del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001340143.1:p.(Gln343LeufsTer8)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "49282065",
+                  "pos": 49282065,
                   "ref": "ACAAGAGGAGAGTTGCTTGATCAGATGTCT",
                   "alt": "A"
                 },
@@ -335,55 +341,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-26T05:50:22.859320163Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T18:30:03.721271Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24300288",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24300288",
         "description": "A novel frameshift mutation and infrequent clinical findings in two cases with Dyggve-Melchior-Clausen syndrome"
       }
     ]
