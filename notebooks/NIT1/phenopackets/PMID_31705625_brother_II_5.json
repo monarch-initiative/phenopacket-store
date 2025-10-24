@@ -1,0 +1,153 @@
+{
+  "id": "PMID_31705625_brother_II_5",
+  "subject": {
+    "id": "brother II.5",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011942",
+        "label": "Increased urinary sulfite level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006799",
+        "label": "Basal ganglia cysts"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "4cJ3grpMVvwWsIATd8B21Wpv",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621313",
+          "label": "Brain small vessel disease 4"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "brother II.5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c670dup_NIT1_NM_005600v3",
+                "geneContext": {
+                  "valueId": "HGNC:7828",
+                  "symbol": "NIT1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005600.3:c.670dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.161120185dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005591.1:p.(Thr224AsnfsTer41)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 161120184,
+                  "ref": "T",
+                  "alt": "TA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621313",
+        "label": "Brain small vessel disease 4"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-24T19:54:55.507356Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:31705625",
+        "description": "Familial deep cavitating state with a glutathione metabolism defect."
+      }
+    ]
+  }
+}

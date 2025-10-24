@@ -1,7 +1,7 @@
 {
-  "id": "PMID_23335590_Subject_1330",
+  "id": "PMID_23335590_Subject_3269",
   "subject": {
-    "id": "Subject 1330",
+    "id": "Subject 3269",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -9,6 +9,12 @@
       "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
       }
     },
     {
@@ -21,48 +27,6 @@
       "type": {
         "id": "HP:0000175",
         "label": "Cleft palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410030",
-        "label": "Cleft lip"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001537",
-        "label": "Umbilical hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001159",
-        "label": "Syndactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001807",
-        "label": "Ridged nail"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
       },
       "excluded": true
     },
@@ -70,13 +34,18 @@
       "type": {
         "id": "HP:0000494",
         "label": "Downslanted palpebral fissures"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
       },
       "excluded": true
     },
@@ -84,6 +53,13 @@
       "type": {
         "id": "HP:0000218",
         "label": "High palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
       },
       "excluded": true
     },
@@ -103,17 +79,22 @@
     },
     {
       "type": {
-        "id": "HP:0001060",
-        "label": "Axillary pterygium"
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0001060",
+        "label": "Axillary pterygium"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000912",
         "label": "Sprengel anomaly"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -126,34 +107,48 @@
       "type": {
         "id": "HP:0000028",
         "label": "Cryptorchidism"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001156",
         "label": "Brachydactyly"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001159",
+        "label": "Syndactyly"
+      }
     },
     {
       "type": {
         "id": "HP:0004209",
         "label": "Clinodactyly of the 5th finger"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001807",
+        "label": "Ridged nail"
+      }
     },
     {
       "type": {
         "id": "HP:0001274",
         "label": "Agenesis of corpus callosum"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Subject 1330",
+      "id": "17IOiktJi66coMhaCXbKzzOn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -162,11 +157,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Subject 1330",
+            "subjectOrBiosampleId": "Subject 3269",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jsuPjYgertfujUDDpOHGkDeKr",
+                "id": "c496CtoT_EFNB1_NM_004429v5",
                 "geneContext": {
                   "valueId": "HGNC:3226",
                   "symbol": "EFNB1"
@@ -174,24 +171,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004429.5:c.-95T>C"
+                    "value": "NM_004429.5:c.496C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.68829682T>C"
+                    "value": "NC_000023.11:g.68839753C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004420.1:p.(Gln166Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "68829682",
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 68839753,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -215,55 +216,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-12T08:08:05.357244014Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T19:17:56.071646Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23335590",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23335590",
         "description": "Cellular interference in craniofrontonasal syndrome: males mosaic for mutations in the X-linked EFNB1 gene are more severely affected than true hemizygotes"
       }
     ]
