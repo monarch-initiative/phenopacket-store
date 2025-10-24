@@ -7,35 +7,9 @@
         "iso8601duration": "P12Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000518",
-        "label": "Cataract"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001029",
-        "label": "Poikiloderma"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0000992",
@@ -56,9 +30,30 @@
     },
     {
       "type": {
+        "id": "HP:0000684",
+        "label": "Delayed eruption of teeth"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0008404",
         "label": "Nail dystrophy"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034396",
+        "label": "Hippocampal malrotation"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -110,9 +105,35 @@
     },
     {
       "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000659",
+        "label": "Peters anomaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000568",
         "label": "Microphthalmia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000501",
+        "label": "Glaucoma"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -122,8 +143,26 @@
     },
     {
       "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0009803",
         "label": "Short phalanx of finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001029",
+        "label": "Poikiloderma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
       }
     },
     {
@@ -188,63 +227,21 @@
     },
     {
       "type": {
-        "id": "HP:0008066",
-        "label": "Abnormal blistering of the skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000684",
-        "label": "Delayed eruption of teeth"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002079",
-        "label": "Hypoplasia of the corpus callosum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0034396",
-        "label": "Hippocampal malrotation"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000659",
-        "label": "Peters anomaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000501",
-        "label": "Glaucoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000648",
-        "label": "Optic atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0002664",
         "label": "Neoplasm"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008066",
+        "label": "Abnormal blistering of the skin"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Individual F4.1",
+      "id": "y2q3PsrPEdZArnxldwww6OTB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -256,8 +253,10 @@
             "subjectOrBiosampleId": "Individual F4.1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DTPZOKEGNIJVkKPXpZINunjoH",
+                "id": "c588_2214AtoG_DNA2_NM_001080449v3",
                 "geneContext": {
                   "valueId": "HGNC:2939",
                   "symbol": "DNA2"
@@ -270,39 +269,20 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000010.11:g.68461449T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001073918.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "68461449",
+                  "pos": 68461449,
                   "ref": "T",
                   "alt": "C"
                 },
                 "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Individual F4.1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_rginaQNWRnMNaxZFMnHTbJbwP",
-                "label": "Deletion exon 4",
-                "geneContext": {
-                  "valueId": "HGNC:2939",
-                  "symbol": "DNA2"
-                },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -328,55 +308,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-14T18:29:43.306958198Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T17:37:41.572991Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37055165",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37055165",
         "description": "Biallelic variants in DNA2 cause poikiloderma with congenital cataracts and severe growth failure reminiscent of Rothmund-Thomson syndrome"
       }
     ]
