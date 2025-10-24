@@ -24,6 +24,31 @@
     },
     {
       "type": {
+        "id": "HP:0003146",
+        "label": "Hypocholesterolemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030087",
+        "label": "Abnormal circulating testosterone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010569",
+        "label": "Elevated circulating 7-dehydrocholesterol concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003462",
+        "label": "Elevated 8-dehydrocholesterol"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000062",
         "label": "Ambiguous genitalia"
       },
@@ -120,46 +145,21 @@
     },
     {
       "type": {
-        "id": "HP:0003146",
-        "label": "Hypocholesterolemia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010569",
-        "label": "Elevated circulating 7-dehydrocholesterol concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003462",
-        "label": "Elevated 8-dehydrocholesterol"
-      }
+        "id": "HP:0001623",
+        "label": "Breech presentation"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001047",
         "label": "Atopic dermatitis"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0030087",
-        "label": "Abnormal circulating testosterone concentration"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001623",
-        "label": "Breech presentation"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "80fN3UecCUGBNzkmTRVQq8V0",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -171,8 +171,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_LxjSMyZMxzggTYCNsMZVzNVKl",
+                "id": "c907GtoA_DHCR7_NM_001360v3",
                 "geneContext": {
                   "valueId": "HGNC:2860",
                   "symbol": "DHCR7"
@@ -185,49 +187,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.71437868C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr11",
-                  "pos": "71437868",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "patient",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_IZGtfgEPWdlwcnfnIXaEgcPwz",
-                "geneContext": {
-                  "valueId": "HGNC:2860",
-                  "symbol": "DHCR7"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001360.3:c.1325A>G"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.71435478T>C"
+                    "syntax": "hgvs.p",
+                    "value": "NP_001351.2:p.(Gly303Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "71435478",
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 71437868,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -256,56 +227,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-23T10:12:45.743963956Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-24T05:43:36.963085Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28503313",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28503313",
-        "description": "Novel\u00a0DHCR7\u00a0mutation in a case of Smith-Lemli-Opitz syndrome showing 46,XY disorder of sex development"
+        "description": "Novel DHCR7 mutation in a case of Smith-Lemli-Opitz syndrome showing 46,XY disorder of sex development"
       }
     ]
   }
