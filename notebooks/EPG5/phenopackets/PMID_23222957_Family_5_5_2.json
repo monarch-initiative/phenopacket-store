@@ -1,12 +1,13 @@
 {
-  "id": "PMID_23222957_Family_5_5.2",
+  "id": "PMID_23222957_Family_5_5_2",
   "subject": {
     "id": "Family 5 5.2",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P3Y"
       }
-    }
+    },
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -14,6 +15,13 @@
         "id": "HP:0001638",
         "label": "Cardiomyopathy"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -35,25 +43,6 @@
     },
     {
       "type": {
-        "id": "HP:0001010",
-        "label": "Hypopigmentation of the skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
       },
@@ -65,6 +54,12 @@
         "label": "Hepatomegaly"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001010",
+        "label": "Hypopigmentation of the skin"
+      }
     },
     {
       "type": {
@@ -110,6 +105,12 @@
     },
     {
       "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
       },
@@ -118,7 +119,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 5 5.2",
+      "id": "Wp0Hr21Iysz0kFlpwukQ0RWp",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -130,8 +131,10 @@
             "subjectOrBiosampleId": "Family 5 5.2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZqjDtoBypiBMiUsLZWXuiZOrO",
+                "id": "c3481CtoT_EPG5_NM_020964v3",
                 "geneContext": {
                   "valueId": "HGNC:29331",
                   "symbol": "EPG5"
@@ -144,12 +147,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000018.10:g.45916110G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_066015.2:p.(Arg1161Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "45916110",
+                  "pos": 45916110,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -174,55 +181,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-23T05:37:08.458682060Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:38:39.306003Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23222957",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23222957",
         "description": "Recessive mutations in EPG5 cause Vici syndrome, a multisystem disorder with defective autophagy"
       }
     ]

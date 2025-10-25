@@ -1,12 +1,16 @@
 {
-  "id": "PMID_23222957_Family_1_1.1",
+  "id": "PMID_23222957_Family_3_3_1",
   "subject": {
-    "id": "Family 1 1.1",
+    "id": "Family 3 3.1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y"
+        "iso8601duration": "P3M"
       }
-    }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -19,12 +23,19 @@
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
       }
     },
     {
@@ -41,6 +52,13 @@
     },
     {
       "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001010",
         "label": "Hypopigmentation of the skin"
       }
@@ -49,42 +67,6 @@
       "type": {
         "id": "HP:0410030",
         "label": "Cleft lip"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000047",
-        "label": "Hypospadias"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005359",
-        "label": "Aplasia of the thymus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
       },
       "excluded": true
     },
@@ -97,10 +79,42 @@
     },
     {
       "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003198",
+        "label": "Myopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005359",
+        "label": "Aplasia of the thymus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000778",
         "label": "Hypoplasia of the thymus"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency"
+      }
     },
     {
       "type": {
@@ -112,7 +126,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 1 1.1",
+      "id": "cLcdiTFSLTQpMz5nNsoTIAGe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -121,11 +135,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 1 1.1",
+            "subjectOrBiosampleId": "Family 3 3.1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_dkAUrbflwwIMVyhQLuaoCTYKP",
+                "id": "c1253_1GtoT_EPG5_NM_020964v3",
                 "geneContext": {
                   "valueId": "HGNC:29331",
                   "symbol": "EPG5"
@@ -133,54 +149,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_020964.3:c.4588C>T"
+                    "value": "NM_020964.3:c.1253-1G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.45901054G>A"
+                    "value": "NC_000018.10:g.45951239C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_066015.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "45901054",
-                  "ref": "G",
+                  "pos": 45951239,
+                  "ref": "C",
                   "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Family 1 1.1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_IbAkODUJmjbQyYaAryKuZQlRw",
-                "geneContext": {
-                  "valueId": "HGNC:29331",
-                  "symbol": "EPG5"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_020964.3:c.5704dup"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.45879184dup"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr18",
-                  "pos": "45879177",
-                  "ref": "T",
-                  "alt": "TA"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -203,55 +188,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-23T05:37:08.453929901Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:38:39.305466Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23222957",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23222957",
         "description": "Recessive mutations in EPG5 cause Vici syndrome, a multisystem disorder with defective autophagy"
       }
     ]
