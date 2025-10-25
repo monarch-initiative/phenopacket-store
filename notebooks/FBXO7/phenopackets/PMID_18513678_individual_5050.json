@@ -1,10 +1,24 @@
 {
-  "id": "PMID_18513678_individual_5002",
+  "id": "PMID_18513678_individual_5050",
   "subject": {
-    "id": "individual 5002",
+    "id": "individual 5050",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001300",
+        "label": "Parkinsonism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0003487",
@@ -31,6 +45,19 @@
     },
     {
       "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000338",
+        "label": "Hypomimic face"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001762",
         "label": "Talipes equinovarus"
       },
@@ -40,33 +67,6 @@
           "label": "Childhood onset"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001347",
-        "label": "Hyperreflexia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001300",
-        "label": "Parkinsonism"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002067",
-        "label": "Bradykinesia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000338",
-        "label": "Hypomimic face"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -85,7 +85,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual 5002",
+      "id": "28SJdKqOZvfyBQ4OYfADxVPm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -94,11 +94,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual 5002",
+            "subjectOrBiosampleId": "individual 5050",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_LokuaKAhzkCKCPQRFTpVSIbtw",
+                "id": "c1132CtoG_FBXO7_NM_012179v4",
                 "geneContext": {
                   "valueId": "HGNC:13586",
                   "symbol": "FBXO7"
@@ -111,12 +113,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.32493269C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_036311.3:p.(Arg378Gly)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "32493269",
+                  "pos": 32493269,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -147,55 +153,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-08T07:13:06.390172004Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T12:54:14.639514Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18513678",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18513678",
         "description": "Genome-wide linkage analysis of a Parkinsonian-pyramidal syndrome pedigree by 500 K SNP arrays"
       }
     ]
