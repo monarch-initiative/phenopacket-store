@@ -1,5 +1,5 @@
 {
-  "id": "PMID_36208065_7-year-old_female",
+  "id": "PMID_36208065_7_year_old_female",
   "subject": {
     "id": "7-year-old female",
     "timeAtLastEncounter": {
@@ -12,21 +12,16 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000960",
-        "label": "Sacral dimple"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
       }
     },
     {
       "type": {
-        "id": "HP:0000358",
-        "label": "Posteriorly rotated ears"
-      }
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -48,6 +43,13 @@
     },
     {
       "type": {
+        "id": "HP:0000717",
+        "label": "Autism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       }
@@ -66,22 +68,20 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
+        "id": "HP:0000960",
+        "label": "Sacral dimple"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000717",
-        "label": "Autism"
-      },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "7-year-old female",
+      "id": "IWdc5e52lPGA7VfO7lTs2ogb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -93,8 +93,10 @@
             "subjectOrBiosampleId": "7-year-old female",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_AGSRVCAllMioFJaaUXrIkRDIb",
+                "id": "c352AtoT_ERI1_NM_153332v4",
                 "geneContext": {
                   "valueId": "HGNC:23994",
                   "symbol": "ERI1"
@@ -107,12 +109,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.9011606A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_699163.2:p.(Lys118Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "9011606",
+                  "pos": 9011606,
                   "ref": "A",
                   "alt": "T"
                 },
@@ -143,55 +149,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-15T18:13:01.816875934Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:16:53.683403Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-03",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36208065",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36208065",
         "description": "ERI1: A case report of an autosomal recessive syndrome associated with developmental delay and distal limb abnormalities"
       }
     ]

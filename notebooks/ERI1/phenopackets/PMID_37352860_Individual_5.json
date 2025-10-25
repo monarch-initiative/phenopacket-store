@@ -12,6 +12,27 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0003468",
+        "label": "Abnormal vertebral morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000944",
+        "label": "Abnormal metaphysis morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005930",
+        "label": "Abnormal epiphysis morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001849",
         "label": "Foot oligodactyly"
       }
@@ -36,69 +57,6 @@
     },
     {
       "type": {
-        "id": "HP:0000378",
-        "label": "Cupped ear"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000341",
-        "label": "Narrow forehead"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000717",
-        "label": "Autism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000023",
-        "label": "Inguinal hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011682",
-        "label": "Perimembranous ventricular septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000248",
-        "label": "Brachycephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000944",
-        "label": "Abnormal metaphysis morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005930",
-        "label": "Abnormal epiphysis morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004570",
-        "label": "Increased vertebral height"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000767",
         "label": "Pectus excavatum"
       },
@@ -108,13 +66,6 @@
       "type": {
         "id": "HP:0000768",
         "label": "Pectus carinatum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000926",
-        "label": "Platyspondyly"
       },
       "excluded": true
     },
@@ -148,10 +99,34 @@
     },
     {
       "type": {
+        "id": "HP:0000378",
+        "label": "Cupped ear"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0009909",
         "label": "Uplifted earlobe"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000717",
+        "label": "Autism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     },
     {
       "type": {
@@ -166,11 +141,29 @@
         "label": "Scoliosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011682",
+        "label": "Perimembranous ventricular septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000248",
+        "label": "Brachycephaly"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 5",
+      "id": "0kKKaEo0k0v70lPTHmS6mgzH",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -182,8 +175,10 @@
             "subjectOrBiosampleId": "Individual 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qpgpTparxeHvTfNwtXnIPLiKL",
+                "id": "c514CtoT_ERI1_NM_153332v4",
                 "geneContext": {
                   "valueId": "HGNC:23994",
                   "symbol": "ERI1"
@@ -196,12 +191,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.9016337C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_699163.2:p.(Gln172Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "9016337",
+                  "pos": 9016337,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -232,55 +231,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-15T18:13:01.811578989Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:16:53.682796Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-03",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37352860",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37352860",
         "description": "Null and missense mutations of ERI1 cause a recessive phenotypic dichotomy in humans"
       }
     ]

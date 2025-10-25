@@ -24,6 +24,41 @@
     },
     {
       "type": {
+        "id": "HP:0003468",
+        "label": "Abnormal vertebral morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000944",
+        "label": "Abnormal metaphysis morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005930",
+        "label": "Abnormal epiphysis morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001849",
+        "label": "Foot oligodactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001802",
+        "label": "Absent toenail"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001804",
         "label": "Hypoplastic fingernail"
       }
@@ -39,6 +74,13 @@
         "id": "HP:0001156",
         "label": "Brachydactyly"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -90,66 +132,6 @@
     },
     {
       "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003468",
-        "label": "Abnormal vertebral morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000944",
-        "label": "Abnormal metaphysis morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005930",
-        "label": "Abnormal epiphysis morphology"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001849",
-        "label": "Foot oligodactyly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001802",
-        "label": "Absent toenail"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000294",
         "label": "Low anterior hairline"
       },
@@ -164,15 +146,33 @@
     },
     {
       "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000126",
         "label": "Hydronephrosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "male patient",
+      "id": "69lDLWkWeP21IeWHpvPQPC2z",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -184,8 +184,10 @@
             "subjectOrBiosampleId": "male patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_CfhYlJtrQcggmoRAOLUYBIMdN",
+                "id": "ERI1_SV_g_8783887_9068578del",
                 "label": "g.8783887_9068578del",
                 "geneContext": {
                   "valueId": "HGNC:23994",
@@ -193,8 +195,8 @@
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000136",
@@ -222,55 +224,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-15T18:13:01.817940950Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:16:53.683605Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-03",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28488351",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28488351",
         "description": "Homozygous microdeletion of the ERI1 and MFHAS1 genes in a patient with intellectual disability, limb abnormalities, and cardiac malformation"
       }
     ]
