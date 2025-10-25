@@ -1,10 +1,10 @@
 {
-  "id": "PMID_16865293_Family_1_individual_3Y8M",
+  "id": "PMID_16865293_Family_3_individual_12Y",
   "subject": {
-    "id": "Family 1 individual 3Y8M",
+    "id": "Family 3 individual 12Y",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y8M"
+        "iso8601duration": "P12Y"
       }
     },
     "sex": "MALE"
@@ -38,18 +38,32 @@
       "type": {
         "id": "HP:0000670",
         "label": "Carious teeth"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002059",
         "label": "Cerebral atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
     },
     {
       "type": {
         "id": "HP:0002119",
         "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002135",
+        "label": "Basal ganglia calcification"
       }
     },
     {
@@ -66,8 +80,8 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0000992",
+        "label": "Cutaneous photosensitivity"
       }
     },
     {
@@ -81,32 +95,11 @@
         "id": "HP:0034392",
         "label": "Joint contracture"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002135",
-        "label": "Basal ganglia calcification"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000992",
-        "label": "Cutaneous photosensitivity"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family 1 individual 3Y8M",
+      "id": "QItJx6OEgogD3aexsOuP5Utv",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,11 +108,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 1 individual 3Y8M",
+            "subjectOrBiosampleId": "Family 3 individual 12Y",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QeZiVYeRtLynrSCHhgxaImnVy",
+                "id": "c797AtoG_ERCC8_NM_000082v4",
                 "geneContext": {
                   "valueId": "HGNC:3439",
                   "symbol": "ERCC8"
@@ -127,18 +122,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000082.4:c.311_312del"
+                    "value": "NM_000082.4:c.797A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.60918352_60918353del"
+                    "value": "NC_000005.10:g.60898322T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000073.1:p.(Asp266Gly)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "60918351",
-                  "ref": "CAG",
+                  "pos": 60898322,
+                  "ref": "T",
                   "alt": "C"
                 },
                 "moleculeContext": "genomic",
@@ -162,55 +161,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T08:17:50.434108018Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T07:04:20.091453Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:16865293",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/16865293",
         "description": "Cockayne syndrome type A: novel mutations in eight typical patients"
       }
     ]

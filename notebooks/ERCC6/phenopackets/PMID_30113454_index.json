@@ -7,6 +7,9 @@
         "iso8601duration": "P4Y"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -78,6 +81,20 @@
     },
     {
       "type": {
+        "id": "HP:0007814",
+        "label": "Retinal pigment epithelial mottling"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000580",
+        "label": "Pigmentary retinopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002808",
         "label": "Kyphosis"
       }
@@ -108,6 +125,13 @@
     },
     {
       "type": {
+        "id": "HP:0000992",
+        "label": "Cutaneous photosensitivity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       }
@@ -123,32 +147,11 @@
         "id": "HP:0034392",
         "label": "Joint contracture"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0007814",
-        "label": "Retinal pigment epithelial mottling"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000580",
-        "label": "Pigmentary retinopathy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000992",
-        "label": "Cutaneous photosensitivity"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "index",
+      "id": "FIaEHDyytKH47pIgbevDqbHj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -160,8 +163,10 @@
             "subjectOrBiosampleId": "index",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_TjAzKRqKMAdgTquIXgoSMngxe",
+                "id": "c2911_2915delinsTGGTGTGCA_ERCC6_NM_000124v4",
                 "geneContext": {
                   "valueId": "HGNC:3438",
                   "symbol": "ERCC6"
@@ -174,12 +179,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000010.11:g.49472385_49472389delinsTGCACACCA"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000115.1:p.(Lys971TrpfsTer16)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "49472385",
+                  "pos": 49472385,
                   "ref": "ATCTT",
                   "alt": "TGCACACCA"
                 },
@@ -210,55 +219,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-08T18:38:45.123414039Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T07:01:18.614212Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30113454",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30113454",
         "description": "Novel frame shift mutation in ERCC6 leads to a severe form of Cockayne syndrome with postnatal growth failure and early death: A case report and brief literature review"
       }
     ]

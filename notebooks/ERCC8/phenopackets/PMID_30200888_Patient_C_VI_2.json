@@ -1,26 +1,15 @@
 {
-  "id": "PMID_30200888_Patient_A_III_4",
+  "id": "PMID_30200888_Patient_C_VI_2",
   "subject": {
-    "id": "Patient A III.4",
+    "id": "Patient C VI.2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P17Y"
+        "iso8601duration": "P3Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0000252",
@@ -41,38 +30,30 @@
     },
     {
       "type": {
-        "id": "HP:0000670",
-        "label": "Carious teeth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003510",
-        "label": "Severe short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008897",
-        "label": "Postnatal growth retardation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000992",
-        "label": "Cutaneous photosensitivity"
+        "id": "HP:0000518",
+        "label": "Cataract"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0000407",
         "label": "Sensorineural hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient A III.4",
+      "id": "6ekwhkpmRuBmKFnbv61r1Wcq",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,11 +62,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient A III.4",
+            "subjectOrBiosampleId": "Patient C VI.2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_mSYgfdRcTHfDvTWfHrTVMaVsu",
+                "id": "c843_1GtoC_ERCC8_NM_000082v4",
                 "geneContext": {
                   "valueId": "HGNC:3439",
                   "symbol": "ERCC8"
@@ -93,19 +76,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000082.4:c.966C>A"
+                    "value": "NM_000082.4:c.843+1G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.60890964G>T"
+                    "value": "NC_000005.10:g.60898275C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000073.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "60890964",
-                  "ref": "G",
-                  "alt": "T"
+                  "pos": 60898275,
+                  "ref": "C",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -133,55 +120,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T08:17:50.440838813Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T07:04:20.092784Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30200888",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30200888",
         "description": "First molecular study in Lebanese patients with Cockayne syndrome and report of a novel mutation in ERCC8 gene"
       }
     ]
