@@ -1,15 +1,32 @@
 {
-  "id": "PMID_28132690_Family_A_II_1",
+  "id": "PMID_28132690_Family_B_II_2",
   "subject": {
-    "id": "Family A II-1",
+    "id": "Family B II-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P1M4D"
+        "iso8601duration": "P1Y5M"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0001156",
@@ -24,14 +41,33 @@
     },
     {
       "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000455",
+        "label": "Broad nasal tip"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000280",
         "label": "Coarse facial features"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
       }
     },
     {
@@ -44,45 +80,6 @@
       "type": {
         "id": "HP:0001407",
         "label": "Hepatic cysts"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005562",
-        "label": "Multiple renal cysts"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004430",
-        "label": "Severe combined immunodeficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000582",
-        "label": "Upslanted palpebral fissure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000455",
-        "label": "Broad nasal tip"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections"
       },
       "excluded": true
     },
@@ -102,10 +99,20 @@
     },
     {
       "type": {
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001880",
-        "label": "Eosinophilia"
+        "label": "Increased total eosinophil count"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P21D"
+        }
+      }
     },
     {
       "type": {
@@ -113,18 +120,11 @@
         "label": "Severe T-cell immunodeficiency"
       },
       "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008873",
-        "label": "Disproportionate short-limb short stature"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family A II-1",
+      "id": "SturjF6NXStsevEf4K5nezYw",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -133,11 +133,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family A II-1",
+            "subjectOrBiosampleId": "Family B II-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_wJUjSquqTopSYjcZMGHrWKKJd",
+                "id": "c2008TtoG_EXTL3_NM_001440v4",
                 "geneContext": {
                   "valueId": "HGNC:3518",
                   "symbol": "EXTL3"
@@ -145,19 +147,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001440.4:c.1537C>T"
+                    "value": "NM_001440.4:c.2008T>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000008.11:g.28717596C>T"
+                    "value": "NC_000008.11:g.28718067T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001431.1:p.(Tyr670Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "28717596",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 28718067,
+                  "ref": "T",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -179,61 +185,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M4D"
+          "iso8601duration": "P1Y6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-05T14:51:27.293241024Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:11:27.189237Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28132690",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28132690",
         "description": "Mutations in EXTL3 Cause Neuro-immuno-skeletal Dysplasia Syndrome"
       }
     ]

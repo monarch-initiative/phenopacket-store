@@ -12,6 +12,24 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005619",
+        "label": "Thoracolumbar kyphosis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0008445",
         "label": "Cervical spinal canal stenosis"
       },
@@ -36,33 +54,29 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001156",
-        "label": "Brachydactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005619",
-        "label": "Thoracolumbar kyphosis"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000347",
         "label": "Micrognathia"
       }
     },
     {
       "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002007",
         "label": "Frontal bossing"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -78,20 +92,6 @@
     },
     {
       "type": {
-        "id": "HP:0005280",
-        "label": "Depressed nasal bridge"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0006532",
         "label": "Recurrent pneumonia"
       },
@@ -100,7 +100,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "RXRTsQ4iVISGLd2YcmSQjdmA",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -112,8 +112,10 @@
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ljsJxfwUUmdjzqRqonIaAupMa",
+                "id": "c953CtoT_EXTL3_NM_001440v4",
                 "geneContext": {
                   "valueId": "HGNC:3518",
                   "symbol": "EXTL3"
@@ -126,12 +128,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.28717012C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001431.1:p.(Pro318Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "28717012",
+                  "pos": 28717012,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -162,55 +168,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-05T14:51:27.300234079Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:11:27.190707Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28331220",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28331220",
         "description": "Identification of biallelic EXTL3 mutations in a novel type of spondylo-epi-metaphyseal dysplasia"
       }
     ]
