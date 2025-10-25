@@ -7,19 +7,36 @@
         "iso8601duration": "P1Y6M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0005280",
-        "label": "Depressed nasal bridge"
+        "id": "HP:0006610",
+        "label": "Wide intermamillary distance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000244",
+        "label": "Brachyturricephaly"
       }
     },
     {
       "type": {
-        "id": "HP:0011800",
-        "label": "Midface retrusion"
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
       }
     },
     {
@@ -42,20 +59,27 @@
     },
     {
       "type": {
-        "id": "HP:0000244",
-        "label": "Brachyturricephaly"
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
       }
     },
     {
       "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
       }
     },
     {
       "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
       }
     },
     {
@@ -66,8 +90,35 @@
     },
     {
       "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010055",
+        "label": "Broad hallux"
       }
     },
     {
@@ -81,59 +132,11 @@
         "id": "HP:0010554",
         "label": "Cutaneous finger syndactyly"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0010055",
-        "label": "Broad hallux"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000494",
-        "label": "Downslanted palpebral fissures"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000358",
-        "label": "Posteriorly rotated ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000028",
-        "label": "Cryptorchidism"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001561",
-        "label": "Polyhydramnios"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006610",
-        "label": "Wide intermamillary distance"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "BZXU2lUAAeN65qd783Ttyh9u",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -145,8 +148,10 @@
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NqksVuIlpGuFzyLCKcGNoLJwS",
+                "id": "c758CtoG_FGFR2_NM_000141v5",
                 "geneContext": {
                   "valueId": "HGNC:3689",
                   "symbol": "FGFR2"
@@ -159,12 +164,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000010.11:g.121520160G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000132.3:p.(Pro253Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "121520160",
+                  "pos": 121520160,
                   "ref": "G",
                   "alt": "C"
                 },
@@ -195,55 +204,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-21T08:33:17.819481134Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T14:57:30.970167Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23546041",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23546041",
         "description": "p.Ser252Trp and p.Pro253Arg mutations in FGFR2 gene causing Apert syndrome: the first clinical and molecular report of Indonesian patients"
       }
     ]
