@@ -1,31 +1,26 @@
 {
-  "id": "PMID_12189163_Sib_2",
+  "id": "PMID_12189163_V_6",
   "subject": {
-    "id": "Sib 2",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P8Y"
-      }
-    },
+    "id": "V:6",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
-      }
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000400",
-        "label": "Macrotia"
+        "id": "HP:0004381",
+        "label": "Supravalvular aortic stenosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     },
     {
@@ -36,14 +31,13 @@
     },
     {
       "type": {
-        "id": "HP:0002750",
-        "label": "Delayed skeletal maturation"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002097",
         "label": "Emphysema"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
       }
     },
     {
@@ -54,10 +48,15 @@
     },
     {
       "type": {
-        "id": "HP:0000023",
-        "label": "Inguinal hernia"
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
     },
     {
       "type": {
@@ -69,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "Sib 2",
+      "id": "LZ0cHJP5HhL9mTGHrvsK4J4V",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -78,11 +77,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Sib 2",
+            "subjectOrBiosampleId": "V:6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_KjHOewbUZhyFplLMZyQlXveSV",
+                "id": "c679TtoC_FBLN5_NM_006329v4",
                 "geneContext": {
                   "valueId": "HGNC:3602",
                   "symbol": "FBLN5"
@@ -95,12 +96,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.91887253A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006320.2:p.(Ser227Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "91887253",
+                  "pos": 91887253,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -121,59 +126,63 @@
       "term": {
         "id": "OMIM:219100",
         "label": "Cutis laxa, autosomal recessive, type IA"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-28T08:57:27.965509176Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-25T11:48:18.146862Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:12189163",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/12189163",
         "description": "Homozygosity for a missense mutation in fibulin-5 (FBLN5) results in a severe form of cutis laxa"
       }
     ]
