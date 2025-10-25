@@ -2,25 +2,29 @@
   "id": "PMID_36996813_Individual_13",
   "subject": {
     "id": "Individual 13",
+    "timeAtLastEncounter": {
+      "gestationalAge": {
+        "weeks": 39,
+        "days": 0
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0007082",
-        "label": "Dilated third ventricle"
-      }
+        "id": "HP:0001622",
+        "label": "Premature birth"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002514",
-        "label": "Cerebral calcification"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000238",
-        "label": "Hydrocephalus"
+        "id": "HP:0002170",
+        "label": "Intracranial hemorrhage"
       }
     },
     {
@@ -31,20 +35,20 @@
     },
     {
       "type": {
-        "id": "HP:0002170",
-        "label": "Intracranial hemorrhage"
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
       }
     },
     {
       "type": {
-        "id": "HP:0033725",
-        "label": "Thin corpus callosum"
+        "id": "HP:0007109",
+        "label": "Periventricular cysts"
       }
     },
     {
       "type": {
-        "id": "HP:0034295",
-        "label": "Reduced cerebral white matter volume"
+        "id": "HP:0011400",
+        "label": "Abnormal CNS myelination"
       }
     },
     {
@@ -55,14 +59,26 @@
     },
     {
       "type": {
-        "id": "HP:0007109",
-        "label": "Periventricular cysts"
+        "id": "HP:0002514",
+        "label": "Cerebral calcification"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034295",
+        "label": "Reduced cerebral white matter volume"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 13",
+      "id": "My0MBDy7iaVMqDk5qmXzfjir",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -74,8 +90,10 @@
             "subjectOrBiosampleId": "Individual 13",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jtCVGSUZXiuYSSXEFQRwxbqxw",
+                "id": "c451_1GtoA_ESAM_NM_138961v3",
                 "geneContext": {
                   "valueId": "HGNC:17474",
                   "symbol": "ESAM"
@@ -88,12 +106,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.124756540C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_620411.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "124756540",
+                  "pos": 124756540,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -124,56 +146,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-21T18:30:54.192553043Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-10-25T09:08:34.607814Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36996813",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36996813",
-        "description": "Bi-allelic variants in the ESAM tight-junction gene cause a neurodevelopmental disorder associated with fetal intracranial hemorrhage"
+        "description": "Bi-allelic variants in the ESAM tight-junction gene cause a neurodevelopmental disorder associated with fetal intracranial hemorrhage."
       }
     ]
   }
