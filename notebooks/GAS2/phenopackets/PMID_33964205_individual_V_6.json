@@ -1,10 +1,7 @@
 {
-  "id": "PMID_33964205_individual_V_7",
+  "id": "PMID_33964205_individual_V_6",
   "subject": {
-    "id": "individual V.7",
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
+    "id": "individual V.6",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -43,7 +40,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual V.7",
+      "id": "yDePbiZHMp6pKRsKRrhj22RC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -52,11 +49,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual V.7",
+            "subjectOrBiosampleId": "individual V.6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qFimNtEDhmhFGWkaoYbKNuXtC",
+                "id": "c723_1GtoA_GAS2_NM_001143830v3",
                 "geneContext": {
                   "valueId": "HGNC:4167",
                   "symbol": "GAS2"
@@ -69,12 +68,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.22755954G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001137302.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "22755954",
+                  "pos": 22755954,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -105,55 +108,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-15T06:50:07.331309080Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T15:11:39.488367Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:33964205",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/33964205",
         "description": "Cochlear supporting cells require GAS2 for cytoskeletal architecture and hearing"
       }
     ]
