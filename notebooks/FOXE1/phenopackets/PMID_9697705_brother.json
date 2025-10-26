@@ -12,6 +12,12 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0008191",
+        "label": "Thyroid agenesis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0010564",
         "label": "Bifid epiglottis"
       },
@@ -60,12 +66,6 @@
     },
     {
       "type": {
-        "id": "HP:0008191",
-        "label": "Thyroid agenesis"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0031507",
         "label": "Decreased circulating T4 concentration"
       }
@@ -94,7 +94,7 @@
   ],
   "interpretations": [
     {
-      "id": "brother",
+      "id": "zCiyGSbu7DG7xrtY2P6WwSDD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -106,8 +106,10 @@
             "subjectOrBiosampleId": "brother",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qSJAdTOyHIezhLosjtbjGtZtE",
+                "id": "c194CtoT_FOXE1_NM_004473v4",
                 "geneContext": {
                   "valueId": "HGNC:3806",
                   "symbol": "FOXE1"
@@ -120,12 +122,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.97854108C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004464.2:p.(Ala65Val)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "97854108",
+                  "pos": 97854108,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -156,55 +162,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-30T05:21:03.749477148Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T18:00:56.898779Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:9697705",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/9697705",
         "description": "Mutation of the gene encoding human TTF-2 associated with thyroid agenesis, cleft palate and choanal atresia"
       }
     ]

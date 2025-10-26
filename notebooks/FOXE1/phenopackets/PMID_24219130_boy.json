@@ -12,6 +12,19 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0008191",
+        "label": "Thyroid agenesis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010564",
+        "label": "Bifid epiglottis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000175",
         "label": "Cleft palate"
       },
@@ -36,6 +49,26 @@
     },
     {
       "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0100786",
         "label": "Hypersomnia"
       },
@@ -55,44 +88,11 @@
           "iso8601duration": "P1M"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0008191",
-        "label": "Thyroid agenesis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000821",
-        "label": "Hypothyroidism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010564",
-        "label": "Bifid epiglottis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000358",
-        "label": "Posteriorly rotated ears"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "boy",
+      "id": "2m2sk1KZKOCZbQ5ZpBHvY4QP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -104,8 +104,10 @@
             "subjectOrBiosampleId": "boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XArBKdaYWBfqSNQHLSTvrUpkT",
+                "id": "c217CtoA_FOXE1_NM_004473v4",
                 "geneContext": {
                   "valueId": "HGNC:3806",
                   "symbol": "FOXE1"
@@ -118,12 +120,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.97854131C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004464.2:p.(Arg73Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "97854131",
+                  "pos": 97854131,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -154,55 +160,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-30T05:21:03.752583980Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T18:00:56.899659Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24219130",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24219130",
         "description": "A novel FOXE1 mutation (R73S) in Bamforth-Lazarus syndrome causing increased thyroidal gene expression"
       }
     ]
