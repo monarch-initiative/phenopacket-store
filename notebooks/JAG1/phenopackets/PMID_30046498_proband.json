@@ -12,6 +12,39 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000627",
+        "label": "Posterior embryotoxon"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y4M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000490",
+        "label": "Deeply set eye"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000952",
         "label": "Jaundice"
       },
@@ -29,28 +62,6 @@
       "onset": {
         "age": {
           "iso8601duration": "P21D"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000490",
-        "label": "Deeply set eye"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
         }
       }
     },
@@ -144,17 +155,6 @@
     },
     {
       "type": {
-        "id": "HP:0000627",
-        "label": "Posterior embryotoxon"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y4M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000991",
         "label": "Xanthomatosis"
       },
@@ -163,6 +163,13 @@
           "iso8601duration": "P2Y2M"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -218,18 +225,11 @@
           "iso8601duration": "P6M"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "YHl1dcqmYiUqQVdOgvh1epNT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -241,8 +241,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_BugElpGSRqRkBKSRlnMKRBXYZ",
+                "id": "c91dup_JAG1_NM_000214v3",
                 "geneContext": {
                   "valueId": "HGNC:6188",
                   "symbol": "JAG1"
@@ -255,12 +257,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000020.11:g.10673000dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000205.1:p.(Ala31GlyfsTer42)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr20",
-                  "pos": "10672996",
+                  "pos": 10672996,
                   "ref": "G",
                   "alt": "GC"
                 },
@@ -290,55 +296,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-14T16:38:04.455009937Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T15:19:35.977778Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30046498",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30046498",
         "description": "A Novel c.91dupG JAG1 Gene Mutation Is Associated with Early Onset and Severe Alagille Syndrome"
       }
     ]

@@ -1,0 +1,237 @@
+{
+  "id": "PMID_31044565_proband",
+  "subject": {
+    "id": "proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001876",
+        "label": "Pancytopenia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003221",
+        "label": "Chromosomal breakage induced by crosslinking agents"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009777",
+        "label": "Absent thumb"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009942",
+        "label": "Duplication of thumb phalanx"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003974",
+        "label": "Absent radius"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011940",
+        "label": "Anterior wedging of T12"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000957",
+        "label": "Cafe-au-lait spot"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020073",
+        "label": "Hypopigmented macule"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005528",
+        "label": "Bone marrow hypocellularity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "zKJTERDsrPYIPLzj8VSoCVqa",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:227645",
+          "label": "Fanconi anemia, complementation group C"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c67del_FANCC_NM_000136v3",
+                "geneContext": {
+                  "valueId": "HGNC:3584",
+                  "symbol": "FANCC"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000136.3:c.67del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.95249227del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000127.2:p.(Asp23IlefsTer23)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 95249224,
+                  "ref": "TC",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:227645",
+        "label": "Fanconi anemia, complementation group C"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-25T11:43:16.955738Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:31044565",
+        "description": "FANCC Dutch founder mutation in a Mennonite family from Tamaulipas, México"
+      }
+    ]
+  }
+}
