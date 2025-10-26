@@ -1,13 +1,13 @@
 {
-  "id": "PMID_25876182_Patient_VI_2",
+  "id": "PMID_25516138_IV_3",
   "subject": {
-    "id": "Patient VI-2",
+    "id": "IV:3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P5Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,7 +17,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7M"
+          "iso8601duration": "P5Y"
         }
       }
     },
@@ -28,31 +28,8 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7M"
+          "iso8601duration": "P5Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007420",
-        "label": "Spontaneous hematomas"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000132",
-        "label": "Menorrhagia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003010",
-        "label": "Prolonged bleeding time"
       }
     },
     {
@@ -67,26 +44,23 @@
         "id": "HP:0000967",
         "label": "Petechiae"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0000225",
-        "label": "Gingival bleeding"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001744",
-        "label": "Splenomegaly"
+        "id": "HP:0005548",
+        "label": "Megakaryocytopenia"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient VI-2",
+      "id": "SEdHCuABHIJ3uXXI3s75i8Vk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -95,11 +69,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient VI-2",
+            "subjectOrBiosampleId": "IV:3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DnxGhzzazcEcNPGKqdtoOxJqX",
+                "id": "c1385_1386del_FYB1_NM_001465v6",
                 "geneContext": {
                   "valueId": "HGNC:4036",
                   "symbol": "FYB1"
@@ -107,19 +83,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001465.6:c.393G>A"
+                    "value": "NM_001465.6:c.1385_1386del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.39202568C>T"
+                    "value": "NC_000005.10:g.39138667_39138668del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001456.3:p.(Tyr462Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "39202568",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 39138664,
+                  "ref": "CAT",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -141,62 +121,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7M"
+          "iso8601duration": "P5Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-02T16:35:15.456688165Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:53:58.482959Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:25876182",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25876182",
-        "description": "Deleterious mutation in the FYB gene is associated with congenital autosomal recessive small-platelet thrombocytopenia"
+        "id": "PMID:25516138",
+        "description": "Recessive thrombocytopenia likely due to a homozygous pathogenic variant in the FYB gene: case report"
       }
     ]
   }
