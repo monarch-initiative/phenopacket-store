@@ -8,12 +8,7 @@
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P2Y10M"
-        }
-      }
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
@@ -69,7 +64,7 @@
   ],
   "interpretations": [
     {
-      "id": "P2",
+      "id": "d5iBWyTDRlAwqPIz9XXvZAP6",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,8 +76,10 @@
             "subjectOrBiosampleId": "P2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_twvmbrroMmGicAqRnoHEIeKXF",
+                "id": "c1750TtoC_FBXL4_NM_001278716v2",
                 "geneContext": {
                   "valueId": "HGNC:13601",
                   "symbol": "FBXL4"
@@ -95,12 +92,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.98874394A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001265645.1:p.(Cys584Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "98874394",
+                  "pos": 98874394,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -125,55 +126,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T04:50:40.284711837Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T17:56:57.056760Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:31442532",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31442532",
         "description": "Characterization of the C584R variant in the mtDNA depletion syndrome gene FBXL4, reveals a novel role for FBXL4 as a regulator of mitochondrial fusion"
       }
     ]

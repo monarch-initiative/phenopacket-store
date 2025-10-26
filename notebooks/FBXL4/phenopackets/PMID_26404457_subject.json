@@ -7,23 +7,9 @@
         "iso8601duration": "P1Y2M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0001942",
-        "label": "Metabolic acidosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1D"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0003429",
@@ -68,6 +54,17 @@
     },
     {
       "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003348",
         "label": "Hyperalaninemia"
       }
@@ -75,25 +72,19 @@
     {
       "type": {
         "id": "HP:0001888",
-        "label": "Lymphopenia"
+        "label": "Decreased total lymphocyte count"
       }
     },
     {
       "type": {
         "id": "HP:0001875",
-        "label": "Neutropenia"
+        "label": "Decreased total neutrophil count"
       }
     },
     {
       "type": {
         "id": "HP:0004313",
-        "label": "Decreased circulating antibody concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003688",
-        "label": "Cytochrome C oxidase-negative muscle fibers"
+        "label": "Decreased circulating immunoglobulin concentration"
       }
     },
     {
@@ -107,11 +98,17 @@
         "id": "HP:0003648",
         "label": "Lacticaciduria"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0003688",
+        "label": "Cytochrome C oxidase-negative muscle fibers"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "subject",
+      "id": "3ejatrQNd2OhmnWKlhqgBJyj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -123,8 +120,10 @@
             "subjectOrBiosampleId": "subject",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_GLmvoLHvGGcABMKsIVQKKqGQH",
+                "id": "c1641_1642del_FBXL4_NM_001278716v2",
                 "geneContext": {
                   "valueId": "HGNC:13601",
                   "symbol": "FBXL4"
@@ -137,12 +136,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.98875481_98875482del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001265645.1:p.(Cys547Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "98875474",
+                  "pos": 98875474,
                   "ref": "TCA",
                   "alt": "T"
                 },
@@ -172,55 +175,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T04:50:40.296034097Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T17:56:57.059153Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26404457",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26404457",
         "description": "Detailed Biochemical and Bioenergetic Characterization of FBXL4-Related Encephalomyopathic Mitochondrial DNA Depletion"
       }
     ]

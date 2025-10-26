@@ -7,12 +7,16 @@
         "iso8601duration": "P1Y11M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0002415",
@@ -27,9 +31,23 @@
     },
     {
       "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002092",
+        "label": "Pulmonary arterial hypertension"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -42,6 +60,27 @@
         "id": "HP:0001655",
         "label": "Patent foramen ovale"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001712",
+        "label": "Left ventricular hypertrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004755",
+        "label": "Supraventricular tachycardia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -66,60 +105,11 @@
         "id": "HP:0000365",
         "label": "Hearing impairment"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002384",
-        "label": "Focal impaired awareness seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012469",
-        "label": "Infantile spasms"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002059",
-        "label": "Cerebral atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002092",
-        "label": "Pulmonary arterial hypertension"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001712",
-        "label": "Left ventricular hypertrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004755",
-        "label": "Supraventricular tachycardia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001636",
-        "label": "Tetralogy of Fallot"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "S5",
+      "id": "uRCiflFdtmwIRTzE6uLyfFHc",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -131,8 +121,10 @@
             "subjectOrBiosampleId": "S5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DuEWjizzYCguCxAnzmlAOnJxc",
+                "id": "c1389_3_1389_6del_FBXL4_NM_001278716v2",
                 "geneContext": {
                   "valueId": "HGNC:13601",
                   "symbol": "FBXL4"
@@ -145,49 +137,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.98880549_98880552del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr6",
-                  "pos": "98880546",
-                  "ref": "CACTT",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "S5",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_euthYadEfeiphpOTaKSRBtxsb",
-                "geneContext": {
-                  "valueId": "HGNC:13601",
-                  "symbol": "FBXL4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001278716.2:c.1838T>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.98874306A>T"
+                    "syntax": "hgvs.p",
+                    "value": "NP_001265645.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "98874306",
-                  "ref": "A",
-                  "alt": "T"
+                  "pos": 98880546,
+                  "ref": "CACTT",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -215,55 +176,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T04:50:40.292774915Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T17:56:57.058047Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27743463",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27743463",
         "description": "FBXL4 defects are common in patients with congenital lactic acidemia and encephalomyopathic mitochondrial DNA depletion syndrome"
       }
     ]

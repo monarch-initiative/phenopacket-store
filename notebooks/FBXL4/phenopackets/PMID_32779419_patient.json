@@ -7,9 +7,6 @@
         "iso8601duration": "P1M20D"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -18,6 +15,13 @@
         "id": "HP:0002119",
         "label": "Ventriculomegaly"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -75,6 +79,13 @@
     },
     {
       "type": {
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002007",
         "label": "Frontal bossing"
       }
@@ -90,6 +101,13 @@
         "id": "HP:0002421",
         "label": "Poor head control"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -117,6 +135,13 @@
     },
     {
       "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0003348",
         "label": "Hyperalaninemia"
       }
@@ -124,7 +149,7 @@
     {
       "type": {
         "id": "HP:0001875",
-        "label": "Neutropenia"
+        "label": "Decreased total neutrophil count"
       }
     },
     {
@@ -135,14 +160,15 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      }
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0034648",
-        "label": "Elevated urine fumaric acid level"
+        "id": "HP:0000369",
+        "label": "Low-set ears"
       }
     },
     {
@@ -153,43 +179,14 @@
     },
     {
       "type": {
-        "id": "HP:0002013",
-        "label": "Vomiting"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000319",
-        "label": "Smooth philtrum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001987",
-        "label": "Hyperammonemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
+        "id": "HP:0034648",
+        "label": "Elevated urine fumaric acid level"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "szEl23lE4RcsAuYhbzdemRl0",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -201,8 +198,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_oiyGPLYBpChDYKMHyFxNITlHr",
+                "id": "c772GtoT_FBXL4_NM_001278716v2",
                 "geneContext": {
                   "valueId": "HGNC:13601",
                   "symbol": "FBXL4"
@@ -215,49 +214,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.98917460C>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr6",
-                  "pos": "98917460",
-                  "ref": "C",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "patient",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_akqsbpyJPEpKgJrFwHuXyfSCG",
-                "geneContext": {
-                  "valueId": "HGNC:13601",
-                  "symbol": "FBXL4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001278716.2:c.1061G>C"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.98905468C>G"
+                    "syntax": "hgvs.p",
+                    "value": "NP_001265645.1:p.(Gly258Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "98905468",
+                  "pos": 98917460,
                   "ref": "C",
-                  "alt": "G"
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -286,55 +254,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T04:50:40.281913995Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T17:56:57.055958Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32779419",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32779419",
         "description": "Different clinical presentation in a patient with two novel pathogenic variants of the FBXL4 gene"
       }
     ]
