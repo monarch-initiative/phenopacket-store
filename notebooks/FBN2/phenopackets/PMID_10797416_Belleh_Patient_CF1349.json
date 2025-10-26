@@ -1,11 +1,10 @@
 {
-  "id": "PMID_8900230_Wang_et_al_1996_Patient_CS961588",
+  "id": "PMID_10797416_Belleh_Patient_CF1349",
   "subject": {
-    "id": "Wang et al 1996 Patient CS961588",
+    "id": "Belleh Patient CF1349",
     "timeAtLastEncounter": {
-      "ontologyClass": {
-        "id": "HP:0003577",
-        "label": "Congenital onset"
+      "age": {
+        "iso8601duration": "P14Y"
       }
     },
     "sex": "FEMALE"
@@ -25,34 +24,9 @@
     },
     {
       "type": {
-        "id": "HP:0034391",
-        "label": "Elbow contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034671",
-        "label": "Knee contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0100490",
         "label": "Camptodactyly of finger"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -70,6 +44,19 @@
     },
     {
       "type": {
+        "id": "HP:0034391",
+        "label": "Elbow contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034671",
+        "label": "Knee contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001239",
         "label": "Wrist flexion contracture"
       },
@@ -77,8 +64,21 @@
     },
     {
       "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000768",
         "label": "Pectus carinatum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
       },
       "excluded": true
     },
@@ -100,8 +100,7 @@
       "type": {
         "id": "HP:0000218",
         "label": "High palate"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -127,7 +126,7 @@
   ],
   "interpretations": [
     {
-      "id": "Wang et al 1996 Patient CS961588",
+      "id": "YGuF53Z7mIkkFr3yD1L0KpdV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,11 +135,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Wang et al 1996 Patient CS961588",
+            "subjectOrBiosampleId": "Belleh Patient CF1349",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_PZpXYvYDQVQgTaneRichJUyuh",
+                "id": "c3759TtoG_FBN2_NM_001999v4",
                 "geneContext": {
                   "valueId": "HGNC:3604",
                   "symbol": "FBN2"
@@ -148,19 +149,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001999.4:c.4346-2A>T"
+                    "value": "NM_001999.4:c.3759T>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.128328823T>A"
+                    "value": "NC_000005.10:g.128335543A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001990.2:p.(Cys1253Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "128328823",
-                  "ref": "T",
-                  "alt": "A"
+                  "pos": 128335543,
+                  "ref": "A",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -179,66 +184,59 @@
       "term": {
         "id": "OMIM:121050",
         "label": "Contractural arachnodactyly, congenital"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-05T06:32:33.791893959Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:15:12.766987Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:8900230",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/8900230",
-        "description": "Familial occurrence of typical and severe lethal congenital contractural arachnodactyly caused by missplicing of exon 34 of fibrillin-2"
+        "id": "PMID:10797416",
+        "description": "Two novel fibrillin-2 mutations in congenital contractural arachnodactyly"
       }
     ]
   }

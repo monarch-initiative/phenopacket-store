@@ -1,14 +1,36 @@
 {
   "id": "PMID_7493032_Putnam_1995_p262",
   "subject": {
-    "id": "Putnam 1995 p262"
+    "id": "Putnam 1995 p262",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009901",
+        "label": "Crumpled ear"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0100490",
         "label": "Camptodactyly of finger"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001836",
+        "label": "Camptodactyly of toe"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -27,27 +49,6 @@
         "id": "HP:0034671",
         "label": "Knee contracture"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0009901",
-        "label": "Crumpled ear"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001166",
-        "label": "Arachnodactyly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001836",
-        "label": "Camptodactyly of toe"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -94,7 +95,7 @@
   ],
   "interpretations": [
     {
-      "id": "Putnam 1995 p262",
+      "id": "davzzwnXq3RnJAIN7Ta2IVaz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -106,8 +107,10 @@
             "subjectOrBiosampleId": "Putnam 1995 p262",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SLoaYhYvlJCPARrXxvRCqRsnj",
+                "id": "c4301GtoC_FBN2_NM_001999v4",
                 "geneContext": {
                   "valueId": "HGNC:3604",
                   "symbol": "FBN2"
@@ -120,12 +123,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000005.10:g.128330617C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001990.2:p.(Cys1434Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "128330617",
+                  "pos": 128330617,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -150,55 +157,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-05T06:32:33.793210029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:15:12.769368Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:7493032",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/7493032",
         "description": "Fibrillin-2 (FBN2) mutations result in the Marfan-like disorder, congenital contractural arachnodactyly"
       }
     ]
