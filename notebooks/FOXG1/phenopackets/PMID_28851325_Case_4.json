@@ -1,10 +1,10 @@
 {
-  "id": "PMID_28851325_Case_3",
+  "id": "PMID_28851325_Case_4",
   "subject": {
-    "id": "Case 3",
+    "id": "Case 4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P1Y7M"
+        "iso8601duration": "P2Y"
       }
     },
     "sex": "FEMALE"
@@ -12,26 +12,10 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0007359",
-        "label": "Focal-onset seizure"
+        "id": "HP:0002376",
+        "label": "Developmental regression"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -53,20 +37,63 @@
     },
     {
       "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0003763",
         "label": "Bruxism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002353",
+        "label": "EEG abnormality"
       }
     },
     {
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0025336",
         "label": "Delayed ability to sit"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000733",
+        "label": "Motor stereotypy"
       }
     },
     {
@@ -78,34 +105,19 @@
     {
       "type": {
         "id": "HP:0002360",
-        "label": "Sleep abnormality"
+        "label": "Sleep disturbance"
       }
     },
     {
       "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002188",
-        "label": "Delayed CNS myelination"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002353",
-        "label": "EEG abnormality"
-      },
-      "excluded": true
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Case 3",
+      "id": "AQQL9Oo90pdQEjmhgAQs86e5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,11 +126,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Case 3",
+            "subjectOrBiosampleId": "Case 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_hnmKZRuIScduQgmPUeKwtutvf",
+                "id": "c974dup_FOXG1_NM_005249v5",
                 "geneContext": {
                   "valueId": "HGNC:3811",
                   "symbol": "FOXG1"
@@ -126,19 +140,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005249.5:c.460dup"
+                    "value": "NM_005249.5:c.974dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.28767739dup"
+                    "value": "NC_000014.9:g.28768253dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005240.3:p.(Leu325PhefsTer130)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "28767732",
+                  "pos": 28768250,
                   "ref": "C",
-                  "alt": "CG"
+                  "alt": "CT"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -167,55 +185,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-05T09:25:36.565046072Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:19:46.912687Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28851325",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28851325",
         "description": "Novel FOXG1 mutations in Chinese patients with Rett syndrome or Rett-like mental retardation"
       }
     ]
