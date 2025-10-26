@@ -7,42 +7,21 @@
         "iso8601duration": "P26Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000612",
-        "label": "Iris coloboma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000567",
-        "label": "Chorioretinal coloboma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010924",
-        "label": "Posterior cortical cataract"
-      }
-    },
     {
       "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011003",
+        "label": "High myopia"
+      }
     },
     {
       "type": {
@@ -60,15 +39,33 @@
     },
     {
       "type": {
+        "id": "HP:0000612",
+        "label": "Iris coloboma"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000588",
         "label": "Optic disc coloboma"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000567",
+        "label": "Chorioretinal coloboma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010924",
+        "label": "Posterior cortical cataract"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3 SG170145",
+      "id": "q71DpUkGTgAozZ8DX5eu7iDZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,8 +77,10 @@
             "subjectOrBiosampleId": "Patient 3 SG170145",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZvbASubXsDZXHKUAeNICuxlaG",
+                "id": "c1181_1246del_FZD5_NM_003468v4",
                 "geneContext": {
                   "valueId": "HGNC:4043",
                   "symbol": "FZD5"
@@ -94,12 +93,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.207767501_207767566del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003459.2:p.(Asn394_Gly415del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "207767493",
+                  "pos": 207767493,
                   "ref": "GTGCCCACCAGCAGGTAGAGCACCAGCGGGCCCAGCACGAAGCCGCGCAGCGAGTTCAGGTTCTGGT",
                   "alt": "G"
                 },
@@ -130,55 +133,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T06:17:28.934936046Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:42:07.845905Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32737437",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32737437",
         "description": "Confirmation of FZD5 implication in a cohort of 50 patients with ocular coloboma"
       }
     ]

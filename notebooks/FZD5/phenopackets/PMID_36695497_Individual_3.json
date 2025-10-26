@@ -1,29 +1,16 @@
 {
-  "id": "PMID_36695497_Individual_6",
+  "id": "PMID_36695497_Individual_3",
   "subject": {
-    "id": "Individual 6",
-    "vitalStatus": {
-      "status": "ALIVE"
-    }
+    "id": "Individual 3",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000612",
-        "label": "Iris coloboma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000567",
-        "label": "Chorioretinal coloboma"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -41,10 +28,22 @@
     },
     {
       "type": {
+        "id": "HP:0000612",
+        "label": "Iris coloboma"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000588",
         "label": "Optic disc coloboma"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000567",
+        "label": "Chorioretinal coloboma"
+      }
     },
     {
       "type": {
@@ -56,7 +55,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual 6",
+      "id": "XpbEC36ix7JHOE8YtxrxVvyx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -65,11 +64,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 6",
+            "subjectOrBiosampleId": "Individual 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NyElxakfDjnSixJZQrBwJqoEO",
+                "id": "c541GtoT_FZD5_NM_003468v4",
                 "geneContext": {
                   "valueId": "HGNC:4043",
                   "symbol": "FZD5"
@@ -77,19 +78,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003468.4:c.1406T>C"
+                    "value": "NM_003468.4:c.541G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.207767334A>G"
+                    "value": "NC_000002.12:g.207768199C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003459.2:p.(Glu181Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "207767334",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 207768199,
+                  "ref": "C",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -118,55 +123,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-27T06:17:28.932656049Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-26T06:42:07.844709Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36695497",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36695497",
         "description": "Individuals with heterozygous variants in the Wnt-signalling pathway gene FZD5 delineate a phenotype characterized by isolated coloboma and variable expressivity"
       }
     ]
