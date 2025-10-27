@@ -24,6 +24,13 @@
     },
     {
       "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
       }
@@ -69,18 +76,11 @@
         "id": "HP:0002987",
         "label": "Elbow flexion contracture"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "dFhfMaA1DwkgEQD47JEP9Yqc",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -92,8 +92,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_MvlxJrnoYhfyVBwhLrFHfrZqP",
+                "id": "c508GtoC_FLNB_NM_001457v4",
                 "geneContext": {
                   "valueId": "HGNC:3755",
                   "symbol": "FLNB"
@@ -106,12 +108,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.58077261G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001448.2:p.(Ala170Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "58077261",
+                  "pos": 58077261,
                   "ref": "G",
                   "alt": "C"
                 },
@@ -142,55 +148,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-19T19:25:02.503463029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-27T07:55:48.258585Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18322662",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18322662",
         "description": "Case report: Congenital knee dislocation in a patient with larsen syndrome and a novel filamin B mutation"
       }
     ]
