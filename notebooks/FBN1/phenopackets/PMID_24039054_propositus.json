@@ -12,15 +12,10 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:6000264",
-        "label": "Fetal tachycardia"
+        "id": "HP:0004482",
+        "label": "Relative macrocephaly"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0034197",
-          "label": "Third trimester onset"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -54,6 +49,13 @@
     },
     {
       "type": {
+        "id": "HP:0001083",
+        "label": "Ectopia lentis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000520",
         "label": "Proptosis"
       }
@@ -63,6 +65,13 @@
         "id": "HP:0001508",
         "label": "Failure to thrive"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -108,50 +117,23 @@
     },
     {
       "type": {
+        "id": "HP:0001654",
+        "label": "Abnormal heart valve morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004942",
+        "label": "Aortic aneurysm"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000126",
         "label": "Hydronephrosis"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000239",
-        "label": "Large fontanelles"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004482",
-        "label": "Relative macrocephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001083",
-        "label": "Ectopia lentis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000098",
-        "label": "Tall stature"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001634",
-        "label": "Mitral valve prolapse"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002616",
-        "label": "Aortic root aneurysm"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -159,11 +141,29 @@
         "label": "Kyphosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:6000264",
+        "label": "Fetal tachycardia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034197",
+          "label": "Third trimester onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000239",
+        "label": "Large fontanelles"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "propositus",
+      "id": "Gdtp07YUoxpR1YB1uQLtywgl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -175,8 +175,10 @@
             "subjectOrBiosampleId": "propositus",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_eWzctdDzXAyuDutvXixQYBzKM",
+                "id": "c8175_8182del_FBN1_NM_000138v5",
                 "geneContext": {
                   "valueId": "HGNC:3603",
                   "symbol": "FBN1"
@@ -189,12 +191,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.48412614_48412621del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000129.3:p.(Arg2726GlufsTer9)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "48412612",
+                  "pos": 48412612,
                   "ref": "CTGCCCCGT",
                   "alt": "C"
                 },
@@ -225,55 +231,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-17T07:32:27.955290079Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-27T08:06:56.132278Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24039054",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24039054",
         "description": "Severe congenital lipodystrophy and a progeroid appearance: Mutation in the penultimate exon of FBN1 causing a recognizable phenotype"
       }
     ]

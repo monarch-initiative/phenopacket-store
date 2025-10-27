@@ -1,0 +1,157 @@
+{
+  "id": "PMID_31527767_III_7",
+  "subject": {
+    "id": "III.7",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001083",
+        "label": "Ectopia lentis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000501",
+        "label": "Glaucoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000541",
+        "label": "Retinal detachment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002616",
+        "label": "Aortic root aneurysm"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "bFCGAz0iU0dpYa7lNmwOjXk4",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:129600",
+          "label": "Ectopia lentis, familial"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "III.7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1916GtoA_FBN1_NM_000138v5",
+                "geneContext": {
+                  "valueId": "HGNC:3603",
+                  "symbol": "FBN1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000138.5:c.1916G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.48505069C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000129.3:p.(Cys639Tyr)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr15",
+                  "pos": 48505069,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:129600",
+        "label": "Ectopia lentis, familial"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-10-27T08:04:09.537765Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:31527767",
+        "description": "A FBN1 variant manifesting as non-syndromic ectopia lentis with retinal detachment: clinical and genetic characteristics"
+      }
+    ]
+  }
+}

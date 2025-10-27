@@ -12,29 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000098",
-        "label": "Tall stature"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000238",
-        "label": "Hydrocephalus"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000278",
         "label": "Retrognathia"
       }
@@ -71,8 +48,40 @@
     },
     {
       "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001083",
+        "label": "Ectopia lentis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000520",
         "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
       }
     },
     {
@@ -89,8 +98,27 @@
     },
     {
       "type": {
+        "id": "HP:0002804",
+        "label": "Arthrogryposis multiplex congenita"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0008081",
         "label": "Pes valgus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
       }
     },
     {
@@ -119,42 +147,8 @@
     },
     {
       "type": {
-        "id": "HP:0000325",
-        "label": "Triangular face"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011003",
-        "label": "High myopia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001083",
-        "label": "Ectopia lentis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002804",
-        "label": "Arthrogryposis multiplex congenita"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002616",
-        "label": "Aortic root aneurysm"
+        "id": "HP:0004942",
+        "label": "Aortic aneurysm"
       },
       "excluded": true
     },
@@ -164,11 +158,17 @@
         "label": "Kyphosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000325",
+        "label": "Triangular face"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "WVnVXFOJQCeZ6HzsY5M1nYia",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -180,8 +180,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bezJowjlgnUSgYwEStfUbFNIB",
+                "id": "c8226_1GtoT_FBN1_NM_000138v5",
                 "geneContext": {
                   "valueId": "HGNC:3603",
                   "symbol": "FBN1"
@@ -194,12 +196,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.48412568C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000129.3:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "48412568",
+                  "pos": 48412568,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -230,55 +236,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-17T07:32:27.954761981Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-27T08:06:56.132082Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:21594993",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/21594993",
         "description": "Progeroid facial features and lipodystrophy associated with a novel splice site mutation in the final intron of the FBN1 gene"
       }
     ]
