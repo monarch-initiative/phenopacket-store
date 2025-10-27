@@ -1,9 +1,41 @@
 {
-  "id": "PMID_36197437_case_11",
+  "id": "PMID_36197437_case_7",
   "subject": {
-    "id": "case 11"
+    "id": "case 7",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007385",
+        "label": "Aplasia cutis congenita of scalp"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0001263",
@@ -24,41 +56,6 @@
     },
     {
       "type": {
-        "id": "HP:0007385",
-        "label": "Aplasia cutis congenita of scalp"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000518",
-        "label": "Cataract"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008897",
-        "label": "Postnatal growth retardation"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0200012",
         "label": "Short corpus callosum"
       },
@@ -74,7 +71,7 @@
   ],
   "interpretations": [
     {
-      "id": "case 11",
+      "id": "OPEFTg3rv8JQpriVQnba4zJH",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -83,11 +80,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "case 11",
+            "subjectOrBiosampleId": "case 7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NlRALXQvKXZjNXPwGIeSiUMcu",
+                "id": "c605del_FOSL2_NM_005253v4",
                 "geneContext": {
                   "valueId": "HGNC:3798",
                   "symbol": "FOSL2"
@@ -95,19 +94,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005253.4:c.810_811del"
+                    "value": "NM_005253.4:c.605del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.28412277_28412278del"
+                    "value": "NC_000002.12:g.28412072del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005244.1:p.(Pro202GlnfsTer18)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "28412273",
-                  "ref": "CCA",
-                  "alt": "C"
+                  "pos": 28412067,
+                  "ref": "GC",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -126,59 +129,64 @@
       "term": {
         "id": "OMIM:620789",
         "label": "Aplasia cutis-enamel dysplasia syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-19T08:31:51.312718152Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-27T07:52:22.421739Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36197437",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36197437",
         "description": "FOSL2 truncating variants in the last exon cause a neurodevelopmental disorder with scalp and enamel defects"
       }
     ]
