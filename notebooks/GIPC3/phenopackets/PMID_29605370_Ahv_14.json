@@ -1,7 +1,8 @@
 {
-  "id": "PMID_21660509_W98_042e",
+  "id": "PMID_29605370_Ahv_14",
   "subject": {
-    "id": "W98\u2013042e"
+    "id": "Ahv-14",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -27,7 +28,7 @@
   ],
   "interpretations": [
     {
-      "id": "W98\u2013042e",
+      "id": "v4cPAFH8qcZHnIAfKXAYrV53",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -36,11 +37,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "W98\u2013042e",
+            "subjectOrBiosampleId": "Ahv-14",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XKOOOAUyOpOQAQuGhszPyvDLd",
+                "id": "c472GtoA_GIPC3_NM_133261v3",
                 "geneContext": {
                   "valueId": "HGNC:18183",
                   "symbol": "GIPC3"
@@ -48,17 +51,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_133261.3:c.903G>A"
+                    "value": "NM_133261.3:c.472G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.3590154G>A"
+                    "value": "NC_000019.10:g.3586874G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_573568.1:p.(Glu158Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "3590154",
+                  "pos": 3586874,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -79,60 +86,65 @@
       "term": {
         "id": "OMIM:601869",
         "label": "Deafness, autosomal recessive 15"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-06T04:45:31.246970176Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-28T08:45:30.916770Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:21660509",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/21660509",
-        "description": "Mutations of GIPC3 cause nonsyndromic hearing loss DFNB72 but not DFNB81 that also maps to chromosome 19p"
+        "id": "PMID:29605370",
+        "description": "A novel missense mutation in GIPC3 causes sensorineural hearing loss in an Iranian family revealed by targeted next-generation sequencing"
       }
     ]
   }
