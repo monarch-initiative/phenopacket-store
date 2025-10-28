@@ -1,20 +1,27 @@
 {
-  "id": "PMID_38579670_Individual_1",
+  "id": "PMID_38579670_Individual_9",
   "subject": {
-    "id": "Individual 1",
+    "id": "Individual 9",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002069",
-        "label": "Bilateral tonic-clonic seizure"
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
       },
       "onset": {
         "age": {
           "iso8601duration": "P2M"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0500147",
+        "label": "Hypoglutaminemia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -27,6 +34,49 @@
         "id": "HP:0012736",
         "label": "Profound global developmental delay"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0011166",
+        "label": "Focal myoclonic seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002266",
+        "label": "Focal clonic seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002197",
+        "label": "Generalized-onset seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -57,60 +107,11 @@
         "id": "HP:0003429",
         "label": "CNS hypomyelination"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0012469",
-        "label": "Infantile spasms"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0500147",
-        "label": "Hypoglutaminemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002121",
-        "label": "Generalized non-motor (absence) seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011166",
-        "label": "Focal myoclonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011170",
-        "label": "Generalized myoclonic-atonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002266",
-        "label": "Focal clonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0032792",
-        "label": "Tonic seizure"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 1",
+      "id": "0SqoaGJAGzvscbRpqm3s7yu5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -119,11 +120,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 1",
+            "subjectOrBiosampleId": "Individual 9",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VNjzbtteICnhkyubNTZoMzmvc",
+                "id": "c1AtoT_GLUL_NM_001033044v4",
                 "geneContext": {
                   "valueId": "HGNC:4341",
                   "symbol": "GLUL"
@@ -131,19 +134,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001033044.4:c.3G>A"
+                    "value": "NM_001033044.4:c.1A>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.182388735C>T"
+                    "value": "NC_000001.11:g.182388737T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001028216.1:p.(Met1?)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "182388735",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 182388737,
+                  "ref": "T",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -171,55 +178,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-07T12:24:15.318172931Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-28T07:25:02.303064Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38579670",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38579670",
         "description": "Clustered de novo start-loss variants in GLUL result in a developmental and epileptic encephalopathy via stabilization of glutamine synthetase"
       }
     ]
