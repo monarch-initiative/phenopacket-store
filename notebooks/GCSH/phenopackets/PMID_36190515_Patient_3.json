@@ -2,21 +2,17 @@
   "id": "PMID_36190515_Patient_3",
   "subject": {
     "id": "Patient 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002267",
-        "label": "Exaggerated startle response"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012469",
-        "label": "Infantile spasms"
-      }
-    },
     {
       "type": {
         "id": "HP:0001263",
@@ -25,8 +21,14 @@
     },
     {
       "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
+        "id": "HP:0002267",
+        "label": "Exaggerated startle response"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
       }
     },
     {
@@ -37,20 +39,20 @@
     },
     {
       "type": {
-        "id": "HP:0031165",
-        "label": "Multifocal seizures"
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
       }
     },
     {
       "type": {
-        "id": "HP:0002079",
-        "label": "Hypoplasia of the corpus callosum"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "JSI1m9bph0kNRqysGYCoPYEt",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,8 +64,10 @@
             "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HgKJugztMyLGqpyWhzUBhlgqC",
+                "id": "c226CtoT_GCSH_NM_004483v5",
                 "geneContext": {
                   "valueId": "HGNC:4208",
                   "symbol": "GCSH"
@@ -71,24 +75,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004483.5:c.1A>G"
+                    "value": "NM_004483.5:c.226C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.81096278T>C"
+                    "value": "NC_000016.10:g.81090603G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004474.2:p.(Gln76Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "81096278",
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 81090603,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -111,56 +119,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-22T11:53:21.147017002Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-10-28T20:43:37.956172Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36190515",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36190515",
-        "description": "Pathogenic variants in GCSH encoding the moonlighting H-protein cause combined nonketotic hyperglycinemia and lipoate deficiency"
+        "description": "Pathogenic variants in GCSH encoding the moonlighting H-protein cause combined nonketotic hyperglycinemia and lipoate deficiency."
       }
     ]
   }
