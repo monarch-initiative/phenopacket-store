@@ -12,6 +12,24 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025336",
+        "label": "Delayed ability to sit"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0032792",
         "label": "Tonic seizure"
       },
@@ -20,6 +38,20 @@
           "iso8601duration": "P4D"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -34,8 +66,22 @@
     },
     {
       "type": {
-        "id": "HP:0002521",
-        "label": "Hypsarrhythmia"
+        "id": "HP:0002072",
+        "label": "Chorea"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002305",
+        "label": "Athetosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002179",
+        "label": "Opisthotonus"
       },
       "excluded": true
     },
@@ -48,35 +94,54 @@
     },
     {
       "type": {
-        "id": "HP:0002072",
-        "label": "Chorea"
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002305",
-        "label": "Athetosis"
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002421",
+        "label": "Poor head control"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 1",
+      "id": "d1rfTObh7WEaXnfjhvtFVc0s",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:615473",
-          "label": "Developmental and epileptic encephalopathy 17 "
+          "label": "Developmental and epileptic encephalopathy 17"
         },
         "genomicInterpretations": [
           {
             "subjectOrBiosampleId": "Individual 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jFKuBFTRXMpvTXrMSijMluPHN",
+                "id": "c836TtoA_GNAO1_NM_020988v3",
                 "geneContext": {
                   "valueId": "HGNC:4389",
                   "symbol": "GNAO1"
@@ -89,12 +154,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.56351496T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_066268.1:p.(Ile279Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "56351496",
+                  "pos": 56351496,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -114,7 +183,7 @@
     {
       "term": {
         "id": "OMIM:615473",
-        "label": "Developmental and epileptic encephalopathy 17 "
+        "label": "Developmental and epileptic encephalopathy 17"
       },
       "onset": {
         "age": {
@@ -124,56 +193,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-22T18:44:54.585391044Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-28T07:52:44.050711Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23993195",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23993195",
-        "description": "De Novo mutations in GNAO1, encoding a G\u03b1o subunit of heterotrimeric G proteins, cause epileptic encephalopathy"
+        "description": "De Novo mutations in GNAO1, encoding a Gαo subunit of heterotrimeric G proteins, cause epileptic encephalopathy"
       }
     ]
   }
