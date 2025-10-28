@@ -12,12 +12,45 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000973",
-        "label": "Cutis laxa"
+        "id": "HP:0033660",
+        "label": "Hand paresthesia"
       },
       "onset": {
         "age": {
           "iso8601duration": "P54Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007230",
+        "label": "Decreased distal sensory nerve action potential"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033383",
+        "label": "Decreased compound muscle action potential amplitude"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003431",
+        "label": "Decreased motor nerve conduction velocity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P58Y"
         }
       }
     },
@@ -45,30 +78,8 @@
     },
     {
       "type": {
-        "id": "HP:0000221",
-        "label": "Furrowed tongue"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P54Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033660",
-        "label": "Hand paresthesia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P54Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003394",
-        "label": "Muscle spasm"
+        "id": "HP:0000973",
+        "label": "Cutis laxa"
       },
       "onset": {
         "age": {
@@ -89,6 +100,17 @@
     },
     {
       "type": {
+        "id": "HP:0003394",
+        "label": "Muscle spasm"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012507",
         "label": "Weakness of orbicularis oculi muscle"
       },
@@ -100,41 +122,19 @@
     },
     {
       "type": {
-        "id": "HP:0033383",
-        "label": "Decreased compound muscle action potential amplitude"
+        "id": "HP:0000221",
+        "label": "Furrowed tongue"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P58Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007230",
-        "label": "Decreased distal sensory nerve action potential"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P58Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003431",
-        "label": "Decreased motor nerve conduction velocity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P58Y"
+          "iso8601duration": "P54Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "case report",
+      "id": "aN4uBM04dnh6t8DUjkftUkEm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -146,8 +146,10 @@
             "subjectOrBiosampleId": "case report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xAwtaoxOTRvPxuiJbwgOsNIlR",
+                "id": "c487GtoT_GSN_NM_198252v3",
                 "geneContext": {
                   "valueId": "HGNC:4620",
                   "symbol": "GSN"
@@ -160,12 +162,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.121310819G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_937895.1:p.(Asp163Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "121310819",
+                  "pos": 121310819,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -195,55 +201,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-23T12:44:47.807589054Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-28T08:18:54.813828Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26915616",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26915616",
         "description": "The First Korean Family With Hereditary Gelsolin Amyloidosis Caused by p.D214Y Mutation in the GSN Gene"
       }
     ]
