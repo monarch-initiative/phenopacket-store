@@ -1,15 +1,30 @@
 {
-  "id": "PMID_30359777_nan",
+  "id": "PMID_30359777_Clinical_report",
   "subject": {
-    "id": "nan",
+    "id": "Clinical report",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P6M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
     {
       "type": {
         "id": "HP:0007479",
@@ -96,6 +111,12 @@
     },
     {
       "type": {
+        "id": "HP:0008689",
+        "label": "Bilateral cryptorchidism"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000656",
         "label": "Ectropion"
       },
@@ -169,7 +190,7 @@
     {
       "type": {
         "id": "HP:0001888",
-        "label": "Lymphopenia"
+        "label": "Decreased total lymphocyte count"
       },
       "onset": {
         "ontologyClass": {
@@ -193,7 +214,7 @@
     {
       "type": {
         "id": "HP:0001875",
-        "label": "Neutropenia"
+        "label": "Decreased total neutrophil count"
       },
       "onset": {
         "ontologyClass": {
@@ -228,24 +249,6 @@
     },
     {
       "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008689",
-        "label": "Bilateral cryptorchidism"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002188",
         "label": "Delayed CNS myelination"
       }
@@ -259,19 +262,19 @@
     {
       "type": {
         "id": "HP:0003261",
-        "label": "Increased circulating IgA level"
+        "label": "Increased circulating IgA concentration"
       }
     },
     {
       "type": {
         "id": "HP:0003212",
-        "label": "Increased circulating IgE level"
+        "label": "Increased circulating IgE concentration"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "nan",
+      "id": "NG15R3aCkseu8hg9LOFkNOUb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -280,11 +283,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "nan",
+            "subjectOrBiosampleId": "Clinical report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qcqggcClbbWFSUguwJzLARQXR",
+                "id": "c49AtoT_GTF2H5_NM_207118v3",
                 "geneContext": {
                   "valueId": "HGNC:21157",
                   "symbol": "GTF2H5"
@@ -297,49 +302,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.158191990A>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr6",
-                  "pos": "158191990",
-                  "ref": "A",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "nan",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_oJGvfBlItvCodmtrBWJEejnQv",
-                "geneContext": {
-                  "valueId": "HGNC:21157",
-                  "symbol": "GTF2H5"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_207118.3:c.29T>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.158170532T>A"
+                    "syntax": "hgvs.p",
+                    "value": "NP_997001.1:p.(Lys17Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "158170532",
-                  "ref": "T",
-                  "alt": "A"
+                  "pos": 158191990,
+                  "ref": "A",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -368,55 +342,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-25T18:08:11.308963060Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-10-29T19:03:08.342365Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30359777",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30359777",
         "description": "A case of severe trichothiodystrophy 3 in a neonate due to mutation in the GTF2H5 gene: Clinical report"
       }
     ]
