@@ -1,33 +1,84 @@
 {
-  "id": "PMID_37167966_Individual_F1_II_1",
+  "id": "PMID_37167966_Individual_F1_II_2",
   "subject": {
-    "id": "Individual F1-II:1",
+    "id": "Individual F1-II:2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P35Y"
+        "iso8601duration": "P37Y"
       }
     },
-    "vitalStatus": {},
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
+        "id": "HP:0008981",
+        "label": "Calf muscle hypertrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100297",
+        "label": "Increased endomysial connective tissue"
       }
     },
     {
       "type": {
-        "id": "HP:0008981",
-        "label": "Calf muscle hypertrophy"
+        "id": "HP:0003803",
+        "label": "Type 1 muscle fiber predominance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010602",
+        "label": "Type 2 muscle fiber predominance"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0030099",
+        "label": "Reduced muscle fiber alpha dystroglycan"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100299",
+        "label": "Muscle fiber inclusion bodies"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003687",
+        "label": "Centrally nucleated skeletal muscle fibers"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003713",
+        "label": "Muscle fiber necrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003557",
+        "label": "Increased variability in muscle fiber diameter"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003200",
+        "label": "Ragged-red muscle fibers"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001265",
         "label": "Hyporeflexia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -51,19 +102,15 @@
       "type": {
         "id": "HP:0002505",
         "label": "Loss of ambulation"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0003326",
         "label": "Myalgia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002747",
-        "label": "Respiratory insufficiency due to muscle weakness"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -75,7 +122,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual F1-II:1",
+      "id": "ozwPcNHJMluUtDXfla8uGcyW",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -84,46 +131,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual F1-II:1",
+            "subjectOrBiosampleId": "Individual F1-II:2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XHhrnyuRoALauTSNOGVGTgGBu",
-                "geneContext": {
-                  "valueId": "HGNC:5006",
-                  "symbol": "HMGCR"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000859.2:c.1328G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.75351562G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr5",
-                  "pos": "75351562",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Individual F1-II:1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_EICWFQnQPGOLInPNjIOgptrtY",
+                "id": "c1867GtoA_HMGCR_NM_000859v3",
                 "geneContext": {
                   "valueId": "HGNC:5006",
                   "symbol": "HMGCR"
@@ -136,12 +150,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000005.10:g.75355509G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000850.1:p.(Asp623Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "75355509",
+                  "pos": 75355509,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -165,61 +183,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6Y"
+          "iso8601duration": "P8Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-01-19T13:44:45.907037019Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-02T13:36:04.135472Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37167966",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37167966",
         "description": "Bi-allelic variants in HMGCR cause an autosomal-recessive progressive limb-girdle muscular dystrophy"
       }
     ]
