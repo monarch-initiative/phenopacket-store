@@ -1,13 +1,13 @@
 {
-  "id": "PMID_27558376_Patient_3",
+  "id": "PMID_27558376_Patient_2",
   "subject": {
-    "id": "Patient 3",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P57Y"
+        "iso8601duration": "P63Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,7 +17,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P35Y"
+          "iso8601duration": "P4Y"
         }
       }
     },
@@ -28,8 +28,14 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P63Y"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
     },
     {
@@ -39,7 +45,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P63Y"
         }
       }
     },
@@ -50,14 +56,62 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P63Y"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000529",
+        "label": "Progressive visual loss"
       }
     },
     {
       "type": {
         "id": "HP:0002313",
         "label": "Spastic paraparesis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007141",
+        "label": "Sensorimotor neuropathy"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
       },
       "onset": {
         "ontologyClass": {
@@ -80,38 +134,14 @@
     },
     {
       "type": {
-        "id": "HP:0000648",
-        "label": "Optic atrophy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P4Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002490",
         "label": "Increased CSF lactate"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "OwIBjOHaE5UCxNIbSaFrTidk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -120,46 +150,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bDiRndYKFloHzkVSZgIgfSeMY",
-                "geneContext": {
-                  "valueId": "HGNC:4982",
-                  "symbol": "HMBS"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000190.4:c.500G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.119091414G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr11",
-                  "pos": "119091414",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 3",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_xTzXRyVuEsqfXGLaBwmmdmCKW",
+                "id": "c674GtoA_HMBS_NM_000190v4",
                 "geneContext": {
                   "valueId": "HGNC:4982",
                   "symbol": "HMBS"
@@ -172,12 +169,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.119092426G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000181.2:p.(Arg225Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "119092426",
+                  "pos": 119092426,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -201,61 +202,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P4Y"
+          "iso8601duration": "P2Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-29T17:31:02.683997869Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-02T13:31:34.755035Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27558376",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27558376",
         "description": "Acute intermittent porphyria-related leukoencephalopathy"
       }
     ]
