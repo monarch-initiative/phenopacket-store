@@ -1,0 +1,188 @@
+{
+  "id": "PMID_34890546_M1374_Mayo_R3376",
+  "subject": {
+    "id": "M1374 (Mayo) R3376",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P68Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012624",
+        "label": "Stage 2 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012625",
+        "label": "Stage 3 chronic kidney disease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012626",
+        "label": "Stage 4 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000093",
+        "label": "Proteinuria"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000113",
+        "label": "Polycystic kidney dysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001407",
+        "label": "Hepatic cysts"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "AC35q0oN4wvnn5DYGVo4Eqs3",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621164",
+          "label": "Polycystic kidney disease 9, susceptibility to"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "M1374 (Mayo) R3376",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c594dup_IFT140_NM_014714v4",
+                "geneContext": {
+                  "valueId": "HGNC:29077",
+                  "symbol": "IFT140"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014714.4:c.594dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.1592219dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055529.2:p.(Ser199ValfsTer21)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 1592215,
+                  "ref": "A",
+                  "alt": "AC"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621164",
+        "label": "Polycystic kidney disease 9, susceptibility to"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P65Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-11-02T21:10:14.331454Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:34890546",
+        "description": "Monoallelic IFT140 pathogenic variants are an important cause of the autosomal dominant polycystic kidney-spectrum phenotype."
+      }
+    ]
+  }
+}
