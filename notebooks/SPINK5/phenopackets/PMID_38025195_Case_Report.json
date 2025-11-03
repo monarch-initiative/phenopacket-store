@@ -1,36 +1,19 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_38025195_Case_Report",
   "subject": {
-    "id": "patient",
+    "id": "Case Report",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P1M"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0007381",
+        "label": "Congenital exfoliative erythroderma"
       },
       "onset": {
         "ontologyClass": {
@@ -41,38 +24,91 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0001051",
+        "label": "Seborrheic dermatitis"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P3D"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
+        "id": "HP:0001944",
+        "label": "Dehydration"
       }
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0003228",
+        "label": "Hypernatremia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3D"
+        }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025810",
+        "label": "Ichthyosis linearis circumflexa"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025809",
+        "label": "Generalized scaling"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012389",
+        "label": "Appendicular hypotonia"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "oxtybKhcpoHOaAT8EyiEmXyl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +117,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "Case Report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c238dup_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,23 +131,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.238dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148072176dup"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.(Ala80GlyfsTer19)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
+                  "pos": 148072173,
+                  "ref": "A",
+                  "alt": "AG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,7 +176,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.886517Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +223,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:38025195",
+        "description": "Severe Hypernatremia as Presentation of Netherton Syndrome."
       }
     ]
   }

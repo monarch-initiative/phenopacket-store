@@ -1,41 +1,31 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_25710899_boy",
   "subject": {
-    "id": "patient",
+    "id": "boy",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P2Y5M"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0012393",
+        "label": "Allergy"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0025810",
+        "label": "Ichthyosis linearis circumflexa"
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     },
@@ -47,32 +37,21 @@
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0034768",
+        "label": "Rete ridge elongation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001595",
+        "label": "Abnormal hair morphology"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
-      }
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "6DTaiiBMzjJsIQUfHIvQBEB6",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +60,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c2240_1GtoA_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,28 +74,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.2240+1G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148118565G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
+                  "pos": 148118565,
+                  "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -140,7 +119,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.882825Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +166,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:25710899",
+        "description": "Ichthyosis Linearis Circumflexa as the Only Clinical Manifestation of Netherton Syndrome"
       }
     ]
   }

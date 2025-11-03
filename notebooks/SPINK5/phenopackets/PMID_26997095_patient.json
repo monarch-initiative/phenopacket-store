@@ -1,36 +1,36 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_26997095_patient",
   "subject": {
     "id": "patient",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P2Y"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
-      },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0001019",
         "label": "Erythroderma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007431",
+        "label": "Congenital ichthyosiform erythroderma"
       },
       "onset": {
         "ontologyClass": {
@@ -41,38 +41,30 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0025810",
+        "label": "Ichthyosis linearis circumflexa"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P1M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "9EECMKpTilBLZSeRvTSIalMy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -87,7 +79,7 @@
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c474GtoA_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,28 +87,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.474G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148088605G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.(Gln158=)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
+                  "pos": 148088605,
+                  "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -140,7 +132,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.883678Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +179,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:26997095",
+        "description": "A compound synonymous mutation c.474G>A with p.Arg578X mutation in SPINK5 causes splicing disorder and mild phenotype in Netherton syndrome."
       }
     ]
   }

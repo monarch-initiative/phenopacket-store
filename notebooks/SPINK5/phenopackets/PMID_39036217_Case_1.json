@@ -1,42 +1,79 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_39036217_Case_1",
   "subject": {
-    "id": "patient",
+    "id": "Case 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P5M"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED"
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
-      },
-      "excluded": true
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      }
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
-      },
-      "excluded": true
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      }
     },
     {
       "type": {
         "id": "HP:0001019",
         "label": "Erythroderma"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001047",
+        "label": "Atopic dermatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006689",
+        "label": "Bacterial endocarditis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500093",
+        "label": "Food allergy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001036",
+        "label": "Parakeratosis"
       }
     },
     {
@@ -47,32 +84,20 @@
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+        "id": "HP:6001166",
+        "label": "Spongiosis"
       }
     },
     {
       "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "4nuAGbBy1h5p2ECjtHfQJ54T",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +106,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "Case 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c649CtoT_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,23 +120,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.649C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148091211C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.(Arg217Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
+                  "pos": 148091211,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,7 +165,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.872797Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +212,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:39036217",
+        "description": "Netherton Syndrome in Thai Children: A Report of Two Cases With a Literature Review."
       }
     ]
   }

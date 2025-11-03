@@ -1,42 +1,99 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_34888090_index_patient",
   "subject": {
-    "id": "patient",
+    "id": "index patient",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P2Y3M"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410240",
+        "label": "Abnormal circulating IgA concentration"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
+        "id": "HP:0410242",
+        "label": "Abnormal circulating IgG concentration"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0410243",
+        "label": "Abnormal circulating IgM concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007381",
+        "label": "Congenital exfoliative erythroderma"
       },
       "onset": {
         "ontologyClass": {
           "id": "HP:0003577",
           "label": "Congenital onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100327",
+        "label": "Cow milk allergy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
       }
     },
     {
@@ -47,32 +104,14 @@
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:6001166",
+        "label": "Spongiosis"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "OABjfgrFU2Df35OWFpWiQ22s",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +120,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "index patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c1887_1GtoA_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,22 +134,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.1887+1G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148112935G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
+                  "pos": 148112935,
+                  "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
@@ -140,7 +179,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.887130Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +226,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:34888090",
+        "description": "A Novel SPINK5 Gene Mutation Associated with Netherton Syndrome in an Omani Patient."
       }
     ]
   }

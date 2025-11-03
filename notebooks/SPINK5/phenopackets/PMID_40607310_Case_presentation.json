@@ -1,36 +1,77 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_40607310_Case_presentation",
   "subject": {
-    "id": "patient",
+    "id": "Case presentation",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P6Y"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000653",
+        "label": "Sparse eyelashes"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007381",
+        "label": "Congenital exfoliative erythroderma"
       },
       "onset": {
         "ontologyClass": {
@@ -41,19 +82,29 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
+        "id": "HP:0001581",
+        "label": "Recurrent skin infections"
       }
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0410328",
+        "label": "Egg allergy"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040189",
+        "label": "Scaling skin"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
         }
       }
     },
@@ -65,14 +116,47 @@
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0000989",
+        "label": "Pruritus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004779",
+        "label": "Brittle scalp hair"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100658",
+        "label": "Cellulitis"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "a2P2pzEIuo2BO6eayQq1AJwC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +165,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "Case presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c1302_5GtoC_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,23 +179,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.1302+5G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148101441G>C"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
+                  "pos": 148101441,
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,7 +224,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.872444Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +271,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:40607310",
+        "description": "Successful management of Netherton syndrome using IVIG and dupilumab: A case report."
       }
     ]
   }

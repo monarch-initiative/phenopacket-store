@@ -1,29 +1,63 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_38419182_Case_1",
   "subject": {
-    "id": "patient",
+    "id": "Case 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P32Y"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED"
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002099",
+        "label": "Asthma"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410240",
+        "label": "Abnormal circulating IgA concentration"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
+        "id": "HP:0410242",
+        "label": "Abnormal circulating IgG concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410243",
+        "label": "Abnormal circulating IgM concentration"
       },
       "excluded": true
     },
@@ -32,47 +66,48 @@
         "id": "HP:0001019",
         "label": "Erythroderma"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0001047",
+        "label": "Atopic dermatitis"
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
+        "id": "HP:0025810",
+        "label": "Ichthyosis linearis circumflexa"
       }
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025474",
+        "label": "Erythematous plaque"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002299",
+        "label": "Brittle hair"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "RQPwGBYin7AAEZgja7fQ6qDc",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +116,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "Case 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c1820_53GtoA_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,22 +130,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.1820+53G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148111948G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
+                  "pos": 148111948,
+                  "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
@@ -140,7 +175,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.873051Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +222,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:38419182",
+        "description": "Successful infliximab treatment in siblings with Netherton syndrome: Unveiling a novel SPINK5 gene variant and literature review."
       }
     ]
   }

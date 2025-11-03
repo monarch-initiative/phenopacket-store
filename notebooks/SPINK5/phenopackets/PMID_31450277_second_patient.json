@@ -1,36 +1,31 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_31450277_second_patient",
   "subject": {
-    "id": "patient",
+    "id": "second patient",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P20Y"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED"
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
-      },
-      "excluded": true
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      }
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
-      },
-      "excluded": true
+        "id": "HP:0000653",
+        "label": "Sparse eyelashes"
+      }
     },
     {
       "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0008064",
+        "label": "Ichthyosis"
       },
       "onset": {
         "ontologyClass": {
@@ -41,20 +36,8 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+        "id": "HP:0040189",
+        "label": "Scaling skin"
       }
     },
     {
@@ -65,14 +48,14 @@
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "oTAJAFqQ1UESnrMoHr0joiQA",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +64,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "second patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c238_239insG_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,23 +78,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.238_239insG"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148072176dup"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.(Ala80GlyfsTer19)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
+                  "pos": 148072173,
+                  "ref": "A",
+                  "alt": "AG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,7 +123,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.887434Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +170,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:31450277",
+        "description": "Two siblings affected by Netherton/Comèl syndrome. Diagnostic pathology and description of a new SPINK5 variant."
       }
     ]
   }

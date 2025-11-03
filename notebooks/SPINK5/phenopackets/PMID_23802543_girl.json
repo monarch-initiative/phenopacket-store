@@ -1,36 +1,77 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_23802543_girl",
   "subject": {
-    "id": "patient",
+    "id": "girl",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P7Y"
       }
     },
-    "vitalStatus": {
-      "status": "DECEASED"
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0012384",
+        "label": "Rhinitis"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
+        "id": "HP:0000282",
+        "label": "Facial edema"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002099",
+        "label": "Asthma"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0025425",
+        "label": "Laryngospasm"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007381",
+        "label": "Congenital exfoliative erythroderma"
       },
       "onset": {
         "ontologyClass": {
@@ -41,19 +82,30 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
+        "id": "HP:0025847",
+        "label": "Fish allergy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0100665",
+        "label": "Angioedema"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000958",
+        "label": "Dry skin"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P7Y"
         }
       }
     },
@@ -65,14 +117,30 @@
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025474",
+        "label": "Erythematous plaque"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y4M"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "wAnBtoEMQpn4OuZXPEum00Vi",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,13 +149,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "girl",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "c1732CtoT_SPINK5_NM_006846v4",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
@@ -95,23 +163,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
+                    "value": "NM_006846.4:c.1732C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
+                    "value": "NC_000005.10:g.148111807C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
+                    "value": "NP_006837.2:p.(Arg578Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
+                  "pos": 148111807,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -140,7 +208,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.881972Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +255,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:23802543",
+        "description": "Case of Netherton syndrome with an elevated serum thymus and activation-regulated chemokine level."
       }
     ]
   }

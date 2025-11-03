@@ -1,36 +1,61 @@
 {
-  "id": "PMID_11952552_patient",
+  "id": "PMID_34138484_male_newborn",
   "subject": {
-    "id": "patient",
+    "id": "male newborn",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P10M"
       }
-    },
-    "vitalStatus": {
-      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012472",
-        "label": "Eclabion"
+        "id": "HP:0002223",
+        "label": "Absent eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002209",
+        "label": "Sparse scalp hair"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000656",
-        "label": "Ectropion"
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0001019",
-        "label": "Erythroderma"
+        "id": "HP:0007381",
+        "label": "Congenital exfoliative erythroderma"
       },
       "onset": {
         "ontologyClass": {
@@ -41,38 +66,77 @@
     },
     {
       "type": {
-        "id": "HP:0025092",
-        "label": "Epidermal acanthosis"
-      }
+        "id": "HP:0020064",
+        "label": "Abnormal total eosinophil count"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0040190",
-        "label": "White scaling skin"
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0010783",
-        "label": "Erythema"
+        "id": "HP:0003228",
+        "label": "Hypernatremia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001036",
+        "label": "Parakeratosis"
       }
     },
     {
       "type": {
-        "id": "HP:0003777",
-        "label": "Pili torti"
+        "id": "HP:0025817",
+        "label": "Psoriasiform acanthosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025816",
+        "label": "Hypogranulosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025811",
+        "label": "Trichorrhexis invaginata"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002576",
+        "label": "Intussusception"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004395",
+        "label": "Malnutrition"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "m4jnAdgLy7xmU9lv9akddBgk",
+      "id": "R5VgmCbOttBLS7uiLBnzUdwf",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,42 +145,26 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "male newborn",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c153del_SPINK5_NM_006846v4",
+                "id": "SPINK5_DEL_gross-deletion-of-275.7-kb-including-SPINK5",
+                "label": "gross deletion of 275.7 kb including SPINK5",
                 "geneContext": {
                   "valueId": "HGNC:15464",
                   "symbol": "SPINK5"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_006846.4:c.153del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.148070394del"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_006837.2:p.(Gln52LysfsTer6)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr5",
-                  "pos": 148070388,
-                  "ref": "AT",
-                  "alt": "A"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -140,7 +188,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-03T12:13:46.871146Z",
+    "created": "2025-11-03T12:13:46.882515Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -187,8 +235,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11952552",
-        "description": "Genetic analysis of a severe case of Netherton syndrome and application for prenatal testing"
+        "id": "PMID:34138484",
+        "description": "New compound heterozygous SPINK5 mutations in a Chinese infant with Netherton syndrome."
       }
     ]
   }
