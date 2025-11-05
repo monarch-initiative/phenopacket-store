@@ -1,14 +1,11 @@
 {
-  "id": "PMID_34707299_nan",
+  "id": "PMID_34707299_Patient_7",
   "subject": {
-    "id": "nan",
+    "id": "Patient 7",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P33Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "FEMALE"
   },
@@ -27,6 +24,13 @@
     },
     {
       "type": {
+        "id": "HP:0012569",
+        "label": "Delayed menarche"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0008232",
         "label": "Elevated circulating follicle stimulating hormone level"
       }
@@ -36,18 +40,11 @@
         "id": "HP:0008214",
         "label": "Decreased serum estradiol"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0012569",
-        "label": "Delayed menarche"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "nan",
+      "id": "DFlMFIovnfRYeUKFWEhnyYeo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -56,11 +53,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "nan",
+            "subjectOrBiosampleId": "Patient 7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WfVeQFiUvOWrKzUmDoXEuuIqj",
+                "id": "c421del_HROB_NM_001171251v3",
                 "geneContext": {
                   "valueId": "HGNC:28460",
                   "symbol": "HROB"
@@ -73,12 +72,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.44148224del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001164722.1:p.(Glu141ArgfsTer62)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "44148223",
+                  "pos": 44148223,
                   "ref": "TG",
                   "alt": "T"
                 },
@@ -109,55 +112,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-06T21:10:29.681088924Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-05T07:26:00.136931Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34707299",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34707299",
         "description": "Meiotic genes in premature ovarian insufficiency: variants in HROB and REC8 as likely genetic causes"
       }
     ]
