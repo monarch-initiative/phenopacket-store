@@ -1,0 +1,211 @@
+{
+  "id": "PMID_35362222_Patient_2",
+  "subject": {
+    "id": "Patient 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030318",
+        "label": "Angular cheilitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000230",
+        "label": "Gingivitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010280",
+        "label": "Stomatitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031831",
+        "label": "Decreased serum zinc"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003765",
+        "label": "Psoriasiform dermatitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007502",
+        "label": "Follicular hyperkeratosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008064",
+        "label": "Ichthyosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001818",
+        "label": "Paronychia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001596",
+        "label": "Alopecia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "rFldLqnh8tisGPPnobVlMrW0",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621252",
+          "label": "CAOP syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c3159AtoT_MBTPS1_NM_003791v4",
+                "geneContext": {
+                  "valueId": "HGNC:15456",
+                  "symbol": "MBTPS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003791.4:c.3159A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.84054449T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003782.1:p.(Ter1053CysextTer51)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 84054449,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621252",
+        "label": "CAOP syndrome"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-11-05T14:23:32.560104Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:35362222",
+        "description": "S1P defects cause a new entity of cataract, alopecia, oral mucosal disorder, and psoriasis-like syndrome."
+      }
+    ]
+  }
+}
