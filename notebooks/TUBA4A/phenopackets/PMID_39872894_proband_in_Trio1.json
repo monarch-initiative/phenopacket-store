@@ -1,0 +1,160 @@
+{
+  "id": "PMID_39872894_proband_in_Trio1",
+  "subject": {
+    "id": "proband in Trio1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P26Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033336",
+        "label": "Zygotic cleavage failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033712",
+        "label": "Repeated implantation failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0025708",
+          "label": "Early young adult onset"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "KvkQ2uijUckZoYeGdBqChlNt",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621231",
+          "label": "Oocyte/zygote/embryo maturation arrest 23"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband in Trio1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c850GtoA_TUBA4A_NM_006000v3",
+                "geneContext": {
+                  "valueId": "HGNC:12407",
+                  "symbol": "TUBA4A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006000.3:c.850G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.219250849C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005991.1:p.(Glu284Lys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 219250849,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621231",
+        "label": "Oocyte/zygote/embryo maturation arrest 23"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0025708",
+          "label": "Early young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-11-05T10:22:54.397094Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39872894",
+        "description": "Mutations in TUBA4A lead to human zygotic arrest and early developmental failure."
+      }
+    ]
+  }
+}
