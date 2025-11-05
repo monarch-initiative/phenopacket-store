@@ -1,45 +1,10 @@
 {
-  "id": "PMID_24736735_G081_",
+  "id": "PMID_24736735_G081",
   "subject": {
-    "id": "G081 "
+    "id": "G081",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0006118",
-        "label": "Shortening of all distal phalanges of the fingers"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002444",
-        "label": "Hypothalamic hamartoma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002023",
-        "label": "Anal atresia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010564",
-        "label": "Bifid epiglottis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002164",
-        "label": "Nail dysplasia"
-      }
-    },
     {
       "type": {
         "id": "HP:0001510",
@@ -70,6 +35,12 @@
     },
     {
       "type": {
+        "id": "HP:0006118",
+        "label": "Shortening of all distal phalanges of the fingers"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0006042",
         "label": "Y-shaped metacarpals"
       },
@@ -81,11 +52,41 @@
         "label": "Y-shaped metatarsals"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002444",
+        "label": "Hypothalamic hamartoma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002023",
+        "label": "Anal atresia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010564",
+        "label": "Bifid epiglottis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002164",
+        "label": "Nail dysplasia"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "G081 ",
+      "id": "pU5QmxwxMrYtIGlF5w6y5DUg",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -94,11 +95,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "G081 ",
+            "subjectOrBiosampleId": "G081",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XXXHCsbbRaadWYnBYfYcFdbLM",
+                "id": "c3386_3387del_GLI3_NM_000168v6",
                 "geneContext": {
                   "valueId": "HGNC:4319",
                   "symbol": "GLI3"
@@ -111,12 +114,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000007.14:g.41965687_41965688del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000159.3:p.(Phe1129Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "41965685",
+                  "pos": 41965685,
                   "ref": "CAA",
                   "alt": "C"
                 },
@@ -147,55 +154,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-15T05:22:14.496060848Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-05T07:19:28.303277Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-03",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24736735",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24736735",
         "description": "New insights into genotype-phenotype correlation for GLI3 mutations"
       }
     ]
