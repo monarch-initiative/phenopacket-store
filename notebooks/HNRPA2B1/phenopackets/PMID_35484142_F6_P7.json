@@ -1,5 +1,5 @@
 {
-  "id": "PMID_35484142_F6/P7",
+  "id": "PMID_35484142_F6_P7",
   "subject": {
     "id": "F6/P7",
     "timeAtLastEncounter": {
@@ -12,8 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002015",
-        "label": "Dysphagia"
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
       }
     },
     {
@@ -24,9 +24,44 @@
     },
     {
       "type": {
-        "id": "HP:0002505",
-        "label": "Loss of ambulation"
+        "id": "HP:0001618",
+        "label": "Dysphonia"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0034677",
+        "label": "Ankle contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008997",
+        "label": "Proximal upper limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008959",
+        "label": "Distal upper limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008994",
+        "label": "Proximal lower limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009053",
+        "label": "Distal lower limb muscle weakness"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -36,8 +71,20 @@
     },
     {
       "type": {
-        "id": "HP:0001618",
-        "label": "Dysphonia"
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002505",
+        "label": "Loss of ambulation"
       }
     },
     {
@@ -45,17 +92,11 @@
         "id": "HP:0003327",
         "label": "Axial muscle weakness"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      }
     }
   ],
   "interpretations": [
     {
-      "id": "F6/P7",
+      "id": "LJMNBBhtYFv38mUB4NCIAm4a",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -67,8 +108,10 @@
             "subjectOrBiosampleId": "F6/P7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_GMjnARRmothKvKsAfTFzkQxoh",
+                "id": "c996_997dup_HNRNPA2B1_NM_002137v4",
                 "geneContext": {
                   "valueId": "HGNC:5033",
                   "symbol": "HNRNPA2B1"
@@ -81,12 +124,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000007.14:g.26192546_26192547dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002128.1:p.(Gly333ValfsTer27)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "26192544",
+                  "pos": 26192544,
                   "ref": "C",
                   "alt": "CCA"
                 },
@@ -116,56 +163,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-23T16:34:18.256053924Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-11-06T05:41:22.546569Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-02-27",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35484142",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35484142",
-        "description": "Heterozygous frameshift variants in HNRNPA2B1 cause early-onset oculopharyngeal muscular dystrophy"
+        "description": "Heterozygous frameshift variants in HNRNPA2B1 cause early-onset oculopharyngeal muscular dystrophy."
       }
     ]
   }
