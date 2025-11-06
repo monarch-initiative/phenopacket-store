@@ -7,9 +7,18 @@
         "iso8601duration": "P1Y6M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000998",
+        "label": "Hypertrichosis"
+      }
+    },
     {
       "type": {
         "id": "HP:0000956",
@@ -19,6 +28,12 @@
         "age": {
           "iso8601duration": "P3M"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030796",
+        "label": "Increased C-peptide level"
       }
     },
     {
@@ -35,14 +50,8 @@
     },
     {
       "type": {
-        "id": "HP:0001712",
-        "label": "Left ventricular hypertrophy"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
       }
     },
     {
@@ -59,24 +68,6 @@
     },
     {
       "type": {
-        "id": "HP:0000998",
-        "label": "Hypertrichosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030796",
-        "label": "Increased C-peptide level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0012471",
         "label": "Thick vermilion border"
       }
@@ -85,42 +76,6 @@
       "type": {
         "id": "HP:0000280",
         "label": "Coarse facial features"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001007",
-        "label": "Hirsutism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004405",
-        "label": "Prominent nipples"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001639",
-        "label": "Hypertrophic cardiomyopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002908",
-        "label": "Conjugated hyperbilirubinemia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030948",
-        "label": "Elevated gamma-glutamyltransferase level"
       }
     },
     {
@@ -146,6 +101,12 @@
     },
     {
       "type": {
+        "id": "HP:0001007",
+        "label": "Hirsutism"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000105",
         "label": "Enlarged kidney"
       },
@@ -160,15 +121,57 @@
     },
     {
       "type": {
+        "id": "HP:0004405",
+        "label": "Prominent nipples"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001712",
+        "label": "Left ventricular hypertrophy"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000403",
         "label": "Recurrent otitis media"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002908",
+        "label": "Conjugated hyperbilirubinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030948",
+        "label": "Elevated gamma-glutamyltransferase level"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "ISR3",
+      "id": "sLAL1B8GusnAIJUe0N3KDmWe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -180,8 +183,10 @@
             "subjectOrBiosampleId": "ISR3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cTEYkAgTKisLgvarubFKCmHpR",
+                "id": "c167TtoC_INSR_NM_000208v4",
                 "geneContext": {
                   "valueId": "HGNC:6091",
                   "symbol": "INSR"
@@ -194,12 +199,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.7267830A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000199.2:p.(Ile56Thr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7267830",
+                  "pos": 7267830,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -230,55 +239,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-21T05:53:25.966094017Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-06T10:17:07.346800Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24498630",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24498630",
         "description": "Two novel mutations identified in familial cases with Donohue syndrome"
       }
     ]
