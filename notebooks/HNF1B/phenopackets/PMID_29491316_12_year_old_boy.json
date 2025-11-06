@@ -23,6 +23,23 @@
     },
     {
       "type": {
+        "id": "HP:6000156",
+        "label": "Pancreatic atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005562",
+        "label": "Multiple renal cysts"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0040217",
         "label": "Elevated hemoglobin A1c"
       },
@@ -41,23 +58,6 @@
         "age": {
           "iso8601duration": "P12Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:6000156",
-        "label": "Pancreatic atrophy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P15Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005562",
-        "label": "Multiple renal cysts"
       }
     },
     {
@@ -84,7 +84,7 @@
   ],
   "interpretations": [
     {
-      "id": "12-year-old boy",
+      "id": "srnLoAoIqi1clH8jdJLHQCMr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -96,8 +96,10 @@
             "subjectOrBiosampleId": "12-year-old boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_PMHtvHpHVjiftKpLcUkesJkEj",
+                "id": "c434TtoA_HNF1B_NM_000458v4",
                 "geneContext": {
                   "valueId": "HGNC:11630",
                   "symbol": "HNF1B"
@@ -110,12 +112,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.37739550A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000449.1:p.(Leu145Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "37739550",
+                  "pos": 37739550,
                   "ref": "A",
                   "alt": "T"
                 },
@@ -145,55 +151,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-05T10:46:14.620963096Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-06T05:26:09.681429Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29491316",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29491316",
         "description": "A Novel p.L145Q Mutation in the HNF1B Gene in a Case of Maturity-onset Diabetes of the Young Type 5 (MODY5)"
       }
     ]

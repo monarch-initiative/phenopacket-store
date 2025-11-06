@@ -1,13 +1,13 @@
 {
-  "id": "PMID_9398836_Family_J2_20_III_3",
+  "id": "PMID_9398836_Family_J2_20_III_2",
   "subject": {
-    "id": "Family J2-20 III.3",
+    "id": "Family J2-20 III.2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P31Y"
+        "iso8601duration": "P36Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,14 +17,25 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P15Y"
+          "iso8601duration": "P10Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003076",
+        "label": "Glycosuria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Family J2-20 III.3",
+      "id": "hqE4quE6O8N5sTUxTCAyTCgP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -33,11 +44,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family J2-20 III.3",
+            "subjectOrBiosampleId": "Family J2-20 III.2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_MDjHmibIxqiypFyYLXnYgSrNS",
+                "id": "c529CtoT_HNF1B_NM_000458v4",
                 "geneContext": {
                   "valueId": "HGNC:11630",
                   "symbol": "HNF1B"
@@ -50,12 +63,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.37739455G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000449.1:p.(Arg177Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "37739455",
+                  "pos": 37739455,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -79,61 +96,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P15Y"
+          "iso8601duration": "P10Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-05T10:46:14.626734018Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-06T05:26:09.681475Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:9398836",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/9398836",
         "description": "Mutation in hepatocyte nuclear factor-1 beta gene (TCF2) associated with MODY"
       }
     ]
