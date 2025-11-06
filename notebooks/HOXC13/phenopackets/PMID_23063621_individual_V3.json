@@ -1,13 +1,8 @@
 {
-  "id": "PMID_28403827_IV_1",
+  "id": "PMID_23063621_individual_V3",
   "subject": {
-    "id": "IV-1",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P37Y"
-      }
-    },
-    "sex": "MALE"
+    "id": "individual V3",
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -26,31 +21,24 @@
       "type": {
         "id": "HP:0008404",
         "label": "Nail dystrophy"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0002223",
-        "label": "Absent eyebrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000561",
-        "label": "Absent eyelashes"
+        "id": "HP:0001792",
+        "label": "Small nail"
       }
     },
     {
       "type": {
         "id": "HP:0040039",
         "label": "Onycholysis of fingernails"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012741",
-        "label": "Unilateral cryptorchidism"
       },
       "excluded": true
     },
@@ -71,7 +59,7 @@
   ],
   "interpretations": [
     {
-      "id": "IV-1",
+      "id": "AeSaxXJQN80aAaZ625j6CZQL",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,11 +68,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "IV-1",
+            "subjectOrBiosampleId": "individual V3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vxFzNRbJzyoGtZOEmgVHTjuvq",
+                "id": "c390CtoA_HOXC13_NM_017410v3",
                 "geneContext": {
                   "valueId": "HGNC:5125",
                   "symbol": "HOXC13"
@@ -92,19 +82,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_017410.3:c.929A>C"
+                    "value": "NM_017410.3:c.390C>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000012.12:g.53945192A>C"
+                    "value": "NC_000012.12:g.53939296C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_059106.2:p.(Tyr130Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "53945192",
-                  "ref": "A",
-                  "alt": "C"
+                  "pos": 53939296,
+                  "ref": "C",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -133,56 +127,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-20T20:09:17.166441917Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-06T05:23:51.245950Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:28403827",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28403827",
-        "description": "A novel mutation in homeobox DNA binding domain of HOXC13 gene underlies pure hair and nail ectodermal dysplasia (ECTD9) in a Pakistani family"
+        "id": "PMID:23063621",
+        "description": "Loss-of-function mutations in HOXC13 cause pure hair and nail ectodermal dysplasia"
       }
     ]
   }
