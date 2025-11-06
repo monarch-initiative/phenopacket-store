@@ -1,23 +1,29 @@
 {
-  "id": "PMID_11479731_Patient",
+  "id": "PMID_32851297_proband_G4P3",
   "subject": {
-    "id": "Patient",
+    "id": "proband G4P3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4Y"
+        "iso8601duration": "P11M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0001259",
         "label": "Coma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P8M"
         }
       }
     },
@@ -34,14 +40,21 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P8M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001943",
-        "label": "Hypoglycemia"
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
       },
       "onset": {
         "age": {
@@ -73,21 +86,14 @@
     },
     {
       "type": {
-        "id": "HP:0030781",
-        "label": "Increased circulating free fatty acid level"
+        "id": "HP:0040155",
+        "label": "Elevated urinary 3-hydroxybutyric acid"
       }
     },
     {
       "type": {
-        "id": "HP:0002919",
-        "label": "Ketonuria"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003215",
-        "label": "Dicarboxylic aciduria"
+        "id": "HP:0003150",
+        "label": "Glutaric aciduria"
       },
       "onset": {
         "age": {
@@ -97,15 +103,52 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0034656",
+        "label": "Elevated urine 3-hydroxyglutaric level"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P11M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0035023",
+        "label": "Elevated circulating acetylcarnitine concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033444",
+        "label": "Elevated circulating dodecanoylcarnitine concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012766",
+        "label": "Widened cerebral subarachnoid space"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11M"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "nnw3EBzMbt0yZqp0G1zGTfAs",
+      "id": "WBavLBSAN5tFzyREjC3TdCot",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,13 +157,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "proband G4P3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1499GtoA_HMGCS2_NM_005518v4",
+                "id": "c1347_1351del_HMGCS2_NM_005518v4",
                 "geneContext": {
                   "valueId": "HGNC:5008",
                   "symbol": "HMGCS2"
@@ -128,23 +171,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005518.4:c.1499G>A"
+                    "value": "NM_005518.4:c.1347_1351del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.119750830C>T"
+                    "value": "NC_000001.11:g.119752622_119752626del"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_005509.1:p.(Arg500His)"
+                    "value": "NP_005509.1:p.(Ala450ProfsTer7)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": 119750830,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 119752617,
+                  "ref": "GAGGCT",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -166,13 +209,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P8M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-06T05:20:58.478738Z",
+    "created": "2025-11-06T05:20:58.478003Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -219,8 +262,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11479731",
-        "description": "Genetic basis of mitochondrial HMG-CoA synthase deficiency"
+        "id": "PMID:32851297",
+        "description": "Novel HMGCS2 pathogenic variants in a Chinese family with mitochondrial 3-hydroxy-3-methylglutaryl-CoA synthase deficiency"
       }
     ]
   }

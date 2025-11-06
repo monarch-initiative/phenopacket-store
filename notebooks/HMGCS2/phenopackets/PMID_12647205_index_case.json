@@ -1,30 +1,25 @@
 {
-  "id": "PMID_11479731_Patient",
+  "id": "PMID_12647205_index_case",
   "subject": {
-    "id": "Patient",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P4Y"
-      }
-    },
-    "sex": "MALE"
+    "id": "index case",
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0001259",
         "label": "Coma"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P11M"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
+        "id": "HP:0001397",
+        "label": "Hepatic steatosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y5M"
+        }
       }
     },
     {
@@ -34,7 +29,36 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002148",
+        "label": "Hypophosphatemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y5M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002901",
+        "label": "Hypocalcemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y5M"
         }
       }
     },
@@ -45,18 +69,18 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0031956",
-        "label": "Elevated circulating aspartate aminotransferase concentration"
+        "id": "HP:0001942",
+        "label": "Metabolic acidosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
         }
       }
     },
@@ -67,9 +91,23 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -79,19 +117,30 @@
     },
     {
       "type": {
-        "id": "HP:0002919",
-        "label": "Ketonuria"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0003215",
         "label": "Dicarboxylic aciduria"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0035023",
+        "label": "Elevated circulating acetylcarnitine concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y6M"
         }
       }
     },
@@ -105,7 +154,7 @@
   ],
   "interpretations": [
     {
-      "id": "nnw3EBzMbt0yZqp0G1zGTfAs",
+      "id": "jvkUp8HF1EIgYm2P3JBUjDOZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,13 +163,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "index case",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1499GtoA_HMGCS2_NM_005518v4",
+                "id": "c160GtoA_HMGCS2_NM_005518v4",
                 "geneContext": {
                   "valueId": "HGNC:5008",
                   "symbol": "HMGCS2"
@@ -128,21 +177,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005518.4:c.1499G>A"
+                    "value": "NM_005518.4:c.160G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.119750830C>T"
+                    "value": "NC_000001.11:g.119764571C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_005509.1:p.(Arg500His)"
+                    "value": "NP_005509.1:p.(Val54Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": 119750830,
+                  "pos": 119764571,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -166,13 +215,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P11M"
+          "iso8601duration": "P4Y5M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-06T05:20:58.478738Z",
+    "created": "2025-11-06T05:20:58.478668Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -219,8 +268,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:11479731",
-        "description": "Genetic basis of mitochondrial HMG-CoA synthase deficiency"
+        "id": "PMID:12647205",
+        "description": "Mitochondrial HMG-CoA synthase deficiency: identification of two further patients carrying two novel mutations"
       }
     ]
   }
