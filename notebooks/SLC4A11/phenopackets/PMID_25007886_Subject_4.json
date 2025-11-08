@@ -1,7 +1,8 @@
 {
-  "id": "PMID_25007886_Subject_3",
+  "id": "PMID_25007886_Subject_4",
   "subject": {
-    "id": "Subject 3"
+    "id": "Subject 4",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -25,7 +26,7 @@
   ],
   "interpretations": [
     {
-      "id": "Subject 3",
+      "id": "q2FGOmiuDeEkIq2pHh3r9k4V",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -34,11 +35,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Subject 3",
+            "subjectOrBiosampleId": "Subject 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_higQPSHkCOjszEDhXJhgbnnQG",
+                "id": "c1471GtoA_SLC4A11_NM_001174089v2",
                 "geneContext": {
                   "valueId": "HGNC:16438",
                   "symbol": "SLC4A11"
@@ -46,19 +49,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001174089.2:c.1256C>T"
+                    "value": "NM_001174089.2:c.1471G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000020.11:g.3230758G>A"
+                    "value": "NC_000020.11:g.3230205C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001167560.1:p.(Val491Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr20",
-                  "pos": "3230758",
-                  "ref": "G",
-                  "alt": "A"
+                  "pos": 3230205,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -80,61 +87,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P61Y"
+          "iso8601duration": "P69Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-25T07:22:55.831073999Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T10:42:43.886709Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25007886",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25007886",
         "description": "Biosynthetic and functional defects in newly identified SLC4A11 mutants and absence of COL8A2 mutations in Fuchs endothelial corneal dystrophy"
       }
     ]
