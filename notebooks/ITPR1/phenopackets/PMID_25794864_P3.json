@@ -7,23 +7,15 @@
         "iso8601duration": "P12Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0010544",
-        "label": "Vertical nystagmus"
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -52,8 +44,22 @@
     {
       "type": {
         "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
+        "label": "Moderate intellectual disability"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -69,59 +75,27 @@
     },
     {
       "type": {
-        "id": "HP:0001350",
-        "label": "Slurred speech"
+        "id": "HP:0010544",
+        "label": "Vertical nystagmus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000657",
-        "label": "Oculomotor apraxia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003698",
-        "label": "Difficulty standing"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007366",
-        "label": "Atrophy/Degeneration affecting the brainstem"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002174",
-        "label": "Postural tremor"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100021",
-        "label": "Cerebral palsy"
+        "id": "HP:0000640",
+        "label": "Gaze-evoked nystagmus"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0007979",
-        "label": "Gaze-evoked horizontal nystagmus"
+        "id": "HP:0000666",
+        "label": "Horizontal nystagmus"
       },
       "excluded": true
     },
@@ -134,10 +108,22 @@
     },
     {
       "type": {
+        "id": "HP:0001350",
+        "label": "Slurred speech"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002015",
         "label": "Dysphagia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000657",
+        "label": "Oculomotor apraxia"
+      }
     },
     {
       "type": {
@@ -166,11 +152,29 @@
         "label": "Poor head control"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003698",
+        "label": "Difficulty standing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007366",
+        "label": "Atrophy/Degeneration affecting the brainstem"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P3",
+      "id": "SP9sYWRBM7YP5VB9oWitReCT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -182,8 +186,10 @@
             "subjectOrBiosampleId": "P3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_rwcqgEZzosfoEPdVrLXCDnohy",
+                "id": "c1781CtoT_ITPR1_NM_001378452v1",
                 "geneContext": {
                   "valueId": "HGNC:6180",
                   "symbol": "ITPR1"
@@ -196,12 +202,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.4667444C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365381.1:p.(Thr594Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "4667444",
+                  "pos": 4667444,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -232,55 +242,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-09-17T08:25:31.255167961Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T05:18:38.069559Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25794864",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25794864",
         "description": "Sporadic infantile-onset spinocerebellar ataxia caused by missense mutations of the inositol 1,4,5-triphosphate receptor type 1 gene"
       }
     ]

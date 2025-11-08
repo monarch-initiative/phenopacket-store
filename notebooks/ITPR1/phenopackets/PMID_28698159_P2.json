@@ -7,12 +7,16 @@
         "iso8601duration": "P2Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0001251",
@@ -26,6 +30,13 @@
     },
     {
       "type": {
+        "id": "HP:0002174",
+        "label": "Postural tremor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001290",
         "label": "Generalized hypotonia"
       }
@@ -33,8 +44,22 @@
     {
       "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Moderate intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010864",
+        "label": "Severe intellectual disability"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -47,52 +72,6 @@
         "id": "HP:0000639",
         "label": "Nystagmus"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0007676",
-        "label": "Hypoplasia of the iris"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002194",
-        "label": "Delayed gross motor development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001510",
-        "label": "Growth delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100021",
-        "label": "Cerebral palsy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002174",
-        "label": "Postural tremor"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -124,15 +103,33 @@
     },
     {
       "type": {
+        "id": "HP:0007676",
+        "label": "Hypoplasia of the iris"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007928",
         "label": "Abnormal flash visual evoked potentials"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001510",
+        "label": "Growth delay"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P2",
+      "id": "7yOv9hN6xO5x8huiVQOyFRD4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -144,8 +141,10 @@
             "subjectOrBiosampleId": "P2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vBAFUvJuzhAGbwPpgdRjgbFag",
+                "id": "c7831_7833del_ITPR1_NM_001378452v1",
                 "geneContext": {
                   "valueId": "HGNC:6180",
                   "symbol": "ITPR1"
@@ -158,12 +157,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.4815182_4815184del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365381.1:p.(Lys2611del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "4815176",
+                  "pos": 4815176,
                   "ref": "CAGA",
                   "alt": "C"
                 },
@@ -194,55 +197,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-09-17T08:25:47.589295148Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T05:13:50.681624Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28698159",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28698159",
         "description": "Identification of novel and hotspot mutations in the channel domain of ITPR1 in two patients with Gillespie syndrome"
       }
     ]

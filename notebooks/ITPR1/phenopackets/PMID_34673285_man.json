@@ -7,12 +7,16 @@
         "iso8601duration": "P51Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0002078",
@@ -27,9 +31,30 @@
     },
     {
       "type": {
+        "id": "HP:0010864",
+        "label": "Severe intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
+        "label": "Moderate intellectual disability"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006889",
+        "label": "Borderline intellectual disability"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -54,39 +79,11 @@
         "id": "HP:0002075",
         "label": "Dysdiadochokinesis"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0100021",
-        "label": "Cerebral palsy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006889",
-        "label": "Intellectual disability, borderline"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "man",
+      "id": "rGVPVfqoKhWVU6d21S4GMzNY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -98,8 +95,10 @@
             "subjectOrBiosampleId": "man",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HTxGyaLiEesqwJNyreOfvinPM",
+                "id": "c7997GtoA_ITPR1_NM_001378452v1",
                 "geneContext": {
                   "valueId": "HGNC:6180",
                   "symbol": "ITPR1"
@@ -112,12 +111,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.4818211G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365381.1:p.(Gly2666Glu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "4818211",
+                  "pos": 4818211,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -148,55 +151,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-09-17T08:25:31.297295808Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T05:18:38.072828Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34673285",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34673285",
         "description": "Quadrupedal gait and cerebellar hypoplasia, the Uner Tan syndrome, caused by ITPR1 gene mutation"
       }
     ]
