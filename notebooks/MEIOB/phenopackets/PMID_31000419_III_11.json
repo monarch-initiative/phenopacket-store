@@ -1,7 +1,12 @@
 {
-  "id": "PMID_35991565_Family_I_\u21643",
+  "id": "PMID_31000419_III_11",
   "subject": {
-    "id": "Family I \u21643",
+    "id": "III-11",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -11,9 +16,8 @@
         "label": "Oligomenorrhea"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+        "age": {
+          "iso8601duration": "P16Y"
         }
       }
     },
@@ -31,25 +35,34 @@
     },
     {
       "type": {
+        "id": "HP:0000869",
+        "label": "Secondary amenorrhea"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0008232",
         "label": "Elevated circulating follicle stimulating hormone level"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+        "age": {
+          "iso8601duration": "P19Y"
         }
       }
     },
     {
       "type": {
         "id": "HP:0031103",
-        "label": "Decreased cirrculating antimullerian hormone circulation"
+        "label": "Decreased circulating antimullerian hormone circulation"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+        "age": {
+          "iso8601duration": "P19Y"
         }
       }
     },
@@ -59,16 +72,15 @@
         "label": "Reduced antral follicle count"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+        "age": {
+          "iso8601duration": "P19Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "Family I \u21643",
+      "id": "Rq8n4FUE5Tq0wkXcTZ8He3Zk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -77,11 +89,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family I \u21643",
+            "subjectOrBiosampleId": "III-11",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jZEzGAHxrWlOqJxmtUOyVPvRP",
+                "id": "c1218GtoA_MEIOB_NM_001163560v3",
                 "geneContext": {
                   "valueId": "HGNC:28569",
                   "symbol": "MEIOB"
@@ -89,19 +103,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001163560.3:c.1072_1073del"
+                    "value": "NM_001163560.3:c.1218G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.1839400_1839401del"
+                    "value": "NC_000016.10:g.1839255C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001157032.1:p.(Thr406=)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "1839399",
-                  "ref": "CAT",
-                  "alt": "C"
+                  "pos": 1839255,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -130,56 +148,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-04T08:49:07.282798051Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T10:46:04.282192Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:35991565",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35991565",
-        "description": "Novel MEIOB variants cause primary ovarian insufficiency and non-obstructive azoospermia"
+        "id": "PMID:31000419",
+        "description": "A truncating MEIOB mutation responsible for familial primary ovarian insufficiency abolishes its interaction with its partner SPATA22 and their recruitment to DNA double-strand breaks"
       }
     ]
   }
