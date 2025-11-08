@@ -1,43 +1,19 @@
 {
-  "id": "PMID_23086397_Patient_6",
+  "id": "PMID_23086397_Patient_5",
   "subject": {
-    "id": "Patient 6",
+    "id": "Patient 5",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P6M"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0012736",
         "label": "Profound global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032773",
-        "label": "Focal autonomic seizure with palpitations/tachycardia/bradycardia/asystole"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011153",
-        "label": "Focal motor seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0200134",
-        "label": "Epileptic encephalopathy"
       }
     },
     {
@@ -77,6 +53,19 @@
     },
     {
       "type": {
+        "id": "HP:0032773",
+        "label": "Focal autonomic seizure with palpitations/tachycardia/bradycardia/asystole"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011153",
+        "label": "Focal motor seizure"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0011169",
         "label": "Generalized clonic seizure"
       },
@@ -91,6 +80,12 @@
     },
     {
       "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001290",
         "label": "Generalized hypotonia"
       },
@@ -102,11 +97,17 @@
         "label": "Microcephaly"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0200134",
+        "label": "Epileptic encephalopathy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 6",
+      "id": "jHZ8UaQGwfjXSm76dJnhi3Hm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,11 +116,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 6",
+            "subjectOrBiosampleId": "Patient 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pTRjOVOAPnfPdAsTxjqYZlCcU",
+                "id": "c1421GtoA_KCNT1_NM_020822v3",
                 "geneContext": {
                   "valueId": "HGNC:18865",
                   "symbol": "KCNT1"
@@ -127,19 +130,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_020822.3:c.2280C>G"
+                    "value": "NM_020822.3:c.1421G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.135775346C>G"
+                    "value": "NC_000009.12:g.135768848G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065873.2:p.(Arg474His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "135775346",
-                  "ref": "C",
-                  "alt": "G"
+                  "pos": 135768848,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -161,61 +168,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3D"
+          "iso8601duration": "P14D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-21T03:28:20.456890106Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T06:37:45.060827Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23086397",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23086397",
         "description": "De novo gain-of-function KCNT1 channel mutations cause malignant migrating partial seizures of infancy"
       }
     ]
