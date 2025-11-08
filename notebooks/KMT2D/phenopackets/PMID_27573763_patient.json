@@ -7,39 +7,21 @@
         "iso8601duration": "P4Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001385",
-        "label": "Hip dysplasia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000218",
         "label": "High palate"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -67,35 +49,32 @@
     },
     {
       "type": {
-        "id": "HP:0004209",
-        "label": "Clinodactyly of the 5th finger"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009237",
-        "label": "Short 5th finger"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0045075",
-        "label": "Sparse eyebrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000954",
         "label": "Single transverse palmar crease"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001385",
+        "label": "Hip dysplasia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
     },
     {
       "type": {
@@ -108,6 +87,13 @@
       "type": {
         "id": "HP:0001629",
         "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -148,20 +134,6 @@
     },
     {
       "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001667",
-        "label": "Right ventricular hypertrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0011626",
         "label": "Scimitar anomaly"
       },
@@ -183,8 +155,8 @@
     },
     {
       "type": {
-        "id": "HP:0001684",
-        "label": "Secundum atrial septal defect"
+        "id": "HP:0001714",
+        "label": "Ventricular hypertrophy"
       },
       "excluded": true
     },
@@ -208,11 +180,29 @@
         "label": "Single ventricle"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009237",
+        "label": "Short 5th finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0045075",
+        "label": "Sparse eyebrow"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "3vzhrNsVfNUTPiA0uSEWOL6n",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -224,8 +214,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QJncwClkmSGJUNqolyBiDUxdn",
+                "id": "c4485CtoA_KMT2D_NM_003482v3",
                 "geneContext": {
                   "valueId": "HGNC:7133",
                   "symbol": "KMT2D"
@@ -238,12 +230,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.49046358G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003473.3:p.(Tyr1495Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "49046358",
+                  "pos": 49046358,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -274,55 +270,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-12T12:01:49.123646974Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T06:23:31.020011Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27573763",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27573763",
         "description": "A novel KMT2D mutation resulting in Kabuki syndrome: A case report"
       }
     ]

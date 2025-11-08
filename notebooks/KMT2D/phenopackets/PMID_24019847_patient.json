@@ -2,7 +2,6 @@
   "id": "PMID_24019847_patient",
   "subject": {
     "id": "patient",
-    "vitalStatus": {},
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -16,6 +15,12 @@
           "id": "HP:0003577",
           "label": "Congenital onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
       }
     },
     {
@@ -86,24 +91,8 @@
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y3M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002553",
-        "label": "Highly arched eyebrow"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y3M"
-        }
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
       }
     },
     {
@@ -119,26 +108,13 @@
     },
     {
       "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001647",
-        "label": "Bicuspid aortic valve"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003316",
-        "label": "Butterfly vertebrae"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y3M"
+        }
       }
     },
     {
@@ -152,6 +128,13 @@
       "type": {
         "id": "HP:0001629",
         "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -178,22 +161,14 @@
     },
     {
       "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001650",
         "label": "Aortic valve stenosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001667",
-        "label": "Right ventricular hypertrophy"
       },
       "excluded": true
     },
@@ -220,8 +195,8 @@
     },
     {
       "type": {
-        "id": "HP:0001684",
-        "label": "Secundum atrial septal defect"
+        "id": "HP:0001714",
+        "label": "Ventricular hypertrophy"
       },
       "excluded": true
     },
@@ -231,11 +206,28 @@
         "label": "Mitral stenosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002553",
+        "label": "Highly arched eyebrow"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y3M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003316",
+        "label": "Butterfly vertebrae"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "gTo9FNSmLJsjQ6EYEPRmw7Xj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -247,8 +239,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FrSoMulpanOFuQIxZnppDnjIR",
+                "id": "c5256_5257del_KMT2D_NM_003482v3",
                 "geneContext": {
                   "valueId": "HGNC:7133",
                   "symbol": "KMT2D"
@@ -261,12 +255,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.49043931_49043932del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003473.3:p.(Lys1753AlafsTer34)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "49043929",
+                  "pos": 49043929,
                   "ref": "TTC",
                   "alt": "T"
                 },
@@ -297,55 +295,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-12T12:01:49.114059925Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T06:23:31.019452Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24019847",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24019847",
         "description": "A novel MLL2 gene mutation in a Korean patient with Kabuki syndrome"
       }
     ]

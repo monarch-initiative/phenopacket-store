@@ -7,9 +7,6 @@
         "iso8601duration": "P1Y1M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -17,48 +14,6 @@
       "type": {
         "id": "HP:0000175",
         "label": "Cleft palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001212",
-        "label": "Prominent fingertip pads"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002705",
-        "label": "High, narrow palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009237",
-        "label": "Short 5th finger"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009748",
-        "label": "Large earlobe"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030374",
-        "label": "Decreased proportion of memory B cells"
       }
     },
     {
@@ -84,6 +39,24 @@
     },
     {
       "type": {
+        "id": "HP:0001212",
+        "label": "Prominent fingertip pads"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004383",
         "label": "Hypoplastic left heart"
       },
@@ -93,6 +66,13 @@
       "type": {
         "id": "HP:0001629",
         "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -133,13 +113,6 @@
     },
     {
       "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001667",
         "label": "Right ventricular hypertrophy"
       },
@@ -175,6 +148,24 @@
     },
     {
       "type": {
+        "id": "HP:0002705",
+        "label": "High, narrow palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009237",
+        "label": "Short 5th finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009748",
+        "label": "Large earlobe"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0032132",
         "label": "Decreased circulating total IgG concentration"
       },
@@ -197,14 +188,20 @@
     {
       "type": {
         "id": "HP:0410386",
-        "label": "Decreased proportion of CD4-positive, alpha-beta memory T cells"
+        "label": "Decreased CD4+ memory T cell proportion"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030374",
+        "label": "Decreased proportion of memory B cells"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P10",
+      "id": "fkymJjq3vvqWjzNty0GvdSzw",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -216,8 +213,10 @@
             "subjectOrBiosampleId": "P10",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_LypLtFmvpcififMCwdLGvqjyg",
+                "id": "c16135CtoT_KMT2D_NM_003482v3",
                 "geneContext": {
                   "valueId": "HGNC:7133",
                   "symbol": "KMT2D"
@@ -230,12 +229,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.49022793G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003473.3:p.(Gln5379Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "49022793",
+                  "pos": 49022793,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -260,55 +263,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-12T12:01:49.132201910Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T06:23:31.020430Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25142838",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25142838",
         "description": "Immunologic assessment and KMT2D mutation detection in Kabuki syndrome"
       }
     ]
