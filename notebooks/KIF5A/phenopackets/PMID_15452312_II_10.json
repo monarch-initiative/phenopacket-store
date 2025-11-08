@@ -1,13 +1,13 @@
 {
-  "id": "PMID_15452312_III_5",
+  "id": "PMID_15452312_II_10",
   "subject": {
-    "id": "III-5",
+    "id": "II-10",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P39Y"
+        "iso8601duration": "P75Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -15,6 +15,19 @@
         "id": "HP:0002064",
         "label": "Spastic gait"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002166",
+        "label": "Impaired vibration sensation in the lower limbs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -42,24 +55,9 @@
     },
     {
       "type": {
-        "id": "HP:0002166",
-        "label": "Impaired vibration sensation in the lower limbs"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0003484",
         "label": "Upper limb muscle weakness"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -72,22 +70,19 @@
       "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000012",
         "label": "Urinary urgency"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001761",
         "label": "Pes cavus"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -113,7 +108,7 @@
   ],
   "interpretations": [
     {
-      "id": "III-5",
+      "id": "YnIQtu4ctC1wNOFGXt6S1gts",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -122,11 +117,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "III-5",
+            "subjectOrBiosampleId": "II-10",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VAaVIJmMmDZDTHUOBEIinwDmz",
+                "id": "c838CtoT_KIF5A_NM_004984v4",
                 "geneContext": {
                   "valueId": "HGNC:6323",
                   "symbol": "KIF5A"
@@ -139,12 +136,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.57569274C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004975.2:p.(Arg280Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "57569274",
+                  "pos": 57569274,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -175,55 +176,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-31T06:34:38.889097929Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T05:47:37.715835Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15452312",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15452312",
         "description": "Evidence of kinesin heavy chain (KIF5A) involvement in pure hereditary spastic paraplegia"
       }
     ]
