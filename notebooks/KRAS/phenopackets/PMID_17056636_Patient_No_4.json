@@ -1,13 +1,13 @@
 {
-  "id": "PMID_17056636_Patient_No_9",
+  "id": "PMID_17056636_Patient_No_4",
   "subject": {
-    "id": "Patient No 9",
+    "id": "Patient No 4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P20Y"
+        "iso8601duration": "P3Y3M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -36,52 +36,16 @@
     },
     {
       "type": {
-        "id": "HP:0004482",
-        "label": "Relative macrocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000358",
-        "label": "Posteriorly rotated ears"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000028",
-        "label": "Cryptorchidism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000463",
         "label": "Anteverted nares"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004482",
+        "label": "Relative macrocephaly"
+      }
     },
     {
       "type": {
@@ -101,8 +65,20 @@
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000358",
+        "label": "Posteriorly rotated ears"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      }
     },
     {
       "type": {
@@ -115,8 +91,7 @@
       "type": {
         "id": "HP:0000914",
         "label": "Shield chest"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -158,7 +133,12 @@
         "id": "HP:0001642",
         "label": "Pulmonic stenosis"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
@@ -220,8 +200,25 @@
       "type": {
         "id": "HP:0000486",
         "label": "Strabismus"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     },
     {
       "type": {
@@ -254,7 +251,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient No 9",
+      "id": "6OEnjC14HNOM46oaHxPgnbvE",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -263,11 +260,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient No 9",
+            "subjectOrBiosampleId": "Patient No 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_EoyfOnFyYywyvkguMpOxLjVBN",
+                "id": "c65AtoG_KRAS_NM_004985v5",
                 "geneContext": {
                   "valueId": "HGNC:6407",
                   "symbol": "KRAS"
@@ -275,19 +274,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004985.5:c.458A>T"
+                    "value": "NM_004985.5:c.65A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000012.12:g.25209904T>A"
+                    "value": "NC_000012.12:g.25245320T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004976.2:p.(Gln22Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "25209904",
+                  "pos": 25245320,
                   "ref": "T",
-                  "alt": "A"
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -310,55 +313,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-08T20:03:17.262205839Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T05:35:33.135250Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17056636",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17056636",
         "description": "Expansion of the genotypic and phenotypic spectrum in patients with KRAS germline mutations"
       }
     ]
