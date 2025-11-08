@@ -1,0 +1,158 @@
+{
+  "id": "PMID_39209701_Patient_2",
+  "subject": {
+    "id": "Patient 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P29Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033712",
+        "label": "Repeated implantation failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020003",
+        "label": "Embryo developmental arrest"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "E4T4RfLnzIHgqUZu20MT2Xdf",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621232",
+          "label": "Oocyte/zygote/embryo maturation arrest 24"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1330del_TUBA1C_NM_032704v5",
+                "geneContext": {
+                  "valueId": "HGNC:20768",
+                  "symbol": "TUBA1C"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_032704.5:c.1330del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.49273207del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_116093.1:p.(Asp444MetfsTer42)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 49273205,
+                  "ref": "AG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621232",
+        "label": "Oocyte/zygote/embryo maturation arrest 24"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P26Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-11-08T08:03:38.849165Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39209701",
+        "description": "Biallelic variants in α-tubulin isotypes cause female infertility characterised as recurrent preimplantation embryo arrest."
+      }
+    ]
+  }
+}
