@@ -12,51 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002507",
-        "label": "Semilobar holoprosencephaly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002119",
-        "label": "Ventriculomegaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100702",
-        "label": "Arachnoid cyst"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P9M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
       },
@@ -64,6 +19,12 @@
         "age": {
           "iso8601duration": "P9M"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032989",
+        "label": "Delayed ability to roll over"
       }
     },
     {
@@ -90,6 +51,40 @@
     },
     {
       "type": {
+        "id": "HP:0100702",
+        "label": "Arachnoid cyst"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002507",
+        "label": "Semilobar holoprosencephaly"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000238",
         "label": "Hydrocephalus"
       },
@@ -99,11 +94,22 @@
           "label": "Third trimester onset"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "infant girl",
+      "id": "NM0ROIIjUC0BhCWZw13BQj6u",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,8 +121,10 @@
             "subjectOrBiosampleId": "infant girl",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_PyXHOylFvovLqmMgPfBnxIgbq",
+                "id": "c1069CtoG_ZIC2_NM_007129v5",
                 "geneContext": {
                   "valueId": "HGNC:12873",
                   "symbol": "ZIC2"
@@ -129,12 +137,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000013.11:g.99983133C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_009060.2:p.(His357Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr13",
-                  "pos": "99983133",
+                  "pos": 99983133,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -165,55 +177,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-31T06:41:33.281530141Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-08T12:01:12.001712Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30855487",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30855487",
         "description": "Case report: a novel mutation in ZIC2 in an infant with microcephaly, holoprosencephaly, and arachnoid cyst"
       }
     ]
