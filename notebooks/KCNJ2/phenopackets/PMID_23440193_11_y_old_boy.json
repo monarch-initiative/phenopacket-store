@@ -1,13 +1,13 @@
 {
-  "id": "PMID_22155372_8_year_old_girl",
+  "id": "PMID_23440193_11_y_old_boy",
   "subject": {
-    "id": "8-year-old girl",
+    "id": "11-y-old boy",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P8Y"
+        "iso8601duration": "P11Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -40,8 +40,7 @@
       "type": {
         "id": "HP:0012663",
         "label": "Mildly reduced left ventricular ejection fraction"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -53,7 +52,7 @@
   ],
   "interpretations": [
     {
-      "id": "8-year-old girl",
+      "id": "n9paW1xTiKRfbjpebgHdw4JC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,11 +61,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "8-year-old girl",
+            "subjectOrBiosampleId": "11-y-old boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ECXxduceluYMHRKFSyQuePTjV",
+                "id": "c896AtoT_KCNJ2_NM_000891v3",
                 "geneContext": {
                   "valueId": "HGNC:6263",
                   "symbol": "KCNJ2"
@@ -74,19 +75,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000891.3:c.902T>A"
+                    "value": "NM_000891.3:c.896A>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.70175941T>A"
+                    "value": "NC_000017.11:g.70175935A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000882.1:p.(Glu299Val)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "70175941",
-                  "ref": "T",
-                  "alt": "A"
+                  "pos": 70175935,
+                  "ref": "A",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -109,56 +114,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-29T08:50:26.693011045Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-09T09:08:55.890272Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:22155372",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22155372",
-        "description": "A novel gain-of-function KCNJ2 mutation associated with short-QT syndrome impairs inward rectification of Kir2.1 currents"
+        "id": "PMID:23440193",
+        "description": "KCNJ2 mutation in short QT syndrome 3 results in atrial fibrillation and ventricular proarrhythmia"
       }
     ]
   }
