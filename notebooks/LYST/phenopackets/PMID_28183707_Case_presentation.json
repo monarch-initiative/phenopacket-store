@@ -1,7 +1,7 @@
 {
-  "id": "PMID_28183707_nan",
+  "id": "PMID_28183707_Case_presentation",
   "subject": {
-    "id": "nan",
+    "id": "Case presentation",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P2Y6M"
@@ -23,56 +23,12 @@
     },
     {
       "type": {
-        "id": "HP:0032499",
-        "label": "Giant neutrophil granules"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002090",
-        "label": "Pneumonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003212",
-        "label": "Increased circulating IgE level"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y6M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001010",
         "label": "Hypopigmentation of the skin"
       },
       "onset": {
         "age": {
           "iso8601duration": "P1Y10M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031292",
-        "label": "Cutaneous abscess"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y6M"
         }
       }
     },
@@ -90,8 +46,41 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0031292",
+        "label": "Cutaneous abscess"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032499",
+        "label": "Giant neutrophil granules"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
       },
       "excluded": true
     },
@@ -104,15 +93,26 @@
     },
     {
       "type": {
-        "id": "HP:0001433",
-        "label": "Hepatosplenomegaly"
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "nan",
+      "id": "AswOxVus2Zb7Wyz4jUP2L6KA",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -121,11 +121,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "nan",
+            "subjectOrBiosampleId": "Case presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_YZvLCbSgrfjDzbsNmLNSsihIQ",
+                "id": "c6159_6160del_LYST_NM_000081v4",
                 "geneContext": {
                   "valueId": "HGNC:1968",
                   "symbol": "LYST"
@@ -138,12 +140,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.235762814_235762815del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000072.2:p.(Met2053IlefsTer31)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "235762812",
+                  "pos": 235762812,
                   "ref": "TAC",
                   "alt": "T"
                 },
@@ -174,56 +180,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-23T10:57:35.354073047Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-09T11:47:12.808693Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28183707",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28183707",
-        "description": "Ch\u00e9diak-Higashi syndrome with novel gene mutation"
+        "description": "Chédiak-Higashi syndrome with novel gene mutation"
       }
     ]
   }
