@@ -1,78 +1,27 @@
 {
-  "id": "PMID_25808063_Patient_2",
+  "id": "PMID_25808063_Patient_4",
   "subject": {
-    "id": "Patient 2",
+    "id": "Patient 4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4Y"
+        "iso8601duration": "P3Y6M"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0012368",
-        "label": "Flat face"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002857",
-        "label": "Genu valgum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001321",
-        "label": "Cerebellar hypoplasia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002663",
-        "label": "Delayed epiphyseal ossification"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009901",
-        "label": "Crumpled ear"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000518",
-        "label": "Cataract"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000684",
         "label": "Delayed eruption of teeth"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012368",
+        "label": "Flat face"
+      }
     },
     {
       "type": {
@@ -118,6 +67,12 @@
     },
     {
       "type": {
+        "id": "HP:0002857",
+        "label": "Genu valgum"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0009556",
         "label": "Absent tibia"
       },
@@ -132,8 +87,21 @@
     },
     {
       "type": {
+        "id": "HP:0002663",
+        "label": "Delayed epiphyseal ossification"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004322",
         "label": "Short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009901",
+        "label": "Crumpled ear"
       },
       "excluded": true
     },
@@ -174,15 +142,42 @@
     },
     {
       "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001601",
         "label": "Laryngomalacia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000518",
+        "label": "Cataract"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "JnlN8DZp5ej6fLFCDnvPcQSu",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -191,11 +186,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 2",
+            "subjectOrBiosampleId": "Patient 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_oFSNzzAUimhGkwBGinrlweHcc",
+                "id": "c2780_2782del_LONP1_NM_004793v4",
                 "geneContext": {
                   "valueId": "HGNC:9479",
                   "symbol": "LONP1"
@@ -203,54 +200,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004793.4:c.1427A>C"
+                    "value": "NM_004793.4:c.2780_2782del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.5700868T>G"
+                    "value": "NC_000019.10:g.5692133_5692135del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004784.2:p.(Ile927del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "5700868",
-                  "ref": "T",
+                  "pos": 5692129,
+                  "ref": "GTGA",
                   "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_dXTZPEkUDqUCwGGcQmvxfSbBB",
-                "geneContext": {
-                  "valueId": "HGNC:9479",
-                  "symbol": "LONP1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_004793.4:c.2014C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.5694901G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "5694901",
-                  "ref": "G",
-                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -271,62 +237,62 @@
         "label": "CODAS syndrome"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P6M"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-11-08T03:56:33.072847843Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-09T14:56:34.413456Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25808063",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25808063",
         "description": "Mutations in LONP1, a mitochondrial matrix protease, cause CODAS syndrome"
       }
     ]
