@@ -81,7 +81,7 @@
   ],
   "interpretations": [
     {
-      "id": "first mutation",
+      "id": "UYf2GA6xEmeMIDI7NCeyEh06",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -93,8 +93,10 @@
             "subjectOrBiosampleId": "first mutation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SILLzbhZKkWTVuSqrbGDdCzIU",
+                "id": "c133GtoT_TGIF1_NM_003244v4",
                 "geneContext": {
                   "valueId": "HGNC:11776",
                   "symbol": "TGIF1"
@@ -107,12 +109,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000018.10:g.3456470G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003235.1:p.(Glu45Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "3456470",
+                  "pos": 3456470,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -143,55 +149,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-10T09:27:14.946329116Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-10T05:33:51.683145Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:16962354",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/16962354",
         "description": "Functional analysis of mutations in TGIF associated with holoprosencephaly"
       }
     ]
