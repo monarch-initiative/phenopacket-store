@@ -1,34 +1,47 @@
 {
-  "id": "PMID_12675840_daughter_II_2",
+  "id": "PMID_12675840_daughter_III_2",
   "subject": {
-    "id": "daughter II-2",
+    "id": "daughter III-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P43Y"
+        "iso8601duration": "P36Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000083",
-        "label": "Renal insufficiency"
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P23Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000093",
-        "label": "Proteinuria"
+        "id": "HP:0001917",
+        "label": "Renal amyloidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "daughter II-2",
+      "id": "9A82JRuFTGRrpZbU3knLYYyo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -37,11 +50,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "daughter II-2",
+            "subjectOrBiosampleId": "daughter III-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_kPiGLqwUnctEzFCXMidaMRtuM",
+                "id": "c223TtoA_LYZ_NM_000239v3",
                 "geneContext": {
                   "valueId": "HGNC:6740",
                   "symbol": "LYZ"
@@ -54,12 +69,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.69350194T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000230.1:p.(Phe75Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "69350194",
+                  "pos": 69350194,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -83,61 +102,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P35Y"
+          "iso8601duration": "P17Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-14T17:35:57.413640022Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-11T05:51:35.009327Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:12675840",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/12675840",
         "description": "A novel lysozyme mutation Phe57Ile associated with hereditary renal amyloidosis"
       }
     ]

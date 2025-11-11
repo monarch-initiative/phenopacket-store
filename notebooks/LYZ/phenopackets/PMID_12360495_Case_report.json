@@ -7,24 +7,21 @@
         "iso8601duration": "P59Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0011034",
-        "label": "Amyloidosis"
-      }
-    },
     {
       "type": {
         "id": "HP:0009830",
         "label": "Peripheral neuropathy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011034",
+        "label": "Amyloidosis"
+      }
     },
     {
       "type": {
@@ -50,7 +47,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case report",
+      "id": "BaJYHUNzrl6GsMB2DtigjFPm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,8 +59,10 @@
             "subjectOrBiosampleId": "Case report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_EBuazGeDibmzVlCWsERrdNMBc",
+                "id": "c244TtoA_LYZ_NM_000239v3",
                 "geneContext": {
                   "valueId": "HGNC:6740",
                   "symbol": "LYZ"
@@ -76,12 +75,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.69350215T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000230.1:p.(Trp82Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "69350215",
+                  "pos": 69350215,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -106,55 +109,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-14T17:35:57.413936138Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-11T05:51:35.009373Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:12360495",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/12360495",
         "description": "A family with gastrointestinal amyloidosis associated with variant lysozyme"
       }
     ]
