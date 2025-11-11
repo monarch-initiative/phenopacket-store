@@ -1,15 +1,17 @@
 {
-  "id": "PMID_27220909_proband",
+  "id": "PMID_23958762_proband_of_Family_2",
   "subject": {
-    "id": "proband",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P6Y"
-      }
-    },
-    "sex": "MALE"
+    "id": "proband of Family 2",
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000679",
+        "label": "Taurodontia"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0000705",
@@ -18,27 +20,20 @@
     },
     {
       "type": {
-        "id": "HP:0006285",
-        "label": "Enamel hypomineralization"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006297",
-        "label": "Enamel hypoplasia"
+        "id": "HP:0009722",
+        "label": "Dental enamel pits"
       }
     },
     {
       "type": {
-        "id": "HP:0009722",
-        "label": "Dental enamel pits"
+        "id": "HP:0000212",
+        "label": "Gingival overgrowth"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "donT56WHrGrWMtcj3JIJksSo",
+      "id": "1TRCtLG3F0MufacHz0C0OUBL",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -47,13 +42,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "proband of Family 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c3452_3458del_LAMB3_NM_000228v3",
+                "id": "c3431CtoA_LAMB3_NM_000228v3",
                 "geneContext": {
                   "valueId": "HGNC:6490",
                   "symbol": "LAMB3"
@@ -61,23 +56,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000228.3:c.3452_3458del"
+                    "value": "NM_000228.3:c.3431C>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.209615333_209615339del"
+                    "value": "NC_000001.11:g.209615359G>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_000219.2:p.(Glu1151ValfsTer57)"
+                    "value": "NP_000219.2:p.(Ser1144Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": 209615331,
-                  "ref": "ACGCTTCT",
-                  "alt": "A"
+                  "pos": 209615359,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -96,17 +91,11 @@
       "term": {
         "id": "OMIM:104530",
         "label": "Amelogenesis imperfecta, type IA"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-11T05:41:36.327267Z",
+    "created": "2025-11-11T05:41:36.327342Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -153,8 +142,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:27220909",
-        "description": "A novel de novo mutation in LAMB3 causes localized hypoplastic enamel in the molar region"
+        "id": "PMID:23958762",
+        "description": "LAMB3 mutations causing autosomal-dominant amelogenesis imperfecta."
       }
     ]
   }
