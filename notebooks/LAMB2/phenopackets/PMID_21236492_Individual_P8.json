@@ -1,53 +1,54 @@
 {
-  "id": "PMID_21236492_Individual_P2",
+  "id": "PMID_21236492_Individual_P8",
   "subject": {
-    "id": "Individual P2",
-    "sex": "MALE"
+    "id": "Individual P8",
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000083",
-        "label": "Renal insufficiency"
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
       }
     },
     {
       "type": {
-        "id": "HP:0000093",
-        "label": "Proteinuria"
+        "id": "HP:0031266",
+        "label": "Podocyte foot process effacement"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032582",
+        "label": "Renal interstitial foam cells"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012574",
+        "label": "Mesangial hypercellularity"
       }
     },
     {
       "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000609",
-        "label": "Optic nerve hypoplasia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001104",
-        "label": "Macular hypoplasia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000518",
-        "label": "Cataract"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000099",
+        "label": "Glomerulonephritis"
+      }
     },
     {
       "type": {
         "id": "HP:0000580",
         "label": "Pigmentary retinopathy"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -62,11 +63,31 @@
         "label": "Microphthalmia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000609",
+        "label": "Optic nerve hypoplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001104",
+        "label": "Macular hypoplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Individual P2",
+      "id": "Uo6ck6sgXZpIyfCJOmbVWx1r",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -75,11 +96,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual P2",
+            "subjectOrBiosampleId": "Individual P8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lhDLQdQnCTvHGkFEUSSdWSUlk",
+                "id": "c440AtoG_LAMB2_NM_002292v4",
                 "geneContext": {
                   "valueId": "HGNC:6487",
                   "symbol": "LAMB2"
@@ -92,12 +115,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.49132135T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002283.3:p.(His147Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "49132135",
+                  "pos": 49132135,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -121,62 +148,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3M"
+          "iso8601duration": "P1Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-19T06:00:09.421674013Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-11T05:46:27.416561Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:21236492",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/21236492",
-        "description": "A novel mutation of LAMB2 in a multigenerational mennonite family reveals a new phenotypic variant of Pierson syndrome "
+        "description": "A novel mutation of LAMB2 in a multigenerational mennonite family reveals a new phenotypic variant of Pierson syndrome"
       }
     ]
   }
