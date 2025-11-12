@@ -7,6 +7,9 @@
         "iso8601duration": "P54Y"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -18,6 +21,17 @@
       "onset": {
         "age": {
           "iso8601duration": "P35Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100570",
+        "label": "Carcinoid tumor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
         }
       }
     },
@@ -40,6 +54,17 @@
       "onset": {
         "age": {
           "iso8601duration": "P35Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100522",
+        "label": "Thymoma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
         }
       }
     },
@@ -89,50 +114,6 @@
     },
     {
       "type": {
-        "id": "HP:0002588",
-        "label": "Duodenal ulcer"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P35Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100570",
-        "label": "Carcinoid tumor"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P45Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100522",
-        "label": "Thymoma"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P45Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000819",
-        "label": "Diabetes mellitus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P45Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0012587",
         "label": "Macroscopic hematuria"
       },
@@ -150,6 +131,24 @@
       "onset": {
         "age": {
           "iso8601duration": "P32Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000787",
+        "label": "Nephrolithiasis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002588",
+        "label": "Duodenal ulcer"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P35Y"
         }
       }
     },
@@ -199,15 +198,19 @@
     },
     {
       "type": {
-        "id": "HP:0000787",
-        "label": "Nephrolithiasis"
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "proband (III-3)",
+      "id": "aehjG1d3GT5kDfO3ppeAkb3X",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -219,8 +222,10 @@
             "subjectOrBiosampleId": "proband (III-3)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WUXyJWoxSLBXDuhikGcaczJCJ",
+                "id": "c825_1GtoA_MEN1_NM_001370259v2",
                 "geneContext": {
                   "valueId": "HGNC:7010",
                   "symbol": "MEN1"
@@ -233,12 +238,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.64807099C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001357188.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "64807099",
+                  "pos": 64807099,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -268,56 +277,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-05T09:47:12.395248174Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-12T05:44:07.535808Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26239674",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26239674",
-        "description": "MEN1 c.825\u20111G>A mutation in a family with multiple endocrine neoplasia type 1: A case report"
+        "description": "MEN1 c.825‑1G>A mutation in a family with multiple endocrine neoplasia type 1: A case report"
       }
     ]
   }
