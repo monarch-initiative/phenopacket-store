@@ -69,7 +69,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual IV-2, family A",
+      "id": "vh2SRa8bMncyIjC4poqSvwiz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,8 +81,10 @@
             "subjectOrBiosampleId": "individual IV-2, family A",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XFZecZiJXOIsHSmZyPkcDdzvi",
+                "id": "c1801CtoA_NPR2_NM_003995v4",
                 "geneContext": {
                   "valueId": "HGNC:7944",
                   "symbol": "NPR2"
@@ -95,12 +97,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.35802593C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003986.2:p.(Arg601Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "35802593",
+                  "pos": 35802593,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -125,55 +131,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-19T07:28:14.380656957Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T18:30:17.772522Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25959430",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25959430",
         "description": "Homozygous sequence variants in the NPR2 gene underlying Acromesomelic dysplasia Maroteaux type (AMDM) in consanguineous families"
       }
     ]
