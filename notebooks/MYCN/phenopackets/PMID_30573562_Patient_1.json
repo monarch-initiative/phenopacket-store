@@ -12,29 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003006",
-        "label": "Neuroblastoma"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100259",
-        "label": "Postaxial polydactyly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001629",
         "label": "Ventricular septal defect"
       }
@@ -55,6 +32,17 @@
       "type": {
         "id": "HP:0002098",
         "label": "Respiratory distress"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003006",
+        "label": "Neuroblastoma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
       }
     },
     {
@@ -92,6 +80,13 @@
         "id": "HP:0000358",
         "label": "Posteriorly rotated ears"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -143,6 +138,18 @@
     },
     {
       "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
       }
@@ -170,25 +177,6 @@
         "id": "HP:0000463",
         "label": "Anteverted nares"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -224,11 +212,23 @@
         "label": "Gastrointestinal atresia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "9dFgaoGM7X1RiWPt6TN7TuKg",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -240,8 +240,10 @@
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_zqbicYGQhmIfYoJHrrWtceloE",
+                "id": "c173CtoT_MYCN_NM_005378v5",
                 "geneContext": {
                   "valueId": "HGNC:7559",
                   "symbol": "MYCN"
@@ -254,12 +256,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.15942237C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005369.2:p.(Thr58Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "15942237",
+                  "pos": 15942237,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -290,55 +296,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-15T17:49:21.029358148Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T07:42:38.061969Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30573562",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30573562",
         "description": "MYCN de novo gain-of-function mutation in a patient with a novel megalencephaly syndrome"
       }
     ]
