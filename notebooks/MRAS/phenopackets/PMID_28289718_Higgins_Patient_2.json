@@ -1,10 +1,10 @@
 {
-  "id": "PMID_28289718_Higgins-Patient-1",
+  "id": "PMID_28289718_Higgins_Patient_2",
   "subject": {
-    "id": "Higgins-Patient-1",
+    "id": "Higgins-Patient-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P17Y"
+        "iso8601duration": "P6Y"
       }
     },
     "sex": "FEMALE"
@@ -14,24 +14,6 @@
       "type": {
         "id": "HP:0001714",
         "label": "Ventricular hypertrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030148",
-        "label": "Heart murmur"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001639",
-        "label": "Hypertrophic cardiomyopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
       }
     },
     {
@@ -66,6 +48,48 @@
     },
     {
       "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007605",
+        "label": "Excessive wrinkling of palmar skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001695",
         "label": "Cardiac arrest"
       },
@@ -74,7 +98,7 @@
   ],
   "interpretations": [
     {
-      "id": "Higgins-Patient-1",
+      "id": "LvHGgnScB390HQKDmEsoYq3H",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -83,11 +107,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Higgins-Patient-1",
+            "subjectOrBiosampleId": "Higgins-Patient-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cNNWEffgcvJaCRPYWHZwpNyXK",
+                "id": "c203CtoT_MRAS_NM_001085049v3",
                 "geneContext": {
                   "valueId": "HGNC:7227",
                   "symbol": "MRAS"
@@ -95,18 +121,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001085049.3:c.68G>T"
+                    "value": "NM_001085049.3:c.203C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.138372951G>T"
+                    "value": "NC_000003.12:g.138397333C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001078518.1:p.(Thr68Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "138372951",
-                  "ref": "G",
+                  "pos": 138397333,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -129,61 +159,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P8Y"
+          "iso8601duration": "P1Y8M0D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-28T11:11:48.590163946Z",
-    "createdBy": "ORCID:0000-0001-5535-2845",
+    "created": "2025-11-15T08:23:20.857203Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28289718",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28289718",
         "description": "Elucidation of MRAS-mediated Noonan syndrome with cardiac hypertrophy"
       }
     ]
