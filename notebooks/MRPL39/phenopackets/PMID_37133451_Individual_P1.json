@@ -7,6 +7,9 @@
         "iso8601duration": "P7M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -14,17 +17,6 @@
       "type": {
         "id": "HP:0002104",
         "label": "Apnea"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002013",
-        "label": "Vomiting"
       },
       "onset": {
         "age": {
@@ -45,6 +37,36 @@
     },
     {
       "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001635",
         "label": "Congestive heart failure"
       },
@@ -62,6 +84,70 @@
       "onset": {
         "age": {
           "iso8601duration": "P5M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000741",
+        "label": "Apathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002076",
+        "label": "Migraine"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012734",
+        "label": "Ketotic hypoglycemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     },
@@ -111,111 +197,6 @@
     },
     {
       "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007305",
-        "label": "CNS demyelination"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002181",
-        "label": "Cerebral edema"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001639",
-        "label": "Hypertrophic cardiomyopathy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000741",
-        "label": "Apathy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002076",
-        "label": "Migraine"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012734",
-        "label": "Ketotic hypoglycemia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0002151",
         "label": "Increased circulating lactate concentration"
       },
@@ -244,6 +225,28 @@
     },
     {
       "type": {
+        "id": "HP:0007305",
+        "label": "CNS demyelination"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002181",
+        "label": "Cerebral edema"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000486",
         "label": "Strabismus"
       },
@@ -252,7 +255,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual P1",
+      "id": "12LYt5UXy7Cd1BnsJBNP5DlY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -264,8 +267,10 @@
             "subjectOrBiosampleId": "Individual P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_CiGFGZmNuPxxkHELiZJoEwfrH",
+                "id": "c602CtoT_MRPL39_NM_017446v4",
                 "geneContext": {
                   "valueId": "HGNC:14027",
                   "symbol": "MRPL39"
@@ -278,49 +283,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000021.9:g.25597401G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr21",
-                  "pos": "25597401",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Individual P1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_rPLalWjBKpJpGhkwkFXZcyclJ",
-                "geneContext": {
-                  "valueId": "HGNC:14027",
-                  "symbol": "MRPL39"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_017446.4:c.589-924G>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.25598338C>T"
+                    "syntax": "hgvs.p",
+                    "value": "NP_059142.3:p.(Ser201Phe)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "25598338",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 25597401,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -349,55 +323,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-02T05:07:18.244530916Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T09:14:47.843546Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37133451",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37133451",
         "description": "Multi-omics identifies large mitoribosomal subunit instability caused by pathogenic MRPL39 variants as a cause of pediatric onset mitochondrial disease"
       }
     ]
