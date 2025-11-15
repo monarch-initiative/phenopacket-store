@@ -12,17 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002119",
-        "label": "Ventriculomegaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y6M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002573",
         "label": "Hematochezia"
       },
@@ -34,19 +23,20 @@
     },
     {
       "type": {
-        "id": "HP:0030255",
-        "label": "Large intestinal polyposis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7Y"
-        }
+        "id": "HP:0009882",
+        "label": "Short distal phalanx of finger"
       }
     },
     {
       "type": {
-        "id": "HP:0001520",
-        "label": "Large for gestational age"
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000774",
+        "label": "Narrow chest"
       }
     },
     {
@@ -63,8 +53,8 @@
     },
     {
       "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
+        "id": "HP:0001520",
+        "label": "Large for gestational age"
       }
     },
     {
@@ -75,20 +65,30 @@
     },
     {
       "type": {
-        "id": "HP:0000774",
-        "label": "Narrow chest"
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y6M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0009882",
-        "label": "Short distal phalanx of finger"
+        "id": "HP:0030255",
+        "label": "Large intestinal polyposis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "index patient",
+      "id": "mqD0AditLa9vj8oYDiNGBiM9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -100,8 +100,10 @@
             "subjectOrBiosampleId": "index patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cKLupSZNtvToVZvbUTfgDfNNr",
+                "id": "c5395GtoA_MTOR_NM_004958v4",
                 "geneContext": {
                   "valueId": "HGNC:3942",
                   "symbol": "MTOR"
@@ -114,12 +116,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.11130747C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004949.1:p.(Glu1799Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "11130747",
+                  "pos": 11130747,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -150,56 +156,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-23T06:01:17.153839111Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T09:10:48.442620Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27753196",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27753196",
-        "description": "Smith\u2013Kingsmore syndrome: A third family with the MTOR mutation c.5395G>A p.(Glu1799Lys) and evidence for paternal gonadal mosaicism"
+        "description": "Smith–Kingsmore syndrome: A third family with the MTOR mutation c.5395G>A p.(Glu1799Lys) and evidence for paternal gonadal mosaicism"
       }
     ]
   }
