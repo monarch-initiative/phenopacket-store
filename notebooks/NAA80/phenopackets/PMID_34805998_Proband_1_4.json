@@ -2,9 +2,6 @@
   "id": "PMID_34805998_Proband_1_4",
   "subject": {
     "id": "Proband 1.4",
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -31,6 +28,13 @@
         "id": "HP:0000316",
         "label": "Hypertelorism"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000699",
+        "label": "Diastema"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -76,55 +80,6 @@
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003701",
-        "label": "Proximal muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003327",
-        "label": "Axial muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025372",
-        "label": "Loud snoring"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010535",
-        "label": "Sleep apnea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012450",
-        "label": "Chronic constipation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000699",
-        "label": "Diastema"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000278",
         "label": "Retrognathia"
       },
@@ -136,6 +91,18 @@
         "label": "Self-injurious behavior"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
     },
     {
       "type": {
@@ -160,15 +127,45 @@
     },
     {
       "type": {
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003327",
+        "label": "Axial muscle weakness"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001182",
         "label": "Tapered finger"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025372",
+        "label": "Loud snoring"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010535",
+        "label": "Sleep apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012450",
+        "label": "Chronic constipation"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Proband 1.4",
+      "id": "5jT0ahagn0DZ4eUBJBHiiLsh",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -180,8 +177,10 @@
             "subjectOrBiosampleId": "Proband 1.4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_OwycpGSIIgahbnKcpSAkvLioM",
+                "id": "c323TtoC_NAA80_NM_001200016v2",
                 "geneContext": {
                   "valueId": "HGNC:30252",
                   "symbol": "NAA80"
@@ -194,12 +193,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.50297141A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001186945.1:p.(Leu108Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "50297141",
+                  "pos": 50297141,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -224,55 +227,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-23T12:16:49.045914888Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T18:26:04.720634Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34805998",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34805998",
         "description": "NAA80 bi-allelic missense variants result in high-frequency hearing loss, muscle weakness and developmental delay"
       }
     ]
