@@ -1,5 +1,5 @@
 {
-  "id": "PMID_15523648_A_four-year-old_female",
+  "id": "PMID_15523648_A_four_year_old_female",
   "subject": {
     "id": "A four-year-old female",
     "timeAtLastEncounter": {
@@ -10,28 +10,6 @@
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P4Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000280",
-        "label": "Coarse facial features"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P4Y"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0001249",
@@ -82,6 +60,28 @@
     },
     {
       "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000280",
+        "label": "Coarse facial features"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002307",
         "label": "Drooling"
       }
@@ -101,7 +101,7 @@
   ],
   "interpretations": [
     {
-      "id": "A four-year-old female",
+      "id": "1XJmwMknXelYwC8tXskqE3YZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,8 +113,10 @@
             "subjectOrBiosampleId": "A four-year-old female",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_hMHWacPxlXoTzawyzBSNVSkWl",
+                "id": "c1207CtoT_MCOLN1_NM_020533v3",
                 "geneContext": {
                   "valueId": "HGNC:13356",
                   "symbol": "MCOLN1"
@@ -127,49 +129,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.7529173C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "7529173",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "A four-year-old female",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_bhhmVMfexKVSPQuaFHfTnhNni",
-                "geneContext": {
-                  "valueId": "HGNC:13356",
-                  "symbol": "MCOLN1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_020533.3:c.236_237insCCATTATGTAAAATCCATTGTCGCATCCACCTTTATTATCAGTCTCTTCCCCACAACAATATTCATGTGCCTAGACCAAGAAGTTATTATCTCG"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7525165_7525166insCCATTATGTAAAATCCATTGTCGCATCCACCTTTATTATCAGTCTCTTCCCCACAACAATATTCATGTGCCTAGACCAAGAAGTTATTATCTCG"
+                    "syntax": "hgvs.p",
+                    "value": "NP_065394.1:p.(Arg403Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7525165",
-                  "ref": "A",
-                  "alt": "ACCATTATGTAAAATCCATTGTCGCATCCACCTTTATTATCAGTCTCTTCCCCACAACAATATTCATGTGCCTAGACCAAGAAGTTATTATCTCG"
+                  "pos": 7529173,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -198,55 +169,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-27T16:48:57.255115985Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T18:08:41.488484Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15523648",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15523648",
         "description": "Transfer of a mitochondrial DNA fragment to MCOLN1 causes an inherited case of mucolipidosis IV"
       }
     ]

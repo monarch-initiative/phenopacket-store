@@ -1,7 +1,7 @@
 {
-  "id": "PMID_28620732__6-y-old_boy",
+  "id": "PMID_28620732_6_y_old_boy",
   "subject": {
-    "id": " 6-y-old boy",
+    "id": "6-y-old boy",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P6Y"
@@ -73,7 +73,7 @@
   ],
   "interpretations": [
     {
-      "id": " 6-y-old boy",
+      "id": "vMOIePHheMhCrE0Q4aUyuGCD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -82,11 +82,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": " 6-y-old boy",
+            "subjectOrBiosampleId": "6-y-old boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_YXxzWYAbEpUsWnAkJlnbIPkwn",
+                "id": "c771dup_MCOLN1_NM_020533v3",
                 "geneContext": {
                   "valueId": "HGNC:13356",
                   "symbol": "MCOLN1"
@@ -99,12 +101,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.7527954dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065394.1:p.(Val258ArgfsTer6)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7527953",
+                  "pos": 7527953,
                   "ref": "G",
                   "alt": "GC"
                 },
@@ -135,55 +141,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-27T16:48:57.257081031Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T18:08:41.488530Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28620732",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28620732",
         "description": "Mucolipidosis Type IV Due to Novel MCOLN1 Mutation"
       }
     ]
