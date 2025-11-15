@@ -1,96 +1,64 @@
 {
-  "id": "PMID_33486010_P98",
+  "id": "PMID_23829229_Patient_2",
   "subject": {
-    "id": "P98",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P1Y"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001271",
-        "label": "Polyneuropathy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001394",
-        "label": "Cirrhosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001943",
-        "label": "Hypoglycemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
+        "id": "HP:0001541",
+        "label": "Ascites"
       }
     },
     {
       "type": {
         "id": "HP:0002240",
         "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001518",
+        "label": "Small for gestational age"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y"
+          "iso8601duration": "P1Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001396",
-        "label": "Cholestasis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
+        "id": "HP:0001252",
+        "label": "Hypotonia"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "lVRVZlUvU8tuimiGNN8KY23A",
+      "id": "qA2ZfhkeCDhxEJx2lBsQloKm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -99,13 +67,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "P98",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c121CtoT_MPV17_NM_002437v5",
+                "id": "c191CtoG_MPV17_NM_002437v5",
                 "geneContext": {
                   "valueId": "HGNC:7224",
                   "symbol": "MPV17"
@@ -113,23 +81,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_002437.5:c.121C>T"
+                    "value": "NM_002437.5:c.191C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.27313059G>A"
+                    "value": "NC_000002.12:g.27312768G>C"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_002428.1:p.(Arg41Trp)"
+                    "value": "NP_002428.1:p.(Pro64Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": 27313059,
+                  "pos": 27312768,
                   "ref": "G",
-                  "alt": "A"
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -150,14 +118,15 @@
         "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P6M"
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-15T08:20:06.678905Z",
+    "created": "2025-11-15T08:20:06.681286Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -204,8 +173,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:33486010",
-        "description": "Mitochondrial DNA maintenance disorders in 102 patients from different parts of Russia: Mutational spectrum and phenotypes"
+        "id": "PMID:23829229",
+        "description": "Novel c.191C>G (p.Pro64Arg) MPV17 mutation identified in two pairs of unrelated Polish siblings with mitochondrial hepatoencephalopathy"
       }
     ]
   }

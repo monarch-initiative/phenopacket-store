@@ -1,96 +1,137 @@
 {
-  "id": "PMID_33486010_P98",
+  "id": "PMID_23714749_Family_12_patient_17",
   "subject": {
-    "id": "P98",
+    "id": "Family 12 patient 17",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P5M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001271",
-        "label": "Polyneuropathy"
+        "id": "HP:0009830",
+        "label": "Peripheral neuropathy"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001394",
-        "label": "Cirrhosis"
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001943",
         "label": "Hypoglycemia"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001396",
         "label": "Cholestasis"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008163",
+        "label": "Decreased circulating cortisol level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
       }
     },
     {
       "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
+        "id": "HP:0003256",
+        "label": "Abnormality of the coagulation cascade"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034323",
+        "label": "Reduced circulating growth hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001298",
+        "label": "Encephalopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "lVRVZlUvU8tuimiGNN8KY23A",
+      "id": "PDwql1E8ElKQFt73j3hqkkHX",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -99,39 +140,23 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "P98",
+            "subjectOrBiosampleId": "Family 12 patient 17",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c121CtoT_MPV17_NM_002437v5",
+                "id": "MPV17_SV_Del_exons_3_8",
+                "label": "Del exons 3-8",
                 "geneContext": {
                   "valueId": "HGNC:7224",
                   "symbol": "MPV17"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_002437.5:c.121C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.27313059G>A"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_002428.1:p.(Arg41Trp)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 27313059,
-                  "ref": "G",
-                  "alt": "A"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
                   "id": "GENO:0000136",
                   "label": "homozygous"
@@ -150,14 +175,15 @@
         "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P6M"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-15T08:20:06.678905Z",
+    "created": "2025-11-15T08:20:06.681229Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -204,8 +230,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:33486010",
-        "description": "Mitochondrial DNA maintenance disorders in 102 patients from different parts of Russia: Mutational spectrum and phenotypes"
+        "id": "PMID:23714749",
+        "description": "Clinical, biochemical, cellular and molecular characterization of mitochondrial DNA depletion syndrome due to novel mutations in the MPV17 gene"
       }
     ]
   }
