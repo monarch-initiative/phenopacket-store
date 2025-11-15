@@ -1,7 +1,8 @@
 {
   "id": "PMID_14764528_Pedigree_of_FET",
   "subject": {
-    "id": "Pedigree of FET"
+    "id": "Pedigree of FET",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -19,7 +20,7 @@
   ],
   "interpretations": [
     {
-      "id": "Pedigree of FET",
+      "id": "DePvVE6cnSVFqD15yk9jabk5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -31,8 +32,10 @@
             "subjectOrBiosampleId": "Pedigree of FET",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VpasCrMvHDhfdJJSVntfiLpYO",
+                "id": "c1514GtoA_MPL_NM_005373v3",
                 "geneContext": {
                   "valueId": "HGNC:7217",
                   "symbol": "MPL"
@@ -45,12 +48,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.43349308G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005364.1:p.(Ser505Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "43349308",
+                  "pos": 43349308,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -75,55 +82,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-17T05:49:28.463304042Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T07:52:24.838374Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:14764528",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/14764528",
         "description": "Familial essential thrombocythemia associated with a dominant-positive activating mutation of the c-MPL gene, which encodes for the receptor for thrombopoietin"
       }
     ]
