@@ -1,10 +1,10 @@
 {
-  "id": "PMID_19949040_Patient_4",
+  "id": "PMID_19949040_Patient_5",
   "subject": {
-    "id": "Patient 4",
+    "id": "Patient 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P9Y"
       }
     },
     "sex": "FEMALE"
@@ -12,26 +12,37 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
+        "id": "HP:0003391",
+        "label": "Gowers sign"
       }
     },
     {
       "type": {
-        "id": "HP:0001611",
-        "label": "Hypernasal speech"
+        "id": "HP:0003547",
+        "label": "Shoulder girdle muscle weakness"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8Y"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008997",
+        "label": "Proximal upper limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000467",
+        "label": "Neck muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -47,42 +58,26 @@
     },
     {
       "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0030319",
         "label": "Weakness of facial musculature"
       }
     },
     {
       "type": {
-        "id": "HP:0003391",
-        "label": "Gowers sign"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003547",
-        "label": "Shoulder girdle muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008997",
-        "label": "Proximal muscle weakness in upper limbs"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000467",
-        "label": "Neck muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002093",
-        "label": "Respiratory insufficiency"
+        "id": "HP:0001611",
+        "label": "Hypernasal speech"
       },
       "excluded": true
     },
@@ -103,7 +98,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 4",
+      "id": "f0UVOFePLrIFdg7ba7lJKbqI",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -112,11 +107,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 4",
+            "subjectOrBiosampleId": "Patient 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VPulAFocwwlfDegQzSDFxLfQv",
+                "id": "c1031CtoG_MUSK_NM_005592v4",
                 "geneContext": {
                   "valueId": "HGNC:7525",
                   "symbol": "MUSK"
@@ -129,12 +126,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.110767930C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005583.1:p.(Pro344Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "110767930",
+                  "pos": 110767930,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -165,55 +166,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-08T06:03:56.851493835Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T09:19:50.503538Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:19949040",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/19949040",
         "description": "Refinement of the clinical phenotype in musk-related congenital myasthenic syndromes"
       }
     ]
