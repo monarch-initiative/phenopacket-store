@@ -1,10 +1,10 @@
 {
-  "id": "PMID_37734847_Patient_1",
+  "id": "PMID_37734847_Patient_2",
   "subject": {
-    "id": "Patient 1",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P50Y"
+        "iso8601duration": "P40Y"
       }
     },
     "sex": "FEMALE"
@@ -17,7 +17,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P45Y"
+          "iso8601duration": "P38Y"
         }
       }
     },
@@ -28,7 +28,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P12Y"
+          "iso8601duration": "P14Y"
         }
       }
     },
@@ -39,18 +39,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012511",
-        "label": "Temporal optic disc pallor"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P34Y"
         }
       }
     },
@@ -61,29 +50,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P22Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007663",
-        "label": "Reduced visual acuity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000572",
-        "label": "Visual loss"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P28Y"
+          "iso8601duration": "P19Y"
         }
       }
     },
@@ -92,11 +59,40 @@
         "id": "HP:0000648",
         "label": "Optic atrophy"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0012511",
+        "label": "Temporal optic disc pallor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P34Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000572",
+        "label": "Visual loss"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "7ZDNVxNyZVLuBBeVTxR1fwFM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,11 +101,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 1",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xohAdXjshUNPCvPXScqbDNyKq",
+                "id": "c772CtoT_MECR_NM_016011v5",
                 "geneContext": {
                   "valueId": "HGNC:19691",
                   "symbol": "MECR"
@@ -122,12 +120,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.29200574G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057095.4:p.(Arg258Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "29200574",
+                  "pos": 29200574,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -151,61 +153,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6Y"
+          "iso8601duration": "P18Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-10T04:33:54.398025989Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T08:26:34.240164Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37734847",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37734847",
         "description": "Recessive MECR pathogenic variants cause an LHON-like optic neuropathy"
       }
     ]

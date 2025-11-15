@@ -72,6 +72,13 @@
     },
     {
       "type": {
+        "id": "HP:0003191",
+        "label": "Cleft ala nasi"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000160",
         "label": "Narrow mouth"
       },
@@ -120,6 +127,13 @@
     },
     {
       "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000486",
         "label": "Strabismus"
       },
@@ -153,25 +167,11 @@
           "label": "Congenital onset"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0003191",
-        "label": "Cleft ala nasi"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000047",
-        "label": "Hypospadias"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "newborn male",
+      "id": "2T2veBeZw5DnnvIH2j99ugNU",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -183,8 +183,10 @@
             "subjectOrBiosampleId": "newborn male",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_eTpFtZRfsSkrtkDSXNpWeuRiH",
+                "id": "c2015GtoA_MYH3_NM_002470v4",
                 "geneContext": {
                   "valueId": "HGNC:7573",
                   "symbol": "MYH3"
@@ -197,12 +199,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.10641317C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002461.2:p.(Arg672His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "10641317",
+                  "pos": 10641317,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -233,55 +239,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-31T06:28:17.847887754Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T08:28:36.672918Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28584669",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28584669",
         "description": "Freeman-Sheldon Syndrome: First Molecularly Confirmed Case from Sub-Saharan Africa"
       }
     ]
