@@ -1,23 +1,37 @@
 {
   "id": "PMID_36256512_F10_II_1",
   "subject": {
-    "id": "F10-II:1 ",
+    "id": "F10-II:1",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P12M"
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P12M"
-        }
-      }
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      }
+    },
     {
       "type": {
         "id": "HP:0001252",
@@ -53,15 +67,31 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      }
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002169",
+        "label": "Clonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -95,48 +125,6 @@
     },
     {
       "type": {
-        "id": "HP:0003128",
-        "label": "Lactic acidosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001276",
-        "label": "Hypertonia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001348",
-        "label": "Brisk reflexes"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011449",
-        "label": "Knee clonus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011448",
-        "label": "Ankle clonus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001762",
         "label": "Talipes equinovarus"
       },
@@ -152,7 +140,7 @@
   ],
   "interpretations": [
     {
-      "id": "F10-II:1 ",
+      "id": "79F7XqGu5eNZak8nGsIDedUe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -161,11 +149,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F10-II:1 ",
+            "subjectOrBiosampleId": "F10-II:1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_umwWlfSAhhWeqdQHJoPUspywm",
+                "id": "c629GtoT_NFU1_NM_001002755v4",
                 "geneContext": {
                   "valueId": "HGNC:16287",
                   "symbol": "NFU1"
@@ -178,49 +168,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.69400455C>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": "69400455",
-                  "ref": "C",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "F10-II:1 ",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_tXaIVbYnVXbNfTUakBUsTaMQk",
-                "geneContext": {
-                  "valueId": "HGNC:16287",
-                  "symbol": "NFU1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001002755.4:c.398T>C"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.69415271A>G"
+                    "syntax": "hgvs.p",
+                    "value": "NP_001002755.1:p.(Cys210Phe)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "69415271",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 69400455,
+                  "ref": "C",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -248,55 +207,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-08T13:24:32.126676082Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T18:35:42.202858Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36256512",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36256512",
         "description": "Phenotypic continuum of NFU1-related disorders"
       }
     ]

@@ -1,11 +1,14 @@
 {
-  "id": "PMID_32747156_patient",
+  "id": "PMID_36256512_F4_II_6",
   "subject": {
-    "id": "patient",
+    "id": "F4-II:6",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y6M"
+        "iso8601duration": "P2Y6M"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "FEMALE"
   },
@@ -38,28 +41,63 @@
     },
     {
       "type": {
-        "id": "HP:0002505",
-        "label": "Loss of ambulation"
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010550",
+        "label": "Paraplegia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y11M"
+          "iso8601duration": "P1Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0034295",
-        "label": "Reduced cerebral white matter volume"
+        "id": "HP:0001276",
+        "label": "Hypertonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011449",
+        "label": "Knee clonus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0034295",
+        "label": "Reduced cerebral white matter volume"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002079",
         "label": "Hypoplasia of the corpus callosum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -72,8 +110,7 @@
       "type": {
         "id": "HP:0002280",
         "label": "Enlarged cisterna magna"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -99,7 +136,7 @@
   ],
   "interpretations": [
     {
-      "id": "TVKvQEOADJ7iAehUy6zkWOEE",
+      "id": "mMDEIBwHhg34I9bkbm91N289",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -108,13 +145,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "F4-II:6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c565GtoA_NFU1_NM_001002755v4",
+                "id": "c362TtoC_NFU1_NM_001002755v4",
                 "geneContext": {
                   "valueId": "HGNC:16287",
                   "symbol": "NFU1"
@@ -122,23 +159,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001002755.4:c.565G>A"
+                    "value": "NM_001002755.4:c.362T>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.69400519C>T"
+                    "value": "NC_000002.12:g.69419545A>G"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_001002755.1:p.(Gly189Arg)"
+                    "value": "NP_001002755.1:p.(Val121Ala)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": 69400519,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 69419545,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -160,13 +197,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y11M"
+          "iso8601duration": "P1Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-15T18:35:42.202944Z",
+    "created": "2025-11-15T18:35:42.202570Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -213,8 +250,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:32747156",
-        "description": "A genetic mimic of cerebral palsy: Homozygous NFU1 mutation with marked intrafamilial phenotypic variation"
+        "id": "PMID:36256512",
+        "description": "Phenotypic continuum of NFU1-related disorders"
       }
     ]
   }
