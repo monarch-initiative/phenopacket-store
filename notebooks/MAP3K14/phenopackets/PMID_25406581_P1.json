@@ -13,18 +13,7 @@
     {
       "type": {
         "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P10M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
+        "label": "Decreased circulating IgG concentration"
       },
       "onset": {
         "age": {
@@ -45,20 +34,52 @@
     },
     {
       "type": {
-        "id": "HP:0010976",
-        "label": "B lymphocytopenia"
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10M"
+        }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0010976",
+        "label": "Decreased total B cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005404",
+        "label": "Increased total B cell count"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0040218",
-        "label": "Reduced natural killer cell count"
+        "label": "Reduced total natural killer cell count"
       }
     },
     {
       "type": {
+        "id": "HP:0100828",
+        "label": "Increased total T cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0030388",
-        "label": "Decreased proportion of class-switched memory B cells"
+        "label": "Decreased class-switched memory B cell proportion"
       }
     },
     {
@@ -78,27 +99,6 @@
         "id": "HP:0020087",
         "label": "BCGosis"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0005404",
-        "label": "Increased B cell count"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0100828",
-        "label": "Increased T cell count"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005403",
-        "label": "T lymphocytopenia"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -124,7 +124,7 @@
   ],
   "interpretations": [
     {
-      "id": "P1",
+      "id": "z5im5RgFNFopuq8mswcYa1LY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,8 +136,10 @@
             "subjectOrBiosampleId": "P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_faDccSNokQxtxFHLglsKPxEhd",
+                "id": "c1694CtoG_MAP3K14_NM_003954v5",
                 "geneContext": {
                   "valueId": "HGNC:6853",
                   "symbol": "MAP3K14"
@@ -150,12 +152,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.45271185G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003945.2:p.(Pro565Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "45271185",
+                  "pos": 45271185,
                   "ref": "G",
                   "alt": "C"
                 },
@@ -185,55 +191,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-23T19:15:03.508009910Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T07:49:25.264665Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25406581",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25406581",
         "description": "Biallelic loss-of-function mutation in NIK causes a primary immunodeficiency with multifaceted aberrant lymphoid immunity"
       }
     ]

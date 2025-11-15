@@ -4,12 +4,83 @@
     "id": "proband",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P8Y"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010976",
+        "label": "Decreased total B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005404",
+        "label": "Increased total B cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced total natural killer cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100828",
+        "label": "Increased total T cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0500271",
+        "label": "Decreased gamma-delta T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004429",
+        "label": "Recurrent viral infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002718",
+        "label": "Recurrent bacterial infections"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0020087",
@@ -31,82 +102,11 @@
           "iso8601duration": "P2Y"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002850",
-        "label": "Decreased circulating total IgM"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005404",
-        "label": "Increased B cell count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100828",
-        "label": "Increased T cell count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0500271",
-        "label": "Decreased proportion of gamma-delta T cells"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010976",
-        "label": "B lymphocytopenia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0040218",
-        "label": "Reduced natural killer cell count"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005403",
-        "label": "T lymphocytopenia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004429",
-        "label": "Recurrent viral infections"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002718",
-        "label": "Recurrent bacterial infections"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "u90r0knnOB0Kb7cdGVrxADZC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -118,8 +118,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cjAUwbCVawksdCqzCTzJpUUZS",
+                "id": "c1033GtoA_MAP3K14_NM_003954v5",
                 "geneContext": {
                   "valueId": "HGNC:6853",
                   "symbol": "MAP3K14"
@@ -132,12 +134,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.45286550C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003945.2:p.(Val345Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "45286550",
+                  "pos": 45286550,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -167,55 +173,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-23T19:15:03.542251110Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-15T07:49:25.264717Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29230214",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29230214",
         "description": "Exome Sequencing Identifies a Novel BrowZine Journal Cover MAP3K14 Mutation in Recessive Atypical Combined Immunodeficiency"
       }
     ]
