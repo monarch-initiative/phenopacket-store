@@ -1,7 +1,7 @@
 {
-  "id": "PMID_23566664_nan",
+  "id": "PMID_23566664_Case_report",
   "subject": {
-    "id": "nan",
+    "id": "Case report",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P57Y"
@@ -40,6 +40,28 @@
       "onset": {
         "age": {
           "iso8601duration": "P57Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003419",
+        "label": "Low back pain"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002953",
+        "label": "Vertebral compression fracture"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P56Y"
         }
       }
     },
@@ -89,28 +111,6 @@
     },
     {
       "type": {
-        "id": "HP:0003419",
-        "label": "Low back pain"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P56Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002953",
-        "label": "Vertebral compression fracture"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P56Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000365",
         "label": "Hearing impairment"
       },
@@ -119,7 +119,7 @@
   ],
   "interpretations": [
     {
-      "id": "nan",
+      "id": "wj6kCwuplhMym5KVDyHCG41Y",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -128,11 +128,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "nan",
+            "subjectOrBiosampleId": "Case report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ANlQYVemxFGHvzwzpRKsOPzse",
+                "id": "c6622CtoT_NOTCH2_NM_024408v4",
                 "geneContext": {
                   "valueId": "HGNC:7882",
                   "symbol": "NOTCH2"
@@ -145,12 +147,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.119916100G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_077719.2:p.(Gln2208Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "119916100",
+                  "pos": 119916100,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -180,55 +186,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-14T18:24:02.138962030Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T13:48:01.894116Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23566664",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23566664",
         "description": "A mutation in NOTCH2 gene in a Chinese patient with Hajdu-Cheney syndrome"
       }
     ]
