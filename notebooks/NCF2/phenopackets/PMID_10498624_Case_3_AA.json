@@ -1,30 +1,31 @@
 {
-  "id": "PMID_10498624_Case_5_SG",
+  "id": "PMID_10498624_Case_3_AA",
   "subject": {
-    "id": "Case 5 SG",
+    "id": "Case 3 AA",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P15Y"
+        "iso8601duration": "P2Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003203",
+        "label": "Decreased neutrophil oxidative burst"
+      }
+    },
     {
       "type": {
         "id": "HP:0002722",
         "label": "Recurrent abscess formation"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003203",
-        "label": "Impaired oxidative burst"
       }
     },
     {
@@ -57,6 +58,50 @@
     },
     {
       "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002586",
+        "label": "Peritonitis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100721",
+        "label": "Mediastinal lymphadenopathy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033608",
+        "label": "Pulmonary nodule"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0005406",
         "label": "Recurrent bacterial skin infections"
       },
@@ -79,7 +124,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case 5 SG",
+      "id": "dGK9I5KERLCNQddAt40zDvBq",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,11 +133,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Case 5 SG",
+            "subjectOrBiosampleId": "Case 3 AA",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_CGgmEQVDmegGvBxQAKESVObKq",
+                "id": "c1171_1175del_NCF2_NM_000433v4",
                 "geneContext": {
                   "valueId": "HGNC:7661",
                   "symbol": "NCF2"
@@ -100,59 +147,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000433.4:c.366+1G>A"
+                    "value": "NM_000433.4:c.1171_1175del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.183577598C>T"
+                    "value": "NC_000001.11:g.183563439_183563443del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000424.2:p.(Lys391GlufsTer9)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "183577598",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Case 5 SG",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_DhSaVLiRqBFjgSqFMyHNntQej",
-                "geneContext": {
-                  "valueId": "HGNC:7661",
-                  "symbol": "NCF2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000433.4:c.728del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.183567331del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr1",
-                  "pos": "183567330",
-                  "ref": "CT",
+                  "pos": 183563436,
+                  "ref": "CAGCTT",
                   "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -169,61 +185,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3Y"
+          "iso8601duration": "P2M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-30T07:53:43.960763931Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T10:38:56.640257Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:10498624",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/10498624",
         "description": "Molecular characterization of autosomal recessive chronic granulomatous disease caused by a defect of the nicotinamide adenine dinucleotide phosphate (reduced form) oxidase component p67-phox"
       }
     ]

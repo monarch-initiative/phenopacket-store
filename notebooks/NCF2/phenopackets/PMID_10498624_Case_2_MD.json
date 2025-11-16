@@ -1,75 +1,71 @@
 {
-  "id": "PMID_7795241_patient_KA",
+  "id": "PMID_10498624_Case_2_MD",
   "subject": {
-    "id": "patient KA",
+    "id": "Case 2 MD",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P19Y"
+        "iso8601duration": "P10Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003203",
+        "label": "Decreased neutrophil oxidative burst"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002037",
+        "label": "Inflammation of the large intestine"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002722",
+        "label": "Recurrent abscess formation"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
     {
       "type": {
         "id": "HP:0009789",
         "label": "Perianal abscess"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0100523",
         "label": "Liver abscess"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0025044",
         "label": "Lung abscess"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002754",
         "label": "Osteomyelitis"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002719",
-        "label": "Recurrent infections"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003203",
-        "label": "Impaired oxidative burst"
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -109,7 +105,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient KA",
+      "id": "xMCEAFZfKAv73CtnezUWF2T0",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -118,11 +114,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient KA",
+            "subjectOrBiosampleId": "Case 2 MD",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_OJHrPcOfctjIOkbtTyHzgBphQ",
+                "id": "c1171_1175del_NCF2_NM_000433v4",
                 "geneContext": {
                   "valueId": "HGNC:7661",
                   "symbol": "NCF2"
@@ -130,19 +128,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000433.4:c.399_400dup"
+                    "value": "NM_000433.4:c.1171_1175del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.183574589_183574590dup"
+                    "value": "NC_000001.11:g.183563439_183563443del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000424.2:p.(Lys391GlufsTer9)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "183574587",
-                  "ref": "T",
-                  "alt": "TTC"
+                  "pos": 183563436,
+                  "ref": "CAGCTT",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -163,63 +165,63 @@
         "label": "Chronic granulomatous disease 2, autosomal recessive"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-30T07:53:43.955261945Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T10:38:56.640219Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:7795241",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/7795241",
-        "description": "AG dinucleotide insertion in a patient with chronic granulomatous disease lacking cytosolic 67-kD protein"
+        "id": "PMID:10498624",
+        "description": "Molecular characterization of autosomal recessive chronic granulomatous disease caused by a defect of the nicotinamide adenine dinucleotide phosphate (reduced form) oxidase component p67-phox"
       }
     ]
   }
