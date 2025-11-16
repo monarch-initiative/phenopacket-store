@@ -1,30 +1,10 @@
 {
-  "id": "PMID_37598857_Family_11_individual_II_1",
+  "id": "PMID_37598857_Family_6_individual",
   "subject": {
-    "id": "Family 11 individual II-1",
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
+    "id": "Family 6 individual",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P70Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000822",
-        "label": "Hypertension"
-      }
-    },
     {
       "type": {
         "id": "HP:0000105",
@@ -41,15 +21,32 @@
     },
     {
       "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004322",
         "label": "Short stature"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 11 individual II-1",
+      "id": "10VEo5rd164D3XkJxAbOPRJa",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -58,11 +55,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 11 individual II-1",
+            "subjectOrBiosampleId": "Family 6 individual",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ALPjtghStpTsTnKpLCzXiwIzU",
+                "id": "c133CtoT_NEK8_NM_178170v3",
                 "geneContext": {
                   "valueId": "HGNC:13387",
                   "symbol": "NEK8"
@@ -70,19 +69,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_178170.3:c.450C>G"
+                    "value": "NM_178170.3:c.133C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.28734968C>G"
+                    "value": "NC_000017.11:g.28734068C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_835464.1:p.(Arg45Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "28734968",
+                  "pos": 28734068,
                   "ref": "C",
-                  "alt": "G"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -104,61 +107,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P70Y"
+          "iso8601duration": "P9Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-27T09:44:46.085473060Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T10:41:25.875150Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37598857",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37598857",
         "description": "Certain heterozygous variants in the kinase domain of the serine/threonine kinase NEK8 can cause an autosomal dominant form of polycystic kidney disease"
       }
     ]
