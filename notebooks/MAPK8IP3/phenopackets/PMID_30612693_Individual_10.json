@@ -1,23 +1,21 @@
 {
-  "id": "PMID_30612693_Individual_12",
+  "id": "PMID_30612693_Individual_10",
   "subject": {
-    "id": "Individual 12",
+    "id": "Individual 10",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4Y6M"
+        "iso8601duration": "P4Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0100021",
         "label": "Cerebral palsy"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -27,45 +25,21 @@
     },
     {
       "type": {
-        "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006970",
-        "label": "Periventricular leukomalacia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001264",
-        "label": "Spastic diplegia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006989",
-        "label": "Dysplastic corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0500041",
-        "label": "Myopic astigmatism"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       },
       "excluded": true
     },
     {
       "type": {
         "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
+        "label": "Moderate intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010864",
+        "label": "Severe intellectual disability"
       },
       "excluded": true
     },
@@ -85,8 +59,8 @@
     },
     {
       "type": {
-        "id": "HP:0100704",
-        "label": "Cerebral visual impairment"
+        "id": "HP:0006970",
+        "label": "Periventricular leukomalacia"
       },
       "excluded": true
     },
@@ -109,19 +83,16 @@
         "id": "HP:0001250",
         "label": "Seizure"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0012650",
-        "label": "Perisylvian polymicrogyria"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001258",
-        "label": "Spastic paraplegia"
+        "id": "HP:0001257",
+        "label": "Spasticity"
       },
       "excluded": true
     },
@@ -178,8 +149,7 @@
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -206,6 +176,20 @@
       "type": {
         "id": "HP:0001272",
         "label": "Cerebellar atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002126",
+        "label": "Polymicrogyria"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006989",
+        "label": "Dysplastic corpus callosum"
       },
       "excluded": true
     },
@@ -248,6 +232,13 @@
       "type": {
         "id": "HP:0000365",
         "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0500041",
+        "label": "Myopic astigmatism"
       },
       "excluded": true
     },
@@ -394,7 +385,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual 12",
+      "id": "d8QTeaN3Tc1AP4ZDpwTQ7YKY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -403,11 +394,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 12",
+            "subjectOrBiosampleId": "Individual 10",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xlMOlzYBYqotVMTTTroIslGzD",
+                "id": "c2985CtoG_MAPK8IP3_NM_001318852v2",
                 "geneContext": {
                   "valueId": "HGNC:6884",
                   "symbol": "MAPK8IP3"
@@ -415,19 +408,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001318852.2:c.3439C>T"
+                    "value": "NM_001318852.2:c.2985C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.1767834C>T"
+                    "value": "NC_000016.10:g.1766768C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001305781.1:p.(His995Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "1767834",
+                  "pos": 1766768,
                   "ref": "C",
-                  "alt": "T"
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -450,55 +447,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-12T13:04:59.003559827Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T08:16:38.087518Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30612693",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30612693",
         "description": "De Novo Variants in MAPK8IP3 Cause Intellectual Disability with Variable Brain Anomalies"
       }
     ]

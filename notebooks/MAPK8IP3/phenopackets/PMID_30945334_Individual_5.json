@@ -1,23 +1,28 @@
 {
-  "id": "PMID_30945334_Individual_3",
+  "id": "PMID_30945334_Individual_5",
   "subject": {
-    "id": "Individual 3",
+    "id": "Individual 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P16Y"
+        "iso8601duration": "P5Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002540",
         "label": "Inability to walk"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -29,6 +34,12 @@
       "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
       }
     },
     {
@@ -47,12 +58,19 @@
       "type": {
         "id": "HP:0001250",
         "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
       }
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
       }
     },
     {
@@ -63,68 +81,9 @@
     },
     {
       "type": {
-        "id": "HP:0000426",
-        "label": "Prominent nasal bridge"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000219",
-        "label": "Thin upper lip vermilion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001513",
-        "label": "Obesity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100021",
-        "label": "Cerebral palsy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000729",
-        "label": "Autistic behavior"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001344",
-        "label": "Absent speech"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002188",
-        "label": "Delayed CNS myelination"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000322",
         "label": "Short philtrum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -137,27 +96,42 @@
       "type": {
         "id": "HP:0000574",
         "label": "Thick eyebrow"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000582",
         "label": "Upslanted palpebral fissure"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000463",
         "label": "Anteverted nares"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000426",
+        "label": "Prominent nasal bridge"
+      }
     },
     {
       "type": {
         "id": "HP:0000311",
         "label": "Round face"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
       },
       "excluded": true
     },
@@ -166,7 +140,25 @@
         "id": "HP:0001252",
         "label": "Hypotonia"
       },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
     },
     {
       "type": {
@@ -179,13 +171,19 @@
       "type": {
         "id": "HP:0032988",
         "label": "Persistent head lag"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000826",
+        "label": "Precocious puberty"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 3",
+      "id": "G17r21tRNAtSs2cJtUF9i5dY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -194,11 +192,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 3",
+            "subjectOrBiosampleId": "Individual 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IlHyjHhcJzjrnIzZjgrywkLpy",
+                "id": "c3439CtoT_MAPK8IP3_NM_001318852v2",
                 "geneContext": {
                   "valueId": "HGNC:6884",
                   "symbol": "MAPK8IP3"
@@ -206,17 +206,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001318852.2:c.1735C>T"
+                    "value": "NM_001318852.2:c.3439C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.1762843C>T"
+                    "value": "NC_000016.10:g.1767834C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001305781.1:p.(Arg1147Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "1762843",
+                  "pos": 1767834,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -247,55 +251,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-12T13:04:58.989593029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T08:16:38.083789Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30945334",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30945334",
         "description": "Recurrent de novo MAPK8IP3 variants cause neurological phenotypes"
       }
     ]

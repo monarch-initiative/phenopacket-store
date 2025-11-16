@@ -7,12 +7,15 @@
         "iso8601duration": "P10Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      }
+    },
     {
       "type": {
         "id": "HP:0001263",
@@ -103,17 +106,6 @@
     },
     {
       "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y0M0D"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002333",
         "label": "Motor deterioration"
       },
@@ -159,12 +151,6 @@
     },
     {
       "type": {
-        "id": "HP:0100021",
-        "label": "Cerebral palsy"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001508",
         "label": "Failure to thrive"
       }
@@ -195,6 +181,17 @@
     },
     {
       "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y0M0D"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0025336",
         "label": "Delayed ability to sit"
       }
@@ -214,7 +211,7 @@
   ],
   "interpretations": [
     {
-      "id": "10-yr-old boy",
+      "id": "zo0T1CzbOErSKiYZIejtVhdk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -226,8 +223,10 @@
             "subjectOrBiosampleId": "10-yr-old boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IlHyjHhcJzjrnIzZjgrywkLpy",
+                "id": "c1735CtoT_MAPK8IP3_NM_001318852v2",
                 "geneContext": {
                   "valueId": "HGNC:6884",
                   "symbol": "MAPK8IP3"
@@ -240,12 +239,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.1762843C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001305781.1:p.(Arg579Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "1762843",
+                  "pos": 1762843,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -276,55 +279,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-12T13:04:58.987631082Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-16T08:16:38.082263Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37684057",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37684057",
         "description": "De novo TRPM3 missense variant associated with neurodevelopmental delay and manifestations of cerebral palsy"
       }
     ]
