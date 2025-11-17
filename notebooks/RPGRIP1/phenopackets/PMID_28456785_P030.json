@@ -7,39 +7,13 @@
         "iso8601duration": "P36Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0008043",
-        "label": "Retinal arteriolar constriction"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P36Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032122",
-        "label": "Very low visual acuity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000512",
-        "label": "Abnormal electroretinogram"
       }
     },
     {
@@ -55,11 +29,34 @@
         "label": "Global developmental delay"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032122",
+        "label": "Very low visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000512",
+        "label": "Abnormal electroretinogram"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008043",
+        "label": "Retinal arteriolar constriction"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P36Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P030",
+      "id": "cnlBLyHfINswnRpQQZT8t2va",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -71,8 +68,10 @@
             "subjectOrBiosampleId": "P030",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_TprARKrnErTpqFRTSGzvzOCdN",
+                "id": "RPGRIP1_SV_Exon_1_22_deletion",
                 "label": "Exon 1-22 deletion",
                 "geneContext": {
                   "valueId": "HGNC:13436",
@@ -80,8 +79,8 @@
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000136",
@@ -109,55 +108,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-02T18:46:58.095520019Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T10:52:36.982446Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28456785",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28456785",
         "description": "Targeted next generation sequencing identified novel mutations in RPGRIP1 associated with both retinitis pigmentosa and Leber's congenital amaurosis in unrelated Chinese patients"
       }
     ]

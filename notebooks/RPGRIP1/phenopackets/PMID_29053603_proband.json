@@ -7,9 +7,7 @@
         "iso8601duration": "P8Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    }
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -39,7 +37,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "jjunEr9lqJ7zGA1Cpz2xkUOL",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -51,8 +49,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qUkPyUJGLKwsTcmQEevfjxeim",
+                "id": "c2225_2226del_RPGRIP1_NM_020366v4",
                 "geneContext": {
                   "valueId": "HGNC:13436",
                   "symbol": "RPGRIP1"
@@ -60,52 +60,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_020366.4:c.86-3T>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.21294674T>G"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": "21294674",
-                  "ref": "T",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "proband",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_LmZVHXTbTpqqGdPiVqocJMUyI",
-                "geneContext": {
-                  "valueId": "HGNC:13436",
-                  "symbol": "RPGRIP1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_020366.4:c.2227_2228del"
+                    "value": "NM_020366.4:c.2225_2226del"
                   },
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.21325243_21325244del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065099.3:p.(Glu743ArgfsTer24)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "21325240",
+                  "pos": 21325240,
                   "ref": "GGA",
                   "alt": "G"
                 },
@@ -135,55 +104,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-02T18:46:58.096149921Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T10:52:36.982547Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29053603",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29053603",
         "description": "Clinical and Genetic Evaluation of a Cohort of Pediatric Patients with Severe Inherited Retinal Dystrophies"
       }
     ]
