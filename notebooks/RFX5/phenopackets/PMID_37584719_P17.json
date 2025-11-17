@@ -7,9 +7,6 @@
         "iso8601duration": "P12Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -39,8 +36,15 @@
     },
     {
       "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0010976",
-        "label": "B lymphocytopenia"
+        "label": "Decreased total B cell count"
       }
     },
     {
@@ -69,19 +73,6 @@
     },
     {
       "type": {
-        "id": "HP:0031390",
-        "label": "Reduced MHC II surface expression"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005403",
-        "label": "T lymphocytopenia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0004315",
         "label": "Decreased circulating IgG concentration"
       },
@@ -100,11 +91,17 @@
         "label": "Decreased circulating IgA concentration"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031390",
+        "label": "Reduced MHC II cell surface expression"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P17",
+      "id": "nWcMS5osmieidN1iZZP59Ujw",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,8 +113,10 @@
             "subjectOrBiosampleId": "P17",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ndNXhMZUVZdlkrCMLAZVrjLtK",
+                "id": "c433GtoC_RFX5_NM_001025603v2",
                 "geneContext": {
                   "valueId": "HGNC:9986",
                   "symbol": "RFX5"
@@ -130,12 +129,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.151344457C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001020774.1:p.(Asp145His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "151344457",
+                  "pos": 151344457,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -165,55 +168,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-19T08:09:54.403500080Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T17:09:35.863119Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37584719",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37584719",
         "description": "Clinical, Immunological, and Genetic Findings in Iranian Patients with MHC-II Deficiency: Confirmation of c.162delG RFXANK Founder Mutation in the Iranian Population"
       }
     ]
