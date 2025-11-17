@@ -7,9 +7,7 @@
         "iso8601duration": "P1Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    }
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -58,34 +56,23 @@
     },
     {
       "type": {
-        "id": "HP:0008151",
-        "label": "Prolonged prothrombin time"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002572",
-        "label": "Episodic vomiting"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0006554",
         "label": "Acute hepatic failure"
       },
       "onset": {
         "age": {
           "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008151",
+        "label": "Prolonged prothrombin time"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
         }
       }
     },
@@ -102,12 +89,12 @@
     },
     {
       "type": {
-        "id": "HP:0033725",
-        "label": "Thin corpus callosum"
+        "id": "HP:0002572",
+        "label": "Episodic vomiting"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6M"
+          "iso8601duration": "P5M"
         }
       }
     },
@@ -173,6 +160,30 @@
     },
     {
       "type": {
+        "id": "HP:0000938",
+        "label": "Osteopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000883",
+        "label": "Thin ribs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000248",
+        "label": "Brachycephaly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000767",
         "label": "Pectus excavatum"
       },
@@ -197,32 +208,19 @@
     },
     {
       "type": {
-        "id": "HP:0000938",
-        "label": "Osteopenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000883",
-        "label": "Thin ribs"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000248",
-        "label": "Brachycephaly"
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "tSezEF8hyXNqZFMakDnwM4nj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -234,43 +232,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_mmJWBdCPvKSMEYJWwIxZiInnq",
-                "geneContext": {
-                  "valueId": "HGNC:15625",
-                  "symbol": "NBAS"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_015909.4:c.1339G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.15475689C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": "15475689",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "patient",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_XfgcSCwSzrYneTwWovdcaNEIC",
+                "id": "c5454_5455del_NBAS_NM_015909v4",
                 "geneContext": {
                   "valueId": "HGNC:15625",
                   "symbol": "NBAS"
@@ -283,12 +248,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.15275754_15275755del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056993.2:p.(Ser1819LysfsTer16)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "15275752",
+                  "pos": 15275752,
                   "ref": "GAA",
                   "alt": "G"
                 },
@@ -319,55 +288,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-30T05:16:55.137881040Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:12:47.015669Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29575310",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29575310",
         "description": "Severe form of neuroblastoma amplified sequence deficiency in an infant with recurrent acute liver failure"
       }
     ]

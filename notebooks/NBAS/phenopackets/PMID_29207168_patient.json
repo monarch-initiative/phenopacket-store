@@ -7,9 +7,6 @@
         "iso8601duration": "P4Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -28,7 +25,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "V8UBl4ovsDyJCACLAR5ns8K1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -40,8 +37,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_nIaLULtssxjUVWHpXiNRWIGCh",
+                "id": "c3596GtoA_NBAS_NM_015909v4",
                 "geneContext": {
                   "valueId": "HGNC:15625",
                   "symbol": "NBAS"
@@ -54,47 +53,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.15374715C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": "15374715",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "patient",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_uzGTbUuYSdmTmFQwVIMbgbLKh",
-                "geneContext": {
-                  "valueId": "HGNC:15625",
-                  "symbol": "NBAS"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_015909.4:c.209+1G>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.15556782C>T"
+                    "syntax": "hgvs.p",
+                    "value": "NP_056993.2:p.(Cys1199Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "15556782",
+                  "pos": 15374715,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -125,56 +93,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-30T05:16:55.143522024Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:12:47.016134Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29207168",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29207168",
-        "description": "Targeted next\u2011generation sequencing reveals two novel mutations of NBAS in a patient with infantile liver failure syndrome\u20112"
+        "description": "Targeted next‑generation sequencing reveals two novel mutations of NBAS in a patient with infantile liver failure syndrome‑2"
       }
     ]
   }

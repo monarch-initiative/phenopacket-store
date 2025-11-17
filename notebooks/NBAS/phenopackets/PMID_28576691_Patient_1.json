@@ -1,13 +1,16 @@
 {
-  "id": "PMID_31889758_child",
+  "id": "PMID_28576691_Patient_1",
   "subject": {
-    "id": "child",
+    "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P12Y"
+        "iso8601duration": "P3Y11M"
       }
     },
-    "sex": "MALE"
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -24,26 +27,29 @@
     },
     {
       "type": {
-        "id": "HP:0030948",
-        "label": "Elevated gamma-glutamyltransferase level"
-      }
+        "id": "HP:0003155",
+        "label": "Elevated circulating alkaline phosphatase concentration"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0003155",
-        "label": "Elevated circulating alkaline phosphatase concentration"
-      }
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0006554",
         "label": "Acute hepatic failure"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
       }
     },
     {
@@ -54,6 +60,37 @@
     },
     {
       "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001518",
+        "label": "Small for gestational age"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002572",
+        "label": "Episodic vomiting"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004429",
+        "label": "Recurrent viral infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0004315",
         "label": "Decreased circulating IgG concentration"
       },
@@ -61,57 +98,8 @@
     },
     {
       "type": {
-        "id": "HP:0000325",
-        "label": "Triangular face"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000490",
-        "label": "Deeply set eye"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000520",
-        "label": "Proptosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000307",
-        "label": "Pointed chin"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000341",
-        "label": "Narrow forehead"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002714",
-        "label": "Downturned corners of mouth"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000494",
-        "label": "Downslanted palpebral fissures"
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
       },
       "excluded": true
     },
@@ -131,49 +119,16 @@
     },
     {
       "type": {
-        "id": "HP:0000506",
-        "label": "Telecanthus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000527",
-        "label": "Long eyelashes"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000278",
-        "label": "Retrognathia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000212",
-        "label": "Gingival overgrowth"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000470",
-        "label": "Short neck"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P12Y"
-        }
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002756",
+        "label": "Pathologic fracture"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -188,11 +143,17 @@
         "label": "Intellectual disability"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003758",
+        "label": "Reduced subcutaneous adipose tissue"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "55BCADZHeC09hlLerG9jcC1A",
+      "id": "8X3FArTzuDGvWaeBmgmaEd1Y",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -201,13 +162,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "child",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c761GtoA_NBAS_NM_015909v4",
+                "id": "c680AtoC_NBAS_NM_015909v4",
                 "geneContext": {
                   "valueId": "HGNC:15625",
                   "symbol": "NBAS"
@@ -215,28 +176,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_015909.4:c.761G>A"
+                    "value": "NM_015909.4:c.680A>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.15511336C>T"
+                    "value": "NC_000002.12:g.15534609T>G"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_056993.2:p.(Gly254Asp)"
+                    "value": "NP_056993.2:p.(His227Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": 15511336,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 15534609,
+                  "ref": "T",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -252,15 +213,14 @@
         "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+        "age": {
+          "iso8601duration": "P2Y9M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-17T06:12:47.013520Z",
+    "created": "2025-11-17T06:12:47.013355Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -307,8 +267,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:31889758",
-        "description": "Mutation in the Neuroblastoma Amplified Sequence Gene as a Cause of Recurrent Acute Liver Failure, Acute Kidney Injury, and Status Epilepticus"
+        "id": "PMID:28576691",
+        "description": "Recurrent elevated liver transaminases and acute liver failure in two siblings with novel bi-allelic mutations of NBAS"
       }
     ]
   }
