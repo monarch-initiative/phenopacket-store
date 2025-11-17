@@ -1,47 +1,54 @@
 {
-  "id": "PMID_22031302_Mik5",
+  "id": "PMID_34641913_Case_presentation",
   "subject": {
-    "id": "Mik5",
-    "sex": "UNKNOWN_SEX"
+    "id": "Case presentation",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
       }
     },
     {
       "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
+        "id": "HP:0000733",
+        "label": "Motor stereotypy"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
+        "id": "HP:0002019",
+        "label": "Constipation"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "fKWwzBAyYUSEWADO4Oh3arI2",
+      "id": "sOUlpmfT0r84vp1hGI64LOJU",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -50,23 +57,39 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Mik5",
+            "subjectOrBiosampleId": "Case presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "CNTNAP2_SV_246_kb_deletion_in_7q35",
-                "label": "246 kb deletion in 7q35",
+                "id": "c2752CtoT_CNTNAP2_NM_014141v6",
                 "geneContext": {
                   "valueId": "HGNC:13830",
                   "symbol": "CNTNAP2"
                 },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000183",
-                  "label": "chromosome_structure_variation"
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014141.6:c.2752C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.148147688C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_054860.1:p.(Leu918Phe)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 148147688,
+                  "ref": "C",
+                  "alt": "T"
                 },
+                "moleculeContext": "genomic",
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -83,11 +106,16 @@
       "term": {
         "id": "OMIM:610042",
         "label": "Pitt-Hopkins like syndrome 1"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-17T06:29:03.408600Z",
+    "created": "2025-11-17T06:29:03.409005Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -134,8 +162,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:22031302",
-        "description": "Clinically relevant single gene or intragenic deletions encompassing critical neurodevelopmental genes in patients with developmental delay, mental retardation, and/or autism spectrum disorders"
+        "id": "PMID:34641913",
+        "description": "Hyperkinetic stereotyped movements in a boy with biallelic CNTNAP2 variants"
       }
     ]
   }

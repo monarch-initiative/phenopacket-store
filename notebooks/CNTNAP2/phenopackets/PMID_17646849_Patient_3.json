@@ -1,8 +1,13 @@
 {
-  "id": "PMID_22031302_Mik5",
+  "id": "PMID_17646849_Patient_3",
   "subject": {
-    "id": "Mik5",
-    "sex": "UNKNOWN_SEX"
+    "id": "Patient 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P35Y"
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -16,18 +21,13 @@
       "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000750",
         "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
       },
       "excluded": true
     },
@@ -36,12 +36,22 @@
         "id": "HP:0001250",
         "label": "Seizure"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100753",
+        "label": "Schizophrenia"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "fKWwzBAyYUSEWADO4Oh3arI2",
+      "id": "dKvFb139DXwN8U0k2FAJkiI5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -50,14 +60,14 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Mik5",
+            "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "CNTNAP2_SV_246_kb_deletion_in_7q35",
-                "label": "246 kb deletion in 7q35",
+                "id": "CNTNAP2_SV_220_kb_deletion",
+                "label": "220 kb deletion",
                 "geneContext": {
                   "valueId": "HGNC:13830",
                   "symbol": "CNTNAP2"
@@ -83,11 +93,16 @@
       "term": {
         "id": "OMIM:610042",
         "label": "Pitt-Hopkins like syndrome 1"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-17T06:29:03.408600Z",
+    "created": "2025-11-17T06:29:03.408449Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -134,8 +149,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:22031302",
-        "description": "Clinically relevant single gene or intragenic deletions encompassing critical neurodevelopmental genes in patients with developmental delay, mental retardation, and/or autism spectrum disorders"
+        "id": "PMID:17646849",
+        "description": "CNTNAP2 gene dosage variation is associated with schizophrenia and epilepsy"
       }
     ]
   }

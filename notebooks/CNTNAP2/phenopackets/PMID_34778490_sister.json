@@ -7,23 +7,9 @@
         "iso8601duration": "P3Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0032661",
-        "label": "Generalized convulsive status epilepticus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y11M"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0002194",
@@ -34,24 +20,6 @@
       "type": {
         "id": "HP:0002353",
         "label": "EEG abnormality"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
       }
     },
     {
@@ -77,15 +45,44 @@
     },
     {
       "type": {
-        "id": "HP:0032752",
-        "label": "Focal impaired awareness emotional seizure with fear/anxiety/panic"
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032661",
+        "label": "Generalized convulsive status epilepticus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y11M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "sister",
+      "id": "DlEnRSbgIFodgArRm61aOTQl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -97,43 +94,10 @@
             "subjectOrBiosampleId": "sister",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_brJYaLRCEbxkMmBhlBCUoIvdK",
-                "geneContext": {
-                  "valueId": "HGNC:13830",
-                  "symbol": "CNTNAP2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_014141.6:c.1977_1989del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000007.14:g.147639185_147639197del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr7",
-                  "pos": "147639181",
-                  "ref": "ACTCAGTGACACAG",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "sister",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_WVflOzCziJmJdNWTsCRFtqqHW",
+                "id": "CNTNAP2_SV_deletion_of_exon_4",
                 "label": "deletion of exon 4",
                 "geneContext": {
                   "valueId": "HGNC:13830",
@@ -141,8 +105,8 @@
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000135",
@@ -170,55 +134,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-19T05:40:21.119803905Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:29:03.408715Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34778490",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34778490",
         "description": "Pitt Hopkins-Like Syndrome 1 with Novel CNTNAP2 Mutation in Siblings"
       }
     ]

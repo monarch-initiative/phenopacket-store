@@ -7,9 +7,6 @@
         "iso8601duration": "P2Y8M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -29,30 +26,6 @@
       "type": {
         "id": "HP:0000750",
         "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000218",
-        "label": "High palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000691",
-        "label": "Microdontia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000582",
-        "label": "Upslanted palpebral fissure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011220",
-        "label": "Prominent forehead"
       }
     },
     {
@@ -117,6 +90,18 @@
         "label": "Large earlobe"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000691",
+        "label": "Microdontia"
+      }
     },
     {
       "type": {
@@ -197,6 +182,18 @@
     },
     {
       "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011220",
+        "label": "Prominent forehead"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0010804",
         "label": "Tented upper lip vermilion"
       },
@@ -205,7 +202,7 @@
   ],
   "interpretations": [
     {
-      "id": "C5",
+      "id": "NHDpPaEYn5tUYO9CxT62bRV3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -217,8 +214,10 @@
             "subjectOrBiosampleId": "C5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ywgrbYrgpmtereBWZrqzUtbTU",
+                "id": "CNTNAP2_SV_chr7__146_079_333_146_194_785_x1",
                 "label": "chr7:(146.079.333-146.194.785)x1",
                 "geneContext": {
                   "valueId": "HGNC:13830",
@@ -226,8 +225,8 @@
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000135",
@@ -249,55 +248,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-19T05:40:21.113545894Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:29:03.408079Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:21827697",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/21827697",
         "description": "Expanding the clinical spectrum associated with defects in CNTNAP2 and NRXN1"
       }
     ]
