@@ -13,6 +13,13 @@
     },
     {
       "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0007018",
         "label": "Attention deficit hyperactivity disorder"
       }
@@ -37,6 +44,13 @@
     },
     {
       "type": {
+        "id": "HP:0000343",
+        "label": "Long philtrum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001155",
         "label": "Abnormality of the hand"
       }
@@ -46,26 +60,6 @@
         "id": "HP:0004322",
         "label": "Short stature"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000729",
-        "label": "Autistic behavior"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000343",
-        "label": "Long philtrum"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -80,11 +74,17 @@
         "label": "EEG abnormality"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "KBG56",
+      "id": "5mqUKJJxW5kSyu7Zwn7JWGNu",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -96,8 +96,10 @@
             "subjectOrBiosampleId": "KBG56",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qfJuHaHApiMBgpiVdQuUagBjH",
+                "id": "c1381_1384del_ANKRD11_NM_013275v6",
                 "geneContext": {
                   "valueId": "HGNC:21316",
                   "symbol": "ANKRD11"
@@ -110,12 +112,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.89285166_89285169del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_037407.4:p.(Glu461GlnfsTer48)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "89285157",
+                  "pos": 89285157,
                   "ref": "GTTTC",
                   "alt": "G"
                 },
@@ -140,55 +146,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-29T06:49:57.668679952Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:55:58.557201Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36446582",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36446582",
         "description": "Clinical description, molecular delineation and genotype-phenotype correlation in 340 patients with KBG syndrome: addition of 67 new patients"
       }
     ]

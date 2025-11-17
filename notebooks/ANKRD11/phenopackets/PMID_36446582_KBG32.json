@@ -7,6 +7,13 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000729",
         "label": "Autistic behavior"
       }
@@ -43,55 +50,6 @@
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000308",
-        "label": "Microretrognathia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000664",
-        "label": "Synophrys"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000414",
-        "label": "Bulbous nose"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000343",
         "label": "Long philtrum"
       },
@@ -121,9 +79,15 @@
     {
       "type": {
         "id": "HP:0002360",
-        "label": "Sleep abnormality"
+        "label": "Sleep disturbance"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
     },
     {
       "type": {
@@ -134,15 +98,15 @@
     },
     {
       "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -162,10 +126,23 @@
     },
     {
       "type": {
-        "id": "HP:0000410",
-        "label": "Mixed hearing impairment"
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000405",
+        "label": "Conductive hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
     },
     {
       "type": {
@@ -204,6 +181,12 @@
     },
     {
       "type": {
+        "id": "HP:0000308",
+        "label": "Microretrognathia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000303",
         "label": "Mandibular prognathia"
       },
@@ -215,11 +198,35 @@
         "label": "Exaggerated cupid's bow"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000664",
+        "label": "Synophrys"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "KBG32",
+      "id": "Q04JCmKDFGxMWQVZq7wvgMLx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -231,8 +238,10 @@
             "subjectOrBiosampleId": "KBG32",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pttcjbUddvDnQfLKHUkckLOEu",
+                "id": "ANKRD11_SV_16q24_3_89359701_89379306_x1",
                 "label": "16q24.3(89359701_89379306)x1",
                 "geneContext": {
                   "valueId": "HGNC:21316",
@@ -240,8 +249,8 @@
                 },
                 "moleculeContext": "genomic",
                 "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
                 },
                 "allelicState": {
                   "id": "GENO:0000135",
@@ -263,55 +272,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-29T06:49:57.649493932Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:55:58.555450Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36446582",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36446582",
         "description": "Clinical description, molecular delineation and genotype-phenotype correlation in 340 patients with KBG syndrome: addition of 67 new patients"
       }
     ]

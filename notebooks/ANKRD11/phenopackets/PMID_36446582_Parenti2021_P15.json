@@ -31,6 +31,13 @@
     },
     {
       "type": {
+        "id": "HP:0000574",
+        "label": "Thick eyebrow"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000343",
         "label": "Long philtrum"
       }
@@ -40,43 +47,6 @@
         "id": "HP:0001155",
         "label": "Abnormality of the hand"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000463",
-        "label": "Anteverted nares"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000414",
-        "label": "Bulbous nose"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000574",
-        "label": "Thick eyebrow"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -94,6 +64,18 @@
     },
     {
       "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0006695",
         "label": "Atrioventricular canal defect"
       },
@@ -101,15 +83,15 @@
     },
     {
       "type": {
-        "id": "HP:0001655",
-        "label": "Patent foramen ovale"
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
@@ -129,8 +111,15 @@
     },
     {
       "type": {
-        "id": "HP:0000410",
-        "label": "Mixed hearing impairment"
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000405",
+        "label": "Conductive hearing impairment"
       },
       "excluded": true
     },
@@ -147,6 +136,12 @@
         "label": "Cryptorchidism"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
     },
     {
       "type": {
@@ -168,11 +163,23 @@
         "label": "Synophrys"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000414",
+        "label": "Bulbous nose"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Parenti2021_P15",
+      "id": "gkqtxBXWxDQBg1CyoCGmPSsa",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -184,8 +191,10 @@
             "subjectOrBiosampleId": "Parenti2021_P15",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lSgsYgPyOJlxahnyEtqMpspqX",
+                "id": "c3888dup_ANKRD11_NM_013275v6",
                 "geneContext": {
                   "valueId": "HGNC:21316",
                   "symbol": "ANKRD11"
@@ -198,12 +207,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.89282655dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_037407.4:p.(Asn1297GlnfsTer3)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "89282653",
+                  "pos": 89282653,
                   "ref": "T",
                   "alt": "TG"
                 },
@@ -228,55 +241,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-29T06:49:57.809381961Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T06:55:58.566382Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36446582",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36446582",
         "description": "Clinical description, molecular delineation and genotype-phenotype correlation in 340 patients with KBG syndrome: addition of 67 new patients"
       }
     ]
