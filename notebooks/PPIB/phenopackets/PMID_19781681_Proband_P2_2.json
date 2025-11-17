@@ -6,7 +6,8 @@
       "age": {
         "iso8601duration": "P6M"
       }
-    }
+    },
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -22,6 +23,13 @@
     },
     {
       "type": {
+        "id": "HP:0002808",
+        "label": "Kyphosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0003023",
         "label": "Bowing of limbs due to multiple fractures"
       },
@@ -29,6 +37,25 @@
         "ontologyClass": {
           "id": "HP:0003577",
           "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005855",
+        "label": "Multiple prenatal fractures"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0034198",
+          "label": "Second trimester onset"
         }
       }
     },
@@ -46,35 +73,9 @@
     },
     {
       "type": {
-        "id": "HP:0005855",
-        "label": "Multiple prenatal fractures"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0034198",
-          "label": "Second trimester onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002757",
         "label": "Recurrent fractures"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002808",
-        "label": "Kyphosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -86,7 +87,7 @@
   ],
   "interpretations": [
     {
-      "id": "Proband P2-2",
+      "id": "eLlFIJCk6NPAROPwuq8BXyMG",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -98,8 +99,10 @@
             "subjectOrBiosampleId": "Proband P2-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DWQeiruozUuLOkUrJVDuThSSX",
+                "id": "c451CtoT_PPIB_NM_000942v5",
                 "geneContext": {
                   "valueId": "HGNC:9255",
                   "symbol": "PPIB"
@@ -112,12 +115,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.64156802G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000933.1:p.(Gln151Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "64156802",
+                  "pos": 64156802,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -148,55 +155,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-26T04:53:55.427759170Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-17T17:07:10.152370Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:19781681",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/19781681",
         "description": "PPIB mutations cause severe osteogenesis imperfecta"
       }
     ]
