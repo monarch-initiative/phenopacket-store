@@ -24,7 +24,7 @@
     {
       "type": {
         "id": "HP:0001974",
-        "label": "Leukocytosis"
+        "label": "Increased total leukocyte count"
       },
       "onset": {
         "age": {
@@ -67,6 +67,13 @@
     },
     {
       "type": {
+        "id": "HP:0002633",
+        "label": "Vasculitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002315",
         "label": "Headache"
       },
@@ -100,13 +107,6 @@
     },
     {
       "type": {
-        "id": "HP:0002633",
-        "label": "Vasculitis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000509",
         "label": "Conjunctivitis"
       },
@@ -115,7 +115,7 @@
   ],
   "interpretations": [
     {
-      "id": "case report",
+      "id": "pnyBZysHBU3rcjAwNELt4KMO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -127,8 +127,10 @@
             "subjectOrBiosampleId": "case report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_TZMSXwhIqawTIGpXiSyWxxqTT",
+                "id": "c1043CtoT_NLRP3_NM_001243133v2",
                 "geneContext": {
                   "valueId": "HGNC:16400",
                   "symbol": "NLRP3"
@@ -141,12 +143,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.247424492C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001230062.1:p.(Thr348Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "247424492",
+                  "pos": 247424492,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -176,55 +182,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-29T07:34:50.130719900Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T06:08:56.365620Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27435956",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27435956",
         "description": "Muckle-Wells Syndrome: A Case Report with an NLRP3 T348M Mutation"
       }
     ]
