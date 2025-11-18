@@ -1,15 +1,22 @@
 {
-  "id": "PMID_28007986_B(IV2)",
+  "id": "PMID_28007986_A_VI4",
   "subject": {
-    "id": "B(IV2)",
+    "id": "A(VI4)",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P11Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001838",
+        "label": "Rocker bottom foot"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0430046",
@@ -42,9 +49,17 @@
     },
     {
       "type": {
+        "id": "HP:0002120",
+        "label": "Cerebral cortical atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002197",
         "label": "Generalized-onset seizure"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -60,6 +75,12 @@
     },
     {
       "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002267",
         "label": "Exaggerated startle response"
       }
@@ -67,14 +88,15 @@
     {
       "type": {
         "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
+        "label": "Severe intellectual disability"
       }
     },
     {
       "type": {
         "id": "HP:0002188",
         "label": "Delayed CNS myelination"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -87,32 +109,11 @@
         "id": "HP:0000253",
         "label": "Progressive microcephaly"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001838",
-        "label": "Rocker bottom foot"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002120",
-        "label": "Cerebral cortical atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "B(IV2)",
+      "id": "c0vHGRuoekafHxGy8Twh52Ju",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -121,11 +122,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "B(IV2)",
+            "subjectOrBiosampleId": "A(VI4)",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_bKDcUxRfvWIUonyDKwCEYMqRP",
+                "id": "c2254CtoT_PLAA_NM_001031689v3",
                 "geneContext": {
                   "valueId": "HGNC:9043",
                   "symbol": "PLAA"
@@ -138,12 +141,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.26905645G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001026859.1:p.(Leu752Phe)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "26905645",
+                  "pos": 26905645,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -167,61 +174,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P4M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-22T06:02:25.635367870Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T07:15:42.565212Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28007986",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28007986",
         "description": "Phospholipase A2-activating protein is associated with a novel form of leukoencephalopathy"
       }
     ]
