@@ -1,5 +1,5 @@
 {
-  "id": "PMID_35420632_Patient_4_IV-4",
+  "id": "PMID_35420632_Patient_4_IV_4",
   "subject": {
     "id": "Patient 4 IV-4",
     "timeAtLastEncounter": {
@@ -101,7 +101,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 4 IV-4",
+      "id": "4SHO8ut3X6KOwIhJFmX5T8lz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,8 +113,10 @@
             "subjectOrBiosampleId": "Patient 4 IV-4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SaUyZnVAWGxuZQxLtAmrsHveq",
+                "id": "c776TtoC_POT1_NM_015450v2",
                 "geneContext": {
                   "valueId": "HGNC:17284",
                   "symbol": "POT1"
@@ -127,12 +129,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000007.14:g.124853065A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056265.2:p.(Leu259Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "124853065",
+                  "pos": 124853065,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -162,55 +168,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-24T10:01:22.686267852Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T19:09:28.007340Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35420632",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35420632",
         "description": "Telomere dysfunction implicates POT1 in patients with idiopathic pulmonary fibrosis"
       }
     ]

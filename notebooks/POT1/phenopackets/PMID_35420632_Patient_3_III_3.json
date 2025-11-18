@@ -1,10 +1,10 @@
 {
-  "id": "PMID_35420632_patient21_IV-2",
+  "id": "PMID_35420632_Patient_3_III_3",
   "subject": {
-    "id": "patient21 IV-2",
+    "id": "Patient 3 III-3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P60Y"
+        "iso8601duration": "P72Y"
       }
     },
     "sex": "MALE"
@@ -12,12 +12,19 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0031413",
         "label": "Short telomere length"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -28,7 +35,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -39,7 +46,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -50,7 +57,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -59,9 +66,16 @@
         "id": "HP:0031996",
         "label": "Inspiratory crackles"
       },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     },
@@ -70,11 +84,7 @@
         "id": "HP:0001217",
         "label": "Clubbing"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P57Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -83,26 +93,26 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+          "id": "HP:0003584",
+          "label": "Late onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002216",
-        "label": "Premature graying of hair"
+        "id": "HP:0005518",
+        "label": "Increased mean corpuscular volume"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P27Y"
+          "iso8601duration": "P72Y"
         }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "patient21 IV-2",
+      "id": "4k3NNABQooa1SaEqHH1s4GIC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -111,11 +121,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient21 IV-2",
+            "subjectOrBiosampleId": "Patient 3 III-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SaUyZnVAWGxuZQxLtAmrsHveq",
+                "id": "c776TtoC_POT1_NM_015450v2",
                 "geneContext": {
                   "valueId": "HGNC:17284",
                   "symbol": "POT1"
@@ -128,12 +140,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000007.14:g.124853065A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056265.2:p.(Leu259Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr7",
-                  "pos": "124853065",
+                  "pos": 124853065,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -157,61 +173,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P57Y"
+          "iso8601duration": "P72Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-24T10:01:22.682176113Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T19:09:28.007302Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35420632",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35420632",
         "description": "Telomere dysfunction implicates POT1 in patients with idiopathic pulmonary fibrosis"
       }
     ]
