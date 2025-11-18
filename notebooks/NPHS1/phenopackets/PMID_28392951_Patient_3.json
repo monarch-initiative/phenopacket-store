@@ -1,11 +1,14 @@
 {
-  "id": "PMID_28392951_Patient_2",
+  "id": "PMID_28392951_Patient_3",
   "subject": {
-    "id": "Patient 2",
+    "id": "Patient 3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2M"
+        "iso8601duration": "P2M14D"
       }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
@@ -17,18 +20,18 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0012050",
-        "label": "Anasarca"
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
     },
@@ -39,7 +42,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
     },
@@ -50,7 +53,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
     },
@@ -61,7 +64,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
     },
@@ -72,21 +75,14 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2M"
+          "iso8601duration": "P2M14D"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "fwWEyG0zn0H2qexWVRDMcPzy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -95,11 +91,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 2",
+            "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SsbVOdJKhYEeMqEjmvbNkPdZN",
+                "id": "c2405GtoT_NPHS1_NM_004646v4",
                 "geneContext": {
                   "valueId": "HGNC:7908",
                   "symbol": "NPHS1"
@@ -107,54 +105,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004646.4:c.349G>A"
+                    "value": "NM_004646.4:c.2405G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.35851310C>T"
+                    "value": "NC_000019.10:g.35842480C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004637.1:p.(Arg802Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "35851310",
+                  "pos": 35842480,
                   "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_ptfoOGpybYaFVYXZpKzTWChDx",
-                "geneContext": {
-                  "valueId": "HGNC:7908",
-                  "symbol": "NPHS1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_004646.4:c.970T>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.35849018A>C"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "35849018",
-                  "ref": "A",
-                  "alt": "C"
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -177,55 +144,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-02T08:34:09.422598838Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T06:02:04.582649Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28392951",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28392951",
         "description": "Three Novel Mutations in the NPHS1 Gene in Vietnamese Patients with Congenital Nephrotic Syndrome"
       }
     ]
