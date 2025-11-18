@@ -1,13 +1,13 @@
 {
-  "id": "PMID_25480986_individual_A_1",
+  "id": "PMID_25480986_individual_A_2",
   "subject": {
-    "id": "individual A:1",
+    "id": "individual A:2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y8M"
+        "iso8601duration": "P5Y7M"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -18,9 +18,23 @@
     },
     {
       "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000533",
         "label": "Chorioretinal atrophy"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -36,6 +50,13 @@
     },
     {
       "type": {
+        "id": "HP:0000054",
+        "label": "Micropenis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000821",
         "label": "Hypothyroidism"
       }
@@ -45,26 +66,6 @@
         "id": "HP:0034323",
         "label": "Reduced circulating growth hormone concentration"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002750",
-        "label": "Delayed skeletal maturation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001513",
-        "label": "Obesity"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -79,6 +80,12 @@
         "label": "Peripheral axonal neuropathy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002750",
+        "label": "Delayed skeletal maturation"
+      }
     },
     {
       "type": {
@@ -104,7 +111,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual A:1",
+      "id": "AeJp3L0mtxuhMpE5WIOUTOQv",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,11 +120,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual A:1",
+            "subjectOrBiosampleId": "individual A:2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_uoslJvDwFIvACxBnkdvZezndS",
+                "id": "c3058_3061dup_PNPLA6_NM_001166114v2",
                 "geneContext": {
                   "valueId": "HGNC:16268",
                   "symbol": "PNPLA6"
@@ -125,54 +134,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001166114.2:c.3409C>T"
+                    "value": "NM_001166114.2:c.3058_3061dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7558861C>T"
+                    "value": "NC_000019.10:g.7555728_7555731dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001159586.1:p.(Arg1021GlnfsTer38)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7558861",
+                  "pos": 7555724,
                   "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "individual A:1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_yRYByFupJfJxRlclHGqITHHCC",
-                "geneContext": {
-                  "valueId": "HGNC:16268",
-                  "symbol": "PNPLA6"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001166114.2:c.3496G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7558948G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "7558948",
-                  "ref": "G",
-                  "alt": "A"
+                  "alt": "CGCCA"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -195,55 +173,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-19T05:31:28.232882022Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T08:39:30.391588Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25480986",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25480986",
         "description": "Neuropathy target esterase impairments cause Oliver-McFarlane and Laurence-Moon syndromes"
       }
     ]

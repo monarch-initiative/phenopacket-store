@@ -1,13 +1,13 @@
 {
-  "id": "PMID_29749493_proband",
+  "id": "PMID_24355708_IHG25190_individual_1",
   "subject": {
-    "id": "proband",
+    "id": "IHG25190-individual-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P39Y"
+        "iso8601duration": "P56Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -15,13 +15,25 @@
         "id": "HP:0002066",
         "label": "Gait ataxia"
       },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002061",
+        "label": "Lower limb spasticity"
+      },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002075",
-        "label": "Dysdiadochokinesis"
-      }
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -37,49 +49,64 @@
     },
     {
       "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0011808",
+        "label": "Decreased patellar reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009072",
+        "label": "Decreased Achilles reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007083",
+        "label": "Hyperactive patellar reflex"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033206",
+        "label": "Hyperactive Achilles reflex"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000044",
         "label": "Hypogonadotropic hypogonadism"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P14Y"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0040171",
-        "label": "Decreased serum testosterone concentration"
+        "id": "HP:0000786",
+        "label": "Primary amenorrhea"
       }
     },
     {
       "type": {
-        "id": "HP:0030341",
-        "label": "Decreased circulating follicle stimulating hormone concentration"
+        "id": "HP:0003693",
+        "label": "Distal amyotrophy"
       }
     },
     {
       "type": {
-        "id": "HP:0030344",
-        "label": "Decreased circulating luteinizing hormone level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007722",
-        "label": "Retinal pigment epithelial atrophy"
+        "id": "HP:0000533",
+        "label": "Chorioretinal atrophy"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "qHovMSjO38ccKVMB9UDI6RDF",
+      "id": "017H8sLnU45akA6E6mhyru5m",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,13 +115,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "IHG25190-individual-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c3356GtoT_PNPLA6_NM_001166114v2",
+                "id": "c3143CtoT_PNPLA6_NM_001166114v2",
                 "geneContext": {
                   "valueId": "HGNC:16268",
                   "symbol": "PNPLA6"
@@ -102,28 +129,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001166114.2:c.3356G>T"
+                    "value": "NM_001166114.2:c.3143C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7557243G>T"
+                    "value": "NC_000019.10:g.7556502C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_001159586.1:p.(Gly1119Val)"
+                    "value": "NP_001159586.1:p.(Thr1048Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": 7557243,
-                  "ref": "G",
+                  "pos": 7556502,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -140,13 +167,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P14Y"
+          "iso8601duration": "P2Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-18T08:37:23.399935Z",
+    "created": "2025-11-18T08:37:23.399535Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -193,8 +220,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:29749493",
-        "description": "A novel PNPLA6 compound heterozygous mutation identified in a Chinese patient with Boucher‑Neuhäuser syndrome"
+        "id": "PMID:24355708",
+        "description": "PNPLA6 mutations cause Boucher-Neuhauser and Gordon Holmes syndromes as part of a broad neurodegenerative spectrum"
       }
     ]
   }

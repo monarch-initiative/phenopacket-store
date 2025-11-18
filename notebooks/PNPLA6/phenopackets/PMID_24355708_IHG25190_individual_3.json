@@ -1,10 +1,10 @@
 {
-  "id": "PMID_24355708_ARCA_05_individual_1",
+  "id": "PMID_24355708_IHG25190_individual_3",
   "subject": {
-    "id": "ARCA-05-individual-1",
+    "id": "IHG25190-individual-3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P44Y"
+        "iso8601duration": "P53Y"
       }
     },
     "sex": "FEMALE"
@@ -17,7 +17,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P27Y"
+          "iso8601duration": "P7Y"
         }
       }
     },
@@ -25,13 +25,15 @@
       "type": {
         "id": "HP:0002061",
         "label": "Lower limb spasticity"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0003487",
         "label": "Babinski sign"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -41,15 +43,41 @@
     },
     {
       "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011808",
+        "label": "Decreased patellar reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009072",
+        "label": "Decreased Achilles reflex"
       }
     },
     {
       "type": {
         "id": "HP:0007083",
         "label": "Hyperactive patellar reflex"
-      }
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033206",
+        "label": "Hyperactive Achilles reflex"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -74,25 +102,11 @@
         "id": "HP:0000533",
         "label": "Chorioretinal atrophy"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0010627",
-        "label": "Anterior pituitary hypoplasia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011808",
-        "label": "Decreased patellar reflex"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "ARCA-05-individual-1",
+      "id": "6tLIDR6vV6Rc3dZ9qrHemAkx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -101,11 +115,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "ARCA-05-individual-1",
+            "subjectOrBiosampleId": "IHG25190-individual-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_uZgFwwYCiZYILRcoDLrsEIELe",
+                "id": "c3143CtoT_PNPLA6_NM_001166114v2",
                 "geneContext": {
                   "valueId": "HGNC:16268",
                   "symbol": "PNPLA6"
@@ -113,59 +129,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001166114.2:c.2185-1G>C"
+                    "value": "NM_001166114.2:c.3143C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7551361G>C"
+                    "value": "NC_000019.10:g.7556502C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001159586.1:p.(Thr1048Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7551361",
-                  "ref": "G",
-                  "alt": "C"
+                  "pos": 7556502,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "ARCA-05-individual-1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_HXSCfwXfOJZQMhGDoteFqZrbB",
-                "geneContext": {
-                  "valueId": "HGNC:16268",
-                  "symbol": "PNPLA6"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001166114.2:c.3298G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.7557185G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "7557185",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
                 }
               }
             }
@@ -182,61 +167,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P12Y"
+          "iso8601duration": "P1Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-19T06:51:10.139554977Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T08:37:23.399636Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24355708",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24355708",
         "description": "PNPLA6 mutations cause Boucher-Neuhauser and Gordon Holmes syndromes as part of a broad neurodegenerative spectrum"
       }
     ]

@@ -1,13 +1,13 @@
 {
-  "id": "PMID_24355708_IHG25190_individual_2",
+  "id": "PMID_24355708_IHG25190_individual_4",
   "subject": {
-    "id": "IHG25190-individual-2",
+    "id": "IHG25190-individual-4",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P55Y"
+        "iso8601duration": "P48Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,56 +17,8 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P6Y"
+          "iso8601duration": "P7Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010627",
-        "label": "Anterior pituitary hypoplasia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011808",
-        "label": "Decreased patellar reflex"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009072",
-        "label": "Decreased Achilles reflex"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000044",
-        "label": "Hypogonadotropic hypogonadism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003693",
-        "label": "Distal amyotrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000533",
-        "label": "Chorioretinal atrophy"
       }
     },
     {
@@ -85,6 +37,36 @@
     },
     {
       "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011808",
+        "label": "Decreased patellar reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009072",
+        "label": "Decreased Achilles reflex"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007083",
         "label": "Hyperactive patellar reflex"
       },
@@ -96,11 +78,35 @@
         "label": "Hyperactive Achilles reflex"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000044",
+        "label": "Hypogonadotropic hypogonadism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000786",
+        "label": "Primary amenorrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003693",
+        "label": "Distal amyotrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000533",
+        "label": "Chorioretinal atrophy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "IHG25190-individual-2",
+      "id": "ExPogYAUSWbLfPr5Hurqza03",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -109,11 +115,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "IHG25190-individual-2",
+            "subjectOrBiosampleId": "IHG25190-individual-4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_UMXPANCYdcRGQkoRmZADEAihf",
+                "id": "c3143CtoT_PNPLA6_NM_001166114v2",
                 "geneContext": {
                   "valueId": "HGNC:16268",
                   "symbol": "PNPLA6"
@@ -126,12 +134,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.7556502C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001159586.1:p.(Thr1048Ile)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "7556502",
+                  "pos": 7556502,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -155,61 +167,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3Y"
+          "iso8601duration": "P2Y6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-19T06:51:10.137424945Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T08:37:23.399674Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24355708",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24355708",
         "description": "PNPLA6 mutations cause Boucher-Neuhauser and Gordon Holmes syndromes as part of a broad neurodegenerative spectrum"
       }
     ]
