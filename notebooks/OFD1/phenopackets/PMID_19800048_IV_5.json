@@ -1,15 +1,17 @@
 {
-  "id": "PMID_19800048_UW87",
+  "id": "PMID_19800048_IV_5",
   "subject": {
-    "id": "UW87",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P12Y"
-      }
-    },
+    "id": "IV-5",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000510",
+        "label": "Rod-cone dystrophy"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0010864",
@@ -30,30 +32,6 @@
     },
     {
       "type": {
-        "id": "HP:0001310",
-        "label": "Dysmetria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001344",
-        "label": "Absent speech"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002419",
-        "label": "Molar tooth sign on MRI"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002591",
-        "label": "Polyphagia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
       },
@@ -63,37 +41,22 @@
       "type": {
         "id": "HP:0000256",
         "label": "Macrocephaly"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001513",
         "label": "Obesity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001156",
-        "label": "Brachydactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033454",
-        "label": "Tube feeding"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001561",
         "label": "Polyhydramnios"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -104,7 +67,7 @@
   ],
   "interpretations": [
     {
-      "id": "xl4PKrX0nNZIXEagNL7NRJKP",
+      "id": "OI6WNymvNuiQuz8J8PSMrZc1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,13 +76,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "UW87",
+            "subjectOrBiosampleId": "IV-5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c2767del_OFD1_NM_003611v3",
+                "id": "c2841_2847del_OFD1_NM_003611v3",
                 "geneContext": {
                   "valueId": "HGNC:2567",
                   "symbol": "OFD1"
@@ -127,22 +90,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003611.3:c.2767del"
+                    "value": "NM_003611.3:c.2841_2847del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.13768063del"
+                    "value": "NC_000023.11:g.13768140_13768146del"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_003602.1:p.(Glu923LysfsTer4)"
+                    "value": "NP_003602.1:p.(Lys948AsnfsTer9)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": 13768062,
-                  "ref": "TG",
+                  "pos": 13768136,
+                  "ref": "TAAAAGAC",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -172,7 +135,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T07:02:56.045200Z",
+    "created": "2025-11-18T07:02:56.044947Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
