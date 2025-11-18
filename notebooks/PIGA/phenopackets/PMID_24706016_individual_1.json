@@ -1,7 +1,7 @@
 {
-  "id": "PMID_24706016_individual_IV_4",
+  "id": "PMID_24706016_individual_1",
   "subject": {
-    "id": "individual IV-4",
+    "id": "individual 1",
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -9,18 +9,6 @@
       "type": {
         "id": "HP:0002079",
         "label": "Hypoplasia of the corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002123",
-        "label": "Generalized myoclonic seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003155",
-        "label": "Elevated circulating alkaline phosphatase concentration"
       }
     },
     {
@@ -49,12 +37,6 @@
     },
     {
       "type": {
-        "id": "HP:0001347",
-        "label": "Hyperreflexia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0012430",
         "label": "Cerebral white matter hypoplasia"
       }
@@ -67,14 +49,26 @@
     },
     {
       "type": {
-        "id": "HP:0001367",
-        "label": "Abnormal joint morphology"
+        "id": "HP:0002187",
+        "label": "Profound intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002445",
+        "label": "Tetraplegia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010818",
+        "label": "Generalized tonic seizure"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "individual IV-4",
+      "id": "BiQd6XwyMEKdFOkjdS6NirY9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -83,11 +77,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual IV-4",
+            "subjectOrBiosampleId": "individual 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_sxerOWvqkFfJvqwMXnuVXOzkw",
+                "id": "c1234CtoT_PIGA_NM_002641v4",
                 "geneContext": {
                   "valueId": "HGNC:8957",
                   "symbol": "PIGA"
@@ -100,19 +96,23 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000023.11:g.15321727G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002632.1:p.(Arg412Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "15321727",
+                  "pos": 15321727,
                   "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -130,55 +130,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-30T11:53:57.303088188Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T18:54:34.259941Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24706016",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24706016",
         "description": "PIGA mutations cause early-onset epileptic encephalopathies and distinctive features"
       }
     ]
