@@ -7,9 +7,6 @@
         "iso8601duration": "P5Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -45,6 +42,13 @@
     },
     {
       "type": {
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0010862",
         "label": "Delayed fine motor development"
       }
@@ -72,18 +76,11 @@
         "id": "HP:0000744",
         "label": "Low frustration tolerance"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002194",
-        "label": "Delayed gross motor development"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "individual",
+      "id": "uuZOZd5til7VCIRDuHm1rCVe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -95,8 +92,10 @@
             "subjectOrBiosampleId": "individual",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_JCDDCqIsYAeUlbfjBgpGtpmjl",
+                "id": "c1534CtoA_POGZ_NM_015100v4",
                 "geneContext": {
                   "valueId": "HGNC:18801",
                   "symbol": "POGZ"
@@ -109,12 +108,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.151423541G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055915.2:p.(His512Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "151423541",
+                  "pos": 151423541,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -139,55 +142,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-13T07:39:09.553215026Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T07:13:41.660355Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:31347273",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31347273",
         "description": "POGZ de novo missense variants in neuropsychiatric disorders"
       }
     ]

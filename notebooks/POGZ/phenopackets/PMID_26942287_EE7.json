@@ -7,12 +7,16 @@
         "iso8601duration": "P7Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0001263",
@@ -51,6 +55,13 @@
     },
     {
       "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000407",
         "label": "Sensorineural hearing impairment"
       }
@@ -60,25 +71,11 @@
         "id": "HP:0000403",
         "label": "Recurrent otitis media"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "EE7",
+      "id": "9kSIexSgr7EVvOProk1409GS",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -90,8 +87,10 @@
             "subjectOrBiosampleId": "EE7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_RqesQylvyBduHWyoHXovWqsGc",
+                "id": "c3139GtoT_POGZ_NM_015100v4",
                 "geneContext": {
                   "valueId": "HGNC:18801",
                   "symbol": "POGZ"
@@ -104,12 +103,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.151405896C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055915.2:p.(Glu1047Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "151405896",
+                  "pos": 151405896,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -134,55 +137,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-13T07:39:09.578835964Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T07:13:41.663060Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26942287",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26942287",
         "description": "Disruption of POGZ Is Associated with Intellectual Disability and Autism Spectrum Disorders"
       }
     ]
