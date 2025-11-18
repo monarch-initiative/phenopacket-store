@@ -1,10 +1,10 @@
 {
-  "id": "PMID_26358773_Patient_2",
+  "id": "PMID_26358773_Patient_1",
   "subject": {
-    "id": "Patient 2",
+    "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P37Y"
+        "iso8601duration": "P2Y6M"
       }
     },
     "sex": "FEMALE"
@@ -62,8 +62,13 @@
       "type": {
         "id": "HP:0032489",
         "label": "Elevated fecal pH"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032487",
+        "label": "Reduced fecal osmolality"
+      }
     },
     {
       "type": {
@@ -76,8 +81,7 @@
       "type": {
         "id": "HP:0008897",
         "label": "Postnatal growth retardation"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -88,15 +92,21 @@
     },
     {
       "type": {
-        "id": "HP:0033994",
-        "label": "Dependency on parenteral nutrition"
+        "id": "HP:0011473",
+        "label": "Villous atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033994",
+        "label": "Dependency on parenteral nutrition"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "7eASe0jpfk1cdApSUUFkoXYO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,11 +115,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 2",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_AUQfdCPVUtYoqYYkGMGMeJSDl",
+                "id": "c1145GtoA_SLC9A3_NM_004174v4",
                 "geneContext": {
                   "valueId": "HGNC:11073",
                   "symbol": "SLC9A3"
@@ -117,53 +129,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004174.4:c.932C>T"
+                    "value": "NM_004174.4:c.1145G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.484520G>A"
+                    "value": "NC_000005.10:g.483270C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004165.2:p.(Arg382Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "484520",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_GnNmsOndNkJQQEODOFjxXbpTJ",
-                "geneContext": {
-                  "valueId": "HGNC:11073",
-                  "symbol": "SLC9A3"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_004174.4:c.350_352del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.491940_491942del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr5",
-                  "pos": "491930",
-                  "ref": "TAGA",
+                  "pos": 483270,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -193,55 +174,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-28T06:16:42.858906984Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T16:10:26.631886Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26358773",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26358773",
         "description": "Reduced sodium/proton exchanger NHE3 activity causes congenital sodium diarrhea"
       }
     ]

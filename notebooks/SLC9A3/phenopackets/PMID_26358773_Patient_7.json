@@ -72,12 +72,6 @@
     },
     {
       "type": {
-        "id": "HP:0033994",
-        "label": "Dependency on parenteral nutrition"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0010931",
         "label": "Abnormal blood sodium concentration"
       },
@@ -103,11 +97,17 @@
         "label": "Villous atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033994",
+        "label": "Dependency on parenteral nutrition"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 7",
+      "id": "vic6Bi04xs5ff6l52gNhueQD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -119,8 +119,10 @@
             "subjectOrBiosampleId": "Patient 7",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VGuVFdXcorZFgaHcEHYcIoVJd",
+                "id": "c782dup_SLC9A3_NM_004174v4",
                 "geneContext": {
                   "valueId": "HGNC:11073",
                   "symbol": "SLC9A3"
@@ -133,12 +135,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000005.10:g.484675dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004165.2:p.(Thr262HisfsTer144)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "484669",
+                  "pos": 484669,
                   "ref": "G",
                   "alt": "GC"
                 },
@@ -169,55 +175,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-28T06:16:42.862640142Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T16:10:26.632079Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26358773",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26358773",
         "description": "Reduced sodium/proton exchanger NHE3 activity causes congenital sodium diarrhea"
       }
     ]
