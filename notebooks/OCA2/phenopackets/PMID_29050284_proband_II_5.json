@@ -50,7 +50,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband II-5",
+      "id": "RegTZKU32nLiM7OnFJx0qGL3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,8 +62,10 @@
             "subjectOrBiosampleId": "proband II-5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NBpVYnNSCKICknrmOJOpIMBFt",
+                "id": "c808_3CtoG_OCA2_NM_000275v3",
                 "geneContext": {
                   "valueId": "HGNC:8101",
                   "symbol": "OCA2"
@@ -76,48 +78,17 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.28016189G>C"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr15",
-                  "pos": "28016189",
-                  "ref": "G",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "proband II-5",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_lWVIEjQaCCFxEtTdWdPpSmgzI",
-                "geneContext": {
-                  "valueId": "HGNC:8101",
-                  "symbol": "OCA2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000275.3:c.2080-2A>G"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000015.10:g.27871924T>C"
+                    "syntax": "hgvs.p",
+                    "value": "NP_000266.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "27871924",
-                  "ref": "T",
+                  "pos": 28016189,
+                  "ref": "G",
                   "alt": "C"
                 },
                 "moleculeContext": "genomic",
@@ -141,55 +112,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-13T16:34:40.671005964Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T06:59:17.169243Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29050284",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050284",
         "description": "Mutational analysis of a Chinese family with oculocutaneous albinism type 2"
       }
     ]
