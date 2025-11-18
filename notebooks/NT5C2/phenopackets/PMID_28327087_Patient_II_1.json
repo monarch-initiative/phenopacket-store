@@ -91,7 +91,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient II.1",
+      "id": "WqDUltqewERuYXgQeyzOsZOk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -103,8 +103,10 @@
             "subjectOrBiosampleId": "Patient II.1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NQNWKFTVUKjRnaHoErYWNzdJH",
+                "id": "c1159_1GtoT_NT5C2_NM_001351169v2",
                 "geneContext": {
                   "valueId": "HGNC:8022",
                   "symbol": "NT5C2"
@@ -117,12 +119,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000010.11:g.103093138C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001338098.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "103093138",
+                  "pos": 103093138,
                   "ref": "C",
                   "alt": "A"
                 },
@@ -152,55 +158,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-18T13:04:11.999393939Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T06:35:08.533591Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28327087",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28327087",
         "description": "NT5C2 novel splicing variant expands the phenotypic spectrum of Spastic Paraplegia (SPG45): case report of a new member of thin corpus callosum SPG-Subgroup"
       }
     ]
