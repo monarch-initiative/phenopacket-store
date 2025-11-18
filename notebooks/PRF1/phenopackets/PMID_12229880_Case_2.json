@@ -12,6 +12,20 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0003484",
+        "label": "Upper limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001876",
         "label": "Pancytopenia"
       },
@@ -20,6 +34,20 @@
           "iso8601duration": "P21Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002301",
+        "label": "Hemiplegia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002329",
+        "label": "Drowsiness"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -78,8 +106,8 @@
     },
     {
       "type": {
-        "id": "HP:0012178",
-        "label": "Reduced natural killer cell activity"
+        "id": "HP:0012177",
+        "label": "Abnormal natural killer cell physiology"
       },
       "onset": {
         "age": {
@@ -101,7 +129,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case 2",
+      "id": "V9Wcx756a6gFtOFPhVBcVVWd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,43 +141,10 @@
             "subjectOrBiosampleId": "Case 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_iQIphbwoHcBRMvgRRYPovcTAL",
-                "geneContext": {
-                  "valueId": "HGNC:9360",
-                  "symbol": "PRF1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001083116.3:c.1122G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000010.11:g.70598599C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr10",
-                  "pos": "70598599",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Case 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_ONEYcyFBMxpnPoogqeAvSNMGn",
+                "id": "c272CtoT_PRF1_NM_001083116v3",
                 "geneContext": {
                   "valueId": "HGNC:9360",
                   "symbol": "PRF1"
@@ -162,12 +157,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000010.11:g.70600631G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001076585.1:p.(Ala91Val)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr10",
-                  "pos": "70600631",
+                  "pos": 70600631,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -197,55 +196,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-04T16:32:58.323559999Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T08:32:41.874549Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:12229880",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/12229880",
         "description": "Adult onset and atypical presentation of hemophagocytic lymphohistiocytosis in siblings carrying PRF1 mutations"
       }
     ]
