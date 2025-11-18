@@ -8,38 +8,11 @@
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P3Y6M"
-        }
-      }
+      "status": "DECEASED"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002788",
-        "label": "Recurrent upper respiratory tract infections"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002783",
-        "label": "Recurrent lower respiratory tract infections"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0001999",
@@ -78,9 +51,30 @@
     },
     {
       "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001880",
-        "label": "Eosinophilia"
+        "label": "Increased total eosinophil count"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced total natural killer cell count"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -132,65 +126,25 @@
     },
     {
       "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003212",
-        "label": "Increased circulating IgE concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410378",
-        "label": "Decreased proportion of naive CD4 T cells"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410377",
-        "label": "Decreased proportion of naive CD8 T cells"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032126",
-        "label": "Decreased proportion of unswitched memory B cells"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031430",
-        "label": "Oligoclonal T cell expansion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002718",
-        "label": "Recurrent bacterial infections"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004429",
-        "label": "Recurrent viral infections"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005403",
-        "label": "T lymphocytopenia"
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0040218",
-        "label": "Reduced natural killer cell count"
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
     },
     {
       "type": {
@@ -212,11 +166,66 @@
         "label": "Abnormal circulating IgM concentration"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003212",
+        "label": "Increased circulating IgE concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410378",
+        "label": "Decreased naive CD4+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410377",
+        "label": "Decreased naive CD8+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032126",
+        "label": "Decreased unswitched memory B cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031430",
+        "label": "Oligoclonal T cell expansion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002718",
+        "label": "Recurrent bacterial infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004429",
+        "label": "Recurrent viral infections"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "F7xzN2fgStyrPTuScRNe0AiG",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -228,8 +237,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_mxjTJsICztRuSerNESwIjHxyG",
+                "id": "c1118AtoC_POLD3_NM_006591v3",
                 "geneContext": {
                   "valueId": "HGNC:20932",
                   "symbol": "POLD3"
@@ -242,12 +253,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.74634694A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006582.1:p.(Lys373Thr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "74634694",
+                  "pos": 74634694,
                   "ref": "A",
                   "alt": "C"
                 },
@@ -277,55 +292,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-02-17T07:35:56.897108078Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T16:14:01.910361Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-01-16",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38099988",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38099988",
         "description": "Human Autosomal Recessive DNA Polymerase Delta 3 Deficiency Presenting as Omenn Syndrome"
       }
     ]

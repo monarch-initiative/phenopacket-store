@@ -7,94 +7,9 @@
         "iso8601duration": "P5Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002788",
-        "label": "Recurrent upper respiratory tract infections"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002110",
-        "label": "Bronchiectasis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001744",
-        "label": "Splenomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005403",
-        "label": "T lymphocytopenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0040218",
-        "label": "Reduced natural killer cell count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004430",
-        "label": "Severe combined immunodeficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000407",
-        "label": "Sensorineural hearing impairment"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000958",
-        "label": "Dry skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410378",
-        "label": "Decreased proportion of naive CD4 T cells"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410377",
-        "label": "Decreased proportion of naive CD8 T cells"
-      }
-    },
     {
       "type": {
         "id": "HP:0001999",
@@ -132,10 +47,46 @@
     },
     {
       "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001880",
-        "label": "Eosinophilia"
+        "label": "Increased total eosinophil count"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced total natural killer cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     },
     {
       "type": {
@@ -146,8 +97,55 @@
     },
     {
       "type": {
+        "id": "HP:0004430",
+        "label": "Severe combined immunodeficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000958",
+        "label": "Dry skin"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410242",
+        "label": "Abnormal circulating IgG concentration"
       },
       "excluded": true
     },
@@ -160,10 +158,15 @@
     },
     {
       "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG concentration"
-      },
-      "excluded": true
+        "id": "HP:0410378",
+        "label": "Decreased naive CD4+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410377",
+        "label": "Decreased naive CD8+ T cell proportion"
+      }
     },
     {
       "type": {
@@ -175,7 +178,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband IV-6",
+      "id": "ddu23qk9iT1OoTsZM96i6rt7",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -187,8 +190,10 @@
             "subjectOrBiosampleId": "proband IV-6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FpSHJAAAIisQoqOOMnRABpvvQ",
+                "id": "c29TtoC_POLD3_NM_006591v3",
                 "geneContext": {
                   "valueId": "HGNC:20932",
                   "symbol": "POLD3"
@@ -201,12 +206,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.74592687T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006582.1:p.(Ile10Thr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "74592687",
+                  "pos": 74592687,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -236,55 +245,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-02-17T07:35:56.896294832Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T16:14:01.909167Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-01-16",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37030525",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37030525",
         "description": "POLD3 deficiency is associated with severe combined immunodeficiency, neurodevelopmental delay, and hearing impairment"
       }
     ]
