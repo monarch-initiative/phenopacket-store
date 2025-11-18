@@ -1,28 +1,26 @@
 {
-  "id": "PMID_15781812_individual_175",
+  "id": "PMID_15781812_individual_147_3",
   "subject": {
-    "id": "individual 175"
+    "id": "individual 147-3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P20Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0010819",
-        "label": "Atonic seizure"
+        "id": "HP:0000726",
+        "label": "Dementia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P13Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032794",
-        "label": "Myoclonic seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P13Y"
+          "iso8601duration": "P17Y"
         }
       }
     },
@@ -34,8 +32,8 @@
     },
     {
       "type": {
-        "id": "HP:0000726",
-        "label": "Dementia"
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
       },
       "excluded": true
     },
@@ -65,26 +63,49 @@
         "id": "HP:0002069",
         "label": "Bilateral tonic-clonic seizure"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032794",
+        "label": "Myoclonic seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P13Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0002344",
         "label": "Progressive neurologic deterioration"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0001288",
         "label": "Gait disturbance"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "individual 175",
+      "id": "bCLL9xeY75eW4KdZzTXixyAU",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -93,11 +114,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual 175",
+            "subjectOrBiosampleId": "individual 147-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ElkvsGFGwONHLTbJCpTnHLzNp",
+                "id": "c205CtoG_NHLRC1_NM_198586v3",
                 "geneContext": {
                   "valueId": "HGNC:21576",
                   "symbol": "NHLRC1"
@@ -105,24 +128,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_198586.3:c.793C>T"
+                    "value": "NM_198586.3:c.205C>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.18121814G>A"
+                    "value": "NC_000006.12:g.18122402G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_940988.2:p.(Pro69Ala)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "18121814",
+                  "pos": 18122402,
                   "ref": "G",
-                  "alt": "A"
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -139,61 +166,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P13Y"
+          "iso8601duration": "P12Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-05-04T08:25:14.728682041Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T06:43:06.127770Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15781812",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15781812",
         "description": "Lafora disease due to EPM2B mutations: a clinical and genetic study"
       }
     ]
