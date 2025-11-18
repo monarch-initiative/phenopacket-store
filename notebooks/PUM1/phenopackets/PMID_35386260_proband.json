@@ -12,83 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002133",
-        "label": "Status epilepticus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P4M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007874",
-        "label": "Almond-shaped palpebral fissure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000341",
-        "label": "Narrow forehead"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000431",
-        "label": "Wide nasal bridge"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000218",
-        "label": "High palate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033725",
-        "label": "Thin corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000508",
-        "label": "Ptosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000340",
         "label": "Sloping forehead"
       },
@@ -110,6 +33,24 @@
     },
     {
       "type": {
+        "id": "HP:0007874",
+        "label": "Almond-shaped palpebral fissure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000341",
+        "label": "Narrow forehead"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000426",
         "label": "Prominent nasal bridge"
       },
@@ -124,6 +65,12 @@
     },
     {
       "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000677",
         "label": "Oligodontia"
       },
@@ -131,10 +78,45 @@
     },
     {
       "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002059",
         "label": "Cerebral atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002133",
+        "label": "Status epilepticus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
     },
     {
       "type": {
@@ -149,11 +131,29 @@
         "label": "Intrauterine growth retardation"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "Wkik4mfR5aZtlaH8Mn7oi9EV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -165,8 +165,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_tVDJkbYywLwONDTyrIeZjHZCG",
+                "id": "c3439CtoT_PUM1_NM_001020658v2",
                 "geneContext": {
                   "valueId": "HGNC:14957",
                   "symbol": "PUM1"
@@ -179,12 +181,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.30933339G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001018494.1:p.(Arg1147Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "30933339",
+                  "pos": 30933339,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -214,55 +220,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-09T20:49:35.968693971Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T16:28:45.590964Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35386260",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35386260",
         "description": "A de novo PUM1 Variant in a Girl With a Dravet-Like Syndrome: Case Report and Literature Review"
       }
     ]
