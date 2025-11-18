@@ -1,10 +1,10 @@
 {
-  "id": "PMID_36659944_Patient",
+  "id": "PMID_38596211_individual_14",
   "subject": {
-    "id": "Patient",
+    "id": "individual 14",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P6Y6M"
       }
     },
     "sex": "MALE"
@@ -14,6 +14,13 @@
       "type": {
         "id": "HP:0009732",
         "label": "Plexiform neurofibroma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001067",
+        "label": "Neurofibroma"
       }
     },
     {
@@ -38,12 +45,20 @@
       "type": {
         "id": "HP:0009737",
         "label": "Lisch nodules"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000767",
         "label": "Pectus excavatum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000768",
+        "label": "Pectus carinatum"
       },
       "excluded": true
     },
@@ -63,29 +78,8 @@
     },
     {
       "type": {
-        "id": "HP:0002865",
-        "label": "Medullary thyroid carcinoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003002",
-        "label": "Breast carcinoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012032",
-        "label": "Lipoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003003",
-        "label": "Colon cancer"
+        "id": "HP:0000822",
+        "label": "Hypertension"
       },
       "excluded": true
     },
@@ -98,15 +92,36 @@
     },
     {
       "type": {
-        "id": "HP:0006743",
-        "label": "Embryonal rhabdomyosarcoma"
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000465",
+        "label": "Webbed neck"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "St7r35Gth6oIMJiwxfE0mDp8",
+      "id": "BvpuLehStFcH8UjbDgk065VB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,39 +130,23 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "individual 14",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c4552dup_NF1_NM_001042492v3",
+                "id": "NF1_SV_Type_3_deletion",
+                "label": "Type 3 deletion",
                 "geneContext": {
                   "valueId": "HGNC:7765",
                   "symbol": "NF1"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001042492.3:c.4552dup"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.31260490dup"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001035957.1:p.(Ile1518AsnfsTer12)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr17",
-                  "pos": 31260486,
-                  "ref": "G",
-                  "alt": "GA"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -168,7 +167,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T06:30:45.572787Z",
+    "created": "2025-11-18T06:30:45.579889Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -215,8 +214,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:36659944",
-        "description": "Identifying a novel frameshift pathogenic variant in a Chinese family with neurofibromatosis type 1 and review of literature"
+        "id": "PMID:38596211",
+        "description": "Mutation analysis and clinical profile of South African patients with Neurofibromatosis type 1 (NF1) phenotype"
       }
     ]
   }

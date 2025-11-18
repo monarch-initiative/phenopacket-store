@@ -1,31 +1,32 @@
 {
-  "id": "PMID_36659944_Patient",
+  "id": "PMID_20513137_individual_NF01470_GSM_GSM492690",
   "subject": {
-    "id": "Patient",
+    "id": "individual NF01470_GSM_GSM492690",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P7Y"
       }
     },
-    "sex": "MALE"
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0009732",
         "label": "Plexiform neurofibroma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001067",
+        "label": "Neurofibroma"
       }
     },
     {
       "type": {
-        "id": "HP:0000997",
-        "label": "Axillary freckling"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030052",
-        "label": "Inguinal freckling"
+        "id": "HP:0001480",
+        "label": "Freckling"
       }
     },
     {
@@ -36,77 +37,21 @@
     },
     {
       "type": {
-        "id": "HP:0009737",
-        "label": "Lisch nodules"
+        "id": "HP:0002650",
+        "label": "Scoliosis"
       }
     },
     {
       "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002808",
-        "label": "Kyphosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002865",
-        "label": "Medullary thyroid carcinoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003002",
-        "label": "Breast carcinoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012032",
-        "label": "Lipoma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0003003",
-        "label": "Colon cancer"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0009733",
-        "label": "Glioma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006743",
-        "label": "Embryonal rhabdomyosarcoma"
+        "id": "HP:0009734",
+        "label": "Optic nerve glioma"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "St7r35Gth6oIMJiwxfE0mDp8",
+      "id": "aq66zFPS2nZQUvRU9Nnp6Br4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,39 +60,23 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "individual NF01470_GSM_GSM492690",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c4552dup_NF1_NM_001042492v3",
+                "id": "NF1_SV_Type_1_microdeletion",
+                "label": "Type-1 microdeletion",
                 "geneContext": {
                   "valueId": "HGNC:7765",
                   "symbol": "NF1"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001042492.3:c.4552dup"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.31260490dup"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001035957.1:p.(Ile1518AsnfsTer12)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr17",
-                  "pos": 31260486,
-                  "ref": "G",
-                  "alt": "GA"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -168,7 +97,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T06:30:45.572787Z",
+    "created": "2025-11-18T06:30:45.584966Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -215,8 +144,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:36659944",
-        "description": "Identifying a novel frameshift pathogenic variant in a Chinese family with neurofibromatosis type 1 and review of literature"
+        "id": "PMID:20513137",
+        "description": "NF1 microdeletions in neurofibromatosis type 1: from genotype to phenotype"
       }
     ]
   }

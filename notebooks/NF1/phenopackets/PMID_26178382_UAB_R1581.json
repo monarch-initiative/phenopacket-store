@@ -1,10 +1,10 @@
 {
-  "id": "PMID_36659944_Patient",
+  "id": "PMID_26178382_UAB_R1581",
   "subject": {
-    "id": "Patient",
+    "id": "UAB-R1581",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P6Y"
       }
     },
     "sex": "MALE"
@@ -12,20 +12,15 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0009732",
-        "label": "Plexiform neurofibroma"
-      }
+        "id": "HP:0001067",
+        "label": "Neurofibroma"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000997",
-        "label": "Axillary freckling"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030052",
-        "label": "Inguinal freckling"
+        "id": "HP:0001480",
+        "label": "Freckling"
       }
     },
     {
@@ -38,12 +33,20 @@
       "type": {
         "id": "HP:0009737",
         "label": "Lisch nodules"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000767",
         "label": "Pectus excavatum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000768",
+        "label": "Pectus carinatum"
       },
       "excluded": true
     },
@@ -63,15 +66,29 @@
     },
     {
       "type": {
-        "id": "HP:0002865",
-        "label": "Medullary thyroid carcinoma"
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0003002",
-        "label": "Breast carcinoma"
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
       },
       "excluded": true
     },
@@ -84,29 +101,15 @@
     },
     {
       "type": {
-        "id": "HP:0003003",
-        "label": "Colon cancer"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0009733",
         "label": "Glioma"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0006743",
-        "label": "Embryonal rhabdomyosarcoma"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "St7r35Gth6oIMJiwxfE0mDp8",
+      "id": "yqTCWrqmv1kd8gnRcWTvpI7d",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -115,13 +118,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "UAB-R1581",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c4552dup_NF1_NM_001042492v3",
+                "id": "c5489GtoT_NF1_NM_001042492v3",
                 "geneContext": {
                   "valueId": "HGNC:7765",
                   "symbol": "NF1"
@@ -129,23 +132,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001042492.3:c.4552dup"
+                    "value": "NM_001042492.3:c.5489G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.31260490dup"
+                    "value": "NC_000017.11:g.31327719G>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_001035957.1:p.(Ile1518AsnfsTer12)"
+                    "value": "NP_001035957.1:p.(Arg1830Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": 31260486,
+                  "pos": 31327719,
                   "ref": "G",
-                  "alt": "GA"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -168,7 +171,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T06:30:45.572787Z",
+    "created": "2025-11-18T06:30:45.582833Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -215,8 +218,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:36659944",
-        "description": "Identifying a novel frameshift pathogenic variant in a Chinese family with neurofibromatosis type 1 and review of literature"
+        "id": "PMID:26178382",
+        "description": "High Incidence of Noonan Syndrome Features Including Short Stature and Pulmonic Stenosis in Patients carrying NF1 Missense Mutations Affecting p.Arg1809: Genotype-Phenotype Correlation"
       }
     ]
   }
