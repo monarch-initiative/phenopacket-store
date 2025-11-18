@@ -45,6 +45,18 @@
     },
     {
       "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000470",
         "label": "Short neck"
       },
@@ -89,6 +101,18 @@
     },
     {
       "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000752",
         "label": "Hyperactivity"
       },
@@ -106,6 +130,18 @@
       "onset": {
         "age": {
           "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002023",
+        "label": "Anal atresia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     },
@@ -166,53 +202,6 @@
     },
     {
       "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000718",
-        "label": "Aggressive behavior"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002023",
-        "label": "Anal atresia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002353",
         "label": "EEG abnormality"
       },
@@ -227,6 +216,17 @@
     },
     {
       "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012443",
         "label": "Abnormal brain morphology"
       },
@@ -235,7 +235,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband VMFS",
+      "id": "41kol4g4At5sxzkqWqtE1Jz8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -247,8 +247,10 @@
             "subjectOrBiosampleId": "proband VMFS",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cxMZguZCKBsZTBLSYgKZvOKhE",
+                "id": "c824TtoG_SALL1_NM_002968v3",
                 "geneContext": {
                   "valueId": "HGNC:10524",
                   "symbol": "SALL1"
@@ -261,12 +263,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.51141398A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002959.2:p.(Leu275Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "51141398",
+                  "pos": 51141398,
                   "ref": "A",
                   "alt": "C"
                 },
@@ -297,55 +303,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-28T19:20:12.857005119Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T19:31:15.428575Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29110636",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29110636",
         "description": "Phenotypic and genotypic aspects of Townes-Brock syndrome: case report of patient in southern Brazil with a new SALL1 hotspot region nonsense mutation"
       }
     ]
