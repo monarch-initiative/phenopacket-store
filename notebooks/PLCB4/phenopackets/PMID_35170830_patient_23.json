@@ -32,7 +32,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient 23",
+      "id": "Gbr0mAjfntJL0Fl0HcNEjcgl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -44,8 +44,10 @@
             "subjectOrBiosampleId": "patient 23",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lUkpJWJOaboomghbksXyqZNvi",
+                "id": "c1620dup_PLCB4_NM_001377142v1",
                 "geneContext": {
                   "valueId": "HGNC:9059",
                   "symbol": "PLCB4"
@@ -58,12 +60,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000020.11:g.9405321dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001364071.1:p.(Asp541Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr20",
-                  "pos": "9405320",
+                  "pos": 9405320,
                   "ref": "A",
                   "alt": "AT"
                 },
@@ -93,55 +99,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-28T15:49:17.664330959Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-18T07:29:31.639556Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35170830",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35170830",
         "description": "Further delineation of auriculocondylar syndrome based on 14 novel cases and reassessment of 25 published cases"
       }
     ]
