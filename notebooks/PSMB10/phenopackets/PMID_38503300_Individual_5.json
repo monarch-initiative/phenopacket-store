@@ -1,23 +1,24 @@
 {
-  "id": "PMID_38503300_Individual_4",
+  "id": "PMID_38503300_Individual_5",
   "subject": {
-    "id": "Individual 4",
+    "id": "Individual 5",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P11Y"
+        "iso8601duration": "P4Y"
       }
     },
     "vitalStatus": {
-      "status": "DECEASED",
-      "timeOfDeath": {
-        "age": {
-          "iso8601duration": "P11Y"
-        }
-      }
+      "status": "DECEASED"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002719",
+        "label": "Recurrent infections"
+      }
+    },
     {
       "type": {
         "id": "HP:0001508",
@@ -26,38 +27,47 @@
     },
     {
       "type": {
+        "id": "HP:0002583",
+        "label": "Colitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0009098",
         "label": "Chronic oral candidiasis"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0020102",
         "label": "Pneumocystis jirovecii pneumonia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0005403",
-        "label": "T lymphocytopenia"
+        "label": "Decreased total T cell count"
       }
     },
     {
       "type": {
         "id": "HP:0010976",
-        "label": "B lymphocytopenia"
+        "label": "Decreased total B cell count"
       }
     },
     {
       "type": {
         "id": "HP:0410378",
-        "label": "Decreased proportion of naive CD4 T cells"
+        "label": "Decreased naive CD4+ T cell proportion"
       }
     },
     {
       "type": {
         "id": "HP:0031381",
-        "label": "Decreased lymphocyte proliferation in response to mitogen"
+        "label": "Decreased mitogen-induced T-cell proliferation"
       }
     },
     {
@@ -81,37 +91,7 @@
     {
       "type": {
         "id": "HP:0001880",
-        "label": "Eosinophilia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001596",
-        "label": "Alopecia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002014",
-        "label": "Diarrhea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032132",
-        "label": "Decreased circulating total IgG concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002583",
-        "label": "Colitis"
+        "label": "Increased total eosinophil count"
       },
       "excluded": true
     },
@@ -126,6 +106,25 @@
       "type": {
         "id": "HP:0002716",
         "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002014",
+        "label": "Diarrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032132",
+        "label": "Decreased circulating total IgG concentration"
       },
       "excluded": true
     },
@@ -156,11 +155,18 @@
         "label": "Pointed chin"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 4",
+      "id": "zzisjPnblWDHifp67kz2S7Q5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -169,11 +175,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 4",
+            "subjectOrBiosampleId": "Individual 5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_OSkxByAtOuWpoxJcxubVfLvHl",
+                "id": "c166GtoC_PSMB10_NM_002801v4",
                 "geneContext": {
                   "valueId": "HGNC:9538",
                   "symbol": "PSMB10"
@@ -181,19 +189,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_002801.4:c.601G>A"
+                    "value": "NM_002801.4:c.166G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.67934906C>T"
+                    "value": "NC_000016.10:g.67936291C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002792.1:p.(Asp56His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "67934906",
+                  "pos": 67936291,
                   "ref": "C",
-                  "alt": "T"
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -215,62 +227,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P7D"
+          "iso8601duration": "P1M25D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-15T06:12:44.901916980Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-19T06:14:42.727225Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38503300",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38503300",
-        "description": "Expanding the PRAAS spectrum: De novo mutations of immunoproteasome subunit \u03b2-type 10 in six infants with SCID-Omenn syndrome"
+        "description": "Expanding the PRAAS spectrum: De novo mutations of immunoproteasome subunit β-type 10 in six infants with SCID-Omenn syndrome"
       }
     ]
   }
