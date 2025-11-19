@@ -1,13 +1,13 @@
 {
-  "id": "PMID_35924320_proband",
+  "id": "PMID_35933355_two_year_old_ACM_proband",
   "subject": {
-    "id": "proband",
+    "id": "two-year-old ACM proband",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P1Y6M"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,7 +17,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y10M"
+          "iso8601duration": "P3M"
         }
       }
     },
@@ -53,18 +53,6 @@
       "type": {
         "id": "HP:0004756",
         "label": "Ventricular tachycardia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001685",
-        "label": "Myocardial fibrosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031318",
-        "label": "Myofiber disarray"
       },
       "excluded": true
     },
@@ -72,13 +60,6 @@
       "type": {
         "id": "HP:0001647",
         "label": "Bicuspid aortic valve"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0030718",
-        "label": "Right atrial enlargement"
       },
       "excluded": true
     },
@@ -106,12 +87,27 @@
       "type": {
         "id": "HP:0002208",
         "label": "Coarse hair"
-      }
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040149",
+        "label": "Woolly scalp hair"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002209",
         "label": "Sparse scalp hair"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011359",
+        "label": "Dry hair"
       },
       "excluded": true
     },
@@ -147,7 +143,8 @@
       "type": {
         "id": "HP:0009890",
         "label": "High anterior hairline"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -193,14 +190,22 @@
     },
     {
       "type": {
-        "id": "HP:0012413",
-        "label": "Notched primary central incisor"
-      }
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001806",
+        "label": "Onycholysis"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "LKRZhyW3M8158XvHIzZUhSgu",
+      "id": "9LCu3sg8r5qoAiAlvjaVinaF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -209,13 +214,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "two-year-old ACM proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1068dup_PPP1R13L_NM_006663v4",
+                "id": "c580CtoT_PPP1R13L_NM_006663v4",
                 "geneContext": {
                   "valueId": "HGNC:18838",
                   "symbol": "PPP1R13L"
@@ -223,23 +228,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006663.4:c.1068dup"
+                    "value": "NM_006663.4:c.580C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.45395727dup"
+                    "value": "NC_000019.10:g.45396677G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006654.2:p.(Ser357LeufsTer49)"
+                    "value": "NP_006654.2:p.(Gln194Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": 45395721,
-                  "ref": "A",
-                  "alt": "AG"
+                  "pos": 45396677,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -261,13 +266,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y10M"
+          "iso8601duration": "P3M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-19T06:08:47.907097Z",
+    "created": "2025-11-19T06:08:47.907141Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -314,8 +319,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:35924320",
-        "description": "Novel PPP1R13L variant expands the phenotype of a rare cardiocutaneous syndrome"
+        "id": "PMID:35933355",
+        "description": "Novel homozygous stop-gain pathogenic variant of PPP1R13L gene leads to arrhythmogenic cardiomyopathy"
       }
     ]
   }

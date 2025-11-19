@@ -1,13 +1,16 @@
 {
-  "id": "PMID_35924320_proband",
+  "id": "PMID_32666529_Family_I_II_1",
   "subject": {
-    "id": "proband",
+    "id": "Family I II.1",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P3Y"
       }
     },
-    "sex": "FEMALE"
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,7 +20,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y10M"
+          "iso8601duration": "P2Y6M"
         }
       }
     },
@@ -25,15 +28,13 @@
       "type": {
         "id": "HP:0001653",
         "label": "Mitral regurgitation"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0005180",
         "label": "Tricuspid regurgitation"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -53,18 +54,6 @@
       "type": {
         "id": "HP:0004756",
         "label": "Ventricular tachycardia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001685",
-        "label": "Myocardial fibrosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031318",
-        "label": "Myofiber disarray"
       },
       "excluded": true
     },
@@ -72,13 +61,6 @@
       "type": {
         "id": "HP:0001647",
         "label": "Bicuspid aortic valve"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0030718",
-        "label": "Right atrial enlargement"
       },
       "excluded": true
     },
@@ -100,20 +82,25 @@
         "id": "HP:0001655",
         "label": "Patent foramen ovale"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
     },
     {
       "type": {
-        "id": "HP:0002208",
-        "label": "Coarse hair"
-      }
+        "id": "HP:0040149",
+        "label": "Woolly scalp hair"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002209",
         "label": "Sparse scalp hair"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -138,47 +125,6 @@
     },
     {
       "type": {
-        "id": "HP:0008404",
-        "label": "Nail dystrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0009890",
-        "label": "High anterior hairline"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005280",
-        "label": "Depressed nasal bridge"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0410030",
-        "label": "Cleft lip"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0007957",
-        "label": "Corneal opacity"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
       },
@@ -193,14 +139,21 @@
     },
     {
       "type": {
-        "id": "HP:0012413",
-        "label": "Notched primary central incisor"
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001806",
+        "label": "Onycholysis"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "LKRZhyW3M8158XvHIzZUhSgu",
+      "id": "yDBW5lnBpJXQgjKHGsaDrmOP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -209,13 +162,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "Family I II.1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1068dup_PPP1R13L_NM_006663v4",
+                "id": "c1610del_PPP1R13L_NM_006663v4",
                 "geneContext": {
                   "valueId": "HGNC:18838",
                   "symbol": "PPP1R13L"
@@ -223,28 +176,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006663.4:c.1068dup"
+                    "value": "NM_006663.4:c.1610del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.45395727dup"
+                    "value": "NC_000019.10:g.45392089del"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_006654.2:p.(Ser357LeufsTer49)"
+                    "value": "NP_006654.2:p.(Pro537LeufsTer100)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": 45395721,
-                  "ref": "A",
-                  "alt": "AG"
+                  "pos": 45392084,
+                  "ref": "AG",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -261,13 +214,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P2Y10M"
+          "iso8601duration": "P2Y6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-19T06:08:47.907097Z",
+    "created": "2025-11-19T06:08:47.906648Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -314,8 +267,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:35924320",
-        "description": "Novel PPP1R13L variant expands the phenotype of a rare cardiocutaneous syndrome"
+        "id": "PMID:32666529",
+        "description": "Biallelic variants in PPP1R13L cause paediatric dilated cardiomyopathy"
       }
     ]
   }
