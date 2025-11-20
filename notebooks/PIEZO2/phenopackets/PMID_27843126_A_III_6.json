@@ -1,5 +1,5 @@
 {
-  "id": "PMID_27843126_A-III.6",
+  "id": "PMID_27843126_A_III_6",
   "subject": {
     "id": "A-III.6",
     "timeAtLastEncounter": {
@@ -10,6 +10,25 @@
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
     {
       "type": {
         "id": "HP:0001252",
@@ -24,20 +43,15 @@
     },
     {
       "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      }
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0008994",
-        "label": "Proximal muscle weakness in lower limbs"
+        "label": "Proximal lower limb muscle weakness"
       }
     },
     {
@@ -55,7 +69,7 @@
     {
       "type": {
         "id": "HP:0008997",
-        "label": "Proximal muscle weakness in upper limbs"
+        "label": "Proximal upper limb muscle weakness"
       }
     },
     {
@@ -96,26 +110,6 @@
     },
     {
       "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0012385",
         "label": "Camptodactyly"
       },
@@ -130,6 +124,12 @@
     },
     {
       "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
       },
@@ -138,7 +138,7 @@
   ],
   "interpretations": [
     {
-      "id": "A-III.6",
+      "id": "bgOr6xqw2JfuVU0bx1sMQZJS",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -150,8 +150,10 @@
             "subjectOrBiosampleId": "A-III.6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_gzfRsdbGbArbEcNukyIlZNzcV",
+                "id": "c5621del_PIEZO2_NM_001378183v1",
                 "geneContext": {
                   "valueId": "HGNC:26270",
                   "symbol": "PIEZO2"
@@ -164,12 +166,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000018.10:g.10705714del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365112.1:p.(Arg1874ProfsTer55)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "10705713",
+                  "pos": 10705713,
                   "ref": "GC",
                   "alt": "G"
                 },
@@ -200,55 +206,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-28T19:06:19.049615859Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-20T07:09:02.389945Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27843126",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27843126",
         "description": "Biallelic Loss of Proprioception-Related PIEZO2 Causes Muscular Atrophy with Perinatal Respiratory Distress, Arthrogryposis, and Scoliosis"
       }
     ]

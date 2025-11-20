@@ -1,33 +1,15 @@
 {
-  "id": "PMID_27843126_B-III.4",
+  "id": "PMID_27843126_C_II_3",
   "subject": {
-    "id": "B-III.4",
+    "id": "C-II.3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P10Y"
+        "iso8601duration": "P5Y"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
-      }
-    },
     {
       "type": {
         "id": "HP:0001270",
@@ -36,9 +18,35 @@
     },
     {
       "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008994",
+        "label": "Proximal lower limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0009053",
         "label": "Distal lower limb muscle weakness"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0008959",
+        "label": "Distal upper limb muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008997",
+        "label": "Proximal upper limb muscle weakness"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -54,8 +62,14 @@
     },
     {
       "type": {
-        "id": "HP:0001762",
-        "label": "Talipes equinovarus"
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002058",
+        "label": "Myopathic facies"
       }
     },
     {
@@ -74,54 +88,6 @@
       "type": {
         "id": "HP:0001166",
         "label": "Arachnodactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008994",
-        "label": "Proximal muscle weakness in lower limbs"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008959",
-        "label": "Distal upper limb muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008997",
-        "label": "Proximal muscle weakness in upper limbs"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001763",
-        "label": "Pes planus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002058",
-        "label": "Myopathic facies"
       },
       "excluded": true
     },
@@ -129,8 +95,7 @@
       "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -142,7 +107,7 @@
   ],
   "interpretations": [
     {
-      "id": "B-III.4",
+      "id": "Sav0XvVBKgdR1Zctn3IcHZNc",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -151,11 +116,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "B-III.4",
+            "subjectOrBiosampleId": "C-II.3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_byNVGeiejOITRuWummZWNegDA",
+                "id": "c1550_1552delinsCGAA_PIEZO2_NM_001378183v1",
                 "geneContext": {
                   "valueId": "HGNC:26270",
                   "symbol": "PIEZO2"
@@ -163,19 +130,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001378183.1:c.3019_3029del"
+                    "value": "NM_001378183.1:c.1550_1552delinsCGAA"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.10763016_10763026del"
+                    "value": "NC_000018.10:g.10794978_10794980delinsTTCG"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365112.1:p.(Ser517ThrfsTer48)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "10763015",
-                  "ref": "GACACTTGAAGC",
-                  "alt": "G"
+                  "pos": 10794978,
+                  "ref": "AGC",
+                  "alt": "TTCG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -197,62 +168,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+          "id": "HP:0003593",
+          "label": "Infantile onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-28T19:06:19.051036834Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-20T07:09:02.390188Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27843126",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27843126",
         "description": "Biallelic Loss of Proprioception-Related PIEZO2 Causes Muscular Atrophy with Perinatal Respiratory Distress, Arthrogryposis, and Scoliosis"
       }
     ]
