@@ -1,10 +1,10 @@
 {
-  "id": "PMID_30099644_III:9",
+  "id": "PMID_30099644_IV_19",
   "subject": {
-    "id": "III:9",
+    "id": "IV:19",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P65Y"
+        "iso8601duration": "P8Y"
       }
     },
     "sex": "MALE"
@@ -12,14 +12,14 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000518",
-        "label": "Cataract"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003596",
-          "label": "Middle age onset"
-        }
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000510",
+        "label": "Rod-cone dystrophy"
       }
     },
     {
@@ -32,30 +32,6 @@
           "id": "HP:0011463",
           "label": "Childhood onset"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001133",
-        "label": "Constriction of peripheral visual field"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007663",
-        "label": "Reduced visual acuity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000510",
-        "label": "Rod-cone dystrophy"
       }
     },
     {
@@ -74,7 +50,8 @@
       "type": {
         "id": "HP:0001139",
         "label": "Choroideremia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -85,7 +62,7 @@
   ],
   "interpretations": [
     {
-      "id": "III:9",
+      "id": "Xo1O1y5ITjYTeVPcswL9Zsxy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -94,11 +71,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "III:9",
+            "subjectOrBiosampleId": "IV:19",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_iwSNGyrqcbktKMdxQTiPAlyHL",
+                "id": "c896GtoA_PRPF31_NM_015629v4",
                 "geneContext": {
                   "valueId": "HGNC:15446",
                   "symbol": "PRPF31"
@@ -111,12 +90,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.54126568G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056444.3:p.(Cys299Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "54126568",
+                  "pos": 54126568,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -147,55 +130,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-27T10:23:00.277199029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-20T07:16:04.130951Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30099644",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30099644",
         "description": "A novel mutation in the PRPF31 in a North Indian adRP family with incomplete penetrance"
       }
     ]
