@@ -1,10 +1,10 @@
 {
-  "id": "PMID_32730804_Individual_2",
+  "id": "PMID_32730804_Individual_6",
   "subject": {
-    "id": "Individual 2",
+    "id": "Individual 6",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y6M"
+        "iso8601duration": "P6Y6M"
       }
     },
     "sex": "MALE"
@@ -14,12 +14,6 @@
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
       }
     },
     {
@@ -38,43 +32,41 @@
     },
     {
       "type": {
-        "id": "HP:0002079",
-        "label": "Hypoplasia of the corpus callosum"
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100716",
+        "label": "Self-injurious behavior"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
+        "id": "HP:0000122",
+        "label": "Unilateral renal agenesis"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001276",
-        "label": "Hypertonia"
+        "id": "HP:0000003",
+        "label": "Multicystic kidney dysplasia"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001647",
-        "label": "Bicuspid aortic valve"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012304",
-        "label": "Hypoplastic aortic arch"
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
       },
       "excluded": true
     },
@@ -96,8 +88,7 @@
       "type": {
         "id": "HP:0002808",
         "label": "Kyphosis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -129,13 +120,6 @@
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000286",
         "label": "Epicanthus"
       },
@@ -158,7 +142,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual 2",
+      "id": "MGg8PGdG6EMbZNS7NKH6HlZx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -167,11 +151,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 2",
+            "subjectOrBiosampleId": "Individual 6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_mskSWemoYbJEVjuEuoSzkQPLT",
+                "id": "c1614_1GtoC_SCAF4_NM_020706v2",
                 "geneContext": {
                   "valueId": "HGNC:19304",
                   "symbol": "SCAF4"
@@ -179,19 +165,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_020706.2:c.453_456del"
+                    "value": "NM_020706.2:c.1614+1G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.31702247_31702250del"
+                    "value": "NC_000021.9:g.31692348C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065757.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "31702244",
-                  "ref": "CTTCA",
-                  "alt": "C"
+                  "pos": 31692348,
+                  "ref": "C",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -220,55 +210,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-24T13:43:26.370666980Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-20T07:04:17.221283Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32730804",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32730804",
         "description": "Variants in SCAF4 Cause a Neurodevelopmental Disorder and Are Associated with Impaired mRNA Processing"
       }
     ]
