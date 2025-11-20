@@ -7,9 +7,6 @@
         "iso8601duration": "P24Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -40,19 +37,19 @@
     {
       "type": {
         "id": "HP:0010976",
-        "label": "B lymphocytopenia"
+        "label": "Decreased total B cell count"
       }
     },
     {
       "type": {
-        "id": "HP:0005407",
-        "label": "Decreased proportion of CD4-positive helper T cells"
+        "id": "HP:0032218",
+        "label": "Decreased CD4+ T cell proportion"
       }
     },
     {
       "type": {
         "id": "HP:0040218",
-        "label": "Reduced natural killer cell count"
+        "label": "Reduced total natural killer cell count"
       }
     },
     {
@@ -65,18 +62,6 @@
       "type": {
         "id": "HP:0002110",
         "label": "Bronchiectasis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006889",
-        "label": "Intellectual disability, borderline"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410378",
-        "label": "Decreased proportion of naive CD4 T cells"
       }
     },
     {
@@ -109,29 +94,41 @@
     },
     {
       "type": {
-        "id": "HP:0002720",
-        "label": "Decreased circulating IgA concentration"
+        "id": "HP:0006889",
+        "label": "Borderline intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410242",
+        "label": "Abnormal circulating IgG concentration"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG concentration"
+        "id": "HP:0410240",
+        "label": "Abnormal circulating IgA concentration"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002850",
-        "label": "Decreased circulating total IgM"
+        "id": "HP:0410243",
+        "label": "Abnormal circulating IgM concentration"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410378",
+        "label": "Decreased naive CD4+ T cell proportion"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "vZvTJnAmXEfvAaSyXJLkaeXd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -143,43 +140,10 @@
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_UMKHfONkDbLFnhngewbOJFqrX",
-                "geneContext": {
-                  "valueId": "HGNC:9175",
-                  "symbol": "POLD1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_002691.4:c.2052G>C"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.50409564G>C"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": "50409564",
-                  "ref": "G",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_DeSjQASCInlkSihYoDEMWpWLQ",
+                "id": "c3220CtoT_POLD1_NM_002691v4",
                 "geneContext": {
                   "valueId": "HGNC:9175",
                   "symbol": "POLD1"
@@ -192,12 +156,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.50417843C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002682.2:p.(Arg1074Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "50417843",
+                  "pos": 50417843,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -222,56 +190,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-14T10:50:37.715260982Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-20T07:13:15.088676Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:31449058",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31449058",
-        "description": "Polymerase \u03b4 deficiency causes syndromic immunodeficiency with replicative stress"
+        "description": "Polymerase δ deficiency causes syndromic immunodeficiency with replicative stress"
       }
     ]
   }
