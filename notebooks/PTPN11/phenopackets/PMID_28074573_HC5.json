@@ -2,7 +2,12 @@
   "id": "PMID_28074573_HC5",
   "subject": {
     "id": "HC5",
-    "sex": "MALE"
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P34Y"
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -13,14 +18,35 @@
     },
     {
       "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001639",
+        "label": "Hypertrophic cardiomyopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0005164",
         "label": "Dysplastic pulmonary valve"
-      }
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "HC5",
+      "id": "9HkQ2OszSgE6GqGaYBSzlVRm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -32,8 +58,10 @@
             "subjectOrBiosampleId": "HC5",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_umyBIfGCLrDSmmdnqfFSvdrFV",
+                "id": "c794GtoA_PTPN11_NM_002834v5",
                 "geneContext": {
                   "valueId": "HGNC:9644",
                   "symbol": "PTPN11"
@@ -46,12 +74,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.112472981G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002825.3:p.(Arg265Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "112472981",
+                  "pos": 112472981,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -72,65 +104,59 @@
       "term": {
         "id": "OMIM:163950",
         "label": "Noonan syndrome 1"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-27T15:03:28.041578054Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:37:49.237831Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28074573",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28074573",
-        "description": "Structural, Functional, and Clinical Characterization of a Novel PTPN11 Mutation Cluster Underlying Noonan Syndrome"
+        "description": "Structural, Functional, and Clinical Characterization of a Novel PTPN11 Mutation Cluster Underlying Noonan Syndrome."
       }
     ]
   }

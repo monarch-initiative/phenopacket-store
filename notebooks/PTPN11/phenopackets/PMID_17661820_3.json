@@ -12,15 +12,10 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001642",
-        "label": "Pulmonic stenosis"
-      }
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -30,15 +25,17 @@
     },
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
+        "id": "HP:0000465",
+        "label": "Webbed neck"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      }
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -48,14 +45,80 @@
     },
     {
       "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033379",
+        "label": "Bilateral superior vena cava"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002967",
+        "label": "Cubitus valgus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "3",
+      "id": "j0Uu9kbNUV2lI44sIxwY8tDo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -67,8 +130,10 @@
             "subjectOrBiosampleId": "3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_XaMFosJgsSkHImLbnDzlUsSEz",
+                "id": "c922AtoG_PTPN11_NM_002834v5",
                 "geneContext": {
                   "valueId": "HGNC:9644",
                   "symbol": "PTPN11"
@@ -81,12 +146,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.112477719A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002825.3:p.(Asn308Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "112477719",
+                  "pos": 112477719,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -107,60 +176,65 @@
       "term": {
         "id": "OMIM:163950",
         "label": "Noonan syndrome 1"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-27T15:02:58.321748971Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:37:49.238103Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17661820",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17661820",
-        "description": "Mutation analysis of the genes involved in the Ras-mitogen-activated protein kinase (MAPK) pathway in Korean patients with Noonan syndrome"
+        "description": "Mutation analysis of the genes involved in the Ras-mitogen-activated protein kinase (MAPK) pathway in Korean patients with Noonan syndrome."
       }
     ]
   }
