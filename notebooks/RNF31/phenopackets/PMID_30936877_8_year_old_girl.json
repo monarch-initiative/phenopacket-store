@@ -1,5 +1,5 @@
 {
-  "id": "PMID_30936877_8-year-old_girl",
+  "id": "PMID_30936877_8_year_old_girl",
   "subject": {
     "id": "8-year-old girl",
     "timeAtLastEncounter": {
@@ -48,42 +48,6 @@
     },
     {
       "type": {
-        "id": "HP:0031402",
-        "label": "Reduced antigen-specific T cell proliferation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410301",
-        "label": "Partial absence of specific antibody response to unconjugated pneumococcus vaccine"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002721",
-        "label": "Immunodeficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001217",
-        "label": "Clubbing"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031190",
-        "label": "Superficial dermal perivascular inflammatory infiltrate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032183",
-        "label": "Decreased proportion of memory T cells"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002593",
         "label": "Intestinal lymphangiectasia"
       },
@@ -99,16 +63,41 @@
     {
       "type": {
         "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
+        "label": "Decreased circulating IgG concentration"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0031402",
+        "label": "Reduced antigen-specific T cell proliferation"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0005403",
-        "label": "T lymphocytopenia"
+        "label": "Decreased total T cell count"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410301",
+        "label": "Partial absence of specific antibody response to unconjugated pneumococcus vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002721",
+        "label": "Immunodeficiency"
+      }
     },
     {
       "type": {
@@ -158,11 +147,29 @@
         "label": "Abnormal circulating creatine kinase concentration"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031190",
+        "label": "Superficial dermal perivascular inflammatory infiltrate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032183",
+        "label": "Decreased memory T cell proportion"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "8-year-old girl",
+      "id": "yUZaquTdngUYWIax98wWNNZP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -174,8 +181,10 @@
             "subjectOrBiosampleId": "8-year-old girl",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_efFiJkSrhIeuoNTBRlpcjFAbl",
+                "id": "c1197GtoC_RNF31_NM_017999v5",
                 "geneContext": {
                   "valueId": "HGNC:16031",
                   "symbol": "RNF31"
@@ -188,49 +197,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.24150448G>C"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": "24150448",
-                  "ref": "G",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "8-year-old girl",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_gLMICjTswyFOiPisvZdcqlIZW",
-                "geneContext": {
-                  "valueId": "HGNC:16031",
-                  "symbol": "RNF31"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_017999.5:c.1737+3A>G"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.24151382A>G"
+                    "syntax": "hgvs.p",
+                    "value": "NP_060469.4:p.(Gln399His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "24151382",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 24150448,
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -258,55 +236,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-29T10:03:43.960935831Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:46:08.511409Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30936877",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30936877",
         "description": "Second Case of HOIP Deficiency Expands Clinical Features and Defines Inflammatory Transcriptome Regulated by LUBAC"
       }
     ]
