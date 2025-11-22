@@ -1,24 +1,19 @@
 {
-  "id": "PMID_30643655_F2_IV_1",
+  "id": "PMID_30643655_F1_IV_1",
   "subject": {
-    "id": "F2:IV:1",
+    "id": "F1:IV:1",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P10Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002359",
-        "label": "Frequent falls"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P4Y"
-        }
+        "id": "HP:0002936",
+        "label": "Distal sensory impairment"
       }
     },
     {
@@ -29,8 +24,26 @@
     },
     {
       "type": {
-        "id": "HP:0001257",
-        "label": "Spasticity"
+        "id": "HP:0012407",
+        "label": "Scissor gait"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002359",
+        "label": "Frequent falls"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     },
     {
@@ -47,29 +60,32 @@
     },
     {
       "type": {
-        "id": "HP:0002936",
-        "label": "Distal sensory impairment"
-      },
-      "excluded": true
+        "id": "HP:0001870",
+        "label": "Acroosteolysis of distal phalanges (feet)"
+      }
     },
     {
       "type": {
         "id": "HP:0031936",
         "label": "Delayed ability to walk"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
+        "id": "HP:0007340",
+        "label": "Lower limb muscle weakness"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003581",
+          "label": "Adult onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "F2:IV:1",
+      "id": "TyckKoQjQCtrxl69K13PbB3y",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -78,11 +94,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F2:IV:1",
+            "subjectOrBiosampleId": "F1:IV:1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_PWTjBUKHzGCqyoQKaMwmGFhTI",
+                "id": "c926CtoG_RETREG1_NM_001034850v3",
                 "geneContext": {
                   "valueId": "HGNC:25964",
                   "symbol": "RETREG1"
@@ -95,12 +113,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000005.10:g.16477736G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001030022.1:p.(Ser309Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "16477736",
+                  "pos": 16477736,
                   "ref": "G",
                   "alt": "C"
                 },
@@ -123,62 +145,62 @@
         "label": "Neuropathy, hereditary sensory and autonomic, type IIB"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P4Y"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-23T05:38:12.299152851Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:44:14.229385Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30643655",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30643655",
         "description": "Exome Sequencing: Mutilating Sensory Neuropathy with Spastic Paraplegia due to a Mutation in FAM134B Gene"
       }
     ]
