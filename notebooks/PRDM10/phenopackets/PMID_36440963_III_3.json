@@ -1,5 +1,5 @@
 {
-  "id": "PMID_36440963_III-3",
+  "id": "PMID_36440963_III_3",
   "subject": {
     "id": "III-3",
     "sex": "MALE"
@@ -9,12 +9,6 @@
       "type": {
         "id": "HP:0001012",
         "label": "Multiple lipomas"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006770",
-        "label": "Clear cell renal cell carcinoma"
       }
     },
     {
@@ -30,11 +24,17 @@
         "label": "Perifollicular fibroma"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006770",
+        "label": "Clear cell renal cell carcinoma"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "III-3",
+      "id": "Gq7gPbenzCXnNC7Jz14CxYiZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -46,8 +46,10 @@
             "subjectOrBiosampleId": "III-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_AvBnHetUuvmcemeBPyUisIlgo",
+                "id": "c2030GtoA_PRDM10_NM_020228v3",
                 "geneContext": {
                   "valueId": "HGNC:13995",
                   "symbol": "PRDM10"
@@ -60,12 +62,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.129923264C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_064613.2:p.(Cys677Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "129923264",
+                  "pos": 129923264,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -90,56 +96,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-28T16:06:27.415920019Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:01:57.263731Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36440963",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36440963",
-        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dub\u00e9 syndrome and familial lipomatosis"
+        "description": "PRDM10 directs FLCN expression in a novel disorder overlapping with Birt-Hogg-Dubé syndrome and familial lipomatosis"
       }
     ]
   }
