@@ -31,20 +31,15 @@
     },
     {
       "type": {
-        "id": "HP:0000272",
-        "label": "Malar flattening"
+        "id": "HP:0008551",
+        "label": "Microtia"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0004467",
-        "label": "Preauricular pit"
+        "id": "HP:0000272",
+        "label": "Malar flattening"
       },
       "onset": {
         "ontologyClass": {
@@ -66,13 +61,6 @@
     },
     {
       "type": {
-        "id": "HP:0008551",
-        "label": "Microtia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
       },
@@ -84,11 +72,23 @@
         "label": "Delayed speech and language development"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004467",
+        "label": "Preauricular pit"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 1 affected individual",
+      "id": "Fafjb747Zpb5THozMK2eN9I7",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -100,8 +100,10 @@
             "subjectOrBiosampleId": "Family 1 affected individual",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lEqivBLWSOdZkYxnnyHyezQqF",
+                "id": "c163CtoG_POLR1D_NM_015972v4",
                 "geneContext": {
                   "valueId": "HGNC:20422",
                   "symbol": "POLR1D"
@@ -114,12 +116,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000013.11:g.27623011C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057056.1:p.(Leu55Val)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr13",
-                  "pos": "27623011",
+                  "pos": 27623011,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -150,55 +156,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-09T09:32:47.840865135Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:07:00.002384Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24603435",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24603435",
         "description": "Autosomal recessive POLR1D mutation with decrease of TCOF1 mRNA is responsible for Treacher Collins syndrome"
       }
     ]
