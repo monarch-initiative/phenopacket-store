@@ -1,10 +1,10 @@
 {
-  "id": "PMID_37584719_Patient_P3",
+  "id": "PMID_37584719_Patient_P17",
   "subject": {
-    "id": "Patient P3",
+    "id": "Patient P17",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P12Y"
       }
     },
     "sex": "MALE"
@@ -12,27 +12,21 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002028",
-        "label": "Chronic diarrhea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001890",
-        "label": "Autoimmune hemolytic anemia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001508",
         "label": "Failure to thrive"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0033431",
         "label": "Cytomegalovirus colitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002028",
+        "label": "Chronic diarrhea"
       },
       "excluded": true
     },
@@ -61,13 +55,19 @@
       "type": {
         "id": "HP:0006532",
         "label": "Recurrent pneumonia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
       },
       "excluded": true
     },
@@ -81,7 +81,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient P3",
+      "id": "wgFlJ18yHyKjzxry4iwmzmAS",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -90,11 +90,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient P3",
+            "subjectOrBiosampleId": "Patient P17",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_YyoWKVYNiuLlElTFjPgOyTEmh",
+                "id": "c433GtoC_RFXANK_NM_003721v4",
                 "geneContext": {
                   "valueId": "HGNC:9987",
                   "symbol": "RFXANK"
@@ -102,18 +104,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003721.4:c.163del"
+                    "value": "NM_003721.4:c.433G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.19194109del"
+                    "value": "NC_000019.10:g.19197616G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003712.1:p.(Glu145Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "19194107",
-                  "ref": "CG",
+                  "pos": 19197616,
+                  "ref": "G",
                   "alt": "C"
                 },
                 "moleculeContext": "genomic",
@@ -136,61 +142,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y10M"
+          "iso8601duration": "P2M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-04T13:55:28.473981857Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T16:25:18.587011Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37584719",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37584719",
         "description": "Clinical, Immunological, and Genetic Findings in Iranian Patients with MHC-II Deficiency: Confirmation of c.162delG RFXANK Founder Mutation in the Iranian Population"
       }
     ]
