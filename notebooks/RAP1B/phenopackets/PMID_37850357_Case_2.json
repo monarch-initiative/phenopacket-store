@@ -18,40 +18,16 @@
     },
     {
       "type": {
-        "id": "HP:0001537",
-        "label": "Umbilical hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000582",
-        "label": "Upslanted palpebral fissure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000278",
-        "label": "Retrognathia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000023",
         "label": "Inguinal hernia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      }
     },
     {
       "type": {
@@ -66,6 +42,12 @@
         "label": "Dental crowding"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000582",
+        "label": "Upslanted palpebral fissure"
+      }
     },
     {
       "type": {
@@ -167,6 +149,12 @@
     },
     {
       "type": {
+        "id": "HP:0000278",
+        "label": "Retrognathia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0045075",
         "label": "Sparse eyebrow"
       },
@@ -192,6 +180,12 @@
         "label": "Motor delay"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
     },
     {
       "type": {
@@ -272,6 +266,12 @@
     },
     {
       "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0010880",
         "label": "Increased nuchal translucency"
       },
@@ -280,7 +280,7 @@
   ],
   "interpretations": [
     {
-      "id": "Case 2",
+      "id": "UOCehjl8Uw4jsXrdneOURrrI",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -292,8 +292,10 @@
             "subjectOrBiosampleId": "Case 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QdQHyBSGEKOufnxUaJGPkKowh",
+                "id": "c178GtoA_RAP1B_NM_001010942v3",
                 "geneContext": {
                   "valueId": "HGNC:9857",
                   "symbol": "RAP1B"
@@ -306,12 +308,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.68652046G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001010942.1:p.(Gly60Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "68652046",
+                  "pos": 68652046,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -336,55 +342,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-30T17:52:36.768692970Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-22T06:40:33.378147Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37850357",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37850357",
         "description": "Adding to the evidence of gene-disease association of RAP1B and syndromic thrombocytopenia"
       }
     ]
