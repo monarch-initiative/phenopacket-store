@@ -1,10 +1,10 @@
 {
-  "id": "PMID_30473892_IV-2_sister",
+  "id": "PMID_30473892_index_patient_IV_1",
   "subject": {
-    "id": "IV-2 sister",
+    "id": "index patient IV-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P3Y"
+        "iso8601duration": "P6Y9M"
       }
     },
     "sex": "FEMALE"
@@ -12,9 +12,16 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -26,12 +33,25 @@
       "type": {
         "id": "HP:0000341",
         "label": "Narrow forehead"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0005280",
         "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000286",
+        "label": "Epicanthus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
       }
     },
     {
@@ -44,31 +64,56 @@
       "type": {
         "id": "HP:0000407",
         "label": "Sensorineural hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002780",
+        "label": "Bronchomalacia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001684",
+        "label": "Secundum atrial septal defect"
       }
     },
     {
       "type": {
         "id": "HP:0002240",
         "label": "Hepatomegaly"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001744",
         "label": "Splenomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "IV-2 sister",
+      "id": "2dV9FUt0SygCKOzuaWKnmaYl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -77,11 +122,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "IV-2 sister",
+            "subjectOrBiosampleId": "index patient IV-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_OLZYpxFGQGPSbGnajmPxZQOVm",
+                "id": "c2319_2322del_SNX14_NM_153816v6",
                 "geneContext": {
                   "valueId": "HGNC:14977",
                   "symbol": "SNX14"
@@ -94,12 +141,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.85514579_85514582del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_722523.1:p.(Arg774SerfsTer10)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "85514575",
+                  "pos": 85514575,
                   "ref": "TTCTC",
                   "alt": "T"
                 },
@@ -122,63 +173,61 @@
         "label": "Spinocerebellar ataxia, autosomal recessive 20"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+        "age": {
+          "iso8601duration": "P4M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-04-24T07:38:32.344123840Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T10:42:23.898256Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30473892",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30473892",
         "description": "Exome Sequencing Identifies a Novel Sorting Nexin 14 Gene Mutation Causing Cerebellar Atrophy and Intellectual Disability"
       }
     ]
