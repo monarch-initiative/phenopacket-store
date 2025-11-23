@@ -120,7 +120,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 4",
+      "id": "T9xA7SvJ7YvSZOLV8FJ5VLg2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -132,8 +132,10 @@
             "subjectOrBiosampleId": "Patient 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xmKHowaGKmoFuNgMrFWZisjvF",
+                "id": "c1328_1329del_SCARF2_NM_182895v5",
                 "geneContext": {
                   "valueId": "HGNC:19869",
                   "symbol": "SCARF2"
@@ -146,12 +148,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.20429632_20429633del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_878315.2:p.(Val443AspfsTer78)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "20429630",
+                  "pos": 20429630,
                   "ref": "TCA",
                   "alt": "T"
                 },
@@ -176,55 +182,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-19T09:04:22.844147920Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T10:40:26.316842Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:20887961",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/20887961",
         "description": "Mutations in SCARF2 are responsible for Van Den Ende-Gupta syndrome"
       }
     ]

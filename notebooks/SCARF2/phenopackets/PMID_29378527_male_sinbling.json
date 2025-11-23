@@ -1,8 +1,13 @@
 {
-  "id": "PMID_20887961_Patient_3",
+  "id": "PMID_29378527_male_sinbling",
   "subject": {
-    "id": "Patient 3",
-    "sex": "FEMALE"
+    "id": "male sinbling",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
@@ -13,8 +18,8 @@
     },
     {
       "type": {
-        "id": "HP:0001182",
-        "label": "Tapered finger"
+        "id": "HP:0005033",
+        "label": "Distal ulnar hypoplasia"
       }
     },
     {
@@ -31,20 +36,14 @@
     },
     {
       "type": {
-        "id": "HP:0001847",
-        "label": "Long hallux"
+        "id": "HP:0001822",
+        "label": "Hallux valgus"
       }
     },
     {
       "type": {
         "id": "HP:0000581",
         "label": "Blepharophimosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000444",
-        "label": "Convex nasal ridge"
       }
     },
     {
@@ -57,24 +56,26 @@
       "type": {
         "id": "HP:0000358",
         "label": "Posteriorly rotated ears"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000396",
         "label": "Overfolded helix"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000460",
+        "label": "Narrow nose"
       }
     },
     {
       "type": {
-        "id": "HP:0000160",
-        "label": "Narrow mouth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030799",
-        "label": "Scaphocephaly"
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
       }
     },
     {
@@ -91,33 +92,44 @@
     },
     {
       "type": {
-        "id": "HP:0000882",
-        "label": "Hypoplastic scapulae"
+        "id": "HP:0000325",
+        "label": "Triangular face"
       }
     },
     {
       "type": {
-        "id": "HP:0000894",
-        "label": "Short clavicles"
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
       }
     },
     {
       "type": {
-        "id": "HP:0000773",
-        "label": "Short ribs"
+        "id": "HP:0002857",
+        "label": "Genu valgum"
       }
     },
     {
       "type": {
-        "id": "HP:0000960",
-        "label": "Sacral dimple"
-      },
-      "excluded": true
+        "id": "HP:0005001",
+        "label": "Recurrent patellar dislocation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000895",
+        "label": "Lateral clavicle hook"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "cVQ78lwYmVdT89VnPRWAnitV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -126,11 +138,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3",
+            "subjectOrBiosampleId": "male sinbling",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xmKHowaGKmoFuNgMrFWZisjvF",
+                "id": "c773GtoA_SCARF2_NM_182895v5",
                 "geneContext": {
                   "valueId": "HGNC:19869",
                   "symbol": "SCARF2"
@@ -138,18 +152,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_182895.5:c.1328_1329del"
+                    "value": "NM_182895.5:c.773G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.20429632_20429633del"
+                    "value": "NC_000022.11:g.20431099C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_878315.2:p.(Cys258Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "20429630",
-                  "ref": "TCA",
+                  "pos": 20431099,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -173,56 +191,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-19T09:04:22.843502044Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T10:40:26.316906Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:20887961",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/20887961",
-        "description": "Mutations in SCARF2 are responsible for Van Den Ende-Gupta syndrome"
+        "id": "PMID:29378527",
+        "description": "Inclusion of joint laxity, recurrent patellar dislocation, and short distal ulnae as a feature of Van Den Ende-Gupta syndrome: a case report"
       }
     ]
   }
