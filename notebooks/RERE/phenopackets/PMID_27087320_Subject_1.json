@@ -1,78 +1,15 @@
 {
-  "id": "PMID_27087320_Subject_9",
+  "id": "PMID_27087320_Subject_1",
   "subject": {
-    "id": "Subject 9",
+    "id": "Subject 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P7Y"
+        "iso8601duration": "P3Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011229",
-        "label": "Broad eyebrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002188",
-        "label": "Delayed CNS myelination"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000729",
-        "label": "Autistic behavior"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002033",
-        "label": "Poor suck"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
     {
       "type": {
         "id": "HP:0000463",
@@ -131,6 +68,13 @@
     },
     {
       "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001357",
         "label": "Plagiocephaly"
       },
@@ -168,6 +112,20 @@
       "type": {
         "id": "HP:0000581",
         "label": "Blepharophimosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011229",
+        "label": "Broad eyebrow"
       },
       "excluded": true
     },
@@ -308,8 +266,19 @@
       "type": {
         "id": "HP:0000047",
         "label": "Hypospadias"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
     },
     {
       "type": {
@@ -323,7 +292,12 @@
         "id": "HP:0001511",
         "label": "Intrauterine growth retardation"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0030674",
+          "label": "Antenatal onset"
+        }
+      }
     },
     {
       "type": {
@@ -343,8 +317,7 @@
       "type": {
         "id": "HP:0000568",
         "label": "Microphthalmia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -355,17 +328,39 @@
     },
     {
       "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000589",
         "label": "Coloboma"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000609",
+        "label": "Optic nerve hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012803",
+        "label": "Anisometropia"
+      }
     },
     {
       "type": {
         "id": "HP:0034295",
         "label": "Reduced cerebral white matter volume"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -373,6 +368,12 @@
         "label": "Ventriculomegaly"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      }
     },
     {
       "type": {
@@ -385,15 +386,19 @@
       "type": {
         "id": "HP:0012110",
         "label": "Hypoplasia of the pons"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001320",
         "label": "Cerebellar vermis hypoplasia"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
     },
     {
       "type": {
@@ -406,15 +411,13 @@
       "type": {
         "id": "HP:0001260",
         "label": "Dysarthria"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0033725",
         "label": "Thin corpus callosum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -432,10 +435,21 @@
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001285",
         "label": "Spastic tetraparesis"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -455,8 +469,13 @@
       "type": {
         "id": "HP:0001655",
         "label": "Patent foramen ovale"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
+      }
     },
     {
       "type": {
@@ -476,8 +495,13 @@
       "type": {
         "id": "HP:0000407",
         "label": "Sensorineural hearing impairment"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000041",
+        "label": "Chordee"
+      }
     },
     {
       "type": {
@@ -537,15 +561,29 @@
     },
     {
       "type": {
+        "id": "HP:0002033",
+        "label": "Poor suck"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0003186",
         "label": "Inverted nipples"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Subject 9",
+      "id": "ZJY936jhxIGXoPjvmwTMPNq0",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -554,11 +592,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Subject 9",
+            "subjectOrBiosampleId": "Subject 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_AiqRMSqdgWLeWZERGDkkvopxZ",
+                "id": "c3466GtoA_RERE_NM_001042681v2",
                 "geneContext": {
                   "valueId": "HGNC:9965",
                   "symbol": "RERE"
@@ -566,19 +606,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001042681.2:c.2249_2270dup"
+                    "value": "NM_001042681.2:c.3466G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.8361238_8361259dup"
+                    "value": "NC_000001.11:g.8359916C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001036146.1:p.(Gly1156Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "8361236",
+                  "pos": 8359916,
                   "ref": "C",
-                  "alt": "CCCTGGAGGAGCTGAGGAGGGAG"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -600,62 +644,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-11-18T11:50:39.411159992Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:02:47.279450Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27087320",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27087320",
         "description": "De Novo Mutations of RERE Cause a Genetic Syndrome with Features that Overlap Those Associated with Proximal 1p36 Deletions"
       }
     ]
