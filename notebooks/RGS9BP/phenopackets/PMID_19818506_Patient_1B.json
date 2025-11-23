@@ -1,8 +1,13 @@
 {
-  "id": "PMID_14702087_Guatemalan_patient",
+  "id": "PMID_19818506_Patient_1B",
   "subject": {
-    "id": "Guatemalan patient",
-    "sex": "MALE"
+    "id": "Patient 1B",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y"
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -63,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "Guatemalan patient",
+      "id": "6gueKnrL30HEfGJbBdyjGol5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -72,11 +77,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Guatemalan patient",
+            "subjectOrBiosampleId": "Patient 1B",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SsXEjfGEcoISRBRCwekTWPYUg",
+                "id": "c94_102del_RGS9BP_NM_207391v3",
                 "geneContext": {
                   "valueId": "HGNC:30304",
                   "symbol": "RGS9BP"
@@ -84,19 +91,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_207391.3:c.193dup"
+                    "value": "NM_207391.3:c.94_102del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.32676456dup"
+                    "value": "NC_000019.10:g.32676357_32676365del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_997274.2:p.(Asp32_Gln34del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "32676454",
-                  "ref": "A",
-                  "alt": "AC"
+                  "pos": 32676355,
+                  "ref": "CGGACTCGCA",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -125,56 +136,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-02T05:33:43.571470022Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T05:53:54.714093Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:14702087",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/14702087",
-        "description": "Defects in RGS9 or its anchor protein R9AP in patients with slow photoreceptor deactivation"
+        "id": "PMID:19818506",
+        "description": "Novel mutations and electrophysiologic findings in RGS9- and R9AP-associated retinal dysfunction (Bradyopsia)"
       }
     ]
   }
