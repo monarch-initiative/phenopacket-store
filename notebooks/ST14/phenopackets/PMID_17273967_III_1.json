@@ -1,9 +1,36 @@
 {
-  "id": "PMID_17273967_III-8",
+  "id": "PMID_17273967_III_1",
   "subject": {
-    "id": "III-8"
+    "id": "III-1",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000498",
+        "label": "Blepharitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007957",
+        "label": "Corneal opacity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031830",
+        "label": "Pinguecula"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
     {
       "type": {
         "id": "HP:0008064",
@@ -42,18 +69,6 @@
     },
     {
       "type": {
-        "id": "HP:0007957",
-        "label": "Corneal opacity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000613",
-        "label": "Photophobia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003777",
         "label": "Pili torti"
       }
@@ -72,38 +87,6 @@
     },
     {
       "type": {
-        "id": "HP:0025724",
-        "label": "Caseous vernix-like desquamation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000698",
-        "label": "Conical tooth"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000989",
-        "label": "Pruritus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000498",
-        "label": "Blepharitis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0031830",
-        "label": "Pinguecula"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000966",
         "label": "Hypohidrosis"
       },
@@ -118,15 +101,35 @@
     },
     {
       "type": {
+        "id": "HP:0025724",
+        "label": "Caseous vernix-like desquamation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000698",
+        "label": "Conical tooth"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000989",
+        "label": "Pruritus"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001597",
-        "label": "Abnormality of the nail"
+        "label": "Abnormal nail morphology"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "III-8",
+      "id": "aU11P4TJXv5LLw1g2ji4emO9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -135,11 +138,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "III-8",
+            "subjectOrBiosampleId": "III-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ouzdzsbWDWpOKpIdcGQiXTEsc",
+                "id": "c2479GtoA_ST14_NM_021978v4",
                 "geneContext": {
                   "valueId": "HGNC:11344",
                   "symbol": "ST14"
@@ -152,12 +157,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.130209734G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_068813.1:p.(Gly827Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "130209734",
+                  "pos": 130209734,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -188,55 +197,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-28T06:45:19.800580024Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T09:51:14.093292Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17273967",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17273967",
         "description": "Autosomal recessive ichthyosis with hypotrichosis caused by a mutation in ST14, encoding type II transmembrane serine protease matriptase"
       }
     ]
