@@ -1,14 +1,11 @@
 {
-  "id": "PMID_38413582_Family_4_individual_II_3",
+  "id": "PMID_38413582_Family_14_individual_II_1",
   "subject": {
-    "id": "Family 4 individual II:3",
+    "id": "Family 14 individual II:1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P13Y"
+        "iso8601duration": "P5Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "FEMALE"
   },
@@ -18,28 +15,44 @@
         "id": "HP:0002505",
         "label": "Loss of ambulation"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5Y"
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
       }
     },
     {
       "type": {
+        "id": "HP:0003551",
+        "label": "Difficulty climbing stairs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001638",
+        "label": "Cardiomyopathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0008997",
-        "label": "Proximal muscle weakness in upper limbs"
+        "label": "Proximal upper limb muscle weakness"
       }
     },
     {
       "type": {
         "id": "HP:0008959",
         "label": "Distal upper limb muscle weakness"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0008994",
-        "label": "Proximal muscle weakness in lower limbs"
+        "label": "Proximal lower limb muscle weakness"
       }
     },
     {
@@ -56,9 +69,23 @@
     },
     {
       "type": {
+        "id": "HP:0002317",
+        "label": "Unsteady gait"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003121",
         "label": "Limb joint contracture"
-      }
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007021",
+        "label": "Pain insensitivity"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -68,38 +95,14 @@
     },
     {
       "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
     },
     {
       "type": {
-        "id": "HP:0030234",
-        "label": "Highly elevated creatine kinase"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003707",
-        "label": "Calf muscle pseudohypertrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002093",
-        "label": "Respiratory insufficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001558",
-        "label": "Decreased fetal movement"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001638",
-        "label": "Cardiomyopathy"
+        "id": "HP:0200012",
+        "label": "Short corpus callosum"
       },
       "excluded": true
     },
@@ -119,10 +122,42 @@
     },
     {
       "type": {
-        "id": "HP:0000519",
-        "label": "Developmental cataract"
+        "id": "HP:0002650",
+        "label": "Scoliosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030234",
+        "label": "Highly elevated creatine kinase"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003707",
+        "label": "Calf muscle pseudohypertrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003458",
+        "label": "EMG: myopathic abnormalities"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000519",
+        "label": "Developmental cataract"
+      }
     },
     {
       "type": {
@@ -134,7 +169,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 4 individual II:3",
+      "id": "oeJkWGMvQZDlNj45lLON2vih",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -143,11 +178,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 4 individual II:3",
+            "subjectOrBiosampleId": "Family 14 individual II:1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pYsbKxFdOhnkeHCLjkhLIikrt",
+                "id": "c902_903del_SNUPN_NM_005701v4",
                 "geneContext": {
                   "valueId": "HGNC:14245",
                   "symbol": "SNUPN"
@@ -160,12 +197,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000015.10:g.75598539_75598540del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005692.1:p.(Tyr301CysfsTer29)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr15",
-                  "pos": "75598537",
+                  "pos": 75598537,
                   "ref": "CAT",
                   "alt": "C"
                 },
@@ -188,63 +229,61 @@
         "label": "Muscular dystrophy, limb-girdle, autosomal recessive 29"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P1Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-01-06T08:48:47.749751091Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T10:15:44.026746Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38413582",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38413582",
         "description": "SNUPN deficiency causes a recessive muscular dystrophy due to RNA mis-splicing and ECM dysregulation"
       }
     ]
