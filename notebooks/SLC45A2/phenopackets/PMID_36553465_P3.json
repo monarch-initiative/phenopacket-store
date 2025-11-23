@@ -12,32 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000639",
-        "label": "Nystagmus"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000995",
         "label": "Melanocytic nevus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007730",
-        "label": "Iris hypopigmentation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005599",
-        "label": "Hypopigmentation of hair"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002226",
-        "label": "White eyebrow"
       }
     },
     {
@@ -48,8 +24,26 @@
     },
     {
       "type": {
+        "id": "HP:0002226",
+        "label": "White eyebrow"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005599",
+        "label": "Hypopigmentation of hair"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000483",
         "label": "Astigmatism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000635",
+        "label": "Blue irides"
       }
     },
     {
@@ -66,15 +60,34 @@
     },
     {
       "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000486",
         "label": "Strabismus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000540",
+        "label": "Hypermetropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000545",
+        "label": "Myopia"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "P3",
+      "id": "MYaWetDqkDWGJ0wm1ndrhzhs",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -86,8 +99,10 @@
             "subjectOrBiosampleId": "P3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_CGdifvGyaODkcfkEduJFlrfbu",
+                "id": "c1028_1029del_SLC45A2_NM_016180v5",
                 "geneContext": {
                   "valueId": "HGNC:16472",
                   "symbol": "SLC45A2"
@@ -100,12 +115,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000005.10:g.33954364_33954365del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057264.4:p.(Gly343AlafsTer10)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr5",
-                  "pos": "33954363",
+                  "pos": 33954363,
                   "ref": "GGC",
                   "alt": "G"
                 },
@@ -130,56 +149,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-24T18:34:15.707406044Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2025-11-23T10:13:02.808070Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36553465",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36553465",
-        "description": "Oculo-Cutaneous Albinism Type 4 (OCA4): Phenotype-Genotype Correlation"
+        "description": "Oculo-Cutaneous Albinism Type 4 (OCA4): Phenotype-Genotype Correlation."
       }
     ]
   }
