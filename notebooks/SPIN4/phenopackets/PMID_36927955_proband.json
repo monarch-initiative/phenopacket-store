@@ -12,41 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001520",
-        "label": "Large for gestational age"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002343",
-        "label": "Normal pressure hydrocephalus"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6M"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0006610",
         "label": "Wide intermamillary distance"
       }
@@ -61,6 +26,18 @@
       "type": {
         "id": "HP:0000494",
         "label": "Downslanted palpebral fissures"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
@@ -101,6 +78,29 @@
     },
     {
       "type": {
+        "id": "HP:0001520",
+        "label": "Large for gestational age"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002343",
+        "label": "Normal pressure hydrocephalus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       },
@@ -109,7 +109,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "ZdThj6HJI7fshWQ8eREDGM8Z",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -121,8 +121,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VWCluekTjMSsqmAsgDBaQsZWw",
+                "id": "c312_313del_SPIN4_NM_001012968v3",
                 "geneContext": {
                   "valueId": "HGNC:27040",
                   "symbol": "SPIN4"
@@ -135,19 +137,23 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000023.11:g.63350512_63350513del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001012986.2:p.(Arg104SerfsTer24)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "63350506",
+                  "pos": 63350506,
                   "ref": "ACT",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -171,55 +177,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-01T17:09:19.209434032Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T09:49:14.331067Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36927955",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36927955",
         "description": "Loss-of-function variant in SPIN4 causes an X-linked overgrowth syndrome"
       }
     ]
