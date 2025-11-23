@@ -12,6 +12,19 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032509",
+        "label": "Onychotillomania"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012168",
         "label": "Head-banging"
       },
@@ -19,36 +32,6 @@
         "age": {
           "iso8601duration": "P3Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002020",
-        "label": "Gastroesophageal reflux"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
       }
     },
     {
@@ -71,6 +54,13 @@
     },
     {
       "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
       }
@@ -78,7 +68,7 @@
     {
       "type": {
         "id": "HP:0002360",
-        "label": "Sleep abnormality"
+        "label": "Sleep disturbance"
       }
     },
     {
@@ -155,6 +145,37 @@
     },
     {
       "type": {
+        "id": "HP:0000303",
+        "label": "Mandibular prognathia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000321",
         "label": "Square face"
       }
@@ -164,6 +185,13 @@
         "id": "HP:0000664",
         "label": "Synophrys"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000389",
+        "label": "Chronic otitis media"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -194,39 +222,11 @@
         "id": "HP:0001956",
         "label": "Truncal obesity"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0032509",
-        "label": "Onychotillomania"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001270",
-        "label": "Motor delay"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000303",
-        "label": "Mandibular prognathia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000389",
-        "label": "Chronic otitis media"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "SMS324",
+      "id": "HHVARUuBs4I9UNjNnsa5V52c",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -238,8 +238,10 @@
             "subjectOrBiosampleId": "SMS324",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_gJZIGxOxeeKGFliUDUbECimfn",
+                "id": "c3103del_RAI1_NM_030665v4",
                 "geneContext": {
                   "valueId": "HGNC:9834",
                   "symbol": "RAI1"
@@ -252,12 +254,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.17796051del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_109590.3:p.(Gln1035ArgfsTer29)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "17796044",
+                  "pos": 17796044,
                   "ref": "GC",
                   "alt": "G"
                 },
@@ -288,55 +294,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-18T07:15:39.818868875Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:11:22.081355Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:20932317",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/20932317",
         "description": "Frameshift mutation hotspot identified in Smith-Magenis syndrome: case report and review of literature"
       }
     ]
