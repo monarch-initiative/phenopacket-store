@@ -23,40 +23,6 @@
     },
     {
       "type": {
-        "id": "HP:0005518",
-        "label": "Increased mean corpuscular volume"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001903",
-        "label": "Anemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001511",
-        "label": "Intrauterine growth retardation"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000946",
         "label": "Hypoplastic ilia"
       },
@@ -260,6 +226,40 @@
     },
     {
       "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005518",
+        "label": "Increased mean corpuscular volume"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001894",
         "label": "Thrombocytosis"
       },
@@ -275,7 +275,7 @@
     {
       "type": {
         "id": "HP:0001875",
-        "label": "Neutropenia"
+        "label": "Decreased total neutrophil count"
       },
       "excluded": true
     },
@@ -324,7 +324,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient",
+      "id": "lcEfWe39H2wXMajJm6ogjGyl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -336,8 +336,10 @@
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_UdLyhqACrFiTPXKsJLObdvGEB",
+                "id": "c251del_RPS19_NM_001022v4",
                 "geneContext": {
                   "valueId": "HGNC:10402",
                   "symbol": "RPS19"
@@ -350,12 +352,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000019.10:g.41869109del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001013.1:p.(Arg84LysfsTer27)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": "41869108",
+                  "pos": 41869108,
                   "ref": "AG",
                   "alt": "A"
                 },
@@ -385,55 +391,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-23T08:30:08.753882169Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:13:19.837366Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27732904",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27732904",
         "description": "A new in-frame deletion in ribosomal protein S19 in a Chinese infant with Diamond-Blackfan anemia"
       }
     ]
