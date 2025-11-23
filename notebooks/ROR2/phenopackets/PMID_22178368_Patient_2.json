@@ -7,9 +7,6 @@
         "iso8601duration": "P15Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -17,54 +14,6 @@
       "type": {
         "id": "HP:0000954",
         "label": "Single transverse palmar crease"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003027",
-        "label": "Mesomelia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005280",
-        "label": "Depressed nasal bridge"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
       },
       "onset": {
         "ontologyClass": {
@@ -87,6 +36,18 @@
     },
     {
       "type": {
+        "id": "HP:0003027",
+        "label": "Mesomelia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0006159",
         "label": "Mesoaxial hand polydactyly"
       }
@@ -95,6 +56,18 @@
       "type": {
         "id": "HP:0010034",
         "label": "Short 1st metacarpal"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
@@ -111,8 +84,32 @@
     },
     {
       "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004322",
         "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000369",
+        "label": "Low-set ears"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
       }
     },
     {
@@ -148,20 +145,22 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "lZOwmec7HnLmHOoD60XJOrM4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:268310",
-          "label": "Robinow syndrome, autosomal recessive"
+          "label": "Robinow syndrome, autosomal recessive 1"
         },
         "genomicInterpretations": [
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FNqCaoAngsqqRzgwuCmkGtzJZ",
+                "id": "c814CtoT_ROR2_NM_004560v4",
                 "geneContext": {
                   "valueId": "HGNC:10257",
                   "symbol": "ROR2"
@@ -174,12 +173,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.91733245G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004551.2:p.(Arg272Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "91733245",
+                  "pos": 91733245,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -199,7 +202,7 @@
     {
       "term": {
         "id": "OMIM:268310",
-        "label": "Robinow syndrome, autosomal recessive"
+        "label": "Robinow syndrome, autosomal recessive 1"
       },
       "onset": {
         "ontologyClass": {
@@ -210,55 +213,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-03T18:37:28.250640869Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:22:50.181971Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22178368",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22178368",
         "description": "Identification of a novel causative mutation in the ROR2 gene in a Lebanese family with a mild form of recessive Robinow syndrome"
       }
     ]

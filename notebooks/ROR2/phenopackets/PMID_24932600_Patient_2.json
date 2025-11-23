@@ -1,40 +1,19 @@
 {
-  "id": "PMID_24932600_Patient_3",
+  "id": "PMID_24932600_Patient_2",
   "subject": {
-    "id": "Patient 3",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P1Y5M"
+        "iso8601duration": "P2Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001156",
-        "label": "Brachydactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030084",
-        "label": "Clinodactyly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003027",
         "label": "Mesomelia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002984",
-        "label": "Hypoplasia of the radius"
       }
     },
     {
@@ -51,14 +30,20 @@
     },
     {
       "type": {
-        "id": "HP:0010034",
-        "label": "Short 1st metacarpal"
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
       }
     },
     {
       "type": {
         "id": "HP:0000212",
         "label": "Gingival overgrowth"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
       }
     },
     {
@@ -75,9 +60,10 @@
     },
     {
       "type": {
-        "id": "HP:0011220",
-        "label": "Prominent forehead"
-      }
+        "id": "HP:0000322",
+        "label": "Short philtrum"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -99,34 +85,35 @@
     },
     {
       "type": {
-        "id": "HP:0001647",
-        "label": "Bicuspid aortic valve"
+        "id": "HP:0004322",
+        "label": "Short stature"
       }
     },
     {
       "type": {
-        "id": "HP:0000322",
-        "label": "Short philtrum"
-      },
-      "excluded": true
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "p0VD0DkNc050wZMqhqRQmjbF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:268310",
-          "label": "Robinow syndrome, autosomal recessive"
+          "label": "Robinow syndrome, autosomal recessive 1"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_KPgVqnmDCyVFVnnCOpHhtfnFk",
+                "id": "c227GtoA_ROR2_NM_004560v4",
                 "geneContext": {
                   "valueId": "HGNC:10257",
                   "symbol": "ROR2"
@@ -134,17 +121,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_004560.4:c.668G>A"
+                    "value": "NM_004560.4:c.227G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.91733391C>T"
+                    "value": "NC_000009.12:g.91757508C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004551.2:p.(Gly76Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "91733391",
+                  "pos": 91757508,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -164,7 +155,7 @@
     {
       "term": {
         "id": "OMIM:268310",
-        "label": "Robinow syndrome, autosomal recessive"
+        "label": "Robinow syndrome, autosomal recessive 1"
       },
       "onset": {
         "ontologyClass": {
@@ -175,55 +166,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-03T18:37:28.225104808Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:22:50.179895Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24932600",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24932600",
         "description": "Identification of novel ROR2 gene mutations in Indian children with Robinow syndrome"
       }
     ]

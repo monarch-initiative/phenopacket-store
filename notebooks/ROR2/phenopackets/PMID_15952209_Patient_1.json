@@ -7,9 +7,6 @@
         "iso8601duration": "P28Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -45,9 +42,37 @@
     },
     {
       "type": {
+        "id": "HP:0003083",
+        "label": "Dislocated radial head"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002937",
+        "label": "Hemivertebrae"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000902",
+        "label": "Rib fusion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002007",
         "label": "Frontal bossing"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -87,50 +112,16 @@
     },
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001382",
-        "label": "Joint hypermobility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003083",
-        "label": "Dislocated radial head"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002937",
-        "label": "Hemivertebrae"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000902",
-        "label": "Rib fusion"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000431",
-        "label": "Wide nasal bridge"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000028",
         "label": "Cryptorchidism"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
     },
     {
       "type": {
@@ -145,24 +136,32 @@
         "label": "Ventricular septal defect"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001382",
+        "label": "Joint hypermobility"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "yySk4bWrmZOx252kB14QoOAZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:268310",
-          "label": "Robinow syndrome, autosomal recessive"
+          "label": "Robinow syndrome, autosomal recessive 1"
         },
         "genomicInterpretations": [
           {
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lSFhELjvyRQXemQqtatzuQHLu",
+                "id": "c1937_1943del_ROR2_NM_004560v4",
                 "geneContext": {
                   "valueId": "HGNC:10257",
                   "symbol": "ROR2"
@@ -175,12 +174,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.91724553_91724559del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004551.2:p.(Tyr646CysfsTer57)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "91724550",
+                  "pos": 91724550,
                   "ref": "CAGCTTGT",
                   "alt": "C"
                 },
@@ -200,7 +203,7 @@
     {
       "term": {
         "id": "OMIM:268310",
-        "label": "Robinow syndrome, autosomal recessive"
+        "label": "Robinow syndrome, autosomal recessive 1"
       },
       "onset": {
         "ontologyClass": {
@@ -211,55 +214,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-03T18:37:28.252275943Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-23T06:22:50.182165Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-10-22",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15952209",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15952209",
         "description": "Clinical and molecular characterization of two adults with autosomal recessive Robinow syndrome"
       }
     ]
