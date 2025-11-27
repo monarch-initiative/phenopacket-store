@@ -1,7 +1,7 @@
 {
-  "id": "PMID_32303603_family_P0005_IV_2",
+  "id": "PMID_32303603_family_P0001_IV_2",
   "subject": {
-    "id": "family P0005 IV-2",
+    "id": "family P0001 IV-2",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P31Y"
@@ -15,9 +15,16 @@
         "id": "HP:0000876",
         "label": "Oligomenorrhea"
       },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000869",
+        "label": "Secondary amenorrhea"
+      },
       "onset": {
         "age": {
-          "iso8601duration": "P26Y"
+          "iso8601duration": "P30Y"
         }
       }
     },
@@ -27,9 +34,8 @@
         "label": "Female infertility"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
+        "age": {
+          "iso8601duration": "P28Y"
         }
       }
     },
@@ -46,8 +52,8 @@
     },
     {
       "type": {
-        "id": "HP:0031103",
-        "label": "Decreased cirrculating antimullerian hormone circulation"
+        "id": "HP:0011969",
+        "label": "Elevated circulating luteinizing hormone level"
       },
       "onset": {
         "age": {
@@ -57,36 +63,41 @@
     },
     {
       "type": {
-        "id": "HP:0000869",
-        "label": "Secondary amenorrhea"
+        "id": "HP:0031103",
+        "label": "Decreased circulating antimullerian hormone circulation"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011969",
-        "label": "Elevated circulating luteinizing hormone level"
-      },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0008214",
         "label": "Decreased serum estradiol"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0033085",
         "label": "Reduced antral follicle count"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "family P0005 IV-2",
+      "id": "TyuxSlKm4EemUbjtyrdtFryK",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -95,11 +106,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "family P0005 IV-2",
+            "subjectOrBiosampleId": "family P0001 IV-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_LtjoIRaXMradIMbUKfiUiXlqB",
+                "id": "c150_151del_SYCP2L_NM_001040274v3",
                 "geneContext": {
                   "valueId": "HGNC:21537",
                   "symbol": "SYCP2L"
@@ -107,19 +120,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001040274.3:c.999A>G"
+                    "value": "NM_001040274.3:c.150_151del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000006.12:g.10912753A>G"
+                    "value": "NC_000006.12:g.10893942_10893943del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035364.2:p.(Ser52ProfsTer7)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "10912753",
-                  "ref": "A",
-                  "alt": "G"
+                  "pos": 10893937,
+                  "ref": "AAG",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -141,61 +158,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P26Y"
+          "iso8601duration": "P28Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-01T05:10:05.743837833Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-27T08:34:43.184018Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32303603",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32303603",
         "description": "Homozygous variants in SYCP2L cause premature ovarian insufficiency"
       }
     ]
