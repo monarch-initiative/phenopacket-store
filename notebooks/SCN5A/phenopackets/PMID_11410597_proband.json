@@ -12,6 +12,13 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001695",
+        "label": "Cardiac arrest"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:6000313",
         "label": "Incomplete right bundle branch block"
       },
@@ -34,24 +41,6 @@
     },
     {
       "type": {
-        "id": "HP:0004756",
-        "label": "Ventricular tachycardia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P45Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001695",
-        "label": "Cardiac arrest"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001699",
         "label": "Sudden death"
       },
@@ -63,6 +52,17 @@
         "label": "Prolonged QT interval"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004756",
+        "label": "Ventricular tachycardia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P45Y"
+        }
+      }
     },
     {
       "type": {
@@ -81,7 +81,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "m2lyj6ymLSupCGI4IseRJgNP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -93,8 +93,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ykCxCvfkqCqXjzlVhhIBQWjlz",
+                "id": "c5380TtoC_SCN5A_NM_000335v5",
                 "geneContext": {
                   "valueId": "HGNC:10593",
                   "symbol": "SCN5A"
@@ -107,12 +109,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.38550989A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000326.2:p.(Tyr1794His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "38550989",
+                  "pos": 38550989,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -142,55 +148,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-24T19:19:24.941647768Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-27T08:29:41.372629Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:11410597",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/11410597",
         "description": "Inherited Brugada and Long QT-3 Syndrome Mutations of a Single Residue of the Cardiac Sodium Channel Confer Distinct Channel and Clinical Phenotypes"
       }
     ]
