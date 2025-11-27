@@ -19,30 +19,6 @@
     },
     {
       "type": {
-        "id": "HP:0005523",
-        "label": "Lymphoproliferative disorder"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002716",
-        "label": "Lymphadenopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001744",
-        "label": "Splenomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0100646",
         "label": "Thyroiditis"
       },
@@ -71,6 +47,13 @@
     },
     {
       "type": {
+        "id": "HP:0000099",
+        "label": "Glomerulonephritis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012115",
         "label": "Hepatitis"
       },
@@ -85,6 +68,30 @@
     },
     {
       "type": {
+        "id": "HP:0005523",
+        "label": "Lymphoproliferative disorder"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012189",
         "label": "Hodgkin lymphoma"
       },
@@ -92,22 +99,15 @@
     },
     {
       "type": {
-        "id": "HP:0033726",
-        "label": "Lupus nephritis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0004313",
-        "label": "Decreased circulating antibody level"
+        "label": "Decreased circulating immunoglobulin concentration"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "C1",
+      "id": "lo3YWXKe8DZfYfRKnPfoa6tO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -119,8 +119,10 @@
             "subjectOrBiosampleId": "C1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_TmerxohCPtQPHconWdaPkJUJm",
+                "id": "c476_480dupGCCGC_SOCS1_NM_003745v2",
                 "geneContext": {
                   "valueId": "HGNC:19383",
                   "symbol": "SOCS1"
@@ -128,17 +130,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003745.2:c.476_480dup"
+                    "value": "NM_003745.2:c.476_480dupGCCGC"
                   },
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.11255006_11255010dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003736.1:p.(Met161AlafsTer46)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "11254998",
+                  "pos": 11254998,
                   "ref": "T",
                   "alt": "TGCGGC"
                 },
@@ -168,55 +174,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-25T07:46:46.683753013Z",
-    "createdBy": "ORCID:0000-0001-9969-9517",
+    "created": "2025-11-27T08:43:08.719420Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:33087723",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/33087723",
         "description": "Early-onset autoimmunity associated with SOCS1 haploinsufficiency"
       }
     ]
