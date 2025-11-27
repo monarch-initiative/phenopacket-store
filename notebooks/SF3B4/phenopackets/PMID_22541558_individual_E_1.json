@@ -24,6 +24,13 @@
     },
     {
       "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000220",
         "label": "Velopharyngeal insufficiency"
       }
@@ -42,49 +49,6 @@
     },
     {
       "type": {
-        "id": "HP:0000377",
-        "label": "Abnormal pinna morphology"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002974",
-        "label": "Radioulnar synostosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009778",
-        "label": "Short thumb"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011800",
-        "label": "Midface retrusion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000891",
-        "label": "Cervical ribs"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000185",
-        "label": "Cleft soft palate"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000378",
         "label": "Cupped ear"
       },
@@ -99,10 +63,28 @@
     },
     {
       "type": {
+        "id": "HP:0000377",
+        "label": "Abnormal pinna morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002974",
+        "label": "Radioulnar synostosis"
+      }
     },
     {
       "type": {
@@ -120,6 +102,12 @@
     },
     {
       "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0009777",
         "label": "Absent thumb"
       },
@@ -134,15 +122,27 @@
     },
     {
       "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012478",
         "label": "Temporomandibular joint ankylosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000891",
+        "label": "Cervical ribs"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "individual E-1",
+      "id": "OIlVPiE0h4DPTD8rlLV2CNsn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -154,8 +154,10 @@
             "subjectOrBiosampleId": "individual E-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HAqZDiIDDAWqkUMARizsGlQwO",
+                "id": "c1148dup_SF3B4_NM_005850v5",
                 "geneContext": {
                   "valueId": "HGNC:10771",
                   "symbol": "SF3B4"
@@ -163,17 +165,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005850.4:c.1148dup"
+                    "value": "NM_005850.5:c.1148dup"
                   },
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.149923669dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005841.1:p.(His383GlnfsTer103)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "149923668",
+                  "pos": 149923668,
                   "ref": "A",
                   "alt": "AT"
                 },
@@ -198,55 +204,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-12T04:10:40.541624069Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-27T08:32:20.487969Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22541558",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22541558",
         "description": "Haploinsufficiency of SF3B4, a component of the pre-mRNA spliceosomal complex, causes Nager syndrome."
       }
     ]

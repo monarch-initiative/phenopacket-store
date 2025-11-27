@@ -1,21 +1,15 @@
 {
-  "id": "PMID_22541558_individual_P_1",
+  "id": "PMID_22541558_individual_Q_1",
   "subject": {
-    "id": "individual P-1",
+    "id": "individual Q-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y"
+        "iso8601duration": "P1Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0000494",
-        "label": "Downslanted palpebral fissures"
-      }
-    },
     {
       "type": {
         "id": "HP:0000347",
@@ -36,34 +30,28 @@
     },
     {
       "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001634",
+        "label": "Mitral valve prolapse"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002974",
         "label": "Radioulnar synostosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007776",
-        "label": "Sparse lower eyelashes"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001172",
-        "label": "Abnormal thumb morphology"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011800",
-        "label": "Midface retrusion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002996",
+        "label": "Limited elbow movement"
+      }
     },
     {
       "type": {
@@ -71,6 +59,12 @@
         "label": "Absent lower eyelashes"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007776",
+        "label": "Sparse lower eyelashes"
+      }
     },
     {
       "type": {
@@ -83,13 +77,24 @@
       "type": {
         "id": "HP:0009777",
         "label": "Absent thumb"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011800",
+        "label": "Midface retrusion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009554",
+        "label": "Preauricular hair displacement"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "individual P-1",
+      "id": "eWpr21lZJVqnEz4BV4F1RUww",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -98,11 +103,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual P-1",
+            "subjectOrBiosampleId": "individual Q-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ohuuchCXUdktOJtPkHDDUufcl",
+                "id": "c625CtoT_SF3B4_NM_005850v5",
                 "geneContext": {
                   "valueId": "HGNC:10771",
                   "symbol": "SF3B4"
@@ -110,18 +117,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005850.5:c.769del"
+                    "value": "NM_005850.5:c.625C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.149925980del"
+                    "value": "NC_000001.11:g.149926457G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005841.1:p.(Gln209Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "149925979",
-                  "ref": "AT",
+                  "pos": 149926457,
+                  "ref": "G",
                   "alt": "A"
                 },
                 "moleculeContext": "genomic",
@@ -145,55 +156,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-12T04:10:40.550993919Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-27T08:32:20.488830Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22541558",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22541558",
         "description": "Haploinsufficiency of SF3B4, a component of the pre-mRNA spliceosomal complex, causes Nager syndrome."
       }
     ]

@@ -36,6 +36,13 @@
     },
     {
       "type": {
+        "id": "HP:0002974",
+        "label": "Radioulnar synostosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0009778",
         "label": "Short thumb"
       }
@@ -45,18 +52,11 @@
         "id": "HP:0009777",
         "label": "Absent thumb"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002974",
-        "label": "Radioulnar synostosis"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "individual O-1",
+      "id": "apz3NyW2XR6SlLL0BkcRdaRd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -68,8 +68,10 @@
             "subjectOrBiosampleId": "individual O-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_uxSQIppxEcpwANLvJnzaYnXYa",
+                "id": "c1147dup_SF3B4_NM_005850v5",
                 "geneContext": {
                   "valueId": "HGNC:10771",
                   "symbol": "SF3B4"
@@ -82,12 +84,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.149923676dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005841.1:p.(His383ProfsTer103)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "149923669",
+                  "pos": 149923669,
                   "ref": "T",
                   "alt": "TG"
                 },
@@ -112,55 +118,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-12T04:10:40.550012826Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-27T08:32:20.488676Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22541558",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22541558",
         "description": "Haploinsufficiency of SF3B4, a component of the pre-mRNA spliceosomal complex, causes Nager syndrome."
       }
     ]
