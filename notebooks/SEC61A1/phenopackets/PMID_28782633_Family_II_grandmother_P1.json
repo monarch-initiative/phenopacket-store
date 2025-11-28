@@ -1,13 +1,13 @@
 {
-  "id": "PMID_28782633_Family_1_24_year_old_son_P4",
+  "id": "PMID_28782633_Family_II_grandmother_P1",
   "subject": {
-    "id": "Family 1 24-year-old son P4",
+    "id": "Family II grandmother P1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P24Y"
+        "iso8601duration": "P66Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -17,58 +17,29 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0005215",
-        "label": "Frequent Giardia lamblia infestation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002720",
-        "label": "Decreased circulating IgA level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002850",
-        "label": "Decreased circulating total IgM"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410302",
-        "label": "Decreased specific antibody response to protein-conjugated polysaccharide vaccine"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0410299",
-        "label": "Decreased specific antibody response to polysaccharide vaccine"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002837",
-        "label": "Recurrent bronchitis"
+        "id": "HP:0011108",
+        "label": "Recurrent sinusitis"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0011108",
-        "label": "Recurrent sinusitis"
+        "id": "HP:0005215",
+        "label": "Frequent Giardia lamblia infestation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002783",
+        "label": "Recurrent lower respiratory tract infections"
       },
       "excluded": true
     },
@@ -88,6 +59,33 @@
     },
     {
       "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating total IgM"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410302",
+        "label": "Decreased specific antibody response to protein-conjugated polysaccharide vaccine"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0030880",
         "label": "Raynaud phenomenon"
       },
@@ -96,7 +94,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 1 24-year-old son P4",
+      "id": "2CTVQXfRqnElaDjyl6m0Nc1W",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,11 +103,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 1 24-year-old son P4",
+            "subjectOrBiosampleId": "Family II grandmother P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qTUdWOZfxygJgffoYbDGYttsi",
+                "id": "c1141GtoT_SEC61A1_NM_013336v4",
                 "geneContext": {
                   "valueId": "HGNC:18276",
                   "symbol": "SEC61A1"
@@ -117,19 +117,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_013336.4:c.254T>A"
+                    "value": "NM_013336.4:c.1141G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.128056742T>A"
+                    "value": "NC_000003.12:g.128067586G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_037468.1:p.(Glu381Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "128056742",
-                  "ref": "T",
-                  "alt": "A"
+                  "pos": 128067586,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -151,62 +155,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-19T07:07:48.032788038Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:42:43.981204Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:28782633",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/28782633",
         "description": "Plasma cell deficiency in human subjects with heterozygous mutations in Sec61 translocon alpha 1 subunit (SEC61A1)"
       }
     ]

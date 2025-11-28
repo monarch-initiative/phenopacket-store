@@ -12,6 +12,24 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001875",
+        "label": "Decreased total neutrophil count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000403",
         "label": "Recurrent otitis media"
       },
@@ -72,68 +90,6 @@
     },
     {
       "type": {
-        "id": "HP:0100806",
-        "label": "Sepsis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P16Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002149",
-        "label": "Hyperuricemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P19Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011919",
-        "label": "Pleural empyema"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002090",
-        "label": "Pneumonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001903",
-        "label": "Anemia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001875",
-        "label": "Neutropenia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001873",
-        "label": "Thrombocytopenia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000089",
         "label": "Renal hypoplasia"
       }
@@ -165,7 +121,7 @@
     {
       "type": {
         "id": "HP:0003261",
-        "label": "Increased circulating IgA level"
+        "label": "Increased circulating IgA concentration"
       }
     },
     {
@@ -176,8 +132,26 @@
     },
     {
       "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012311",
-        "label": "Monocytosis"
+        "label": "Increased total monocyte count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100806",
+        "label": "Sepsis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P16Y"
+        }
       }
     },
     {
@@ -188,8 +162,41 @@
     },
     {
       "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P19Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011919",
+        "label": "Pleural empyema"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0009789",
         "label": "Perianal abscess"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7Y"
+        }
       }
     },
     {
@@ -201,7 +208,7 @@
   ],
   "interpretations": [
     {
-      "id": "index patient",
+      "id": "2BfgHoT64B5IbmdJuo5tNnnH",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -213,8 +220,10 @@
             "subjectOrBiosampleId": "index patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IynQVQdakLJgaOWLqagASQCkh",
+                "id": "c275AtoG_SEC61A1_NM_013336v4",
                 "geneContext": {
                   "valueId": "HGNC:18276",
                   "symbol": "SEC61A1"
@@ -227,12 +236,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.128056763A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_037468.1:p.(Gln92Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "128056763",
+                  "pos": 128056763,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -263,56 +276,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-19T07:20:24.859886169Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:43:31.265479Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32325141",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32325141",
-        "description": "Defective Sec61\u03b11 underlies a novel cause of autosomal dominant severe congenital neutropenia"
+        "description": "Defective Sec61α1 underlies a novel cause of autosomal dominant severe congenital neutropenia"
       }
     ]
   }
