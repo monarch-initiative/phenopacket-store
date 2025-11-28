@@ -1,15 +1,30 @@
 {
-  "id": "PMID_22158539_individual_2",
+  "id": "PMID_22158539_individual_8",
   "subject": {
-    "id": "individual 2",
+    "id": "individual 8",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P12Y"
+        "iso8601duration": "P22Y"
       }
     },
-    "sex": "FEMALE"
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
+      }
+    },
     {
       "type": {
         "id": "HP:0000303",
@@ -42,14 +57,20 @@
     },
     {
       "type": {
+        "id": "HP:0000926",
+        "label": "Platyspondyly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004621",
         "label": "Enlarged vertebral pedicles"
       }
     },
     {
       "type": {
-        "id": "HP:0002750",
-        "label": "Delayed skeletal maturation"
+        "id": "HP:0010579",
+        "label": "Cone-shaped epiphysis"
       }
     },
     {
@@ -60,9 +81,17 @@
     },
     {
       "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0004322",
         "label": "Short stature"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -84,63 +113,16 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001072",
-        "label": "Thickened skin"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001642",
-        "label": "Pulmonic stenosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000926",
-        "label": "Platyspondyly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010579",
-        "label": "Cone-shaped epiphysis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0004209",
         "label": "Clinodactyly of the 5th finger"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     },
     {
       "type": {
@@ -165,6 +147,19 @@
     },
     {
       "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001072",
+        "label": "Thickened skin"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0100867",
         "label": "Duodenal stenosis"
       },
@@ -174,8 +169,7 @@
       "type": {
         "id": "HP:0000220",
         "label": "Velopharyngeal insufficiency"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -187,7 +181,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual 2",
+      "id": "lmKxxwo1zuT98klLlQJO4mlT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -196,11 +190,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual 2",
+            "subjectOrBiosampleId": "individual 8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ARfhayeuWPBeCFVvjUMOBwoua",
+                "id": "c1500AtoG_SMAD4_NM_005359v6",
                 "geneContext": {
                   "valueId": "HGNC:6770",
                   "symbol": "SMAD4"
@@ -208,19 +204,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005359.6:c.1499T>C"
+                    "value": "NM_005359.6:c.1500A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.51078307T>C"
+                    "value": "NC_000018.10:g.51078308A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005350.1:p.(Ile500Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "51078307",
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 51078308,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -243,55 +243,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-31T06:31:52.285672903Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T06:57:46.007531Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22158539",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22158539",
         "description": "Mutations at a single codon in Mad homology 2 domain of SMAD4 cause Myhre syndrome"
       }
     ]
