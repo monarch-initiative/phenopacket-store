@@ -1,22 +1,38 @@
 {
-  "id": "PMID_17187620_child",
+  "id": "PMID_14994243_Clinical_Report",
   "subject": {
-    "id": "child",
+    "id": "Clinical Report",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P1M"
       }
     },
     "vitalStatus": {
       "status": "DECEASED"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001635",
+        "label": "Congestive heart failure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004887",
         "label": "Respiratory failure requiring assisted ventilation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
       }
     },
     {
@@ -26,19 +42,43 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P1D"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002789",
-        "label": "Tachypnea"
+        "id": "HP:0001667",
+        "label": "Right ventricular hypertrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001284",
+        "label": "Areflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003128",
+        "label": "Lactic acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P1Y"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010307",
+        "label": "Stridor"
       }
     },
     {
@@ -48,38 +88,14 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P14D"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001875",
-        "label": "Decreased total neutrophil count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002094",
-        "label": "Dyspnea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003688",
-        "label": "Cytochrome C oxidase-negative muscle fibers"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "KtVrrX1fx4bQzkINrFrlf33g",
+      "id": "veZqr0nKiu51B0ya1kke4lfO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,7 +104,7 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "child",
+            "subjectOrBiosampleId": "Clinical Report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
@@ -139,14 +155,15 @@
         "label": "Mitochondrial complex IV deficiency, nuclear type 2"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P1M"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-28T06:50:32.612126Z",
+    "created": "2025-11-28T06:50:32.611639Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -193,8 +210,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:17187620",
-        "description": "Identification of a novel compound heterozygote SCO2 mutation in cytochrome c oxidase deficient fatal infantile cardioencephalomyopathy"
+        "id": "PMID:14994243",
+        "description": "Novel SCO2 mutation (G1521A) presenting as a spinal muscular atrophy type I phenotype"
       }
     ]
   }

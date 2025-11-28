@@ -1,7 +1,7 @@
 {
-  "id": "PMID_17187620_child",
+  "id": "PMID_10749987_family_A_index",
   "subject": {
-    "id": "child",
+    "id": "family A index",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P4M"
@@ -10,13 +10,13 @@
     "vitalStatus": {
       "status": "DECEASED"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0004887",
-        "label": "Respiratory failure requiring assisted ventilation"
+        "id": "HP:0002878",
+        "label": "Respiratory failure"
       }
     },
     {
@@ -32,13 +32,20 @@
     },
     {
       "type": {
-        "id": "HP:0002789",
-        "label": "Tachypnea"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1M"
-        }
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005348",
+        "label": "Inspiratory stridor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
       }
     },
     {
@@ -48,26 +55,8 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P2M"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001875",
-        "label": "Decreased total neutrophil count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002094",
-        "label": "Dyspnea"
       }
     },
     {
@@ -79,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "KtVrrX1fx4bQzkINrFrlf33g",
+      "id": "nBAG0oyZwXdbEWLA9H87kJLP",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,13 +77,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "child",
+            "subjectOrBiosampleId": "family A index",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c418GtoA_SCO2_NM_005138v3",
+                "id": "c511CtoT_SCO2_NM_005138v3",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -102,23 +91,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.418G>A"
+                    "value": "NM_005138.3:c.511C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50523994C>T"
+                    "value": "NC_000022.11:g.50523901G>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_005129.2:p.(Glu140Lys)"
+                    "value": "NP_005129.2:p.(Arg171Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": 50523994,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 50523901,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -146,7 +135,7 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-28T06:50:32.612126Z",
+    "created": "2025-11-28T06:50:32.612286Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -193,8 +182,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:17187620",
-        "description": "Identification of a novel compound heterozygote SCO2 mutation in cytochrome c oxidase deficient fatal infantile cardioencephalomyopathy"
+        "id": "PMID:10749987",
+        "description": "Mutations in SCO2 are associated with a distinct form of hypertrophic cardiomyopathy and cytochrome c oxidase deficiency"
       }
     ]
   }

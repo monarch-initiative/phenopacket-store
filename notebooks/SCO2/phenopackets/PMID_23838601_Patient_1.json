@@ -1,22 +1,56 @@
 {
-  "id": "PMID_17187620_child",
+  "id": "PMID_23838601_Patient_1",
   "subject": {
-    "id": "child",
+    "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P1Y8M"
       }
     },
     "vitalStatus": {
       "status": "DECEASED"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0004887",
-        "label": "Respiratory failure requiring assisted ventilation"
+        "id": "HP:0001336",
+        "label": "Myoclonus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P7M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P9M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
       }
     },
     {
@@ -26,60 +60,75 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P9M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002789",
-        "label": "Tachypnea"
+        "id": "HP:0040081",
+        "label": "Abnormal circulating creatine kinase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P9M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001639",
-        "label": "Hypertrophic cardiomyopathy"
+        "id": "HP:0003648",
+        "label": "Lacticaciduria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000508",
+        "label": "Ptosis"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P9M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001875",
-        "label": "Decreased total neutrophil count"
+        "id": "HP:0000252",
+        "label": "Microcephaly"
       }
     },
     {
       "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
-      }
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002094",
-        "label": "Dyspnea"
-      }
+        "id": "HP:0012444",
+        "label": "Brain atrophy"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0003688",
-        "label": "Cytochrome C oxidase-negative muscle fibers"
+        "id": "HP:0002376",
+        "label": "Developmental regression"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "KtVrrX1fx4bQzkINrFrlf33g",
+      "id": "uoqtG3CWBGdHYEulWDr73MB2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,39 +137,23 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "child",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c418GtoA_SCO2_NM_005138v3",
+                "id": "SCO2_SV_chr22_g_49275958_49362964del_NCBI_Build_36_1_",
+                "label": "chr22:g.49275958_49362964del(NCBI Build 36.1)",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
                 },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.418G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50523994C>T"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_005129.2:p.(Glu140Lys)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr22",
-                  "pos": 50523994,
-                  "ref": "C",
-                  "alt": "T"
-                },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -140,13 +173,13 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P7M14D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-28T06:50:32.612126Z",
+    "created": "2025-11-28T06:50:32.611398Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -193,8 +226,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:17187620",
-        "description": "Identification of a novel compound heterozygote SCO2 mutation in cytochrome c oxidase deficient fatal infantile cardioencephalomyopathy"
+        "id": "PMID:23838601",
+        "description": "Large copy number variations in combination with point mutations in the TYMP and SCO2 genes found in two patients with mitochondrial disorders"
       }
     ]
   }

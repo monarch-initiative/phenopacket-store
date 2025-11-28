@@ -1,18 +1,24 @@
 {
-  "id": "PMID_17187620_child",
+  "id": "PMID_18924171_Clinical_report",
   "subject": {
-    "id": "child",
+    "id": "Clinical report",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P4M"
+        "iso8601duration": "P25D"
       }
     },
     "vitalStatus": {
       "status": "DECEASED"
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      }
+    },
     {
       "type": {
         "id": "HP:0004887",
@@ -21,65 +27,73 @@
     },
     {
       "type": {
+        "id": "HP:0001662",
+        "label": "Bradycardia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001273",
+        "label": "Abnormal corpus callosum morphology"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1M"
+          "iso8601duration": "P1D"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002789",
-        "label": "Tachypnea"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1M"
-        }
+        "id": "HP:0001605",
+        "label": "Vocal cord paralysis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002518",
+        "label": "Abnormal periventricular white matter morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001284",
+        "label": "Areflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005348",
+        "label": "Inspiratory stridor"
       }
     },
     {
       "type": {
         "id": "HP:0001639",
         "label": "Hypertrophic cardiomyopathy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1M"
-        }
       }
     },
     {
       "type": {
-        "id": "HP:0001875",
-        "label": "Decreased total neutrophil count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001298",
-        "label": "Encephalopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002094",
-        "label": "Dyspnea"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003688",
-        "label": "Cytochrome C oxidase-negative muscle fibers"
+        "id": "HP:0002363",
+        "label": "Abnormal brainstem morphology"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "KtVrrX1fx4bQzkINrFrlf33g",
+      "id": "WLSE8k5lbOBqBZA5VfiOq1o9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -88,13 +102,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "child",
+            "subjectOrBiosampleId": "Clinical report",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c418GtoA_SCO2_NM_005138v3",
+                "id": "c107GtoA_SCO2_NM_005138v3",
                 "geneContext": {
                   "valueId": "HGNC:10604",
                   "symbol": "SCO2"
@@ -102,21 +116,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005138.3:c.418G>A"
+                    "value": "NM_005138.3:c.107G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000022.11:g.50523994C>T"
+                    "value": "NC_000022.11:g.50524305C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_005129.2:p.(Glu140Lys)"
+                    "value": "NP_005129.2:p.(Trp36Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": 50523994,
+                  "pos": 50524305,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -139,14 +153,15 @@
         "label": "Mitochondrial complex IV deficiency, nuclear type 2"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P1M"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-11-28T06:50:32.612126Z",
+    "created": "2025-11-28T06:50:32.612183Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -193,8 +208,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:17187620",
-        "description": "Identification of a novel compound heterozygote SCO2 mutation in cytochrome c oxidase deficient fatal infantile cardioencephalomyopathy"
+        "id": "PMID:18924171",
+        "description": "Phenotypic consequences of a novel SCO2 gene mutation"
       }
     ]
   }
