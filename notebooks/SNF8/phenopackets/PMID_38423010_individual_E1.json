@@ -1,15 +1,22 @@
 {
-  "id": "PMID_38423010_individual_D1",
+  "id": "PMID_38423010_individual_E1",
   "subject": {
-    "id": "individual D1",
+    "id": "individual E1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P18Y"
+        "iso8601duration": "P27Y"
       }
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0002283",
@@ -21,43 +28,6 @@
         "id": "HP:0008278",
         "label": "Cerebellar cortical atrophy"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000639",
-        "label": "Nystagmus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000648",
-        "label": "Optic atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000649",
-        "label": "Abnormality of visual evoked potentials"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -82,10 +52,21 @@
     },
     {
       "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0011342",
         "label": "Mild global developmental delay"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -93,6 +74,18 @@
         "label": "Seizure"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000648",
+        "label": "Optic atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
     },
     {
       "type": {
@@ -124,15 +117,20 @@
     },
     {
       "type": {
+        "id": "HP:0000649",
+        "label": "Abnormality of visual evoked potentials"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "individual D1",
+      "id": "T8r59WjSJDXNPgas60gzTRw9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -141,11 +139,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "individual D1",
+            "subjectOrBiosampleId": "individual E1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_qVfxqjZANsuEmJzEfrkbwYvUu",
+                "id": "c673_683delinsTGGA_SNF8_NM_007241v4",
                 "geneContext": {
                   "valueId": "HGNC:17028",
                   "symbol": "SNF8"
@@ -153,54 +153,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_007241.4:c.423-1G>C"
+                    "value": "NM_007241.4:c.673_683delinsTGGA"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.48933347C>G"
+                    "value": "NC_000017.11:g.48930569_48930579delinsTCCA"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_009172.2:p.(Asp225TrpfsTer99)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "48933347",
-                  "ref": "C",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "individual D1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_ujHuYAItbWLHmkoTVrySIqxUK",
-                "geneContext": {
-                  "valueId": "HGNC:17028",
-                  "symbol": "SNF8"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_007241.4:c.304G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.48937065C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr17",
-                  "pos": "48937065",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 48930569,
+                  "ref": "GCCTGTAAGTC",
+                  "alt": "TCCA"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -222,61 +191,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P4Y"
+          "iso8601duration": "P6Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-29T17:05:16.262585163Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:31:37.839680Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38423010",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38423010",
         "description": "Bi-allelic variants in SNF8 cause a disease spectrum ranging from severe developmental and epileptic encephalopathy to syndromic optic atrophy"
       }
     ]

@@ -7,9 +7,19 @@
         "iso8601duration": "P3M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0002015",
@@ -36,35 +46,16 @@
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002283",
-        "label": "Global brain atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002079",
-        "label": "Hypoplasia of the corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
     },
     {
       "type": {
@@ -75,10 +66,22 @@
     },
     {
       "type": {
-        "id": "HP:0008278",
-        "label": "Cerebellar cortical atrophy"
+        "id": "HP:0002283",
+        "label": "Global brain atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002079",
+        "label": "Hypoplasia of the corpus callosum"
+      }
     },
     {
       "type": {
@@ -104,7 +107,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual A2",
+      "id": "uEiaYNPtqlhI7XhI5V2x6S62",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,8 +119,10 @@
             "subjectOrBiosampleId": "individual A2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZmcQsftFxMWwUHIYRcBCYRHeS",
+                "id": "c501CtoA_SNF8_NM_007241v4",
                 "geneContext": {
                   "valueId": "HGNC:17028",
                   "symbol": "SNF8"
@@ -130,48 +135,17 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.48933268G>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr17",
-                  "pos": "48933268",
-                  "ref": "G",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "individual A2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_veLBwYKTCsYOhDQAMzAYijnti",
-                "geneContext": {
-                  "valueId": "HGNC:17028",
-                  "symbol": "SNF8"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_007241.4:c.572G>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.48931710C>T"
+                    "syntax": "hgvs.p",
+                    "value": "NP_009172.2:p.(Tyr167Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "48931710",
-                  "ref": "C",
+                  "pos": 48933268,
+                  "ref": "G",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -201,55 +175,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-29T17:29:36.749058961Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:30:23.183331Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38423010",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38423010",
         "description": "Bi-allelic variants in SNF8 cause a disease spectrum ranging from severe developmental and epileptic encephalopathy to syndromic optic atrophy"
       }
     ]
