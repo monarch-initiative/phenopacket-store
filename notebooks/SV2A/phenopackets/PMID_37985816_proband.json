@@ -23,39 +23,6 @@
     },
     {
       "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0032792",
         "label": "Tonic seizure"
       },
@@ -64,6 +31,13 @@
           "iso8601duration": "P1M10D"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0032794",
+        "label": "Myoclonic seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -89,23 +63,23 @@
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2M14D"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0033725",
         "label": "Thin corpus callosum"
       },
       "onset": {
         "age": {
           "iso8601duration": "P11M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002376",
+        "label": "Developmental regression"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
         }
       }
     },
@@ -133,6 +107,68 @@
     },
     {
       "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000768",
+        "label": "Pectus carinatum"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0008897",
         "label": "Postnatal growth retardation"
       },
@@ -155,36 +191,10 @@
     },
     {
       "type": {
-        "id": "HP:0000768",
-        "label": "Pectus carinatum"
+        "id": "HP:0002179",
+        "label": "Opisthotonus"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P5Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100704",
-        "label": "Cerebral visual impairment"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P2Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010851",
-        "label": "EEG with burst suppression"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y9M"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -212,29 +222,19 @@
     },
     {
       "type": {
-        "id": "HP:0032794",
-        "label": "Myoclonic seizure"
+        "id": "HP:0010851",
+        "label": "EEG with burst suppression"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002020",
-        "label": "Gastroesophageal reflux"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002179",
-        "label": "Opisthotonus"
-      },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y9M"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "Ro3dZROirtbDeiZXYrOQZsgp",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -246,8 +246,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_wbBCCUSUmChxqptysKRdYfiqE",
+                "id": "c865CtoT_SV2A_NM_014849v5",
                 "geneContext": {
                   "valueId": "HGNC:20566",
                   "symbol": "SV2A"
@@ -260,12 +262,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.149910916G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055664.3:p.(Arg289Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "149910916",
+                  "pos": 149910916,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -295,55 +301,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-06T09:39:18.328709840Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T06:43:35.082132Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37985816",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37985816",
         "description": "Biallelic variants in the synaptic vesicle glycoprotein 2 A are associated with epileptic encephalopathy"
       }
     ]
