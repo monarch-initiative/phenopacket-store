@@ -1,14 +1,11 @@
 {
-  "id": "PMID_26247899_P2_1",
+  "id": "PMID_26247899_P1_1",
   "subject": {
-    "id": "P2-1",
+    "id": "P1-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P30Y"
+        "iso8601duration": "P51Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "FEMALE"
   },
@@ -17,72 +14,13 @@
       "type": {
         "id": "HP:0000218",
         "label": "High palate"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000766",
         "label": "Abnormal sternum morphology"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002758",
-        "label": "Osteoarthritis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001166",
-        "label": "Arachnodactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012727",
-        "label": "Thoracic aortic aneurysm"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001537",
-        "label": "Umbilical hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000023",
-        "label": "Inguinal hernia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001763",
-        "label": "Pes planus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002829",
-        "label": "Arthralgia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012432",
-        "label": "Chronic fatigue"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010886",
-        "label": "Osteochondritis dissecans"
       },
       "excluded": true
     },
@@ -95,6 +33,13 @@
     },
     {
       "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012385",
         "label": "Camptodactyly"
       },
@@ -102,15 +47,53 @@
     },
     {
       "type": {
-        "id": "HP:0008419",
-        "label": "Intervertebral disk degeneration"
-      },
-      "excluded": true
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      }
     },
     {
       "type": {
         "id": "HP:0006687",
         "label": "Aortic tortuosity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033981",
+        "label": "Vertebral artery tortuosity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034179",
+        "label": "Vertebral artery aneurysm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005302",
+        "label": "Carotid artery tortuosity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012163",
+        "label": "Carotid artery dilatation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012158",
+        "label": "Carotid artery dissection"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012727",
+        "label": "Thoracic aortic aneurysm"
       },
       "excluded": true
     },
@@ -125,8 +108,7 @@
       "type": {
         "id": "HP:0002076",
         "label": "Migraine"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -134,6 +116,32 @@
         "label": "Hypertelorism"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001537",
+        "label": "Umbilical hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000023",
+        "label": "Inguinal hernia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001763",
+        "label": "Pes planus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002829",
+        "label": "Arthralgia"
+      }
     },
     {
       "type": {
@@ -169,11 +177,17 @@
         "label": "Bruising susceptibility"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012432",
+        "label": "Chronic fatigue"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "P2-1",
+      "id": "jabe08bw3Nk1hdCYKwWYhhjq",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -182,11 +196,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "P2-1",
+            "subjectOrBiosampleId": "P1-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FDqPrTaXiaPxjxEsbcphCuSLw",
+                "id": "c1346TtoC_SMAD2_NM_005901v6",
                 "geneContext": {
                   "valueId": "HGNC:6768",
                   "symbol": "SMAD2"
@@ -194,19 +210,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005901.6:c.1369G>A"
+                    "value": "NM_005901.6:c.1346T>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.47841862C>T"
+                    "value": "NC_000018.10:g.47841885A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005892.1:p.(Leu449Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "47841862",
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 47841885,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -229,55 +249,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-04T08:45:17.162616014Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:38:11.004163Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26247899",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26247899",
         "description": "SMAD2 Mutations Are Associated with Arterial Aneurysms and Dissections"
       }
     ]

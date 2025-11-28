@@ -1,14 +1,11 @@
 {
-  "id": "PMID_29967133_Family_2_II_2",
+  "id": "PMID_29967133_Family_3_II_2",
   "subject": {
-    "id": "Family 2 II-2",
+    "id": "Family 3 II-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P65Y"
+        "iso8601duration": "P64Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "FEMALE"
   },
@@ -17,7 +14,8 @@
       "type": {
         "id": "HP:0010809",
         "label": "Broad uvula"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -29,19 +27,22 @@
       "type": {
         "id": "HP:0000218",
         "label": "High palate"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000494",
         "label": "Downslanted palpebral fissures"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000766",
         "label": "Abnormal sternum morphology"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -53,31 +54,22 @@
       "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001166",
         "label": "Arachnodactyly"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0012727",
-        "label": "Thoracic aortic aneurysm"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000098",
-        "label": "Tall stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
+        "id": "HP:0001065",
+        "label": "Striae distensae"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -95,10 +87,16 @@
     },
     {
       "type": {
-        "id": "HP:0002619",
-        "label": "Varicose veins"
+        "id": "HP:0012727",
+        "label": "Thoracic aortic aneurysm"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002619",
+        "label": "Varicose veins"
+      }
     },
     {
       "type": {
@@ -116,6 +114,13 @@
     },
     {
       "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002076",
         "label": "Migraine"
       },
@@ -123,24 +128,22 @@
     },
     {
       "type": {
-        "id": "HP:0000023",
-        "label": "Inguinal hernia"
+        "id": "HP:0002326",
+        "label": "Transient ischemic attack"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001763",
-        "label": "Pes planus"
-      },
-      "excluded": true
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
     },
     {
       "type": {
         "id": "HP:0002829",
         "label": "Arthralgia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -148,11 +151,23 @@
         "label": "Bifid uvula"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010648",
+        "label": "Dermal translucency"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 2 II-2",
+      "id": "g8dH6oKq1M9UAYHgGMbQkU7G",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -161,11 +176,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 2 II-2",
+            "subjectOrBiosampleId": "Family 3 II-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WEWZZTVOWyDaYKBYChPYCmLnV",
+                "id": "c1190CtoA_SMAD2_NM_005901v6",
                 "geneContext": {
                   "valueId": "HGNC:6768",
                   "symbol": "SMAD2"
@@ -173,18 +190,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005901.6:c.954T>A"
+                    "value": "NM_005901.6:c.1190C>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.47848518A>T"
+                    "value": "NC_000018.10:g.47845430G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005892.1:p.(Ser397Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "47848518",
-                  "ref": "A",
+                  "pos": 47845430,
+                  "ref": "G",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -204,64 +225,58 @@
       "term": {
         "id": "OMIM:619656",
         "label": "Loeys-Dietz syndrome 6"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P32Y"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-04T08:45:17.166651964Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:38:11.004917Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29967133",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29967133",
         "description": "Novel pathogenic SMAD2 variants in five families with arterial aneurysm and dissection: further delineation of the phenotype"
       }
     ]

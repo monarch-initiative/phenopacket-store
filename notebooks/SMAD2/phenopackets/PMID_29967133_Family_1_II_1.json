@@ -1,54 +1,15 @@
 {
-  "id": "PMID_29967133_Family_2_III_1",
+  "id": "PMID_29967133_Family_1_II_1",
   "subject": {
-    "id": "Family 2 III-1",
+    "id": "Family 1 II-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P30Y"
+        "iso8601duration": "P70Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001166",
-        "label": "Arachnodactyly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012727",
-        "label": "Thoracic aortic aneurysm"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000098",
-        "label": "Tall stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002076",
-        "label": "Migraine"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000023",
-        "label": "Inguinal hernia"
-      }
-    },
     {
       "type": {
         "id": "HP:0010809",
@@ -79,38 +40,15 @@
     },
     {
       "type": {
-        "id": "HP:0000766",
-        "label": "Abnormal sternum morphology"
-      },
-      "excluded": true
+        "id": "HP:0001166",
+        "label": "Arachnodactyly"
+      }
     },
     {
       "type": {
-        "id": "HP:0000776",
-        "label": "Congenital diaphragmatic hernia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012158",
-        "label": "Carotid artery dissection"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0004944",
-        "label": "Dilatation of the cerebral artery"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002619",
-        "label": "Varicose veins"
-      },
-      "excluded": true
+        "id": "HP:0012727",
+        "label": "Thoracic aortic aneurysm"
+      }
     },
     {
       "type": {
@@ -128,22 +66,21 @@
     },
     {
       "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002326",
+        "label": "Transient ischemic attack"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001763",
-        "label": "Pes planus"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002829",
-        "label": "Arthralgia"
       },
       "excluded": true
     },
@@ -157,7 +94,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 2 III-1",
+      "id": "NzGUAiYg62NEwRWBjpYMBHx2",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -166,11 +103,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 2 III-1",
+            "subjectOrBiosampleId": "Family 1 II-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WEWZZTVOWyDaYKBYChPYCmLnV",
+                "id": "c612dup_SMAD2_NM_005901v6",
                 "geneContext": {
                   "valueId": "HGNC:6768",
                   "symbol": "SMAD2"
@@ -178,19 +117,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_005901.6:c.954T>A"
+                    "value": "NM_005901.6:c.612dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000018.10:g.47848518A>T"
+                    "value": "NC_000018.10:g.47868366dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005892.1:p.(Asn205Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "47848518",
-                  "ref": "A",
-                  "alt": "T"
+                  "pos": 47868365,
+                  "ref": "T",
+                  "alt": "TA"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -212,61 +155,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P3Y"
+          "iso8601duration": "P20Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-10-04T08:45:17.167165040Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T17:38:11.004551Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29967133",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29967133",
         "description": "Novel pathogenic SMAD2 variants in five families with arterial aneurysm and dissection: further delineation of the phenotype"
       }
     ]
