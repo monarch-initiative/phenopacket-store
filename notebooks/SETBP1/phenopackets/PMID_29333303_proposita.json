@@ -7,6 +7,9 @@
         "iso8601duration": "P11M"
       }
     },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -168,6 +171,68 @@
     },
     {
       "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012714",
+        "label": "Severe hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001098",
+        "label": "Abnormal fundus morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001141",
+        "label": "Severely reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0011648",
         "label": "Patent ductus arteriosus after birth at term"
       },
@@ -204,6 +269,17 @@
     },
     {
       "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
       },
@@ -223,72 +299,6 @@
         "ontologyClass": {
           "id": "HP:0003577",
           "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012714",
-        "label": "Severe hearing impairment"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001141",
-        "label": "Severely reduced visual acuity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008897",
-        "label": "Postnatal growth retardation"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P8M"
         }
       }
     },
@@ -315,18 +325,11 @@
           "label": "Antenatal onset"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001098",
-        "label": "Abnormal fundus morphology"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "proposita",
+      "id": "ZmsJTa7uIdaLHhkCa7LoCDZW",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -338,8 +341,10 @@
             "subjectOrBiosampleId": "proposita",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_NtMxqOYijSOhRXPraerGfuDdz",
+                "id": "c2608GtoA_SETBP1_NM_015559v3",
                 "geneContext": {
                   "valueId": "HGNC:15573",
                   "symbol": "SETBP1"
@@ -352,12 +357,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000018.10:g.44951948G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056374.2:p.(Gly870Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr18",
-                  "pos": "44951948",
+                  "pos": 44951948,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -388,55 +397,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-11T08:29:12.526070117Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-28T18:06:04.201969Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29333303",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29333303",
         "description": "Schinzel-Giedion Syndrome with Congenital Megacalycosis in a Turkish Patient: Report of SETBP1 Mutation and Literature Review of the Clinical Features"
       }
     ]
