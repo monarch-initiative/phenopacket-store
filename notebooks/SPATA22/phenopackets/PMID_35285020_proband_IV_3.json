@@ -1,72 +1,73 @@
 {
-  "id": "PMID_35285020_sister_IV_2",
+  "id": "PMID_35285020_proband_IV_3",
   "subject": {
-    "id": "sister IV-2",
-    "vitalStatus": {
-      "status": "ALIVE"
+    "id": "proband IV-3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P23Y"
+      }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000858",
-        "label": "Irregular menstruation"
+        "id": "HP:0011961",
+        "label": "Non-obstructive azoospermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031039",
+        "label": "Spermatocyte maturation arrest"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P13Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0008209",
-        "label": "Premature ovarian insufficiency"
-      }
+        "id": "HP:0030087",
+        "label": "Abnormal circulating testosterone concentration"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0008232",
-        "label": "Elevated circulating follicle stimulating hormone level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031103",
-        "label": "Decreased circulating antimullerian hormone circulation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008222",
-        "label": "Female infertility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002960",
-        "label": "Autoimmunity"
+        "id": "HP:0030338",
+        "label": "Abnormal circulating gonadotropin concentration"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "sister IV-2",
+      "id": "GhBoawimWkfnCNcJfqjQSQqO",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:621002",
-          "label": "Premature ovarian failure 25"
+          "id": "OMIM:621001",
+          "label": "Spermatogenic failure 96"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "sister IV-2",
+            "subjectOrBiosampleId": "proband IV-3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_hNMlDzxxGVdPAjMNRZWVvBkNx",
+                "id": "c400CtoT_SPATA22_NM_001170698v2",
                 "geneContext": {
                   "valueId": "HGNC:30705",
                   "symbol": "SPATA22"
@@ -79,12 +80,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.3449079G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001164169.1:p.(Arg134Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "3449079",
+                  "pos": 3449079,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -103,8 +108,8 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:621002",
-        "label": "Premature ovarian failure 25"
+        "id": "OMIM:621001",
+        "label": "Spermatogenic failure 96"
       },
       "onset": {
         "ontologyClass": {
@@ -115,55 +120,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-26T08:44:55.619390964Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T08:09:06.850280Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35285020",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35285020",
         "description": "Bi-allelic SPATA22 variants cause premature ovarian insufficiency and nonobstructive azoospermia due to meiotic arrest"
       }
     ]
