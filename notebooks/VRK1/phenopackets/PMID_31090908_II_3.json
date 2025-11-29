@@ -1,10 +1,10 @@
 {
-  "id": "PMID_30847374_V-1",
+  "id": "PMID_31090908_II_3",
   "subject": {
-    "id": "V-1",
+    "id": "II.3",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P37Y"
+        "iso8601duration": "P38Y"
       }
     },
     "sex": "MALE"
@@ -12,58 +12,15 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001761",
-        "label": "Pes cavus"
+        "id": "HP:0001270",
+        "label": "Motor delay"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011462",
-          "label": "Young adult onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002460",
-        "label": "Distal muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007002",
-        "label": "Motor axonal neuropathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0032989",
-        "label": "Delayed ability to roll over"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0025336",
-        "label": "Delayed ability to sit"
       },
       "excluded": true
     },
@@ -76,6 +33,19 @@
     },
     {
       "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003701",
         "label": "Proximal muscle weakness"
       },
@@ -83,10 +53,22 @@
     },
     {
       "type": {
+        "id": "HP:0002460",
+        "label": "Distal muscle weakness"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0009879",
         "label": "Simplified gyral pattern"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007002",
+        "label": "Motor axonal neuropathy"
+      }
     },
     {
       "type": {
@@ -99,6 +81,12 @@
       "type": {
         "id": "HP:0001347",
         "label": "Hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
       },
       "excluded": true
     },
@@ -106,8 +94,7 @@
       "type": {
         "id": "HP:0003487",
         "label": "Babinski sign"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -133,7 +120,7 @@
   ],
   "interpretations": [
     {
-      "id": "V-1",
+      "id": "f34AyvMTGz537kIjfearMAqx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -142,11 +129,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "V-1",
+            "subjectOrBiosampleId": "II.3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_WKYUKaRrCGxAxwbmBwSXKwcmT",
+                "id": "c761GtoT_VRK1_NM_003384v3",
                 "geneContext": {
                   "valueId": "HGNC:12718",
                   "symbol": "VRK1"
@@ -154,24 +143,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003384.3:c.1124G>A"
+                    "value": "NM_003384.3:c.761G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.96876085G>A"
+                    "value": "NC_000014.9:g.96856181G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003375.1:p.(Trp254Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "96876085",
+                  "pos": 96856181,
                   "ref": "G",
-                  "alt": "A"
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -188,62 +181,61 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P15Y"
+          "iso8601duration": "P10Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-27T07:59:33.113353013Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T17:30:32.431705Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:30847374",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30847374",
-        "description": "A novel VRK1 mutation associated with recessive distal hereditary motor neuropathy"
+        "id": "PMID:31090908",
+        "description": "Loss of Cajal bodies in motor neurons from patients with novel mutations in VRK1"
       }
     ]
   }

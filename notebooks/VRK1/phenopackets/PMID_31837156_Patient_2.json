@@ -12,64 +12,15 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001761",
-        "label": "Pes cavus"
+        "id": "HP:0001270",
+        "label": "Motor delay"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003596",
-          "label": "Middle age onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001765",
-        "label": "Hammertoe"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003596",
-          "label": "Middle age onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003202",
-        "label": "Skeletal muscle atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002460",
-        "label": "Distal muscle weakness"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0032989",
-        "label": "Delayed ability to roll over"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0025336",
-        "label": "Delayed ability to sit"
       },
       "excluded": true
     },
@@ -82,10 +33,22 @@
     },
     {
       "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003701",
         "label": "Proximal muscle weakness"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002460",
+        "label": "Distal muscle weakness"
+      }
     },
     {
       "type": {
@@ -100,6 +63,24 @@
         "label": "Hyperreflexia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001761",
+        "label": "Pes cavus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003596",
+          "label": "Middle age onset"
+        }
+      }
     },
     {
       "type": {
@@ -124,6 +105,18 @@
     },
     {
       "type": {
+        "id": "HP:0001765",
+        "label": "Hammertoe"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003596",
+          "label": "Middle age onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0003236",
         "label": "Elevated circulating creatine kinase concentration"
       },
@@ -132,7 +125,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 2",
+      "id": "3dGXfU2NgMfdnIoRckpdB2oj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -144,8 +137,10 @@
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xTevNRYoYbLNTdalEgDbkPtFB",
+                "id": "c1160GtoA_VRK1_NM_003384v3",
                 "geneContext": {
                   "valueId": "HGNC:12718",
                   "symbol": "VRK1"
@@ -158,12 +153,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.96881177G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003375.1:p.(Arg387His)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "96881177",
+                  "pos": 96881177,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -193,55 +192,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-27T07:59:33.142138957Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T17:30:32.431627Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:31837156",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31837156",
         "description": "Identification of a homozygous VRK1 mutation in two patients with adult-onset distal hereditary motor neuropathy"
       }
     ]

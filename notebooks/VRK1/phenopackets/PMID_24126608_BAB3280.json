@@ -36,40 +36,16 @@
     },
     {
       "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009879",
-        "label": "Simplified gyral pattern"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0007002",
-        "label": "Motor axonal neuropathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003390",
-        "label": "Sensory axonal neuropathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
     },
     {
       "type": {
@@ -101,10 +77,34 @@
     },
     {
       "type": {
+        "id": "HP:0009879",
+        "label": "Simplified gyral pattern"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007002",
+        "label": "Motor axonal neuropathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003390",
+        "label": "Sensory axonal neuropathy"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001347",
         "label": "Hyperreflexia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
     },
     {
       "type": {
@@ -137,7 +137,7 @@
   ],
   "interpretations": [
     {
-      "id": "BAB3280",
+      "id": "zgE0ITPK7I3kfS0Z1m5PK1dK",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -149,43 +149,10 @@
             "subjectOrBiosampleId": "BAB3280",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_aBPzYTfCJOMCQSHXSdCwgVtFQ",
-                "geneContext": {
-                  "valueId": "HGNC:12718",
-                  "symbol": "VRK1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_003384.3:c.706G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.96855353G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": "96855353",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "BAB3280",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_XRCufhfQQGPCayVPOzloTetWF",
+                "id": "c266GtoA_VRK1_NM_003384v3",
                 "geneContext": {
                   "valueId": "HGNC:12718",
                   "symbol": "VRK1"
@@ -198,12 +165,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.96846144G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003375.1:p.(Arg89Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "96846144",
+                  "pos": 96846144,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -234,55 +205,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-27T07:59:33.093389987Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T17:30:32.431418Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24126608",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24126608",
         "description": "Mutations in VRK1 associated with complex motor and sensory axonal neuropathy plus microcephaly"
       }
     ]

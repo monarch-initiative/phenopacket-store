@@ -35,6 +35,13 @@
     },
     {
       "type": {
+        "id": "HP:0025336",
+        "label": "Delayed ability to sit"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002650",
         "label": "Scoliosis"
       }
@@ -83,23 +90,16 @@
     },
     {
       "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025336",
-        "label": "Delayed ability to sit"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001347",
         "label": "Hyperreflexia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
+      }
     },
     {
       "type": {
@@ -132,7 +132,7 @@
   ],
   "interpretations": [
     {
-      "id": "BAB5311",
+      "id": "KNfdXfzaTbWTdq2ovqQwIUGq",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -144,8 +144,10 @@
             "subjectOrBiosampleId": "BAB5311",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_yAVLoAZxDGeJdZUFTFiSfdyBK",
+                "id": "c1072CtoT_VRK1_NM_003384v3",
                 "geneContext": {
                   "valueId": "HGNC:12718",
                   "symbol": "VRK1"
@@ -158,12 +160,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.96876033C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003375.1:p.(Arg358Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "96876033",
+                  "pos": 96876033,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -194,55 +200,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-27T07:59:33.103322029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T17:30:32.431486Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24126608",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24126608",
         "description": "Mutations in VRK1 associated with complex motor and sensory axonal neuropathy plus microcephaly"
       }
     ]
