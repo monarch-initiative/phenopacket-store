@@ -1,7 +1,8 @@
 {
   "id": "PMID_17853487_Patient_1",
   "subject": {
-    "id": "Patient 1"
+    "id": "Patient 1",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -12,9 +13,23 @@
     },
     {
       "type": {
+        "id": "HP:0005709",
+        "label": "2-3 toe cutaneous syndactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001162",
         "label": "Postaxial hand polydactyly"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001830",
+        "label": "Postaxial foot polydactyly"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -33,20 +48,6 @@
         "id": "HP:0200133",
         "label": "Lumbosacral meningocele"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0005709",
-        "label": "2-3 toe cutaneous syndactyly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001830",
-        "label": "Postaxial foot polydactyly"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -86,7 +87,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "jW2WSpVfaLBEUVc4XSmHpOLU",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -98,8 +99,10 @@
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vOrrpEuPUVdeTXhTSaZcxtIjl",
+                "id": "c86GtoA_SC5D_NM_006918v5",
                 "geneContext": {
                   "valueId": "HGNC:10547",
                   "symbol": "SC5D"
@@ -112,47 +115,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.121303461G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr11",
-                  "pos": "121303461",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_HiZGMKWchuZVjLbYnfTgXbnHj",
-                "geneContext": {
-                  "valueId": "HGNC:10547",
-                  "symbol": "SC5D"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_006918.5:c.632G>A"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.121307244G>A"
+                    "syntax": "hgvs.p",
+                    "value": "NP_008849.2:p.(Arg29Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "121307244",
+                  "pos": 121303461,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -183,55 +155,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-24T13:38:19.195643901Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T17:42:43.424202Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17853487",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17853487",
         "description": "Clinical phenotype of lathosterolosis"
       }
     ]
