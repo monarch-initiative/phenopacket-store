@@ -1,14 +1,11 @@
 {
-  "id": "PMID_39073169_Patient_F1_III_3",
+  "id": "PMID_39073169_Patient_F3_III_1",
   "subject": {
-    "id": "Patient F1:III-3",
+    "id": "Patient F3:III-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P35Y"
+        "iso8601duration": "P15Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "MALE"
   },
@@ -17,61 +14,38 @@
       "type": {
         "id": "HP:0001270",
         "label": "Motor delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030048",
-        "label": "Colpocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001338",
-        "label": "Partial agenesis of the corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0006956",
-        "label": "Lateral ventricle dilatation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034295",
-        "label": "Reduced cerebral white matter volume"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002342",
-        "label": "Intellectual disability, moderate"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001344",
-        "label": "Absent speech"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0002280",
-        "label": "Enlarged cisterna magna"
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002321",
+        "label": "Vertigo"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002451",
+        "label": "Limb dystonia"
       },
       "excluded": true
     },
@@ -91,29 +65,48 @@
     },
     {
       "type": {
-        "id": "HP:0006889",
-        "label": "Intellectual disability, borderline"
+        "id": "HP:0000486",
+        "label": "Strabismus"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006889",
+        "label": "Borderline intellectual disability"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Moderate intellectual disability"
       },
       "excluded": true
     },
     {
       "type": {
         "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
+        "label": "Severe intellectual disability"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Patient F1:III-3",
+      "id": "DmgTyabtcQNic3Q4vRpo1OcW",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -122,11 +115,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient F1:III-3",
+            "subjectOrBiosampleId": "Patient F3:III-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_jywaPCFoCxwOhYHEsSZnnUgyf",
+                "id": "c1585GtoA_SRPK3_NM_014370v4",
                 "geneContext": {
                   "valueId": "HGNC:11402",
                   "symbol": "SRPK3"
@@ -134,24 +129,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_014370.4:c.475C>G"
+                    "value": "NM_014370.4:c.1585G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000023.11:g.153782208C>G"
+                    "value": "NC_000023.11:g.153785401G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055185.2:p.(Glu529Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "153782208",
-                  "ref": "C",
-                  "alt": "G"
+                  "pos": 153785401,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -165,65 +164,58 @@
       "term": {
         "id": "OMIM:301134",
         "label": "Intellectual developmental disorder, X-linked 114"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-12-15T10:22:34.991744995Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T07:14:03.788584Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:39073169",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/39073169",
         "description": "SRPK3 Is Essential for Cognitive and Ocular Development in Humans and Zebrafish, Explaining X-Linked Intellectual Disability"
       }
     ]
