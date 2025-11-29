@@ -12,76 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001508",
-        "label": "Failure to thrive"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034353",
-        "label": "Appendicular spasticity"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000407",
-        "label": "Sensorineural hearing impairment"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002020",
-        "label": "Gastroesophageal reflux"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000545",
-        "label": "Myopia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034392",
-        "label": "Joint contracture"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000256",
         "label": "Macrocephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001249",
-        "label": "Intellectual disability"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001344",
-        "label": "Absent speech"
       },
       "excluded": true
     },
@@ -94,15 +26,25 @@
     },
     {
       "type": {
-        "id": "HP:0001332",
-        "label": "Dystonia"
-      },
-      "excluded": true
+        "id": "HP:0034353",
+        "label": "Appendicular spasticity"
+      }
     },
     {
       "type": {
-        "id": "HP:0002360",
-        "label": "Sleep abnormality"
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002307",
+        "label": "Drooling"
       },
       "excluded": true
     },
@@ -115,8 +57,81 @@
     },
     {
       "type": {
-        "id": "HP:0002307",
-        "label": "Drooling"
+        "id": "HP:0002020",
+        "label": "Gastroesophageal reflux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100021",
+        "label": "Cerebral palsy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002360",
+        "label": "Sleep disturbance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001347",
+        "label": "Hyperreflexia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P22Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia"
       },
       "excluded": true
     },
@@ -126,11 +141,41 @@
         "label": "Tethered cord"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P12Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001271",
+        "label": "Polyneuropathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3",
+      "id": "BIPtKkr541c2DZfiabTXkn5u",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -142,8 +187,10 @@
             "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_YUlQvQDdsttielrYzGcSwjuxo",
+                "id": "c171_172del_SPTSSA_NM_138288v4",
                 "geneContext": {
                   "valueId": "HGNC:20361",
                   "symbol": "SPTSSA"
@@ -156,12 +203,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.34435247_34435248del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_612145.2:p.(Gln58AlafsTer10)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "34435244",
+                  "pos": 34435244,
                   "ref": "TGG",
                   "alt": "T"
                 },
@@ -192,55 +243,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-25T08:24:59.767516851Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-29T08:52:34.780607Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36718090",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36718090",
         "description": "SPTSSA variants alter sphingolipid synthesis and cause a complex hereditary spastic paraplegia"
       }
     ]
