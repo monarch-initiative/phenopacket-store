@@ -12,24 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000829",
-        "label": "Hypoparathyroidism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010515",
-        "label": "Aplasia/Hypoplasia of the thymus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010442",
-        "label": "Polydactyly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000316",
         "label": "Hypertelorism"
       },
@@ -44,8 +26,8 @@
     },
     {
       "type": {
-        "id": "HP:0000369",
-        "label": "Low-set ears"
+        "id": "HP:0000377",
+        "label": "Abnormal pinna morphology"
       },
       "excluded": true
     },
@@ -86,52 +68,15 @@
     },
     {
       "type": {
-        "id": "HP:0001636",
-        "label": "Tetralogy of Fallot"
-      },
-      "excluded": true
+        "id": "HP:0000829",
+        "label": "Hypoparathyroidism"
+      }
     },
     {
       "type": {
-        "id": "HP:0010882",
-        "label": "Pulmonary valve atresia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0031834",
-        "label": "Aortopulmonary collateral arteries"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011613",
-        "label": "Interrupted aortic arch type B"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012020",
-        "label": "Right aortic arch"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
-      },
-      "excluded": true
+        "id": "HP:0010515",
+        "label": "Aplasia/Hypoplasia of the thymus"
+      }
     },
     {
       "type": {
@@ -146,6 +91,12 @@
         "label": "Sensorineural hearing impairment"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010442",
+        "label": "Polydactyly"
+      }
     },
     {
       "type": {
@@ -171,7 +122,7 @@
   ],
   "interpretations": [
     {
-      "id": "individual",
+      "id": "ti59V8YDmEiGIN4IbTtiPZUl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -183,8 +134,10 @@
             "subjectOrBiosampleId": "individual",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ReMEVaFAzpRbTMkgwhcNwGELP",
+                "id": "c967_977dup_TBX1_NM_080647v1",
                 "geneContext": {
                   "valueId": "HGNC:11592",
                   "symbol": "TBX1"
@@ -197,12 +150,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.19765960_19765970dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_542378.1:p.(Ser327ThrfsTer47)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "19765959",
+                  "pos": 19765959,
                   "ref": "G",
                   "alt": "GAACCCCGTGGC"
                 },
@@ -227,56 +184,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-05T13:48:33.003859996Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:40:47.895276Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:30083032",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/30083032",
-        "description": "Hasegawa K, Tanaka H, Higuchi Y, Hayashi Y, Kobayashi K, Tsukahara H. Novel heterozygous mutation in TBX1 in an infant with hypocalcemic seizures. Clinical Pediatric Endocrinology 2018;27:159\u201364."
+        "description": "Hasegawa K, Tanaka H, Higuchi Y, Hayashi Y, Kobayashi K, Tsukahara H. Novel heterozygous mutation in TBX1 in an infant with hypocalcemic seizures. Clinical Pediatric Endocrinology 2018;27:159–64."
       }
     ]
   }

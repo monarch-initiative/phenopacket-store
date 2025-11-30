@@ -1,7 +1,8 @@
 {
   "id": "PMID_11748311_p13",
   "subject": {
-    "id": "p13"
+    "id": "p13",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -31,7 +32,7 @@
     {
       "type": {
         "id": "HP:0005403",
-        "label": "T lymphocytopenia"
+        "label": "Decreased total T cell count"
       }
     },
     {
@@ -50,7 +51,7 @@
   ],
   "interpretations": [
     {
-      "id": "p13",
+      "id": "7RRz7ptX2l3d5shN7MG9puTe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -62,8 +63,10 @@
             "subjectOrBiosampleId": "p13",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_OoTqyoDEFEMqfnBnLeSoAWiAV",
+                "id": "c1274_1281del_TBX1_NM_080647v1",
                 "geneContext": {
                   "valueId": "HGNC:11592",
                   "symbol": "TBX1"
@@ -76,12 +79,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.19766653_19766660del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_542378.1:p.(His425ArgfsTer189)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "19766651",
+                  "pos": 19766651,
                   "ref": "CCACTATCT",
                   "alt": "C"
                 },
@@ -106,55 +113,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-05T13:48:32.998610973Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:40:47.894718Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:11748311",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/11748311",
         "description": "Mutation analysis of TBX1 in non-deleted patients with features of DGS/VCFS or isolated cardiovascular defects."
       }
     ]

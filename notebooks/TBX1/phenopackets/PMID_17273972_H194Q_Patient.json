@@ -1,7 +1,12 @@
 {
-  "id": "PMID_17273972_H194Q_Father",
+  "id": "PMID_17273972_H194Q_Patient",
   "subject": {
-    "id": "H194Q-Father",
+    "id": "H194Q-Patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y"
+      }
+    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -19,6 +24,13 @@
     },
     {
       "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000347",
         "label": "Micrognathia"
       }
@@ -31,19 +43,6 @@
     },
     {
       "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0000220",
         "label": "Velopharyngeal insufficiency"
       },
@@ -51,50 +50,8 @@
     },
     {
       "type": {
-        "id": "HP:0001636",
-        "label": "Tetralogy of Fallot"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010882",
-        "label": "Pulmonary valve atresia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001631",
-        "label": "Atrial septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0031834",
-        "label": "Aortopulmonary collateral arteries"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011613",
-        "label": "Interrupted aortic arch type B"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012020",
-        "label": "Right aortic arch"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001629",
-        "label": "Ventricular septal defect"
+        "id": "HP:0001626",
+        "label": "Abnormality of the cardiovascular system"
       },
       "excluded": true
     },
@@ -109,13 +66,18 @@
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "H194Q-Father",
+      "id": "Sgu6FCa4BL9iS7FrkeUfrt6u",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -124,11 +86,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "H194Q-Father",
+            "subjectOrBiosampleId": "H194Q-Patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_QBuMsrDyhQGUncwuQzsXOszPo",
+                "id": "c582CtoG_TBX1_NM_080647v1",
                 "geneContext": {
                   "valueId": "HGNC:11592",
                   "symbol": "TBX1"
@@ -141,12 +105,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000022.11:g.19764224C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_542378.1:p.(His194Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr22",
-                  "pos": "19764224",
+                  "pos": 19764224,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -167,59 +135,64 @@
       "term": {
         "id": "OMIM:188400",
         "label": "DiGeorge syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
       }
     }
   ],
   "metaData": {
-    "created": "2024-08-05T13:48:33.003436088Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:40:47.895191Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17273972",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17273972",
         "description": "Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions"
       }
     ]
