@@ -12,8 +12,15 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002355",
-        "label": "Difficulty walking"
+        "id": "HP:0009830",
+        "label": "Peripheral neuropathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
       }
     },
     {
@@ -21,43 +28,6 @@
         "id": "HP:0001263",
         "label": "Global developmental delay"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0012707",
-        "label": "Elevated brain lactate level by MRS"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004887",
-        "label": "Respiratory failure requiring assisted ventilation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002151",
-        "label": "Increased circulating lactate concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009830",
-        "label": "Peripheral neuropathy"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -72,6 +42,12 @@
         "label": "Exaggerated startle response"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012707",
+        "label": "Elevated brain lactate level by MRS"
+      }
     },
     {
       "type": {
@@ -103,10 +79,28 @@
     },
     {
       "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0004887",
+        "label": "Respiratory failure requiring assisted ventilation"
+      }
     },
     {
       "type": {
@@ -121,11 +115,17 @@
         "label": "Cerebellar atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002151",
+        "label": "Increased circulating lactate concentration"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 3 Family 2",
+      "id": "g8uFU5upkNmM7kuvsis98ipi",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -137,43 +137,10 @@
             "subjectOrBiosampleId": "Patient 3 Family 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_DijTLboHuFDynzyLgVQmrZkMK",
-                "geneContext": {
-                  "valueId": "HGNC:26223",
-                  "symbol": "TEFM"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_024683.4:c.700del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.30899557del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr17",
-                  "pos": "30899551",
-                  "ref": "GT",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 3 Family 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_aFPjIYfIXxnoffsJDlrmVeSeV",
+                "id": "c476TtoA_TEFM_NM_024683v4",
                 "geneContext": {
                   "valueId": "HGNC:26223",
                   "symbol": "TEFM"
@@ -186,12 +153,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000017.11:g.30904085A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_078959.3:p.(Ile159Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": "30904085",
+                  "pos": 30904085,
                   "ref": "A",
                   "alt": "T"
                 },
@@ -221,55 +192,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-28T15:37:59.275343179Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:30:57.413322Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36823193",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36823193",
         "description": "TEFM variants impair mitochondrial transcription causing childhood-onset neurological disease"
       }
     ]
