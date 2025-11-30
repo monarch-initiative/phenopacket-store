@@ -1,14 +1,11 @@
 {
-  "id": "PMID_34155512_III_3",
+  "id": "PMID_34155512_III_6",
   "subject": {
-    "id": "III:3 ",
+    "id": "III:6",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P36Y"
+        "iso8601duration": "P30Y"
       }
-    },
-    "vitalStatus": {
-      "status": "ALIVE"
     },
     "sex": "MALE"
   },
@@ -29,37 +26,8 @@
       "type": {
         "id": "HP:0012207",
         "label": "Reduced sperm motility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032560",
-        "label": "Coiled sperm flagella"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034811",
-        "label": "Bent sperm flagella"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032559",
-        "label": "Short sperm flagella"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032558",
-        "label": "Absent sperm flagella"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033393",
-        "label": "Irregularly shaped sperm tail"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -71,7 +39,7 @@
   ],
   "interpretations": [
     {
-      "id": "III:3 ",
+      "id": "oIvLqpUEFAIWB2xwCHyZLecV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,11 +48,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "III:3 ",
+            "subjectOrBiosampleId": "III:6",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_PUDtQQBffCeNkwnvgJbdxMbgg",
+                "id": "c1235del_STK33_NM_001352389v2",
                 "geneContext": {
                   "valueId": "HGNC:14568",
                   "symbol": "STK33"
@@ -97,12 +67,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.8413604del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001339318.1:p.(Thr412LysfsTer14)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "8413603",
+                  "pos": 8413603,
                   "ref": "TG",
                   "alt": "T"
                 },
@@ -133,55 +107,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-14T20:49:13.104483127Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T07:16:43.375114Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34155512",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34155512",
         "description": "Novel frameshift mutation in STK33 is associated with asthenozoospermia and multiple morphological abnormalities of the flagella"
       }
     ]
