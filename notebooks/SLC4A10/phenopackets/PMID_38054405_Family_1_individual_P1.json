@@ -1,43 +1,25 @@
 {
-  "id": "PMID_38054405_Family_4_individual_P8",
+  "id": "PMID_38054405_Family_1_individual_P1",
   "subject": {
-    "id": "Family 4 individual P8",
+    "id": "Family 1 individual P1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P5Y"
+        "iso8601duration": "P6Y"
       }
     },
-    "sex": "FEMALE"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0033725",
-        "label": "Thin corpus callosum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002282",
         "label": "Gray matter heterotopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
       },
       "excluded": true
     },
@@ -45,8 +27,7 @@
       "type": {
         "id": "HP:0200012",
         "label": "Short corpus callosum"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -66,8 +47,7 @@
       "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -78,8 +58,27 @@
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008936",
+        "label": "Axial hypotonia"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0012389",
         "label": "Appendicular hypotonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
       },
       "excluded": true
     },
@@ -143,8 +142,7 @@
       "type": {
         "id": "HP:0000411",
         "label": "Protruding ear"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -157,8 +155,7 @@
       "type": {
         "id": "HP:0000664",
         "label": "Synophrys"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -184,7 +181,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 4 individual P8",
+      "id": "47LxiIJo4A9r3OEHbsiiI1uF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -193,11 +190,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 4 individual P8",
+            "subjectOrBiosampleId": "Family 1 individual P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_iOqvILZDssPVcySRXtFABsjBd",
+                "id": "c2894CtoT_SLC4A10_NM_001178015v2",
                 "geneContext": {
                   "valueId": "HGNC:13811",
                   "symbol": "SLC4A10"
@@ -205,17 +204,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001178015.2:c.667C>T"
+                    "value": "NM_001178015.2:c.2894C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.161862963C>T"
+                    "value": "NC_000002.12:g.161964166C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001171486.1:p.(Pro965Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "161862963",
+                  "pos": 161964166,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -240,55 +243,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-13T16:53:05.540822029Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:18:33.074439Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38054405",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38054405",
         "description": "Biallelic variants in SLC4A10 encoding a sodium-dependent bicarbonate transporter lead to a neurodevelopmental disorder"
       }
     ]

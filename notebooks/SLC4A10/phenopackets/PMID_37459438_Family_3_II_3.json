@@ -1,50 +1,10 @@
 {
-  "id": "PMID_37459438_Family_3_II_2",
+  "id": "PMID_37459438_Family_3_II_3",
   "subject": {
-    "id": "Family 3 II:2",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P12Y"
-      }
-    },
+    "id": "Family 3 II:3",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0025190",
-        "label": "Bilateral tonic-clonic seizure with generalized onset"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P7Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034677",
-        "label": "Ankle contracture"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100023",
-        "label": "Recurrent hand flapping"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
     {
       "type": {
         "id": "HP:0007074",
@@ -75,10 +35,23 @@
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
     },
     {
       "type": {
@@ -131,6 +104,20 @@
     },
     {
       "type": {
+        "id": "HP:0100023",
+        "label": "Recurrent hand flapping"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0002788",
         "label": "Recurrent upper respiratory tract infections"
       },
@@ -140,20 +127,6 @@
       "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0008936",
-        "label": "Axial hypotonia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012389",
-        "label": "Appendicular hypotonia"
       },
       "excluded": true
     },
@@ -215,15 +188,20 @@
     },
     {
       "type": {
+        "id": "HP:0034677",
+        "label": "Ankle contracture"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0004443",
         "label": "Lambdoidal craniosynostosis"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 3 II:2",
+      "id": "rHtjmY5VpgKgwRS4zFIQAgGz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -232,11 +210,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 3 II:2",
+            "subjectOrBiosampleId": "Family 3 II:3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_kTxfExllJFpUCXiqNxnisZqvM",
+                "id": "c2863_2AtoC_SLC4A10_NM_001178015v2",
                 "geneContext": {
                   "valueId": "HGNC:13811",
                   "symbol": "SLC4A10"
@@ -249,12 +229,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000002.12:g.161964133A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001171486.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr2",
-                  "pos": "161964133",
+                  "pos": 161964133,
                   "ref": "A",
                   "alt": "C"
                 },
@@ -278,62 +262,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-07-13T16:53:05.533434152Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:18:33.074280Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37459438",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37459438",
         "description": "SLC4A10 mutation causes a neurological disorder associated with impaired GABAergic transmission"
       }
     ]
