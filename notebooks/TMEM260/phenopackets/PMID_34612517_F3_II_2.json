@@ -1,7 +1,7 @@
 {
-  "id": "PMID_34612517_F2-II-2",
+  "id": "PMID_34612517_F3_II_2",
   "subject": {
-    "id": "F2-II-2",
+    "id": "F3-II-2",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P5Y"
@@ -12,14 +12,31 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003259",
-        "label": "Elevated circulating creatinine concentration"
+        "id": "HP:0001195",
+        "label": "Single umbilical artery"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y3M"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011611",
+        "label": "Interrupted aortic arch"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001636",
+        "label": "Tetralogy of Fallot"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -31,13 +48,15 @@
       "type": {
         "id": "HP:0010773",
         "label": "Partial anomalous pulmonary venous return"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0011662",
         "label": "Tricuspid atresia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -47,33 +66,22 @@
     },
     {
       "type": {
-        "id": "HP:0002243",
-        "label": "Protein-losing enteropathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000083",
-        "label": "Renal insufficiency"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001195",
-        "label": "Single umbilical artery"
+        "id": "HP:0001642",
+        "label": "Pulmonic stenosis"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001642",
-        "label": "Pulmonic stenosis"
+        "id": "HP:0002243",
+        "label": "Protein-losing enteropathy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
       },
       "excluded": true
     },
@@ -90,11 +98,46 @@
         "label": "Renal cyst"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000083",
+        "label": "Renal insufficiency"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001274",
+        "label": "Agenesis of corpus callosum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003259",
+        "label": "Elevated circulating creatinine concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011037",
+        "label": "Decreased urine output"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "F2-II-2",
+      "id": "HNJHH6PCPRe8HhGy5x2UBUYB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -103,11 +146,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "F2-II-2",
+            "subjectOrBiosampleId": "F3-II-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_fsEqSnFQifjLiGAwiNVXBQTRc",
+                "id": "c1698_1701del_TMEM260_NM_017799v4",
                 "geneContext": {
                   "valueId": "HGNC:20185",
                   "symbol": "TMEM260"
@@ -115,53 +160,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_017799.4:c.1393C>T"
+                    "value": "NM_017799.4:c.1698_1701del"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.56621697C>T"
+                    "value": "NC_000014.9:g.56633145_56633148del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060269.3:p.(Tyr567ThrfsTer27)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "56621697",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "F2-II-2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_IzomJsFEvXZoBclxJWgZCAEDH",
-                "geneContext": {
-                  "valueId": "HGNC:20185",
-                  "symbol": "TMEM260"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_017799.4:c.1644del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.56633091del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": "56633089",
-                  "ref": "GT",
+                  "pos": 56633141,
+                  "ref": "GTATC",
                   "alt": "G"
                 },
                 "moleculeContext": "genomic",
@@ -191,55 +205,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-22T09:13:47.050053834Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T11:47:48.519439Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34612517",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34612517",
         "description": "Biallelic TMEM260 variants cause truncus arteriosus, with or without renal defects"
       }
     ]
