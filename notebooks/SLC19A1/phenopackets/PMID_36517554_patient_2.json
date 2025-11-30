@@ -1,27 +1,15 @@
 {
-  "id": "PMID_36517554_patient_1",
+  "id": "PMID_36517554_patient_2",
   "subject": {
-    "id": "patient 1",
+    "id": "patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y"
+        "iso8601duration": "P1Y2M"
       }
     },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0002240",
-        "label": "Hepatomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001744",
-        "label": "Splenomegaly"
-      }
-    },
     {
       "type": {
         "id": "HP:0200042",
@@ -32,6 +20,12 @@
       "type": {
         "id": "HP:0002783",
         "label": "Recurrent lower respiratory tract infections"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
       }
     },
     {
@@ -42,46 +36,27 @@
     },
     {
       "type": {
-        "id": "HP:0032154",
-        "label": "Aphthous ulcer"
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
       }
     },
     {
       "type": {
-        "id": "HP:0001980",
-        "label": "Megaloblastic bone marrow"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004315",
-        "label": "Decreased circulating IgG level"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002155",
-        "label": "Hypertriglyceridemia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003281",
-        "label": "Increased circulating ferritin concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011900",
-        "label": "Hypofibrinogenemia"
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
       }
     },
     {
       "type": {
         "id": "HP:0001263",
         "label": "Global developmental delay"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002188",
+        "label": "Delayed CNS myelination"
+      }
     },
     {
       "type": {
@@ -99,6 +74,12 @@
     },
     {
       "type": {
+        "id": "HP:0032154",
+        "label": "Aphthous ulcer"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0040087",
         "label": "Abnormal blood folate concentration"
       },
@@ -107,7 +88,7 @@
   ],
   "interpretations": [
     {
-      "id": "patient 1",
+      "id": "BY0JMoI2PohT1creFK1XMXFe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,11 +97,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient 1",
+            "subjectOrBiosampleId": "patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_HUhEULZXxpDCvoreiJhrqkmzt",
+                "id": "c1042GtoA_SLC19A1_NM_194255v4",
                 "geneContext": {
                   "valueId": "HGNC:10937",
                   "symbol": "SLC19A1"
@@ -133,12 +116,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000021.9:g.45530879C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_919231.1:p.(Gly348Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr21",
-                  "pos": "45530879",
+                  "pos": 45530879,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -161,63 +148,61 @@
         "label": "Immunodeficiency 114, folate-responsive"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
+        "age": {
+          "iso8601duration": "P1M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-29T11:25:36.649104833Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T10:15:20.012012Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36517554",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36517554",
         "description": "Immunodeficiency associated with a novel functionally defective variant of SLC19A1 benefits from folinic acid treatment"
       }
     ]
