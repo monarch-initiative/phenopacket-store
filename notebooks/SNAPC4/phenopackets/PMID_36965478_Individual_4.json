@@ -7,6 +7,18 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000252",
+        "label": "Microcephaly"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0034332",
         "label": "Cognitive regression"
       },
@@ -25,18 +37,6 @@
         "age": {
           "iso8601duration": "P3Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004322",
-        "label": "Short stature"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
       }
     },
     {
@@ -92,7 +92,7 @@
   ],
   "interpretations": [
     {
-      "id": "Individual 4",
+      "id": "nB82eicTYO7hR4cky5aTzO63",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -104,8 +104,10 @@
             "subjectOrBiosampleId": "Individual 4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_clKolEbtLnlNoADeYGTJvlZjD",
+                "id": "c1321GtoA_SNAPC4_NM_003086v4",
                 "geneContext": {
                   "valueId": "HGNC:11137",
                   "symbol": "SNAPC4"
@@ -118,49 +120,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.136387489C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": "136387489",
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Individual 4",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_iDPkQEfCpUbYxTIiJgDmqFeqH",
-                "geneContext": {
-                  "valueId": "HGNC:11137",
-                  "symbol": "SNAPC4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_003086.4:c.1157A>G"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.136387815T>C"
+                    "syntax": "hgvs.p",
+                    "value": "NP_003077.2:p.(Asp441Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "136387815",
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 136387489,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -188,55 +159,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-26T11:52:24.132203102Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T07:22:47.519627Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36965478",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36965478",
         "description": "Bi-allelic SNAPC4 variants dysregulate global alternative splicing and lead to neuroregression and progressive spastic paraparesis"
       }
     ]

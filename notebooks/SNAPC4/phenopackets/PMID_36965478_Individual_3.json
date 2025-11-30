@@ -1,32 +1,10 @@
 {
-  "id": "PMID_36965478_Individual_8",
+  "id": "PMID_36965478_Individual_3",
   "subject": {
-    "id": "Individual 8",
-    "sex": "FEMALE"
+    "id": "Individual 3",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0034332",
-        "label": "Cognitive regression"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y6M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0033044",
-        "label": "Motor regression"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P1Y6M"
-        }
-      }
-    },
     {
       "type": {
         "id": "HP:0004322",
@@ -41,8 +19,36 @@
     },
     {
       "type": {
+        "id": "HP:0034332",
+        "label": "Cognitive regression"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033044",
+        "label": "Motor regression"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y6M"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001285",
         "label": "Spastic tetraparesis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001332",
+        "label": "Dystonia"
       }
     },
     {
@@ -68,31 +74,11 @@
         "id": "HP:0001347",
         "label": "Hyperreflexia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001332",
-        "label": "Dystonia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002059",
-        "label": "Cerebral atrophy"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Individual 8",
+      "id": "Hdpwr2rrnpN8HM3giQwARMdn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -101,11 +87,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual 8",
+            "subjectOrBiosampleId": "Individual 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_KSlhrLorhlTNTwheJtdmNFwRC",
+                "id": "c1321GtoA_SNAPC4_NM_003086v4",
                 "geneContext": {
                   "valueId": "HGNC:11137",
                   "symbol": "SNAPC4"
@@ -113,24 +101,28 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_003086.4:c.2527+1G>A"
+                    "value": "NM_003086.4:c.1321G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.136379836C>T"
+                    "value": "NC_000009.12:g.136387489C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003077.2:p.(Asp441Asn)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "136379836",
+                  "pos": 136387489,
                   "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -147,61 +139,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y6M"
+          "iso8601duration": "P2Y6M"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-03-26T11:52:24.185294151Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-11-30T07:22:47.519591Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36965478",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36965478",
         "description": "Bi-allelic SNAPC4 variants dysregulate global alternative splicing and lead to neuroregression and progressive spastic paraparesis"
       }
     ]
