@@ -104,7 +104,7 @@
   ],
   "interpretations": [
     {
-      "id": "sister III:2",
+      "id": "3mHG9aHGquAYSK351e5tAXOK",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,8 +116,10 @@
             "subjectOrBiosampleId": "sister III:2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_cLRorPwxrBqtlAOLqJaBmeyqP",
+                "id": "c2686TtoC_THBS2_NM_003247v5",
                 "geneContext": {
                   "valueId": "HGNC:11786",
                   "symbol": "THBS2"
@@ -130,12 +132,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.169225232A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003238.2:p.(Cys896Arg)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "169225232",
+                  "pos": 169225232,
                   "ref": "A",
                   "alt": "G"
                 },
@@ -160,55 +166,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-04T17:01:08.407999038Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T06:16:35.944439Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:38433265",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/38433265",
         "description": "Heterozygous THBS2 pathogenic variant causes Ehlers-Danlos syndrome with prominent vascular features in humans and mice"
       }
     ]
