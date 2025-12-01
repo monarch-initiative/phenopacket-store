@@ -12,6 +12,33 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0034185",
+        "label": "Median pseudocleft lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010751",
+        "label": "Dimple chin"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011323",
+        "label": "Cleft of chin"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000579",
         "label": "Nasolacrimal duct obstruction"
       },
@@ -44,6 +71,12 @@
           "id": "HP:0003577",
           "label": "Congenital onset"
         }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032287",
+        "label": "Ultra-low vision with no light perception"
       }
     },
     {
@@ -84,47 +117,14 @@
     },
     {
       "type": {
-        "id": "HP:0034185",
-        "label": "Median pseudocleft lip"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032287",
-        "label": "Ultra-low vision with no light perception"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000405",
         "label": "Conductive hearing impairment"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000175",
-        "label": "Cleft palate"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010751",
-        "label": "Dimple chin"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011323",
-        "label": "Cleft of chin"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "index",
+      "id": "zOBWgPWrEN4ASekSFDrNKSWv",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,8 +136,10 @@
             "subjectOrBiosampleId": "index",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_trkPdCsaKxpTOhznqZxYyJUQt",
+                "id": "c769AtoT_TFAP2A_NM_001372066v1",
                 "geneContext": {
                   "valueId": "HGNC:11742",
                   "symbol": "TFAP2A"
@@ -150,12 +152,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000006.12:g.10404509T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001358995.1:p.(Arg257Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr6",
-                  "pos": "10404509",
+                  "pos": 10404509,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -186,55 +192,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-21T07:21:05.040580034Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T14:47:15.290917Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:20461149",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/20461149",
         "description": "Ocular manifestations of branchio-oculo-facial syndrome: report of a novel mutation and review of the literature"
       }
     ]

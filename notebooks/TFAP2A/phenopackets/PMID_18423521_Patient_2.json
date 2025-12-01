@@ -1,10 +1,10 @@
 {
-  "id": "PMID_18423521_Patient_1a",
+  "id": "PMID_18423521_Patient_2",
   "subject": {
-    "id": "Patient 1a",
+    "id": "Patient 2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P25Y"
+        "iso8601duration": "P18Y"
       }
     },
     "sex": "FEMALE"
@@ -36,30 +36,21 @@
     },
     {
       "type": {
-        "id": "HP:0002216",
-        "label": "Premature graying of hair"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0410030",
         "label": "Cleft lip"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000175",
         "label": "Cleft palate"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0010751",
         "label": "Dimple chin"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -79,15 +70,19 @@
       "type": {
         "id": "HP:0000579",
         "label": "Nasolacrimal duct obstruction"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000612",
         "label": "Iris coloboma"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
@@ -100,6 +95,12 @@
       "type": {
         "id": "HP:0000568",
         "label": "Microphthalmia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002216",
+        "label": "Premature graying of hair"
       },
       "excluded": true
     },
@@ -107,27 +108,24 @@
       "type": {
         "id": "HP:0000405",
         "label": "Conductive hearing impairment"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0008897",
         "label": "Postnatal growth retardation"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0001511",
         "label": "Intrauterine growth retardation"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient 1a",
+      "id": "ID1jbjkngCE8PqGHa2G9sxpB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,21 +134,39 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 1a",
+            "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_lqyBNVsYilKqJRMdLpUWCSyFx",
-                "label": "Del 6p24.3 region",
+                "id": "c769AtoG_TFAP2A_NM_001372066v1",
                 "geneContext": {
                   "valueId": "HGNC:11742",
                   "symbol": "TFAP2A"
                 },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001372066.1:c.769A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.10404509T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001358995.1:p.(Arg257Gly)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 10404509,
+                  "ref": "T",
+                  "alt": "C"
                 },
+                "moleculeContext": "genomic",
                 "allelicState": {
                   "id": "GENO:0000135",
                   "label": "heterozygous"
@@ -177,55 +193,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-21T07:21:05.033683061Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T14:47:15.290722Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18423521",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18423521",
         "description": "TFAP2A mutations result in branchio-oculo-facial syndrome"
       }
     ]
