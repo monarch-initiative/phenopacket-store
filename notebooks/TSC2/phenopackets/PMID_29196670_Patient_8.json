@@ -1,7 +1,7 @@
 {
-  "id": "PMID_29196670_Patient_11",
+  "id": "PMID_29196670_Patient_8",
   "subject": {
-    "id": "Patient 11",
+    "id": "Patient 8",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -13,20 +13,8 @@
     },
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009717",
-        "label": "Cortical tubers"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009719",
-        "label": "Hypomelanotic macule"
+        "id": "HP:0000717",
+        "label": "Autism"
       }
     },
     {
@@ -35,6 +23,12 @@
         "label": "Pulmonary lymphangiomyomatosis"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      }
     },
     {
       "type": {
@@ -47,8 +41,25 @@
       "type": {
         "id": "HP:0010615",
         "label": "Angiofibromas"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009717",
+        "label": "Cortical tubers"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009719",
+        "label": "Hypomelanotic macule"
+      }
     },
     {
       "type": {
@@ -67,7 +78,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 11",
+      "id": "mQrzBVi02bqsBvoVpdEE95EZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -76,11 +87,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 11",
+            "subjectOrBiosampleId": "Patient 8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vKKMvboIFMzGqYzErVfIwLPUq",
+                "id": "c2221_2AtoG_TSC2_NM_000548v5",
                 "geneContext": {
                   "valueId": "HGNC:12363",
                   "symbol": "TSC2"
@@ -88,19 +101,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000548.5:c.5160+5G>T"
+                    "value": "NM_000548.5:c.2221-2A>G"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.2088144G>T"
+                    "value": "NC_000016.10:g.2072847A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000539.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "2088144",
-                  "ref": "G",
-                  "alt": "T"
+                  "pos": 2072847,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -123,55 +140,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-06T05:41:17.727055788Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T14:57:24.136479Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29196670",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29196670",
         "description": "Mutational analysis of TSC1 and TSC2 genes in Tuberous Sclerosis Complex patients from Greece"
       }
     ]
