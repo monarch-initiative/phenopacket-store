@@ -1,13 +1,13 @@
 {
-  "id": "PMID_23378224_Patient_3_family_B",
+  "id": "PMID_23378224_Patient_5_family_C",
   "subject": {
-    "id": "Patient 3 family B",
+    "id": "Patient 5 family C",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P41Y"
+        "iso8601duration": "P50Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -18,51 +18,27 @@
     },
     {
       "type": {
-        "id": "HP:0034045",
-        "label": "Angulated muscle fibers"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0030230",
-        "label": "Central core regions in muscle fibers"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0034392",
-        "label": "Joint contracture"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012378",
-        "label": "Fatigue"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0003738",
-        "label": "Exercise-induced myalgia"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003687",
         "label": "Centrally nucleated skeletal muscle fibers"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0003555",
         "label": "Muscle fiber splitting"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034045",
+        "label": "Angulated muscle fibers"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030230",
+        "label": "Central core regions in muscle fibers"
       },
       "excluded": true
     },
@@ -70,8 +46,7 @@
       "type": {
         "id": "HP:0031318",
         "label": "Myofiber disarray"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -89,6 +64,19 @@
     },
     {
       "type": {
+        "id": "HP:0034392",
+        "label": "Joint contracture"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003236",
+        "label": "Elevated circulating creatine kinase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0030051",
         "label": "Tip-toe gait"
       },
@@ -96,10 +84,14 @@
     },
     {
       "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P50Y"
+        }
+      }
     },
     {
       "type": {
@@ -110,15 +102,27 @@
     },
     {
       "type": {
-        "id": "HP:0000709",
-        "label": "Psychosis"
+        "id": "HP:0001270",
+        "label": "Motor delay"
       },
       "excluded": true
     },
     {
       "type": {
+        "id": "HP:0000709",
+        "label": "Psychosis"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0100753",
         "label": "Schizophrenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
       },
       "excluded": true
     },
@@ -147,6 +151,12 @@
       "type": {
         "id": "HP:0003701",
         "label": "Proximal muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003738",
+        "label": "Exercise-induced myalgia"
       },
       "excluded": true
     },
@@ -181,7 +191,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 3 family B",
+      "id": "7eIVz05TsyuQktoeCAWpfo4C",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -190,11 +200,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient 3 family B",
+            "subjectOrBiosampleId": "Patient 5 family C",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_haDCPyLFhQCwUJascYwYRKVZL",
+                "id": "c20_22del_TPM2_NM_003289v4",
                 "geneContext": {
                   "valueId": "HGNC:12011",
                   "symbol": "TPM2"
@@ -207,12 +219,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.35689803_35689805del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003280.2:p.(Lys7del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "35689795",
+                  "pos": 35689795,
                   "ref": "ATCT",
                   "alt": "A"
                 },
@@ -236,62 +252,61 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-29T06:43:56.762689113Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T15:00:02.657907Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-06-25",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23378224",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23378224",
         "description": "K7del is a common TPM2 gene mutation associated with nemaline myopathy and raised myofibre calcium sensitivity"
       }
     ]
