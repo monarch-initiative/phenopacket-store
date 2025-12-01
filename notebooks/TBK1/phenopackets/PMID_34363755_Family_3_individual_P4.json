@@ -7,51 +7,13 @@
         "iso8601duration": "P8Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001250",
-        "label": "Seizure"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002716",
         "label": "Lymphadenopathy"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001954",
-        "label": "Recurrent fever"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002119",
-        "label": "Ventriculomegaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011110",
-        "label": "Recurrent tonsillitis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002960",
-        "label": "Autoimmunity"
       }
     },
     {
@@ -64,9 +26,20 @@
     {
       "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
+        }
+      }
     },
     {
       "type": {
@@ -105,10 +78,22 @@
     },
     {
       "type": {
+        "id": "HP:0001954",
+        "label": "Recurrent fever"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002608",
         "label": "Celiac disease"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
     },
     {
       "type": {
@@ -140,6 +125,18 @@
     },
     {
       "type": {
+        "id": "HP:0011110",
+        "label": "Recurrent tonsillitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002960",
+        "label": "Autoimmunity"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0002027",
         "label": "Abdominal pain"
       },
@@ -148,7 +145,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 3 individual P4",
+      "id": "nwqxqVworBk4L1GM6yJ4wLXE",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -160,8 +157,10 @@
             "subjectOrBiosampleId": "Family 3 individual P4",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_yEKjMkiknykhikWVBdtESBpUf",
+                "id": "c1318CtoT_TBK1_NM_013254v4",
                 "geneContext": {
                   "valueId": "HGNC:11584",
                   "symbol": "TBK1"
@@ -174,12 +173,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.64485995C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_037386.1:p.(Arg440Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "64485995",
+                  "pos": 64485995,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -209,55 +212,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-27T11:28:51.183892011Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T14:49:36.790635Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:34363755",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/34363755",
         "description": "Human TBK1 deficiency leads to autoinflammation driven by TNF-induced cell death"
       }
     ]
