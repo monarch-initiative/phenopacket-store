@@ -12,6 +12,13 @@
   "phenotypicFeatures": [
     {
       "type": {
+        "id": "HP:0001279",
+        "label": "Syncope"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001692",
         "label": "Atrial arrhythmia"
       },
@@ -67,13 +74,6 @@
     },
     {
       "type": {
-        "id": "HP:0001279",
-        "label": "Syncope"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0001699",
         "label": "Sudden death"
       },
@@ -89,7 +89,7 @@
   ],
   "interpretations": [
     {
-      "id": "Patient 1",
+      "id": "xu5379ZYmCTOTqXle0HO9kzY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -101,8 +101,10 @@
             "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_dVfXshIBVtNTVNngyTNeEVyxo",
+                "id": "c587GtoA_TECRL_NM_001010874v5",
                 "geneContext": {
                   "valueId": "HGNC:27365",
                   "symbol": "TECRL"
@@ -115,12 +117,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000004.12:g.64309896C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001010874.2:p.(Arg196Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr4",
-                  "pos": "64309896",
+                  "pos": 64309896,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -150,55 +156,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-10T06:37:39.567556142Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T12:02:33.388803Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:27861123",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/27861123",
         "description": "TECRL, a new life-threatening inherited arrhythmia gene associated with overlapping clinical features of both LQTS and CPVT"
       }
     ]
