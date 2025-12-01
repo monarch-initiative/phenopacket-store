@@ -100,17 +100,6 @@
     },
     {
       "type": {
-        "id": "HP:0002206",
-        "label": "Pulmonary fibrosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P32Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0002875",
         "label": "Exertional dyspnea"
       },
@@ -128,6 +117,17 @@
       "onset": {
         "age": {
           "iso8601duration": "P30Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P32Y"
         }
       }
     },
@@ -162,7 +162,7 @@
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "d2O5aTjMMBxNNU8O9d6DwB1A",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -174,8 +174,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_vdxNJRVkcfeBbcwhihJPSqSIN",
+                "id": "c844CtoT_TINF2_NM_001099274v3",
                 "geneContext": {
                   "valueId": "HGNC:11824",
                   "symbol": "TINF2"
@@ -188,12 +190,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000014.9:g.24240636G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001092744.1:p.(Arg282Cys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr14",
-                  "pos": "24240636",
+                  "pos": 24240636,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -223,55 +229,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-13T16:11:08.474949121Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T06:21:57.224469Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29742735",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29742735",
         "description": "A case report of heterozygous TINF2 gene mutation associated with pulmonary fibrosis in a patient with dyskeratosis congenita"
       }
     ]
