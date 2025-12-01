@@ -18,9 +18,30 @@
     },
     {
       "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000939",
         "label": "Osteoporosis"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000592",
+        "label": "Blue sclerae"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002645",
+        "label": "Wormian bones"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -42,27 +63,6 @@
     },
     {
       "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000592",
-        "label": "Blue sclerae"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002645",
-        "label": "Wormian bones"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0003155",
         "label": "Elevated circulating alkaline phosphatase concentration"
       },
@@ -78,7 +78,7 @@
   ],
   "interpretations": [
     {
-      "id": "Family 2 Patient 3",
+      "id": "2u4aMFqQA5mbJYsP4AuxTEGy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -90,8 +90,10 @@
             "subjectOrBiosampleId": "Family 2 Patient 3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FNMeMiIUuiSNiclbNpnxqdqpL",
+                "id": "c507GtoA_TMEM38B_NM_018112v3",
                 "geneContext": {
                   "valueId": "HGNC:25535",
                   "symbol": "TMEM38B"
@@ -104,12 +106,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.105722586G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060582.1:p.(Trp169Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "105722586",
+                  "pos": 105722586,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -140,55 +146,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-04-21T10:25:34.212983131Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T12:04:44.817268Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-04",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26911354",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26911354",
         "description": "Two novel mutations in TMEM38B result in rare autosomal recessive osteogenesis imperfecta"
       }
     ]
