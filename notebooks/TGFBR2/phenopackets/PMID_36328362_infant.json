@@ -7,9 +7,6 @@
         "iso8601duration": "P3M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -26,23 +23,6 @@
     },
     {
       "type": {
-        "id": "HP:0005302",
-        "label": "Carotid artery tortuosity"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0100702",
-        "label": "Arachnoid cyst"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0005182",
         "label": "Bicuspid pulmonary valve"
       },
@@ -54,6 +34,17 @@
         "label": "Bicuspid aortic valve"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005302",
+        "label": "Carotid artery tortuosity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
+      }
     },
     {
       "type": {
@@ -89,11 +80,17 @@
         "label": "Bifid uvula"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100702",
+        "label": "Arachnoid cyst"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "infant",
+      "id": "NkzyTTcX7lFqcBCHVkbwRsoN",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,8 +102,10 @@
             "subjectOrBiosampleId": "infant",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_VhUrmLpTdFJUoILwGljOjVObx",
+                "id": "c1640TtoC_TGFBR2_NM_003242v6",
                 "geneContext": {
                   "valueId": "HGNC:11773",
                   "symbol": "TGFBR2"
@@ -119,12 +118,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.30691535T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003233.4:p.(Leu547Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "30691535",
+                  "pos": 30691535,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -155,55 +158,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-07T12:58:10.762469053Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-01T14:44:47.534984Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:36328362",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/36328362",
         "description": "Infant with Loeys-Dietz syndrome treated for febrile status epilepticus with COVID-19 infection: first reported case of febrile status epilepticus and focal seizures in a patient with Loeys-Dietz syndrome and review of literature"
       }
     ]
