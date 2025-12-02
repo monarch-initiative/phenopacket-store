@@ -13,66 +13,6 @@
     },
     {
       "type": {
-        "id": "HP:0001199",
-        "label": "Triphalangeal thumb"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001643",
-        "label": "Patent ductus arteriosus"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000268",
-        "label": "Dolichocephaly"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000767",
-        "label": "Pectus excavatum"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001688",
-        "label": "Sinus bradycardia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0009622",
-        "label": "Distally placed thumb"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000954",
-        "label": "Single transverse palmar crease"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000960",
-        "label": "Sacral dimple"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011567",
-        "label": "Sinus venosus atrial septal defect"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011705",
-        "label": "First degree atrioventricular block"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0001674",
         "label": "Complete atrioventricular canal defect"
       },
@@ -84,6 +24,12 @@
         "label": "Patent foramen ovale"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001199",
+        "label": "Triphalangeal thumb"
+      }
     },
     {
       "type": {
@@ -108,15 +54,63 @@
     },
     {
       "type": {
-        "id": "HP:0031297",
-        "label": "Unroofed coronary sinus"
+        "id": "HP:0011643",
+        "label": "Coronary sinus atrial septal defect"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001643",
+        "label": "Patent ductus arteriosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000268",
+        "label": "Dolichocephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000767",
+        "label": "Pectus excavatum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009622",
+        "label": "Distally placed thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000960",
+        "label": "Sacral dimple"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000954",
+        "label": "Single transverse palmar crease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001688",
+        "label": "Sinus bradycardia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011567",
+        "label": "Sinus venosus atrial septal defect"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "proband",
+      "id": "isoun8qU8Tw3vKaWNgnyOdQ3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -128,8 +122,10 @@
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pyAJZjVnBYHqZxKaWgVZWoavQ",
+                "id": "c1304del_TBX5_NM_181486v4",
                 "geneContext": {
                   "valueId": "HGNC:11604",
                   "symbol": "TBX5"
@@ -142,12 +138,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.114355785del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_852259.1:p.(Leu435ArgfsTer147)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "114355784",
+                  "pos": 114355784,
                   "ref": "CA",
                   "alt": "C"
                 },
@@ -172,55 +172,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-20T05:41:00.312022924Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-02T16:30:43.421848Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:22190901",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/22190901",
         "description": "A Boy with Holt-Oram Syndrome Caused by Novel Mutation c.1304delT in the TBX5 Gene"
       }
     ]

@@ -1,7 +1,8 @@
 {
   "id": "PMID_17534187_HH8",
   "subject": {
-    "id": "HH8"
+    "id": "HH8",
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
@@ -12,27 +13,8 @@
     },
     {
       "type": {
-        "id": "HP:0009623",
-        "label": "Proximal placement of thumb"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004220",
-        "label": "Short middle phalanx of the 5th finger"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011623",
-        "label": "Muscular ventricular septal defect"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011682",
-        "label": "Perimembranous ventricular septal defect"
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
       "excluded": true
     },
@@ -73,15 +55,27 @@
     },
     {
       "type": {
-        "id": "HP:0031297",
-        "label": "Unroofed coronary sinus"
+        "id": "HP:0011643",
+        "label": "Coronary sinus atrial septal defect"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009623",
+        "label": "Proximal placement of thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004220",
+        "label": "Short middle phalanx of the 5th finger"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "HH8",
+      "id": "bOHIAIk4v7A3sumbdZBOHlw6",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -93,8 +87,10 @@
             "subjectOrBiosampleId": "HH8",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZNnydhVjUuwJorVxrUqbPeqaQ",
+                "id": "c835CtoT_TBX5_NM_181486v4",
                 "geneContext": {
                   "valueId": "HGNC:11604",
                   "symbol": "TBX5"
@@ -107,12 +103,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000012.12:g.114366312G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_852259.1:p.(Arg279Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr12",
-                  "pos": "114366312",
+                  "pos": 114366312,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -137,55 +137,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-07-20T05:41:00.285398960Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-02T16:30:43.419927Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:17534187",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/17534187",
         "description": "Novel TBX5 mutations in patients with Holt-Oram syndrome"
       }
     ]
