@@ -1,13 +1,13 @@
 {
-  "id": "PMID_36747105_proband",
+  "id": "PMID_34112922_A_Japanese_girl",
   "subject": {
-    "id": "proband",
+    "id": "A Japanese girl",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P7Y6M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -27,8 +27,7 @@
       "type": {
         "id": "HP:0001252",
         "label": "Hypotonia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -61,7 +60,12 @@
         "id": "HP:0000508",
         "label": "Ptosis"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
@@ -88,46 +92,69 @@
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0008551",
         "label": "Microtia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001763",
         "label": "Pes planus"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0000954",
         "label": "Single transverse palmar crease"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0000577",
         "label": "Exotropia"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0000252",
         "label": "Microcephaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3M"
+        }
       }
     },
     {
       "type": {
         "id": "HP:0000303",
         "label": "Mandibular prognathia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -160,7 +187,7 @@
   ],
   "interpretations": [
     {
-      "id": "H9qAsiuZCUXrHQF1vopG3XAK",
+      "id": "B1vvTwkbPaXpkvK4pjGQLGUp",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -169,13 +196,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "A Japanese girl",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c603GtoT_U2AF2_NM_007279v3",
+                "id": "c445CtoT_U2AF2_NM_007279v3",
                 "geneContext": {
                   "valueId": "HGNC:23156",
                   "symbol": "U2AF2"
@@ -183,22 +210,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_007279.3:c.603G>T"
+                    "value": "NM_007279.3:c.445C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.55662618G>T"
+                    "value": "NC_000019.10:g.55661148C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_009210.1:p.(Glu201Asp)"
+                    "value": "NP_009210.1:p.(Arg149Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": 55662618,
-                  "ref": "G",
+                  "pos": 55661148,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -221,14 +248,14 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-12-02T16:41:30.789325Z",
+    "created": "2025-12-02T16:41:30.789254Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -275,8 +302,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:36747105",
-        "description": "A presumed missense variant in the U2AF2 gene causes exon skipping in neurodevelopmental diseases"
+        "id": "PMID:34112922",
+        "description": "Global developmental delay, systemic dysmorphism and epilepsy in a patient with a de novo U2AF2 variant"
       }
     ]
   }

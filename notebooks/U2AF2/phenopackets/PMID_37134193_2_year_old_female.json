@@ -1,13 +1,13 @@
 {
-  "id": "PMID_36747105_proband",
+  "id": "PMID_37134193_2_year_old_female",
   "subject": {
-    "id": "proband",
+    "id": "2-year-old female",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P6Y"
+        "iso8601duration": "P2Y"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
@@ -32,16 +32,16 @@
     },
     {
       "type": {
-        "id": "HP:0002373",
-        "label": "Febrile seizure (within the age range of 3 months to 6 years)"
-      }
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0002188",
         "label": "Delayed CNS myelination"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
@@ -53,6 +53,12 @@
       "type": {
         "id": "HP:0000582",
         "label": "Upslanted palpebral fissure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000494",
+        "label": "Downslanted palpebral fissures"
       },
       "excluded": true
     },
@@ -67,34 +73,33 @@
       "type": {
         "id": "HP:0000574",
         "label": "Thick eyebrow"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000278",
         "label": "Retrognathia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0005280",
         "label": "Depressed nasal bridge"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0000369",
         "label": "Low-set ears"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0008551",
         "label": "Microtia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -119,48 +124,45 @@
     },
     {
       "type": {
-        "id": "HP:0000252",
-        "label": "Microcephaly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0000303",
         "label": "Mandibular prognathia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0010544",
         "label": "Vertical nystagmus"
       },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
     },
     {
       "type": {
         "id": "HP:0002072",
         "label": "Chorea"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002395",
         "label": "Lower limb hyperreflexia"
-      },
-      "excluded": true
+      }
     },
     {
       "type": {
         "id": "HP:0002002",
         "label": "Deep philtrum"
-      },
-      "excluded": true
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "H9qAsiuZCUXrHQF1vopG3XAK",
+      "id": "6Hy9QJUtGiSkyKhfO4brlgxC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -169,13 +171,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "proband",
+            "subjectOrBiosampleId": "2-year-old female",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c603GtoT_U2AF2_NM_007279v3",
+                "id": "c470CtoT_U2AF2_NM_007279v3",
                 "geneContext": {
                   "valueId": "HGNC:23156",
                   "symbol": "U2AF2"
@@ -183,22 +185,22 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_007279.3:c.603G>T"
+                    "value": "NM_007279.3:c.470C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.55662618G>T"
+                    "value": "NC_000019.10:g.55661173C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_009210.1:p.(Glu201Asp)"
+                    "value": "NP_009210.1:p.(Pro157Leu)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr19",
-                  "pos": 55662618,
-                  "ref": "G",
+                  "pos": 55661173,
+                  "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
@@ -221,14 +223,14 @@
       },
       "onset": {
         "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-12-02T16:41:30.789325Z",
+    "created": "2025-12-02T16:41:30.789402Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -275,8 +277,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:36747105",
-        "description": "A presumed missense variant in the U2AF2 gene causes exon skipping in neurodevelopmental diseases"
+        "id": "PMID:37134193",
+        "description": "A de novo U2AF2 heterozygous variant associated with hypomyelinating leukodystrophy"
       }
     ]
   }
