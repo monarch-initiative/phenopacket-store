@@ -1,15 +1,21 @@
 {
-  "id": "PMID_26805781_Family_8_Subject_8_II_1",
+  "id": "PMID_26805781_Family_5_Subject_5_II_1",
   "subject": {
-    "id": "Family 8-Subject 8-II-1",
+    "id": "Family 5-Subject 5-II-1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P2Y"
+        "iso8601duration": "P17Y"
       }
     },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      }
+    },
     {
       "type": {
         "id": "HP:0001249",
@@ -42,36 +48,27 @@
     },
     {
       "type": {
-        "id": "HP:0005184",
-        "label": "Prolonged QTc interval"
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
       }
     },
     {
       "type": {
-        "id": "HP:0003201",
-        "label": "Rhabdomyolysis"
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002059",
-        "label": "Cerebral atrophy"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001987",
-        "label": "Hyperammonemia"
-      },
-      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001664",
         "label": "Torsade de pointes"
-      },
-      "excluded": true
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005184",
+        "label": "Prolonged QTc interval"
+      }
     },
     {
       "type": {
@@ -93,11 +90,17 @@
         "label": "Premature ventricular contraction"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003201",
+        "label": "Rhabdomyolysis"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Family 8-Subject 8-II-1",
+      "id": "bUSTu5GlMauWcmyTE0VstPWu",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -106,21 +109,39 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 8-Subject 8-II-1",
+            "subjectOrBiosampleId": "Family 5-Subject 5-II-1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_poiDeLTtaHceaOxmDZwNqeLDf",
-                "label": "exons 3\u20139 del",
+                "id": "c460GtoA_TANGO2_NM_152906v7",
                 "geneContext": {
                   "valueId": "HGNC:25439",
                   "symbol": "TANGO2"
                 },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152906.7:c.460G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.20061538G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_690870.3:p.(Gly154Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 20061538,
+                  "ref": "G",
+                  "alt": "A"
                 },
+                "moleculeContext": "genomic",
                 "allelicState": {
                   "id": "GENO:0000136",
                   "label": "homozygous"
@@ -140,61 +161,60 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P9M"
+          "iso8601duration": "P7Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2024-06-21T09:43:39.837249994Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-02T07:16:32.044575Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:26805781",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/26805781",
         "description": "Recurrent Muscle Weakness with Rhabdomyolysis, Metabolic Crises, and Cardiac Arrhythmia Due to Bi-allelic TANGO2 Mutations"
       }
     ]
