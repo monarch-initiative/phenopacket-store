@@ -75,7 +75,7 @@
   ],
   "interpretations": [
     {
-      "id": "4-year-old girl",
+      "id": "Utdui5lsExhVzR6eFZ9rhZNd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -87,8 +87,10 @@
             "subjectOrBiosampleId": "4-year-old girl",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_FHLqrUmedbxSccfdZYiBPGOQZ",
+                "id": "c1198CtoT_TRPS1_NM_014112v5",
                 "geneContext": {
                   "valueId": "HGNC:12340",
                   "symbol": "TRPS1"
@@ -101,47 +103,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.115604771G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr8",
-                  "pos": "115604771",
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "4-year-old girl",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_DVUzDOecrHQHircCayjLgHnVq",
-                "geneContext": {
-                  "valueId": "HGNC:12340",
-                  "symbol": "TRPS1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_014112.5:c.2086C>T"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000008.11:g.115603883G>A"
+                    "syntax": "hgvs.p",
+                    "value": "NP_054831.2:p.(Gln400Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "115603883",
+                  "pos": 115604771,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -166,55 +137,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-01T06:33:51.180970907Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-02T07:20:57.627677Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:23691375",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/23691375",
         "description": "Trichorhinophalangeal Syndrome Type I: A Patient with Two Novel and Different Mutations in the TRPS1 Gene"
       }
     ]
