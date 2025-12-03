@@ -1,0 +1,194 @@
+{
+  "id": "PMID_24721225_Patient_III_3",
+  "subject": {
+    "id": "Patient III-3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000378",
+        "label": "Cupped ear"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000047",
+        "label": "Hypospadias"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000085",
+        "label": "Horseshoe kidney"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010677",
+        "label": "Enuresis nocturna"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012020",
+        "label": "Right aortic arch"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001647",
+        "label": "Bicuspid aortic valve"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002360",
+        "label": "Sleep disturbance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002342",
+        "label": "Moderate intellectual disability"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "GQ7QyTVYdtzimvcl3a0uiiMN",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301111",
+          "label": "Intellectual developmental disorder, X-linked 112"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient III-3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1321CtoT_ZMYM3_NM_005096v3",
+                "geneContext": {
+                  "valueId": "HGNC:13054",
+                  "symbol": "ZMYM3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005096.3:c.1321C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.71249610G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005087.1:p.(Arg441Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 71249610,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301111",
+        "label": "Intellectual developmental disorder, X-linked 112"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-03T16:40:14.611198Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:24721225",
+        "description": "X-exome sequencing in Finnish families with intellectual disability--four novel mutations and two novel syndromic phenotypes"
+      }
+    ]
+  }
+}
