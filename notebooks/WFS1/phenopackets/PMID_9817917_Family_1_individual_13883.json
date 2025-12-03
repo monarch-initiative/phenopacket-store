@@ -1,10 +1,10 @@
 {
-  "id": "PMID_9817917_Family_1_individual_5519",
+  "id": "PMID_9817917_Family_1_individual_13883",
   "subject": {
-    "id": "Family 1 individual 5519",
+    "id": "Family 1 individual 13883",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P22Y"
+        "iso8601duration": "P11Y"
       }
     },
     "sex": "FEMALE"
@@ -15,11 +15,7 @@
         "id": "HP:0000873",
         "label": "Diabetes insipidus"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P6Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
@@ -28,7 +24,7 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P0D"
+          "iso8601duration": "P4Y"
         }
       }
     },
@@ -36,30 +32,20 @@
       "type": {
         "id": "HP:0000648",
         "label": "Optic atrophy"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000639",
         "label": "Nystagmus"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0000126",
         "label": "Hydronephrosis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001251",
-        "label": "Ataxia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000365",
-        "label": "Hearing impairment"
       }
     },
     {
@@ -82,11 +68,18 @@
         "label": "Tremor"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "Family 1 individual 5519",
+      "id": "6u6oxFYOzZW7532D8DCdjXey",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -95,11 +88,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family 1 individual 5519",
+            "subjectOrBiosampleId": "Family 1 individual 13883",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_hRgMgOVjHZTLpbkudxABKKreW",
+                "id": "c460_1GtoA_WFS1_NM_006005v3",
                 "geneContext": {
                   "valueId": "HGNC:12762",
                   "symbol": "WFS1"
@@ -107,19 +102,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_006005.3:c.1385_1393del"
+                    "value": "NM_006005.3:c.460+1G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000004.12:g.6301180_6301188del"
+                    "value": "NC_000004.12:g.6289132G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005996.2:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr4",
-                  "pos": "6301174",
-                  "ref": "CCACCGAGGT",
-                  "alt": "C"
+                  "pos": 6289132,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -142,55 +141,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-27T11:21:56.594393014Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-03T08:04:10.132944Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:9817917",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/9817917",
         "description": "Diabetes insipidus, diabetes mellitus, optic atrophy and deafness (DIDMOAD) caused by mutations in a novel gene (wolframin) coding for a predicted transmembrane protein"
       }
     ]
