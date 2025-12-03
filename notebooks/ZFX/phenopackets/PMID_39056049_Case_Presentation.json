@@ -7,12 +7,15 @@
         "iso8601duration": "P51Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000843",
+        "label": "Hyperparathyroidism"
+      }
+    },
     {
       "type": {
         "id": "HP:0002897",
@@ -22,24 +25,6 @@
         "age": {
           "iso8601duration": "P51Y"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002943",
-        "label": "Thoracic scoliosis"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011463",
-          "label": "Childhood onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000843",
-        "label": "Hyperparathyroidism"
       }
     },
     {
@@ -56,8 +41,15 @@
     },
     {
       "type": {
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       }
     },
     {
@@ -98,9 +90,23 @@
     },
     {
       "type": {
+        "id": "HP:0000219",
+        "label": "Thin upper lip vermilion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0012471",
         "label": "Thick vermilion border"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000319",
+        "label": "Smooth philtrum"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -128,29 +134,20 @@
     },
     {
       "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
+        "id": "HP:0002943",
+        "label": "Thoracic scoliosis"
       },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000219",
-        "label": "Thin upper lip vermilion"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000319",
-        "label": "Smooth philtrum"
-      },
-      "excluded": true
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Case Presentation",
+      "id": "vpXjgcVlaIPKTNAkInwhZQin",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -162,8 +159,10 @@
             "subjectOrBiosampleId": "Case Presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_IyvJPsQNigyMAvQOlkXopgtQF",
+                "id": "c2290CtoT_ZFX_NM_003410v4",
                 "geneContext": {
                   "valueId": "HGNC:12869",
                   "symbol": "ZFX"
@@ -176,19 +175,23 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000023.11:g.24211248C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003401.2:p.(Arg764Trp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chrX",
-                  "pos": "24211248",
+                  "pos": 24211248,
                   "ref": "C",
                   "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -206,55 +209,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-11-11T06:13:06.786754131Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-03T16:43:51.900280Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:39056049",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/39056049",
         "description": "A Germline ZFX Missense Variant in a Patient With Primary Hyperparathyroidism"
       }
     ]
