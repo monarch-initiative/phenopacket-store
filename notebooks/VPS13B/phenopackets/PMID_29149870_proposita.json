@@ -34,6 +34,24 @@
     },
     {
       "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       },
@@ -45,12 +63,35 @@
     },
     {
       "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000729",
         "label": "Autistic behavior"
       },
       "onset": {
         "age": {
           "iso8601duration": "P12Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000580",
+        "label": "Pigmentary retinopathy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P3Y"
         }
       }
     },
@@ -122,6 +163,18 @@
     },
     {
       "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007074",
         "label": "Thick corpus callosum"
       },
@@ -156,58 +209,11 @@
     {
       "type": {
         "id": "HP:0001875",
-        "label": "Neutropenia"
+        "label": "Decreased total neutrophil count"
       },
       "onset": {
         "age": {
           "iso8601duration": "P12Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000580",
-        "label": "Pigmentary retinopathy"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003623",
-          "label": "Neonatal onset"
         }
       }
     },
@@ -222,17 +228,11 @@
           "label": "Neonatal onset"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
     }
   ],
   "interpretations": [
     {
-      "id": "proposita",
+      "id": "YWWjBFhcyjNMC25q6VegogN4",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -244,43 +244,10 @@
             "subjectOrBiosampleId": "proposita",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ClxXjhXAZmnZsThprLGDwfUzL",
-                "geneContext": {
-                  "valueId": "HGNC:2183",
-                  "symbol": "VPS13B"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_152564.5:c.3582del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000008.11:g.99467550del"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr8",
-                  "pos": "99467549",
-                  "ref": "CT",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "proposita",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_vDYUifxkpmupQBiMEjeEdiQzo",
+                "id": "c6295_6296del_VPS13B_NM_152564v5",
                 "geneContext": {
                   "valueId": "HGNC:2183",
                   "symbol": "VPS13B"
@@ -293,12 +260,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000008.11:g.99699773_99699774del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689777.3:p.(Met2099ValfsTer44)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr8",
-                  "pos": "99699772",
+                  "pos": 99699772,
                   "ref": "CAT",
                   "alt": "C"
                 },
@@ -329,55 +300,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-05-10T06:18:07.197432041Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-03T07:36:43.294230Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29149870",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29149870",
         "description": "First case report of Cohen syndrome in the Tunisian population caused by VPS13B mutations"
       }
     ]
