@@ -1,15 +1,21 @@
 {
-  "id": "PMID_39507621_patient",
+  "id": "PMID_39101447_case_presentation",
   "subject": {
-    "id": "patient",
+    "id": "case presentation",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P40Y"
+        "iso8601duration": "P1Y1M"
       }
     },
-    "sex": "MALE"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033725",
+        "label": "Thin corpus callosum"
+      }
+    },
     {
       "type": {
         "id": "HP:0032792",
@@ -17,71 +23,48 @@
       },
       "onset": {
         "age": {
-          "iso8601duration": "P1Y"
+          "iso8601duration": "P4M"
         }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011173",
-        "label": "Focal behavior arrest seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032755",
-        "label": "Focal impaired awareness autonomic seizure"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032794",
-        "label": "Myoclonic seizure"
       }
     },
     {
       "type": {
         "id": "HP:0011097",
         "label": "Epileptic spasm"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002069",
-        "label": "Bilateral tonic-clonic seizure"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P4M"
+          "iso8601duration": "P8M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0001263",
-        "label": "Global developmental delay"
+        "id": "HP:0007359",
+        "label": "Focal-onset seizure"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P4M"
+          "iso8601duration": "P19D"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002376",
-        "label": "Developmental regression"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P12Y"
-        }
+        "id": "HP:0002194",
+        "label": "Delayed gross motor development"
       }
     },
     {
       "type": {
-        "id": "HP:0002273",
-        "label": "Tetraparesis"
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001290",
+        "label": "Generalized hypotonia"
       }
     },
     {
@@ -92,20 +75,20 @@
     },
     {
       "type": {
-        "id": "HP:0011448",
-        "label": "Ankle clonus"
+        "id": "HP:0000470",
+        "label": "Short neck"
       }
     },
     {
       "type": {
-        "id": "HP:0001558",
-        "label": "Decreased fetal movement"
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
       }
     },
     {
       "type": {
-        "id": "HP:0000582",
-        "label": "Upslanted palpebral fissure"
+        "id": "HP:0000445",
+        "label": "Wide nose"
       }
     },
     {
@@ -116,20 +99,15 @@
     },
     {
       "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0003487",
         "label": "Babinski sign"
-      }
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "pVCY4uzGZDbDzBumvoTcGSD5",
+      "id": "Uqiaua1QgEEpwOMLGM7wuYPQ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -138,13 +116,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "patient",
+            "subjectOrBiosampleId": "case presentation",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c35CtoT_WWOX_NM_016373v4",
+                "id": "c172_1GtoC_WWOX_NM_016373v4",
                 "geneContext": {
                   "valueId": "HGNC:12799",
                   "symbol": "WWOX"
@@ -152,23 +130,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_016373.4:c.35C>T"
+                    "value": "NM_016373.4:c.172+1G>C"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000016.10:g.78099813C>T"
+                    "value": "NC_000016.10:g.78108488G>C"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_057457.1:p.(Thr12Met)"
+                    "value": "NP_057457.1:p.?"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": 78099813,
-                  "ref": "C",
-                  "alt": "T"
+                  "pos": 78108488,
+                  "ref": "G",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -189,14 +167,15 @@
         "label": "Developmental and epileptic encephalopathy 28"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P4M"
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-12-03T07:57:07.873779Z",
+    "created": "2025-12-03T07:57:07.873835Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -243,8 +222,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:39507621",
-        "description": "Case report: Adult patient with WWOX developmental and epileptic encephalopathy: 40 years of observation"
+        "id": "PMID:39101447",
+        "description": "Developmental epileptic encephalopathy caused by homozygosity of a c.172+1G>C variant in the WWOX gene"
       }
     ]
   }
