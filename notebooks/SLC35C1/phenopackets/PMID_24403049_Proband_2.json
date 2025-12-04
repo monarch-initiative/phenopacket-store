@@ -12,20 +12,8 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000403",
-        "label": "Recurrent otitis media"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003593",
-          "label": "Infantile onset"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0010864",
-        "label": "Intellectual disability, severe"
+        "label": "Severe intellectual disability"
       }
     },
     {
@@ -33,6 +21,20 @@
         "id": "HP:0001263",
         "label": "Global developmental delay"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000739",
+        "label": "Anxiety"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010529",
+        "label": "Echolalia"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -66,6 +68,18 @@
     },
     {
       "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0000414",
         "label": "Bulbous nose"
       }
@@ -87,27 +101,6 @@
         "id": "HP:0004322",
         "label": "Short stature"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0000739",
-        "label": "Anxiety"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010529",
-        "label": "Echolalia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0011897",
-        "label": "Neutrophilia"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -146,6 +139,13 @@
     },
     {
       "type": {
+        "id": "HP:0011893",
+        "label": "Abnormal leukocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0003355",
         "label": "Aminoaciduria"
       },
@@ -154,7 +154,7 @@
   ],
   "interpretations": [
     {
-      "id": "Proband 2",
+      "id": "yvKjcH8jnxy3jfvqDTJ4BRnM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -166,8 +166,10 @@
             "subjectOrBiosampleId": "Proband 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_wqyPwAbXPwJMtOTlrsAbolkED",
+                "id": "c91GtoT_SLC35C1_NM_018389v5",
                 "geneContext": {
                   "valueId": "HGNC:20197",
                   "symbol": "SLC35C1"
@@ -180,49 +182,18 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000011.10:g.45805892G>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr11",
-                  "pos": "45805892",
-                  "ref": "G",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Proband 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "variationDescriptor": {
-                "id": "var_sNnElTqMPBDaPyRPTnNYgYYlf",
-                "geneContext": {
-                  "valueId": "HGNC:20197",
-                  "symbol": "SLC35C1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_018389.5:c.503_505del"
                   },
                   {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000011.10:g.45806304_45806306del"
+                    "syntax": "hgvs.p",
+                    "value": "NP_060859.4:p.(Glu31Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr11",
-                  "pos": "45806301",
-                  "ref": "CCTT",
-                  "alt": "C"
+                  "pos": 45805892,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -251,55 +222,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-06-13T06:34:49.819107055Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-04T06:26:43.236230Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-04-26",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:24403049",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/24403049",
         "description": "Congenital disorder of fucosylation type 2c (LADII) presenting with short stature and developmental delay with minimal adhesion defect"
       }
     ]
