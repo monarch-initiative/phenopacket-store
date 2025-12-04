@@ -7,12 +7,23 @@
         "iso8601duration": "P19Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032794",
+        "label": "Myoclonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010819",
+        "label": "Atonic seizure"
+      },
+      "excluded": true
+    },
     {
       "type": {
         "id": "HP:0002384",
@@ -23,6 +34,27 @@
           "iso8601duration": "P5Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002121",
+        "label": "Generalized non-motor (absence) seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002069",
+        "label": "Bilateral tonic-clonic seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -49,57 +81,16 @@
     },
     {
       "type": {
+        "id": "HP:0010850",
+        "label": "EEG with spike-wave complexes"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001249",
         "label": "Intellectual disability"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0007018",
-        "label": "Attention deficit hyperactivity disorder"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032794",
-        "label": "Myoclonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0010819",
-        "label": "Atonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002121",
-        "label": "Generalized non-motor (absence) seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002069",
-        "label": "Bilateral tonic-clonic seizure"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0012469",
-        "label": "Infantile spasms"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002392",
-        "label": "EEG with polyspike wave complexes"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -124,13 +115,6 @@
     },
     {
       "type": {
-        "id": "HP:0002064",
-        "label": "Spastic gait"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0006895",
         "label": "Lower limb hypertonia"
       },
@@ -145,8 +129,21 @@
     },
     {
       "type": {
+        "id": "HP:0007018",
+        "label": "Attention deficit hyperactivity disorder"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001251",
         "label": "Ataxia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
       },
       "excluded": true
     },
@@ -160,7 +157,7 @@
   ],
   "interpretations": [
     {
-      "id": "P15",
+      "id": "eQq6HBGLuYoow1PBtXmyqrUV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -172,8 +169,10 @@
             "subjectOrBiosampleId": "P15",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_pgKhTjtivbaHLYwdcBCmsCsXs",
+                "id": "c6908_6916del_SPTAN1_NM_001130438v3",
                 "geneContext": {
                   "valueId": "HGNC:11273",
                   "symbol": "SPTAN1"
@@ -186,12 +185,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.128632272_128632280del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001123910.1:p.(Asp2303_Leu2305del)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "128632260",
+                  "pos": 128632260,
                   "ref": "GGGACCAGCT",
                   "alt": "G"
                 },
@@ -221,55 +224,54 @@
     }
   ],
   "metaData": {
-    "created": "2025-01-19T11:42:45.873328208Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-04T07:20:29.750915Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:29050398",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/29050398",
         "description": "Delineating SPTAN1 associated phenotypes: from isolated epilepsy to encephalopathy with progressive brain atrophy"
       }
     ]
