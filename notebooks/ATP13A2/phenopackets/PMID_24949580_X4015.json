@@ -1,13 +1,12 @@
 {
-  "id": "PMID_31944623_Patient_A",
+  "id": "PMID_24949580_X4015",
   "subject": {
-    "id": "Patient A",
+    "id": "X4015",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P44Y"
+        "iso8601duration": "P24Y"
       }
     },
-    "vitalStatus": {},
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -19,14 +18,14 @@
     },
     {
       "type": {
-        "id": "HP:0001260",
-        "label": "Dysarthria"
+        "id": "HP:0000298",
+        "label": "Mask-like facies"
       }
     },
     {
       "type": {
-        "id": "HP:0003487",
-        "label": "Babinski sign"
+        "id": "HP:0002063",
+        "label": "Rigidity"
       }
     },
     {
@@ -43,64 +42,67 @@
     },
     {
       "type": {
-        "id": "HP:0001272",
-        "label": "Cerebellar atrophy"
+        "id": "HP:0001332",
+        "label": "Dystonia"
       }
     },
     {
       "type": {
-        "id": "HP:0001258",
-        "label": "Spastic paraplegia"
+        "id": "HP:0001260",
+        "label": "Dysarthria"
       }
     },
     {
       "type": {
         "id": "HP:0000726",
         "label": "Dementia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001347",
-        "label": "Hyperreflexia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002075",
-        "label": "Dysdiadochokinesis"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002015",
-        "label": "Dysphagia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002120",
-        "label": "Cerebral cortical atrophy"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001337",
+        "label": "Tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002367",
+        "label": "Visual hallucination"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001272",
+        "label": "Cerebellar atrophy"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Patient A",
+      "id": "lRN8h3JcKdB0KlXy6YP9EzYD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:617225",
-          "label": "Spastic paraplegia 78, autosomal recessive"
+          "id": "OMIM:606693",
+          "label": "Kufor-Rakeb syndrome"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient A",
+            "subjectOrBiosampleId": "X4015",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_SvgqffmvaeYnvlplYgXLwieWW",
+                "id": "c2572CtoT_ATP13A2_NM_022089v4",
                 "geneContext": {
                   "valueId": "HGNC:30213",
                   "symbol": "ATP13A2"
@@ -108,19 +110,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_022089.4:c.2473delinsAA"
+                    "value": "NM_022089.4:c.2572C>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.16989943delinsTT"
+                    "value": "NC_000001.11:g.16989728G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_071372.1:p.(Gln858Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "16989943",
+                  "pos": 16989728,
                   "ref": "G",
-                  "alt": "TT"
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -137,67 +143,66 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:617225",
-        "label": "Spastic paraplegia 78, autosomal recessive"
+        "id": "OMIM:606693",
+        "label": "Kufor-Rakeb syndrome"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P31Y"
+          "iso8601duration": "P14Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2025-01-12T10:25:46.650746822Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-04T06:45:33.594980Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-12-12",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:31944623",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/31944623",
-        "description": "Clinical and genetic analysis of ATP13A2 in hereditary spastic paraplegia expands the phenotype"
+        "id": "PMID:24949580",
+        "description": "Identification of p.Gln858* in ATP13A2 in two EOPD patients and presentation of their clinical features"
       }
     ]
   }
