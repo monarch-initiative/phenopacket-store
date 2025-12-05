@@ -23,17 +23,6 @@
     },
     {
       "type": {
-        "id": "HP:0002149",
-        "label": "Hyperuricemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P25Y"
-        }
-      }
-    },
-    {
-      "type": {
         "id": "HP:0012625",
         "label": "Stage 3 chronic kidney disease"
       },
@@ -56,11 +45,22 @@
         "label": "Gout"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002149",
+        "label": "Hyperuricemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P25Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "mother",
+      "id": "potnexOXQXyrPBzuJ0MhDtT1",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -72,8 +72,10 @@
             "subjectOrBiosampleId": "mother",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_xqAnlofbtuuvMkLjvCgYmVfuo",
+                "id": "c899GtoA_UMOD_NM_003361v4",
                 "geneContext": {
                   "valueId": "HGNC:12559",
                   "symbol": "UMOD"
@@ -86,12 +88,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.20348297C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003352.2:p.(Cys300Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "20348297",
+                  "pos": 20348297,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -121,55 +127,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-08T05:49:17.102464914Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-05T07:19:40.218593Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:15844001",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/15844001",
         "description": "Clinico-pathologic findings in medullary cystic kidney disease type 2"
       }
     ]

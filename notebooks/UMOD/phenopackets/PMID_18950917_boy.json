@@ -23,6 +23,13 @@
     },
     {
       "type": {
+        "id": "HP:0003774",
+        "label": "Stage 5 chronic kidney disease"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0000092",
         "label": "Renal tubular atrophy"
       },
@@ -56,6 +63,13 @@
     },
     {
       "type": {
+        "id": "HP:0005565",
+        "label": "Reduced renal corticomedullary differentiation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0004719",
         "label": "Hyperechogenic kidneys"
       },
@@ -64,6 +78,13 @@
           "iso8601duration": "P11Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001997",
+        "label": "Gout"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -86,6 +107,13 @@
           "iso8601duration": "P11Y"
         }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -119,52 +147,26 @@
           "iso8601duration": "P11Y"
         }
       }
-    },
-    {
-      "type": {
-        "id": "HP:0003774",
-        "label": "Stage 5 chronic kidney disease"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0005565",
-        "label": "Reduced renal corticomedullary differentiation"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001997",
-        "label": "Gout"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000822",
-        "label": "Hypertension"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "boy",
+      "id": "tjnDYKLIWGGC1uYfqxIULGfE",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:162001",
-          "label": "Tubulointerstitial kidney disease, autosomal dominant, 2"
+          "id": "OMIM:162000",
+          "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
         },
         "genomicInterpretations": [
           {
             "subjectOrBiosampleId": "boy",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_aBivYWMtqSmPMwpPJvyPBGgUU",
+                "id": "c149GtoC_UMOD_NM_003361v4",
                 "geneContext": {
                   "valueId": "HGNC:12559",
                   "symbol": "UMOD"
@@ -177,12 +179,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000016.10:g.20349152C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003352.2:p.(Cys50Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr16",
-                  "pos": "20349152",
+                  "pos": 20349152,
                   "ref": "C",
                   "alt": "G"
                 },
@@ -201,8 +207,8 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:162001",
-        "label": "Tubulointerstitial kidney disease, autosomal dominant, 2"
+        "id": "OMIM:162000",
+        "label": "Tubulointerstitial kidney disease, autosomal dominant, 1"
       },
       "onset": {
         "age": {
@@ -212,55 +218,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-08-08T05:49:17.078279972Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-05T07:19:40.216930Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-07-01",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:18950917",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/18950917",
         "description": "Immature renal structures associated with a novel UMOD sequence variant"
       }
     ]
