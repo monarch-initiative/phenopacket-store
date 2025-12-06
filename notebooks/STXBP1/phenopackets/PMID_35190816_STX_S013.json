@@ -2,7 +2,6 @@
   "id": "PMID_35190816_STX_S013",
   "subject": {
     "id": "STX_S013",
-    "vitalStatus": {},
     "sex": "MALE"
   },
   "phenotypicFeatures": [
@@ -15,7 +14,7 @@
     {
       "type": {
         "id": "HP:0011410",
-        "label": "Caesarian section"
+        "label": "Caesarean section"
       }
     },
     {
@@ -23,6 +22,13 @@
         "id": "HP:0000248",
         "label": "Brachycephaly"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002060",
+        "label": "Abnormal cerebral morphology"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -113,18 +119,11 @@
         "id": "HP:0001212",
         "label": "Prominent fingertip pads"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0002060",
-        "label": "Abnormal cerebral morphology"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "STX_S013",
+      "id": "tmaaGmGdG4NirlWMnIGuXHNM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -136,8 +135,10 @@
             "subjectOrBiosampleId": "STX_S013",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_nAXlUkRLzACVVQJeNocRvMapX",
+                "id": "c227TtoC_STXBP1_NM_001032221v6",
                 "geneContext": {
                   "valueId": "HGNC:11444",
                   "symbol": "STXBP1"
@@ -150,12 +151,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.127658432T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001027392.1:p.(Leu76Pro)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr9",
-                  "pos": "127658432",
+                  "pos": 127658432,
                   "ref": "T",
                   "alt": "C"
                 },
@@ -180,55 +185,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-04T14:10:42.610257863Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2025-12-06T08:43:37.767593Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35190816",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35190816",
         "description": "Assessing the landscape of STXBP1-related disorders in 534 individuals"
       }
     ]
