@@ -1,0 +1,223 @@
+{
+  "id": "PMID_21487076_Patient_II_5",
+  "subject": {
+    "id": "Patient II-5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P15Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001152",
+        "label": "Saccadic smooth pursuit interruptions"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003474",
+        "label": "Somatic sensory dysfunction"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011448",
+        "label": "Ankle clonus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002395",
+        "label": "Lower limb hyperreflexia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012407",
+        "label": "Scissor gait"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002061",
+        "label": "Lower limb spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009046",
+        "label": "Difficulty running"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008969",
+        "label": "Leg muscle stiffness"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "UiODiBcJ0e9LF7skesBmBZmO",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620607",
+          "label": "Spastic paraplegia 30, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient II-5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c764CtoT_KIF1A_NM_001244008v2",
+                "geneContext": {
+                  "valueId": "HGNC:888",
+                  "symbol": "KIF1A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001244008.2:c.764C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.240783773G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001230937.1:p.(Ala255Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 240783773,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620607",
+        "label": "Spastic paraplegia 30, autosomal recessive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-07T13:00:59.377924Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:21487076",
+        "description": "Exome sequencing and disease-network analysis of a single family implicate a mutation in KIF1A in hereditary spastic paraparesis."
+      }
+    ]
+  }
+}
