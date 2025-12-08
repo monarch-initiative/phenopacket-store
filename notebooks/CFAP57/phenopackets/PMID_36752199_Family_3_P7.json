@@ -1,0 +1,195 @@
+{
+  "id": "PMID_36752199_Family_3_P7",
+  "subject": {
+    "id": "Family 3 P7",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000027",
+        "label": "Azoospermia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012207",
+        "label": "Reduced sperm motility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034011",
+        "label": "Reduced progressive sperm motility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000135",
+        "label": "Low semen volume"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034811",
+        "label": "Bent sperm flagella"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032558",
+        "label": "Absent sperm flagella"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032559",
+        "label": "Short sperm flagella"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032560",
+        "label": "Coiled sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033393",
+        "label": "Irregularly shaped sperm tail"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "N7yLsyLgNzzzgIfmRYXxnDQP",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620917",
+          "label": "Spermatogenic failure 95"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 3 P7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2737CtoT_CFAP57_NM_001378189v1",
+                "geneContext": {
+                  "valueId": "HGNC:26485",
+                  "symbol": "CFAP57"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001378189.1:c.2737C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.43224076C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001365118.1:p.(Arg913Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 43224076,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620917",
+        "label": "Spermatogenic failure 95"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-08T21:52:06.140003Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36752199",
+        "description": "Loss-of-function mutations in CFAP57 cause multiple morphological abnormalities of the flagella in humans and mice."
+      }
+    ]
+  }
+}
