@@ -1,0 +1,200 @@
+{
+  "id": "PMID_31009037_IV_7",
+  "subject": {
+    "id": "IV:7",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0004328",
+        "label": "Abnormal anterior eye segment morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030825",
+        "label": "Absent foveal reflex"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000666",
+        "label": "Horizontal nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020046",
+        "label": "Accommodative esotropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001477",
+        "label": "Compensatory chin elevation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031710",
+        "label": "Compensatory head tilt to the left shoulder"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030515",
+        "label": "Moderately reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032037",
+        "label": "Mildly reduced visual acuity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008499",
+        "label": "High hypermetropia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031729",
+        "label": "Moderate hypermetropia"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "y2xfHWXhicy0welNNcLlBtiJ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620958",
+          "label": "Foveal hypoplasia 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV:7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1861CtoT_AHR_NM_001621v5",
+                "geneContext": {
+                  "valueId": "HGNC:348",
+                  "symbol": "AHR"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001621.5:c.1861C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.17339686C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001612.1:p.(Gln621Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 17339686,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620958",
+        "label": "Foveal hypoplasia 3"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-10T05:06:18.020275Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:31009037",
+        "description": "Homozygous stop mutation in AHR causes autosomal recessive foveal hypoplasia and infantile nystagmus"
+      }
+    ]
+  }
+}
