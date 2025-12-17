@@ -1,0 +1,213 @@
+{
+  "id": "PMID_33949776_Second_patient",
+  "subject": {
+    "id": "Second patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14D"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001789",
+        "label": "Hydrops fetalis"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 33,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002202",
+        "label": "Pleural effusion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:4000141",
+        "label": "Left ventricular dilatation"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 33,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001644",
+        "label": "Dilated cardiomyopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001640",
+        "label": "Cardiomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001635",
+        "label": "Congestive heart failure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005162",
+        "label": "Abnormal left ventricular function"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 33,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011675",
+        "label": "Arrhythmia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001541",
+        "label": "Ascites"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "XT5bdUUwJHkOOZW8G8OGClBg",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621261",
+          "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Second patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1174CtoT_NEXN_NM_144573v4",
+                "geneContext": {
+                  "valueId": "HGNC:29557",
+                  "symbol": "NEXN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_144573.4:c.1174C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.77933402C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653174.3:p.(Arg392Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 77933402,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621261",
+        "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 33,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-16T16:43:15.497026Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:33949776",
+        "description": "Childhood onset nexilin dilated cardiomyopathy: A heterozygous and a homozygous case."
+      }
+    ]
+  }
+}

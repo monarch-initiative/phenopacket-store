@@ -1,0 +1,258 @@
+{
+  "id": "PMID_39183344_Patient_1",
+  "subject": {
+    "id": "Patient 1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001790",
+        "label": "Nonimmune hydrops fetalis"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 24,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002202",
+        "label": "Pleural effusion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 24,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:4000141",
+        "label": "Left ventricular dilatation"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 24,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0200128",
+        "label": "Biventricular hypertrophy"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006673",
+        "label": "Reduced systolic function"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 24,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001653",
+        "label": "Mitral regurgitation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005180",
+        "label": "Tricuspid regurgitation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034307",
+        "label": "Elevated left ventricular end-diastolic diameter"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012666",
+        "label": "Severely reduced left ventricular ejection fraction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001649",
+        "label": "Tachycardia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033454",
+        "label": "Tube feeding"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "iQVmWZVCRSvsD6eZQNLZMu6l",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621261",
+          "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1156dup_NEXN_NM_144573v4",
+                "geneContext": {
+                  "valueId": "HGNC:29557",
+                  "symbol": "NEXN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_144573.4:c.1156dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.77933384dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653174.3:p.(Met386AsnfsTer15)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 77933378,
+                  "ref": "C",
+                  "alt": "CA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621261",
+        "label": "Cardiomyopathy, dilated, 2M, autosomal recessive"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 24,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-16T16:43:15.497251Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39183344",
+        "description": "Biallelic NEXN variants and fetal onset dilated cardiomyopathy: two independent case reports and revision of literature."
+      }
+    ]
+  }
+}
