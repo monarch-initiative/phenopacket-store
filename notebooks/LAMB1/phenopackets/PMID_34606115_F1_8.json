@@ -1,0 +1,202 @@
+{
+  "id": "PMID_34606115_F1_8",
+  "subject": {
+    "id": "F1-8",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P69Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000819",
+        "label": "Diabetes mellitus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001095",
+        "label": "Hypertensive retinopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000757",
+        "label": "Lack of insight"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002077",
+        "label": "Migraine with aura"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032325",
+        "label": "Lacunar stroke"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P49Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "lbp75ZYlE1a4X1AYLg282s4Z",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621424",
+          "label": "Leukoencephalopathy without lacunae, adult-onset"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F1-8",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c5250_5253del_LAMB1_NM_002291v3",
+                "geneContext": {
+                  "valueId": "HGNC:6486",
+                  "symbol": "LAMB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002291.3:c.5250_5253del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.107924062_107924065del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002282.2:p.(Asn1750LysfsTer4)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 107924058,
+                  "ref": "TTTGA",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621424",
+        "label": "Leukoencephalopathy without lacunae, adult-onset"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-18T10:48:38.229950Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:34606115",
+        "description": "End-Truncated LAMB1 Causes a Hippocampal Memory Defect and a Leukoencephalopathy."
+      }
+    ]
+  }
+}

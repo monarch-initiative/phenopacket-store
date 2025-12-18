@@ -1,0 +1,171 @@
+{
+  "id": "PMID_37063705_F1_7",
+  "subject": {
+    "id": "F1-7",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P67Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033689",
+        "label": "Anterograde memory impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P60Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003401",
+        "label": "Paresthesia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003596",
+          "label": "Middle age onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002059",
+        "label": "Cerebral atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030890",
+        "label": "Hyperintensity of cerebral white matter on MRI"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "VyXSVJpvfl6QTRWjqQlP3VD8",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621424",
+          "label": "Leukoencephalopathy without lacunae, adult-onset"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F1-7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c5250_5253del_LAMB1_NM_002291v3",
+                "geneContext": {
+                  "valueId": "HGNC:6486",
+                  "symbol": "LAMB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002291.3:c.5250_5253del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.107924062_107924065del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002282.2:p.(Asn1750LysfsTer4)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 107924058,
+                  "ref": "TTTGA",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621424",
+        "label": "Leukoencephalopathy without lacunae, adult-onset"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P50Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-18T10:48:38.230977Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37063705",
+        "description": "Extension of the Clinicoradiologic Spectrum of Newly Described End-Truncating LAMB1 Variations."
+      }
+    ]
+  }
+}
