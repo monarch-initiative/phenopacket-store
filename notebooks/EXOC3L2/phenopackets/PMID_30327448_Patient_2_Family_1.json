@@ -1,0 +1,208 @@
+{
+  "id": "PMID_30327448_Patient_2_Family_1",
+  "subject": {
+    "id": "Patient 2 Family 1",
+    "timeAtLastEncounter": {
+      "gestationalAge": {
+        "weeks": 16,
+        "days": 2
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100333",
+        "label": "Unilateral cleft lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100334",
+        "label": "Unilateral cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005445",
+        "label": "Enlarged posterior fossa"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 22,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001305",
+        "label": "Dandy-Walker malformation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007063",
+        "label": "Aplasia of the inferior half of the cerebellar vermis"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 22,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001320",
+        "label": "Cerebellar vermis hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100307",
+        "label": "Cerebellar hemisphere hypoplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002198",
+        "label": "Dilated fourth ventricle"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 22,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "qvS42Ff6O69U8JugktuDsoVe",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620943",
+          "label": "Brain malformation renal syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2 Family 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1301TtoA_EXOC3L2_NM_001382422v1",
+                "geneContext": {
+                  "valueId": "HGNC:30162",
+                  "symbol": "EXOC3L2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001382422.1:c.1301T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.45228235A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001369351.1:p.(Leu434Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 45228235,
+                  "ref": "A",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620943",
+        "label": "Brain malformation renal syndrome"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 16,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T11:13:43.911117Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:30327448",
+        "description": "Biallelic mutations in EXOC3L2 cause a novel syndrome that affects the brain, kidney and blood."
+      }
+    ]
+  }
+}
