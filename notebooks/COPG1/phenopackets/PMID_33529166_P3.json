@@ -1,0 +1,199 @@
+{
+  "id": "PMID_33529166_P3",
+  "subject": {
+    "id": "P3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010976",
+        "label": "Decreased total B cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005403",
+        "label": "Decreased total T cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040218",
+        "label": "Reduced total natural killer cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500269",
+        "label": "Abnormal gamma-delta T cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032182",
+        "label": "Abnormal memory T cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032218",
+        "label": "Decreased CD4+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005415",
+        "label": "Decreased CD8+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031396",
+        "label": "Abnormal naive T cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025834",
+        "label": "Decreased PHA-induced T-cell proliferation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031382",
+        "label": "Decreased anti-CD3/28-induced T-cell proliferation"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "wQmeom8ow36ycThTlutqNgZL",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620983",
+          "label": "Immunodeficiency 128 "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1954AtoG_COPG1_NM_016128v4",
+                "geneContext": {
+                  "valueId": "HGNC:2236",
+                  "symbol": "COPG1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016128.4:c.1954A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.129271877A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057212.1:p.(Lys652Glu)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 129271877,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620983",
+        "label": "Immunodeficiency 128 "
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T13:17:06.944535Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:33529166",
+        "description": "Combined immunodeficiency due to a mutation in the γ1 subunit of the coat protein I complex."
+      }
+    ]
+  }
+}
