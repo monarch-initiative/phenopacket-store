@@ -1,0 +1,171 @@
+{
+  "id": "PMID_39198650_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010516",
+        "label": "Thymus hyperplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002202",
+        "label": "Pleural effusion"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031273",
+        "label": "Shock"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032262",
+        "label": "Pulmonary tuberculosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "WXnX1P1LOk0xzqcGteMUC7Cq",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620977",
+          "label": "Immunodeficiency 127 "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c191_192insTCTCTAATCAGCCCTCTGGC_TNF_NM_000594v4",
+                "geneContext": {
+                  "valueId": "HGNC:11892",
+                  "symbol": "TNF"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000594.4:c.191_192insTCTCTAATCAGCCCTCTGGC"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.31576538_31576539insTCTCTAATCAGCCCTCTGGC"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000585.2:p.(Arg65LeufsTer2)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 31576537,
+                  "ref": "C",
+                  "alt": "CCTCTCTAATCAGCCCTCTGG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620977",
+        "label": "Immunodeficiency 127 "
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P18Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T18:49:47.273401Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39198650",
+        "description": "Tuberculosis in otherwise healthy adults with inherited TNF deficiency."
+      }
+    ]
+  }
+}

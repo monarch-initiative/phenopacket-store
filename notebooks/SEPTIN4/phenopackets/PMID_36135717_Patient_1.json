@@ -1,0 +1,179 @@
+{
+  "id": "PMID_36135717_Patient_1",
+  "subject": {
+    "id": "Patient 1",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0035007",
+        "label": "Thin spermatozoon midpiece"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034811",
+        "label": "Bent sperm flagella"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034011",
+        "label": "Reduced progressive sperm motility"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "uSAL7zFlLPMun9eqdvPAmLxY",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621194",
+          "label": "Spermatogenic failure 99"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c721AtoT_SEPTIN4_NM_001368771v2",
+                "geneContext": {
+                  "valueId": "HGNC:9165",
+                  "symbol": "SEPTIN4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001368771.2:c.721A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.58543466T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001355700.1:p.(Arg241Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": 58543466,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621194",
+        "label": "Spermatogenic failure 99"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T20:08:48.959976Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36135717",
+        "description": "Biallelic loss-of-function mutations in SEPTIN4 (C17ORF47), encoding a conserved annulus protein, cause thin midpiece spermatozoa and male infertility in humans."
+      }
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "id": "PMID_34976470_fetus_one",
+  "subject": {
+    "id": "fetus one",
+    "timeAtLastEncounter": {
+      "gestationalAge": {
+        "weeks": 19,
+        "days": 0
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001791",
+        "label": "Fetal ascites"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025672",
+        "label": "Fetal skin edema"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025671",
+        "label": "Fetal pericardial effusion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001838",
+        "label": "Rocker bottom foot"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001762",
+        "label": "Talipes equinovarus"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001188",
+        "label": "Hand clenching"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002804",
+        "label": "Arthrogryposis multiplex congenita"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000202",
+        "label": "Orofacial cleft"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000463",
+        "label": "Anteverted nares"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002000",
+        "label": "Short columella"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "G8mAAVso5qXiJ2z7osRAK8Hw",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301127",
+          "label": "Arthrogryposis multiplex congenita 7, X-linked"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "fetus one",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2482_1_2484del_THOC2_NM_001081550v2",
+                "geneContext": {
+                  "valueId": "HGNC:19073",
+                  "symbol": "THOC2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001081550.2:c.2482-1_2484del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.123627968_123627971del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001075019.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 123627965,
+                  "ref": "TTGAC",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301127",
+        "label": "Arthrogryposis multiplex congenita 7, X-linked"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 19,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T18:33:36.827431Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:34976470",
+        "description": "Novel Consensus Splice Site Pathogenic Variation in THOC2 Gene Leads to Recurrent Arthrogryposis Multiplex Congenita Phenotype: A Case Report."
+      }
+    ]
+  }
+}

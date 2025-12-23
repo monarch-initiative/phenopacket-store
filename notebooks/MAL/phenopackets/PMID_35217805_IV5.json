@@ -1,0 +1,229 @@
+{
+  "id": "PMID_35217805_IV5",
+  "subject": {
+    "id": "IV5",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0006895",
+        "label": "Lower limb hypertonia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033044",
+        "label": "Motor regression"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002527",
+        "label": "Falls"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002080",
+        "label": "Intention tremor"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001310",
+        "label": "Dysmetria"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007266",
+        "label": "Cerebral dysmyelination"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "zGSSIM1Ppc6mv6HKHWLsZOOf",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620978",
+          "label": "Leukodystrophy, hypomyelinating, 28 "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c326CtoA_MAL_NM_002371v4",
+                "geneContext": {
+                  "valueId": "HGNC:6817",
+                  "symbol": "MAL"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002371.4:c.326C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.95049645C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002362.1:p.(Ala109Asp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 95049645,
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620978",
+        "label": "Leukodystrophy, hypomyelinating, 28 "
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T19:02:20.250925Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:35217805",
+        "description": "Missense mutation of MAL causes a rare leukodystrophy similar to Pelizaeus-Merzbacher disease."
+      }
+    ]
+  }
+}

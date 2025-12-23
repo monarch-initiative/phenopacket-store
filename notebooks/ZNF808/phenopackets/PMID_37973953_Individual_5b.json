@@ -1,0 +1,160 @@
+{
+  "id": "PMID_37973953_Individual_5b",
+  "subject": {
+    "id": "Individual 5b",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100651",
+        "label": "Type I diabetes mellitus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001622",
+        "label": "Premature birth"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001518",
+        "label": "Small for gestational age"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100801",
+        "label": "Pancreatic aplasia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "sxTt4dRKJTUrKhYPthma17gB",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620991",
+          "label": "Pancreatic agenesis 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual 5b",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c696_697del_ZNF808_NM_001039886v4",
+                "geneContext": {
+                  "valueId": "HGNC:33230",
+                  "symbol": "ZNF808"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001039886.4:c.696_697del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.52553612_52553613del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001034975.2:p.(Cys233Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 52553611,
+                  "ref": "CAT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620991",
+        "label": "Pancreatic agenesis 3"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T14:15:32.781173Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37973953",
+        "description": "Primate-specific ZNF808 is essential for pancreatic development in humans."
+      }
+    ]
+  }
+}

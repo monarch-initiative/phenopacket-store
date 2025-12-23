@@ -1,0 +1,148 @@
+{
+  "id": "PMID_34655521_Patient_3",
+  "subject": {
+    "id": "Patient 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P47Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008231",
+        "label": "Macronodular adrenal hyperplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002920",
+        "label": "Decreased circulating ACTH concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008163",
+        "label": "Decreased circulating cortisol level"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "wj75nVXqx2DBNRdHJjGRrkxv",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620990",
+          "label": "ACTH-independent macronodular adrenal hyperplasia 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c352_1GtoA_KDM1A_NM_001009999v3",
+                "geneContext": {
+                  "valueId": "HGNC:29079",
+                  "symbol": "KDM1A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001009999.3:c.352-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.23030468G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001009999.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 23030468,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620990",
+        "label": "ACTH-independent macronodular adrenal hyperplasia 3"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T14:39:32.248590Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:34655521",
+        "description": "Loss of KDM1A in GIP-dependent primary bilateral macronodular adrenal hyperplasia with Cushing's syndrome: a multicentre, retrospective, cohort study."
+      }
+    ]
+  }
+}

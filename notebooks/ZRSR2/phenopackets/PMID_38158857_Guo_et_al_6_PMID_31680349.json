@@ -1,0 +1,237 @@
+{
+  "id": "PMID_38158857_Guo_et_al_6_PMID_31680349",
+  "subject": {
+    "id": "Guo et al.6 PMID: 31680349",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001360",
+        "label": "Holoprosencephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009099",
+        "label": "Median cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:5201016",
+        "label": "Submucous cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000180",
+        "label": "Lobulated tongue"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009084",
+        "label": "Midline notch of upper alveolar ridge"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000161",
+        "label": "Median cleft upper lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006315",
+        "label": "Solitary median maxillary central incisor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001592",
+        "label": "Selective tooth agenesis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000677",
+        "label": "Oligodontia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000189",
+        "label": "Narrow palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000218",
+        "label": "High palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000191",
+        "label": "Accessory oral frenulum"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030815",
+        "label": "Lipoma of the tongue"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011802",
+        "label": "Hamartoma of tongue"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "UiPOaHjedkiyrJzmAp0ev0R9",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301132",
+          "label": "Orofaciodigital syndrome XXI"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Guo et al.6 PMID: 31680349",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1207_1208del_ZRSR2_NM_005089v4",
+                "geneContext": {
+                  "valueId": "HGNC:23019",
+                  "symbol": "ZRSR2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005089.4:c.1207_1208del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.15823000_15823001del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005080.1:p.(Arg403GlyfsTer24)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 15822999,
+                  "ref": "CAG",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301132",
+        "label": "Orofaciodigital syndrome XXI"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T13:57:24.042219Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38158857",
+        "description": "Differential alternative splicing analysis links variation in ZRSR2 to a novel type of oral-facial-digital syndrome."
+      }
+    ]
+  }
+}

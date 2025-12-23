@@ -1,0 +1,184 @@
+{
+  "id": "PMID_38626355_OP_2032_II1",
+  "subject": {
+    "id": "OP-2032 II1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P14Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011534",
+        "label": "Abnormal spatial orientation of the cardiac segments"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011109",
+        "label": "Chronic sinusitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012735",
+        "label": "Cough"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033036",
+        "label": "Decreased nasal nitric oxide"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032342",
+        "label": "Reduced forced expiratory volume in one second"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000403",
+        "label": "Recurrent otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100582",
+        "label": "Nasal polyposis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "mreABeTkWjtoKd07wXsduTvJ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:620984",
+          "label": "Bronchiectasis and nasal polyposis"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "OP-2032 II1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c145TtoC_WFDC2_NM_006103v4",
+                "geneContext": {
+                  "valueId": "HGNC:15939",
+                  "symbol": "WFDC2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006103.4:c.145T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.45470454T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006094.3:p.(Cys49Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": 45470454,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:620984",
+        "label": "Bronchiectasis and nasal polyposis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-23T18:01:28.640837Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38626355",
+        "description": "Recessively Inherited Deficiency of Secreted WFDC2 (HE4) Causes Nasal Polyposis and Bronchiectasis."
+      }
+    ]
+  }
+}
