@@ -1,0 +1,244 @@
+{
+  "id": "PMID_38509369_P1_1",
+  "subject": {
+    "id": "P1.1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410295",
+        "label": "Complete or near-complete absence of specific antibody response to tetanus vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011873",
+        "label": "Abnormal platelet count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005404",
+        "label": "Increased total B cell count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100827",
+        "label": "Increased total lymphocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410390",
+        "label": "Decreased effector memory CD8+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025624",
+        "label": "Decreased CD4+ effector memory T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030374",
+        "label": "Decreased proportion of memory B cells"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001974",
+        "label": "Increased total leukocyte count"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033479",
+        "label": "Abnormal circulating bilirubin concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0020072",
+        "label": "Persistent EBV viremia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025435",
+        "label": "Increased circulating lactate dehydrogenase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "qRXEINv43erG0unghRfEQZPw",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621405",
+          "label": "Immunodeficiency 134 (Epstein-Barr virus-specific)"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P1.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c286CtoT_IL27RA_NM_004843v4",
+                "geneContext": {
+                  "valueId": "HGNC:17290",
+                  "symbol": "IL27RA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004843.4:c.286C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.14039575C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004834.1:p.(Gln96Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 14039575,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621405",
+        "label": "Immunodeficiency 134 (Epstein-Barr virus-specific)"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y8M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-24T15:59:19.769608Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38509369",
+        "description": "Role of IL-27 in Epstein-Barr virus infection revealed by IL-27RA deficiency."
+      }
+    ]
+  }
+}

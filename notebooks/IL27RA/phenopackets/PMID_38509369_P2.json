@@ -1,0 +1,217 @@
+{
+  "id": "PMID_38509369_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012115",
+        "label": "Hepatitis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033050",
+        "label": "Pharyngalgia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410390",
+        "label": "Decreased effector memory CD8+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025624",
+        "label": "Decreased CD4+ effector memory T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030374",
+        "label": "Decreased proportion of memory B cells"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6001425",
+        "label": "Hyperleukocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020072",
+        "label": "Persistent EBV viremia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031691",
+        "label": "Severe viral infection"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "RTeCOPOGKK30VB5NGVPL6j8K",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621405",
+          "label": "Immunodeficiency 134 (Epstein-Barr virus-specific)"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1336CtoG_IL27RA_NM_004843v4",
+                "geneContext": {
+                  "valueId": "HGNC:17290",
+                  "symbol": "IL27RA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004843.4:c.1336C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.14049248C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004834.1:p.(Arg446Gly)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 14049248,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621405",
+        "label": "Immunodeficiency 134 (Epstein-Barr virus-specific)"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P17Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-24T15:59:19.769680Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38509369",
+        "description": "Role of IL-27 in Epstein-Barr virus infection revealed by IL-27RA deficiency."
+      }
+    ]
+  }
+}

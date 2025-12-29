@@ -1,0 +1,171 @@
+{
+  "id": "PMID_2107739_proband",
+  "subject": {
+    "id": "proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P62Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002155",
+        "label": "Hypertriglyceridemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003107",
+        "label": "Abnormal circulating cholesterol concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031799",
+        "label": "Decreased circulating apolipoprotein A-I concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034075",
+        "label": "Decreased circulating apolipoprotein B concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034602",
+        "label": "Decreased circulating apolipoprotein A-II concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001677",
+        "label": "Coronary artery atherosclerosis"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "E9EotzYTYvoxO8jEcdMy5Xif",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621417",
+          "label": "Apolipoprotein A-II deficiency] "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c185_1GtoA_APOA2_NM_001643v2",
+                "geneContext": {
+                  "valueId": "HGNC:601",
+                  "symbol": "APOA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001643.2:c.185+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.161222917C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001634.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 161222917,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621417",
+        "label": "Apolipoprotein A-II deficiency] "
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-24T18:27:09.501279Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:2107739",
+        "description": "A splice-junction mutation responsible for familial apolipoprotein A-II deficiency."
+      }
+    ]
+  }
+}
