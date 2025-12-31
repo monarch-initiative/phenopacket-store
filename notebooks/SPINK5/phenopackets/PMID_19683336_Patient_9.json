@@ -97,7 +97,7 @@
   ],
   "interpretations": [
     {
-      "id": "v8LKKn5NFbMnL6993QGM1IxT",
+      "id": "fzzQ6nuyZQ7Ylf7BNQoWsZDb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -105,6 +105,47 @@
           "label": "Netherton syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 9",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c282_1GtoA_SPINK5_NM_006846v4",
+                "geneContext": {
+                  "valueId": "HGNC:15464",
+                  "symbol": "SPINK5"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006846.4:c.282+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.148072221G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006837.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 148072221,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 9",
             "interpretationStatus": "CAUSATIVE",
@@ -165,14 +206,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-05T12:01:40.031673Z",
+    "created": "2025-12-31T15:52:33.512549Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

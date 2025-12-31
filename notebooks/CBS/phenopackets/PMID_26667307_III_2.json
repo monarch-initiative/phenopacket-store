@@ -105,7 +105,7 @@
   ],
   "interpretations": [
     {
-      "id": "xWRqwtMC8fRUzhncvVqi80qZ",
+      "id": "evl6HLK0qGzafaUdNfQcG9g3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,6 +113,47 @@
           "label": "Homocystinuria, B6-responsive and nonresponsive types"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "III:2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c473CtoT_CBS_NM_000071v3",
+                "geneContext": {
+                  "valueId": "HGNC:1550",
+                  "symbol": "CBS"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000071.3:c.473C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.43065674G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000062.1:p.(Ala158Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr21",
+                  "pos": 43065674,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "III:2",
             "interpretationStatus": "CAUSATIVE",
@@ -172,14 +213,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-21T04:51:40.702345Z",
+    "created": "2025-12-31T16:09:56.435102Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

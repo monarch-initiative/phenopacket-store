@@ -102,7 +102,7 @@
   ],
   "interpretations": [
     {
-      "id": "jQYBn3VOtn9SqV7RoMSOzJaz",
+      "id": "SBY7odOy2X1YLeKMsewFYra6",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -110,6 +110,47 @@
           "label": "Dystonia 37, early-onset, with striatal lesions"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient of family C",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1414GtoA_NUP54_NM_017426v4",
+                "geneContext": {
+                  "valueId": "HGNC:17359",
+                  "symbol": "NUP54"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017426.4:c.1414G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.76115476C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_059122.2:p.(Glu472Lys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 76115476,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient of family C",
             "interpretationStatus": "CAUSATIVE",
@@ -169,14 +210,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-16T10:36:22.532180Z",
+    "created": "2025-12-31T16:02:43.579889Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

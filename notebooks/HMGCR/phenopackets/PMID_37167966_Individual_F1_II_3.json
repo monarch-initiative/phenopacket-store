@@ -47,7 +47,7 @@
   ],
   "interpretations": [
     {
-      "id": "nX0nMwp07UHNNPHN59zL2dKD",
+      "id": "MCICBVdtn35WfNsLL9ig8cLS",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -55,6 +55,47 @@
           "label": "Muscular dystrophy, limb-girdle, autosomal recessive 28"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual F1-II:3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1328GtoA_HMGCR_NM_000859v3",
+                "geneContext": {
+                  "valueId": "HGNC:5006",
+                  "symbol": "HMGCR"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000859.3:c.1328G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.75351562G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000850.1:p.(Arg443Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 75351562,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual F1-II:3",
             "interpretationStatus": "CAUSATIVE",
@@ -114,14 +155,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-02T13:36:04.135626Z",
+    "created": "2025-12-31T14:28:06.106632Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
