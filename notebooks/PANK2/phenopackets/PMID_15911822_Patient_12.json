@@ -138,7 +138,7 @@
   ],
   "interpretations": [
     {
-      "id": "Jk7AOu4AjRAMlDLjEDMUFuXL",
+      "id": "0PPCU9xbzpFIDlud7dcNkAKE",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -146,6 +146,47 @@
           "label": "Neurodegeneration with brain iron accumulation 1"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 12",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1231GtoA_PANK2_NM_001386393v1",
+                "geneContext": {
+                  "valueId": "HGNC:15894",
+                  "symbol": "PANK2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001386393.1:c.1231G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.3918695G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001373322.1:p.(Gly411Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": 3918695,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 12",
             "interpretationStatus": "CAUSATIVE",
@@ -205,14 +246,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-19T05:57:03.236507Z",
+    "created": "2025-12-31T17:04:51.107441Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

@@ -94,7 +94,7 @@
   ],
   "interpretations": [
     {
-      "id": "rFldLqnh8tisGPPnobVlMrW0",
+      "id": "2nuQnil9kFk1vrMOxyonw4PB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -102,6 +102,47 @@
           "label": "CAOP syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2072_2AtoT_MBTPS1_NM_003791v4",
+                "geneContext": {
+                  "valueId": "HGNC:15456",
+                  "symbol": "MBTPS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003791.4:c.2072-2A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.84067825T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003782.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 84067825,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -156,14 +197,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-05T14:23:32.560104Z",
+    "created": "2025-12-31T17:02:36.720587Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

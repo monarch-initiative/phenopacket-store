@@ -127,7 +127,7 @@
   ],
   "interpretations": [
     {
-      "id": "nbDw8dYDsH5mrs2r8lTo6Keb",
+      "id": "3bQpei2kbqHNWmKt3m9vRkno",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -135,6 +135,47 @@
           "label": "Joubert syndrome 30"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "UW116-3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1027CtoT_ARMC9_NM_001352754v2",
+                "geneContext": {
+                  "valueId": "HGNC:20730",
+                  "symbol": "ARMC9"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001352754.2:c.1027C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.231262306C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001339683.2:p.(Arg343Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 231262306,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "UW116-3",
             "interpretationStatus": "CAUSATIVE",
@@ -189,14 +230,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-08T15:48:52.723602Z",
+    "created": "2025-12-31T17:01:50.784372Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
