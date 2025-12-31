@@ -57,7 +57,7 @@
   ],
   "interpretations": [
     {
-      "id": "LWC98BndfIQHfUSIsMae8IoM",
+      "id": "iJYYuQAFlz6c1Xf74r3mydOB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -65,6 +65,47 @@
           "label": "GM1-gangliosidosis, type III"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "TS",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1370GtoA_GLB1_NM_000404v4",
+                "geneContext": {
+                  "valueId": "HGNC:4298",
+                  "symbol": "GLB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000404.4:c.1370G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.33016818C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000395.3:p.(Arg457Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 33016818,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "TS",
             "interpretationStatus": "CAUSATIVE",
@@ -124,14 +165,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-28T07:56:24.086864Z",
+    "created": "2025-12-31T19:04:43.871257Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

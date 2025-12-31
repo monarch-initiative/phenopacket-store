@@ -1,12 +1,7 @@
 {
-  "id": "PMID_16900296_IV_5",
+  "id": "PMID_16900296_IV_4",
   "subject": {
-    "id": "IV-5",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P8Y"
-      }
-    },
+    "id": "IV-4",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
@@ -37,13 +32,56 @@
   ],
   "interpretations": [
     {
-      "id": "Q9MiLqrPuYg8JgRvqm2YTDBn",
+      "id": "s8VN5FJyqhv595ofaSr2cDeh",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:608393",
           "label": "Microcephaly 6, primary, autosomal recessive"
-        }
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "IV-4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c3243_3246del_CPAP_NM_018451v5",
+                "geneContext": {
+                  "valueId": "HGNC:17272",
+                  "symbol": "CPAP"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_018451.5:c.3243_3246del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.24889374_24889377del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060921.3:p.(Ser1081ArgfsTer8)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr13",
+                  "pos": 24889370,
+                  "ref": "TCTGA",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -62,14 +100,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T09:44:08.033971Z",
+    "created": "2025-12-31T19:36:05.496858Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -110,7 +148,7 @@
     "externalReferences": [
       {
         "id": "PMID:16900296",
-        "description": "A novel deletion mutation in CENPJ gene in a Pakistani family with autosomal recessive primary microcephaly"
+        "description": "A novel deletion mutation in CPAP gene in a Pakistani family with autosomal recessive primary microcephaly"
       }
     ]
   }

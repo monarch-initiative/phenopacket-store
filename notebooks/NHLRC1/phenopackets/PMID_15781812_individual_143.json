@@ -86,7 +86,7 @@
   ],
   "interpretations": [
     {
-      "id": "2AhfvnQilZD7wzi6E5AE1r2b",
+      "id": "wXL53p64dGLhHhAhMI2glMQy",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -94,6 +94,47 @@
           "label": "Myoclonic epilepsy of Lafora 2"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual 143",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c205CtoG_NHLRC1_NM_198586v3",
+                "geneContext": {
+                  "valueId": "HGNC:21576",
+                  "symbol": "NHLRC1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_198586.3:c.205C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.18122402G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_940988.2:p.(Pro69Ala)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 18122402,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "individual 143",
             "interpretationStatus": "CAUSATIVE",
@@ -153,14 +194,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T06:43:06.127732Z",
+    "created": "2025-12-31T19:21:07.529582Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

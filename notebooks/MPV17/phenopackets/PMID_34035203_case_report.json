@@ -147,7 +147,7 @@
   ],
   "interpretations": [
     {
-      "id": "vrKF1MsZmX6EuKTBn8Hrwxkj",
+      "id": "WFupEGt4ZJwiajV8Sk3gVN6r",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -155,6 +155,47 @@
           "label": "Mitochondrial DNA depletion syndrome 6 (hepatocerebral type)"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "case report",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c451dup_MPV17_NM_002437v5",
+                "geneContext": {
+                  "valueId": "HGNC:7224",
+                  "symbol": "MPV17"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002437.5:c.451dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27311913dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002428.1:p.(Leu151ProfsTer39)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 27311908,
+                  "ref": "A",
+                  "alt": "AG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "case report",
             "interpretationStatus": "CAUSATIVE",
@@ -214,14 +255,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-15T08:20:06.678841Z",
+    "created": "2025-12-31T19:21:47.561878Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

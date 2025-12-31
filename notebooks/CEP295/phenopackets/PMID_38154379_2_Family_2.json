@@ -226,7 +226,7 @@
   ],
   "interpretations": [
     {
-      "id": "qBlPvg8I4Kxd1iF01e9hS74E",
+      "id": "8zGGRLfXN9pEbINa7HQ8NWkQ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -234,6 +234,47 @@
           "label": "Seckel syndrome 11"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "2 (Family 2)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1685CtoT_CEP295_NM_033395v2",
+                "geneContext": {
+                  "valueId": "HGNC:29366",
+                  "symbol": "CEP295"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_033395.2:c.1685C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.93696333C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_203753.1:p.(Pro562Leu)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 93696333,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "2 (Family 2)",
             "interpretationStatus": "CAUSATIVE",
@@ -294,14 +335,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T09:46:29.143020Z",
+    "created": "2025-12-31T19:37:06.063362Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

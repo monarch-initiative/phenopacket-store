@@ -157,7 +157,7 @@
   ],
   "interpretations": [
     {
-      "id": "M3qIqo9Q0oS2qt9I7Qpi18cw",
+      "id": "0ZyQqQ2nEAecZOH4eFKHGsYu",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -165,6 +165,47 @@
           "label": "Galactosialidosis"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c833_834del_CTSA_NM_000308v4",
+                "geneContext": {
+                  "valueId": "HGNC:9251",
+                  "symbol": "CTSA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000308.4:c.833_834del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.45894705_45894706del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000299.3:p.(Tyr278CysfsTer12)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": 45894703,
+                  "ref": "CTA",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "patient",
             "interpretationStatus": "CAUSATIVE",
@@ -219,14 +260,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T21:19:11.674704Z",
+    "created": "2025-12-31T19:29:01.934274Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

@@ -109,7 +109,7 @@
   ],
   "interpretations": [
     {
-      "id": "4JspLLMsybAXESi4q90e3nPC",
+      "id": "rRfhjpQrJ63jV2RK1uFXYqLJ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -117,6 +117,47 @@
           "label": "Oliver-McFarlane syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual B:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1946_2TtoG_PNPLA6_NM_001166114v2",
+                "geneContext": {
+                  "valueId": "HGNC:16268",
+                  "symbol": "PNPLA6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001166114.2:c.1946+2T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.7550431T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001159586.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 7550431,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "individual B:1",
             "interpretationStatus": "CAUSATIVE",
@@ -171,14 +212,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T08:39:30.391614Z",
+    "created": "2025-12-31T19:38:57.004589Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
