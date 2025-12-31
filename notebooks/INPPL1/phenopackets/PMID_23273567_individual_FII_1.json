@@ -142,7 +142,7 @@
   ],
   "interpretations": [
     {
-      "id": "VTIYGijUrj0eYPeHo4sHLXWA",
+      "id": "ygXlxPI22oIPcEFFJ8lPCNGe",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -150,6 +150,47 @@
           "label": "Opsismodysplasia"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual FII-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c753GtoC_INPPL1_NM_001567v4",
+                "geneContext": {
+                  "valueId": "HGNC:6080",
+                  "symbol": "INPPL1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001567.4:c.753G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.72229558G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001558.3:p.(Gln251His)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 72229558,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "individual FII-1",
             "interpretationStatus": "CAUSATIVE",
@@ -210,14 +251,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-06T05:47:34.283434Z",
+    "created": "2025-12-31T18:07:50.349005Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
