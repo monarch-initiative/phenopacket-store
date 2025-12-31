@@ -68,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "UcUmC355TfXsj2DB7xVUOehL",
+      "id": "7y5fhKvMK9vXLaN0F0fLjHBM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -76,6 +76,47 @@
           "label": "Coenzyme Q10 deficiency, primary, 7"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1 Sibling of Proband 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c473GtoA_COQ4_NM_016035v5",
+                "geneContext": {
+                  "valueId": "HGNC:19693",
+                  "symbol": "COQ4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016035.5:c.473G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.128332223G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057119.3:p.(Arg158Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 128332223,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 1 Sibling of Proband 1",
             "interpretationStatus": "CAUSATIVE",
@@ -135,14 +176,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-24T10:33:42.421185Z",
+    "created": "2025-12-31T16:20:36.616355Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
