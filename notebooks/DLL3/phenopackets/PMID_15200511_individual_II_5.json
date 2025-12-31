@@ -49,7 +49,7 @@
   ],
   "interpretations": [
     {
-      "id": "WMRg66k4JFpFmKWfmyf6K8En",
+      "id": "DZVbnK5GTQF2xfaQyewkZRBn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -57,6 +57,47 @@
           "label": "Spondylocostal dysostosis 1, autosomal recessive"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual II.5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1511GtoA_DLL3_NM_203486v3",
+                "geneContext": {
+                  "valueId": "HGNC:2909",
+                  "symbol": "DLL3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_203486.3:c.1511G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.39507456G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_982353.1:p.(Gly504Asp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 39507456,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "individual II.5",
             "interpretationStatus": "CAUSATIVE",
@@ -111,14 +152,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-24T17:33:28.165728Z",
+    "created": "2025-12-31T18:01:29.774755Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
