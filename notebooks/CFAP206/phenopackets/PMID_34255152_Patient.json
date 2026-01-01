@@ -1,0 +1,179 @@
+{
+  "id": "PMID_34255152_Patient",
+  "subject": {
+    "id": "Patient",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012208",
+        "label": "Immotile sperm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032562",
+        "label": "Tapered sperm head"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032558",
+        "label": "Absent sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032559",
+        "label": "Short sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032560",
+        "label": "Coiled sperm flagella"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033393",
+        "label": "Irregularly shaped sperm tail"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "fay7mq1P3mCjeXuZ8iLiqZ54",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621387",
+          "label": "Spermatogenic failure 102 "
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1430dup_CFAP206_NM_001031743v3",
+                "geneContext": {
+                  "valueId": "HGNC:21405",
+                  "symbol": "CFAP206"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001031743.3:c.1430dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.87434989dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001026913.1:p.(Asn477LysfsTer15)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 87434981,
+                  "ref": "C",
+                  "alt": "CA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621387",
+        "label": "Spermatogenic failure 102 "
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2025-12-20T11:24:05.990093Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:34255152",
+        "description": "Bi-allelic truncating variants in CFAP206 cause male infertility in human and mouse."
+      }
+    ]
+  }
+}
