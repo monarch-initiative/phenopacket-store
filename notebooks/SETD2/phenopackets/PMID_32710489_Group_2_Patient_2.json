@@ -7,42 +7,9 @@
         "iso8601duration": "P4Y6M"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
-    {
-      "type": {
-        "id": "HP:0031936",
-        "label": "Delayed ability to walk"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000750",
-        "label": "Delayed speech and language development"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0005616",
-        "label": "Accelerated skeletal maturation"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000486",
-        "label": "Strabismus"
-      }
-    },
     {
       "type": {
         "id": "HP:0001622",
@@ -53,7 +20,7 @@
     {
       "type": {
         "id": "HP:0011410",
-        "label": "Caesarian section"
+        "label": "Caesarean section"
       },
       "excluded": true
     },
@@ -101,6 +68,12 @@
     },
     {
       "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0025336",
         "label": "Delayed ability to sit"
       },
@@ -108,8 +81,14 @@
     },
     {
       "type": {
-        "id": "HP:0000410",
-        "label": "Mixed hearing impairment"
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
       },
       "excluded": true
     },
@@ -136,10 +115,22 @@
     },
     {
       "type": {
+        "id": "HP:0005616",
+        "label": "Accelerated skeletal maturation"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001762",
         "label": "Talipes equinovarus"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
     },
     {
       "type": {
@@ -152,6 +143,13 @@
       "type": {
         "id": "HP:0009879",
         "label": "Simplified gyral pattern"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
       },
       "excluded": true
     },
@@ -199,15 +197,8 @@
     },
     {
       "type": {
-        "id": "HP:0002280",
-        "label": "Enlarged cisterna magna"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001305",
-        "label": "Dandy-Walker malformation"
+        "id": "HP:0005445",
+        "label": "Enlarged posterior fossa"
       },
       "excluded": true
     },
@@ -294,11 +285,17 @@
         "label": "Triphalangeal thumb"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000486",
+        "label": "Strabismus"
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "Group 2 Patient 2",
+      "id": "Yrv5ml2fedHKyLOpA4aekbYB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -310,8 +307,10 @@
             "subjectOrBiosampleId": "Group 2 Patient 2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_ZFBYVOYxafxbQpRbyFVPQxhvV",
+                "id": "c5219GtoA_SETD2_NM_014159v7",
                 "geneContext": {
                   "valueId": "HGNC:18420",
                   "symbol": "SETD2"
@@ -324,12 +323,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.47088171C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_054878.5:p.(Arg1740Gln)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "47088171",
+                  "pos": 47088171,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -359,55 +362,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-02T13:33:57.755282878Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2026-01-01T16:39:42.612256Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:32710489",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/32710489",
         "description": "Genotype-phenotype correlation at codon 1740 of SETD2"
       }
     ]

@@ -7,23 +7,29 @@
         "iso8601duration": "P15Y"
       }
     },
-    "vitalStatus": {
-      "status": "ALIVE"
-    },
     "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002280",
-        "label": "Enlarged cisterna magna"
+        "id": "HP:0000098",
+        "label": "Tall stature"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0011461",
-          "label": "Fetal onset"
-        }
-      }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000256",
+        "label": "Macrocephaly"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -36,6 +42,33 @@
         "id": "HP:0000750",
         "label": "Delayed speech and language development"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002007",
+        "label": "Frontal bossing"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -63,9 +96,23 @@
     },
     {
       "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
         "id": "HP:0001250",
         "label": "Seizure"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -75,64 +122,21 @@
     },
     {
       "type": {
+        "id": "HP:0002280",
+        "label": "Enlarged cisterna magna"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      }
+    },
+    {
+      "type": {
         "id": "HP:0007763",
         "label": "Retinal telangiectasia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0001627",
-        "label": "Abnormal heart morphology"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000098",
-        "label": "Tall stature"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0001513",
-        "label": "Obesity"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000256",
-        "label": "Macrocephaly"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002007",
-        "label": "Frontal bossing"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000316",
-        "label": "Hypertelorism"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002650",
-        "label": "Scoliosis"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0002119",
-        "label": "Ventriculomegaly"
-      },
-      "excluded": true
     },
     {
       "type": {
@@ -147,6 +151,12 @@
         "label": "Broad forehead"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001627",
+        "label": "Abnormal heart morphology"
+      }
     },
     {
       "type": {
@@ -214,7 +224,7 @@
   ],
   "interpretations": [
     {
-      "id": "P13",
+      "id": "lLajz9B2VNWCPdU5n3Ejc61m",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -226,8 +236,10 @@
             "subjectOrBiosampleId": "P13",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_wRLnrhkCpziKdrfzHzduKApPw",
+                "id": "c3769AtoT_SETD2_NM_014159v7",
                 "geneContext": {
                   "valueId": "HGNC:18420",
                   "symbol": "SETD2"
@@ -240,12 +252,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000003.12:g.47120867T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_054878.5:p.(Asn1257Tyr)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": "47120867",
+                  "pos": 47120867,
                   "ref": "T",
                   "alt": "A"
                 },
@@ -270,55 +286,54 @@
     }
   ],
   "metaData": {
-    "created": "2024-12-02T13:35:00.824035167Z",
-    "createdBy": "ORCID:0000-0002-0736-9199",
+    "created": "2026-01-01T16:40:00.264928Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:37372360",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/37372360",
         "description": "Clinical Heterogeneity and Different Phenotypes in Patients with SETD2 Variants: 18 New Patients and Review of the Literature"
       }
     ]

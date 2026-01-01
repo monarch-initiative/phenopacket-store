@@ -38,7 +38,7 @@
   ],
   "interpretations": [
     {
-      "id": "VA2C9l5iTcSP8UGuvryZOwre",
+      "id": "nS67NxKDDJa0mrsp7Xa0IEeM",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -46,6 +46,47 @@
           "label": "Fanconi anemia, complementation group C"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "first patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c455dup_FANCC_NM_000136v3",
+                "geneContext": {
+                  "valueId": "HGNC:3584",
+                  "symbol": "FANCC"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000136.3:c.455dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.95172042dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000127.2:p.(Asn152LysfsTer9)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 95172037,
+                  "ref": "A",
+                  "alt": "AT"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "first patient",
             "interpretationStatus": "CAUSATIVE",
@@ -106,14 +147,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-25T11:43:16.955938Z",
+    "created": "2026-01-01T16:02:45.915686Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
