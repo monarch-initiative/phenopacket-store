@@ -358,7 +358,7 @@
   ],
   "interpretations": [
     {
-      "id": "hJerGR6TZiFbMiv5asPfjtQx",
+      "id": "mqr0B99oo4voO1WzMVmOAE1m",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -366,6 +366,47 @@
           "label": "Intellectual developmental disorder, autosomal recessive 81"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Inividual 5-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c4955GtoA_ASCC3_NM_006828v4",
+                "geneContext": {
+                  "valueId": "HGNC:18697",
+                  "symbol": "ASCC3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006828.4:c.4955G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.100606829C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006819.2:p.(Gly1652Asp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 100606829,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Inividual 5-1",
             "interpretationStatus": "CAUSATIVE",
@@ -420,14 +461,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-09T04:53:25.598231Z",
+    "created": "2026-01-01T12:47:06.916802Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

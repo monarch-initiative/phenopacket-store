@@ -129,7 +129,7 @@
   ],
   "interpretations": [
     {
-      "id": "V9Wcx756a6gFtOFPhVBcVVWd",
+      "id": "LzqwfqdHtDiusDXXDHQo3LxY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -137,6 +137,47 @@
           "label": "Hemophagocytic lymphohistiocytosis, familial, 2"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1122GtoA_PRF1_NM_001083116v3",
+                "geneContext": {
+                  "valueId": "HGNC:9360",
+                  "symbol": "PRF1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001083116.3:c.1122G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000010.11:g.70598599C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001076585.1:p.(Trp374Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr10",
+                  "pos": 70598599,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Case 2",
             "interpretationStatus": "CAUSATIVE",
@@ -196,14 +237,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T08:32:41.874549Z",
+    "created": "2026-01-01T12:47:34.833265Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

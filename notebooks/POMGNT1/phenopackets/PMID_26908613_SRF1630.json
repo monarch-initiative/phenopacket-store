@@ -55,7 +55,7 @@
   ],
   "interpretations": [
     {
-      "id": "SAhEC6EiiShDvs24ryucR9xE",
+      "id": "5aHGeZ6CDnaA7E4OBKu8j6df",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -63,6 +63,47 @@
           "label": "Retinitis pigmentosa 76"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "SRF1630",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1505GtoC_POMGNT1_NM_017739v4",
+                "geneContext": {
+                  "valueId": "HGNC:19139",
+                  "symbol": "POMGNT1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017739.4:c.1505G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.46192132C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060209.4:p.(Gly502Ala)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 46192132,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "SRF1630",
             "interpretationStatus": "CAUSATIVE",
@@ -123,14 +164,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-19T09:26:04.331016Z",
+    "created": "2026-01-01T12:22:49.565800Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

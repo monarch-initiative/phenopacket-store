@@ -73,13 +73,56 @@
   ],
   "interpretations": [
     {
-      "id": "71b01z2NULZZhjcwZ2Lv8yAr",
+      "id": "LWIu2q6j2ydvuKkXfWEZV3uE",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:609192",
           "label": "Loeys-Dietz syndrome 1"
-        }
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case report",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1445GtoA_TGFBR1_NM_004612v4",
+                "geneContext": {
+                  "valueId": "HGNC:11772",
+                  "symbol": "TGFBR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004612.4:c.1445G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.99149238G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004603.1:p.(Arg482Lys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 99149238,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -97,14 +140,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-02T14:49:16.524292Z",
+    "created": "2026-01-01T12:52:40.783457Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

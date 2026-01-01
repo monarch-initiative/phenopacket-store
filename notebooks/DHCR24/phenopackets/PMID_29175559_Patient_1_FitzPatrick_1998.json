@@ -143,7 +143,7 @@
   ],
   "interpretations": [
     {
-      "id": "xiuuwzYg2gTATrfX9PwTUh8u",
+      "id": "OSzbYtsKvE9LWq73HaPlpTrS",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -191,6 +191,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 1 FitzPatrick 1998",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1412AtoC_DHCR24_NM_014762v4",
+                "geneContext": {
+                  "valueId": "HGNC:2859",
+                  "symbol": "DHCR24"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014762.4:c.1412A>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.54852372T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055577.1:p.(Tyr471Ser)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 54852372,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -205,14 +246,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-24T05:46:19.995952Z",
+    "created": "2026-01-01T12:24:22.996664Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

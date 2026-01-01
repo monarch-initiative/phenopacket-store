@@ -162,7 +162,7 @@
   ],
   "interpretations": [
     {
-      "id": "UD8HUq77ygQ01CbZsryZdd0Y",
+      "id": "8iG4QvGFesH7nXmUdKN8ZZPF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -170,6 +170,47 @@
           "label": "CODAS syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1392GtoA_LONP1_NM_004793v4",
+                "geneContext": {
+                  "valueId": "HGNC:9479",
+                  "symbol": "LONP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004793.4:c.1392G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.5700903C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004784.2:p.(Trp464Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 5700903,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 7",
             "interpretationStatus": "CAUSATIVE",
@@ -229,14 +270,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-09T14:56:34.413863Z",
+    "created": "2026-01-01T12:53:11.412518Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

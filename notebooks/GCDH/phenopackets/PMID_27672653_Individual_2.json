@@ -106,7 +106,7 @@
   ],
   "interpretations": [
     {
-      "id": "QyuMI4eGGNQDazhz1SzPxF3K",
+      "id": "TlNhI0Gale3y6QXYFn41vzvv",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,6 +114,47 @@
           "label": "Glutaricaciduria, type I"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1168GtoT_GCDH_NM_000159v4",
+                "geneContext": {
+                  "valueId": "HGNC:4189",
+                  "symbol": "GCDH"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000159.4:c.1168G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.12897788G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000150.1:p.(Gly390Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 12897788,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual 2",
             "interpretationStatus": "CAUSATIVE",
@@ -173,14 +214,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-26T15:15:37.693887Z",
+    "created": "2026-01-01T11:43:08.024706Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

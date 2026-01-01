@@ -45,7 +45,7 @@
   ],
   "interpretations": [
     {
-      "id": "1asID7zsCi7gAP6P2Wm0DrMD",
+      "id": "P4TMT7y4OseFVm1c8ViRX64I",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -53,6 +53,47 @@
           "label": "Microcephaly 3, primary, autosomal recessive"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "BRC081",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c4604_1GtoC_CDK5RAP2_NM_018249v6",
+                "geneContext": {
+                  "valueId": "HGNC:18672",
+                  "symbol": "CDK5RAP2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_018249.6:c.4604+1G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.120409126C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060719.4:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 120409126,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "BRC081",
             "interpretationStatus": "CAUSATIVE",
@@ -107,14 +148,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T08:16:06.659273Z",
+    "created": "2026-01-01T11:43:37.292013Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

@@ -215,7 +215,7 @@
   ],
   "interpretations": [
     {
-      "id": "ZtLh49Ag6ZKTTOu0lEmF209f",
+      "id": "1DVYlLDL8oFPO9Jbl28LnOEr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -223,6 +223,47 @@
           "label": "Rothmund-Thomson syndrome, type 4"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual F3.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c588_2214AtoG_DNA2_NM_001080449v3",
+                "geneContext": {
+                  "valueId": "HGNC:2939",
+                  "symbol": "DNA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001080449.3:c.588-2214A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000010.11:g.68461449T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001073918.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr10",
+                  "pos": 68461449,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual F3.1",
             "interpretationStatus": "CAUSATIVE",
@@ -266,14 +307,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-24T17:37:41.572754Z",
+    "created": "2026-01-01T12:25:56.168961Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

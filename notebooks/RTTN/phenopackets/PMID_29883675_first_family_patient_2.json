@@ -64,7 +64,7 @@
   ],
   "interpretations": [
     {
-      "id": "p12RYIEtixCnkxaoLSN3wBJe",
+      "id": "Ac4auNBL1qtVfskWZ6Tcz2MF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -72,6 +72,47 @@
           "label": "Microcephaly, short stature, and polymicrogyria with seizures"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "first family patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c3714AtoG_RTTN_NM_173630v4",
+                "geneContext": {
+                  "valueId": "HGNC:18654",
+                  "symbol": "RTTN"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_173630.4:c.3714A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.70109687T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_775901.3:p.(Gln1238=)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr18",
+                  "pos": 70109687,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "first family patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -132,14 +173,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-16T05:29:45.421018Z",
+    "created": "2026-01-01T12:28:11.225961Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

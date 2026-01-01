@@ -73,7 +73,7 @@
   ],
   "interpretations": [
     {
-      "id": "av7xMqqR82r8Xi4YIfTMT0hU",
+      "id": "KfjrbcLfH394e2rvq3wQ2sGq",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -81,6 +81,47 @@
           "label": "Spastic paraplegia 76, autosomal recessive"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family C IV-7",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c407del_CAPN1_NM_005186v4",
+                "geneContext": {
+                  "valueId": "HGNC:1476",
+                  "symbol": "CAPN1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005186.4:c.407del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.65183543del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005177.2:p.(Pro136ArgfsTer40)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 65183541,
+                  "ref": "TC",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family C IV-7",
             "interpretationStatus": "CAUSATIVE",
@@ -140,14 +181,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T05:45:16.476813Z",
+    "created": "2026-01-01T12:23:52.596524Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

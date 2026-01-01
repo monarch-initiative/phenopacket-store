@@ -194,13 +194,56 @@
   ],
   "interpretations": [
     {
-      "id": "CakKKuhxTx30ev59p2d5iPMq",
+      "id": "4uefg8J6sDVXjrmtPaDlnAbh",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:621225",
           "label": "Congenital myopathy 26"
-        }
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c679CtoT_TUBA4A_NM_006000v3",
+                "geneContext": {
+                  "valueId": "HGNC:12407",
+                  "symbol": "TUBA4A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006000.3:c.679C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.219251020G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005991.1:p.(Leu227Phe)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 219251020,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -219,14 +262,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-07T17:21:55.542083Z",
+    "created": "2026-01-01T12:40:49.529679Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
