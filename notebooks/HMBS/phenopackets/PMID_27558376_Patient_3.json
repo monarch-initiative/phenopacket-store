@@ -111,7 +111,7 @@
   ],
   "interpretations": [
     {
-      "id": "dpaWWs0VVwsOER5Kly64mf9D",
+      "id": "QgeRd7PILhdg3ad0hPW4JpDZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -119,6 +119,47 @@
           "label": "Leukoencephalopathy, porphyria-related"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c674GtoA_HMBS_NM_000190v4",
+                "geneContext": {
+                  "valueId": "HGNC:4982",
+                  "symbol": "HMBS"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000190.4:c.674G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.119092426G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000181.2:p.(Arg225Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 119092426,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
@@ -178,14 +219,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-02T13:31:34.755218Z",
+    "created": "2026-01-01T09:42:32.244062Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

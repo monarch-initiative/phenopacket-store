@@ -452,7 +452,7 @@
   ],
   "interpretations": [
     {
-      "id": "86eSH2OtcYHhTkmdFSGFIIeB",
+      "id": "q14tnSyuCUrinFJgCVx8VCod",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -500,6 +500,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient O1504902",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1385TtoC_LZTR1_NM_006767v4",
+                "geneContext": {
+                  "valueId": "HGNC:6742",
+                  "symbol": "LZTR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006767.4:c.1385T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.20993955T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006758.2:p.(Ile462Thr)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 20993955,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -514,14 +555,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-11T05:22:05.237616Z",
+    "created": "2026-01-01T09:37:07.754337Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

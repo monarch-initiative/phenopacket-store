@@ -319,7 +319,7 @@
   ],
   "interpretations": [
     {
-      "id": "g8XRmGlxodqo6G5Y3cCCYCx9",
+      "id": "WdnSzv9LjkPi7qD5T8ZI695F",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -327,6 +327,47 @@
           "label": "Noonan syndrome 2"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1 II-2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c628CtoT_LZTR1_NM_006767v4",
+                "geneContext": {
+                  "valueId": "HGNC:6742",
+                  "symbol": "LZTR1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006767.4:c.628C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.20989659C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006758.2:p.(Arg210Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 20989659,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 1 II-2",
             "interpretationStatus": "CAUSATIVE",
@@ -387,14 +428,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-11T05:22:05.236613Z",
+    "created": "2026-01-01T09:37:07.752722Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

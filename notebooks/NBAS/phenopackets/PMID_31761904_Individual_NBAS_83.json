@@ -20,7 +20,7 @@
   ],
   "interpretations": [
     {
-      "id": "Z3rg8cz6Km7V3mBqKzQ8w9Hx",
+      "id": "F8uZvhjFtNJPmPZ8JD2g5dDr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -28,6 +28,47 @@
           "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual NBAS 83",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2535GtoT_NBAS_NM_015909v4",
+                "geneContext": {
+                  "valueId": "HGNC:15625",
+                  "symbol": "NBAS"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015909.4:c.2535G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.15424357C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056993.2:p.(Trp845Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 15424357,
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual NBAS 83",
             "interpretationStatus": "CAUSATIVE",
@@ -82,14 +123,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-17T06:12:47.015590Z",
+    "created": "2026-01-01T09:35:57.406949Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

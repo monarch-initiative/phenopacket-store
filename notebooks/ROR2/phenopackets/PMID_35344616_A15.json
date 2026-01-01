@@ -365,7 +365,7 @@
   ],
   "interpretations": [
     {
-      "id": "d8dRqjnXfmwMyiDBiq8hrcFH",
+      "id": "3AjjEKHlUj8iQQWLpUaumwS9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -373,6 +373,47 @@
           "label": "Robinow syndrome, autosomal recessive 1"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "A15",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2215TtoC_ROR2_NM_004560v4",
+                "geneContext": {
+                  "valueId": "HGNC:10257",
+                  "symbol": "ROR2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004560.4:c.2215T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.91724279A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004551.2:p.(Phe739Leu)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 91724279,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "A15",
             "interpretationStatus": "CAUSATIVE",
@@ -427,14 +468,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-23T06:22:50.181271Z",
+    "created": "2026-01-01T09:40:47.545635Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
