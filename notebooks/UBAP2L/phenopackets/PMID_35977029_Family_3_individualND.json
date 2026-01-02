@@ -1,20 +1,33 @@
 {
-  "id": "PMID_35977029_family_3",
+  "id": "PMID_35977029_Family_3_individualND",
   "subject": {
-    "id": "family 3",
+    "id": "Family 3 individualND",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001337",
-        "label": "Tremor"
+        "id": "HP:0011968",
+        "label": "Feeding difficulties"
       }
     },
     {
       "type": {
-        "id": "HP:0011968",
-        "label": "Feeding difficulties"
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001511",
+        "label": "Intrauterine growth retardation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007018",
+        "label": "Attention deficit hyperactivity disorder"
       }
     },
     {
@@ -31,26 +44,20 @@
     },
     {
       "type": {
-        "id": "HP:0001840",
-        "label": "Metatarsus adductus"
+        "id": "HP:0001270",
+        "label": "Motor delay"
       }
     },
     {
       "type": {
-        "id": "HP:0012427",
-        "label": "Increased femoral anteversion"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001252",
-        "label": "Hypotonia"
+        "id": "HP:0002373",
+        "label": "Febrile seizure (within the age range of 3 months to 6 years)"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "family 3",
+      "id": "qcX3dw05CT7YX3XBEZqgnuvn",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -59,11 +66,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "family 3",
+            "subjectOrBiosampleId": "Family 3 individualND",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_MszUEJtLahusuYcywbwKUeHMA",
+                "id": "c562GtoT_UBAP2L_NM_014847v4",
                 "geneContext": {
                   "valueId": "HGNC:29877",
                   "symbol": "UBAP2L"
@@ -76,12 +85,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.154236583G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055662.3:p.(Gly188Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
-                  "pos": "154236583",
+                  "pos": 154236583,
                   "ref": "G",
                   "alt": "T"
                 },
@@ -111,56 +124,55 @@
     }
   ],
   "metaData": {
-    "created": "2024-03-27T07:50:42.607279062Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2026-01-02T08:14:28.540106Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
       {
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "January 4, 2023",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "hp",
-        "name": "human phenotype ontology",
-        "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-03-06",
-        "namespacePrefix": "HP",
-        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:35977029",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/35977029",
-        "description": "De novo variants in genes regulating stress granule assembly associate with neurodevelopmental disorders"
+        "description": "De novo variants in genes regulating stress granule assembly associate with neurodevelopmental disorders."
       }
     ]
   }
