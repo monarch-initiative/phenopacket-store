@@ -153,7 +153,7 @@
   ],
   "interpretations": [
     {
-      "id": "iYwJQQhY0EvSXJWzpXWFjxsP",
+      "id": "R028o2XYysIgASP4BznOIRio",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -161,6 +161,47 @@
           "label": "Hypomagnesemia 3, renal"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F3.4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c120CtoG_CLDN16_NM_006580v4",
+                "geneContext": {
+                  "valueId": "HGNC:2037",
+                  "symbol": "CLDN16"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006580.4:c.120C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.190402342C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006571.2:p.(Ser40Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 190402342,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "F3.4",
             "interpretationStatus": "CAUSATIVE",
@@ -220,14 +261,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T13:58:23.601017Z",
+    "created": "2026-01-02T16:08:18.290201Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

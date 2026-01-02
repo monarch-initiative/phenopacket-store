@@ -68,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "7PSpLo4BUT8VMoSf3oTlSUy4",
+      "id": "FOXx0JymZMLlPJSAaCTaMilK",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -76,6 +76,47 @@
           "label": "Leber congenital amaurosis 6"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual 827-1591",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2367_23del_RPGRIP1_NM_020366v4",
+                "geneContext": {
+                  "valueId": "HGNC:13436",
+                  "symbol": "RPGRIP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020366.4:c.2367+23del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.21325406del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065099.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 21325404,
+                  "ref": "AG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "individual 827-1591",
             "interpretationStatus": "CAUSATIVE",
@@ -135,14 +176,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-17T10:52:36.983827Z",
+    "created": "2026-01-02T16:09:02.551081Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

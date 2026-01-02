@@ -170,7 +170,7 @@
   ],
   "interpretations": [
     {
-      "id": "XopqzeXKAWNsLZJzhSCztDGz",
+      "id": "h4lxtMpiK1gVKGpwdbtQABee",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -178,6 +178,47 @@
           "label": "Arrhythmogenic cardiomyopathy with variable ectodermal abnormalities"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 5 II.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2396GtoC_PPP1R13L_NM_006663v4",
+                "geneContext": {
+                  "valueId": "HGNC:18838",
+                  "symbol": "PPP1R13L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006663.4:c.2396G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.45382579C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006654.2:p.(Trp799Ser)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 45382579,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 5 II.2",
             "interpretationStatus": "CAUSATIVE",
@@ -237,14 +278,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-19T06:08:47.907038Z",
+    "created": "2026-01-02T16:07:48.418295Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
