@@ -276,7 +276,7 @@
   ],
   "interpretations": [
     {
-      "id": "KzCs5BtKGBSDQzCDOrinvDAi",
+      "id": "75n3c4yf1gIOzDLnNWSd7JWk",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -284,6 +284,47 @@
           "label": "Fischer-Zirnsak progeroid syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "affected individual II-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c255_258dup_SUPT7L_NM_014860v3",
+                "geneContext": {
+                  "valueId": "HGNC:30632",
+                  "symbol": "SUPT7L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_014860.3:c.255_258dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.27661145_27661148dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_055675.1:p.(Asn87ProfsTer12)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 27661144,
+                  "ref": "T",
+                  "alt": "TCTGG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "affected individual II-1",
             "interpretationStatus": "CAUSATIVE",
@@ -344,14 +385,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-19T13:23:58.630816Z",
+    "created": "2026-01-02T08:24:25.875366Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

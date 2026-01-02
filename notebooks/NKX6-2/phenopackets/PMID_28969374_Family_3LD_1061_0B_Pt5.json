@@ -106,7 +106,7 @@
   ],
   "interpretations": [
     {
-      "id": "m1oZgxAuCQlFvfnw36qqJmiZ",
+      "id": "kwypBG4eePACqKofs9xFHdcr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -114,6 +114,47 @@
           "label": "Spastic ataxia 8, autosomal recessive, with hypomyelinating leukodystrophy"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 3LD_1061.0B Pt5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c589CtoT_NKX6-2_NM_177400v3",
+                "geneContext": {
+                  "valueId": "HGNC:19321",
+                  "symbol": "NKX6-2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_177400.3:c.589C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000010.11:g.132785161G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_796374.2:p.(Gln197Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr10",
+                  "pos": 132785161,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 3LD_1061.0B Pt5",
             "interpretationStatus": "CAUSATIVE",
@@ -173,14 +214,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T06:45:52.761136Z",
+    "created": "2026-01-01T16:49:40.225816Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

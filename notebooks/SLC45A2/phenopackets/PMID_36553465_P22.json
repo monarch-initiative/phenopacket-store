@@ -105,7 +105,7 @@
   ],
   "interpretations": [
     {
-      "id": "l1evxh4cb8IA0KvelLkhCegr",
+      "id": "PCT83EZ6V4vx7h50G0JQA1uf",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,6 +113,47 @@
           "label": "Albinism, oculocutaneous, type IV"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P22",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1045GtoA_SLC45A2_NM_016180v5",
+                "geneContext": {
+                  "valueId": "HGNC:16472",
+                  "symbol": "SLC45A2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016180.5:c.1045G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.33951665C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057264.4:p.(Gly349Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 33951665,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "P22",
             "interpretationStatus": "CAUSATIVE",
@@ -167,14 +208,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-23T10:13:02.808699Z",
+    "created": "2026-01-02T08:25:40.674799Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

@@ -109,7 +109,7 @@
   ],
   "interpretations": [
     {
-      "id": "46nxP4TW3jkVjXQHvX23zSIq",
+      "id": "0eweKLZQD3x3N4QuUAk3Vpr9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -117,6 +117,47 @@
           "label": "Spondyloepimetaphyseal dysplasia with joint laxity, type 1, with or without fractures"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "family F1 subject P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1AtoG_B3GALT6_NM_080605v4",
+                "geneContext": {
+                  "valueId": "HGNC:17978",
+                  "symbol": "B3GALT6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_080605.4:c.1A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.1232279A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_542172.2:p.(Met1?)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 1232279,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "family F1 subject P1",
             "interpretationStatus": "CAUSATIVE",
@@ -171,14 +212,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-13T11:08:24.571179Z",
+    "created": "2026-01-02T08:25:16.219472Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

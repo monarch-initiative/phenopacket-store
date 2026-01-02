@@ -200,7 +200,7 @@
   ],
   "interpretations": [
     {
-      "id": "s5PsGrLoSGZXXTj9c9POICTJ",
+      "id": "h7SWLcnEK2tQKKuWWy28UWvJ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -208,6 +208,47 @@
           "label": "Ehlers-Danlos syndrome, spondylodysplastic type, 2"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "family F9 subject P10",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c588del_B3GALT6_NM_080605v4",
+                "geneContext": {
+                  "valueId": "HGNC:17978",
+                  "symbol": "B3GALT6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_080605.4:c.588del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.1232866del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_542172.2:p.(Arg197AlafsTer81)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 1232859,
+                  "ref": "CG",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "family F9 subject P10",
             "interpretationStatus": "CAUSATIVE",
@@ -262,14 +303,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-13T11:06:51.679208Z",
+    "created": "2026-01-02T08:24:56.483437Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

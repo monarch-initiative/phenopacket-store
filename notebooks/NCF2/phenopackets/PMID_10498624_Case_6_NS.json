@@ -65,7 +65,7 @@
   ],
   "interpretations": [
     {
-      "id": "pq8hLpcbxHaOYY9R2ztubqv3",
+      "id": "fvD3OEdcf3x9o1esBXrXQlrj",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -73,6 +73,47 @@
           "label": "Chronic granulomatous disease 2, autosomal recessive"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 6 NS",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c55_63del_NCF2_NM_000433v4",
+                "geneContext": {
+                  "valueId": "HGNC:7661",
+                  "symbol": "NCF2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000433.4:c.55_63del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.183590271_183590279del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000424.2:p.(Lys19_Asp21del)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 183590266,
+                  "ref": "AGTCCTTCTT",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Case 6 NS",
             "interpretationStatus": "CAUSATIVE",
@@ -132,14 +173,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-16T10:38:56.640343Z",
+    "created": "2026-01-02T08:23:56.485962Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
