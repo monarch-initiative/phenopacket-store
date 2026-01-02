@@ -88,7 +88,7 @@
   ],
   "interpretations": [
     {
-      "id": "aWa0kq2KTLZ0BFULeTa8bWal",
+      "id": "umM2zBO0pQlg8UWqhA3TcKfd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -96,6 +96,47 @@
           "label": "Multiple mitochondrial dysfunctions syndrome 7"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c293_2_293_1insT_GCSH_NM_004483v5",
+                "geneContext": {
+                  "valueId": "HGNC:4208",
+                  "symbol": "GCSH"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004483.5:c.293-2_293-1insT"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.81084595_81084596insA"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004474.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 81084595,
+                  "ref": "C",
+                  "alt": "CA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -155,14 +196,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-28T20:43:37.956020Z",
+    "created": "2026-01-02T20:20:39.858098Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

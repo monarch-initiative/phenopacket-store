@@ -102,7 +102,7 @@
   ],
   "interpretations": [
     {
-      "id": "2jkz5gNl0ys9hYnrbPlV92Hs",
+      "id": "DBbMXq1pQAfulPV1BdzW2NIX",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -110,6 +110,47 @@
           "label": "Lipodystrophy, congenital generalized, type 5"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Proband 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c996del_PCYT1A_NM_001312673v2",
+                "geneContext": {
+                  "valueId": "HGNC:8754",
+                  "symbol": "PCYT1A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001312673.2:c.996del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.196238800del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001299602.1:p.(Ser333LeufsTer164)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 196238795,
+                  "ref": "AG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Proband 2",
             "interpretationStatus": "CAUSATIVE",
@@ -169,14 +210,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-22T06:09:40.377421Z",
+    "created": "2026-01-02T20:49:41.166041Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

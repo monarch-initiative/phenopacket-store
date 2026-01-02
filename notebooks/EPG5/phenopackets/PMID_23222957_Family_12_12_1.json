@@ -117,7 +117,7 @@
   ],
   "interpretations": [
     {
-      "id": "vLCQ0koCJdVULHVofjzSLj1T",
+      "id": "G9aVejHR0HtzAL8Swuj0JDCZ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -125,6 +125,47 @@
           "label": "Vici syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 12 12.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c6112TtoC_EPG5_NM_020964v3",
+                "geneContext": {
+                  "valueId": "HGNC:29331",
+                  "symbol": "EPG5"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020964.3:c.6112T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.45870680A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_066015.2:p.(Cys2038Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr18",
+                  "pos": 45870680,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 12 12.1",
             "interpretationStatus": "CAUSATIVE",
@@ -179,14 +220,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-25T11:38:39.307477Z",
+    "created": "2026-01-02T20:30:30.556632Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

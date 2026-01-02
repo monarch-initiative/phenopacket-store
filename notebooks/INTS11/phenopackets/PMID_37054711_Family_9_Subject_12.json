@@ -221,7 +221,7 @@
   ],
   "interpretations": [
     {
-      "id": "KT1egD9je21aP9G0S2JMR5zf",
+      "id": "E7rPJwGM0SKyIkqCknJqxInl",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -229,6 +229,47 @@
           "label": "Neurodevelopmental disorder with motor and language delay, ocular defects, and brain abnormalities"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 9 Subject 12",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c649CtoT_INTS11_NM_017871v6",
+                "geneContext": {
+                  "valueId": "HGNC:26052",
+                  "symbol": "INTS11"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017871.6:c.649C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.1314877G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060341.2:p.(Arg217Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 1314877,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 9 Subject 12",
             "interpretationStatus": "CAUSATIVE",
@@ -283,14 +324,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-06T09:47:48.331818Z",
+    "created": "2026-01-02T20:37:58.960071Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

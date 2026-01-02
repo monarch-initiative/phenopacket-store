@@ -72,7 +72,7 @@
   ],
   "interpretations": [
     {
-      "id": "leFH7vTvUDP1v1gRSRB01JJa",
+      "id": "aaXfgfok3hW4vYU4OydLi5nr",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -80,6 +80,47 @@
           "label": "Spondyloepimetaphyseal dysplasia, Guo-Campeau type"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c895TtoC_ERI1_NM_153332v4",
+                "geneContext": {
+                  "valueId": "HGNC:23994",
+                  "symbol": "ERI1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_153332.4:c.895T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.9029879T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_699163.2:p.(Ser299Pro)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": 9029879,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual 3",
             "interpretationStatus": "CAUSATIVE",
@@ -140,14 +181,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-25T11:18:54.775985Z",
+    "created": "2026-01-02T20:26:01.873733Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

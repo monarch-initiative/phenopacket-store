@@ -1,7 +1,7 @@
 {
-  "id": "PMID_37619988_na",
+  "id": "PMID_37619988_affected_fetus",
   "subject": {
-    "id": "na",
+    "id": "affected fetus",
     "vitalStatus": {
       "status": "DECEASED"
     },
@@ -107,7 +107,7 @@
   ],
   "interpretations": [
     {
-      "id": "ZO6trfTsc7KZqM4zud5tEX2o",
+      "id": "EXKIORTjQd78PkdozwbwZqzz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -116,7 +116,7 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "na",
+            "subjectOrBiosampleId": "affected fetus",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
@@ -155,6 +155,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "affected fetus",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c691CtoT_RAB34_NM_031934v6",
+                "geneContext": {
+                  "valueId": "HGNC:16519",
+                  "symbol": "RAB34"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_031934.6:c.691C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.28714814G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_114140.4:p.(Arg231Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": 28714814,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -175,14 +216,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-23T05:56:56.059023Z",
+    "created": "2026-01-02T20:51:11.400130Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

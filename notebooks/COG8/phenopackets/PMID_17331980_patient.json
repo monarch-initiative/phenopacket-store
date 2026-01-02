@@ -305,7 +305,7 @@
   ],
   "interpretations": [
     {
-      "id": "LvkNROz7KmY8JOA9Ltkv1ZTV",
+      "id": "9mIfm8EHeapcMnvaIwS8zZ68",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -353,6 +353,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1687_1688del_COG8_NM_032382v5",
+                "geneContext": {
+                  "valueId": "HGNC:18623",
+                  "symbol": "COG8"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_032382.5:c.1687_1688del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.69330992_69330993del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_115758.3:p.(Phe563HisfsTer4)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 69330989,
+                  "ref": "GAA",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -372,14 +413,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T15:12:18.022611Z",
+    "created": "2026-01-02T20:40:43.650098Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

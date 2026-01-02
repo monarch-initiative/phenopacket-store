@@ -152,7 +152,7 @@
   ],
   "interpretations": [
     {
-      "id": "iRC1erYDTRM9xMQlMGgCpvlh",
+      "id": "6Jbkx8piqTinDP0PLD5LS2Ki",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -160,6 +160,47 @@
           "label": "Hyper-IgE syndrome 2, autosomal recessive, with recurrent infections"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 4-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1141GtoT_DOCK8_NM_203447v4",
+                "geneContext": {
+                  "valueId": "HGNC:19191",
+                  "symbol": "DOCK8"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_203447.4:c.1141G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.334240G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_982272.2:p.(Glu381Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 334240,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 4-1",
             "interpretationStatus": "CAUSATIVE",
@@ -198,14 +239,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-24T18:17:11.384886Z",
+    "created": "2026-01-02T20:23:21.483480Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

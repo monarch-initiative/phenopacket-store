@@ -57,7 +57,7 @@
   ],
   "interpretations": [
     {
-      "id": "mRF9KzV0JZCXDoZpJ9TwNus8",
+      "id": "Nc1RWa0EId6odVHNRJA93pBY",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -65,6 +65,47 @@
           "label": "Nephrotic syndrome, type 5, with or without ocular abnormalities"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual F1234 (II-1)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c4140CtoA_LAMB2_NM_002292v4",
+                "geneContext": {
+                  "valueId": "HGNC:6487",
+                  "symbol": "LAMB2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002292.4:c.4140C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.49123216G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002283.3:p.(Asn1380Lys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 49123216,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual F1234 (II-1)",
             "interpretationStatus": "CAUSATIVE",
@@ -124,14 +165,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-11T05:46:27.416385Z",
+    "created": "2026-01-02T20:19:32.150047Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

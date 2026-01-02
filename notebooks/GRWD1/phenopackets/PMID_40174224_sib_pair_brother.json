@@ -20,7 +20,7 @@
   ],
   "interpretations": [
     {
-      "id": "dNHhMbm4srQQ7dr9KAu1WCsZ",
+      "id": "aTMowsRR7SXBmJPaIKpPs9vo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -28,6 +28,47 @@
           "label": "Diarrhea 14, congenital "
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "sib pair brother",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c920AtoG_GRWD1_NM_031485v4",
+                "geneContext": {
+                  "valueId": "HGNC:21270",
+                  "symbol": "GRWD1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_031485.4:c.920A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.48451128A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_113673.3:p.(His307Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 48451128,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "sib pair brother",
             "interpretationStatus": "CAUSATIVE",
@@ -88,14 +129,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-08T07:21:51.475602Z",
+    "created": "2026-01-02T20:31:06.284540Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

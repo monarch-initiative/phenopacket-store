@@ -238,7 +238,7 @@
   ],
   "interpretations": [
     {
-      "id": "TgTmf8DNFDqQbHQMSjBvXmNT",
+      "id": "eRX3OK9xtMYPhnE7PaL0R0F8",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -246,6 +246,47 @@
           "label": "Polymicrogyria with or without vascular-type EDS"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1786CtoT_COL3A1_NM_000090v3",
+                "geneContext": {
+                  "valueId": "HGNC:2201",
+                  "symbol": "COL3A1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000090.3:c.1786C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.188997189C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000081.1:p.(Arg596Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 188997189,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Patient 4",
             "interpretationStatus": "CAUSATIVE",
@@ -300,14 +341,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-07T19:37:17.335846Z",
+    "created": "2026-01-02T20:36:34.185832Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
