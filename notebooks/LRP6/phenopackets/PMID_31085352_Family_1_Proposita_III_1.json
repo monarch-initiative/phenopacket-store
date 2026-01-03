@@ -1,0 +1,182 @@
+{
+  "id": "PMID_31085352_Family_1_Proposita_III_1",
+  "subject": {
+    "id": "Family 1 Proposita III-1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P19Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0031817",
+        "label": "Decreased circulating parathyroid hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003165",
+        "label": "Elevated circulating parathyroid hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012802",
+        "label": "Broad jaw"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011050",
+        "label": "Agenesis of permanent maxillary lateral incisor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100789",
+        "label": "Torus palatinus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004363",
+        "label": "Abnormal circulating calcium concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100529",
+        "label": "Abnormal blood phosphate concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011002",
+        "label": "Osteopetrosis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "rA40X6Oc7hUkcNZQ6iQ8XwsE",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621449",
+          "label": "Osteopetrosis, autosomal dominant 4"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1 Proposita III-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c602CtoT_LRP6_NM_002336v3",
+                "geneContext": {
+                  "valueId": "HGNC:6698",
+                  "symbol": "LRP6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002336.3:c.602C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.12203248G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002327.2:p.(Ala201Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 12203248,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621449",
+        "label": "Osteopetrosis, autosomal dominant 4"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-01-03T13:03:26.400135Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:31085352",
+        "description": "New explanation for autosomal dominant high bone mass: Mutation of low-density lipoprotein receptor-related protein 6."
+      }
+    ]
+  }
+}

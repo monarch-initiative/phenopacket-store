@@ -1,0 +1,230 @@
+{
+  "id": "PMID_40857589_P5",
+  "subject": {
+    "id": "P5",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y6M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002650",
+        "label": "Scoliosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011451",
+        "label": "Primary microcephaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000098",
+        "label": "Tall stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000957",
+        "label": "Cafe-au-lait spot"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001141",
+        "label": "Severely reduced visual acuity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100704",
+        "label": "Cerebral visual impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000400",
+        "label": "Macrotia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000340",
+        "label": "Sloping forehead"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011344",
+        "label": "Severe global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001321",
+        "label": "Cerebellar hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012110",
+        "label": "Hypoplasia of the pons"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009879",
+        "label": "Simplified gyral pattern"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "tgllxWX6HtD8aIRw4mn0oGUp",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621436",
+          "label": "Microcephaly, progressive, with simplified gyral pattern and cerebellar hypoplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P5",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c317GtoA_CRNKL1_NM_001278628v2",
+                "geneContext": {
+                  "valueId": "HGNC:15762",
+                  "symbol": "CRNKL1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001278628.2:c.317G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.20048481C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001265557.1:p.(Arg106His)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": 20048481,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621436",
+        "label": "Microcephaly, progressive, with simplified gyral pattern and cerebellar hypoplasia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011461",
+          "label": "Fetal onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-01-03T08:28:14.076365Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:40857589",
+        "description": "Recurrent de novo variants in the spliceosomal factor CRNKL1 are associated with severe microcephaly and pontocerebellar hypoplasia with seizures."
+      }
+    ]
+  }
+}
