@@ -2,14 +2,34 @@
   "id": "PMID_25802881_P79",
   "subject": {
     "id": "P79",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P11Y4M"
+      }
+    },
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001513",
-        "label": "Obesity"
-      }
+        "id": "HP:0031817",
+        "label": "Decreased circulating parathyroid hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003165",
+        "label": "Elevated circulating parathyroid hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -19,40 +39,41 @@
     },
     {
       "type": {
-        "id": "HP:0003165",
-        "label": "Elevated circulating parathyroid hormone level"
+        "id": "HP:0034282",
+        "label": "Subcutaneous ossification"
       },
       "excluded": true
-    }
-  ],
-  "measurements": [
+    },
     {
-      "assay": {
-        "id": "LOINC:35566-9",
-        "label": "Parathyrin [Mass/volume] in Serum or Plasma --baseline"
+      "type": {
+        "id": "HP:0004363",
+        "label": "Abnormal circulating calcium concentration"
       },
-      "value": {
-        "quantity": {
-          "unit": {
-            "id": "UCUM:ng/dL",
-            "label": "nanogram per deciliter"
-          },
-          "value": 40.0,
-          "referenceRange": {
-            "unit": {
-              "id": "UCUM:ng/dL",
-              "label": "nanogram per deciliter"
-            },
-            "low": 15.0,
-            "high": 55.0
-          }
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002905",
+        "label": "Hyperphosphatemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001513",
+        "label": "Obesity"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "P79",
+      "id": "HM8blnkWFMasIAYLXi2g8tAx",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -64,8 +85,10 @@
             "subjectOrBiosampleId": "P79",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "var_KtylOCsFbMPBsaLgFayyOSIaJ",
+                "id": "c979GtoA_GNAS_NM_000516v7",
                 "geneContext": {
                   "valueId": "HGNC:4392",
                   "symbol": "GNAS"
@@ -78,12 +101,16 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000020.11:g.58910342G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000507.1:p.(Glu327Lys)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr20",
-                  "pos": "58910342",
+                  "pos": 58910342,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -108,14 +135,14 @@
     }
   ],
   "metaData": {
-    "created": "2024-10-04T06:52:40.000450858Z",
-    "createdBy": "ORCID:0000-0002-5648-2155",
+    "created": "2026-01-04T21:13:11.024826Z",
+    "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2024-08-13",
+        "version": "2025-11-24",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -123,57 +150,40 @@
         "id": "geno",
         "name": "Genotype Ontology",
         "url": "http://purl.obolibrary.org/obo/geno.owl",
-        "version": "2022-03-05",
+        "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
       },
       {
-        "id": "hgnc",
-        "name": "HUGO Gene Nomenclature Committee",
-        "url": "https://www.genenames.org",
-        "version": "06/01/23",
-        "namespacePrefix": "HGNC",
-        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
         "name": "An Online Catalog of Human Genes and Genetic Disorders",
         "url": "https://www.omim.org",
-        "version": "August 1, 2024",
+        "version": "06/01/25",
         "namespacePrefix": "OMIM",
         "iriPrefix": "https://www.omim.org/entry/"
       },
       {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.obo",
-        "version": "2021-11-22",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
-      },
-      {
-        "id": "loinc",
-        "name": "Logical Observation Identifier Names and Codes",
-        "url": "https://loinc.org/",
-        "version": "2.78",
-        "namespacePrefix": "LOINC",
-        "iriPrefix": "http://purl.bioontology.org/ontology/LOINC_"
-      },
-      {
-        "id": "ucum",
-        "name": "Unified Code for Units of Measure",
-        "url": "https://ucum.org/",
-        "version": "1.7",
-        "namespacePrefix": "UCUM",
-        "iriPrefix": "https://ucum.org/UCUM_"
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:25802881",
-        "reference": "https://pubmed.ncbi.nlm.nih.gov/25802881",
-        "description": "A positive genotype-phenotype correlation in a large cohort of patients with Pseudohypoparathyroidism Type Ia and Pseudo-pseudohypoparathyroidism and 33 newly identified mutations in the GNAS gene"
+        "description": "A positive genotype-phenotype correlation in a large cohort of patients with Pseudohypoparathyroidism Type Ia and Pseudo-pseudohypoparathyroidism and 33 newly identified mutations in the GNAS gene."
       }
     ]
   }
