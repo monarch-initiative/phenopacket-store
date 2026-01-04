@@ -1,79 +1,34 @@
 {
-  "id": "PMID_10942416_Patient",
+  "id": "PMID_9854053_Sister_II_3",
   "subject": {
-    "id": "Patient",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P3Y"
-      }
-    },
+    "id": "Sister II:3",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001791",
-        "label": "Fetal ascites"
-      },
-      "onset": {
-        "gestationalAge": {
-          "weeks": 36,
-          "days": 0
-        }
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
       }
     },
     {
       "type": {
-        "id": "HP:0025671",
-        "label": "Fetal pericardial effusion"
+        "id": "HP:0001541",
+        "label": "Ascites"
       },
-      "onset": {
-        "gestationalAge": {
-          "weeks": 34,
-          "days": 0
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0001558",
-        "label": "Decreased fetal movement"
+        "id": "HP:0002039",
+        "label": "Anorexia"
       },
-      "onset": {
-        "gestationalAge": {
-          "weeks": 36,
-          "days": 0
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001433",
-        "label": "Hepatosplenomegaly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025763",
-        "label": "Positive urine anion gap"
-      }
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0032944",
         "label": "Alkaline urine"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0002150",
-        "label": "Hypercalciuria"
       }
     },
     {
@@ -98,22 +53,26 @@
       "type": {
         "id": "HP:0002900",
         "label": "Hypokalemia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
       }
+    },
+    {
+      "type": {
+        "id": "HP:0003265",
+        "label": "Neonatal hyperbilirubinemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012100",
+        "label": "Abnormal circulating creatinine concentration"
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0004918",
         "label": "Hyperchloremic metabolic acidosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P3M"
-        }
       }
     },
     {
@@ -121,35 +80,47 @@
         "id": "HP:0007430",
         "label": "Generalized edema"
       },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0034609",
+        "label": "Polychromasia"
       }
     },
     {
       "type": {
         "id": "HP:0001923",
         "label": "Reticulocytosis"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004446",
+        "label": "Stomatocytosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025066",
+        "label": "Decreased mean corpuscular volume"
       }
     },
     {
       "type": {
         "id": "HP:0001878",
         "label": "Hemolytic anemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "ahgngPcyBugljQPt9aAkkiIk",
+      "id": "GKYq5q8uZutvcogvOHNgjpmi",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -158,13 +129,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "Sister II:3",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1462GtoA_SLC4A1_NM_000342v4",
+                "id": "c2102GtoA_SLC4A1_NM_000342v4",
                 "geneContext": {
                   "valueId": "HGNC:11027",
                   "symbol": "SLC4A1"
@@ -172,21 +143,21 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000342.4:c.1462G>A"
+                    "value": "NM_000342.4:c.2102G>A"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.44257514C>T"
+                    "value": "NC_000017.11:g.44253327C>T"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_000333.1:p.(Val488Met)"
+                    "value": "NP_000333.1:p.(Gly701Asp)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": 44257514,
+                  "pos": 44253327,
                   "ref": "C",
                   "alt": "T"
                 },
@@ -209,15 +180,14 @@
         "label": "Distal renal tubular acidosis 4 with hemolytic anemia"
       },
       "onset": {
-        "gestationalAge": {
-          "weeks": 34,
-          "days": 0
+        "age": {
+          "iso8601duration": "P1Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-04T17:43:50.889258Z",
+    "created": "2026-01-04T17:43:50.889604Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -264,8 +234,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:10942416",
-        "description": "Severe hereditary spherocytosis and distal renal tubular acidosis associated with the total absence of band 3."
+        "id": "PMID:9854053",
+        "description": "Novel AE1 mutations in recessive distal renal tubular acidosis. Loss-of-function is rescued by glycophorin A."
       }
     ]
   }

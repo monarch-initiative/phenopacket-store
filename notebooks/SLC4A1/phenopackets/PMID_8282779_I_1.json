@@ -1,53 +1,19 @@
 {
-  "id": "PMID_20015879_Patient",
+  "id": "PMID_8282779_I_1",
   "subject": {
-    "id": "Patient",
-    "sex": "MALE"
+    "id": "I/1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P65Y"
+      }
+    },
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0100827",
-        "label": "Increased total lymphocyte count"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001744",
-        "label": "Splenomegaly"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P29Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001971",
-        "label": "Hypersplenism"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0012378",
-        "label": "Fatigue"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P29Y"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0010532",
-        "label": "Paroxysmal vertigo"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P29Y"
-        }
+        "id": "HP:0003573",
+        "label": "Increased total bilirubin"
       }
     },
     {
@@ -72,46 +38,34 @@
       "type": {
         "id": "HP:0025066",
         "label": "Decreased mean corpuscular volume"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0011273",
-        "label": "Anisocytosis"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
         "id": "HP:0001878",
         "label": "Hemolytic anemia"
       }
-    },
-    {
-      "type": {
-        "id": "HP:0004844",
-        "label": "Coombs-positive hemolytic anemia"
-      },
-      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "LrBjYMMDRoiCSM1kyAhLhdYj",
+      "id": "LDHbG8AClc8dNTFzUVKzjcvw",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:185020",
-          "label": "Cryohydrocytosis"
+          "id": "OMIM:612653",
+          "label": "Spherocytosis, type 4"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Patient",
+            "subjectOrBiosampleId": "I/1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c2201AtoG_SLC4A1_NM_000342v4",
+                "id": "c2464_2465insCACCCAGATG_SLC4A1_NM_000342v4",
                 "geneContext": {
                   "valueId": "HGNC:11027",
                   "symbol": "SLC4A1"
@@ -119,23 +73,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_000342.4:c.2201A>G"
+                    "value": "NM_000342.4:c.2464_2465insCACCCAGATG"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000017.11:g.44253228T>C"
+                    "value": "NC_000017.11:g.44251436_44251445dup"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_000333.1:p.(His734Arg)"
+                    "value": "NP_000333.1:p.(Val822AlafsTer71)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr17",
-                  "pos": 44253228,
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 44251435,
+                  "ref": "A",
+                  "alt": "ACATCTGGGTG"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -152,18 +106,13 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:185020",
-        "label": "Cryohydrocytosis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P29Y"
-        }
+        "id": "OMIM:612653",
+        "label": "Spherocytosis, type 4"
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-04T18:19:52.476115Z",
+    "created": "2026-01-04T18:15:53.889485Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -210,8 +159,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:20015879",
-        "description": "Cryohydrocytosis: increased activity of cation carriers in red cells from a patient with a band 3 mutation."
+        "id": "PMID:8282779",
+        "description": "Duplication of 10 nucleotides in the erythroid band 3 (AE1) gene in a kindred with hereditary spherocytosis and band 3 protein deficiency (band 3PRAGUE)."
       }
     ]
   }
