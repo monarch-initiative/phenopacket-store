@@ -1,0 +1,192 @@
+{
+  "id": "PMID_37895315_Patient_6_HTP379",
+  "subject": {
+    "id": "Patient 6 HTP379",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P74Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012021",
+        "label": "Persistent patent ductus venosus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031854",
+        "label": "Left Isomerism"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002092",
+        "label": "Pulmonary arterial hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005317",
+        "label": "Increased pulmonary vascular resistance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011671",
+        "label": "Interrupted inferior vena cava with azygous continuation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006673",
+        "label": "Reduced systolic function"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005110",
+        "label": "Atrial fibrillation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006510",
+        "label": "Chronic pulmonary obstruction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002870",
+        "label": "Obstructive sleep apnea"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "JY5IJVIRhvmlqS1zVkEZAEku",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621248",
+          "label": "Pulmonary hypertension, primary, 7"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 6 HTP379",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c499_520del_SOX17_NM_022454v4",
+                "geneContext": {
+                  "valueId": "HGNC:18122",
+                  "symbol": "SOX17"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_022454.4:c.499_520del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.54459249_54459270del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_071899.1:p.(Leu167TrpfsTer213)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": 54459238,
+                  "ref": "AGGCGGCCGCGCTGGGCCCCGAG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621248",
+        "label": "Pulmonary hypertension, primary, 7"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P54Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-01-08T09:01:51.454175Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2025-11-24",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37895315",
+        "description": "Seven Additional Patients with SOX17 Related Pulmonary Arterial Hypertension and Review of the Literature."
+      }
+    ]
+  }
+}
