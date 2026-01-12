@@ -1,77 +1,97 @@
 {
-  "id": "PMID_12149238_Individual_SM",
+  "id": "PMID_39970126_FAMILY_3_individual_F3P2_pedigree_I1",
   "subject": {
-    "id": "Individual SM",
+    "id": "FAMILY 3 individual F3P2 pedigree I1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P54Y"
+        "iso8601duration": "P75Y"
       }
     },
-    "sex": "FEMALE"
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002205",
-        "label": "Recurrent respiratory infections"
+        "id": "HP:0002913",
+        "label": "Myoglobinuria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003701",
+        "label": "Proximal muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002460",
+        "label": "Distal muscle weakness"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000099",
-        "label": "Glomerulonephritis"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
+        "id": "HP:0008942",
+        "label": "Acute rhabdomyolysis"
       }
     },
     {
       "type": {
-        "id": "HP:0032275",
-        "label": "Recurrent shingles"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0025794",
-        "label": "Reduced MHC I cell surface expression"
+        "id": "HP:0003326",
+        "label": "Myalgia"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "4QqHTkqDZagHjSml8QIuLQ5s",
+      "id": "kiRvwJz9DjYxiyRJv8jM5GB3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620814",
-          "label": "MHC class I deficiency 3"
+          "id": "OMIM:621236",
+          "label": "Rhabdomyolysis, susceptibility to, 2"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual SM",
+            "subjectOrBiosampleId": "FAMILY 3 individual F3P2 pedigree I1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "TAPBP_DEL_Alu-mediated-7.4-kb-deletion-encompassing-exons-4-through-7-of-the-TAPBP-gene",
-                "label": "Alu-mediated 7.4-kb deletion encompassing exons 4 through 7 of the TAPBP gene",
+                "id": "c1583GtoA_ATP2A2_NM_170665v4",
                 "geneContext": {
-                  "valueId": "HGNC:11566",
-                  "symbol": "TAPBP"
+                  "valueId": "HGNC:812",
+                  "symbol": "ATP2A2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_170665.4:c.1583G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.110339543G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_733765.1:p.(Arg528Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 110339543,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -83,18 +103,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620814",
-        "label": "MHC class I deficiency 3"
+        "id": "OMIM:621236",
+        "label": "Rhabdomyolysis, susceptibility to, 2"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P58Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-10T07:20:04.313690Z",
+    "created": "2026-01-07T19:48:28.945936Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -141,8 +161,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:12149238",
-        "description": "A subject with a novel type I bare lymphocyte syndrome has tapasin deficiency due to deletion of 4 exons by Alu-mediated recombination"
+        "id": "PMID:39970126",
+        "description": "Dominant rhabdomyolysis linked to a recurrent ATP2A2 variant reducing SERCA2 function in muscle."
       }
     ]
   }

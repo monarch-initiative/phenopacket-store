@@ -1,10 +1,10 @@
 {
-  "id": "PMID_12149238_Individual_SM",
+  "id": "PMID_34920454_Patient_P1",
   "subject": {
-    "id": "Individual SM",
+    "id": "Patient P1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P54Y"
+        "iso8601duration": "P16Y"
       }
     },
     "sex": "FEMALE"
@@ -12,66 +12,114 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002205",
-        "label": "Recurrent respiratory infections"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
-        "id": "HP:0000099",
-        "label": "Glomerulonephritis"
+        "id": "HP:0001973",
+        "label": "Autoimmune thrombocytopenia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P10Y10M"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0032275",
-        "label": "Recurrent shingles"
+        "id": "HP:0010702",
+        "label": "Increased circulating immunoglobulin concentration"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y10M"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0025794",
-        "label": "Reduced MHC I cell surface expression"
+        "id": "HP:0000992",
+        "label": "Cutaneous photosensitivity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y10M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000988",
+        "label": "Skin rash"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002725",
+        "label": "Systemic lupus erythematosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020151",
+        "label": "Anti-dsDNA antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001369",
+        "label": "Arthritis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y10M"
+        }
       }
     }
   ],
   "interpretations": [
     {
-      "id": "4QqHTkqDZagHjSml8QIuLQ5s",
+      "id": "F5uEhCeKLFAweDsfIth8K5B5",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620814",
-          "label": "MHC class I deficiency 3"
+          "id": "OMIM:621233",
+          "label": "Immunodysregulation with variable immunodeficiency and autoimmunity"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual SM",
+            "subjectOrBiosampleId": "Patient P1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "TAPBP_DEL_Alu-mediated-7.4-kb-deletion-encompassing-exons-4-through-7-of-the-TAPBP-gene",
-                "label": "Alu-mediated 7.4-kb deletion encompassing exons 4 through 7 of the TAPBP gene",
+                "id": "c871CtoT_IKZF2_NM_001387220v1",
                 "geneContext": {
-                  "valueId": "HGNC:11566",
-                  "symbol": "TAPBP"
+                  "valueId": "HGNC:13177",
+                  "symbol": "IKZF2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001387220.1:c.871C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.213008070G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001374149.1:p.(Arg291Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 213008070,
+                  "ref": "G",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -83,18 +131,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620814",
-        "label": "MHC class I deficiency 3"
+        "id": "OMIM:621233",
+        "label": "Immunodysregulation with variable immunodeficiency and autoimmunity"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P10Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-10T07:20:04.313690Z",
+    "created": "2026-01-08T06:56:31.847710Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -141,8 +189,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:12149238",
-        "description": "A subject with a novel type I bare lymphocyte syndrome has tapasin deficiency due to deletion of 4 exons by Alu-mediated recombination"
+        "id": "PMID:34920454",
+        "description": "Identification of germline monoallelic mutations in IKZF2 in patients with immune dysregulation."
       }
     ]
   }

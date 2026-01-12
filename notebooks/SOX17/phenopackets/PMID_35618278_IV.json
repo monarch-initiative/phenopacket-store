@@ -1,77 +1,110 @@
 {
-  "id": "PMID_12149238_Individual_SM",
+  "id": "PMID_35618278_IV",
   "subject": {
-    "id": "Individual SM",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P54Y"
-      }
-    },
+    "id": "IV",
     "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002205",
-        "label": "Recurrent respiratory infections"
+        "id": "HP:0033423",
+        "label": "Pulmonary arterial hypertension with positive acute response to NO challenge"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000099",
-        "label": "Glomerulonephritis"
+        "id": "HP:0033424",
+        "label": "Pulmonary arterial hypertension with lack of acute response to NO challenge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005317",
+        "label": "Increased pulmonary vascular resistance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001629",
+        "label": "Ventricular septal defect"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001631",
+        "label": "Atrial septal defect"
       }
     },
     {
       "type": {
-        "id": "HP:0032275",
-        "label": "Recurrent shingles"
+        "id": "HP:0001655",
+        "label": "Patent foramen ovale"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001635",
+        "label": "Congestive heart failure"
       }
     },
     {
       "type": {
-        "id": "HP:0025794",
-        "label": "Reduced MHC I cell surface expression"
-      }
+        "id": "HP:0002105",
+        "label": "Hemoptysis"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "4QqHTkqDZagHjSml8QIuLQ5s",
+      "id": "JuNI1SyGG1EXLRtnqSw0A3Po",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620814",
-          "label": "MHC class I deficiency 3"
+          "id": "OMIM:621248",
+          "label": "Pulmonary hypertension, primary, 7"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual SM",
+            "subjectOrBiosampleId": "IV",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "TAPBP_DEL_Alu-mediated-7.4-kb-deletion-encompassing-exons-4-through-7-of-the-TAPBP-gene",
-                "label": "Alu-mediated 7.4-kb deletion encompassing exons 4 through 7 of the TAPBP gene",
+                "id": "c499_520del_SOX17_NM_022454v4",
                 "geneContext": {
-                  "valueId": "HGNC:11566",
-                  "symbol": "TAPBP"
+                  "valueId": "HGNC:18122",
+                  "symbol": "SOX17"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_022454.4:c.499_520del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.54459249_54459270del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_071899.1:p.(Leu167TrpfsTer213)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": 54459238,
+                  "ref": "AGGCGGCCGCGCTGGGCCCCGAG",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -83,18 +116,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620814",
-        "label": "MHC class I deficiency 3"
+        "id": "OMIM:621248",
+        "label": "Pulmonary hypertension, primary, 7"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P44Y"
+          "iso8601duration": "P6Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-10T07:20:04.313690Z",
+    "created": "2026-01-08T09:01:51.451772Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -141,8 +174,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:12149238",
-        "description": "A subject with a novel type I bare lymphocyte syndrome has tapasin deficiency due to deletion of 4 exons by Alu-mediated recombination"
+        "id": "PMID:35618278",
+        "description": "An emerging phenotype of pulmonary arterial hypertension patients carrying SOX17 variants."
       }
     ]
   }

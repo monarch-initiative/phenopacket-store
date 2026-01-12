@@ -1,74 +1,99 @@
 {
-  "id": "PMID_12149238_Individual_SM",
+  "id": "PMID_39191256_T_7b",
   "subject": {
-    "id": "Individual SM",
-    "timeAtLastEncounter": {
-      "age": {
-        "iso8601duration": "P54Y"
-      }
-    },
-    "sex": "FEMALE"
+    "id": "T-7b",
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0002205",
-        "label": "Recurrent respiratory infections"
+        "id": "HP:0001513",
+        "label": "Obesity"
       },
       "excluded": true
     },
     {
       "type": {
-        "id": "HP:0000099",
-        "label": "Glomerulonephritis"
+        "id": "HP:0000510",
+        "label": "Rod-cone dystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007994",
+        "label": "Peripheral visual field loss"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
       },
-      "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
-        }
-      }
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0032275",
-        "label": "Recurrent shingles"
-      }
+        "id": "HP:0040293",
+        "label": "Right hemiplegia"
+      },
+      "excluded": true
     },
     {
       "type": {
-        "id": "HP:0025794",
-        "label": "Reduced MHC I cell surface expression"
-      }
+        "id": "HP:0000717",
+        "label": "Autism"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "4QqHTkqDZagHjSml8QIuLQ5s",
+      "id": "YR8NvdsBxLv5nwMXzmPXonoT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620814",
-          "label": "MHC class I deficiency 3"
+          "id": "OMIM:620996",
+          "label": "Retinitis pigmentosa 98"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Individual SM",
+            "subjectOrBiosampleId": "T-7b",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "TAPBP_DEL_Alu-mediated-7.4-kb-deletion-encompassing-exons-4-through-7-of-the-TAPBP-gene",
-                "label": "Alu-mediated 7.4-kb deletion encompassing exons 4 through 7 of the TAPBP gene",
+                "id": "NC_000011_10_g61392563GtoT",
                 "geneContext": {
-                  "valueId": "HGNC:11566",
-                  "symbol": "TAPBP"
+                  "valueId": "HGNC:25018",
+                  "symbol": "TMEM216"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.61392563G>T"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 61392563,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
                 "allelicState": {
                   "id": "GENO:0000136",
                   "label": "homozygous"
@@ -83,18 +108,19 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620814",
-        "label": "MHC class I deficiency 3"
+        "id": "OMIM:620996",
+        "label": "Retinitis pigmentosa 98"
       },
       "onset": {
-        "age": {
-          "iso8601duration": "P44Y"
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-10T07:20:04.313690Z",
+    "created": "2026-01-10T07:13:00.008568Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -141,8 +167,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:12149238",
-        "description": "A subject with a novel type I bare lymphocyte syndrome has tapasin deficiency due to deletion of 4 exons by Alu-mediated recombination"
+        "id": "PMID:39191256",
+        "description": "Substitution of a single non-coding nucleotide upstream of TMEM216 causes non-syndromic retinitis pigmentosa and is associated with reduced TMEM216 expression."
       }
     ]
   }
