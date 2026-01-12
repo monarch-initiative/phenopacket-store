@@ -192,7 +192,7 @@
     {
       "type": {
         "id": "HP:0004383",
-        "label": "Hypoplastic left heart"
+        "label": "Hypoplastic left ventricle"
       }
     },
     {
@@ -232,7 +232,7 @@
   ],
   "interpretations": [
     {
-      "id": "b0xA88lgKx8tF177RRQsH75g",
+      "id": "ujuUTOIFPCkZJmDi5lHhhtA3",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -240,43 +240,6 @@
           "label": "Heterotaxy, visceral, 14"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Family 1 II:1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c577CtoT_CIROZ_NM_001170754v2",
-                "geneContext": {
-                  "valueId": "HGNC:26730",
-                  "symbol": "CIROZ"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001170754.2:c.577C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.10957732G>A"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr1",
-                  "pos": 10957732,
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Family 1 II:1",
             "interpretationStatus": "CAUSATIVE",
@@ -297,12 +260,57 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000001.11:g.10976227G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001164225.1:p.(Thr19Met)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr1",
                   "pos": 10976227,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family 1 II:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c577CtoT_CIROZ_NM_001170754v2",
+                "geneContext": {
+                  "valueId": "HGNC:26730",
+                  "symbol": "CIROZ"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001170754.2:c.577C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.10957732G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001164225.1:p.(Arg193Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 10957732,
                   "ref": "G",
                   "alt": "A"
                 },
@@ -333,14 +341,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-04T09:27:14.715293Z",
+    "created": "2026-01-12T11:37:38.088462Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2026-01-08",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
