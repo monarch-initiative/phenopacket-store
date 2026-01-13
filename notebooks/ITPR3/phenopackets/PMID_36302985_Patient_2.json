@@ -184,7 +184,7 @@
   ],
   "interpretations": [
     {
-      "id": "HTydqHMiNRNgryTFbf7Vb9Y1",
+      "id": "kpwmAKCtKrCiX8zfPNdUXQZH",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -232,6 +232,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c4882TtoC_ITPR3_NM_002224v4",
+                "geneContext": {
+                  "valueId": "HGNC:6182",
+                  "symbol": "ITPR3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002224.4:c.4882T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.33684113T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002215.2:p.(Phe1628Leu)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 33684113,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -251,14 +292,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-24T06:05:03.180471Z",
+    "created": "2026-01-13T13:23:47.468804Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2026-01-08",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },

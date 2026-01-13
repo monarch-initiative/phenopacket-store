@@ -1,87 +1,148 @@
 {
-  "id": "PMID_37580330_P1_VI_3",
+  "id": "PMID_40802951_Patient",
   "subject": {
-    "id": "P1 VI-3",
+    "id": "Patient",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P18Y"
       }
     },
-    "sex": "UNKNOWN_SEX"
+    "sex": "MALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000528",
-        "label": "Anophthalmia"
+        "id": "HP:0030977",
+        "label": "Increased factor VIII activity"
       }
     },
     {
       "type": {
-        "id": "HP:0000568",
-        "label": "Microphthalmia"
+        "id": "HP:0040412",
+        "label": "Left ventricular thrombus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000501",
-        "label": "Glaucoma"
+        "id": "HP:0005305",
+        "label": "Cerebral venous thrombosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10D"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000618",
-        "label": "Blindness"
+        "id": "HP:0030242",
+        "label": "Portal vein thrombosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001297",
+        "label": "Stroke"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P20Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034336",
+        "label": "Splenic infarction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001409",
+        "label": "Portal hypertension"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001399",
+        "label": "Hepatic failure"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "c3w4GfqEO4l9e6lKGA9OBvbg",
+      "id": "93fdAneVEmytYVRwWhqErM2Q",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620968",
-          "label": "Microphthalmia/coloboma 13"
+          "id": "OMIM:301071",
+          "label": "Thrombophilia 13, X-linked, due to factor VIII defect"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "P1 VI-3",
+            "subjectOrBiosampleId": "Patient",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c588_18131AtoG_NHEJ1_NM_024782v3",
+                "id": "c1770GtoT_F8_NM_000132v4",
                 "geneContext": {
-                  "valueId": "HGNC:25737",
-                  "symbol": "NHEJ1"
+                  "valueId": "HGNC:3546",
+                  "symbol": "F8"
                 },
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_024782.3:c.588+18131A>G"
+                    "value": "NM_000132.4:c.1770G>T"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.219128549T>C"
+                    "value": "NC_000023.11:g.154954025C>A"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_079058.1:p.?"
+                    "value": "NP_000123.1:p.(Arg590Ser)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 219128549,
-                  "ref": "T",
-                  "alt": "C"
+                  "chrom": "chrX",
+                  "pos": 154954025,
+                  "ref": "C",
+                  "alt": "A"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
                 }
               }
             }
@@ -93,19 +154,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620968",
-        "label": "Microphthalmia/coloboma 13"
+        "id": "OMIM:301071",
+        "label": "Thrombophilia 13, X-linked, due to factor VIII defect"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P10D"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-13T13:25:31.719527Z",
+    "created": "2026-01-13T11:25:37.113418Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -152,8 +212,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:37580330",
-        "description": "IHH enhancer variant within neighboring NHEJ1 intron causes microphthalmia anophthalmia and coloboma."
+        "id": "PMID:40802951",
+        "description": "A Naturally Occurring Gain-of-Function Mutation in Factor VIII."
       }
     ]
   }

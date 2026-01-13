@@ -1,87 +1,85 @@
 {
-  "id": "PMID_37580330_P1_VI_3",
+  "id": "PMID_33275657_Family_B_I_2",
   "subject": {
-    "id": "P1 VI-3",
+    "id": "Family B I-2",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P18Y"
+        "iso8601duration": "P66Y"
       }
     },
-    "sex": "UNKNOWN_SEX"
+    "sex": "FEMALE"
   },
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0000528",
-        "label": "Anophthalmia"
+        "id": "HP:0012146",
+        "label": "Abnormality of von Willebrand factor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008151",
+        "label": "Prolonged prothrombin time"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030977",
+        "label": "Increased factor VIII activity"
       }
     },
     {
       "type": {
-        "id": "HP:0000568",
-        "label": "Microphthalmia"
+        "id": "HP:0002625",
+        "label": "Deep venous thrombosis"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P24Y"
+        }
       }
     },
     {
       "type": {
-        "id": "HP:0000501",
-        "label": "Glaucoma"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000618",
-        "label": "Blindness"
-      }
+        "id": "HP:0002204",
+        "label": "Pulmonary embolism"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "c3w4GfqEO4l9e6lKGA9OBvbg",
+      "id": "W0IXaxhFGJEsQiEc3tFFNNjT",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:620968",
-          "label": "Microphthalmia/coloboma 13"
+          "id": "OMIM:301071",
+          "label": "Thrombophilia 13, X-linked, due to factor VIII defect"
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "P1 VI-3",
+            "subjectOrBiosampleId": "Family B I-2",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c588_18131AtoG_NHEJ1_NM_024782v3",
+                "id": "F8_SV_F8_duplication_GRCh37_154229849_154253268___promoter_exon_1_intron_7",
+                "label": "F8 duplication-GRCh37:154229849-154253268)- promoter-exon 1-intron 7",
                 "geneContext": {
-                  "valueId": "HGNC:25737",
-                  "symbol": "NHEJ1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_024782.3:c.588+18131A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.219128549T>C"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_079058.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 219128549,
-                  "ref": "T",
-                  "alt": "C"
+                  "valueId": "HGNC:3546",
+                  "symbol": "F8"
                 },
                 "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
                 "allelicState": {
-                  "id": "GENO:0000136",
-                  "label": "homozygous"
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
                 }
               }
             }
@@ -93,19 +91,18 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:620968",
-        "label": "Microphthalmia/coloboma 13"
+        "id": "OMIM:301071",
+        "label": "Thrombophilia 13, X-linked, due to factor VIII defect"
       },
       "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
+        "age": {
+          "iso8601duration": "P24Y"
         }
       }
     }
   ],
   "metaData": {
-    "created": "2026-01-13T13:25:31.719527Z",
+    "created": "2026-01-13T11:25:37.113651Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -152,8 +149,8 @@
     "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
-        "id": "PMID:37580330",
-        "description": "IHH enhancer variant within neighboring NHEJ1 intron causes microphthalmia anophthalmia and coloboma."
+        "id": "PMID:33275657",
+        "description": "Partial F8 gene duplication (factor VIII Padua) associated with high factor VIII levels and familial thrombophilia."
       }
     ]
   }
