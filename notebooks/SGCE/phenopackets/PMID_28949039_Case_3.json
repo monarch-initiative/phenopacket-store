@@ -1,0 +1,212 @@
+{
+  "id": "PMID_28949039_Case_3",
+  "subject": {
+    "id": "Case 3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y"
+      }
+    },
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000473",
+        "label": "Torticollis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020020",
+        "label": "Decreased CSF 5-hydroxyindoleacetic acid concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003785",
+        "label": "Decreased CSF homovanillic acid concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003144",
+        "label": "Increased serum serotonin"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0045084",
+        "label": "Limb myoclonus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002530",
+        "label": "Axial dystonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031959",
+        "label": "Leg dystonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031960",
+        "label": "Arm dystonia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000716",
+        "label": "Depression"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000739",
+        "label": "Anxiety"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030955",
+        "label": "Addictive alcohol use"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008770",
+        "label": "Obsessive-compulsive trait"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "XXwgk7vMZQ2TjLn3FyLz1C7e",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:159900",
+          "label": "Dystonia-11, myoclonic"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c835_839del_SGCE_NM_003919v3",
+                "geneContext": {
+                  "valueId": "HGNC:10808",
+                  "symbol": "SGCE"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003919.3:c.835_839del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.94600847_94600851del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003910.1:p.(Thr279AlafsTer17)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 94600843,
+                  "ref": "CTTTGT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:159900",
+        "label": "Dystonia-11, myoclonic"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P10Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-01-14T05:15:43.814450Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-01-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:28949039",
+        "description": "Low CSF 5-HIAA in Myoclonus Dystonia."
+      }
+    ]
+  }
+}
