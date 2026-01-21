@@ -1,0 +1,184 @@
+{
+  "id": "PMID_15639475_family_112_subject_III_4",
+  "subject": {
+    "id": "family 112 subject III-4",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005133",
+        "label": "Right ventricular dilatation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001685",
+        "label": "Myocardial fibrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031317",
+        "label": "Fatty replacement of ventricular myocardial tissue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000666",
+        "label": "Right ventricular regional dyskinesia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011710",
+        "label": "Bundle branch block"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004756",
+        "label": "Ventricular tachycardia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001692",
+        "label": "Atrial arrhythmia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010872",
+        "label": "T-wave inversion"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "nXn21n7jiEBFIHqRwffSC8XQ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:107970",
+          "label": "Arrhythmogenic right ventricular dysplasia 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "family 112 subject III-4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c_30GtoA_TGFB3_NM_003239v5",
+                "geneContext": {
+                  "valueId": "HGNC:11769",
+                  "symbol": "TGFB3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003239.5:c.-30G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.75980923C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003230.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 75980923,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:107970",
+        "label": "Arrhythmogenic right ventricular dysplasia 1"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P11Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-01-21T12:47:08.383885Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-01-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:15639475",
+        "description": "Regulatory mutations in transforming growth factor-beta3 gene cause arrhythmogenic right ventricular cardiomyopathy type 1."
+      }
+    ]
+  }
+}
