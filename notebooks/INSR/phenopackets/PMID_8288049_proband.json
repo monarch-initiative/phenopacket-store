@@ -1,0 +1,179 @@
+{
+  "id": "PMID_8288049_proband",
+  "subject": {
+    "id": "proband",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000141",
+        "label": "Amenorrhea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000147",
+        "label": "Polycystic ovaries"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040270",
+        "label": "Impaired glucose tolerance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008283",
+        "label": "Fasting hyperinsulinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000855",
+        "label": "Insulin resistance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030348",
+        "label": "Increased circulating androgen concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000956",
+        "label": "Acanthosis nigricans"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025092",
+        "label": "Epidermal acanthosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001007",
+        "label": "Hirsutism"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "3ZYaC0LTwr8ClsREu2aaWc7P",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610549",
+          "label": "Diabetes mellitus, insulin-resistant, with acanthosis nigricans"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c3602GtoA_INSR_NM_000208v4",
+                "geneContext": {
+                  "valueId": "HGNC:6091",
+                  "symbol": "INSR"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000208.4:c.3602G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.7120677C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000199.2:p.(Arg1201Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 7120677,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610549",
+        "label": "Diabetes mellitus, insulin-resistant, with acanthosis nigricans"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-02-09T06:35:02.917186Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-01-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:8288049",
+        "description": "Prevalence of mutations in the insulin receptor gene in subjects with features of the type A syndrome of insulin resistance."
+      }
+    ]
+  }
+}
