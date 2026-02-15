@@ -1,0 +1,182 @@
+{
+  "id": "PMID_15031030_Family_211_individual_II_3",
+  "subject": {
+    "id": "Family 211 individual II-3",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000421",
+        "label": "Epistaxis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006548",
+        "label": "Pulmonary arteriovenous malformation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006574",
+        "label": "Hepatic arteriovenous malformation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001297",
+        "label": "Stroke"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001009",
+        "label": "Telangiectasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001217",
+        "label": "Clubbing"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012198",
+        "label": "Juvenile colonic polyposis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "NGtQmE87ATz2foGBQZDx0vds",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:175050",
+          "label": "Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 211 individual II-3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1598TtoG_SMAD4_NM_005359v6",
+                "geneContext": {
+                  "valueId": "HGNC:6770",
+                  "symbol": "SMAD4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005359.6:c.1598T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.51078406T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005350.1:p.(Leu533Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr18",
+                  "pos": 51078406,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:175050",
+        "label": "Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-02-15T12:59:01.926326Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-01-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:15031030",
+        "description": "A combined syndrome of juvenile polyposis and hereditary haemorrhagic telangiectasia associated with mutations in MADH4 (SMAD4)."
+      }
+    ]
+  }
+}
