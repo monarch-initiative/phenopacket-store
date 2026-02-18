@@ -1,0 +1,230 @@
+{
+  "id": "PMID_16276422_P2",
+  "subject": {
+    "id": "P2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y7M"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001890",
+        "label": "Autoimmune hemolytic anemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0500270",
+        "label": "Increased gamma-delta T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001888",
+        "label": "Decreased total lymphocyte count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001904",
+        "label": "Autoimmune neutropenia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001880",
+        "label": "Increased total eosinophil count"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025834",
+        "label": "Decreased PHA-induced T-cell proliferation"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001945",
+        "label": "Fever"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020102",
+        "label": "Pneumocystis jirovecii pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031692",
+        "label": "Severe cytomegalovirus infection"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006515",
+        "label": "Interstitial pneumonitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004385",
+        "label": "Protracted diarrhea"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "rmhprv5JqcPPtMi1JWzo6h54",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:609889",
+          "label": "Alpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2942AtoC_RAG1_NM_000448v3",
+                "geneContext": {
+                  "valueId": "HGNC:9831",
+                  "symbol": "RAG1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000448.3:c.2942A>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.36576246A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000439.2:p.(Gln981Pro)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 36576246,
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:609889",
+        "label": "Alpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003593",
+          "label": "Infantile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-02-18T04:56:20.605962Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:16276422",
+        "description": "A novel immunodeficiency associated with hypomorphic RAG1 mutations and CMV infection."
+      }
+    ]
+  }
+}

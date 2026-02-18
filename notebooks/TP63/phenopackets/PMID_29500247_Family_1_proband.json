@@ -1,0 +1,168 @@
+{
+  "id": "PMID_29500247_Family_1_proband",
+  "subject": {
+    "id": "Family 1 proband",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y6M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100333",
+        "label": "Unilateral cleft lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100334",
+        "label": "Unilateral cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000968",
+        "label": "Ectodermal dysplasia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001627",
+        "label": "Abnormal heart morphology"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100257",
+        "label": "Ectrodactyly"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "9qP12PAaU0BZ5y6zg5QcDJJF",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:618149",
+          "label": "Orofacial cleft 8"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1 proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c819_820dup_TP63_NM_003722v5",
+                "geneContext": {
+                  "valueId": "HGNC:15979",
+                  "symbol": "TP63"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003722.5:c.819_820dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.189866734_189866735dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003713.3:p.(Gln274ProfsTer4)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 189866732,
+                  "ref": "G",
+                  "alt": "GCC"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:618149",
+        "label": "Orofacial cleft 8"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-02-18T05:44:02.468223Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:29500247",
+        "description": "Whole exome sequencing identifies mutations in 10% of patients with familial non-syndromic cleft lip and/or palate in genes mutated in well-known syndromes"
+      }
+    ]
+  }
+}
