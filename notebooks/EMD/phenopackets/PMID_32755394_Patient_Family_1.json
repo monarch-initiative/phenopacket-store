@@ -1,0 +1,236 @@
+{
+  "id": "PMID_32755394_Patient_Family_1",
+  "subject": {
+    "id": "Patient Family 1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P63Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0025406",
+        "label": "Asthenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012665",
+        "label": "Moderately reduced left ventricular ejection fraction"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011704",
+        "label": "Sick sinus syndrome"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P53Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001663",
+        "label": "Ventricular fibrillation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025478",
+        "label": "Atrial standstill"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005110",
+        "label": "Atrial fibrillation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P53Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011664",
+        "label": "Left ventricular noncompaction cardiomyopathy"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031295",
+        "label": "Left atrial enlargement"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030718",
+        "label": "Right atrial enlargement"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P63Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034392",
+        "label": "Joint contracture"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "EEh4PeIiG7lzlkD1OsegXO1b",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301163",
+          "label": "Cardiomyopathy, dilated, 3C"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient Family 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1AtoG_EMD_NM_000117v3",
+                "geneContext": {
+                  "valueId": "HGNC:3331",
+                  "symbol": "EMD"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000117.3:c.1A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.154379485A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000108.1:p.(Met1?)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 154379485,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301163",
+        "label": "Cardiomyopathy, dilated, 3C"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P53Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-03-03T19:26:37.722443Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:32755394",
+        "description": "Cardiac Emerinopathy: A Nonsyndromic Nuclear Envelopathy With Increased Risk of Thromboembolic Stroke Due to Progressive Atrial Standstill and Left Ventricular Noncompaction."
+      }
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "PMID_40065010_individual_V_24",
+  "subject": {
+    "id": "individual V:24",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P38Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0012665",
+        "label": "Moderately reduced left ventricular ejection fraction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6001073",
+        "label": "Left ventricular apical dyskinesis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011711",
+        "label": "Left anterior fascicular block"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004756",
+        "label": "Ventricular tachycardia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006682",
+        "label": "Premature ventricular contraction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010872",
+        "label": "T-wave inversion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:4000141",
+        "label": "Left ventricular dilatation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031295",
+        "label": "Left atrial enlargement"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0040081",
+        "label": "Abnormal circulating creatine kinase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032235",
+        "label": "Anti-La/SS-B antibody positivity"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "eWPY82Za89Ol8uHDNHdYP27C",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301163",
+          "label": "Cardiomyopathy, dilated, 3C"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "individual V:24",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c23CtoG_EMD_NM_000117v3",
+                "geneContext": {
+                  "valueId": "HGNC:3331",
+                  "symbol": "EMD"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000117.3:c.23C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.154379507C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000108.1:p.(Ser8Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 154379507,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301163",
+        "label": "Cardiomyopathy, dilated, 3C"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P29Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-03-03T19:26:37.722859Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:40065010",
+        "description": "EMD missense variant causes X-linked isolated dilated cardiomyopathy with myocardial emerin deficiency."
+      }
+    ]
+  }
+}

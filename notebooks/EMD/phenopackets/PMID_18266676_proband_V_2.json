@@ -1,0 +1,251 @@
+{
+  "id": "PMID_18266676_proband_V_2",
+  "subject": {
+    "id": "proband V.2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0002321",
+        "label": "Vertigo"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001288",
+        "label": "Gait disturbance"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011704",
+        "label": "Sick sinus syndrome"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011705",
+        "label": "First degree atrioventricular block"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001962",
+        "label": "Palpitations"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005155",
+        "label": "Ventricular escape rhythm"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004754",
+        "label": "Permanent atrial fibrillation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P40Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004757",
+        "label": "Paroxysmal atrial fibrillation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004749",
+        "label": "Atrial flutter"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006699",
+        "label": "Premature atrial contractions"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003552",
+        "label": "Muscle stiffness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003198",
+        "label": "Myopathy"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "1wlHvtNf9irHCfYpas0csiU1",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:301163",
+          "label": "Cardiomyopathy, dilated, 3C"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband V.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c110_112del_EMD_NM_000117v3",
+                "geneContext": {
+                  "valueId": "HGNC:3331",
+                  "symbol": "EMD"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000117.3:c.110_112del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.154379717_154379719del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000108.1:p.(Lys37del)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 154379710,
+                  "ref": "GAGA",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:301163",
+        "label": "Cardiomyopathy, dilated, 3C"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-03-03T19:26:37.722008Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:18266676",
+        "description": "X-linked nonsyndromic sinus node dysfunction and atrial fibrillation caused by emerin mutation."
+      }
+    ]
+  }
+}
