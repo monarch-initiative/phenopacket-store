@@ -1,0 +1,159 @@
+{
+  "id": "PMID_11917274_Individual_II_4",
+  "subject": {
+    "id": "Individual II-4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P20Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007780",
+        "label": "Cortical pulverulent cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100018",
+        "label": "Nuclear cataract"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010922",
+        "label": "Membranous cataract"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000622",
+        "label": "Blurred vision"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "x93fDog46OG1BlrD12FoEtFE",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615277",
+          "label": "Cataract 19, multiple types"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual II-4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c313TtoG_LIM2_NM_001161748v2",
+                "geneContext": {
+                  "valueId": "HGNC:6610",
+                  "symbol": "LIM2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001161748.2:c.313T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.51382430A>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001155220.1:p.(Phe105Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 51382430,
+                  "ref": "A",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615277",
+        "label": "Cataract 19, multiple types"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P51Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-14T07:44:04.430303Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:11917274",
+        "description": "A missense mutation in the LIM2 gene is associated with autosomal recessive presenile cataract in an inbred Iraqi Jewish family."
+      }
+    ]
+  }
+}

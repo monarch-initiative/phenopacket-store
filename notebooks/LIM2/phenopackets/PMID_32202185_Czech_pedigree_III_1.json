@@ -1,0 +1,143 @@
+{
+  "id": "PMID_32202185_Czech_pedigree_III_1",
+  "subject": {
+    "id": "Czech pedigree III:1",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010693",
+        "label": "Pulverulent cataract"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100018",
+        "label": "Nuclear cataract"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010922",
+        "label": "Membranous cataract"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "mw29ixDCIQf289d4v1vts7v5",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615277",
+          "label": "Cataract 19, multiple types"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Czech pedigree III:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c388CtoT_LIM2_NM_001161748v2",
+                "geneContext": {
+                  "valueId": "HGNC:6610",
+                  "symbol": "LIM2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001161748.2:c.388C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.51380577G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001155220.1:p.(Arg130Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 51380577,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615277",
+        "label": "Cataract 19, multiple types"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-14T07:44:04.432986Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:32202185",
+        "description": "A novel missense mutation in LIM2 causing isolated autosomal dominant congenital cataract."
+      }
+    ]
+  }
+}
