@@ -1,0 +1,217 @@
+{
+  "id": "PMID_38508705_Case_8",
+  "subject": {
+    "id": "Case 8",
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011171",
+        "label": "Simple febrile seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002384",
+        "label": "Focal impaired awareness seizure"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0007334",
+        "label": "Bilateral tonic-clonic seizure with focal onset"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031475",
+        "label": "Status epilepticus without prominent motor symptoms"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012469",
+        "label": "Infantile spasms"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011287",
+        "label": "EEG with occipital sharp slow waves"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011289",
+        "label": "EEG with temporal sharp slow waves"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "9INTdd8iW5O9JXZ0K5hRxcUJ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621500",
+          "label": "Epilepsy, idiopathic generalized 20"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 8",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c10853CtoA_ZFHX3_NM_006885v4",
+                "geneContext": {
+                  "valueId": "HGNC:777",
+                  "symbol": "ZFHX3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006885.4:c.10853C>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.72787423G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_008816.3:p.(Pro3618Gln)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 72787423,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Case 8",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c10445GtoT_ZFHX3_NM_006885v4",
+                "geneContext": {
+                  "valueId": "HGNC:777",
+                  "symbol": "ZFHX3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006885.4:c.10445G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.72787831C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_008816.3:p.(Ser3482Ile)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 72787831,
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621500",
+        "label": "Epilepsy, idiopathic generalized 20"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-24T09:41:04.834066Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:38508705",
+        "description": "ZFHX3 variants cause childhood partial epilepsy and infantile spasms with favourable outcomes."
+      }
+    ]
+  }
+}
