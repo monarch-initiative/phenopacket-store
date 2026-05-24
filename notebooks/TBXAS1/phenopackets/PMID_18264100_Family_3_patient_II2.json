@@ -1,0 +1,166 @@
+{
+  "id": "PMID_18264100_Family_3_patient_II2",
+  "subject": {
+    "id": "Family 3 patient II2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P16Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0005019",
+        "label": "Diaphyseal undertubulation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100252",
+        "label": "Diaphyseal dysplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000935",
+        "label": "Thickened cortex of long bones"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006392",
+        "label": "Increased density of long bones"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001903",
+        "label": "Anemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001882",
+        "label": "Decreased total leukocyte count"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "vMhCefvW2m2uSEG3lLijMsp7",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:231095",
+          "label": "Ghosal hematodiaphyseal syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 3 patient II2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1441GtoT_TBXAS1_NM_001061v7",
+                "geneContext": {
+                  "valueId": "HGNC:11609",
+                  "symbol": "TBXAS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001061.7:c.1441G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.140017747G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001052.3:p.(Gly481Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 140017747,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:231095",
+        "label": "Ghosal hematodiaphyseal syndrome"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-23T16:17:15.839630Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:18264100",
+        "description": "Thromboxane synthase mutations in an increased bone density disorder (Ghosal syndrome)."
+      }
+    ]
+  }
+}
