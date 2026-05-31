@@ -1,0 +1,253 @@
+{
+  "id": "PMID_41092193_Patient_16110",
+  "subject": {
+    "id": "Patient 16110",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P70Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001257",
+        "label": "Spasticity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002063",
+        "label": "Rigidity"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003690",
+        "label": "Limb muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003202",
+        "label": "Skeletal muscle atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012391",
+        "label": "Hyporeflexia of upper limbs"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003474",
+        "label": "Somatic sensory dysfunction"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003487",
+        "label": "Babinski sign"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001337",
+        "label": "Tremor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002322",
+        "label": "Resting tremor"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001348",
+        "label": "Brisk reflexes"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002066",
+        "label": "Gait ataxia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002067",
+        "label": "Bradykinesia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000737",
+        "label": "Irritability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002354",
+        "label": "Memory impairment"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000739",
+        "label": "Anxiety"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "53BvbKMf1R2WOvkkEzYZrRVC",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621535",
+          "label": "Spinocerebellar ataxia 52"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 16110",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c247CtoT_RAB3A_NM_002866v5",
+                "geneContext": {
+                  "valueId": "HGNC:9777",
+                  "symbol": "RAB3A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002866.5:c.247C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.18200427G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002857.1:p.(Arg83Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 18200427,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621535",
+        "label": "Spinocerebellar ataxia 52"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P33Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-31T07:56:11.127569Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:41092193",
+        "description": "RAB3A variants in ataxia and other neurodegenerative disorders."
+      }
+    ]
+  }
+}

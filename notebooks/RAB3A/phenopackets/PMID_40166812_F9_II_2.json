@@ -1,0 +1,152 @@
+{
+  "id": "PMID_40166812_F9_II_2",
+  "subject": {
+    "id": "F9-II.2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P46Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000639",
+        "label": "Nystagmus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002015",
+        "label": "Dysphagia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003484",
+        "label": "Upper limb muscle weakness"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001251",
+        "label": "Ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "t8VEPZ6p6MvPPRRfCgV5FksG",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621535",
+          "label": "Spinocerebellar ataxia 52"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F9-II.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c247CtoT_RAB3A_NM_002866v5",
+                "geneContext": {
+                  "valueId": "HGNC:9777",
+                  "symbol": "RAB3A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002866.5:c.247C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.18200427G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002857.1:p.(Arg83Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 18200427,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621535",
+        "label": "Spinocerebellar ataxia 52"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-31T07:56:11.127102Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:40166812",
+        "description": "Heterozygous RAB3A variants cause cerebellar ataxia by a partial loss-of-function mechanism."
+      }
+    ]
+  }
+}
