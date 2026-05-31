@@ -1,0 +1,226 @@
+{
+  "id": "PMID_28542676_SK2",
+  "subject": {
+    "id": "SK2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P23Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007737",
+        "label": "Spicular pigmentation of the retina"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007401",
+        "label": "Macular atrophy"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040049",
+        "label": "Macular edema"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025159",
+        "label": "Hypoautofluorescent retinal lesion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030629",
+        "label": "Perifoveal ring of hyperautofluorescence"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000367",
+        "label": "Central thinning of the outer nuclear layer of the retina"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032037",
+        "label": "Mildly reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000603",
+        "label": "Central scotoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000662",
+        "label": "Nyctalopia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "xp8zvd78OGqDefdFRoJVMJiJ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621548",
+          "label": "Retinitis pigmentosa 101"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "SK2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c917TtoA_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.917T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28482372A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.(Leu306His)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28482372,
+                  "ref": "A",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "SK2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c883GtoT_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.883G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28482500C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.(Glu295Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28482500,
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621548",
+        "label": "Retinitis pigmentosa 101"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-05-31T15:50:57.605746Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:28542676",
+        "description": "Detailed Clinical Phenotype and Molecular Genetic Findings in CLN3-Associated Isolated Retinal Degeneration."
+      }
+    ]
+  }
+}
