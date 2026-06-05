@@ -1,0 +1,224 @@
+{
+  "id": "PMID_11181649_proband_011",
+  "subject": {
+    "id": "proband 011",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P10Y6M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003234",
+        "label": "Decreased circulating carnitine concentration"
+      },
+      "severity": {
+        "id": "HP:0012828",
+        "label": "Severe"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:4000206",
+        "label": "Reduced 3-methylcrotonyl CoA carboxylase activity in cultured fibroblasts"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033111",
+        "label": "3-hydroxyisovaleric aciduria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033596",
+        "label": "Elevated urinary 3-methylcrotonylglycine level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001344",
+        "label": "Absent speech"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001256",
+        "label": "Mild intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025190",
+        "label": "Bilateral tonic-clonic seizure with generalized onset"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y3M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020221",
+        "label": "Clonic seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032792",
+        "label": "Tonic seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2M10D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032807",
+        "label": "Neonatal seizure"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001259",
+        "label": "Coma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002521",
+        "label": "Hypsarrhythmia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "gfS3l0ZtuQ0BzyR5DHMADRH2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:210200",
+          "label": "3-Methylcrotonyl-CoA carboxylase 1 deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband 011",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1155AtoC_MCCC1_NM_020166v5",
+                "geneContext": {
+                  "valueId": "HGNC:6936",
+                  "symbol": "MCCC1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020166.5:c.1155A>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.183041679T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_064551.3:p.(Arg385Ser)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 183041679,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:210200",
+        "label": "3-Methylcrotonyl-CoA carboxylase 1 deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-05T16:43:56.019326Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:11181649",
+        "description": "The molecular basis of human 3-methylcrotonyl-CoA carboxylase deficiency."
+      }
+    ]
+  }
+}

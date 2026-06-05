@@ -1,0 +1,218 @@
+{
+  "id": "PMID_17968484_Patient_1",
+  "subject": {
+    "id": "Patient 1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003234",
+        "label": "Decreased circulating carnitine concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0035028",
+        "label": "Elevated circulating 3-hydroxyisovalerylcarnitine concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010911",
+        "label": "Hyperleucinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001987",
+        "label": "Hyperammonemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033111",
+        "label": "3-hydroxyisovaleric aciduria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033596",
+        "label": "Elevated urinary 3-methylcrotonylglycine level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "gdjLzqISsdWvOCW6EfOhz2OB",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:210200",
+          "label": "3-Methylcrotonyl-CoA carboxylase 1 deficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1750CtoT_MCCC1_NM_020166v5",
+                "geneContext": {
+                  "valueId": "HGNC:6936",
+                  "symbol": "MCCC1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020166.5:c.1750C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.183022536G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_064551.3:p.(Gln584Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 183022536,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c901_902del_MCCC1_NM_020166v5",
+                "geneContext": {
+                  "valueId": "HGNC:6936",
+                  "symbol": "MCCC1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020166.5:c.901_902del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.183052216_183052217del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_064551.3:p.(Lys301AlafsTer10)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 183052211,
+                  "ref": "CTT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:210200",
+        "label": "3-Methylcrotonyl-CoA carboxylase 1 deficiency"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-05T16:43:56.019362Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:17968484",
+        "description": "Novel mutations in five Japanese patients with 3-methylcrotonyl-CoA carboxylase deficiency."
+      }
+    ]
+  }
+}
