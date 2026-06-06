@@ -1,0 +1,204 @@
+{
+  "id": "PMID_36213268_Case_presentation",
+  "subject": {
+    "id": "Case presentation",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008245",
+        "label": "Pituitary hypothyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001580",
+        "label": "Pigmented micronodular adrenocortical disease"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008231",
+        "label": "Macronodular adrenal hyperplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003118",
+        "label": "Increased circulating cortisol level"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010798",
+        "label": "Lip freckle"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001003",
+        "label": "Multiple lentigines"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001065",
+        "label": "Striae distensae"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000822",
+        "label": "Hypertension"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P34Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005144",
+        "label": "Ventricular septal hypertrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P36Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010535",
+        "label": "Sleep apnea"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030428",
+        "label": "Cutaneous myxoma"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "bHmozK3Oy3BV9Y1MWUqvHWuu",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:160980",
+          "label": "Carney complex, type 1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case presentation",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c439AtoG_PRKAR1A_NM_002734v5",
+                "geneContext": {
+                  "valueId": "HGNC:9388",
+                  "symbol": "PRKAR1A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002734.5:c.439A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000017.11:g.68523815A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002725.1:p.(Ser147Gly)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr17",
+                  "pos": 68523815,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:160980",
+        "label": "Carney complex, type 1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-06T09:57:37.219379Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:36213268",
+        "description": "Association between subclinical hyperthyroidism and a PRKAR1A gene variant in Carney complex patients: A case report and systematic review."
+      }
+    ]
+  }
+}
