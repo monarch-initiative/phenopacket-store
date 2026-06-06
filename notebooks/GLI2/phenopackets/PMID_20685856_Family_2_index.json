@@ -1,0 +1,247 @@
+{
+  "id": "PMID_20685856_Family_2_index",
+  "subject": {
+    "id": "Family 2 index",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P4Y6M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033579",
+        "label": "Decreased growth hormone responses to growth hormone-releasing hormone challenge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011748",
+        "label": "Adrenocorticotropic hormone deficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008202",
+        "label": "Reduced circulating prolactin concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0011755",
+        "label": "Ectopic posterior pituitary"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034323",
+        "label": "Reduced circulating growth hormone concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030341",
+        "label": "Decreased circulating follicle stimulating hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030344",
+        "label": "Decreased circulating luteinizing hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030353",
+        "label": "Decreased circulating serum insulin-like growth factor 1 concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031098",
+        "label": "Decreased thyroid-stimulating hormone level"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012741",
+        "label": "Unilateral cryptorchidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410030",
+        "label": "Cleft lip"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005280",
+        "label": "Depressed nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P8M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001360",
+        "label": "Holoprosencephaly"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "fBJA99PtK9bUtYpp0JEvET8S",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615849",
+          "label": "Culler-Jones syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 2 index",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c_2081_2084del_GLI2_NM_001374353v1",
+                "geneContext": {
+                  "valueId": "HGNC:4318",
+                  "symbol": "GLI2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001374353.1:c. 2081_2084del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.120986454_120986457del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001361282.1:p.(Ser696LeufsTer10)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 120986452,
+                  "ref": "GCCCC",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615849",
+        "label": "Culler-Jones syndrome"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-06T07:01:01.146225Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:20685856",
+        "description": "Novel heterozygous nonsense GLI2 mutations in patients with hypopituitarism and ectopic posterior pituitary lobe without holoprosencephaly."
+      }
+    ]
+  }
+}
