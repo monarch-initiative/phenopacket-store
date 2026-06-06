@@ -1,0 +1,194 @@
+{
+  "id": "PMID_36702441_patient_IV_1",
+  "subject": {
+    "id": "patient IV:1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P1M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003762",
+        "label": "Uterus didelphys"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025633",
+        "label": "Abnormal ureter morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000787",
+        "label": "Nephrolithiasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000126",
+        "label": "Hydronephrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010109",
+        "label": "Short hallux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009778",
+        "label": "Short thumb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008111",
+        "label": "Broad distal hallux"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001822",
+        "label": "Hallux valgus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005918",
+        "label": "Abnormal finger phalanx morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001081",
+        "label": "Cholelithiasis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012704",
+        "label": "Widened subarachnoid space"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "8GyyaNGQ7bM0uqjN1EAy4e3l",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:140000",
+          "label": "Hand-foot-genital syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient IV:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c360_377dup_HOXA13_NM_000522v5",
+                "geneContext": {
+                  "valueId": "HGNC:5102",
+                  "symbol": "HOXA13"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000522.5:c.360_377dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.27199709_27199726dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000513.2:p.(Ala128_Ala133dup)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 27199700,
+                  "ref": "T",
+                  "alt": "TGCAGCGGCAGCCGCGGCA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:140000",
+        "label": "Hand-foot-genital syndrome"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-06T05:37:23.327992Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:36702441",
+        "description": "Hand-foot-genital syndrome due to a duplication variant in the GC-rich region of HOXA13."
+      }
+    ]
+  }
+}
