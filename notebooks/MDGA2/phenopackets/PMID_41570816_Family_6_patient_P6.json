@@ -1,0 +1,132 @@
+{
+  "id": "PMID_41570816_Family_6_patient_P6",
+  "subject": {
+    "id": "Family 6 patient P6",
+    "timeAtLastEncounter": {
+      "ontologyClass": {
+        "id": "HP:0003593",
+        "label": "Infantile onset"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "0qWdDxnhTt5I2wgIQ0LUS514",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621608",
+          "label": "Developmental and epileptic encephalopathy 122"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 6 patient P6",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1172del_MDGA2_NM_001113498v3",
+                "geneContext": {
+                  "valueId": "HGNC:19835",
+                  "symbol": "MDGA2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001113498.3:c.1172del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.47096882del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001106970.4:p.(Lys391SerfsTer7)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 47096876,
+                  "ref": "CT",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621608",
+        "label": "Developmental and epileptic encephalopathy 122"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-08T06:30:46.607158Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-02-16",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:41570816",
+        "description": "MDGA2 homozygous loss-of-function variants cause developmental and epileptic encephalopathy."
+      }
+    ]
+  }
+}
