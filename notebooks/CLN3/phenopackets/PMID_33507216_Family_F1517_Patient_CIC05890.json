@@ -1,7 +1,7 @@
 {
-  "id": "PMID_33507216_Patient_CIC05890",
+  "id": "PMID_33507216_Family_F1517_Patient_CIC05890",
   "subject": {
-    "id": "Patient CIC05890",
+    "id": "Family F1517 Patient CIC05890",
     "timeAtLastEncounter": {
       "age": {
         "iso8601duration": "P19Y"
@@ -80,13 +80,81 @@
   ],
   "interpretations": [
     {
-      "id": "4MCNGy89GTe0QXC5hLlQMThG",
+      "id": "xmstVSSHPwTuKm07Mv0LvjEm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:621548",
           "label": "Retinitis pigmentosa 101"
-        }
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family F1517 Patient CIC05890",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c461minus3CtoG_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.461-3C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28486653G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28486653,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family F1517 Patient CIC05890",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "CLN3_SV_Ex8_9del",
+                "label": "Ex8-9del",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -99,7 +167,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-31T15:50:57.608063Z",
+    "created": "2026-06-09T16:29:04.379623Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -133,6 +201,14 @@
         "version": "06/01/25",
         "namespacePrefix": "HGNC",
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       }
     ],
     "phenopacketSchemaVersion": "2",

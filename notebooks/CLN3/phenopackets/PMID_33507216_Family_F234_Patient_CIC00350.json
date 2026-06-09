@@ -89,13 +89,56 @@
   ],
   "interpretations": [
     {
-      "id": "8pVZYTxmqhT2IzBOyLZ7SVRm",
+      "id": "R7Cu9CbmNpLlbXRvfXIuo6QD",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
           "id": "OMIM:621548",
           "label": "Retinitis pigmentosa 101"
-        }
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family F234 Patient CIC00350",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c461minus3CtoG_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.461-3C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28486653G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28486653,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
       }
     }
   ],
@@ -108,7 +151,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-05-31T15:50:57.606425Z",
+    "created": "2026-06-09T16:29:04.379360Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
