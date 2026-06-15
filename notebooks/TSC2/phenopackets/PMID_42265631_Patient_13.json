@@ -1,0 +1,235 @@
+{
+  "id": "PMID_42265631_Patient_13",
+  "subject": {
+    "id": "Patient 13",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y8M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000729",
+        "label": "Autistic behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002360",
+        "label": "Sleep disturbance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009719",
+        "label": "Hypomelanotic macule"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009721",
+        "label": "Shagreen patch"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006772",
+        "label": "Renal angiomyolipoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009716",
+        "label": "Subependymal nodules"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009717",
+        "label": "Cortical tubers"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009594",
+        "label": "Retinal hamartoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009718",
+        "label": "Subependymal giant-cell astrocytoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009720",
+        "label": "Adenoma sebaceum"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100804",
+        "label": "Ungual fibroma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009729",
+        "label": "Cardiac rhabdomyoma"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012798",
+        "label": "Pulmonary lymphangiomyomatosis"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "QgErzxpAOwPltmg03c3XpDDh",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:613254",
+          "label": "Tuberous sclerosis-2"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 13",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c600minus2AtoG_TSC2_NM_000548v5",
+                "geneContext": {
+                  "valueId": "HGNC:12363",
+                  "symbol": "TSC2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000548.5:c.600-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.2056194A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000539.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 2056194,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:613254",
+        "label": "Tuberous sclerosis-2"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P2Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-15T16:41:02.341720Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:42265631",
+        "description": "Genotypic and phenotypic features of 23 Egyptian patients with tuberous sclerosis complex."
+      }
+    ]
+  }
+}
