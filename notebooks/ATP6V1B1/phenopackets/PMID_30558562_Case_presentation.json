@@ -1,0 +1,231 @@
+{
+  "id": "PMID_30558562_Case_presentation",
+  "subject": {
+    "id": "Case presentation",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P2Y6M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032944",
+        "label": "Alkaline urine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002900",
+        "label": "Hypokalemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008341",
+        "label": "Distal renal tubular acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004918",
+        "label": "Hyperchloremic metabolic acidosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002013",
+        "label": "Vomiting"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011387",
+        "label": "Enlarged vestibular aqueduct"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "severity": {
+        "id": "HP:0012828",
+        "label": "Severe"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008897",
+        "label": "Postnatal growth retardation"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "XRbFKyp6N2EhicsC5lWIBZsn",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:267300",
+          "label": "Distal renal tubular acidosis 2 with progressive sensorineural hearing loss"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case presentation",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c785plus1GtoA_ATP6V1B1_NM_001692v4",
+                "geneContext": {
+                  "valueId": "HGNC:853",
+                  "symbol": "ATP6V1B1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001692.4:c.785+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.70961694G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001683.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 70961694,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Case presentation",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c133_134del_ATP6V1B1_NM_001692v4",
+                "geneContext": {
+                  "valueId": "HGNC:853",
+                  "symbol": "ATP6V1B1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001692.4:c.133_134del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.70943672_70943673del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001683.2:p.(Cys45GlnfsTer37)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 70943667,
+                  "ref": "CTG",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:267300",
+        "label": "Distal renal tubular acidosis 2 with progressive sensorineural hearing loss"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P4M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T05:13:36.909206Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:30558562",
+        "description": "Novel compound heterozygous ATP6V1B1 mutations in a Chinese child patient with primary distal renal tubular acidosis: a case report."
+      }
+    ]
+  }
+}
