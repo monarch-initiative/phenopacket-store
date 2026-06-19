@@ -1,0 +1,168 @@
+{
+  "id": "PMID_36734119_second_fetus_II_2",
+  "subject": {
+    "id": "second fetus II.2",
+    "timeAtLastEncounter": {
+      "gestationalAge": {
+        "weeks": 12,
+        "days": 0
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000431",
+        "label": "Wide nasal bridge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000347",
+        "label": "Micrognathia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010878",
+        "label": "Fetal cystic hygroma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000520",
+        "label": "Proptosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100656",
+        "label": "Thoracoabdominal wall defect"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001371",
+        "label": "Flexion contracture"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "DwUJrXagcpdkdpdmDKUjHuNm",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:309350",
+          "label": "Melnick-Needles syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "second fetus II.2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c4420GtoA_FLNA_NM_001110556v2",
+                "geneContext": {
+                  "valueId": "HGNC:3754",
+                  "symbol": "FLNA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001110556.2:c.4420G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.154359038C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001104026.1:p.(Asp1474Asn)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 154359038,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:309350",
+        "label": "Melnick-Needles syndrome"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 12,
+          "days": 0
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-19T17:34:04.151185Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:36734119",
+        "description": "Mutation of FLNA attenuating the migration of abdominal muscles contributed to Melnick-Needles syndrome (MNS) in a family with recurrent miscarriage."
+      }
+    ]
+  }
+}
