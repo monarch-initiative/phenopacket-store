@@ -1,0 +1,246 @@
+{
+  "id": "PMID_18854396_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P6Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000028",
+        "label": "Cryptorchidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000054",
+        "label": "Micropenis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011787",
+        "label": "Central hypothyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033579",
+        "label": "Decreased growth hormone responses to growth hormone-releasing hormone challenge"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008213",
+        "label": "Gonadotropin deficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011755",
+        "label": "Ectopic posterior pituitary"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034976",
+        "label": "Absent pituitary stalk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020159",
+        "label": "Reduced response to gonadotropin-releasing hormone stimulation test"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000528",
+        "label": "Anophthalmia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001943",
+        "label": "Hypoglycemia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001508",
+        "label": "Failure to thrive"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002308",
+        "label": "Chiari malformation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006579",
+        "label": "Prolonged neonatal jaundice"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003623",
+          "label": "Neonatal onset"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "l5gzwC6BD6k2I8aWPQ5t8zQr",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610125",
+          "label": "Microphthalmia, syndromic 5"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c428_429dup_OTX2_NM_021728v4",
+                "geneContext": {
+                  "valueId": "HGNC:8522",
+                  "symbol": "OTX2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021728.4:c.428_429dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.56802202_56802203dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_068374.1:p.(Ser144LeufsTer43)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 56802199,
+                  "ref": "T",
+                  "alt": "TAG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610125",
+        "label": "Microphthalmia, syndromic 5"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-21T08:34:18.711940Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:18854396",
+        "description": "OTX2 loss of function mutation causes anophthalmia and combined pituitary hormone deficiency with a small anterior and ectopic posterior pituitary."
+      }
+    ]
+  }
+}

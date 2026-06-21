@@ -1,0 +1,170 @@
+{
+  "id": "PMID_18628516_Patient",
+  "subject": {
+    "id": "Patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P8Y6M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000175",
+        "label": "Cleft palate"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000609",
+        "label": "Optic nerve hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000528",
+        "label": "Anophthalmia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003508",
+        "label": "Proportionate short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "5rXTK52YMRZDq8zw2oZ2RfPt",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610125",
+          "label": "Microphthalmia, syndromic 5"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c402dup_OTX2_NM_021728v4",
+                "geneContext": {
+                  "valueId": "HGNC:8522",
+                  "symbol": "OTX2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021728.4:c.402dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.56802227dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_068374.1:p.(Thr135AsnfsTer10)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 56802225,
+                  "ref": "G",
+                  "alt": "GT"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610125",
+        "label": "Microphthalmia, syndromic 5"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-21T08:34:18.711780Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:18628516",
+        "description": "OTX2 mutation in a patient with anophthalmia, short stature, and partial growth hormone deficiency: functional studies using the IRBP, HESX1, and POU1F1 promoters."
+      }
+    ]
+  }
+}

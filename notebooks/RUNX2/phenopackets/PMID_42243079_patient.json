@@ -1,0 +1,244 @@
+{
+  "id": "PMID_42243079_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P3Y9M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0009804",
+        "label": "Tooth agenesis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000260",
+        "label": "Wide anterior fontanel"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004491",
+        "label": "Large posterior fontanelle"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005476",
+        "label": "Widely patent sagittal suture"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000979",
+        "label": "Purpura"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000316",
+        "label": "Hypertelorism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003282",
+        "label": "Decreased circulating alkaline phosphatase activity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002901",
+        "label": "Hypocalcemia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000365",
+        "label": "Hearing impairment"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000238",
+        "label": "Hydrocephalus"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009882",
+        "label": "Short distal phalanx of finger"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003502",
+        "label": "Mild short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000894",
+        "label": "Short clavicles"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000774",
+        "label": "Narrow chest"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "TajdfBLPLx4YckSmd8iStyMi",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:119600",
+          "label": "Cleidocranial dysplasia"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c685plus2TtoG_RUNX2_NM_001024630v4",
+                "geneContext": {
+                  "valueId": "HGNC:10472",
+                  "symbol": "RUNX2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001024630.4:c.685+2T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.45438053T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001019801.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 45438053,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:119600",
+        "label": "Cleidocranial dysplasia"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P14D"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-20T13:28:52.113330Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:42243079",
+        "description": "Cleidocranial dysplasia caused by a novel de novo RUNX2 splice-site variant."
+      }
+    ]
+  }
+}

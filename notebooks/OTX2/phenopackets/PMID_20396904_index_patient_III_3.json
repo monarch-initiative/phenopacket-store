@@ -1,0 +1,203 @@
+{
+  "id": "PMID_20396904_index_patient_III_3",
+  "subject": {
+    "id": "index patient III-3)",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P5Y9M"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032210",
+        "label": "Decreased circulating free T3"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033078",
+        "label": "Decreased circulating free T4 concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010627",
+        "label": "Anterior pituitary hypoplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000824",
+        "label": "Decreased response to growth hormone stimulation test"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011755",
+        "label": "Ectopic posterior pituitary"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034976",
+        "label": "Absent pituitary stalk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020159",
+        "label": "Reduced response to gonadotropin-releasing hormone stimulation test"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000528",
+        "label": "Anophthalmia"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0025502",
+        "label": "Overweight"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001263",
+        "label": "Global developmental delay"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "rHvGmFpZ6lxSfru8WGBk2Hre",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:610125",
+          "label": "Microphthalmia, syndromic 5"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "index patient III-3)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c294AtoT_OTX2_NM_021728v4",
+                "geneContext": {
+                  "valueId": "HGNC:8522",
+                  "symbol": "OTX2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021728.4:c.294A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.56802335T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_068374.1:p.(Arg98Ser)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 56802335,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:610125",
+        "label": "Microphthalmia, syndromic 5"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-21T08:34:18.712610Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:20396904",
+        "description": "A novel loss-of-function mutation in OTX2 in a patient with anophthalmia and isolated growth hormone deficiency."
+      }
+    ]
+  }
+}
