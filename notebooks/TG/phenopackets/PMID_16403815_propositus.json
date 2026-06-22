@@ -1,0 +1,197 @@
+{
+  "id": "PMID_16403815_propositus",
+  "subject": {
+    "id": "propositus",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P21Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0031936",
+        "label": "Delayed ability to walk"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000821",
+        "label": "Hypothyroidism"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033078",
+        "label": "Decreased circulating free T4 concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005987",
+        "label": "Multinodular goiter"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008249",
+        "label": "Thyroid hyperplasia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002925",
+        "label": "Elevated circulating thyroid-stimulating hormone concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000244",
+        "label": "Decreased circulating thyroglobulin concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002835",
+        "label": "Aspiration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006731",
+        "label": "Follicular thyroid carcinoma"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "0kAVz9IJ7wrTb3wKeUE9IxPI",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:274700",
+          "label": "Thyroid dyshormonogenesis 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "propositus",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c638plus1GtoA_TG_NM_003235v5",
+                "geneContext": {
+                  "valueId": "HGNC:11764",
+                  "symbol": "TG"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003235.5:c.638+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.132873222G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003226.4:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": 132873222,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:274700",
+        "label": "Thyroid dyshormonogenesis 3"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P1Y6M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-22T05:12:13.782909Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:16403815",
+        "description": "Clinical case seminar: metastatic follicular thyroid carcinoma arising from congenital goiter as a result of a novel splice donor site mutation in the thyroglobulin gene."
+      }
+    ]
+  }
+}

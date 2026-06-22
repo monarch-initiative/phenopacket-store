@@ -1,0 +1,180 @@
+{
+  "id": "PMID_1752952_patient",
+  "subject": {
+    "id": "patient",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P33Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032209",
+        "label": "Abnormal circulating free T3 concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033078",
+        "label": "Decreased circulating free T4 concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005987",
+        "label": "Multinodular goiter"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002925",
+        "label": "Elevated circulating thyroid-stimulating hormone concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004322",
+        "label": "Short stature"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034590",
+        "label": "Abnormal circulating thyroxine-binding globulin concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025483",
+        "label": "Abnormal circulating thyroglobulin concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0006731",
+        "label": "Follicular thyroid carcinoma"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "6sHxfWHeoYoE1hAZ5NeiWxFy",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:274700",
+          "label": "Thyroid dyshormonogenesis 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c275minus3CtoG_TG_NM_003235v5",
+                "geneContext": {
+                  "valueId": "HGNC:11764",
+                  "symbol": "TG"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003235.5:c.275-3C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000008.11:g.132871345C>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003226.4:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr8",
+                  "pos": 132871345,
+                  "ref": "C",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:274700",
+        "label": "Thyroid dyshormonogenesis 3"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011463",
+          "label": "Childhood onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-06-22T05:12:13.782808Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-06",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:1752952",
+        "description": "A 3' splice site mutation in the thyroglobulin gene responsible for congenital goiter with hypothyroidism."
+      }
+    ]
+  }
+}
