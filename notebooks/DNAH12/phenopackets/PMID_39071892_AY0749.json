@@ -12,8 +12,15 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0003251",
-        "label": "Male infertility"
+        "id": "HP:0000798",
+        "label": "Oligozoospermia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012207",
+        "label": "Reduced sperm motility"
       }
     },
     {
@@ -24,23 +31,16 @@
     },
     {
       "type": {
-        "id": "HP:0012207",
-        "label": "Reduced sperm motility"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0000798",
-        "label": "Oligozoospermia"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:6000135",
         "label": "Low semen volume"
       },
       "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      }
     },
     {
       "type": {
@@ -75,7 +75,7 @@
   ],
   "interpretations": [
     {
-      "id": "rss7rzUo9nIzerkJUkgimeTB",
+      "id": "NpUsJRqmCMd4CupbSHpHBcxo",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -83,47 +83,6 @@
           "label": "Spermatogenic failure 100"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "AY0749",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c2517AtoG_DNAH12_NM_001366028v2",
-                "geneContext": {
-                  "valueId": "HGNC:2943",
-                  "symbol": "DNAH12"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001366028.2:c.2517A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.57462708T>C"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001352957.1:p.(Ile839Met)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr3",
-                  "pos": 57462708,
-                  "ref": "T",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "AY0749",
             "interpretationStatus": "CAUSATIVE",
@@ -164,6 +123,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "AY0749",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2517AtoG_DNAH12_NM_001366028v2",
+                "geneContext": {
+                  "valueId": "HGNC:2943",
+                  "symbol": "DNAH12"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001366028.2:c.2517A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.57462708T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001352957.1:p.(Ile839Met)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 57462708,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -184,14 +184,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T12:49:54.497083Z",
+    "created": "2026-06-26T04:24:47.011191Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-06-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -202,14 +202,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
@@ -228,7 +220,7 @@
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0.2",
+    "phenopacketSchemaVersion": "2",
     "externalReferences": [
       {
         "id": "PMID:39071892",

@@ -12,30 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0100259",
-        "label": "Postaxial polydactyly"
-      },
-      "onset": {
-        "ontologyClass": {
-          "id": "HP:0003577",
-          "label": "Congenital onset"
-        }
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0004209",
-        "label": "Clinodactyly of the 5th finger"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0001156",
-        "label": "Brachydactyly"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0007663",
         "label": "Reduced visual acuity"
       }
@@ -48,14 +24,38 @@
     },
     {
       "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003577",
+          "label": "Congenital onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001156",
+        "label": "Brachydactyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004209",
+        "label": "Clinodactyly of the 5th finger"
+      }
+    },
+    {
+      "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "LCIZjJn8GWaBXDECB3YBQMP3",
+      "id": "gghi76f1dvBkiM1mbwgCfSHz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -63,6 +63,47 @@
           "label": "Bardet-Biedl syndrome 5"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Sibling 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c143minus1GtoA_BBS5_NM_152384v3",
+                "geneContext": {
+                  "valueId": "HGNC:970",
+                  "symbol": "BBS5"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152384.3:c.143-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.169487068G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689597.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 169487068,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Sibling 1",
             "interpretationStatus": "CAUSATIVE",
@@ -103,47 +144,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "Sibling 1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c143_1GtoA_BBS5_NM_152384v3",
-                "geneContext": {
-                  "valueId": "HGNC:970",
-                  "symbol": "BBS5"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_152384.3:c.143-1G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.169487068G>A"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_689597.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 169487068,
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -164,14 +164,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T16:49:12.366615Z",
+    "created": "2026-07-06T13:26:27.021316Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-06-06",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -182,14 +182,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
@@ -208,7 +200,7 @@
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2.0.2",
+    "phenopacketSchemaVersion": "2",
     "externalReferences": [
       {
         "id": "PMID:32811249",

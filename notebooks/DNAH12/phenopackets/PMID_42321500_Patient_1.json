@@ -1,20 +1,21 @@
 {
-  "id": "PMID_40146200_Family3_IV_4_P8",
+  "id": "PMID_42321500_Patient_1",
   "subject": {
-    "id": "Family3 IV-4(P8)",
+    "id": "Patient 1",
     "timeAtLastEncounter": {
       "age": {
-        "iso8601duration": "P32Y"
+        "iso8601duration": "P34Y"
       }
     },
-    "sex": "MALE"
+    "sex": "UNKNOWN_SEX"
   },
   "phenotypicFeatures": [
     {
       "type": {
         "id": "HP:0000798",
         "label": "Oligozoospermia"
-      }
+      },
+      "excluded": true
     },
     {
       "type": {
@@ -49,18 +50,6 @@
     },
     {
       "type": {
-        "id": "HP:0033393",
-        "label": "Irregularly shaped sperm tail"
-      }
-    },
-    {
-      "type": {
-        "id": "HP:0032558",
-        "label": "Absent sperm flagella"
-      }
-    },
-    {
-      "type": {
         "id": "HP:0032559",
         "label": "Short sperm flagella"
       }
@@ -70,11 +59,45 @@
         "id": "HP:0032560",
         "label": "Coiled sperm flagella"
       }
+    },
+    {
+      "type": {
+        "id": "HP:0033524",
+        "label": "Abnormal sperm axoneme morphology"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008734",
+        "label": "Decreased testicular size"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030345",
+        "label": "Abnormal circulating luteinizing hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030346",
+        "label": "Abnormal circulating follicle-stimulating hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030087",
+        "label": "Abnormal circulating testosterone concentration"
+      },
+      "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "2FVMFw5xoFEgeQKMODtk8HD0",
+      "id": "Sc4mEWHPn9gJrps0zRb2QDkI",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -83,13 +106,13 @@
         },
         "genomicInterpretations": [
           {
-            "subjectOrBiosampleId": "Family3 IV-4(P8)",
+            "subjectOrBiosampleId": "Patient 1",
             "interpretationStatus": "CAUSATIVE",
             "variantInterpretation": {
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c2629AtoG_DNAH12_NM_001366028v2",
+                "id": "c5442dup_DNAH12_NM_001366028v2",
                 "geneContext": {
                   "valueId": "HGNC:2943",
                   "symbol": "DNAH12"
@@ -97,23 +120,23 @@
                 "expressions": [
                   {
                     "syntax": "hgvs.c",
-                    "value": "NM_001366028.2:c.2629A>G"
+                    "value": "NM_001366028.2:c.5442dup"
                   },
                   {
                     "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.57461596T>C"
+                    "value": "NC_000003.12:g.57421642dup"
                   },
                   {
                     "syntax": "hgvs.p",
-                    "value": "NP_001352957.1:p.(Ile877Val)"
+                    "value": "NP_001352957.1:p.(Asp1815Ter)"
                   }
                 ],
                 "vcfRecord": {
                   "genomeAssembly": "hg38",
                   "chrom": "chr3",
-                  "pos": 57461596,
-                  "ref": "T",
-                  "alt": "C"
+                  "pos": 57421637,
+                  "ref": "C",
+                  "alt": "CA"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -142,7 +165,7 @@
     }
   ],
   "metaData": {
-    "created": "2026-06-26T04:24:47.011455Z",
+    "created": "2026-06-26T04:24:47.011646Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
@@ -181,8 +204,8 @@
     "phenopacketSchemaVersion": "2",
     "externalReferences": [
       {
-        "id": "PMID:40146200",
-        "description": "Deficiency in DNAH12 causes male infertility by impairing DNAH1 and DNALI1 recruitment in humans and mice."
+        "id": "PMID:42321500",
+        "description": "Biallelic loss-of-function variants in DNAH12 cause inner dynein arm defects and sperm head abnormalities leading to male infertility."
       }
     ]
   }
