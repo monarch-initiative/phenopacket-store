@@ -1,0 +1,249 @@
+{
+  "id": "PMID_42499731_case_report",
+  "subject": {
+    "id": "case report",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000978",
+        "label": "Bruising susceptibility"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031956",
+        "label": "Elevated circulating aspartate aminotransferase concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031964",
+        "label": "Elevated circulating alanine aminotransferase concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010837",
+        "label": "Decreased circulating ceruloplasmin concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001403",
+        "label": "Macrovesicular hepatic steatosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001433",
+        "label": "Hepatosplenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033196",
+        "label": "Portal inflammation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000952",
+        "label": "Jaundice"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032220",
+        "label": "Interface hepatitis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001395",
+        "label": "Hepatic fibrosis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000989",
+        "label": "Pruritus"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "cQVAUqhpMlNUxNjgbLWb7ahC",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:277900",
+          "label": "Wilson disease"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "case report",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c3155CtoT_ATP7B_NM_000053v4",
+                "geneContext": {
+                  "valueId": "HGNC:870",
+                  "symbol": "ATP7B"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000053.4:c.3155C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.51944197G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000044.2:p.(Pro1052Leu)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr13",
+                  "pos": 51944197,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "case report",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1995GtoA_ATP7B_NM_000053v4",
+                "geneContext": {
+                  "valueId": "HGNC:870",
+                  "symbol": "ATP7B"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000053.4:c.1995G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000013.11:g.51960274C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000044.2:p.(Met665Ile)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr13",
+                  "pos": 51960274,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:277900",
+        "label": "Wilson disease"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-07-27T14:11:47.768026Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:42499731",
+        "description": "The utility of whole exome sequencing in diagnosing Wilson disease: A case report."
+      }
+    ]
+  }
+}
