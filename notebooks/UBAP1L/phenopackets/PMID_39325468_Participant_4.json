@@ -1,0 +1,181 @@
+{
+  "id": "PMID_39325468_Participant_4",
+  "subject": {
+    "id": "Participant 4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P62Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007787",
+        "label": "Posterior subcapsular cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100018",
+        "label": "Nuclear cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100019",
+        "label": "Cortical cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007401",
+        "label": "Macular atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000548",
+        "label": "Cone/cone-rod dystrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030602",
+        "label": "Abnormal fundus autofluorescence imaging"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031624",
+        "label": "Moderate myopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000512",
+        "label": "Abnormal electroretinogram"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "GIJh7eR3dNkVb18c29zy9op7",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621558",
+          "label": "Retinal dystrophy, Zeitz-Han type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Participant 4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c710del_UBAP1L_NM_001163692v2",
+                "geneContext": {
+                  "valueId": "HGNC:40028",
+                  "symbol": "UBAP1L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001163692.2:c.710del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.65099706del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001157164.1:p.(Pro237ArgfsTer32)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr15",
+                  "pos": 65099703,
+                  "ref": "CG",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621558",
+        "label": "Retinal dystrophy, Zeitz-Han type"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P38Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-08-02T05:48:58.860503Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:39325468",
+        "description": "Biallelic Loss-of-Function Variants in UBAP1L and Nonsyndromic Retinal Dystrophies."
+      }
+    ]
+  }
+}
