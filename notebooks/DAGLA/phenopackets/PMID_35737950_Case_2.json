@@ -1,0 +1,212 @@
+{
+  "id": "PMID_35737950_Case_2",
+  "subject": {
+    "id": "Case 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P9Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000570",
+        "label": "Abnormal saccadic eye movements"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001152",
+        "label": "Saccadic smooth pursuit interruptions"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000666",
+        "label": "Horizontal nystagmus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010544",
+        "label": "Vertical nystagmus"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0033980",
+        "label": "Paroxysmal tonic upgaze"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000646",
+        "label": "Amblyopia"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002131",
+        "label": "Episodic ataxia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001249",
+        "label": "Intellectual disability"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000750",
+        "label": "Delayed speech and language development"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001260",
+        "label": "Dysarthria"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001270",
+        "label": "Motor delay"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001252",
+        "label": "Hypotonia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "CtuOqg1rsRzFz6Ow3tSqeqX6",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:168885",
+          "label": "Neuroocular syndrome 2, paroxysmal type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Case 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2484del_DAGLA_NM_006133v3",
+                "geneContext": {
+                  "valueId": "HGNC:1165",
+                  "symbol": "DAGLA"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006133.3:c.2484del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000011.10:g.61743844del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006124.1:p.(Glu829ArgfsTer6)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr11",
+                  "pos": 61743840,
+                  "ref": "TC",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:168885",
+        "label": "Neuroocular syndrome 2, paroxysmal type"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P6M"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-08-09T15:02:13.787486Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:35737950",
+        "description": "Endocannabinoid dysfunction in neurological disease: neuro-ocular DAGLA-related syndrome."
+      }
+    ]
+  }
+}
