@@ -1,0 +1,147 @@
+{
+  "id": "PMID_40497796_Subject_11_TOP_ID_6_2_pregnancy_termination_23_WG",
+  "subject": {
+    "id": "Subject 11 (TOP)-ID#6-2 (pregnancy termination 23 WG)",
+    "timeAtLastEncounter": {
+      "ontologyClass": {
+        "id": "HP:0011461",
+        "label": "Fetal onset"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001558",
+        "label": "Decreased fetal movement"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001561",
+        "label": "Polyhydramnios"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001562",
+        "label": "Oligohydramnios"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "N5keTJyfCFcTwB3AlEkMo069",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621510",
+          "label": "Congenital myopathy 29 with contractures"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Subject 11 (TOP)-ID#6-2 (pregnancy termination 23 WG)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c7839TtoA_DST_NM_001374736v1",
+                "geneContext": {
+                  "valueId": "HGNC:1090",
+                  "symbol": "DST"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001374736.1:c.7839T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000006.12:g.56606789A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001361665.1:p.(Tyr2613Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr6",
+                  "pos": 56606789,
+                  "ref": "A",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621510",
+        "label": "Congenital myopathy 29 with contractures"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-07-28T06:05:15.578828Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:40497796",
+        "description": "Deciphering DST-associated disorders: biallelic variants affecting DST-b cause a congenital myopathy."
+      }
+    ]
+  }
+}
