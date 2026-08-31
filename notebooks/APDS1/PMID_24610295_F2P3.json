@@ -1,0 +1,182 @@
+{
+  "id": "PMID_24610295_F2P3",
+  "subject": {
+    "id": "F2P3",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P24Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0410378",
+        "label": "Decreased naive CD4+ T cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030381",
+        "label": "Increased transitional B cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032128",
+        "label": "Increased plasmablast proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003496",
+        "label": "Increased circulating IgM concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005425",
+        "label": "Recurrent sinopulmonary infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002716",
+        "label": "Lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410301",
+        "label": "Partial absence of specific antibody response to unconjugated pneumococcus polysaccharide"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410305",
+        "label": "Partial absence of specific antibody response to protein-conjugated Haemophilus influenzae type b vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0200043",
+        "label": "Verrucae"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012191",
+        "label": "B-cell lymphoma"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "b8M3UrzyJtvnI0IQWUvHNDZI",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:615513",
+          "label": "APDS1"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F2P3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1246TtoC_PIK3CD_NM_005026v5",
+                "geneContext": {
+                  "valueId": "HGNC:8977",
+                  "symbol": "PIK3CD"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005026.5:c.1246T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.9719924T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005017.3:p.(Cys416Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 9719924,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:615513",
+        "label": "APDS1"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-07-31T17:30:49.345335Z",
+    "createdBy": "0009-0004-8124-8864",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2",
+    "externalReferences": [
+      {
+        "id": "PMID:24610295",
+        "description": "Mutations in PIK3CD can cause hyper IgM syndrome (HIGM) associated with increased cancer susceptibility."
+      }
+    ]
+  }
+}
