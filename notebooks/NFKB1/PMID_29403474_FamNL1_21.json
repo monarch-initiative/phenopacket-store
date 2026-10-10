@@ -1,0 +1,164 @@
+{
+  "id": "PMID_29403474_FamNL1_21",
+  "subject": {
+    "id": "FamNL1_21",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011108",
+        "label": "Recurrent sinusitis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004315",
+        "label": "Decreased circulating IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002093",
+        "label": "Respiratory insufficiency"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006510",
+        "label": "Chronic pulmonary obstruction"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002206",
+        "label": "Pulmonary fibrosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0006532",
+        "label": "Recurrent pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002110",
+        "label": "Bronchiectasis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "2N7JwYicw6sfdjkiGWCgTpLA",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616576",
+          "label": "Common variable Immunodeficiency 12"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "FamNL1_21",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c730plus4AtoG_NFKB1_NM_003998v4",
+                "geneContext": {
+                  "valueId": "HGNC:7794",
+                  "symbol": "NFKB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003998.4:c.730+4A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.102579043A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003989.2:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 102579043,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616576",
+        "label": "Common variable Immunodeficiency 12"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P31Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-08-10T17:39:54.017218Z",
+    "createdBy": "0009-0004-8124-8864",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:29403474",
+        "description": "Human NF-κB1 Haploinsufficiency and Epstein-Barr Virus-Induced Disease-Molecular Mechanisms and Consequences."
+      }
+    ]
+  }
+}
