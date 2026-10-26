@@ -1,0 +1,162 @@
+{
+  "id": "PMID_35356463_Patient_4",
+  "subject": {
+    "id": "Patient 4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P22Y"
+      }
+    },
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001250",
+        "label": "Seizure"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011704",
+        "label": "Sick sinus syndrome"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001688",
+        "label": "Sinus bradycardia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012378",
+        "label": "Fatigue"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002094",
+        "label": "Dyspnea"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "2e3148a80a050e107e78e5d9",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:204200",
+          "label": "Ceroid lipofuscinosis, neuronal, 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Patient 4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c461minus280677plus382del_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.461-280_677+382del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28485965_28486930del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28485964,
+                  "ref": "GATTGCAATCATAATCAAGTTTTCTTTTCTTTCTTTTTTTTTTTTTCTTCCTGAGACAGAGTCTAACTCTGTCGCCCGGGCTGGAGTGCAATGGCACGATCTCGGCTCACTGCCACCACTGCCTCCGGGGTTCAAGCGATTCTCCTGCCTTAGCCTCCTGAGTAGTTGGGACTACAGGCACCCGCCACCACACCTGGCTAATTGTTGTATTTTTAGTAGAGACGGGGTTTCACCATGTTGGCCAGGCTGGTTTCCTGACCTTAGGCGATCTGCCCTCCTTGGCCTCCCAAAGTGCTGGGATTACAGGCGTGAGCCACCACACCCAGCCATGGCCAAGTTTTCTCTCCTTGGACCCCTCTCCCTCCCGGCTCAGGGCAGCTCACCTGGCCAGCAGCAGGGCAGGGATACCCAGCATGGACAGCAGGGTCTGCTGAGGGGAGAGGCCGGCCTGGGTGAGGCCCAGGTAGGACAGGGCCCCCAGCAGCCCAGCTCCCCCAGTCCCTGAGGACCACCAGGAGATCACGGCCCTGGGAAGGAGAACACAGGAACATTCAGGAGGACCTAGGCTGACCATGGGACAGCCTCTCCCCACACTCCCTGCTCCACCTGCTTACCTGGGGTAGAAGGCAGTGAGGGAGAGGAAGGTGACCTCCCCAAGGCCTGATGAGATGCTAGCGAAGACCACACCTGGGGGGAGGACAAGCACTGGGATGGTCACACCACACCTTGCCACACTGCCCAGGCCTCTAATGTGTCTGGCCATGGCCTCCTCAGTATCAGCTCATAGAGGCTCCAATAGATCCCATGCATAGGCCAGGTTCCAGGTCTGAAGCAGAGCCCCACTCCCCTGCGTGTCCCTTCATGGAGAGTGGCACCTCCATCCACCCAGTTATCAGACCAGGGGCAGACATGCACCCTTGATGTCTCTGCCCCTTCATCAGTCTTTTTCTTTTCTTTTCTTTTTGGA",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:204200",
+        "label": "Ceroid lipofuscinosis, neuronal, 3"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-26T04:38:25.327211Z",
+    "createdBy": "0009-0003-8389-2517",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "2026-10-26",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "2026-10-26",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:35356463",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/35356463",
+        "description": "Pacemaker Implantation in Juvenile Neuronal Ceroid Lipofuscinosis (CLN3)\u2013A Long-Term Follow-Up Study"
+      }
+    ]
+  }
+}

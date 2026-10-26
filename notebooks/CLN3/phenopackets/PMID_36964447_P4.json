@@ -1,0 +1,188 @@
+{
+  "id": "PMID_36964447_P4",
+  "subject": {
+    "id": "P4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P7Y1M"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011504",
+        "label": "Bull's eye maculopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007984",
+        "label": "ERG: Reduced dark-adapted b-wave amplitude"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030614",
+        "label": "Foveal photoreceptor layer loss on macular OCT"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030602",
+        "label": "Abnormal fundus autofluorescence imaging"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P5Y1M"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0008275",
+        "label": "Abnormal light-adapted electroretinogram"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000718",
+        "label": "Aggressive behavior"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002186",
+        "label": "Apraxia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "11b46a6318b3d6a672199ab2",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:204200",
+          "label": "Ceroid lipofuscinosis, neuronal, 3"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c461minus280677plus382del_CLN3_NM_001042432v2",
+                "geneContext": {
+                  "valueId": "HGNC:2074",
+                  "symbol": "CLN3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001042432.2:c.461-280_677+382del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000016.10:g.28485965_28486930del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001035897.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr16",
+                  "pos": 28485964,
+                  "ref": "GATTGCAATCATAATCAAGTTTTCTTTTCTTTCTTTTTTTTTTTTTCTTCCTGAGACAGAGTCTAACTCTGTCGCCCGGGCTGGAGTGCAATGGCACGATCTCGGCTCACTGCCACCACTGCCTCCGGGGTTCAAGCGATTCTCCTGCCTTAGCCTCCTGAGTAGTTGGGACTACAGGCACCCGCCACCACACCTGGCTAATTGTTGTATTTTTAGTAGAGACGGGGTTTCACCATGTTGGCCAGGCTGGTTTCCTGACCTTAGGCGATCTGCCCTCCTTGGCCTCCCAAAGTGCTGGGATTACAGGCGTGAGCCACCACACCCAGCCATGGCCAAGTTTTCTCTCCTTGGACCCCTCTCCCTCCCGGCTCAGGGCAGCTCACCTGGCCAGCAGCAGGGCAGGGATACCCAGCATGGACAGCAGGGTCTGCTGAGGGGAGAGGCCGGCCTGGGTGAGGCCCAGGTAGGACAGGGCCCCCAGCAGCCCAGCTCCCCCAGTCCCTGAGGACCACCAGGAGATCACGGCCCTGGGAAGGAGAACACAGGAACATTCAGGAGGACCTAGGCTGACCATGGGACAGCCTCTCCCCACACTCCCTGCTCCACCTGCTTACCTGGGGTAGAAGGCAGTGAGGGAGAGGAAGGTGACCTCCCCAAGGCCTGATGAGATGCTAGCGAAGACCACACCTGGGGGGAGGACAAGCACTGGGATGGTCACACCACACCTTGCCACACTGCCCAGGCCTCTAATGTGTCTGGCCATGGCCTCCTCAGTATCAGCTCATAGAGGCTCCAATAGATCCCATGCATAGGCCAGGTTCCAGGTCTGAAGCAGAGCCCCACTCCCCTGCGTGTCCCTTCATGGAGAGTGGCACCTCCATCCACCCAGTTATCAGACCAGGGGCAGACATGCACCCTTGATGTCTCTGCCCCTTCATCAGTCTTTTTCTTTTCTTTTCTTTTTGGA",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:204200",
+        "label": "Ceroid lipofuscinosis, neuronal, 3"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0003621",
+          "label": "Juvenile onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-26T04:38:25.327211Z",
+    "createdBy": "0009-0003-8389-2517",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "2026-10-26",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "2026-10-26",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0",
+    "externalReferences": [
+      {
+        "id": "PMID:36964447",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/36964447",
+        "description": "Early recognition of CLN3 disease facilitated by visual electrophysiology and multimodal imaging"
+      }
+    ]
+  }
+}
