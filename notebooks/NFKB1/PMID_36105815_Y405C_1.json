@@ -1,0 +1,190 @@
+{
+  "id": "PMID_36105815_Y405C_1",
+  "subject": {
+    "id": "Y405C/1",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001873",
+        "label": "Thrombocytopenia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011839",
+        "label": "Abnormal total T cell number"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal total B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031393",
+        "label": "Abnormal total CD8+ T cell number"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0040089",
+        "label": "Abnormal total natural killer cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010701",
+        "label": "Abnormal circulating immunoglobulin concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0045042",
+        "label": "Decreased circulating complement C4 concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0005421",
+        "label": "Decreased circulating complement C3 concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002725",
+        "label": "Systemic lupus erythematosus"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003493",
+        "label": "Antinuclear antibody positivity"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020026",
+        "label": "Positive Coombs test"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "HoiyqDEnfhLFbRC3TkC4uuvn",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616576",
+          "label": "NFKB1 haploinsufficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Y405C/1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1214AtoG_NFKB1_NM_003998v4",
+                "geneContext": {
+                  "valueId": "HGNC:7794",
+                  "symbol": "NFKB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003998.4:c.1214A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.102594895A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003989.2:p.(Tyr405Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 102594895,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616576",
+        "label": "NFKB1 haploinsufficiency"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-28T16:42:09.236864700Z",
+    "createdBy": "0000-0002-1526-4557",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36105815",
+        "description": "Detrimental NFKB1 missense variants affecting the Rel-homology domain of p105/p50."
+      }
+    ]
+  }
+}
