@@ -1,0 +1,229 @@
+{
+  "id": "PMID_36105815_R198C_1",
+  "subject": {
+    "id": "R198C/1",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000787",
+        "label": "Kidney stone"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002788",
+        "label": "Recurrent upper respiratory tract infections"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal total B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033207",
+        "label": "Increased CD21low B cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030379",
+        "label": "Abnormal transitional B cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032132",
+        "label": "Decreased circulating total IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002720",
+        "label": "Decreased circulating IgA concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002850",
+        "label": "Decreased circulating IgM concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002045",
+        "label": "Hypothermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000855",
+        "label": "Cold intolerance"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0002240",
+        "label": "Hepatomegaly"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012719",
+        "label": "Functional abnormality of the gastrointestinal tract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034315",
+        "label": "Chronic cough"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001824",
+        "label": "Weight loss"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034752",
+        "label": "Axillary lymphadenopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410295",
+        "label": "Complete or near-complete absence of specific antibody response to tetanus vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0005424",
+        "label": "Absent specific antibody response"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "xzCeEsjUX4ZPnOhcIsfUajjA",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616576",
+          "label": "NFKB1 haploinsufficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "R198C/1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c592CtoT_NFKB1_NM_003998v4",
+                "geneContext": {
+                  "valueId": "HGNC:7794",
+                  "symbol": "NFKB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003998.4:c.592C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.102578901C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003989.2:p.(Arg198Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 102578901,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616576",
+        "label": "NFKB1 haploinsufficiency"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-28T16:42:09.235235100Z",
+    "createdBy": "0000-0002-1526-4557",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36105815",
+        "description": "Detrimental NFKB1 missense variants affecting the Rel-homology domain of p105/p50."
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "PMID_36105815_R157P_1",
+  "subject": {
+    "id": "R157P/1",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011839",
+        "label": "Abnormal total T cell number"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0010975",
+        "label": "Abnormal total B cell count"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0025183",
+        "label": "Abnormal total CD4+ T cell number"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0031393",
+        "label": "Abnormal total CD8+ T cell number"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0033207",
+        "label": "Increased CD21low B cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030388",
+        "label": "Decreased class-switched memory B cell proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032129",
+        "label": "Decreased plasmablast proportion"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0004432",
+        "label": "Agammaglobulinemia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001744",
+        "label": "Splenomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002090",
+        "label": "Pneumonia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000388",
+        "label": "Otitis media"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0012819",
+        "label": "Myocarditis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "dNZQCDO6E1Y0yecOJ7CzdqBZ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616576",
+          "label": "NFKB1 haploinsufficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "R157P/1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c470GtoC_NFKB1_NM_003998v4",
+                "geneContext": {
+                  "valueId": "HGNC:7794",
+                  "symbol": "NFKB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003998.4:c.470G>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.102576938G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003989.2:p.(Arg157Pro)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 102576938,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616576",
+        "label": "NFKB1 haploinsufficiency"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-28T16:42:09.234496300Z",
+    "createdBy": "0000-0002-1526-4557",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36105815",
+        "description": "Detrimental NFKB1 missense variants affecting the Rel-homology domain of p105/p50."
+      }
+    ]
+  }
+}
