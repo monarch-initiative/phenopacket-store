@@ -1,0 +1,182 @@
+{
+  "id": "PMID_30388401_patient_1659",
+  "subject": {
+    "id": "patient 1659",
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0003251",
+        "label": "Male infertility"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000027",
+        "label": "Azoospermia"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "NWlXLmFajEK2v2yc4zZXfuib",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621619",
+          "label": "Spermatogenic failure 103"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "patient 1659",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1196plus1GtoA_MEI1_NM_152513v4",
+                "geneContext": {
+                  "valueId": "HGNC:28613",
+                  "symbol": "MEI1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152513.4:c.1196+1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.41732345G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689726.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 41732345,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "patient 1659",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2206del_MEI1_NM_152513v4",
+                "geneContext": {
+                  "valueId": "HGNC:28613",
+                  "symbol": "MEI1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152513.4:c.2206del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.41763259del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689726.3:p.(Val736SerfsTer31)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 41763257,
+                  "ref": "TG",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621619",
+        "label": "Spermatogenic failure 103"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-07T10:57:37.340110Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:30388401",
+        "description": "Causative Mutations and Mechanism of Androgenetic Hydatidiform Moles."
+      }
+    ]
+  }
+}

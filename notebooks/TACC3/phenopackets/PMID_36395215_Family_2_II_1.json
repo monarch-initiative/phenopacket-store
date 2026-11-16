@@ -1,0 +1,181 @@
+{
+  "id": "PMID_36395215_Family_2_II_1",
+  "subject": {
+    "id": "Family 2 II.1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P36Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034914",
+        "label": "Oocyte maturation arrest"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "FwqvihNLOy2AZUg9W1HgKmYR",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621713",
+          "label": "Oocyte/zygote/embryo maturation arrest 27"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 2 II.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1892GtoT_TACC3_NM_006342v3",
+                "geneContext": {
+                  "valueId": "HGNC:11524",
+                  "symbol": "TACC3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006342.3:c.1892G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.1737653G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006333.1:p.(Gly631Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 1737653,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family 2 II.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c673_708del_TACC3_NM_006342v3",
+                "geneContext": {
+                  "valueId": "HGNC:11524",
+                  "symbol": "TACC3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006342.3:c.673_708del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.1728075_1728110del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006333.1:p.(Lys225_Cys236del)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 1728068,
+                  "ref": "AGAATGCAAAGCGGAGACTCCGCACGGAGCCGAGGAG",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621713",
+        "label": "Oocyte/zygote/embryo maturation arrest 27"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-13T07:16:24.978857Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36395215",
+        "description": "The mechanism of acentrosomal spindle assembly in human oocytes."
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "PMID_36105815_G64V_1",
+  "subject": {
+    "id": "G64V/1",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0033207",
+        "label": "Increased CD21low B cell proportion"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0032132",
+        "label": "Decreased circulating total IgG concentration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0410240",
+        "label": "Abnormal circulating IgA concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410243",
+        "label": "Abnormal circulating IgM concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0410299",
+        "label": "Decreased specific antibody response to unconjugated polysaccharide vaccine"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003002",
+        "label": "Breast carcinoma"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "KgkixObdbrciF9QKY1moTPlr",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:616576",
+          "label": "NFKB1 haploinsufficiency"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "G64V/1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c191GtoT_NFKB1_NM_003998v4",
+                "geneContext": {
+                  "valueId": "HGNC:7794",
+                  "symbol": "NFKB1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003998.4:c.191G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.102537889G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003989.2:p.(Gly64Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 102537889,
+                  "ref": "G",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:616576",
+        "label": "NFKB1 haploinsufficiency"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-28T16:42:09.232404500Z",
+    "createdBy": "0000-0002-1526-4557",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36105815",
+        "description": "Detrimental NFKB1 missense variants affecting the Rel-homology domain of p105/p50."
+      }
+    ]
+  }
+}
