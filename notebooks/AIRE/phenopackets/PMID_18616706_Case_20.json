@@ -27,7 +27,7 @@
     {
       "type": {
         "id": "HP:0002728",
-        "label": "Chronic mucocutaneous candidiasis"
+        "label": "Recurrent mucocutaneous candidiasis"
       },
       "onset": {
         "age": {
@@ -105,7 +105,7 @@
   ],
   "interpretations": [
     {
-      "id": "fBwBUnexNtWBTl22JWO7Mdlo",
+      "id": "hrjVTpufCPsV8uLQZOUw3kq9",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -113,43 +113,6 @@
           "label": "Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Case 20",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c232TtoC_AIRE_NM_000383v4",
-                "geneContext": {
-                  "valueId": "HGNC:360",
-                  "symbol": "AIRE"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000383.4:c.232T>C"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.44286656T>C"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr21",
-                  "pos": 44286656,
-                  "ref": "T",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Case 20",
             "interpretationStatus": "CAUSATIVE",
@@ -170,6 +133,10 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000021.9:g.44292378C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000374.1:p.(Gln358Ter)"
                   }
                 ],
                 "vcfRecord": {
@@ -178,6 +145,47 @@
                   "pos": 44292378,
                   "ref": "C",
                   "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Case 20",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c232TtoC_AIRE_NM_000383v4",
+                "geneContext": {
+                  "valueId": "HGNC:360",
+                  "symbol": "AIRE"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000383.4:c.232T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.44286656T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000374.1:p.(Trp78Arg)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr21",
+                  "pos": 44286656,
+                  "ref": "T",
+                  "alt": "C"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -205,14 +213,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-07T05:13:10.182276Z",
+    "created": "2026-11-21T17:08:58.091344Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -223,14 +231,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
