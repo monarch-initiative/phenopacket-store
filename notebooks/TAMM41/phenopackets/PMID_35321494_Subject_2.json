@@ -80,7 +80,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       }
     },
     {
@@ -112,7 +112,7 @@
   ],
   "interpretations": [
     {
-      "id": "90vM45SFkhYWQXUo1mIUyeyL",
+      "id": "4FmTiK4A4Fp2EwT0SoG53MVA",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -120,6 +120,47 @@
           "label": "Combined oxidative phosphorylation deficiency 56"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Subject 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c411plus1GtoT_TAMM41_NM_001284401v2",
+                "geneContext": {
+                  "valueId": "HGNC:25187",
+                  "symbol": "TAMM41"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001284401.2:c.411+1G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.11839221C>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001271330.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 11839221,
+                  "ref": "C",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Subject 2",
             "interpretationStatus": "CAUSATIVE",
@@ -160,47 +201,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "Subject 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c411_1GtoT_TAMM41_NM_001284401v2",
-                "geneContext": {
-                  "valueId": "HGNC:25187",
-                  "symbol": "TAMM41"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001284401.2:c.411+1G>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.11839221C>A"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001271330.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr3",
-                  "pos": 11839221,
-                  "ref": "C",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -221,14 +221,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T08:22:23.563518Z",
+    "created": "2026-11-22T09:36:40.995565Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -239,14 +239,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
