@@ -68,7 +68,7 @@
   ],
   "interpretations": [
     {
-      "id": "ZY4xJaeCCg75YijTGWfQH2gZ",
+      "id": "oZN3DcsFeqQFUGWlBXOs251V",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -76,47 +76,6 @@
           "label": "Anemia, congenital dyserythropoietic, type IVb"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "P-8",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c519_525dup_KLF1_NM_006563v5",
-                "geneContext": {
-                  "valueId": "HGNC:6345",
-                  "symbol": "KLF1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_006563.5:c.519_525dup"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000019.10:g.12885708_12885714dup"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_006554.1:p.(Gly176ArgfsTer179)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr19",
-                  "pos": 12885704,
-                  "ref": "C",
-                  "alt": "CGGCGCCG"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "P-8",
             "interpretationStatus": "CAUSATIVE",
@@ -157,6 +116,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "P-8",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c519_525dup_KLF1_NM_006563v5",
+                "geneContext": {
+                  "valueId": "HGNC:6345",
+                  "symbol": "KLF1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006563.5:c.519_525dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.12885708_12885714dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006554.1:p.(Gly176ArgfsTer179)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 12885704,
+                  "ref": "C",
+                  "alt": "CGGCGCCG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -177,14 +177,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-09T15:17:25.379728Z",
+    "created": "2026-11-22T07:48:10.968925Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -195,14 +195,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

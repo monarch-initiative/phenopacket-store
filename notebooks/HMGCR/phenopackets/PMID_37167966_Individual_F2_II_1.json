@@ -131,7 +131,7 @@
   ],
   "interpretations": [
     {
-      "id": "D0j9lMrBdaPWKSN0h5rlcha3",
+      "id": "UBTh570UvGZHWrfLiTSzP1Yc",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -139,47 +139,6 @@
           "label": "Muscular dystrophy, limb-girdle, autosomal recessive 28"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Individual F2-II:1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c365_4AtoG_HMGCR_NM_000859v3",
-                "geneContext": {
-                  "valueId": "HGNC:5006",
-                  "symbol": "HMGCR"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_000859.3:c.365+4A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000005.10:g.75344336A>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_000850.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr5",
-                  "pos": 75344336,
-                  "ref": "A",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Individual F2-II:1",
             "interpretationStatus": "CAUSATIVE",
@@ -220,6 +179,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Individual F2-II:1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c365plus4AtoG_HMGCR_NM_000859v3",
+                "geneContext": {
+                  "valueId": "HGNC:5006",
+                  "symbol": "HMGCR"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000859.3:c.365+4A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.75344336A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000850.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 75344336,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -239,14 +239,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-12-31T14:28:06.106665Z",
+    "created": "2026-11-22T07:30:34.364900Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -257,14 +257,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

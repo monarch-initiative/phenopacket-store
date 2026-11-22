@@ -47,7 +47,7 @@
   ],
   "interpretations": [
     {
-      "id": "1ClW2VMCsgoywbLXrz5HPjKy",
+      "id": "7KaKVMQXtvR3MkGWjGGu89Cv",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -55,6 +55,47 @@
           "label": "Cardiomyopathy, dilated, 2L"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c859plus4AtoG_LDB3_NM_007078v3",
+                "geneContext": {
+                  "valueId": "HGNC:15710",
+                  "symbol": "LDB3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_007078.3:c.859+4A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000010.11:g.86692069A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_009009.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr10",
+                  "pos": 86692069,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Family 1",
             "interpretationStatus": "CAUSATIVE",
@@ -95,47 +136,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "Family 1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c859_4AtoG_LDB3_NM_007078v3",
-                "geneContext": {
-                  "valueId": "HGNC:15710",
-                  "symbol": "LDB3"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_007078.3:c.859+4A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000010.11:g.86692069A>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_009009.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr10",
-                  "pos": 86692069,
-                  "ref": "A",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -156,14 +156,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T09:55:49.674547Z",
+    "created": "2026-11-22T07:50:29.243271Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -174,14 +174,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
