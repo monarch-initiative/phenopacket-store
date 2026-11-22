@@ -51,7 +51,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       }
     },
     {
@@ -144,7 +144,7 @@
   ],
   "interpretations": [
     {
-      "id": "sjMHCZW4KoBG54J1zEu0UNj1",
+      "id": "DOk6aNLoPNv8SL2RFQC8dnyB",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -152,6 +152,31 @@
           "label": "Multiple mitochondrial dysfunctions syndrome 10"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "P1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "CIAO1_SV_Exon_7_deletion",
+                "label": "Exon 7 deletion",
+                "geneContext": {
+                  "valueId": "HGNC:14280",
+                  "symbol": "CIAO1"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000183",
+                  "label": "chromosome_structure_variation"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "P1",
             "interpretationStatus": "CAUSATIVE",
@@ -192,31 +217,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "P1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "CIAO1_SV_Exon_7_deletion",
-                "label": "Exon 7 deletion",
-                "geneContext": {
-                  "valueId": "HGNC:14280",
-                  "symbol": "CIAO1"
-                },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000183",
-                  "label": "chromosome_structure_variation"
-                },
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -236,14 +236,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T16:11:32.083126Z",
+    "created": "2026-11-22T05:07:23.623611Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -254,14 +254,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
@@ -278,6 +270,14 @@
         "version": "06/01/25",
         "namespacePrefix": "HGNC",
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       }
     ],
     "phenopacketSchemaVersion": "2.0.2",

@@ -33,7 +33,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       },
       "excluded": true
     },
@@ -149,7 +149,7 @@
   ],
   "interpretations": [
     {
-      "id": "9kV79Pzv5bzenRKoonlT6TJn",
+      "id": "ZPGXRZ0Nmb0VCsf2WJyMs8sN",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -157,47 +157,6 @@
           "label": "Coenzyme Q10 deficiency, primary, 7"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Subject 3 II-1, family 3",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c521_523del_COQ4_NM_016035v5",
-                "geneContext": {
-                  "valueId": "HGNC:19693",
-                  "symbol": "COQ4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_016035.5:c.521_523del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.128332271_128332273del"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_057119.3:p.(Thr174del)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": 128332267,
-                  "ref": "CCCA",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Subject 3 II-1, family 3",
             "interpretationStatus": "CAUSATIVE",
@@ -238,6 +197,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Subject 3 II-1, family 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c521_523del_COQ4_NM_016035v5",
+                "geneContext": {
+                  "valueId": "HGNC:19693",
+                  "symbol": "COQ4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_016035.5:c.521_523del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.128332271_128332273del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_057119.3:p.(Thr174del)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 128332267,
+                  "ref": "CCCA",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -258,14 +258,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-12-31T16:20:36.616176Z",
+    "created": "2026-11-22T05:17:16.059916Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -276,14 +276,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

@@ -118,7 +118,7 @@
     {
       "type": {
         "id": "HP:0032163",
-        "label": "Molluscum contagiosum"
+        "label": "Unusual molluscum contagiosum"
       },
       "excluded": true
     },
@@ -202,7 +202,7 @@
   ],
   "interpretations": [
     {
-      "id": "vR3eAU4dJp9QiS6LttzATzaA",
+      "id": "aVETVUdvMzp9nodC7ZNwncna",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -217,7 +217,32 @@
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c529_18CtoG_DOCK8_NM_203447v4",
+                "id": "DOCK8_DEL_chr9:g(153190_194193)_(351777_360184)del",
+                "label": "chr9:g(153190_194193)_(351777_360184)del",
+                "geneContext": {
+                  "valueId": "HGNC:19191",
+                  "symbol": "DOCK8"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 6-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c529minus18CtoG_DOCK8_NM_203447v4",
                 "geneContext": {
                   "valueId": "HGNC:19191",
                   "symbol": "DOCK8"
@@ -250,31 +275,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "Patient 6-1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "DOCK8_DEL_chr9:g(153190_194193)_(351777_360184)del",
-                "label": "chr9:g(153190_194193)_(351777_360184)del",
-                "geneContext": {
-                  "valueId": "HGNC:19191",
-                  "symbol": "DOCK8"
-                },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -289,14 +289,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T20:23:21.483590Z",
+    "created": "2026-11-22T05:26:48.156396Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -307,14 +307,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
@@ -331,6 +323,14 @@
         "version": "06/01/25",
         "namespacePrefix": "HGNC",
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       }
     ],
     "phenopacketSchemaVersion": "2.0.2",

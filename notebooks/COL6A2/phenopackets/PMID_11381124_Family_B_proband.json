@@ -150,7 +150,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       },
       "onset": {
         "age": {
@@ -220,7 +220,7 @@
   ],
   "interpretations": [
     {
-      "id": "84MDbstEgGi3fNR3EbzCgUQj",
+      "id": "Ue0gpfoFTNmaylN930QlJJFf",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -235,48 +235,7 @@
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1771_1GtoA_COL6A2_NM_001849v4",
-                "geneContext": {
-                  "valueId": "HGNC:2212",
-                  "symbol": "COL6A2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001849.4:c.1771-1G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.46125265G>A"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001840.3:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr21",
-                  "pos": 46125265,
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Family B proband",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c1459_2AtoG_COL6A2_NM_001849v4",
+                "id": "c1459minus2AtoG_COL6A2_NM_001849v4",
                 "geneContext": {
                   "valueId": "HGNC:2212",
                   "symbol": "COL6A2"
@@ -309,6 +268,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Family B proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1771minus1GtoA_COL6A2_NM_001849v4",
+                "geneContext": {
+                  "valueId": "HGNC:2212",
+                  "symbol": "COL6A2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001849.4:c.1771-1G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.46125265G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001840.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr21",
+                  "pos": 46125265,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -329,14 +329,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T16:50:08.945994Z",
+    "created": "2026-11-22T05:13:26.559072Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -347,14 +347,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

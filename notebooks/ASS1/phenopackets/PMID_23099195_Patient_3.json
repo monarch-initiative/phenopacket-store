@@ -13,7 +13,7 @@
     {
       "type": {
         "id": "HP:0011966",
-        "label": "Elevated plasma citrulline"
+        "label": "Elevated circulating citrulline concentration"
       },
       "onset": {
         "age": {
@@ -178,7 +178,7 @@
   ],
   "interpretations": [
     {
-      "id": "5NEXq6t52IOpJVgZX2hh5KUn",
+      "id": "lae1UVhauDqplICZ2DBEzvAb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -186,43 +186,6 @@
           "label": "Citrullinemia"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Patient 3",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c421_2AtoG_ASS1_NM_054012v4",
-                "geneContext": {
-                  "valueId": "HGNC:758",
-                  "symbol": "ASS1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_054012.4:c.421-2A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.130466723A>G"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": 130466723,
-                  "ref": "A",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Patient 3",
             "interpretationStatus": "CAUSATIVE",
@@ -243,6 +206,10 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000009.12:g.130489464G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_446464.1:p.(Gly324Ser)"
                   }
                 ],
                 "vcfRecord": {
@@ -251,6 +218,47 @@
                   "pos": 130489464,
                   "ref": "G",
                   "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c421minus2AtoG_ASS1_NM_054012v4",
+                "geneContext": {
+                  "valueId": "HGNC:758",
+                  "symbol": "ASS1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_054012.4:c.421-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.130466723A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_446464.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 130466723,
+                  "ref": "A",
+                  "alt": "G"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -278,14 +286,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-09-30T13:48:52.401535Z",
+    "created": "2026-11-22T04:39:33.095679Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -296,14 +304,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

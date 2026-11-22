@@ -188,7 +188,7 @@
     {
       "type": {
         "id": "HP:0030353",
-        "label": "Decreased serum insulin-like growth factor 1"
+        "label": "Decreased circulating insulin-like growth factor 1 concentration"
       }
     },
     {
@@ -213,7 +213,7 @@
   ],
   "interpretations": [
     {
-      "id": "VM5Y96AqJeLDPfEyf4ABJNKy",
+      "id": "jXbpwATGsaTx7uWRWjyUh86S",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -228,32 +228,7 @@
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "DNA2_DEL_Deletion-exon-4",
-                "label": "Deletion exon 4",
-                "geneContext": {
-                  "valueId": "HGNC:2939",
-                  "symbol": "DNA2"
-                },
-                "moleculeContext": "genomic",
-                "structuralType": {
-                  "id": "SO:1000029",
-                  "label": "chromosomal_deletion"
-                },
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
-          {
-            "subjectOrBiosampleId": "Individual F5.1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c588_2214AtoG_DNA2_NM_001080449v3",
+                "id": "c588minus2214AtoG_DNA2_NM_001080449v3",
                 "geneContext": {
                   "valueId": "HGNC:2939",
                   "symbol": "DNA2"
@@ -286,6 +261,31 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Individual F5.1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "DNA2_DEL_Deletion-exon-4",
+                "label": "Deletion exon 4",
+                "geneContext": {
+                  "valueId": "HGNC:2939",
+                  "symbol": "DNA2"
+                },
+                "moleculeContext": "genomic",
+                "structuralType": {
+                  "id": "SO:1000029",
+                  "label": "chromosomal_deletion"
+                },
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -305,14 +305,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T12:25:56.169037Z",
+    "created": "2026-11-22T05:24:13.082900Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -323,14 +323,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
@@ -347,6 +339,14 @@
         "version": "06/01/25",
         "namespacePrefix": "HGNC",
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      },
+      {
+        "id": "so",
+        "name": "Sequence types and features ontology",
+        "url": "http://purl.obolibrary.org/obo/so.owl",
+        "version": "2024-11-18",
+        "namespacePrefix": "SO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       }
     ],
     "phenopacketSchemaVersion": "2.0.2",
