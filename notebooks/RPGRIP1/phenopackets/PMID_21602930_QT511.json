@@ -63,7 +63,7 @@
   ],
   "interpretations": [
     {
-      "id": "OdZ4jbRPyNPZcciQv4nD4U4F",
+      "id": "y8gDFC3YRNBUu9CW2slIr6YC",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -71,6 +71,47 @@
           "label": "Leber congenital amaurosis 6"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "QT511",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1468minus2AtoG_RPGRIP1_NM_020366v4",
+                "geneContext": {
+                  "valueId": "HGNC:13436",
+                  "symbol": "RPGRIP1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_020366.4:c.1468-2A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.21321257A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_065099.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 21321257,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "QT511",
             "interpretationStatus": "CAUSATIVE",
@@ -111,47 +152,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "QT511",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c1468_2AtoG_RPGRIP1_NM_020366v4",
-                "geneContext": {
-                  "valueId": "HGNC:13436",
-                  "symbol": "RPGRIP1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_020366.4:c.1468-2A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.21321257A>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_065099.3:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": 21321257,
-                  "ref": "A",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -171,14 +171,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T16:09:02.549951Z",
+    "created": "2026-11-22T09:19:42.088455Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -189,14 +189,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

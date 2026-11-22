@@ -22,7 +22,7 @@
     {
       "type": {
         "id": "HP:0040081",
-        "label": "Abnormal circulating creatine kinase concentration"
+        "label": "Abnormal circulating creatine kinase activity"
       },
       "excluded": true
     },
@@ -239,7 +239,7 @@
   ],
   "interpretations": [
     {
-      "id": "RYf5dJQ9iVtxx8fqH3Hua9DN",
+      "id": "Jp1B7wht3UAf8suZGkLqGfMJ",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -247,6 +247,47 @@
           "label": "Morimoto-Ryu-Malicdan neuromuscular syndrome"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Individual 1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c996plus2dup_RFC4_NM_002916v5",
+                "geneContext": {
+                  "valueId": "HGNC:9972",
+                  "symbol": "RFC4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_002916.5:c.996+2dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000003.12:g.186790140dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_002907.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr3",
+                  "pos": 186790139,
+                  "ref": "T",
+                  "alt": "TA"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "Individual 1",
             "interpretationStatus": "CAUSATIVE",
@@ -287,47 +328,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "Individual 1",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c996_2dup_RFC4_NM_002916v5",
-                "geneContext": {
-                  "valueId": "HGNC:9972",
-                  "symbol": "RFC4"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_002916.5:c.996+2dup"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000003.12:g.186790140dup"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_002907.1:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr3",
-                  "pos": 186790139,
-                  "ref": "T",
-                  "alt": "TA"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -348,14 +348,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T20:37:28.474616Z",
+    "created": "2026-11-22T09:16:11.544335Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -366,14 +366,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

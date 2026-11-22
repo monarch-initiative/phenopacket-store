@@ -70,7 +70,7 @@
     {
       "type": {
         "id": "HP:0031402",
-        "label": "Reduced antigen-specific T cell proliferation"
+        "label": "Decreased antigen-specific T cell proliferation"
       }
     },
     {
@@ -90,7 +90,7 @@
     {
       "type": {
         "id": "HP:0410301",
-        "label": "Partial absence of specific antibody response to unconjugated pneumococcus vaccine"
+        "label": "Partial absence of specific antibody response to unconjugated pneumococcus polysaccharide"
       }
     },
     {
@@ -144,7 +144,7 @@
     {
       "type": {
         "id": "HP:0040081",
-        "label": "Abnormal circulating creatine kinase concentration"
+        "label": "Abnormal circulating creatine kinase activity"
       },
       "excluded": true
     },
@@ -169,7 +169,7 @@
   ],
   "interpretations": [
     {
-      "id": "Y8hm10T5hbPjbtMuZUzpSWqI",
+      "id": "BBvVGf1xdY45RKdzHdemofGt",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -177,6 +177,47 @@
           "label": "Immunodeficiency 115 with autoinflammation"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "8-year-old girl",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1737plus3AtoG_RNF31_NM_017999v5",
+                "geneContext": {
+                  "valueId": "HGNC:16031",
+                  "symbol": "RNF31"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017999.5:c.1737+3A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000014.9:g.24151382A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_060469.4:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr14",
+                  "pos": 24151382,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "8-year-old girl",
             "interpretationStatus": "CAUSATIVE",
@@ -217,47 +258,6 @@
                 }
               }
             }
-          },
-          {
-            "subjectOrBiosampleId": "8-year-old girl",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c1737_3AtoG_RNF31_NM_017999v5",
-                "geneContext": {
-                  "valueId": "HGNC:16031",
-                  "symbol": "RNF31"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_017999.5:c.1737+3A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000014.9:g.24151382A>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_060469.4:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr14",
-                  "pos": 24151382,
-                  "ref": "A",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
           }
         ]
       }
@@ -277,14 +277,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-12-31T18:32:18.046025Z",
+    "created": "2026-11-22T09:18:01.045711Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -295,14 +295,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
