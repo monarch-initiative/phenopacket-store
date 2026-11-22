@@ -1,0 +1,175 @@
+{
+  "id": "PMID_36759719_Subject_P10137",
+  "subject": {
+    "id": "Subject P10137",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P31Y"
+      }
+    },
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0011961",
+        "label": "Non-obstructive azoospermia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031039",
+        "label": "Spermatocyte maturation arrest"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:6000135",
+        "label": "Low semen volume"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008734",
+        "label": "Decreased testicular size"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030345",
+        "label": "Abnormal circulating luteinizing hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030346",
+        "label": "Abnormal circulating follicle-stimulating hormone concentration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0030087",
+        "label": "Abnormal circulating testosterone concentration"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "aFlXCUYRfDS0sa0B56KFbv10",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621619",
+          "label": "Spermatogenic failure 103"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Subject P10137",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1585TtoA_MEI1_NM_152513v4",
+                "geneContext": {
+                  "valueId": "HGNC:28613",
+                  "symbol": "MEI1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_152513.4:c.1585T>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000022.11:g.41745931T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_689726.3:p.(Phe529Ile)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr22",
+                  "pos": 41745931,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621619",
+        "label": "Spermatogenic failure 103"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0025708",
+          "label": "Early young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-07T10:57:37.341160Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:36759719",
+        "description": "Bi-allelic MEI1 variants cause meiosis arrest and non-obstructive azoospermia."
+      }
+    ]
+  }
+}

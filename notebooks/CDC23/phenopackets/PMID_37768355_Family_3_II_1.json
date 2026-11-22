@@ -1,0 +1,146 @@
+{
+  "id": "PMID_37768355_Family_3_II_1",
+  "subject": {
+    "id": "Family 3 II-1",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P25Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0008222",
+        "label": "Female infertility"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031516",
+        "label": "Metaphase I oocyte maturation arrest"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0020003",
+        "label": "Embryo developmental arrest"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "cyrW17KOttTuZ7XUbwGgs8rJ",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621730",
+          "label": "Oocyte/zygote/embryo maturation arrest 28"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 3 II-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c988CtoT_CDC23_NM_004661v4",
+                "geneContext": {
+                  "valueId": "HGNC:1724",
+                  "symbol": "CDC23"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004661.4:c.988C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000005.10:g.138198223G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004652.2:p.(Arg330Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr5",
+                  "pos": 138198223,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621730",
+        "label": "Oocyte/zygote/embryo maturation arrest 28"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-13T07:30:51.307130Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37768355",
+        "description": "Homozygous variants in CDC23 cause female infertility characterized by oocyte maturation defects."
+      }
+    ]
+  }
+}

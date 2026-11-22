@@ -1,0 +1,190 @@
+{
+  "id": "PMID_42409022_Family_I_individual_3",
+  "subject": {
+    "id": "Family I individual 3",
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000161",
+        "label": "Median cleft upper lip"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0009099",
+        "label": "Median cleft palate"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001126",
+        "label": "Cryptophthalmos"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002119",
+        "label": "Ventriculomegaly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002410",
+        "label": "Aqueductal stenosis"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0020128",
+        "label": "Aplasia of the olfactory tract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0032466",
+        "label": "Aplasia of the olfactory bulb"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0034976",
+        "label": "Absent pituitary stalk"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0001852",
+        "label": "Sandal gap"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100259",
+        "label": "Postaxial polydactyly"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Z0gj9mUT3Eh3sEwTJQA7TaeM",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621676",
+          "label": "Lemire-Marshall-Drivas-Chitayat syndrome"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family I individual 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c687plus6TtoC_CDK20_NM_001039803v3",
+                "geneContext": {
+                  "valueId": "HGNC:21420",
+                  "symbol": "CDK20"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001039803.3:c.687+6T>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.87969790A>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001034892.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 87969790,
+                  "ref": "A",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621676",
+        "label": "Lemire-Marshall-Drivas-Chitayat syndrome"
+      },
+      "onset": {
+        "gestationalAge": {
+          "weeks": 16,
+          "days": 2
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-14T18:27:56.376400Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:42409022",
+        "description": "Bi-allelic variants in CDK20 cause a severe ciliopathy with midline brain and facial anomalies."
+      }
+    ]
+  }
+}

@@ -12,13 +12,6 @@
   "phenotypicFeatures": [
     {
       "type": {
-        "id": "HP:0001324",
-        "label": "Muscle weakness"
-      },
-      "excluded": true
-    },
-    {
-      "type": {
         "id": "HP:0003552",
         "label": "Muscle stiffness"
       },
@@ -30,24 +23,39 @@
     },
     {
       "type": {
-        "id": "HP:0001265",
-        "label": "Hyporeflexia"
+        "id": "HP:0003688",
+        "label": "Cytochrome C oxidase-negative muscle fibers"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0100284",
+        "label": "EMG: myotonic discharges"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001324",
+        "label": "Muscle weakness"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0012904",
+        "label": "Cold-sensitive myotonia"
       },
       "onset": {
         "age": {
-          "iso8601duration": "P21Y"
+          "iso8601duration": "P11Y"
         }
       }
     },
     {
       "type": {
-        "id": "HP:0002486",
-        "label": "Myotonia"
-      },
-      "onset": {
-        "age": {
-          "iso8601duration": "P21Y"
-        }
+        "id": "HP:0003740",
+        "label": "Myotonia with warm-up phenomenon"
       }
     },
     {
@@ -64,7 +72,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       },
       "onset": {
         "age": {
@@ -74,20 +82,24 @@
     },
     {
       "type": {
-        "id": "HP:0003688",
-        "label": "Cytochrome C oxidase-negative muscle fibers"
+        "id": "HP:0001265",
+        "label": "Hyporeflexia"
       },
-      "excluded": true
+      "onset": {
+        "age": {
+          "iso8601duration": "P21Y"
+        }
+      }
     }
   ],
   "interpretations": [
     {
-      "id": "h8nS35uBNpukBRwHDMgbq3rg",
+      "id": "7qMHOdxkrQyblaxuCZ7pDO2B",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
-          "id": "OMIM:160800",
-          "label": "Myotonia congenita, dominant"
+          "id": "OMIM:255700",
+          "label": "Myotonia congenita, recessive"
         },
         "genomicInterpretations": [
           {
@@ -97,7 +109,48 @@
               "acmgPathogenicityClassification": "PATHOGENIC",
               "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
               "variationDescriptor": {
-                "id": "c1401_1GtoA_CLCN1_NM_000083v3",
+                "id": "c1657AtoT_CLCN1_NM_000083v3",
+                "geneContext": {
+                  "valueId": "HGNC:2019",
+                  "symbol": "CLCN1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_000083.3:c.1657A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000007.14:g.143342003A>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_000074.3:p.(Ile553Phe)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr7",
+                  "pos": 143342003,
+                  "ref": "A",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "case report",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1401plus1GtoA_CLCN1_NM_000083v3",
                 "geneContext": {
                   "valueId": "HGNC:2019",
                   "symbol": "CLCN1"
@@ -138,8 +191,8 @@
   "diseases": [
     {
       "term": {
-        "id": "OMIM:160800",
-        "label": "Myotonia congenita, dominant"
+        "id": "OMIM:255700",
+        "label": "Myotonia congenita, recessive"
       },
       "onset": {
         "age": {
@@ -149,14 +202,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-23T13:55:58.146374Z",
+    "created": "2026-11-15T08:21:42.028216Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -167,14 +220,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

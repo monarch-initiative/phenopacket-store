@@ -1,0 +1,152 @@
+{
+  "id": "PMID_37751738_F1_V_6",
+  "subject": {
+    "id": "F1-V.6",
+    "vitalStatus": {
+      "status": "DECEASED"
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0000476",
+        "label": "Cystic hygroma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002101",
+        "label": "Abnormal lung lobation"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009112",
+        "label": "Aplasia of the left hemidiaphragm"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0009110",
+        "label": "Diaphragmatic eventration"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0008986",
+        "label": "Agenesis of the diaphragm"
+      },
+      "excluded": true
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "58QWhEVLXy4YQlKvEONn6wdw",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:306950",
+          "label": "Diaphragmatic hernia 5, X-linked"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "F1-V.6",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c808GtoA_PLS3_NM_005032v7",
+                "geneContext": {
+                  "valueId": "HGNC:9091",
+                  "symbol": "PLS3"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_005032.7:c.808G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000023.11:g.115636895G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_005023.2:p.(Glu270Lys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chrX",
+                  "pos": 115636895,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000134",
+                  "label": "hemizygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:306950",
+        "label": "Diaphragmatic hernia 5, X-linked"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-14T17:32:41.258036Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:37751738",
+        "description": "PLS3 missense variants affecting the actin-binding domains cause X-linked congenital diaphragmatic hernia and body-wall defects."
+      }
+    ]
+  }
+}

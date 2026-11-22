@@ -1,0 +1,186 @@
+{
+  "id": "PMID_41742423_Family_III_individual_S4",
+  "subject": {
+    "id": "Family III individual S4",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P55Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0001105",
+        "label": "Retinal atrophy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100014",
+        "label": "Epiretinal membrane"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011505",
+        "label": "Cystoid macular edema"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007737",
+        "label": "Spicular pigmentation of the retina"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000543",
+        "label": "Optic disc pallor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001133",
+        "label": "Constriction of peripheral visual field"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000646",
+        "label": "Amblyopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000550",
+        "label": "Undetectable electroretinogram"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000407",
+        "label": "Sensorineural hearing impairment"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P50Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "EoqF1aKN4SGPNHwi6w4Od0qW",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621637",
+          "label": "Retinitis pigmentosa 108"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family III individual S4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c868AtoT_SAXO6_NM_001354969v2",
+                "geneContext": {
+                  "valueId": "HGNC:29917",
+                  "symbol": "SAXO6"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001354969.2:c.868A>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.68321562T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001341898.1:p.(Lys290Ter)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 68321562,
+                  "ref": "T",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621637",
+        "label": "Retinitis pigmentosa 108"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P50Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-07T13:03:32.452828Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:41742423",
+        "description": "Loss-of-function variants in SAXO6, encoding a microtubule inner protein of photoreceptor cilia, cause a late-onset retinal dystrophy."
+      }
+    ]
+  }
+}

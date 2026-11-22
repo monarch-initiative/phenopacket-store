@@ -80,7 +80,7 @@
     {
       "type": {
         "id": "HP:0001256",
-        "label": "Intellectual disability, mild"
+        "label": "Mild intellectual disability"
       },
       "excluded": true
     },
@@ -108,7 +108,7 @@
   ],
   "interpretations": [
     {
-      "id": "27emJMpliuSi3TPzkOCaZm6C",
+      "id": "iZcRlXfdQfWLKDJxcKe0iCfd",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -156,6 +156,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "F12 II-1",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1814AtoG_AFG3L2_NM_006796v3",
+                "geneContext": {
+                  "valueId": "HGNC:315",
+                  "symbol": "AFG3L2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_006796.3:c.1814A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000018.10:g.12340367T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_006787.2:p.(Tyr605Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr18",
+                  "pos": 12340367,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -170,14 +211,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-19T10:27:31.337073Z",
+    "created": "2026-11-21T17:06:32.240575Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-09-01",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -188,14 +229,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
