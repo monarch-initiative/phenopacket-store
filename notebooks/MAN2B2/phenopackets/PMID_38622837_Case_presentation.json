@@ -89,7 +89,7 @@
     {
       "type": {
         "id": "HP:0032218",
-        "label": "Decreased proportion of CD4-positive T cells"
+        "label": "Decreased total CD4+ T cell proportion"
       }
     },
     {
@@ -135,7 +135,7 @@
   ],
   "interpretations": [
     {
-      "id": "jK6XR1Liapvkbq7LBuKZbdhK",
+      "id": "PmoN66KDe2hJCKzZT4g2uAQb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -143,43 +143,6 @@
           "label": "Congenital disorder of glycosylation type 1EE with or without immunodeficiency"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Case presentation",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c384GtoT_MAN2B2_NM_015274v3",
-                "geneContext": {
-                  "valueId": "HGNC:29623",
-                  "symbol": "MAN2B2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_015274.3:c.384G>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000004.12:g.6578491G>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr4",
-                  "pos": 6578491,
-                  "ref": "G",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Case presentation",
             "interpretationStatus": "CAUSATIVE",
@@ -200,6 +163,10 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000004.12:g.6594601T>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056089.1:p.(Ile309Asn)"
                   }
                 ],
                 "vcfRecord": {
@@ -208,6 +175,47 @@
                   "pos": 6594601,
                   "ref": "T",
                   "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Case presentation",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c384GtoT_MAN2B2_NM_015274v3",
+                "geneContext": {
+                  "valueId": "HGNC:29623",
+                  "symbol": "MAN2B2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015274.3:c.384G>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000004.12:g.6578491G>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056089.1:p.(Gln128His)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr4",
+                  "pos": 6578491,
+                  "ref": "G",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -235,14 +243,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-06T03:56:17.273007Z",
+    "created": "2026-11-22T08:24:32.905518Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -253,14 +261,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

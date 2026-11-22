@@ -127,7 +127,7 @@
     {
       "type": {
         "id": "HP:0002850",
-        "label": "Decreased circulating total IgM"
+        "label": "Decreased circulating IgM concentration"
       },
       "excluded": true
     },
@@ -203,7 +203,7 @@
   ],
   "interpretations": [
     {
-      "id": "xuxYvbiR4eooxQtCHoy9Lo4x",
+      "id": "wFCkkLQxWcwQvVbSrNbbkNrV",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -211,47 +211,6 @@
           "label": "Short stature, optic nerve atrophy, and Pelger-Huet anomaly"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c680AtoC_NBAS_NM_015909v4",
-                "geneContext": {
-                  "valueId": "HGNC:15625",
-                  "symbol": "NBAS"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_015909.4:c.680A>C"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.15534609T>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_056993.2:p.(His227Pro)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 15534609,
-                  "ref": "T",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -292,6 +251,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c680AtoC_NBAS_NM_015909v4",
+                "geneContext": {
+                  "valueId": "HGNC:15625",
+                  "symbol": "NBAS"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015909.4:c.680A>C"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.15534609T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056993.2:p.(His227Pro)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 15534609,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -311,14 +311,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T09:35:57.405624Z",
+    "created": "2026-11-22T08:33:58.256144Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -329,14 +329,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

@@ -25,13 +25,13 @@
     {
       "type": {
         "id": "HP:0031516",
-        "label": "Oocyte arrest at metaphase I"
+        "label": "Metaphase I oocyte maturation arrest"
       }
     }
   ],
   "interpretations": [
     {
-      "id": "mQfgUwpdGbGarA4TER3ABRE0",
+      "id": "YPOj0KO9qIViitxfFXRNzw3D",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -39,43 +39,6 @@
           "label": "Oocyte/zygote/embryo maturation arrest 22"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "II-1 in Family 3",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c1516CtoT_PABPC1L_NM_001372179v1",
-                "geneContext": {
-                  "valueId": "HGNC:15797",
-                  "symbol": "PABPC1L"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001372179.1:c.1516C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000020.11:g.44935447C>T"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr20",
-                  "pos": 44935447,
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "II-1 in Family 3",
             "interpretationStatus": "CAUSATIVE",
@@ -96,6 +59,10 @@
                   {
                     "syntax": "hgvs.g",
                     "value": "NC_000020.11:g.44939164G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001359108.1:p.?"
                   }
                 ],
                 "vcfRecord": {
@@ -104,6 +71,47 @@
                   "pos": 44939164,
                   "ref": "G",
                   "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "II-1 in Family 3",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1516CtoT_PABPC1L_NM_001372179v1",
+                "geneContext": {
+                  "valueId": "HGNC:15797",
+                  "symbol": "PABPC1L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001372179.1:c.1516C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000020.11:g.44935447C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001359108.1:p.(Arg506Trp)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr20",
+                  "pos": 44935447,
+                  "ref": "C",
+                  "alt": "T"
                 },
                 "moleculeContext": "genomic",
                 "allelicState": {
@@ -131,14 +139,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-10-04T06:53:29.602311Z",
+    "created": "2026-11-22T09:03:03.055956Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-08-11",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -149,14 +157,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

@@ -151,7 +151,7 @@
     {
       "type": {
         "id": "HP:0003215",
-        "label": "Dicarboxylic aciduria"
+        "label": "Elevated urinary dicarboxylic acid level"
       },
       "excluded": true
     },
@@ -201,7 +201,7 @@
   ],
   "interpretations": [
     {
-      "id": "lmAnvbi4AM7HACxNw5H7TvF0",
+      "id": "p9Bx4pdMqK9lw3zHfcde1wwh",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -209,47 +209,6 @@
           "label": "Combined oxidative phosphorylation deficiency 59"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Individual P2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c589_924GtoA_MRPL39_NM_017446v4",
-                "geneContext": {
-                  "valueId": "HGNC:14027",
-                  "symbol": "MRPL39"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_017446.4:c.589-924G>A"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000021.9:g.25598338C>T"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_059142.3:p.?"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr21",
-                  "pos": 25598338,
-                  "ref": "C",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Individual P2",
             "interpretationStatus": "CAUSATIVE",
@@ -290,6 +249,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Individual P2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c589minus924GtoA_MRPL39_NM_017446v4",
+                "geneContext": {
+                  "valueId": "HGNC:14027",
+                  "symbol": "MRPL39"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_017446.4:c.589-924G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000021.9:g.25598338C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_059142.3:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr21",
+                  "pos": 25598338,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -309,14 +309,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-12-31T16:26:50.531191Z",
+    "created": "2026-11-22T08:29:12.726205Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -327,14 +327,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
