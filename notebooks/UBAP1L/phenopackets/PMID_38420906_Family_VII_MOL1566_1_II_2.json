@@ -1,0 +1,212 @@
+{
+  "id": "PMID_38420906_Family_VII_MOL1566_1_II_2",
+  "subject": {
+    "id": "Family VII MOL1566-1 (II.2)",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0011504",
+        "label": "Bull's eye maculopathy"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007737",
+        "label": "Spicular pigmentation of the retina"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0000575",
+        "label": "Scotoma"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007663",
+        "label": "Reduced visual acuity"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0011462",
+          "label": "Young adult onset"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0031624",
+        "label": "Moderate myopia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000512",
+        "label": "Abnormal electroretinogram"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "WgYuZkXnCMH5jafgBHMeWISO",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621558",
+          "label": "Retinal dystrophy, Zeitz-Han type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family VII MOL1566-1 (II.2)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c910minus7GtoA_UBAP1L_NM_001163692v2",
+                "geneContext": {
+                  "valueId": "HGNC:40028",
+                  "symbol": "UBAP1L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001163692.2:c.910-7G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.65094583C>T"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001157164.1:p.?"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr15",
+                  "pos": 65094583,
+                  "ref": "C",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
+          {
+            "subjectOrBiosampleId": "Family VII MOL1566-1 (II.2)",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c634_644del_UBAP1L_NM_001163692v2",
+                "geneContext": {
+                  "valueId": "HGNC:40028",
+                  "symbol": "UBAP1L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001163692.2:c.634_644del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.65102171_65102181del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001157164.1:p.(Ser212AlafsTer44)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr15",
+                  "pos": 65102160,
+                  "ref": "CCGCGGGGGCGA",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621558",
+        "label": "Retinal dystrophy, Zeitz-Han type"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P15Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-08-02T05:48:58.859945Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:38420906",
+        "description": "Loss-of-function variants in UBAP1L cause autosomal recessive retinal degeneration."
+      }
+    ]
+  }
+}

@@ -57,8 +57,8 @@
     },
     {
       "type": {
-        "id": "HP:0410177",
-        "label": "Abnormal glucose-6-phosphate dehydrogenase level in blood"
+        "id": "HP:0410176",
+        "label": "Abnormal circulating glucose-6-phosphate dehydrogenase concentration"
       },
       "excluded": true
     },
@@ -91,7 +91,7 @@
   ],
   "interpretations": [
     {
-      "id": "CktiyqHo6oGuVUrgQkkzkosY",
+      "id": "3zHAVAGjUkzf0cfDlH3LC2nz",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -99,6 +99,47 @@
           "label": "Elliptocytosis-2"
         },
         "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c5572CtoG_SPTA1_NM_003126v4",
+                "geneContext": {
+                  "valueId": "HGNC:11272",
+                  "symbol": "SPTA1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_003126.4:c.5572C>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.158627717G>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_003117.2:p.(Leu1858Val)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 158627717,
+                  "ref": "G",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          },
           {
             "subjectOrBiosampleId": "proband",
             "interpretationStatus": "CAUSATIVE",
@@ -159,14 +200,14 @@
     }
   ],
   "metaData": {
-    "created": "2025-11-18T08:20:25.395937Z",
+    "created": "2026-10-07T13:26:49.063077Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-10-22",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -177,14 +218,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

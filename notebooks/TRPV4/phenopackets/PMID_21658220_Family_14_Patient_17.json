@@ -1,0 +1,171 @@
+{
+  "id": "PMID_21658220_Family_14_Patient_17",
+  "subject": {
+    "id": "Family 14 Patient 17",
+    "sex": "UNKNOWN_SEX"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0100864",
+        "label": "Short femoral neck"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003521",
+        "label": "Disproportionate short-trunk short stature"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:6001530",
+        "label": "Overfaced vertebral pedicle"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000926",
+        "label": "Platyspondyly"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002751",
+        "label": "Kyphoscoliosis"
+      },
+      "severity": {
+        "id": "HP:0012825",
+        "label": "Mild"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0003375",
+        "label": "Narrow greater sciatic notch"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0002826",
+        "label": "Halberd-shaped pelvis"
+      },
+      "excluded": true
+    },
+    {
+      "type": {
+        "id": "HP:0003015",
+        "label": "Flared metaphysis"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "Fr02owGkNR0pionB1gWA5Asc",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:184252",
+          "label": "Spondylometaphyseal dysplasia, Kozlowski type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "Family 14 Patient 17",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c1566_1568dup_TRPV4_NM_021625v5",
+                "geneContext": {
+                  "valueId": "HGNC:18083",
+                  "symbol": "TRPV4"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_021625.5:c.1566_1568dup"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000012.12:g.109793947_109793949dup"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_067638.3:p.(Leu523dup)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr12",
+                  "pos": 109793945,
+                  "ref": "C",
+                  "alt": "CAGG"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:184252",
+        "label": "Spondylometaphyseal dysplasia, Kozlowski type"
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-10-07T10:53:18.563323Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:21658220",
+        "description": "TRPV4 related skeletal dysplasias: a phenotypic spectrum highlighted byclinical, radiographic, and molecular studies in 21 new families."
+      }
+    ]
+  }
+}

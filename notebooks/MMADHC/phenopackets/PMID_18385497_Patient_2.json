@@ -37,7 +37,7 @@
     {
       "type": {
         "id": "HP:0040087",
-        "label": "Abnormal blood folate concentration"
+        "label": "Abnormal circulating folate concentration"
       },
       "excluded": true
     },
@@ -100,7 +100,7 @@
   ],
   "interpretations": [
     {
-      "id": "gKCURNvoY82IIVeCacxn78nh",
+      "id": "ExuB34ptfTaq4kG4oOoD7Asm",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -108,47 +108,6 @@
           "label": "Homocystinuria-megaloblastic anemia, cblD type"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c746AtoG_MMADHC_NM_015702v3",
-                "geneContext": {
-                  "valueId": "HGNC:25221",
-                  "symbol": "MMADHC"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_015702.3:c.746A>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000002.12:g.149570119T>C"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_056517.1:p.(Tyr249Cys)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr2",
-                  "pos": 149570119,
-                  "ref": "T",
-                  "alt": "C"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -189,6 +148,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c746AtoG_MMADHC_NM_015702v3",
+                "geneContext": {
+                  "valueId": "HGNC:25221",
+                  "symbol": "MMADHC"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_015702.3:c.746A>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000002.12:g.149570119T>C"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_056517.1:p.(Tyr249Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr2",
+                  "pos": 149570119,
+                  "ref": "T",
+                  "alt": "C"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -208,14 +208,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-05T07:26:48.877717Z",
+    "created": "2026-10-07T14:08:28.451822Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -226,14 +226,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",

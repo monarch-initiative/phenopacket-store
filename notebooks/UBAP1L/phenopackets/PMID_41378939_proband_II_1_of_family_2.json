@@ -1,0 +1,218 @@
+{
+  "id": "PMID_41378939_proband_II_1_of_family_2",
+  "subject": {
+    "id": "proband II-1 of family 2",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P46Y"
+      }
+    },
+    "sex": "MALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0007843",
+        "label": "Attenuation of retinal blood vessels"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0100019",
+        "label": "Cortical cataract"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000608",
+        "label": "Macular degeneration"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0007737",
+        "label": "Spicular pigmentation of the retina"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000543",
+        "label": "Optic disc pallor"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0030329",
+        "label": "Retinal thinning on OCT"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001133",
+        "label": "Constriction of peripheral visual field"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0001141",
+        "label": "Severely reduced visual acuity"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000613",
+        "label": "Photophobia"
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000622",
+        "label": "Blurred vision"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P43Y"
+        }
+      }
+    },
+    {
+      "type": {
+        "id": "HP:0000550",
+        "label": "Undetectable electroretinogram"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P46Y"
+        }
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "GuPvNjWFfjD4eLMKNdEa0KpU",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621558",
+          "label": "Retinal dystrophy, Zeitz-Han type"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "proband II-1 of family 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c278delinsAA_UBAP1L_NM_001163692v2",
+                "geneContext": {
+                  "valueId": "HGNC:40028",
+                  "symbol": "UBAP1L"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001163692.2:c.278delinsAA"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000015.10:g.65102527delinsTT"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001157164.1:p.(Thr93LysfsTer18)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr15",
+                  "pos": 65102527,
+                  "ref": "G",
+                  "alt": "TT"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621558",
+        "label": "Retinal dystrophy, Zeitz-Han type"
+      },
+      "onset": {
+        "age": {
+          "iso8601duration": "P43Y"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-08-02T05:48:58.860955Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-06-23",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:41378939",
+        "description": "Ubap1l Knockout Mice Model Recapitulates Retinal Degeneration Phenotype Observed in Patients and Exhibits Irregular Photoreceptor Morphology."
+      }
+    ]
+  }
+}

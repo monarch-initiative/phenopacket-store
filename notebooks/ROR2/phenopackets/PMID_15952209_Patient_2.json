@@ -37,8 +37,8 @@
     },
     {
       "type": {
-        "id": "HP:0009232",
-        "label": "Symphalangism affecting the proximal phalanx of the 5th finger"
+        "id": "HP:0009177",
+        "label": "Proximal fifth finger symphalangism"
       }
     },
     {
@@ -137,7 +137,7 @@
   ],
   "interpretations": [
     {
-      "id": "PNvLwFDu3tfW67b51Lyg6wCB",
+      "id": "RsUzUBNQjRXJwWnoMFlwfhAb",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -145,47 +145,6 @@
           "label": "Robinow syndrome, autosomal recessive 1"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Patient 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c550CtoT_ROR2_NM_004560v4",
-                "geneContext": {
-                  "valueId": "HGNC:10257",
-                  "symbol": "ROR2"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_004560.4:c.550C>T"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.91737463G>A"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_004551.2:p.(Arg184Cys)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": 91737463,
-                  "ref": "G",
-                  "alt": "A"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Patient 2",
             "interpretationStatus": "CAUSATIVE",
@@ -226,6 +185,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Patient 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c550CtoT_ROR2_NM_004560v4",
+                "geneContext": {
+                  "valueId": "HGNC:10257",
+                  "symbol": "ROR2"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_004560.4:c.550C>T"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.91737463G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_004551.2:p.(Arg184Cys)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 91737463,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -246,14 +246,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-01T09:40:47.546268Z",
+    "created": "2026-10-07T13:23:32.824226Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -264,14 +264,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
