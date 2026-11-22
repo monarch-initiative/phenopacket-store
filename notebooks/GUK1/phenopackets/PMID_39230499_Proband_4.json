@@ -13,7 +13,7 @@
     {
       "type": {
         "id": "HP:0032218",
-        "label": "Decreased CD4+ T cell proportion"
+        "label": "Decreased total CD4+ T cell proportion"
       },
       "excluded": true
     },
@@ -40,7 +40,7 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       }
     },
     {
@@ -261,7 +261,7 @@
   ],
   "interpretations": [
     {
-      "id": "namuaTKXUg6hg201uMYFWrar",
+      "id": "YYoO0EAWbLDYkh2ZaxDmz4QF",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -269,47 +269,6 @@
           "label": "Mitochondrial DNA depletion syndrome 21"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Proband 4",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c2_TtoG_GUK1_NM_001159390v2",
-                "geneContext": {
-                  "valueId": "HGNC:4693",
-                  "symbol": "GUK1"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_001159390.2:c.2 T>G"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000001.11:g.228140304T>G"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_001152862.1:p.(Met1?)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr1",
-                  "pos": 228140304,
-                  "ref": "T",
-                  "alt": "G"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Proband 4",
             "interpretationStatus": "CAUSATIVE",
@@ -350,6 +309,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Proband 4",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c2_TtoG_GUK1_NM_001159390v2",
+                "geneContext": {
+                  "valueId": "HGNC:4693",
+                  "symbol": "GUK1"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_001159390.2:c.2 T>G"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000001.11:g.228140304T>G"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_001152862.1:p.(Met1?)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr1",
+                  "pos": 228140304,
+                  "ref": "T",
+                  "alt": "G"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -369,14 +369,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-02-17T09:36:59.779710Z",
+    "created": "2026-11-22T06:48:21.528425Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2026-01-08",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -405,7 +405,7 @@
         "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
       }
     ],
-    "phenopacketSchemaVersion": "2",
+    "phenopacketSchemaVersion": "2.0.2",
     "externalReferences": [
       {
         "id": "PMID:39230499",
