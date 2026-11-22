@@ -195,14 +195,14 @@
     {
       "type": {
         "id": "HP:0003236",
-        "label": "Elevated circulating creatine kinase concentration"
+        "label": "Elevated circulating creatine kinase activity"
       },
       "excluded": true
     }
   ],
   "interpretations": [
     {
-      "id": "sAiE56TL4bWexWNKqQWOV8s5",
+      "id": "XeSKvxJHo5692PfhQW8RaY21",
       "progressStatus": "SOLVED",
       "diagnosis": {
         "disease": {
@@ -210,47 +210,6 @@
           "label": "Choreoacanthocytosis"
         },
         "genomicInterpretations": [
-          {
-            "subjectOrBiosampleId": "Case 2",
-            "interpretationStatus": "CAUSATIVE",
-            "variantInterpretation": {
-              "acmgPathogenicityClassification": "PATHOGENIC",
-              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
-              "variationDescriptor": {
-                "id": "c7276_7280del_VPS13A_NM_033305v3",
-                "geneContext": {
-                  "valueId": "HGNC:1908",
-                  "symbol": "VPS13A"
-                },
-                "expressions": [
-                  {
-                    "syntax": "hgvs.c",
-                    "value": "NM_033305.3:c.7276_7280del"
-                  },
-                  {
-                    "syntax": "hgvs.g",
-                    "value": "NC_000009.12:g.77345133_77345137del"
-                  },
-                  {
-                    "syntax": "hgvs.p",
-                    "value": "NP_150648.2:p.(Tyr2427SerfsTer6)"
-                  }
-                ],
-                "vcfRecord": {
-                  "genomeAssembly": "hg38",
-                  "chrom": "chr9",
-                  "pos": 77345128,
-                  "ref": "TCAATA",
-                  "alt": "T"
-                },
-                "moleculeContext": "genomic",
-                "allelicState": {
-                  "id": "GENO:0000135",
-                  "label": "heterozygous"
-                }
-              }
-            }
-          },
           {
             "subjectOrBiosampleId": "Case 2",
             "interpretationStatus": "CAUSATIVE",
@@ -291,6 +250,47 @@
                 }
               }
             }
+          },
+          {
+            "subjectOrBiosampleId": "Case 2",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c7276_7280del_VPS13A_NM_033305v3",
+                "geneContext": {
+                  "valueId": "HGNC:1908",
+                  "symbol": "VPS13A"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_033305.3:c.7276_7280del"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000009.12:g.77345133_77345137del"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_150648.2:p.(Tyr2427SerfsTer6)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr9",
+                  "pos": 77345128,
+                  "ref": "TCAATA",
+                  "alt": "T"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000135",
+                  "label": "heterozygous"
+                }
+              }
+            }
           }
         ]
       }
@@ -310,14 +310,14 @@
     }
   ],
   "metaData": {
-    "created": "2026-01-02T20:43:20.950271Z",
+    "created": "2026-11-22T09:48:34.968773Z",
     "createdBy": "0000-0002-0736-9199",
     "resources": [
       {
         "id": "hp",
         "name": "human phenotype ontology",
         "url": "http://purl.obolibrary.org/obo/hp.owl",
-        "version": "2025-11-24",
+        "version": "2026-09-01",
         "namespacePrefix": "HP",
         "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
       },
@@ -328,14 +328,6 @@
         "version": "2025-07-25",
         "namespacePrefix": "GENO",
         "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
-      },
-      {
-        "id": "so",
-        "name": "Sequence types and features ontology",
-        "url": "http://purl.obolibrary.org/obo/so.owl",
-        "version": "2024-11-18",
-        "namespacePrefix": "SO",
-        "iriPrefix": "http://purl.obolibrary.org/obo/SO_"
       },
       {
         "id": "omim",
