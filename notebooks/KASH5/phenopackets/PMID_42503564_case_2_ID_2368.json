@@ -1,0 +1,134 @@
+{
+  "id": "PMID_42503564_case_2_ID_2368",
+  "subject": {
+    "id": "case 2, ID 2368",
+    "timeAtLastEncounter": {
+      "age": {
+        "iso8601duration": "P28Y"
+      }
+    },
+    "sex": "FEMALE"
+  },
+  "phenotypicFeatures": [
+    {
+      "type": {
+        "id": "HP:0032192",
+        "label": "Hydatidiform mole"
+      }
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "QxGRchFjxFQTxAbQfM8wqlX5",
+      "progressStatus": "SOLVED",
+      "diagnosis": {
+        "disease": {
+          "id": "OMIM:621721",
+          "label": "Hydatidiform mole, recurrent, 6"
+        },
+        "genomicInterpretations": [
+          {
+            "subjectOrBiosampleId": "case 2, ID 2368",
+            "interpretationStatus": "CAUSATIVE",
+            "variantInterpretation": {
+              "acmgPathogenicityClassification": "PATHOGENIC",
+              "therapeuticActionability": "UNKNOWN_ACTIONABILITY",
+              "variationDescriptor": {
+                "id": "c587GtoA_KASH5_NM_144688v5",
+                "geneContext": {
+                  "valueId": "HGNC:26520",
+                  "symbol": "KASH5"
+                },
+                "expressions": [
+                  {
+                    "syntax": "hgvs.c",
+                    "value": "NM_144688.5:c.587G>A"
+                  },
+                  {
+                    "syntax": "hgvs.g",
+                    "value": "NC_000019.10:g.49398101G>A"
+                  },
+                  {
+                    "syntax": "hgvs.p",
+                    "value": "NP_653289.3:p.(Arg196His)"
+                  }
+                ],
+                "vcfRecord": {
+                  "genomeAssembly": "hg38",
+                  "chrom": "chr19",
+                  "pos": 49398101,
+                  "ref": "G",
+                  "alt": "A"
+                },
+                "moleculeContext": "genomic",
+                "allelicState": {
+                  "id": "GENO:0000136",
+                  "label": "homozygous"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "diseases": [
+    {
+      "term": {
+        "id": "OMIM:621721",
+        "label": "Hydatidiform mole, recurrent, 6"
+      },
+      "onset": {
+        "ontologyClass": {
+          "id": "HP:0025708",
+          "label": "Early young adult onset"
+        }
+      }
+    }
+  ],
+  "metaData": {
+    "created": "2026-11-26T06:58:11.425810Z",
+    "createdBy": "0000-0002-0736-9199",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "human phenotype ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-09-01",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      },
+      {
+        "id": "omim",
+        "name": "An Online Catalog of Human Genes and Genetic Disorders",
+        "url": "https://www.omim.org",
+        "version": "06/01/25",
+        "namespacePrefix": "OMIM",
+        "iriPrefix": "https://www.omim.org/entry/"
+      },
+      {
+        "id": "hgnc",
+        "name": "HUGO Gene Nomenclature Committee",
+        "url": "https://www.genenames.org",
+        "version": "06/01/25",
+        "namespacePrefix": "HGNC",
+        "iriPrefix": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0.2",
+    "externalReferences": [
+      {
+        "id": "PMID:42503564",
+        "description": "Report of two patients with variants in FOXL2 and KASH5 and review of gestational trophoblastic neoplasia after recurrent moles."
+      }
+    ]
+  }
+}
